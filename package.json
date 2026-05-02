@@ -1,0 +1,33 @@
+{
+  "name": "nexlamp-website",
+  "version": "1.0.0",
+  "description": "耐利普科技有限公司官方网站 - 智能照明与LED驱动电源解决方案",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "serve": "npx serve .",
+    "webhook": "node webhook-receiver.js",
+    "dev": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "LED驱动电源",
+    "智能照明",
+    "物联网照明",
+    "DALI-2",
+    "静态网站"
+  ],
+  "author": "Nexlamp Technology Co., Ltd.",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "marked": "^12.0.0"
+  },
+  "devDependencies": {
+    "express": "^4.18.0",
+    "serve": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

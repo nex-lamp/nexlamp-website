@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术文章 | 耐利普科技 - 智能照明技术博客</title>
+    <meta name="description" content="耐利普科技技术博客：LED驱动电源选型指南、DALI-2协议解析、物联网照明系统设计等技术文章。">
+    <meta name="keywords" content="LED驱动电源技术,智能照明博客,DALI-2协议,物联网照明,耐利普技术文章">
+    <link rel="canonical" href="https://www.nexlamp.com/blog.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="技术文章 | 耐利普科技">
+    <meta property="og:description" content="LED驱动电源与智能照明技术深度解析">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nexlamp.com/blog.html">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- JSON-LD Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "耐利普科技技术博客",
+      "description": "LED驱动电源与智能照明技术深度解析",
+      "url": "https://www.nexlamp.com/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">首页</a></li>
+                        <li aria-current="page">技术文章</li>
+                    </ol>
+                </nav>
+                <h1>技术文章</h1>
+                <p>LED驱动电源与智能照明技术深度解析</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="blog-list" id="blog-list">
+                    <!-- Article 1 -->
+                    <article class="blog-item">
+                        <div class="blog-item-image">
+                            <img src="https://via.placeholder.com/400x250/1a365d/f0b429?text=DALI-2+Guide" alt="DALI-2协议兼容性指南" loading="lazy">
+                        </div>
+                        <div class="blog-item-body">
+                            <div class="blog-meta">
+                                <time datetime="2025-04-15">2025年4月15日</time>
+                                <span class="blog-tag">协议解析</span>
+                            </div>
+                            <h3><a href="dist/blog/dali-2-compatibility-guide.html">DALI-2协议兼容性指南</a></h3>
+                            <p>深入解析DALI-2协议在智能照明系统中的应用，以及与Zigbee、蓝牙Mesh等其他协议的兼容性测试方法与互操作方案。</p>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-item">
+                        <div class="blog-item-image">
+                            <img src="https://via.placeholder.com/400x250/1a365d/f0b429?text=LED+Driver+Guide" alt="LED驱动电源选型指南" loading="lazy">
+                        </div>
+                        <div class="blog-item-body">
+                            <div class="blog-meta">
+                                <time datetime="2025-04-08">2025年4月8日</time>
+                                <span class="blog-tag">选型指南</span>
+                            </div>
+                            <h3><a href="dist/blog/led-driver-selection-guide.html">LED驱动电源选型指南</a></h3>
+                            <p>如何根据灯具功率、调光需求和安装环境选择合适的LED驱动电源，涵盖恒流与恒压方案的选择逻辑。</p>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-item">
+                        <div class="blog-item-image">
+                            <img src="https://via.placeholder.com/400x250/1a365d/f0b429?text=Troubleshooting" alt="常见故障排查与维护" loading="lazy">
+                        </div>
+                        <div class="blog-item-body">
+                            <div class="blog-meta">
+                                <time datetime="2025-03-20">2025年3月20日</time>
+                                <span class="blog-tag">维护指南</span>
+                            </div>
+                            <h3><a href="dist/blog/troubleshooting-and-maintenance.html">常见故障排查与维护</a></h3>
+                            <p>LED驱动电源常见故障现象、原因分析与快速排查方法汇总，帮助运维人员快速定位与修复问题。</p>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="blog-item">
+                        <div class="blog-item-image">
+                            <img src="https://via.placeholder.com/400x250/1a365d/f0b429?text=IoT+Architecture" alt="物联网照明系统架构设计" loading="lazy">
+                        </div>
+                        <div class="blog-item-body">
+                            <div class="blog-meta">
+                                <time datetime="2025-03-05">2025年3月5日</time>
+                                <span class="blog-tag">系统设计</span>
+                            </div>
+                            <h3><a href="dist/blog/iot-lighting-system-architecture.html">物联网照明系统架构设计</a></h3>
+                            <p>从边缘设备到云平台，详解智能照明系统的分层架构设计，涵盖设备层、网关层与平台层的技术选型。</p>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="blog-item">
+                        <div class="blog-item-image">
+                            <img src="https://via.placeholder.com/400x250/1a365d/f0b429?text=3C+Certification" alt="3C认证申请全流程" loading="lazy">
+                        </div>
+                        <div class="blog-item-body">
+                            <div class="blog-meta">
+                                <time datetime="2025-02-18">2025年2月18日</time>
+                                <span class="blog-tag">认证合规</span>
+                            </div>
+                            <h3><a href="dist/blog/3c-certification-process.html">3C认证申请全流程</a></h3>
+                            <p>LED驱动电源3C认证的申请条件、所需材料、测试项目与时间周期详解，助力企业快速通过认证。</p>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="blog-item">
+                        <div class="blog-item-image">
+                            <img src="https://via.placeholder.com/400x250/1a365d/f0b429?text=Dimming+Tech" alt="智能调光技术对比" loading="lazy">
+                        </div>
+                        <div class="blog-item-body">
+                            <div class="blog-meta">
+                                <time datetime="2025-01-25">2025年1月25日</time>
+                                <span class="blog-tag">技术对比</span>
+                            </div>
+                            <h3><a href="dist/blog/smart-dimming-technology-comparison.html">智能调光技术对比：PWM vs 0-10V vs DALI</a></h3>
+                            <p>三种主流调光技术的工作原理、优缺点与适用场景对比分析，帮助工程师做出最佳技术选择。</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="pagination" aria-label="文章分页">
+                    <span class="disabled">上一页</span>
+                    <span class="active" aria-current="page">1</span>
+                    <a href="#" aria-label="第2页">2</a>
+                    <a href="#" aria-label="第3页">3</a>
+                    <a href="#" aria-label="下一页">下一页</a>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
