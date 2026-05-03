@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DALI-2协议兼容性指南 | 耐利普科技技术博客</title>
+    <meta name="description" content="深入解析DALI-2协议在智能照明系统中的应用，以及与其他协议的兼容性测试方法。">
+    <meta name="keywords" content="DALI-2,智能照明协议,Zigbee兼容性,蓝牙Mesh">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/dali-2-compatibility-guide.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="DALI-2协议兼容性指南 | 耐利普科技">
+    <meta property="og:description" content="深入解析DALI-2协议在智能照明系统中的应用，以及与其他协议的兼容性测试方法。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/dali-2-compatibility-guide.html">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2025-04-15">
+    <meta property="article:author" content="耐利普科技">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "DALI-2协议兼容性指南",
+      "description": "深入解析DALI-2协议在智能照明系统中的应用，以及与其他协议的兼容性测试方法。",
+      "datePublished": "2025-04-15",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/dali-2-compatibility-guide.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "DALI-2协议兼容性指南",
+          "item": "https://www.nexlamp.com/dist/blog/dali-2-compatibility-guide.html"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">DALI-2协议兼容性指南</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>DALI-2协议兼容性指南</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2025年4月15日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 协议解析</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h2>DALI-2协议概述</h2>
+<p>DALI-2（Digital Addressable Lighting Interface Version 2）是国际标准化组织（IEC）制定的数字照明控制协议，是DALI V1的升级版本。相比V1，DALI-2在设备类型定义、测试认证和数据传输方面有了显著改进。</p>
+<h3>核心特性</h3>
+<ul><li><strong>双线总线架构</strong>：DALI-2使用双线差分信号，布线简单，极性无关</li>
+<li><strong>64个短地址</strong>：每条总线最多支持64个独立地址的设备</li>
+<li><strong>16个组地址</strong>：支持设备分组控制</li>
+<li><strong>16个场景</strong>：每个设备可存储16个预定义场景</li>
+<li><strong>D4i扩展</strong>：支持能耗数据采集和设备诊断</li>
+</ul>
+<h2>与其他协议的兼容性</h2>
+<h3>DALI-2 与 Zigbee 3.0</h3>
+<p>Zigbee 3.0是一种基于IEEE 802.15.4的无线Mesh网络协议。DALI-2与Zigbee的兼容需要通过<strong>DALI-Zigbee网关</strong>实现：</p>
+<table><tr><td>特性</td><td>DALI-2</td><td>Zigbee 3.0</td></tr>
+</table>
+<table><tr><td>传输方式</td><td>有线双线</td><td>无线2.4GHz</td></tr>
+<tr><td>延迟</td><td><5ms</td><td>50-200ms</td></tr>
+<tr><td>设备容量</td><td>64/总线</td><td>32767节点</td></tr>
+<tr><td>供电</td><td>外部或总线</td><td>电池或外部</td></tr>
+<tr><td>适用场景</td><td>室内精准控光</td><td>大规模无线部署</td></tr>
+</table>
+<h3>DALI-2 与 蓝牙Mesh</h3>
+<p>蓝牙Mesh（Bluetooth Mesh）基于BLE 5.0，同样采用Mesh拓扑。与DALI-2的互操作通过<strong>智能网关</strong>实现，网关负责协议翻译和数据同步。</p>
+<h3>兼容性测试流程</h3>
+<li><strong>物理层测试</strong>：验证信号电平和时序是否符合IEC 62386标准</li>
+<li><strong>协议层测试</strong>：使用DALI-2认证测试工具验证指令集</li>
+<li><strong>互操作测试</strong>：多品牌设备混编测试</li>
+<li><strong>网关转换测试</strong>：验证跨协议数据完整性</li>
+<h2>实施建议</h2>
+<blockquote><p>在实际项目中，建议优先选择已通过DALI-2认证的设备，确保互操作性。对于跨协议集成，选择支持多协议的智能网关是最佳方案。</p></blockquote>
+<h3>选型要点</h3>
+<ul><li>优先选择<strong>DALI-2认证</strong>产品（可查询DiiA官网认证列表）</li>
+<li>网关需支持<strong>双向数据同步</strong>，避免单向控制导致的状态不一致</li>
+<li>注意<strong>总线长度</strong>限制：DALI-2总线最大长度300米</li>
+<li>考虑<strong>电源容量</strong>：总线电源需满足所有设备功耗需求</li>
+</ul>
+耐利普科技的DALI-2智能网关已通过DiiA认证，支持64个设备地址管理，可通过以太网或WiFi接入智能家居/楼宇管理系统。
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>
