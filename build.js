@@ -72,12 +72,31 @@ function parseMarkdown(md) {
   // Horizontal rules
   html = html.replace(/^---$/gm, '<hr>');
 
-  // Tables (basic)
-  html = html.replace(/^\|(.+)\|$/gm, function (match, content) {
-    if (content.match(/^[\s\-\|:]+$/)) return ''; // separator row
+  // Tables (improved)
+  // Pass 1: convert table rows, detect header rows (immediately before separator)
+  const lines = html.split('\n');
+  const processedLines = [];
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const rowMatch = line.match(/^\|(.+)\|$/);
+    if (!rowMatch) {
+      processedLines.push(line);
+      continue;
+    }
+    const content = rowMatch[1];
+    // Check if next line is a separator (|---|---|)
+    const isHeader = (i + 1 < lines.length && lines[i + 1].match(/^\|[\s\-\|:]+\|$/));
+    // Check if current line IS a separator
+    if (content.match(/^[\s\-\|:]+$/)) {
+      // Skip separator rows entirely
+      continue;
+    }
     const cells = content.split('|').map(function (c) { return c.trim(); });
-    return '<tr>' + cells.map(function (c) { return '<td>' + c + '</td>'; }).join('') + '</tr>';
-  });
+    const tag = isHeader ? 'th' : 'td';
+    processedLines.push('<tr>' + cells.map(function (c) { return '<' + tag + '>' + c + '</' + tag + '>'; }).join('') + '</tr>');
+  }
+  html = processedLines.join('\n');
+  // Pass 2: wrap consecutive <tr> rows into <table>
   html = html.replace(/((?:<tr>.*<\/tr>\n?)+)/g, '<table>$1</table>');
 
   // Paragraphs (lines that aren't already wrapped)
@@ -102,7 +121,10 @@ function parseFrontMatter(content) {
     category: '技术文章',
     description: '耐利普科技技术文章',
     keywords: '智能照明,LED驱动电源',
-    slug: ''
+    slug: '',
+    cover: '',
+    tags: '',
+    excerpt: ''
   };
 
   const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
@@ -156,6 +178,7 @@ function buildPost(filePath, template) {
     .replace(/\{\{dateISO\}\}/g, meta.date)
     .replace(/\{\{date\}\}/g, dateDisplay)
     .replace(/\{\{category\}\}/g, meta.category)
+    .replace(/\{\{cover\}\}/g, meta.cover || 'images/blog-default.jpg')
     .replace(/\{\{content\}\}/g, htmlContent)
     .replace(/\{\{relatedPosts\}\}/g, relatedHtml);
 
