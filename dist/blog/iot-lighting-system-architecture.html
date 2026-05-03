@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物联网照明系统架构设计 | 耐利普科技技术博客</title>
+    <meta name="description" content="从边缘设备到云平台，详解智能照明系统的分层架构设计，涵盖设备层、网关层与平台层的技术选型。">
+    <meta name="keywords" content="物联网照明,系统架构,智能照明,边缘计算,云平台">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/iot-lighting-system-architecture.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="物联网照明系统架构设计 | 耐利普科技">
+    <meta property="og:description" content="从边缘设备到云平台，详解智能照明系统的分层架构设计，涵盖设备层、网关层与平台层的技术选型。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/iot-lighting-system-architecture.html">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2025-03-05">
+    <meta property="article:author" content="耐利普科技">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "物联网照明系统架构设计",
+      "description": "从边缘设备到云平台，详解智能照明系统的分层架构设计，涵盖设备层、网关层与平台层的技术选型。",
+      "datePublished": "2025-03-05",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/iot-lighting-system-architecture.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "物联网照明系统架构设计",
+          "item": "https://www.nexlamp.com/dist/blog/iot-lighting-system-architecture.html"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">物联网照明系统架构设计</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>物联网照明系统架构设计</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2025年3月5日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 系统设计</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h2>三层架构模型</h2>
+<p>物联网照明系统通常采用三层架构，从下至上分别为：</p>
+<li><strong>设备层</strong>（感知与执行）</li>
+<li><strong>网关层</strong>（边缘计算与协议转换）</li>
+<li><strong>平台层</strong>（数据管理与业务逻辑）</li>
+<h2>设备层设计</h2>
+<h3>LED驱动电源</h3>
+<p>设备层的基础是LED驱动电源，它既是执行器（控制亮度），也是传感器（上报状态）：</p>
+<ul><li><strong>控制通道</strong>：接收调光指令，执行亮度调节</li>
+<li><strong>状态上报</strong>：电流、电压、温度、运行时长</li>
+<li><strong>故障检测</strong>：过压、过流、过温、开路、短路</li>
+</ul>
+<h3>传感器节点</h3>
+<ul><li>微波雷达传感器：存在检测</li>
+<li>环境光传感器：恒照度控制</li>
+<li>人体红外传感器：触发控制</li>
+</ul>
+<h3>通信协议选择</h3>
+<table><tr><td>协议</td><td>延迟</td><td>功耗</td><td>节点数</td><td>适用场景</td></tr>
+</table>
+<table><tr><td>DALI-2</td><td><5ms</td><td>低</td><td>64</td><td>室内精准控光</td></tr>
+<tr><td>Zigbee 3.0</td><td>50-200ms</td><td>极低</td><td>32767</td><td>大规模无线</td></tr>
+<tr><td>BLE Mesh</td><td>30-100ms</td><td>低</td><td>32767</td><td>快速部署</td></tr>
+<tr><td>LoRa</td><td>1-3s</td><td>极低</td><td>10000+</td><td>户外远距</td></tr>
+</table>
+<h2>网关层设计</h2>
+<p>网关是连接设备层和平台层的桥梁，核心功能：</p>
+<li><strong>协议转换</strong>：DALI-2 ↔ IP，Zigbee ↔ IP</li>
+<li><strong>边缘计算</strong>：本地场景控制、定时任务、联动规则</li>
+<li><strong>数据缓存</strong>：断网时本地存储，恢复后上报</li>
+<li><strong>OTA升级</strong>：对设备层进行固件升级</li>
+<blockquote><p>网关的<strong>边缘计算能力</strong>是保证系统可靠性的关键——即使云平台不可达，本地场景和定时任务仍可正常执行。</p></blockquote>
+<h2>平台层设计</h2>
+<h3>核心模块</h3>
+<ul><li><strong>设备管理</strong>：注册、配置、状态监控</li>
+<li><strong>场景管理</strong>：场景创建、定时调度、联动规则</li>
+<li><strong>数据分析</strong>：能耗统计、故障预警、优化建议</li>
+<li><strong>用户管理</strong>：权限控制、操作审计</li>
+</ul>
+<h3>技术选型</h3>
+<ul><li><strong>数据库</strong>：时序数据库（InfluxDB/TDengine）存储设备状态</li>
+<li><strong>消息队列</strong>：MQTT/EMQX处理设备上报数据</li>
+<li><strong>API网关</strong>：RESTful API + WebSocket</li>
+<li><strong>前端</strong>：Web管理后台 + 移动APP</li>
+</ul>
+<h2>安全设计</h2>
+<ul><li><strong>传输加密</strong>：TLS 1.3全链路加密</li>
+<li><strong>设备认证</strong>：一机一密 + 证书双向认证</li>
+<li><strong>访问控制</strong>：RBAC权限模型</li>
+<li><strong>数据脱敏</strong>：敏感数据加密存储</li>
+</ul>
+<h2>部署建议</h2>
+<p>对于中小规模项目（<1000个节点），建议采用<strong>一体机部署</strong>方案——将网关和平台功能集成在一台边缘服务器上，降低部署复杂度和成本。</p>
+<p>耐利普科技提供从设备层到平台层的全栈解决方案，支持私有化部署和SaaS模式，可根据项目规模灵活选择。</p>
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>
