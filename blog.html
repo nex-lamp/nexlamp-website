@@ -94,104 +94,14 @@
         <section class="section">
             <div class="container">
                 <div class="blog-list" id="blog-list">
-                    <!-- Article 1 -->
-                    <article class="blog-item">
-                        <div class="blog-item-image">
-                            <img src="images/blog-dali2.svg" alt="DALI-2协议兼容性指南" loading="lazy">
-                        </div>
-                        <div class="blog-item-body">
-                            <div class="blog-meta">
-                                <time datetime="2025-04-15">2025年4月15日</time>
-                                <span class="blog-tag">协议解析</span>
-                            </div>
-                            <h3><a href="dist/blog/dali-2-compatibility-guide.html">DALI-2协议兼容性指南</a></h3>
-                            <p>深入解析DALI-2协议在智能照明系统中的应用，以及与Zigbee、蓝牙Mesh等其他协议的兼容性测试方法与互操作方案。</p>
-                        </div>
-                    </article>
-
-                    <!-- Article 2 -->
-                    <article class="blog-item">
-                        <div class="blog-item-image">
-                            <img src="images/blog-led-driver.svg" alt="LED驱动电源选型指南" loading="lazy">
-                        </div>
-                        <div class="blog-item-body">
-                            <div class="blog-meta">
-                                <time datetime="2025-04-08">2025年4月8日</time>
-                                <span class="blog-tag">选型指南</span>
-                            </div>
-                            <h3><a href="dist/blog/led-driver-selection-guide.html">LED驱动电源选型指南</a></h3>
-                            <p>如何根据灯具功率、调光需求和安装环境选择合适的LED驱动电源，涵盖恒流与恒压方案的选择逻辑。</p>
-                        </div>
-                    </article>
-
-                    <!-- Article 3 -->
-                    <article class="blog-item">
-                        <div class="blog-item-image">
-                            <img src="images/blog-troubleshooting.svg" alt="常见故障排查与维护" loading="lazy">
-                        </div>
-                        <div class="blog-item-body">
-                            <div class="blog-meta">
-                                <time datetime="2025-03-20">2025年3月20日</time>
-                                <span class="blog-tag">维护指南</span>
-                            </div>
-                            <h3><a href="dist/blog/troubleshooting-and-maintenance.html">常见故障排查与维护</a></h3>
-                            <p>LED驱动电源常见故障现象、原因分析与快速排查方法汇总，帮助运维人员快速定位与修复问题。</p>
-                        </div>
-                    </article>
-
-                    <!-- Article 4 -->
-                    <article class="blog-item">
-                        <div class="blog-item-image">
-                            <img src="images/blog-iot-architecture.svg" alt="物联网照明系统架构设计" loading="lazy">
-                        </div>
-                        <div class="blog-item-body">
-                            <div class="blog-meta">
-                                <time datetime="2025-03-05">2025年3月5日</time>
-                                <span class="blog-tag">系统设计</span>
-                            </div>
-                            <h3><a href="dist/blog/iot-lighting-system-architecture.html">物联网照明系统架构设计</a></h3>
-                            <p>从边缘设备到云平台，详解智能照明系统的分层架构设计，涵盖设备层、网关层与平台层的技术选型。</p>
-                        </div>
-                    </article>
-
-                    <!-- Article 5 -->
-                    <article class="blog-item">
-                        <div class="blog-item-image">
-                            <img src="images/blog-3c-certification.svg" alt="3C认证申请全流程" loading="lazy">
-                        </div>
-                        <div class="blog-item-body">
-                            <div class="blog-meta">
-                                <time datetime="2025-02-18">2025年2月18日</time>
-                                <span class="blog-tag">认证合规</span>
-                            </div>
-                            <h3><a href="dist/blog/3c-certification-process.html">3C认证申请全流程</a></h3>
-                            <p>LED驱动电源3C认证的申请条件、所需材料、测试项目与时间周期详解，助力企业快速通过认证。</p>
-                        </div>
-                    </article>
-
-                    <!-- Article 6 -->
-                    <article class="blog-item">
-                        <div class="blog-item-image">
-                            <img src="images/blog-dimming-tech.svg" alt="智能调光技术对比" loading="lazy">
-                        </div>
-                        <div class="blog-item-body">
-                            <div class="blog-meta">
-                                <time datetime="2025-01-25">2025年1月25日</time>
-                                <span class="blog-tag">技术对比</span>
-                            </div>
-                            <h3><a href="dist/blog/smart-dimming-technology-comparison.html">智能调光技术对比：PWM vs 0-10V vs DALI</a></h3>
-                            <p>三种主流调光技术的工作原理、优缺点与适用场景对比分析，帮助工程师做出最佳技术选择。</p>
-                        </div>
-                    </article>
+                    <!-- 文章列表由 JavaScript 从 dist/blog/index.json 动态加载 -->
+                    <noscript>
+                        <p>请启用 JavaScript 以查看文章列表，或直接访问 <a href="dist/blog/tuya-constant-current-driver-selection-guide.html">涂鸦恒流驱动电源选型指南</a>。</p>
+                    </noscript>
                 </div>
 
-                <!-- Pagination -->
-                <nav class="pagination" aria-label="文章分页">
-                    <span class="disabled">上一页</span>
-                    <span class="active" aria-current="page">1</span>
-                    <a href="#" aria-label="第2页">2</a>
-                    <a href="#" aria-label="第3页">3</a>
-                    <a href="#" aria-label="下一页">下一页</a>
+                <!-- Pagination (hidden when dynamically loaded) -->
+                <nav class="pagination" id="blog-pagination" aria-label="文章分页" style="display:none;">
                 </nav>
             </div>
         </section>
@@ -232,5 +142,101 @@
     </footer>
 
     <script src="main.js"></script>
+    <script>
+    (function() {
+      var listEl = document.getElementById('blog-list');
+      var paginationEl = document.getElementById('blog-pagination');
+      if (!listEl) return;
+
+      // Category tag color mapping
+      var categoryColors = {
+        '选型指南': '#0056b3',
+        '认证合规': '#e67e22',
+        '协议解析': '#27ae60',
+        '技术对比': '#8e44ad',
+        '维护指南': '#c0392b',
+        '系统设计': '#2980b9'
+      };
+
+      // Format date for display
+      function formatDate(dateStr) {
+        var d = new Date(dateStr);
+        return d.getFullYear() + '年' + (d.getMonth() + 1) + '月' + d.getDate() + '日';
+      }
+
+      // Get category display name (handle English category codes)
+      var categoryNames = {
+        'selection': '选型指南',
+        'protocol': '协议解析',
+        'troubleshooting': '维护指南',
+        'certification': '认证合规',
+        'comparison': '技术对比',
+        'architecture': '系统设计'
+      };
+
+      function getCategoryName(cat) {
+        return categoryNames[cat] || cat;
+      }
+
+      function getCategoryColor(cat) {
+        var name = getCategoryName(cat);
+        return categoryColors[name] || '#0056b3';
+      }
+
+      // Default cover images by category
+      var defaultCovers = {
+        '选型指南': 'images/blog-led-driver.svg',
+        '认证合规': 'images/blog-3c-certification.svg',
+        '协议解析': 'images/blog-dali2.svg',
+        '技术对比': 'images/blog-dimming-tech.svg',
+        '维护指南': 'images/blog-troubleshooting.svg',
+        '系统设计': 'images/blog-iot-architecture.svg'
+      };
+
+      function getCover(post) {
+        if (post.cover) return post.cover;
+        var name = getCategoryName(post.category);
+        return defaultCovers[name] || 'images/blog-led-driver.svg';
+      }
+
+      // Fetch and render
+      fetch('dist/blog/index.json')
+        .then(function(res) { return res.json(); })
+        .then(function(posts) {
+          if (!posts || posts.length === 0) {
+            listEl.innerHTML = '<p>暂无文章</p>';
+            return;
+          }
+
+          var html = '';
+          posts.forEach(function(post) {
+            var catName = getCategoryName(post.category);
+            var catColor = getCategoryColor(post.category);
+            var cover = getCover(post);
+            var excerpt = post.excerpt || post.description || '';
+
+            html += '<article class="blog-item">';
+            html += '  <div class="blog-item-image">';
+            html += '    <img src="' + cover + '" alt="' + post.title + '" loading="lazy">';
+            html += '  </div>';
+            html += '  <div class="blog-item-body">';
+            html += '    <div class="blog-meta">';
+            html += '      <time datetime="' + post.date + '">' + formatDate(post.date) + '</time>';
+            html += '      <span class="blog-tag" style="background:' + catColor + '">' + catName + '</span>';
+            html += '    </div>';
+            html += '    <h3><a href="dist/blog/' + post.slug + '.html">' + post.title + '</a></h3>';
+            html += '    <p>' + excerpt + '</p>';
+            html += '  </div>';
+            html += '</article>';
+          });
+
+          listEl.innerHTML = html;
+        })
+        .catch(function(err) {
+          console.error('Failed to load blog index:', err);
+          listEl.innerHTML = '<p>文章加载失败，请刷新页面重试。</p>';
+        });
+    })();
+    </script>
 </body>
 </html>

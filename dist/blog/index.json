@@ -4,69 +4,80 @@
     "slug": "tuya-constant-current-driver-selection-guide",
     "date": "2026-05-03",
     "category": "选型指南",
-    "description": "涂鸦恒流驱动电源7-50W选型指南，详解输出参数、调光协议、3C认证与安装要点，助力智能照明项目高效选型。"
-  },
-  {
-    "title": "文章标题（前15字含核心关键词，如：涂鸦恒流驱动电源3C认证全流程解析）",
-    "slug": "文章标题前15字含核心关键词如涂鸦恒流驱动电源3c认证全流程解析",
-    "date": "2025-05-10",
-    "category": "选型指南 | 认证合规 | 协议解析 | 技术对比 | 维护指南 | 系统设计",
-    "description": "SEO描述，120字以内，包含核心关键词"
+    "description": "涂鸦恒流驱动电源7-50W选型指南，详解输出参数、调光协议、3C认证与安装要点，助力智能照明项目高效选型。",
+    "cover": "images/driver-7-12w.jpg",
+    "excerpt": "涂鸦恒流驱动电源7-50W全功率段选型指南，涵盖输出参数匹配、调光协议对接、3C认证要点与工程安装注意事项，帮助照明工程师快速锁定最优驱动方案。"
   },
   {
     "title": "DALI-2协议兼容性指南",
     "slug": "dali-2协议兼容性指南",
     "date": "2025-04-15",
     "category": "protocol",
-    "description": "耐利普科技技术文章"
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "深入解析DALI-2协议在智能照明系统中的应用，以及与其他协议的兼容性测试方法。"
   },
   {
     "title": "LED驱动电源选型指南",
     "slug": "led驱动电源选型指南",
     "date": "2025-04-08",
     "category": "selection",
-    "description": "耐利普科技技术文章"
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "如何根据灯具功率、调光需求和安装环境选择合适的LED驱动电源？本文从电气参数、调光协议、防护等级等维度提供系统化的选型方法论。"
   },
   {
     "title": "LED驱动电源选型指南",
     "slug": "led-driver-selection-guide",
     "date": "2025-04-08",
     "category": "选型指南",
-    "description": "如何根据灯具功率、调光需求和安装环境选择合适的LED驱动电源，涵盖恒流与恒压方案的选择逻辑。"
+    "description": "如何根据灯具功率、调光需求和安装环境选择合适的LED驱动电源，涵盖恒流与恒压方案的选择逻辑。",
+    "cover": "",
+    "excerpt": "如何根据灯具功率、调光需求和安装环境选择合适的LED驱动电源，涵盖恒流与恒压方案的选择逻辑。"
   },
   {
     "title": "LED驱动电源常见故障排查与维护",
     "slug": "led驱动电源常见故障排查与维护",
     "date": "2025-03-20",
     "category": "troubleshooting",
-    "description": "耐利普科技技术文章"
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "LED驱动电源常见故障现象、原因分析与快速排查方法汇总。涵盖无输出、闪烁、过热、调光异常等典型问题的解决方案。"
   },
   {
     "title": "常见故障排查与维护",
     "slug": "troubleshooting-and-maintenance",
     "date": "2025-03-20",
     "category": "维护指南",
-    "description": "LED驱动电源常见故障现象、原因分析与快速排查方法汇总，帮助运维人员快速定位与修复问题。"
+    "description": "LED驱动电源常见故障现象、原因分析与快速排查方法汇总，帮助运维人员快速定位与修复问题。",
+    "cover": "",
+    "excerpt": "LED驱动电源常见故障现象、原因分析与快速排查方法汇总，帮助运维人员快速定位与修复问题。"
   },
   {
     "title": "物联网照明系统架构设计",
     "slug": "iot-lighting-system-architecture",
     "date": "2025-03-05",
     "category": "系统设计",
-    "description": "从边缘设备到云平台，详解智能照明系统的分层架构设计，涵盖设备层、网关层与平台层的技术选型。"
+    "description": "从边缘设备到云平台，详解智能照明系统的分层架构设计，涵盖设备层、网关层与平台层的技术选型。",
+    "cover": "",
+    "excerpt": "从边缘设备到云平台，详解智能照明系统的分层架构设计，涵盖设备层、网关层与平台层的技术选型。"
   },
   {
     "title": "3C认证申请全流程",
     "slug": "3c-certification-process",
     "date": "2025-02-18",
     "category": "认证合规",
-    "description": "LED驱动电源3C认证的申请条件、所需材料、测试项目与时间周期详解，助力企业快速通过认证。"
+    "description": "LED驱动电源3C认证的申请条件、所需材料、测试项目与时间周期详解，助力企业快速通过认证。",
+    "cover": "",
+    "excerpt": "LED驱动电源3C认证的申请条件、所需材料、测试项目与时间周期详解，助力企业快速通过认证。"
   },
   {
     "title": "智能调光技术对比：PWM vs 0-10V vs DALI",
     "slug": "smart-dimming-technology-comparison",
     "date": "2025-01-25",
     "category": "技术对比",
-    "description": "三种主流调光技术的工作原理、优缺点与适用场景对比分析，帮助工程师做出最佳技术选择。"
+    "description": "三种主流调光技术的工作原理、优缺点与适用场景对比分析，帮助工程师做出最佳技术选择。",
+    "cover": "",
+    "excerpt": "三种主流调光技术的工作原理、优缺点与适用场景对比分析，帮助工程师做出最佳技术选择。"
   }
 ]

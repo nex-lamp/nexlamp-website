@@ -127,13 +127,14 @@ function parseFrontMatter(content) {
     excerpt: ''
   };
 
-  const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
+  const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (fmMatch) {
     const fm = fmMatch[1];
     fm.split('\n').forEach(function (line) {
-      const parts = line.split(':');
-      const key = parts[0].trim();
-      const value = parts.slice(1).join(':').trim();
+      const colonIndex = line.indexOf(':');
+      if (colonIndex === -1) return;
+      const key = line.substring(0, colonIndex).trim();
+      const value = line.substring(colonIndex + 1).trim();
       if (key && value) {
         meta[key] = value;
       }
@@ -214,7 +215,7 @@ function build() {
   }
 
   const mdFiles = fs.readdirSync(POSTS_DIR).filter(function (f) {
-    return f.endsWith('.md');
+    return f.endsWith('.md') && f !== 'TEMPLATE.md';
   });
 
   if (mdFiles.length === 0) {
@@ -244,7 +245,9 @@ function build() {
       slug: p.slug,
       date: p.date,
       category: p.category,
-      description: p.description
+      description: p.description,
+      cover: p.cover || '',
+      excerpt: p.excerpt || p.description || ''
     };
   });
 
