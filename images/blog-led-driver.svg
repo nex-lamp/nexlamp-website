@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#1a365d"/>
+  <rect x="2" y="2" width="396" height="246" fill="none" stroke="#f0b429" stroke-width="1" rx="4"/>
+  <text x="200" y="115" font-family="Arial,sans-serif" font-size="20" fill="#f0b429" text-anchor="middle" dominant-baseline="middle">LED驱动电源选型指南</text>
+  <text x="200" y="145" font-family="Arial,sans-serif" font-size="12" fill="#a0aec0" text-anchor="middle" dominant-baseline="middle">NEXLAMP</text>
+</svg>
