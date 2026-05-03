@@ -31,7 +31,7 @@ const BLOG_PAGE = path.join(__dirname, 'blog.html');
 
 // --- Simple Markdown Parser (no external deps) ---
 function parseMarkdown(md) {
-  let html = md;
+  let html = md.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
 
   // Code blocks (```lang ... ```)
   html = html.replace(/```(\w*)\n([\s\S]*?)```/g, function (_, lang, code) {
@@ -73,7 +73,6 @@ function parseMarkdown(md) {
   html = html.replace(/^---$/gm, '<hr>');
 
   // Tables (improved)
-  // Pass 1: convert table rows, detect header rows (immediately before separator)
   const lines = html.split('\n');
   const processedLines = [];
   for (let i = 0; i < lines.length; i++) {

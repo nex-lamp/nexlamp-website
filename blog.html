@@ -148,16 +148,6 @@
       var paginationEl = document.getElementById('blog-pagination');
       if (!listEl) return;
 
-      // Category tag color mapping
-      var categoryColors = {
-        '选型指南': '#0056b3',
-        '认证合规': '#e67e22',
-        '协议解析': '#27ae60',
-        '技术对比': '#8e44ad',
-        '维护指南': '#c0392b',
-        '系统设计': '#2980b9'
-      };
-
       // Format date for display
       function formatDate(dateStr) {
         var d = new Date(dateStr);
@@ -176,11 +166,6 @@
 
       function getCategoryName(cat) {
         return categoryNames[cat] || cat;
-      }
-
-      function getCategoryColor(cat) {
-        var name = getCategoryName(cat);
-        return categoryColors[name] || '#0056b3';
       }
 
       // Default cover images by category
@@ -211,7 +196,6 @@
           var html = '';
           posts.forEach(function(post) {
             var catName = getCategoryName(post.category);
-            var catColor = getCategoryColor(post.category);
             var cover = getCover(post);
             var excerpt = post.excerpt || post.description || '';
 
@@ -222,7 +206,7 @@
             html += '  <div class="blog-item-body">';
             html += '    <div class="blog-meta">';
             html += '      <time datetime="' + post.date + '">' + formatDate(post.date) + '</time>';
-            html += '      <span class="blog-tag" style="background:' + catColor + '">' + catName + '</span>';
+            html += '      <span class="blog-tag">' + catName + '</span>';
             html += '    </div>';
             html += '    <h3><a href="dist/blog/' + post.slug + '.html">' + post.title + '</a></h3>';
             html += '    <p>' + excerpt + '</p>';

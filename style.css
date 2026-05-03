@@ -651,6 +651,12 @@ ul, ol {
     border-radius: 100px;
 }
 
+.blog-tag {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
 .post-title {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
@@ -908,6 +914,113 @@ ul, ol {
 .article-content th {
     background: var(--bg-light);
     font-weight: 600;
+}
+
+/* Post Content (blog article) */
+.post-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.post-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem;
+}
+
+.post-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.post-content ul, .post-content ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+.post-content blockquote {
+    border-left: 4px solid var(--primary);
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    background: var(--bg-light);
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.post-content pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 1.25rem;
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.post-content code {
+    background: var(--bg-light);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.post-content th,
+.post-content td {
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.post-content th {
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.post-content td {
+    background: #fff;
+}
+
+.post-content tr:nth-child(even) td {
+    background: var(--bg-light);
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    margin: 1rem 0;
+}
+
+.post-content strong {
+    font-weight: 600;
+}
+
+.post-content hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
 }
 
 /* Article Footer */
