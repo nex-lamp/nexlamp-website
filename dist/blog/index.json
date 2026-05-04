@@ -1,5 +1,14 @@
 [
   {
+    "title": "大功率工矿灯如何省电？物联网调光技术让电费降一半",
+    "slug": "iot-dimming-save-power-for-industrial-lighting",
+    "date": "2026-05-04",
+    "category": "系统设计",
+    "description": "大功率工矿灯物联网调光省电方案，单灯控制+人体感应+照度联动，节电50%以上。",
+    "cover": "images/smart-industrial-light.jpg",
+    "excerpt": "大功率工矿灯的传统控制方式浪费严重，物联网调光技术通过单灯控制、人体感应、照度联动，可实现50%以上的节电率。"
+  },
+  {
     "title": "涂鸦恒流驱动电源选型指南：7-50W全功率段方案解析",
     "slug": "tuya-constant-current-driver-selection-guide",
     "date": "2026-05-03",
