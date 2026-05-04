@@ -169,22 +169,10 @@
                     <a href="blog.html" class="link-more">查看全部 →</a>
                 </div>
                 <div class="grid grid-3" id="latest-articles">
-                    <!-- Articles will be populated by JavaScript -->
-                    <article class="article-card">
-                        <time datetime="2025-04-15">2025年4月15日</time>
-                        <h3><a href="blog.html">DALI-2协议兼容性指南</a></h3>
-                        <p>深入解析DALI-2协议在智能照明系统中的应用，以及与其他协议的兼容性测试方法。</p>
-                    </article>
-                    <article class="article-card">
-                        <time datetime="2025-04-08">2025年4月8日</time>
-                        <h3><a href="blog.html">LED驱动电源选型指南</a></h3>
-                        <p>如何根据灯具功率、调光需求和安装环境选择合适的LED驱动电源。</p>
-                    </article>
-                    <article class="article-card">
-                        <time datetime="2025-03-20">2025年3月20日</time>
-                        <h3><a href="blog.html">常见故障排查与维护</a></h3>
-                        <p>LED驱动电源常见故障现象、原因分析与快速排查方法汇总。</p>
-                    </article>
+                    <!-- 最新3篇文章由 JavaScript 从 dist/blog/index.json 动态加载 -->
+                    <noscript>
+                        <p>请启用 JavaScript 以查看最新文章，或访问 <a href="blog.html">技术文章</a> 页面。</p>
+                    </noscript>
                 </div>
             </div>
         </section>
@@ -236,5 +224,54 @@
     </footer>
 
     <script src="main.js"></script>
+    <script>
+    (function() {
+      var container = document.getElementById('latest-articles');
+      if (!container) return;
+
+      function formatDate(dateStr) {
+        var d = new Date(dateStr);
+        return d.getFullYear() + '年' + (d.getMonth() + 1) + '月' + d.getDate() + '日';
+      }
+
+      var categoryNames = {
+        'selection': '选型指南', 'protocol': '协议解析',
+        'troubleshooting': '维护指南', 'certification': '认证合规',
+        'comparison': '技术对比', 'architecture': '系统设计', 'iot': '物联网应用'
+      };
+
+      function getCategoryName(cat) {
+        return categoryNames[cat] || cat;
+      }
+
+      fetch('dist/blog/index.json')
+        .then(function(res) { return res.json(); })
+        .then(function(posts) {
+          if (!posts || posts.length === 0) return;
+
+          // Only show the latest 3
+          var latest = posts.slice(0, 3);
+          var html = '';
+
+          latest.forEach(function(post) {
+            var catName = getCategoryName(post.category);
+            var excerpt = post.excerpt || post.description || '';
+            html += '<article class="article-card">';
+            html += '  <div class="article-card-meta">';
+            html += '    <time datetime="' + post.date + '">' + formatDate(post.date) + '</time>';
+            html += '    <span class="blog-tag">' + catName + '</span>';
+            html += '  </div>';
+            html += '  <h3><a href="dist/blog/' + post.slug + '.html">' + post.title + '</a></h3>';
+            html += '  <p>' + excerpt + '</p>';
+            html += '</article>';
+          });
+
+          container.innerHTML = html;
+        })
+        .catch(function(err) {
+          console.error('Failed to load latest articles:', err);
+        });
+    })();
+    </script>
 </body>
 </html>
