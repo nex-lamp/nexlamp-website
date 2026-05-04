@@ -144,9 +144,17 @@
     <script src="main.js"></script>
     <script>
     (function() {
+      var POSTS_PER_PAGE = 6;
       var listEl = document.getElementById('blog-list');
       var paginationEl = document.getElementById('blog-pagination');
       if (!listEl) return;
+
+      // Parse current page from URL
+      function getCurrentPage() {
+        var params = new URLSearchParams(window.location.search);
+        var p = parseInt(params.get('page'), 10);
+        return (p > 0) ? p : 1;
+      }
 
       // Format date for display
       function formatDate(dateStr) {
@@ -161,7 +169,8 @@
         'troubleshooting': '维护指南',
         'certification': '认证合规',
         'comparison': '技术对比',
-        'architecture': '系统设计'
+        'architecture': '系统设计',
+        'iot': '物联网应用'
       };
 
       function getCategoryName(cat) {
@@ -175,7 +184,8 @@
         '协议解析': 'images/blog-dali2.svg',
         '技术对比': 'images/blog-dimming-tech.svg',
         '维护指南': 'images/blog-troubleshooting.svg',
-        '系统设计': 'images/blog-iot-architecture.svg'
+        '系统设计': 'images/blog-iot-architecture.svg',
+        '物联网应用': 'images/blog-iot-architecture.svg'
       };
 
       function getCover(post) {
@@ -184,7 +194,65 @@
         return defaultCovers[name] || 'images/blog-led-driver.svg';
       }
 
-      // Fetch and render
+      // Build a single blog item card
+      function renderPost(post) {
+        var catName = getCategoryName(post.category);
+        var cover = getCover(post);
+        var excerpt = post.excerpt || post.description || '';
+
+        return '<article class="blog-item">'
+          + '  <a href="dist/blog/' + post.slug + '.html" class="blog-item-link">'
+          + '    <div class="blog-item-image">'
+          + '      <img src="' + cover + '" alt="' + post.title + '" loading="lazy">'
+          + '    </div>'
+          + '    <div class="blog-item-body">'
+          + '      <div class="blog-meta">'
+          + '        <time datetime="' + post.date + '">' + formatDate(post.date) + '</time>'
+          + '        <span class="blog-tag">' + catName + '</span>'
+          + '      </div>'
+          + '      <h3>' + post.title + '</h3>'
+          + '      <p>' + excerpt + '</p>'
+          + '    </div>'
+          + '  </a>'
+          + '</article>';
+      }
+
+      // Render pagination
+      function renderPagination(currentPage, totalPages) {
+        if (totalPages <= 1) {
+          paginationEl.style.display = 'none';
+          return;
+        }
+        paginationEl.style.display = 'flex';
+
+        var html = '';
+
+        // Previous page
+        if (currentPage > 1) {
+          html += '<a href="blog.html?page=' + (currentPage - 1) + '" class="page-link page-prev" rel="prev">&laquo; 上一页</a>';
+        }
+
+        // Page numbers
+        for (var i = 1; i <= totalPages; i++) {
+          if (i === currentPage) {
+            html += '<span class="page-current">' + i + '</span>';
+          } else {
+            html += '<a href="blog.html?page=' + i + '" class="page-link">' + i + '</a>';
+          }
+        }
+
+        // Next page
+        if (currentPage < totalPages) {
+          html += '<a href="blog.html?page=' + (currentPage + 1) + '" class="page-link page-next" rel="next">下一页 &raquo;</a>';
+        }
+
+        // Archive link
+        html += '<a href="blog-archive.html" class="page-link page-archive">全部归档</a>';
+
+        paginationEl.innerHTML = html;
+      }
+
+      // Fetch and render with pagination
       fetch('dist/blog/index.json')
         .then(function(res) { return res.json(); })
         .then(function(posts) {
@@ -193,28 +261,26 @@
             return;
           }
 
-          var html = '';
-          posts.forEach(function(post) {
-            var catName = getCategoryName(post.category);
-            var cover = getCover(post);
-            var excerpt = post.excerpt || post.description || '';
+          var currentPage = getCurrentPage();
+          var totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+          if (currentPage > totalPages) currentPage = totalPages;
 
-            html += '<article class="blog-item">';
-            html += '  <div class="blog-item-image">';
-            html += '    <img src="' + cover + '" alt="' + post.title + '" loading="lazy">';
-            html += '  </div>';
-            html += '  <div class="blog-item-body">';
-            html += '    <div class="blog-meta">';
-            html += '      <time datetime="' + post.date + '">' + formatDate(post.date) + '</time>';
-            html += '      <span class="blog-tag">' + catName + '</span>';
-            html += '    </div>';
-            html += '    <h3><a href="dist/blog/' + post.slug + '.html">' + post.title + '</a></h3>';
-            html += '    <p>' + excerpt + '</p>';
-            html += '  </div>';
-            html += '</article>';
+          var start = (currentPage - 1) * POSTS_PER_PAGE;
+          var end = start + POSTS_PER_PAGE;
+          var pagePosts = posts.slice(start, end);
+
+          var html = '';
+          pagePosts.forEach(function(post) {
+            html += renderPost(post);
           });
 
           listEl.innerHTML = html;
+          renderPagination(currentPage, totalPages);
+
+          // Update page title for non-first pages
+          if (currentPage > 1) {
+            document.title = '技术文章 - 第' + currentPage + '页 | 耐利普科技';
+          }
         })
         .catch(function(err) {
           console.error('Failed to load blog index:', err);
