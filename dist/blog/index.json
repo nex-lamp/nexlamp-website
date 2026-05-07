@@ -5,7 +5,7 @@
     "date": "2026-05-07",
     "category": "comparison",
     "description": "全面对比隔离LED驱动、非隔离LED驱动与DOB驱动的原理、安全性、效率、成本及应用场景，给出不同场景的选型推荐。",
-    "cover": "images/blog-dimming-tech.svg",
+    "cover": "images/led-driver-comparison.png",
     "excerpt": "隔离、非隔离与DOB是LED驱动电源的三大主流架构，安全性与成本之间的权衡是选型的核心。本文从工作原理、安全认证、效率成本到应用场景进行全维度对比，帮你快速锁定适合项目的驱动方案。"
   },
   {
