@@ -1,7 +1,7 @@
 [
   {
     "title": "隔离LED驱动电源 vs 非隔离 vs DOB：三类驱动方案全面对比与选型推荐",
-    "slug": "隔离led驱动电源-vs-非隔离-vs-dob三类驱动方案全面对比与选型推荐",
+    "slug": "isolated-vs-non-isolated-vs-dob-led-driver-comparison",
     "date": "2026-05-07",
     "category": "comparison",
     "description": "全面对比隔离LED驱动、非隔离LED驱动与DOB驱动的原理、安全性、效率、成本及应用场景，给出不同场景的选型推荐。",
