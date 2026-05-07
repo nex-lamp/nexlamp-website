@@ -7,6 +7,7 @@ excerpt: 隔离、非隔离与DOB是LED驱动电源的三大主流架构，安�
 description: 全面对比隔离LED驱动、非隔离LED驱动与DOB驱动的原理、安全性、效率、成本及应用场景，给出不同场景的选型推荐。
 keywords: 隔离LED驱动,非隔离LED驱动,DOB驱动,LED电源选型,去电源化,智能照明
 cover: images/blog-dimming-tech.svg
+slug: isolated-vs-non-isolated-vs-dob-led-driver-comparison
 ---
 
 ## 引言
