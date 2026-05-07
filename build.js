@@ -256,6 +256,50 @@ function build() {
     'utf-8'
   );
   console.log('  \u2713 Generated: index.json (blog index data)\n');
+
+  // --- Auto-generate sitemap.xml ---
+  generateSitemap(posts);
+}
+
+// --- Generate sitemap.xml ---
+function generateSitemap(posts) {
+  const SITE_URL = 'https://www.nexlamp.com';
+  const today = new Date().toISOString().split('T')[0];
+
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n';
+
+  // Static pages
+  const staticPages = [
+    { loc: '/', changefreq: 'weekly', priority: '1.0' },
+    { loc: '/products.html', changefreq: 'monthly', priority: '0.9' },
+    { loc: '/blog.html', changefreq: 'daily', priority: '0.8' },
+    { loc: '/blog-archive.html', changefreq: 'weekly', priority: '0.7' }
+  ];
+
+  staticPages.forEach(function (page) {
+    xml += '  <url>\n';
+    xml += '    <loc>' + SITE_URL + page.loc + '</loc>\n';
+    xml += '    <changefreq>' + page.changefreq + '</changefreq>\n';
+    xml += '    <priority>' + page.priority + '</priority>\n';
+    xml += '  </url>\n\n';
+  });
+
+  // Blog posts
+  posts.forEach(function (post) {
+    xml += '  <url>\n';
+    xml += '    <loc>' + SITE_URL + '/dist/blog/' + post.slug + '.html</loc>\n';
+    xml += '    <lastmod>' + post.date + '</lastmod>\n';
+    xml += '    <changefreq>monthly</changefreq>\n';
+    xml += '    <priority>0.7</priority>\n';
+    xml += '  </url>\n\n';
+  });
+
+  xml += '</urlset>';
+
+  const sitemapPath = path.join(__dirname, 'sitemap.xml');
+  fs.writeFileSync(sitemapPath, xml, 'utf-8');
+  console.log('  \u2713 Generated: sitemap.xml (' + (staticPages.length + posts.length) + ' URLs)\n');
 }
 
 // --- Watch Mode ---
