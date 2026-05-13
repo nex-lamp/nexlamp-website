@@ -1020,6 +1020,22 @@ ul, ol {
 }
 
 /* Article Layout */
+
+/* Post cover image */
+.post-cover {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.post-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .article-layout {
     display: grid;
     gap: 2rem;

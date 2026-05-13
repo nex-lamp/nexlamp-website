@@ -173,6 +173,16 @@ function buildPost(filePath, template) {
   const dateObj = new Date(meta.date);
   const dateDisplay = dateObj.getFullYear() + '\u5E74' + (dateObj.getMonth() + 1) + '\u6708' + dateObj.getDate() + '\u65E5';
 
+  // Build cover image HTML (visible in article body)
+  let coverHtml = '';
+  if (meta.cover) {
+    let coverSrc = meta.cover;
+    if (coverSrc.startsWith('images/')) {
+      coverSrc = '../../' + coverSrc;
+    }
+    coverHtml = '<div class="post-cover"><img src="' + coverSrc + '" alt="' + meta.title + '"></div>';
+  }
+
   // Build related posts list (placeholder)
   const relatedHtml = '<li><a href="../../blog.html">\u6D4F\u89C8\u6240\u6709\u6587\u7AE0</a></li>';
 
@@ -186,6 +196,7 @@ function buildPost(filePath, template) {
     .replace(/\{\{date\}\}/g, dateDisplay)
     .replace(/\{\{category\}\}/g, meta.category)
     .replace(/\{\{cover\}\}/g, meta.cover || 'images/blog-default.jpg')
+    .replace(/\{\{coverImage\}\}/g, coverHtml)
     .replace(/\{\{content\}\}/g, htmlContent)
     .replace(/\{\{relatedPosts\}\}/g, relatedHtml);
 
