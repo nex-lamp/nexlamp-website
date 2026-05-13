@@ -773,6 +773,7 @@ ul, ol {
 .blog-item-image {
     overflow: hidden;
     background: var(--bg-light);
+    aspect-ratio: 4 / 3;
 }
 
 .blog-item-image img {
