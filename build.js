@@ -54,7 +54,14 @@ function parseMarkdown(md) {
   html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
 
   // Images (MUST be before links, because ![alt](url) contains [alt](url))
-  html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" loading="lazy">');
+  // Fix relative paths: Markdown uses "images/xxx" but blog HTML is in dist/blog/,
+  // so "images/" must become "../../images/" to resolve correctly
+  html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, function(match, alt, src) {
+    if (src.startsWith('images/')) {
+      src = '../../' + src;
+    }
+    return '<img src="' + src + '" alt="' + alt + '" loading="lazy">';
+  });
 
   // Links
   html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
