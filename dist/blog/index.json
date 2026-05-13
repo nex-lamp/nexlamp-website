@@ -1,5 +1,14 @@
 [
   {
+    "title": "AI加持照明领域后，会带来哪些变化",
+    "slug": "ai加持照明领域后会带来哪些变化",
+    "date": "2026-05-13",
+    "category": "技术对比",
+    "description": "深度解析AI对照明行业的5大变革：自适应调光、预测性维护、30%+节能、无感体验、数据洞察，附技术架构图与场景对比",
+    "cover": "images/blog-ai-lighting-evolution.svg",
+    "excerpt": "AI正在从底层重塑照明行业——从手动开关到自适应调光，从被动维修到预测性维护，从粗放管理到精准节能，AI让照明从\"可控工具\"进化为\"空间智能服务\"。"
+  },
+  {
     "title": "隔离LED驱动电源 vs 非隔离 vs DOB：三类驱动方案全面对比与选型推荐",
     "slug": "isolated-vs-non-isolated-vs-dob-led-driver-comparison",
     "date": "2026-05-07",

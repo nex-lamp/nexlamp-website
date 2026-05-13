@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4ff"/>
+      <stop offset="100%" style="stop-color:#e8eeff"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#94a3b8"/>
+      <stop offset="100%" style="stop-color:#64748b"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" rx="12" fill="url(#bg)"/>
+  <!-- Timeline line -->
+  <line x1="80" y1="200" x2="720" y2="200" stroke="#cbd5e1" stroke-width="3" stroke-dasharray="8,4"/>
+  <!-- Arrow -->
+  <polygon points="720,194 740,200 720,206" fill="#cbd5e1"/>
+  <!-- Stage 1: Traditional -->
+  <rect x="60" y="100" width="160" height="200" rx="10" fill="white" stroke="#94a3b8" stroke-width="2" opacity="0.95"/>
+  <rect x="60" y="100" width="160" height="6" rx="3" fill="url(#g1)"/>
+  <text x="140" y="140" text-anchor="middle" font-size="15" font-weight="bold" fill="#475569">传统照明</text>
+  <line x1="100" y1="155" x2="180" y2="155" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="140" y="180" text-anchor="middle" font-size="11" fill="#64748b">💡 手动开关</text>
+  <text x="140" y="205" text-anchor="middle" font-size="11" fill="#64748b">📋 固定亮度</text>
+  <text x="140" y="230" text-anchor="middle" font-size="11" fill="#64748b">⚡ 无节能策略</text>
+  <text x="140" y="255" text-anchor="middle" font-size="11" fill="#64748b">🔧 人工维护</text>
+  <text x="140" y="280" text-anchor="middle" font-size="10" fill="#94a3b8">~2015年以前</text>
+  <!-- Stage 2: Smart -->
+  <rect x="280" y="100" width="160" height="200" rx="10" fill="white" stroke="#3b82f6" stroke-width="2" opacity="0.95"/>
+  <rect x="280" y="100" width="160" height="6" rx="3" fill="url(#g2)"/>
+  <text x="360" y="140" text-anchor="middle" font-size="15" font-weight="bold" fill="#1e40af">智能照明</text>
+  <line x1="320" y1="155" x2="400" y2="155" stroke="#dbeafe" stroke-width="1"/>
+  <text x="360" y="180" text-anchor="middle" font-size="11" fill="#3b82f6">📱 APP/语音控制</text>
+  <text x="360" y="205" text-anchor="middle" font-size="11" fill="#3b82f6">🗓️ 定时调光</text>
+  <text x="360" y="230" text-anchor="middle" font-size="11" fill="#3b82f6">📊 基础能耗监测</text>
+  <text x="360" y="255" text-anchor="middle" font-size="11" fill="#3b82f6">🔗 IoT互联</text>
+  <text x="360" y="280" text-anchor="middle" font-size="10" fill="#93c5fd">2015~2024年</text>
+  <!-- Stage 3: AI -->
+  <rect x="500" y="100" width="180" height="200" rx="10" fill="white" stroke="#7c3aed" stroke-width="2" opacity="0.95"/>
+  <rect x="500" y="100" width="180" height="6" rx="3" fill="url(#g3)"/>
+  <text x="590" y="140" text-anchor="middle" font-size="15" font-weight="bold" fill="#5b21b6">AI 照明</text>
+  <line x1="540" y1="155" x2="640" y2="155" stroke="#ede9fe" stroke-width="1"/>
+  <text x="590" y="180" text-anchor="middle" font-size="11" fill="#7c3aed">🧠 自适应调光</text>
+  <text x="590" y="205" text-anchor="middle" font-size="11" fill="#7c3aed">👁️ 环境感知</text>
+  <text x="590" y="230" text-anchor="middle" font-size="11" fill="#7c3aed">🔮 预测性维护</text>
+  <text x="590" y="255" text-anchor="middle" font-size="11" fill="#7c3aed">📈 节能30%+</text>
+  <text x="590" y="280" text-anchor="middle" font-size="10" fill="#c4b5fd">2025年~未来</text>
+  <!-- Evolution arrows between stages -->
+  <path d="M220,200 Q250,160 280,200" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="278,194 288,200 278,206" fill="#3b82f6"/>
+  <path d="M440,200 Q470,160 500,200" fill="none" stroke="#7c3aed" stroke-width="2"/>
+  <polygon points="498,194 508,200 498,206" fill="#7c3aed"/>
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e293b">照明技术演进：从传统开关到AI自适应</text>
+  <text x="400" y="68" text-anchor="middle" font-size="12" fill="#64748b">AI 正在从「可控」走向「自决策」，照明从被动执行变为主动服务</text>
+  <!-- Bottom note -->
+  <text x="400" y="370" text-anchor="middle" font-size="10" fill="#94a3b8">数据来源：行业研究报告及耐利普科技项目实践</text>
+</svg>
