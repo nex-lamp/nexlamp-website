@@ -1,67 +1,140 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="'Consolas','Microsoft YaHei',monospace">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0fdf4"/>
-      <stop offset="100%" style="stop-color:#dcfce7"/>
+    <linearGradient id="bgC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f1d32"/>
     </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#0e7490"/>
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#5b21b6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="gridC" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e3a5f" stroke-width="0.25" opacity="0.4"/>
+    </pattern>
   </defs>
-  <rect width="800" height="420" rx="12" fill="url(#bg)"/>
+  <!-- Background -->
+  <rect width="900" height="500" rx="8" fill="url(#bgC)"/>
+  <rect width="900" height="500" rx="8" fill="url(#gridC)"/>
   <!-- Title -->
-  <text x="400" y="38" text-anchor="middle" font-size="17" font-weight="bold" fill="#1e293b">AI照明 vs 传统智能照明：核心能力对比</text>
-  <text x="400" y="58" text-anchor="middle" font-size="11" fill="#64748b">AI不是取代智能照明，而是在IoT基础上叠加认知和决策能力</text>
-  <!-- Table header -->
-  <rect x="40" y="75" width="150" height="40" rx="6" fill="#1e293b"/>
-  <text x="115" y="100" text-anchor="middle" font-size="12" font-weight="bold" fill="white">对比维度</text>
-  <rect x="195" y="75" width="280" height="40" rx="6" fill="#3b82f6"/>
-  <text x="335" y="100" text-anchor="middle" font-size="12" font-weight="bold" fill="white">传统智能照明</text>
-  <rect x="480" y="75" width="280" height="40" rx="6" fill="#7c3aed"/>
-  <text x="620" y="100" text-anchor="middle" font-size="12" font-weight="bold" fill="white">AI照明</text>
-  <!-- Row 1 -->
-  <rect x="40" y="120" width="150" height="50" rx="0" fill="#f1f5f9"/>
-  <text x="115" y="150" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">调光策略</text>
-  <rect x="195" y="120" width="280" height="50" fill="white" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="335" y="143" text-anchor="middle" font-size="11" fill="#475569">预设规则触发</text>
-  <text x="335" y="160" text-anchor="middle" font-size="9" fill="#94a3b8">定时/场景模式/手动</text>
-  <rect x="480" y="120" width="280" height="50" fill="white" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="620" y="143" text-anchor="middle" font-size="11" fill="#5b21b6" font-weight="bold">实时自适应调光</text>
-  <text x="620" y="160" text-anchor="middle" font-size="9" fill="#a78bfa">环境+行为+偏好融合</text>
-  <!-- Row 2 -->
-  <rect x="40" y="173" width="150" height="50" fill="#f1f5f9"/>
-  <text x="115" y="203" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">节能效果</text>
-  <rect x="195" y="173" width="280" height="50" fill="#fafafa" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="335" y="196" text-anchor="middle" font-size="11" fill="#475569">10-20% 节能</text>
-  <text x="335" y="213" text-anchor="middle" font-size="9" fill="#94a3b8">人走灯灭+定时降亮</text>
-  <rect x="480" y="173" width="280" height="50" fill="#fafafa" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="620" y="196" text-anchor="middle" font-size="11" fill="#5b21b6" font-weight="bold">30-50% 节能</text>
-  <text x="620" y="213" text-anchor="middle" font-size="9" fill="#a78bfa">精细调度+预测优化</text>
-  <!-- Row 3 -->
-  <rect x="40" y="226" width="150" height="50" fill="#f1f5f9"/>
-  <text x="115" y="256" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">维护方式</text>
-  <rect x="195" y="226" width="280" height="50" fill="white" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="335" y="249" text-anchor="middle" font-size="11" fill="#475569">被动维修</text>
-  <text x="335" y="266" text-anchor="middle" font-size="9" fill="#94a3b8">故障后人工排查</text>
-  <rect x="480" y="226" width="280" height="50" fill="white" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="620" y="249" text-anchor="middle" font-size="11" fill="#5b21b6" font-weight="bold">预测性维护</text>
-  <text x="620" y="266" text-anchor="middle" font-size="9" fill="#a78bfa">异常检测+提前告警</text>
-  <!-- Row 4 -->
-  <rect x="40" y="279" width="150" height="50" fill="#f1f5f9"/>
-  <text x="115" y="309" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">用户体验</text>
-  <rect x="195" y="279" width="280" height="50" fill="#fafafa" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="335" y="302" text-anchor="middle" font-size="11" fill="#475569">主动操作为主</text>
-  <text x="335" y="319" text-anchor="middle" font-size="9" fill="#94a3b8">APP/面板/语音指令</text>
-  <rect x="480" y="279" width="280" height="50" fill="#fafafa" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="620" y="302" text-anchor="middle" font-size="11" fill="#5b21b6" font-weight="bold">无感体验</text>
-  <text x="620" y="319" text-anchor="middle" font-size="9" fill="#a78bfa">自动适配需求、零操作</text>
-  <!-- Row 5 -->
-  <rect x="40" y="332" width="150" height="50" fill="#f1f5f9"/>
-  <text x="115" y="362" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">数据价值</text>
-  <rect x="195" y="332" width="280" height="50" fill="white" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="335" y="355" text-anchor="middle" font-size="11" fill="#475569">基础状态监控</text>
-  <text x="335" y="372" text-anchor="middle" font-size="9" fill="#94a3b8">在线/离线/电量</text>
-  <rect x="480" y="332" width="280" height="50" fill="white" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="620" y="355" text-anchor="middle" font-size="11" fill="#5b21b6" font-weight="bold">深度洞察</text>
-  <text x="620" y="372" text-anchor="middle" font-size="9" fill="#a78bfa">行为模式/空间优化/ESG</text>
-  <!-- Bottom insight -->
-  <rect x="120" y="392" width="560" height="22" rx="11" fill="#7c3aed" opacity="0.1"/>
-  <text x="400" y="407" text-anchor="middle" font-size="10" fill="#7c3aed" font-weight="bold">💡 关键跃迁：从「人控灯」到「灯懂人」——AI让照明从工具升级为空间智能服务</text>
+  <rect x="0" y="0" width="900" height="46" fill="#0d1b2a" opacity="0.8"/>
+  <rect x="0" y="42" width="900" height="3" fill="#7c3aed" opacity="0.3"/>
+  <text x="450" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#e2e8f0" letter-spacing="2">能力雷达对比 · CAPABILITY RADAR ANALYSIS</text>
+  <!-- Radar chart - Smart IoT -->
+  <g transform="translate(240,280)">
+    <!-- Pentagon grid -->
+    <polygon points="0,-140 133,-43 82,113 -82,113 -133,-43" fill="none" stroke="#1e3a5f" stroke-width="0.5"/>
+    <polygon points="0,-105 100,-32 62,85 -62,85 -100,-32" fill="none" stroke="#1e3a5f" stroke-width="0.5"/>
+    <polygon points="0,-70 66,-22 41,57 -41,57 -66,-22" fill="none" stroke="#1e3a5f" stroke-width="0.5"/>
+    <polygon points="0,-35 33,-11 21,28 -21,28 -33,-11" fill="none" stroke="#1e3a5f" stroke-width="0.5"/>
+    <!-- Axes -->
+    <line x1="0" y1="0" x2="0" y2="-140" stroke="#1e3a5f" stroke-width="0.5"/>
+    <line x1="0" y1="0" x2="133" y2="-43" stroke="#1e3a5f" stroke-width="0.5"/>
+    <line x1="0" y1="0" x2="82" y2="113" stroke="#1e3a5f" stroke-width="0.5"/>
+    <line x1="0" y1="0" x2="-82" y2="113" stroke="#1e3a5f" stroke-width="0.5"/>
+    <line x1="0" y1="0" x2="-133" y2="-43" stroke="#1e3a5f" stroke-width="0.5"/>
+    <!-- Axis labels -->
+    <text x="0" y="-150" text-anchor="middle" font-size="9" fill="#94a3b8">调光智能度</text>
+    <text x="148" y="-43" text-anchor="start" font-size="9" fill="#94a3b8">节能效率</text>
+    <text x="92" y="128" text-anchor="start" font-size="9" fill="#94a3b8">维护能力</text>
+    <text x="-92" y="128" text-anchor="end" font-size="9" fill="#94a3b8">用户体验</text>
+    <text x="-148" y="-43" text-anchor="end" font-size="9" fill="#94a3b8">数据价值</text>
+    <!-- Scale labels -->
+    <text x="8" y="-35" font-size="7" fill="#334155">25</text>
+    <text x="8" y="-70" font-size="7" fill="#334155">50</text>
+    <text x="8" y="-105" font-size="7" fill="#334155">75</text>
+    <text x="8" y="-140" font-size="7" fill="#334155">100</text>
+    <!-- Smart IoT data (lower) -->
+    <polygon points="0,-56 53,-17 33,45 -25,23 -40,-13" fill="#22d3ee" fill-opacity="0.12" stroke="#22d3ee" stroke-width="1.5" filter="url(#glow)"/>
+    <!-- Data points Smart -->
+    <circle cx="0" cy="-56" r="3" fill="#22d3ee" opacity="0.8"/>
+    <circle cx="53" cy="-17" r="3" fill="#22d3ee" opacity="0.8"/>
+    <circle cx="33" cy="45" r="3" fill="#22d3ee" opacity="0.8"/>
+    <circle cx="-25" cy="23" r="3" fill="#22d3ee" opacity="0.8"/>
+    <circle cx="-40" cy="-13" r="3" fill="#22d3ee" opacity="0.8"/>
+    <!-- AI data (higher) -->
+    <polygon points="0,-126 113,-37 62,85 -62,85 -106,-34" fill="#a78bfa" fill-opacity="0.1" stroke="#a78bfa" stroke-width="2" filter="url(#glow)"/>
+    <!-- Data points AI -->
+    <circle cx="0" cy="-126" r="4" fill="#a78bfa" opacity="0.9"/>
+    <circle cx="113" cy="-37" r="4" fill="#a78bfa" opacity="0.9"/>
+    <circle cx="62" cy="85" r="4" fill="#a78bfa" opacity="0.9"/>
+    <circle cx="-62" cy="85" r="4" fill="#a78bfa" opacity="0.9"/>
+    <circle cx="-106" cy="-34" r="4" fill="#a78bfa" opacity="0.9"/>
+    <!-- Value labels on AI points -->
+    <text x="6" y="-130" font-size="8" fill="#c4b5fd" font-weight="bold">90</text>
+    <text x="118" y="-34" font-size="8" fill="#c4b5fd" font-weight="bold">85</text>
+    <text x="68" y="82" font-size="8" fill="#c4b5fd" font-weight="bold">75</text>
+    <text x="-72" y="82" font-size="8" fill="#c4b5fd" font-weight="bold">75</text>
+    <text x="-118" y="-31" font-size="8" fill="#c4b5fd" font-weight="bold">80</text>
+    <!-- Value labels on Smart points -->
+    <text x="6" y="-52" font-size="7" fill="#67e8f9">40</text>
+    <text x="58" y="-14" font-size="7" fill="#67e8f9">40</text>
+    <text x="38" y="42" font-size="7" fill="#67e8f9">40</text>
+    <text x="-32" y="20" font-size="7" fill="#67e8f9">20</text>
+    <text x="-48" y="-10" font-size="7" fill="#67e8f9">30</text>
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="2" fill="#475569"/>
+  </g>
+  <!-- Legend -->
+  <g transform="translate(580,80)">
+    <rect width="280" height="230" rx="4" fill="#0d1b2a" stroke="#1e3a5f" stroke-width="0.5" opacity="0.9"/>
+    <rect width="280" height="2" fill="#334155"/>
+    <text x="140" y="22" text-anchor="middle" font-size="10" font-weight="bold" fill="#e2e8f0" letter-spacing="1">量化指标 · METRICS</text>
+    <!-- Smart legend -->
+    <rect x="15" y="38" width="14" height="14" rx="2" fill="#22d3ee" opacity="0.3" stroke="#22d3ee" stroke-width="1"/>
+    <text x="38" y="50" font-size="10" fill="#22d3ee">智能照明 Smart IoT</text>
+    <!-- AI legend -->
+    <rect x="15" y="60" width="14" height="14" rx="2" fill="#a78bfa" opacity="0.3" stroke="#a78bfa" stroke-width="1.5"/>
+    <text x="38" y="72" font-size="10" fill="#a78bfa">AI照明 AI-Driven</text>
+    <line x1="15" y1="84" x2="265" y2="84" stroke="#1e3a5f" stroke-width="0.5"/>
+    <!-- Comparison data -->
+    <text x="15" y="102" font-size="9" fill="#64748b">DIMMING  调光智能度</text>
+    <text x="180" y="102" font-size="9" fill="#22d3ee" text-anchor="end">40</text>
+    <text x="210" y="102" font-size="9" fill="#475569">→</text>
+    <text x="240" y="102" font-size="9" fill="#a78bfa" font-weight="bold">90</text>
+    <text x="260" y="102" font-size="7" fill="#10b981">+125%</text>
+    <text x="15" y="122" font-size="9" fill="#64748b">ENERGY   节能效率</text>
+    <text x="180" y="122" font-size="9" fill="#22d3ee" text-anchor="end">40</text>
+    <text x="210" y="122" font-size="9" fill="#475569">→</text>
+    <text x="240" y="122" font-size="9" fill="#a78bfa" font-weight="bold">85</text>
+    <text x="260" y="122" font-size="7" fill="#10b981">+113%</text>
+    <text x="15" y="142" font-size="9" fill="#64748b">MAINT.   维护能力</text>
+    <text x="180" y="142" font-size="9" fill="#22d3ee" text-anchor="end">40</text>
+    <text x="210" y="142" font-size="9" fill="#475569">→</text>
+    <text x="240" y="142" font-size="9" fill="#a78bfa" font-weight="bold">75</text>
+    <text x="260" y="142" font-size="7" fill="#10b981">+88%</text>
+    <text x="15" y="162" font-size="9" fill="#64748b">UX       用户体验</text>
+    <text x="180" y="162" font-size="9" fill="#22d3ee" text-anchor="end">20</text>
+    <text x="210" y="162" font-size="9" fill="#475569">→</text>
+    <text x="240" y="162" font-size="9" fill="#a78bfa" font-weight="bold">75</text>
+    <text x="260" y="162" font-size="7" fill="#10b981">+275%</text>
+    <text x="15" y="182" font-size="9" fill="#64748b">DATA     数据价值</text>
+    <text x="180" y="182" font-size="9" fill="#22d3ee" text-anchor="end">30</text>
+    <text x="210" y="182" font-size="9" fill="#475569">→</text>
+    <text x="240" y="182" font-size="9" fill="#a78bfa" font-weight="bold">80</text>
+    <text x="260" y="182" font-size="7" fill="#10b981">+167%</text>
+    <line x1="15" y1="192" x2="265" y2="192" stroke="#1e3a5f" stroke-width="0.5"/>
+    <text x="140" y="212" text-anchor="middle" font-size="8" fill="#10b981">↑ AI全维度超越，平均提升 +154%</text>
+  </g>
+  <!-- Key insight box -->
+  <g transform="translate(580,330)">
+    <rect width="280" height="130" rx="4" fill="#130f24" stroke="#5b21b6" stroke-width="0.8"/>
+    <rect width="280" height="2" fill="#a78bfa" opacity="0.4"/>
+    <text x="140" y="22" text-anchor="middle" font-size="9" font-weight="bold" fill="#c4b5fd" letter-spacing="1">核心跃迁 KEY INSIGHT</text>
+    <line x1="15" y1="32" x2="265" y2="32" stroke="#2d1f5e" stroke-width="0.5"/>
+    <text x="15" y="52" font-size="9" fill="#a78bfa">智能照明 = 规则执行</text>
+    <text x="15" y="68" font-size="8" fill="#64748b">  if time==18:00 → light.on()</text>
+    <text x="15" y="88" font-size="9" fill="#a78bfa" font-weight="bold">AI照明 = 感知推理</text>
+    <text x="15" y="104" font-size="8" fill="#64748b">  sense() → reason() → act()</text>
+    <text x="15" y="122" font-size="8" fill="#10b981">→ 从"可控工具"到"空间智能服务"</text>
+  </g>
+  <!-- Footer -->
+  <text x="450" y="488" text-anchor="middle" font-size="8" fill="#1e3a5f" font-family="Consolas">FIGURE 3 · CAPABILITY RADAR: SMART IoT vs AI-DRIVEN LIGHTING · NEXLAMP TECH © 2026</text>
 </svg>
