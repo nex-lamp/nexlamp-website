@@ -6,7 +6,7 @@ tags: ["轻智能", "全屋智能", "智能家居", "IoT", "场景联动"]
 excerpt: 轻智能和全屋智能不是同一件事的两个名字，而是两种完全不同的智能化哲学——轻智能追求低门槛、快体验，全屋智能追求深度融合、极致自动化。本文从架构、成本、体验和适用人群四个维度，帮你找到最适合自己的智能化路径。
 description: 深度对比轻智能与全屋智能的架构差异、适用人群和演进路径，帮你选择最适合的智能家居方案
 keywords: 轻智能,全屋智能,智能家居对比,IoT,场景联动,智能照明
-cover: images/blog-light-vs-full-smart-arch.svg
+cover: images/blog-light-vs-full-smart-cover.png
 ---
 
 ## 引言
