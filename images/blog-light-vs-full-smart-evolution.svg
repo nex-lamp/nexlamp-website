@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" font-family="'Consolas','Microsoft YaHei',monospace">
+  <defs>
+    <linearGradient id="bgC2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f1d32"/>
+    </linearGradient>
+    <filter id="glowC2">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="gridC2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e3a5f" stroke-width="0.25" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="900" height="460" rx="8" fill="url(#bgC2)"/>
+  <rect width="900" height="460" rx="8" fill="url(#gridC2)"/>
+  <!-- Title bar -->
+  <rect x="0" y="0" width="900" height="46" fill="#0d1b2a" opacity="0.8"/>
+  <rect x="0" y="42" width="900" height="3" fill="#34d399" opacity="0.3"/>
+  <text x="450" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#e2e8f0" letter-spacing="2">智能演进路径 · EVOLUTION PATHWAY</text>
+
+  <!-- Timeline base line -->
+  <line x1="80" y1="230" x2="820" y2="230" stroke="#1e3a5f" stroke-width="2" opacity="0.5"/>
+  <!-- Animated gradient line -->
+  <line x1="80" y1="230" x2="820" y2="230" stroke="#22d3ee" stroke-width="1" opacity="0.3" stroke-dasharray="6,4"/>
+
+  <!-- Stage 1: 单品智能 -->
+  <circle cx="150" cy="230" r="8" fill="#0a1628" stroke="#22d3ee" stroke-width="2" filter="url(#glowC2)"/>
+  <circle cx="150" cy="230" r="3" fill="#22d3ee"/>
+  <rect x="80" y="85" width="140" height="125" rx="4" fill="#0d1b2a" stroke="#22d3ee" stroke-width="0.8" opacity="0.5"/>
+  <text x="150" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#22d3ee">阶段 1</text>
+  <text x="150" y="123" text-anchor="middle" font-size="11" fill="#e2e8f0">单品智能</text>
+  <line x1="100" y1="132" x2="200" y2="132" stroke="#22d3ee" stroke-width="0.5" opacity="0.3"/>
+  <text x="150" y="150" text-anchor="middle" font-size="9" fill="#94a3b8">独立APP控制</text>
+  <text x="150" y="168" text-anchor="middle" font-size="9" fill="#94a3b8">设备间无联动</text>
+  <text x="150" y="186" text-anchor="middle" font-size="9" fill="#94a3b8">Wi-Fi直连</text>
+  <text x="150" y="204" text-anchor="middle" font-size="9" fill="#64748b">← 当前轻智能起点</text>
+  <!-- Arrow down to circle -->
+  <line x1="150" y1="210" x2="150" y2="222" stroke="#22d3ee" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Stage 2: 场景联动 -->
+  <circle cx="370" cy="230" r="8" fill="#0a1628" stroke="#a78bfa" stroke-width="2" filter="url(#glowC2)"/>
+  <circle cx="370" cy="230" r="3" fill="#a78bfa"/>
+  <rect x="300" y="85" width="140" height="125" rx="4" fill="#0d1b2a" stroke="#a78bfa" stroke-width="0.8" opacity="0.5"/>
+  <text x="370" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#a78bfa">阶段 2</text>
+  <text x="370" y="123" text-anchor="middle" font-size="11" fill="#e2e8f0">场景联动</text>
+  <line x1="320" y1="132" x2="420" y2="132" stroke="#a78bfa" stroke-width="0.5" opacity="0.3"/>
+  <text x="370" y="150" text-anchor="middle" font-size="9" fill="#94a3b8">网关统一管理</text>
+  <text x="370" y="168" text-anchor="middle" font-size="9" fill="#94a3b8">预设场景自动化</text>
+  <text x="370" y="186" text-anchor="middle" font-size="9" fill="#94a3b8">Zigbee/蓝牙Mesh</text>
+  <text x="370" y="204" text-anchor="middle" font-size="9" fill="#64748b">← 轻智能升级方向</text>
+  <line x1="370" y1="210" x2="370" y2="222" stroke="#a78bfa" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Stage 3: 全域协同 -->
+  <circle cx="590" cy="230" r="8" fill="#0a1628" stroke="#34d399" stroke-width="2" filter="url(#glowC2)"/>
+  <circle cx="590" cy="230" r="3" fill="#34d399"/>
+  <rect x="520" y="85" width="140" height="125" rx="4" fill="#0d1b2a" stroke="#34d399" stroke-width="0.8" opacity="0.5"/>
+  <text x="590" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#34d399">阶段 3</text>
+  <text x="590" y="123" text-anchor="middle" font-size="11" fill="#e2e8f0">全域协同</text>
+  <line x1="540" y1="132" x2="640" y2="132" stroke="#34d399" stroke-width="0.5" opacity="0.3"/>
+  <text x="590" y="150" text-anchor="middle" font-size="9" fill="#94a3b8">多系统深度融合</text>
+  <text x="590" y="168" text-anchor="middle" font-size="9" fill="#94a3b8">主动感知决策</text>
+  <text x="590" y="186" text-anchor="middle" font-size="9" fill="#94a3b8">KNX/总线+无线</text>
+  <text x="590" y="204" text-anchor="middle" font-size="9" fill="#64748b">← 全屋智能核心</text>
+  <line x1="590" y1="210" x2="590" y2="222" stroke="#34d399" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Stage 4: AI自适应 -->
+  <circle cx="790" cy="230" r="8" fill="#0a1628" stroke="#fb923c" stroke-width="2" filter="url(#glowC2)"/>
+  <circle cx="790" cy="230" r="3" fill="#fb923c"/>
+  <rect x="720" y="85" width="140" height="125" rx="4" fill="#0d1b2a" stroke="#fb923c" stroke-width="0.8" opacity="0.5"/>
+  <text x="790" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#fb923c">阶段 4</text>
+  <text x="790" y="123" text-anchor="middle" font-size="11" fill="#e2e8f0">AI自适应</text>
+  <line x1="740" y1="132" x2="840" y2="132" stroke="#fb923c" stroke-width="0.5" opacity="0.3"/>
+  <text x="790" y="150" text-anchor="middle" font-size="9" fill="#94a3b8">AI自主学习</text>
+  <text x="790" y="168" text-anchor="middle" font-size="9" fill="#94a3b8">无感主动服务</text>
+  <text x="790" y="186" text-anchor="middle" font-size="9" fill="#94a3b8">预测性决策</text>
+  <text x="790" y="204" text-anchor="middle" font-size="9" fill="#64748b">← 终极演进目标</text>
+  <line x1="790" y1="210" x2="790" y2="222" stroke="#fb923c" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Arrows between stages -->
+  <polygon points="195,230 205,225 205,235" fill="#22d3ee" opacity="0.6"/>
+  <polygon points="415,230 425,225 425,235" fill="#a78bfa" opacity="0.6"/>
+  <polygon points="635,230 645,225 645,235" fill="#34d399" opacity="0.6"/>
+
+  <!-- Bottom comparison bar -->
+  <rect x="80" y="270" width="350" height="35" rx="4" fill="#22d3ee" opacity="0.08" stroke="#22d3ee" stroke-width="0.5"/>
+  <text x="255" y="292" text-anchor="middle" font-size="11" fill="#22d3ee">轻智能覆盖范围：阶段 1 → 阶段 2</text>
+
+  <rect x="470" y="270" width="350" height="35" rx="4" fill="#fb923c" opacity="0.08" stroke="#fb923c" stroke-width="0.5"/>
+  <text x="645" y="292" text-anchor="middle" font-size="11" fill="#fb923c">全屋智能覆盖范围：阶段 2 → 阶段 4</text>
+
+  <!-- Key insight box -->
+  <rect x="80" y="325" width="740" height="110" rx="6" fill="#0d1b2a" stroke="#1e3a5f" stroke-width="0.8"/>
+  <text x="110" y="350" font-size="12" font-weight="bold" fill="#e2e8f0">核心洞察 INSIGHT</text>
+  <line x1="100" y1="358" x2="800" y2="358" stroke="#1e3a5f" stroke-width="0.5"/>
+  <text x="110" y="378" font-size="10" fill="#94a3b8">轻智能与全屋智能并非对立关系，而是智能化的不同阶段与深度</text>
+  <text x="110" y="398" font-size="10" fill="#94a3b8">轻智能 = 低门槛入口，适合快速体验智能生活</text>
+  <text x="110" y="418" font-size="10" fill="#94a3b8">全屋智能 = 深度整合方案，适合追求极致体验与长期价值</text>
+  <text x="110" y="438" font-size="10" fill="#34d399">两者可以渐进式过渡：轻智能起步 → 按需升级 → 全屋智能</text>
+
+  <!-- Footer -->
+  <rect x="0" y="440" width="900" height="20" fill="#0d1b2a" opacity="0.6"/>
+  <text x="450" y="455" text-anchor="middle" font-size="9" fill="#475569">Nexlamp · 智能演进路径分析</text>
+</svg>

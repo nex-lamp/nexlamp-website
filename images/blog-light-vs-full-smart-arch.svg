@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Consolas','Microsoft YaHei',monospace">
+  <defs>
+    <linearGradient id="bgA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f1d32"/>
+    </linearGradient>
+    <linearGradient id="cyanG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#0e7490"/>
+    </linearGradient>
+    <linearGradient id="orangeG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fb923c"/>
+      <stop offset="100%" style="stop-color:#c2410c"/>
+    </linearGradient>
+    <filter id="glowA">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="gridA" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e3a5f" stroke-width="0.25" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="900" height="520" rx="8" fill="url(#bgA)"/>
+  <rect width="900" height="520" rx="8" fill="url(#gridA)"/>
+  <!-- Title bar -->
+  <rect x="0" y="0" width="900" height="46" fill="#0d1b2a" opacity="0.8"/>
+  <rect x="0" y="42" width="900" height="3" fill="#22d3ee" opacity="0.3"/>
+  <text x="450" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#e2e8f0" letter-spacing="2">轻智能 vs 全屋智能 · 架构对比 ARCHITECTURE COMPARISON</text>
+
+  <!-- Left: 轻智能 -->
+  <rect x="30" y="65" width="400" height="420" rx="6" fill="#0d1b2a" stroke="#22d3ee" stroke-width="1" opacity="0.6"/>
+  <rect x="30" y="65" width="400" height="36" rx="6" fill="#22d3ee" opacity="0.15"/>
+  <text x="230" y="89" text-anchor="middle" font-size="13" font-weight="bold" fill="#22d3ee">轻智能 LIGHT SMART</text>
+
+  <!-- 轻智能: 设备层 -->
+  <rect x="55" y="115" width="350" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.8"/>
+  <text x="75" y="138" font-size="11" fill="#64748b">▸ 设备层</text>
+  <rect x="75" y="148" width="80" height="16" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="115" y="160" text-anchor="middle" font-size="9" fill="#22d3ee">智能灯泡</text>
+  <rect x="165" y="148" width="80" height="16" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="205" y="160" text-anchor="middle" font-size="9" fill="#22d3ee">智能插座</text>
+  <rect x="255" y="148" width="80" height="16" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="295" y="160" text-anchor="middle" font-size="9" fill="#22d3ee">无线开关</text>
+
+  <!-- 轻智能: 通信层 -->
+  <rect x="55" y="185" width="350" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.8"/>
+  <text x="75" y="208" font-size="11" fill="#64748b">▸ 通信层</text>
+  <rect x="75" y="218" width="65" height="16" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="107" y="230" text-anchor="middle" font-size="9" fill="#22d3ee">Wi-Fi</text>
+  <rect x="150" y="218" width="65" height="16" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="182" y="230" text-anchor="middle" font-size="9" fill="#22d3ee">BLE</text>
+  <rect x="225" y="218" width="65" height="16" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="257" y="230" text-anchor="middle" font-size="9" fill="#22d3ee">Zigbee</text>
+  <rect x="300" y="218" width="85" height="16" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="342" y="230" text-anchor="middle" font-size="9" fill="#22d3ee">点对点</text>
+
+  <!-- 轻智能: 控制层 -->
+  <rect x="55" y="255" width="350" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.8"/>
+  <text x="75" y="278" font-size="11" fill="#64748b">▸ 控制层</text>
+  <rect x="75" y="288" width="95" height="16" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="122" y="300" text-anchor="middle" font-size="9" fill="#22d3ee">APP控制</text>
+  <rect x="180" y="288" width="95" height="16" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="227" y="300" text-anchor="middle" font-size="9" fill="#22d3ee">语音助手</text>
+  <rect x="285" y="288" width="95" height="16" rx="3" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7"/>
+  <text x="332" y="300" text-anchor="middle" font-size="9" fill="#22d3ee">定时场景</text>
+
+  <!-- 轻智能: 特征 -->
+  <rect x="55" y="325" width="350" height="145" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.8"/>
+  <text x="75" y="348" font-size="11" fill="#64748b">▸ 核心特征</text>
+  <text x="75" y="370" font-size="10" fill="#94a3b8">✓ 即插即用，零施工</text>
+  <text x="75" y="390" font-size="10" fill="#94a3b8">✓ 单品独立运行</text>
+  <text x="75" y="410" font-size="10" fill="#94a3b8">✓ 成本低（百元级）</text>
+  <text x="75" y="430" font-size="10" fill="#94a3b8">✓ 无需网关/布线</text>
+  <text x="75" y="455" font-size="10" fill="#f59e0b">✗ 跨品牌联动弱</text>
+
+  <!-- Right: 全屋智能 -->
+  <rect x="470" y="65" width="400" height="420" rx="6" fill="#0d1b2a" stroke="#fb923c" stroke-width="1" opacity="0.6"/>
+  <rect x="470" y="65" width="400" height="36" rx="6" fill="#fb923c" opacity="0.15"/>
+  <text x="670" y="89" text-anchor="middle" font-size="13" font-weight="bold" fill="#fb923c">全屋智能 FULL-HOUSE SMART</text>
+
+  <!-- 全屋智能: 设备层 -->
+  <rect x="495" y="115" width="350" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.8"/>
+  <text x="515" y="138" font-size="11" fill="#64748b">▸ 设备层</text>
+  <rect x="515" y="148" width="65" height="16" rx="3" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.7"/>
+  <text x="547" y="160" text-anchor="middle" font-size="9" fill="#fb923c">灯光</text>
+  <rect x="590" y="148" width="65" height="16" rx="3" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.7"/>
+  <text x="622" y="160" text-anchor="middle" font-size="9" fill="#fb923c">窗帘</text>
+  <rect x="665" y="148" width="65" height="16" rx="3" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.7"/>
+  <text x="697" y="160" text-anchor="middle" font-size="9" fill="#fb923c">空调</text>
+  <rect x="740" y="148" width="80" height="16" rx="3" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.7"/>
+  <text x="780" y="160" text-anchor="middle" font-size="9" fill="#fb923c">安防传感</text>
+
+  <!-- 全屋智能: 通信层 -->
+  <rect x="495" y="185" width="350" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.8"/>
+  <text x="515" y="208" font-size="11" fill="#64748b">▸ 通信层</text>
+  <rect x="515" y="218" width="75" height="16" rx="3" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.7"/>
+  <text x="552" y="230" text-anchor="middle" font-size="9" fill="#fb923c">KNX</text>
+  <rect x="600" y="218" width="75" height="16" rx="3" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.7"/>
+  <text x="637" y="230" text-anchor="middle" font-size="9" fill="#fb923c">Zigbee3.0</text>
+  <rect x="685" y="218" width="75" height="16" rx="3" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.7"/>
+  <text x="722" y="230" text-anchor="middle" font-size="9" fill="#fb923c">总线协议</text>
+
+  <!-- 全屋智能: 控制层 -->
+  <rect x="495" y="255" width="350" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.8"/>
+  <text x="515" y="278" font-size="11" fill="#64748b">▸ 控制层</text>
+  <rect x="515" y="288" width="105" height="16" rx="3" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.7"/>
+  <text x="567" y="300" text-anchor="middle" font-size="9" fill="#fb923c">中央控制主机</text>
+  <rect x="630" y="288" width="105" height="16" rx="3" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.7"/>
+  <text x="682" y="300" text-anchor="middle" font-size="9" fill="#fb923c">场景联动引擎</text>
+  <rect x="745" y="288" width="80" height="16" rx="3" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.7"/>
+  <text x="785" y="300" text-anchor="middle" font-size="9" fill="#fb923c">AI决策</text>
+
+  <!-- 全屋智能: 特征 -->
+  <rect x="495" y="325" width="350" height="145" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.8"/>
+  <text x="515" y="348" font-size="11" fill="#64748b">▸ 核心特征</text>
+  <text x="515" y="370" font-size="10" fill="#94a3b8">✓ 全域联动，场景自动化</text>
+  <text x="515" y="390" font-size="10" fill="#94a3b8">✓ 多子系统深度集成</text>
+  <text x="515" y="410" font-size="10" fill="#94a3b8">✓ AI自主学习与优化</text>
+  <text x="515" y="430" font-size="10" fill="#94a3b8">✓ 专业设计与施工</text>
+  <text x="515" y="455" font-size="10" fill="#f59e0b">✗ 前期投入高（万元级）</text>
+
+  <!-- Center divider -->
+  <line x1="450" y1="75" x2="450" y2="480" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+  <text x="450" y="498" text-anchor="middle" font-size="10" fill="#475569">VS</text>
+
+  <!-- Footer -->
+  <rect x="0" y="490" width="900" height="30" fill="#0d1b2a" opacity="0.6"/>
+  <text x="450" y="508" text-anchor="middle" font-size="9" fill="#475569">Nexlamp · 轻智能与全屋智能架构对比</text>
+</svg>
