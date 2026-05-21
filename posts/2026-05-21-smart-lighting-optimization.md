@@ -6,7 +6,7 @@ tags: ["智能照明", "延迟优化", "Mesh组网", "网关优化", "Zigbee"]
 excerpt: 智能照明"卡"的根源不是设备不好，而是系统没调好——从云端依赖、网络拥塞、网关过载到Mesh拓扑过深，五大瓶颈逐一拆解，附带可落地的优化方案，让你的智能灯从"半秒延迟"变成"毫秒响应"。
 description: 深度解析智能照明卡顿的5大根因，提供网络优化、网关配置、Mesh拓扑重构、本地场景执行等全套优化方案
 keywords: 智能照明延迟,智能灯卡顿,Mesh组网优化,Zigbee3.0,网关优化,本地场景
-cover: images/blog-smart-lighting-latency-bottleneck.svg
+cover: images/blog-smart-lighting-optimization-cover.png
 ---
 
 ## 引言

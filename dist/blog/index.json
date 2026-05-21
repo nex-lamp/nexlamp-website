@@ -5,7 +5,7 @@
     "date": "2026-05-21",
     "category": "故障排查",
     "description": "深度解析智能照明卡顿的5大根因，提供网络优化、网关配置、Mesh拓扑重构、本地场景执行等全套优化方案",
-    "cover": "images/blog-smart-lighting-latency-bottleneck.svg",
+    "cover": "images/blog-smart-lighting-optimization-cover.png",
     "excerpt": "智能照明\"卡\"的根源不是设备不好，而是系统没调好——从云端依赖、网络拥塞、网关过载到Mesh拓扑过深，五大瓶颈逐一拆解，附带可落地的优化方案，让你的智能灯从\"半秒延迟\"变成\"毫秒响应\"。"
   },
   {
