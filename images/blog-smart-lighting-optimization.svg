@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Consolas','Microsoft YaHei',monospace">
+  <defs>
+    <linearGradient id="bgE" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f1d32"/>
+    </linearGradient>
+    <filter id="glowE">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="gridE" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e3a5f" stroke-width="0.25" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="520" rx="8" fill="url(#bgE)"/>
+  <rect width="900" height="520" rx="8" fill="url(#gridE)"/>
+  <!-- Title -->
+  <rect x="0" y="0" width="900" height="46" fill="#0d1b2a" opacity="0.8"/>
+  <rect x="0" y="42" width="900" height="3" fill="#34d399" opacity="0.3"/>
+  <text x="450" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#e2e8f0" letter-spacing="2">系统优化全攻略 · OPTIMIZATION PLAYBOOK</text>
+
+  <!-- Left: 问题链 -->
+  <rect x="30" y="65" width="260" height="420" rx="6" fill="#0d1b2a" stroke="#ef4444" stroke-width="0.8" opacity="0.5"/>
+  <rect x="30" y="65" width="260" height="32" rx="6" fill="#ef4444" opacity="0.12"/>
+  <text x="160" y="86" text-anchor="middle" font-size="12" font-weight="bold" fill="#ef4444">问题链 PROBLEM CHAIN</text>
+
+  <rect x="50" y="110" width="220" height="50" rx="4" fill="#0a1628" stroke="#ef4444" stroke-width="0.6" opacity="0.5"/>
+  <circle cx="70" cy="135" r="10" fill="#ef4444" opacity="0.2" stroke="#ef4444" stroke-width="0.8"/>
+  <text x="70" y="139" text-anchor="middle" font-size="9" font-weight="bold" fill="#ef4444">1</text>
+  <text x="90" y="130" font-size="10" font-weight="bold" fill="#fca5a5">云端依赖</text>
+  <text x="90" y="148" font-size="9" fill="#94a3b8">每条指令绕行云端，延迟≥500ms</text>
+
+  <line x1="160" y1="160" x2="160" y2="175" stroke="#ef4444" stroke-width="0.8" opacity="0.4" stroke-dasharray="3,3"/>
+  <polygon points="155,173 160,180 165,173" fill="#ef4444" opacity="0.4"/>
+
+  <rect x="50" y="180" width="220" height="50" rx="4" fill="#0a1628" stroke="#ef4444" stroke-width="0.6" opacity="0.5"/>
+  <circle cx="70" cy="205" r="10" fill="#ef4444" opacity="0.2" stroke="#ef4444" stroke-width="0.8"/>
+  <text x="70" y="209" text-anchor="middle" font-size="9" font-weight="bold" fill="#ef4444">2</text>
+  <text x="90" y="200" font-size="10" font-weight="bold" fill="#fca5a5">网络拥塞</text>
+  <text x="90" y="218" font-size="9" fill="#94a3b8">2.4G频段干扰，信道拥堵丢包</text>
+
+  <line x1="160" y1="230" x2="160" y2="245" stroke="#ef4444" stroke-width="0.8" opacity="0.4" stroke-dasharray="3,3"/>
+  <polygon points="155,243 160,250 165,243" fill="#ef4444" opacity="0.4"/>
+
+  <rect x="50" y="250" width="220" height="50" rx="4" fill="#0a1628" stroke="#ef4444" stroke-width="0.6" opacity="0.5"/>
+  <circle cx="70" cy="275" r="10" fill="#ef4444" opacity="0.2" stroke="#ef4444" stroke-width="0.8"/>
+  <text x="70" y="279" text-anchor="middle" font-size="9" font-weight="bold" fill="#ef4444">3</text>
+  <text x="90" y="270" font-size="10" font-weight="bold" fill="#fca5a5">网关过载</text>
+  <text x="90" y="288" font-size="9" fill="#94a3b8">连接设备过多，CPU/内存跑满</text>
+
+  <line x1="160" y1="300" x2="160" y2="315" stroke="#ef4444" stroke-width="0.8" opacity="0.4" stroke-dasharray="3,3"/>
+  <polygon points="155,313 160,320 165,313" fill="#ef4444" opacity="0.4"/>
+
+  <rect x="50" y="320" width="220" height="50" rx="4" fill="#0a1628" stroke="#ef4444" stroke-width="0.6" opacity="0.5"/>
+  <circle cx="70" cy="345" r="10" fill="#ef4444" opacity="0.2" stroke="#ef4444" stroke-width="0.8"/>
+  <text x="70" y="349" text-anchor="middle" font-size="9" font-weight="bold" fill="#ef4444">4</text>
+  <text x="90" y="340" font-size="10" font-weight="bold" fill="#fca5a5">Mesh拓扑过深</text>
+  <text x="90" y="358" font-size="9" fill="#94a3b8">信号3跳以上，延迟叠加明显</text>
+
+  <line x1="160" y1="370" x2="160" y2="385" stroke="#ef4444" stroke-width="0.8" opacity="0.4" stroke-dasharray="3,3"/>
+  <polygon points="155,383 160,390 165,383" fill="#ef4444" opacity="0.4"/>
+
+  <rect x="50" y="390" width="220" height="50" rx="4" fill="#0a1628" stroke="#ef4444" stroke-width="0.6" opacity="0.5"/>
+  <circle cx="70" cy="415" r="10" fill="#ef4444" opacity="0.2" stroke="#ef4444" stroke-width="0.8"/>
+  <text x="70" y="419" text-anchor="middle" font-size="9" font-weight="bold" fill="#ef4444">5</text>
+  <text x="90" y="410" font-size="10" font-weight="bold" fill="#fca5a5">固件老旧</text>
+  <text x="90" y="428" font-size="9" fill="#94a3b8">旧版协议效率低，未优化调度</text>
+
+  <!-- Center arrow -->
+  <text x="340" y="270" text-anchor="middle" font-size="28" fill="#22d3ee" opacity="0.4">⟹</text>
+  <text x="340" y="290" text-anchor="middle" font-size="9" fill="#64748b">优化</text>
+
+  <!-- Right: 优化链 -->
+  <rect x="370" y="65" width="500" height="420" rx="6" fill="#0d1b2a" stroke="#34d399" stroke-width="0.8" opacity="0.5"/>
+  <rect x="370" y="65" width="500" height="32" rx="6" fill="#34d399" opacity="0.12"/>
+  <text x="620" y="86" text-anchor="middle" font-size="12" font-weight="bold" fill="#34d399">优化方案 OPTIMIZATION PLAN</text>
+
+  <!-- Row 1 -->
+  <rect x="390" y="110" width="460" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.6"/>
+  <circle cx="415" cy="137" r="12" fill="#34d399" opacity="0.2" stroke="#34d399" stroke-width="1"/>
+  <text x="415" y="141" text-anchor="middle" font-size="10" font-weight="bold" fill="#34d399">1</text>
+  <text x="440" y="130" font-size="11" font-weight="bold" fill="#6ee7b7">启用本地场景执行</text>
+  <text x="440" y="150" font-size="9" fill="#94a3b8">网关本地化决策，绕过云端往返 · 延迟从500ms+降至30-100ms</text>
+
+  <!-- Row 2 -->
+  <rect x="390" y="175" width="460" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.6"/>
+  <circle cx="415" cy="202" r="12" fill="#34d399" opacity="0.2" stroke="#34d399" stroke-width="1"/>
+  <text x="415" y="206" text-anchor="middle" font-size="10" font-weight="bold" fill="#34d399">2</text>
+  <text x="440" y="195" font-size="11" font-weight="bold" fill="#6ee7b7">优化无线网络环境</text>
+  <text x="440" y="215" font-size="9" fill="#94a3b8">Wi-Fi 6路由 + 2.4G信道规划 + Mesh组网 · 丢包率降低80%</text>
+
+  <!-- Row 3 -->
+  <rect x="390" y="240" width="460" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.6"/>
+  <circle cx="415" cy="267" r="12" fill="#34d399" opacity="0.2" stroke="#34d399" stroke-width="1"/>
+  <text x="415" y="271" text-anchor="middle" font-size="10" font-weight="bold" fill="#34d399">3</text>
+  <text x="440" y="260" font-size="11" font-weight="bold" fill="#6ee7b7">合理规划网关负载</text>
+  <text x="440" y="280" font-size="9" fill="#94a3b8">单网关≤32设备 + 网关居中放置 + 多网关分区 · 响应提速3-5倍</text>
+
+  <!-- Row 4 -->
+  <rect x="390" y="305" width="460" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.6"/>
+  <circle cx="415" cy="332" r="12" fill="#34d399" opacity="0.2" stroke="#34d399" stroke-width="1"/>
+  <text x="415" y="336" text-anchor="middle" font-size="10" font-weight="bold" fill="#34d399">4</text>
+  <text x="440" y="325" font-size="11" font-weight="bold" fill="#6ee7b7">优化Mesh拓扑结构</text>
+  <text x="440" y="345" font-size="9" fill="#94a3b8">控制跳数≤2 + 补充路由器节点 + 有线回程 · 延迟降低60%</text>
+
+  <!-- Row 5 -->
+  <rect x="390" y="370" width="460" height="55" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="0.6"/>
+  <circle cx="415" cy="397" r="12" fill="#34d399" opacity="0.2" stroke="#34d399" stroke-width="1"/>
+  <text x="415" y="401" text-anchor="middle" font-size="10" font-weight="bold" fill="#34d399">5</text>
+  <text x="440" y="390" font-size="11" font-weight="bold" fill="#6ee7b7">固件与协议升级</text>
+  <text x="440" y="410" font-size="9" fill="#94a3b8">定期OTA + Zigbee3.0/Matter协议迁移 · 兼容性与效率双重提升</text>
+
+  <!-- Result badge -->
+  <rect x="390" y="440" width="460" height="35" rx="4" fill="#34d399" opacity="0.08" stroke="#34d399" stroke-width="0.8"/>
+  <text x="620" y="462" text-anchor="middle" font-size="11" font-weight="bold" fill="#34d399">综合优化后：端到端延迟 500ms+ → 30-80ms · 体验从"卡"到"丝滑"</text>
+
+  <!-- Footer -->
+  <rect x="0" y="490" width="900" height="30" fill="#0d1b2a" opacity="0.6"/>
+  <text x="450" y="508" text-anchor="middle" font-size="9" fill="#475569">Nexlamp · 智能照明系统优化全攻略</text>
+</svg>
