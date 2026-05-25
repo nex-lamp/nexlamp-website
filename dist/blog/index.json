@@ -1,5 +1,14 @@
 [
   {
+    "title": "智能照明协议怎么选？Zigbee/蓝牙Mesh/Wi-Fi/DALI四大主流协议横评",
+    "slug": "smart-lighting-protocol-comparison",
+    "date": "2026-05-25",
+    "category": "智能照明",
+    "description": "深度对比Zigbee、蓝牙Mesh、Wi-Fi、DALI-2四大智能照明协议的优缺点和适用场景，附选型决策树和演进趋势分析。",
+    "cover": "images/blog-protocol-comparison.svg",
+    "excerpt": "一文讲透四大智能照明协议的技术特点、适用场景和选型策略，帮你少走弯路。"
+  },
+  {
     "title": "为什么别人的智能照明很丝滑，我的却很卡？系统优化全攻略",
     "slug": "为什么别人的智能照明很丝滑我的却很卡系统优化全攻略",
     "date": "2026-05-21",
