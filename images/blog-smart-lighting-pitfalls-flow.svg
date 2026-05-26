@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 580">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f1f3d"/>
+    </linearGradient>
+    <linearGradient id="dangerBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d1520"/>
+      <stop offset="100%" stop-color="#2a1018"/>
+    </linearGradient>
+    <linearGradient id="fixBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#153025"/>
+      <stop offset="100%" stop-color="#0d2018"/>
+    </linearGradient>
+    <filter id="glowRed">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGreen">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5" opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="580" fill="url(#bgGrad)"/>
+  <rect width="680" height="580" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="340" y="38" text-anchor="middle" fill="#00d4ff" font-family="Consolas,monospace" font-size="19" font-weight="bold" filter="url(#glowRed)">&#x26A0; 智能灯光 · 五大避坑清单</text>
+
+  <!-- Pitfall 1 -->
+  <rect x="20" y="60" width="305" height="80" rx="6" fill="url(#dangerBox)" stroke="#ff444488" stroke-width="1"/>
+  <text x="35" y="82" fill="#ff6b6b" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glowRed)">坑 #1 开关底盒没留零线</text>
+  <text x="35" y="102" fill="#cc8899" font-family="Consolas,monospace" font-size="10.5">&#x2022; 智能开关需要零线供电</text>
+  <text x="35" y="118" fill="#cc8899" font-family="Consolas,monospace" font-size="10.5">&#x2022; 补救成本 2000+（砸墙重拉）</text>
+
+  <rect x="345" y="56" width="315" height="88" rx="6" fill="url(#fixBox)" stroke="#44ff4488" stroke-width="1"/>
+  <text x="360" y="78" fill="#6bcb77" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glowGreen)">&#x2714; 解决方案</text>
+  <text x="360" y="98" fill="#88bb99" font-family="Consolas,monospace" font-size="10.5">水电阶段告诉电工：所有开关位加零线</text>
+  <text x="360" y="114" fill="#88bb99" font-family="Consolas,monospace" font-size="10.5">成本几乎为零！</text>
+  <text x="360" y="132" fill="#559966" font-family="Consolas,monospace" font-size="10">&#x25B8; 已装完可选单火版开关（选择少/价格高）</text>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="172" y1="142" x2="172" y2="158" stroke="#334466" stroke-width="1"/>
+  <polygon points="168,157 172,166 176,157" fill="#334466"/>
+
+  <!-- Pitfall 2 -->
+  <rect x="20" y="168" width="305" height="80" rx="6" fill="url(#dangerBox)" stroke="#ff444488" stroke-width="1"/>
+  <text x="35" y="190" fill="#ff6b6b" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glowRed)">坑 #2 贪便宜买Wi-Fi直连灯</text>
+  <text x="35" y="210" fill="#cc8899" font-family="Consolas,monospace" font-size="10.5">&#x2022; 超过5个设备路由器就扛不住</text>
+  <text x="35" y="226" fill="#cc8899" font-family="Consolas,monospace" font-size="10.5">&#x2022; 丢包、延迟、集体掉线</text>
+
+  <rect x="345" y="164" width="315" height="88" rx="6" fill="url(#fixBox)" stroke="#44ff4488" stroke-width="1"/>
+  <text x="360" y="186" fill="#6bcb77" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glowGreen)">&#x2714; 解决方案</text>
+  <text x="360" y="206" fill="#88bb99" font-family="Consolas,monospace" font-size="10.5">超过5个灯就用 Zigbee 协议</text>
+  <text x="360" y="222" fill="#88bb99" font-family="Consolas,monospace" font-size="10.5">自组网、低功耗、断网也能本地执行</text>
+  <text x="360" y="240" fill="#559966" font-family="Consolas,monospace" font-size="10">&#x25B8; 推荐涂鸦Zigbee 3.0方案，兼容性最好</text>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="172" y1="250" x2="172" y2="266" stroke="#334466" stroke-width="1"/>
+  <polygon points="168,265 172,274 176,265" fill="#334466"/>
+
+  <!-- Pitfall 3 -->
+  <rect x="20" y="276" width="305" height="80" rx="6" fill="url(#dangerBox)" stroke="#ff444488" stroke-width="1"/>
+  <text x="35" y="298" fill="#ff6b6b" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glowRed)">坑 #3 筒灯和射灯搞混</text>
+  <text x="35" y="318" fill="#cc8899" font-family="Consolas,monospace" font-size="10.5">&#x2022; 射灯光束角24-36&#xB0; 有光斑（洗墙专用）</text>
+  <text x="35" y="334" fill="#cc8899" font-family="Consolas,monospace" font-size="10.5">&#x2022; 筒灯光束角60-120&#xB0; 泛光均匀照明</text>
+
+  <rect x="345" y="272" width="315" height="88" rx="6" fill="url(#fixBox)" stroke="#44ff4488" stroke-width="1"/>
+  <text x="360" y="294" fill="#6bcb77" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glowGreen)">&#x2714; 解决方案</text>
+  <text x="360" y="314" fill="#88bb99" font-family="Consolas,monospace" font-size="10.5">客厅走道用筒灯（均匀光）</text>
+  <text x="360" y="330" fill="#88bb99" font-family="Consolas,monospace" font-size="10.5">背景墙/装饰画用射灯（重点照明）</text>
+  <text x="360" y="348" fill="#559966" font-family="Consolas,monospace" font-size="10">&#x25B8; 离墙20-30cm装射灯效果最佳</text>
+
+  <!-- Arrow 3 to 4 -->
+  <line x1="172" y1="358" x2="172" y2="374" stroke="#334466" stroke-width="1"/>
+  <polygon points="168,373 172,382 176,373" fill="#334466"/>
+
+  <!-- Pitfall 4 -->
+  <rect x="20" y="384" width="305" height="80" rx="6" fill="url(#dangerBox)" stroke="#ff444488" stroke-width="1"/>
+  <text x="35" y="406" fill="#ff6b6b" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glowRed)">坑 #4 色温全屋统一 4000K</text>
+  <text x="35" y="426" fill="#cc8899" font-family="Consolas,monospace" font-size="10.5">&#x2022; 卧室也是4000K，晚上像在医院值班</text>
+  <text x="35" y="442" fill="#cc8899" font-family="Consolas,monospace" font-size="10.5">&#x2022; 冷白光抑制褪黑素分泌，影响睡眠</text>
+
+  <rect x="345" y="380" width="315" height="88" rx="6" fill="url(#fixBox)" stroke="#44ff4488" stroke-width="1"/>
+  <text x="360" y="402" fill="#6bcb77" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glowGreen)">&#x2714; 解决方案</text>
+  <text x="360" y="422" fill="#88bb99" font-family="Consolas,monospace" font-size="10.5">客厅 3500-4000K / 卧室 2700-3000K</text>
+  <text x="360" y="438" fill="#88bb99" font-family="Consolas,monospace" font-size="10.5">厨房/书房 4000-5000K（需明亮+高显色）</text>
+  <text x="360" y="456" fill="#559966" font-family="Consolas,monospace" font-size="10">&#x25B8; 选可调色温灯具，场景灵活切换</text>
+
+  <!-- Arrow 4 to 5 -->
+  <line x1="172" y1="466" x2="172" y2="482" stroke="#334466" stroke-width="1"/>
+  <polygon points="168,481 172,490 176,481" fill="#334466"/>
+
+  <!-- Pitfall 5 -->
+  <rect x="20" y="492" width="305" height="80" rx="6" fill="url(#dangerBox)" stroke="#ff444488" stroke-width="1"/>
+  <text x="35" y="514" fill="#ff6b6b" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glowRed)">坑 #5 没测试就批量安装</text>
+  <text x="35" y="534" fill="#cc8899" font-family="Consolas,monospace" font-size="10.5">&#x2022; 装完30个灯发现一半配对不上</text>
+  <text x="35" y="550" fill="#cc8899" font-family="Consolas,monospace" font-size="10.5">&#x2022; 批量退货比单个退货麻烦100倍</text>
+
+  <rect x="345" y="488" width="315" height="88" rx="6" fill="url(#fixBox)" stroke="#44ff4488" stroke-width="1"/>
+  <text x="360" y="510" fill="#6bcb77" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glowGreen)">&#x2714; 解决方案</text>
+  <text x="360" y="530" fill="#88bb99" font-family="Consolas,monospace" font-size="10.5">先装1-2个灯完成配对配网全流程</text>
+  <text x="360" y="546" fill="#88bb99" font-family="Consolas,monospace" font-size="10.5">确认调光流畅、APP响应OK再上全部</text>
+  <text x="360" y="564" fill="#559966" font-family="Consolas,monospace" font-size="10">&#x25B8; 省下的返工时间比测试时间多10倍</text>
+
+  <!-- Footer -->
+  <text x="340" y="572" text-anchor="middle" fill="#334466" font-family="Consolas,monospace" font-size="10">nexlamp.com &#x2022; 先测试再安装 &#x2022; 省心省钱</text>
+</svg>

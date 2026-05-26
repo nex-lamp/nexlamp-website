@@ -1,5 +1,23 @@
 [
   {
+    "title": "智能灯买完就翻车？90%的人都踩过这个坑——智能开关vs灯泡终极对比",
+    "slug": "smart-light-pitfall-switch-vs-bulb",
+    "date": "2026-05-26",
+    "category": "智能照明",
+    "description": "深度解析智能照明最常见的翻车原因：墙壁开关与智能灯的冲突问题。对比6种主流方案的优缺点、成本和适用场景，涵盖租房党低成本改造到全屋智能方案。",
+    "cover": "images/blog-smart-light-pitfall.svg",
+    "excerpt": "买了智能灯却用不顺手？一关墙上的开关就离线，手机语音全失灵——90%的新手都踩过这个坑。一文讲透智能照明6种控制方案优劣，帮你选对不踩雷。"
+  },
+  {
+    "title": "装修智能灯光要花多少钱？2026全屋智能照明避坑预算全攻略",
+    "slug": "smart-lighting-budget-guide-2026",
+    "date": "2026-05-26",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-smart-lighting-budget-2026-cover.png",
+    "excerpt": "从5000到2万+，三档预算方案教你装对智能灯光。别等装完才后悔——提前规划，省下30%冤枉钱。"
+  },
+  {
     "title": "智能照明协议怎么选？Zigbee/蓝牙Mesh/Wi-Fi/DALI四大主流协议横评",
     "slug": "smart-lighting-protocol-comparison",
     "date": "2026-05-25",

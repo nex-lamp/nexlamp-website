@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500" width="100%">
+  <title>智能灯控制原理与翻车原因</title>
+  <desc>展示智能灯通过墙壁开关控制时断电离线的问题原理</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#4a9eff" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#ff4d6a" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="680" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.06" stroke="#4a9eff" stroke-width="0.5">
+    <line x1="0" y1="60" x2="680" y2="60"/>
+    <line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/>
+    <line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/>
+    <line x1="0" y1="480" x2="680" y2="480"/>
+    <line x1="80" y1="0" x2="80" y2="500"/>
+    <line x1="170" y1="0" x2="170" y2="500"/>
+    <line x1="260" y1="0" x2="260" y2="500"/>
+    <line x1="350" y1="0" x2="350" y2="500"/>
+    <line x1="440" y1="0" x2="440" y2="500"/>
+    <line x1="530" y1="0" x2="530" y2="500"/>
+    <line x1="620" y1="0" x2="620" y2="500"/>
+  </g>
+
+  <!-- Title -->
+  <text x="340" y="40" text-anchor="middle" fill="#e0e8f0" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="500">智能灯控制链路：为什么一关开关就失联？</text>
+
+  <!-- LEFT: Normal State -->
+  <g transform="translate(30, 70)">
+    <rect x="0" y="0" width="290" height="190" rx="10" fill="#0d2137" stroke="#1a3a5c" stroke-width="1"/>
+    <rect x="0" y="0" width="290" height="32" rx="10" fill="#122a45"/>
+    <rect x="0" y="22" width="290" height="10" fill="#122a45"/>
+    <text x="145" y="22" text-anchor="middle" fill="#4a9eff" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="500">✓ 正常工作状态</text>
+
+    <!-- Power source -->
+    <rect x="20" y="50" width="70" height="44" rx="6" fill="#0a2742" stroke="#2a6496" stroke-width="1"/>
+    <text x="55" y="68" text-anchor="middle" fill="#7ab8ff" font-family="sans-serif" font-size="11">电源</text>
+    <text x="55" y="84" text-anchor="middle" fill="#5a8ab8" font-family="sans-serif" font-size="10">220V AC</text>
+
+    <!-- Switch ON -->
+    <rect x="115" y="50" width="60" height="44" rx="6" fill="#0a3d2e" stroke="#1a8a6a" stroke-width="1.5"/>
+    <text x="145" y="70" text-anchor="middle" fill="#5dd9a8" font-family="sans-serif" font-size="11">开关</text>
+    <text x="145" y="85" text-anchor="middle" fill="#3db88a" font-family="sans-serif" font-size="10">ON 闭合</text>
+
+    <!-- Smart bulb with power -->
+    <rect x="200" y="46" width="75" height="52" rx="6" fill="#1a2a4a" stroke="#4a9eff" stroke-width="1.5" filter="url(#glow)"/>
+    <circle cx="237" cy="68" r="12" fill="none" stroke="#ffd93d" stroke-width="2"/>
+    <text x="237" y="98" text-anchor="middle" fill="#a0c8ff" font-family="sans-serif" font-size="10">智能灯</text>
+    <text x="237" y="112" text-anchor="middle" fill="#5a8ab8" font-family="sans-serif" font-size="9">WiFi/Zigbee</text>
+
+    <!-- Connection lines - active -->
+    <line x1="90" y1="72" x2="113" y2="72" stroke="#5dd9a8" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="177" y1="72" x2="198" y2="72" stroke="#5dd9a8" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- App/Cloud connected -->
+    <g transform="translate(70, 130)">
+      <rect x="0" y="0" width="150" height="48" rx="6" fill="#0a2742" stroke="#2a6496" stroke-width="1"/>
+      <text x="75" y="18" text-anchor="middle" fill="#7ab8ff" font-family="sans-serif" font-size="11">📱 手机APP / 语音助手</text>
+      <text x="75" y="36" text-anchor="middle" fill="#5dd9a8" font-family="sans-serif" font-size="10">✓ 在线 · 可控制 · 联动正常</text>
+    </g>
+    <line x1="237" y1="100" x2="145" y2="128" stroke="#4a9eff" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- RIGHT: Problem State -->
+  <g transform="translate(360, 70)">
+    <rect x="0" y="0" width="290" height="190" rx="10" fill="#2a0a0a" stroke="#5c2020" stroke-width="1"/>
+    <rect x="0" y="0" width="290" height="32" rx="10" fill="#3d1212"/>
+    <rect x="0" y="22" width="290" height="10" fill="#3d1212"/>
+    <text x="145" y="22" text-anchor="middle" fill="#ff4d6a" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="500">✗ 翻车：墙壁关灯后</text>
+
+    <!-- Power source still there -->
+    <rect x="20" y="50" width="70" height="44" rx="6" fill="#2a1515" stroke="#6a3030" stroke-width="1"/>
+    <text x="55" y="68" text-anchor="middle" fill="#b07070" font-family="sans-serif" font-size="11">电源</text>
+    <text x="55" y="84" text-anchor="middle" fill="#8a5050" font-family="sans-serif" font-size="10">220V AC</text>
+
+    <!-- Switch OFF -->
+    <rect x="115" y="50" width="60" height="44" rx="6" fill="#3d1515" stroke="#aa3030" stroke-width="1.5"/>
+    <text x="145" y="70" text-anchor="middle" fill="#ff7070" font-family="sans-serif" font-size="11">开关</text>
+    <text x="145" y="85" text-anchor="middle" fill="#cc5050" font-family="sans-serif" font-size="10">OFF 断开!</text>
+
+    <!-- Smart bulb OFFLINE -->
+    <rect x="200" y="46" width="75" height="52" rx="6" fill="#1a1520" stroke="#553040" stroke-width="1.5"/>
+    <circle cx="237" cy="68" r="12" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="237" y="98" text-anchor="middle" fill="#806070" font-family="sans-serif" font-size="10">智能灯</text>
+    <text x="237" y="112" text-anchor="middle" fill="#aa4040" font-family="sans-serif" font-size="9">⚠ 离线断电</text>
+
+    <!-- Broken connection -->
+    <line x1="90" y1="72" x2="113" y2="72" stroke="#ff4d6a" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow-red)"/>
+    <line x1="177" y1="72" x2="198" y2="72" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+    <!-- App disconnected -->
+    <g transform="translate(70, 130)">
+      <rect x="0" y="0" width="150" height="48" rx="6" fill="#2a0a0a" stroke="#5c2020" stroke-width="1"/>
+      <text x="75" y="18" text-anchor="middle" fill="#b07070" font-family="sans-serif" font-size="11">📱 手机 / 小爱同学</text>
+      <text x="75" y="36" text-anchor="middle" fill="#ff4d6a" font-family="sans-serif" font-size="10">✗ 设备离线 · 无法控制</text>
+    </g>
+    <line x1="237" y1="100" x2="145" y2="128" stroke="#663030" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow-red)"/>
+  </g>
+
+  <!-- Bottom: Key Insight Box -->
+  <g transform="translate(40, 280)">
+    <rect x="0" y="0" width="600" height="200" rx="12" fill="#0d1f3c" stroke="#1a3a5c" stroke-width="1"/>
+    <rect x="0" y="0" width="600" height="36" rx="12" fill="#132e4a"/>
+    <rect x="0" y="26" width="600" height="10" fill="#132e4a"/>
+
+    <text x="300" y="24" text-anchor="middle" fill="#ffd93d" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="500">💡 核心问题 &amp; 解决方案速查</text>
+
+    <!-- Problem explanation -->
+    <g transform="translate(25, 50)">
+      <rect x="0" y="0" width="260" height="65" rx="8" fill="#2a0a0a" stroke="#5c2020" stroke-width="1" opacity="0.6"/>
+      <text x="15" y="20" fill="#ff7070" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="500">问题本质</text>
+      <text x="15" y="38" fill="#c0a0a0" font-family="Microsoft YaHei, sans-serif" font-size="11">墙壁开关切断 = 智能模块断电</text>
+      <text x="15" y="55" fill="#c0a0a0" font-family="Microsoft YaHei, sans-serif" font-size="11">断电 = Wi-Fi/Zigbee 离线 = 失控</text>
+    </g>
+
+    <!-- Solution 1 -->
+    <g transform="translate(305, 50)">
+      <rect x="0" y="0" width="270" height="65" rx="8" fill="#0a2a18" stroke="#1a6a3a" stroke-width="1" opacity="0.6"/>
+      <text x="15" y="20" fill="#5dd9a8" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="500">推荐方案 A：智能开关 + 普通灯</text>
+      <text x="15" y="38" fill="#a0c8a0" font-family="Microsoft YaHei, sans-serif" font-size="11">开关本身智能，灯只管亮 · 三路独立</text>
+      <text x="15" y="55" fill="#70a070" font-family="Microsoft YaHei, sans-serif" font-size="11">成本：¥30-80/位 ⭐ 新手首选</text>
+    </g>
+
+    <!-- Solution 2 -->
+    <g transform="translate(25, 125)">
+      <rect x="0" y="0" width="260" height="60" rx="8" fill="#0a2038" stroke="#2a6096" stroke-width="1" opacity="0.6"/>
+      <text x="15" y="20" fill="#4a9eff" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="500">推荐方案 B：无线开关（租房党）</text>
+      <text x="15" y="38" fill="#a0b8d0" font-family="Microsoft YaHei, sans-serif" font-size="11">免改电路，电池供电，搬家带走</text>
+      <text x="15" y="53" fill="#7088a0" font-family="Microsoft YaHei, sans-serif" font-size="11">成本：¥300-500/房间 🏠</text>
+    </g>
+
+    <!-- Solution 3 -->
+    <g transform="translate(305, 125)">
+      <rect x="0" y="0" width="270" height="60" rx="8" fill="#2a1a08" stroke="#6a5020" stroke-width="1" opacity="0.6"/>
+      <text x="15" y="20" fill="#efaf5a" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="500">方案 C：凌动开关 + 智能灯</text>
+      <text x="15" y="38" fill="#d0b8a0" font-family="Microsoft YaHei, sans-serif" font-size="11">开关发信号脉冲不断电 · 兼容性好</text>
+      <text x="15" y="53" fill="#a08870" font-family="Microsoft YaHei, sans-serif" font-size="11">成本：比普通组合高20-30%</text>
+    </g>
+  </g>
+</svg>

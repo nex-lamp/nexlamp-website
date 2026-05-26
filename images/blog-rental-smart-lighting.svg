@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 450" width="100%">
+  <title>出租屋低成本智能灯光改造方案</title>
+  <desc>展示500元预算内出租屋智能灯光改造的完整配置方案</desc>
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#4a9eff" stroke-width="1.5" stroke-linecap="round"/>
+    </marker>
+    <linearGradient id="bgG2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f1a2a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="450" fill="url(#bgG2)"/>
+
+  <!-- Grid -->
+  <g opacity="0.05" stroke="#4a9eff" stroke-width="0.5">
+    <line x1="0" y1="50" x2="680" y2="50"/>
+    <line x1="0" y1="110" x2="680" y2="110"/>
+    <line x1="0" y1="170" x2="680" y2="170"/>
+    <line x1="0" y1="230" x2="680" y2="230"/>
+    <line x1="0" y1="290" x2="680" y2="290"/>
+    <line x1="0" y1="350" x2="680" y2="350"/>
+    <line x1="0" y1="410" x2="680" y2="410"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="220" y1="0" x2="220" y2="450"/>
+    <line x1="340" y1="0" x2="340" y2="450"/>
+    <line x1="460" y1="0" x2="460" y2="450"/>
+    <line x1="580" y1="0" x2="580" y2="450"/>
+  </g>
+
+  <!-- Title -->
+  <text x="340" y="35" text-anchor="middle" fill="#e0e8f0" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="500">出租屋智能灯光改造 — ¥500 方案架构</text>
+
+  <!-- Room layout (simplified) -->
+  <g transform="translate(30, 55)">
+    <!-- Room outline -->
+    <rect x="0" y="0" width="250" height="180" rx="8" fill="none" stroke="#2a4a6a" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <text x="125" y="-8" text-anchor="middle" fill="#5a8aaa" font-family="Microsoft YaHei, sans-serif" font-size="11">房间示意</text>
+
+    <!-- Smart downlights -->
+    <g transform="translate(40, 40)">
+      <ellipse cx="25" cy="15" rx="22" ry="10" fill="#1a3050" stroke="#4a9eff" stroke-width="1.2"/>
+      <text x="25" y="19" text-anchor="middle" fill="#7ab8ff" font-family="sans-serif" font-size="9">智能筒灯×3</text>
+      <text x="25" y="42" text-anchor="middle" fill="#5a8a5a" font-family="sans-serif" font-size="9">¥180</text>
+    </g>
+    <g transform="translate(110, 40)">
+      <ellipse cx="25" cy="15" rx="22" ry="10" fill="#1a3050" stroke="#4a9eff" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(180, 40)">
+      <ellipse cx="25" cy="15" rx="22" ry="10" fill="#1a3050" stroke="#4a9eff" stroke-width="1.2"/>
+    </g>
+
+    <!-- LED strip -->
+    <rect x="20" y="110" width="210" height="14" rx="3" fill="#2a1a08" stroke="#efaf5a" stroke-width="1"/>
+    <text x="125" y="121" text-anchor="middle" fill="#efaf5a" font-family="sans-serif" font-size="9">LED氛围灯带 2m · ¥80</text>
+
+    <!-- Wireless switch on wall -->
+    <rect x="5" y="140" width="35" height="28" rx="4" fill="#0a2a18" stroke="#5dd9a8" stroke-width="1.2"/>
+    <text x="22" y="157" text-anchor="middle" fill="#5dd9a8" font-family="sans-serif" font-size="8">无线</text>
+    <text x="22" y="168" text-anchor="middle" fill="#3a8a6a" font-family="sans-serif" font-size="7">开关</text>
+
+    <!-- Gateway -->
+    <g transform="translate(185, 135)">
+      <rect x="0" y="0" width="50" height="35" rx="5" fill="#1a2040" stroke="#9a7aff" stroke-width="1.2"/>
+      <text x="25" y="15" text-anchor="middle" fill="#b0a0ff" font-family="sans-serif" font-size="8">Zigbee</text>
+      <text x="25" y="27" text-anchor="middle" fill="#8070b0" font-family="sans-serif" font-size="8">网关</text>
+    </g>
+  </g>
+
+  <!-- Budget breakdown -->
+  <g transform="translate(310, 55)">
+    <rect x="0" y="0" width="340" height="180" rx="10" fill="#0d1f38" stroke="#1a3a5c" stroke-width="1"/>
+    <rect x="0" y="0" width="340" height="32" rx="10" fill="#142a45"/>
+    <rect x="0" y="22" width="340" height="10" fill="#142a45"/>
+    <text x="170" y="22" text-anchor="middle" fill="#ffd93d" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="500">💰 预算明细 ¥500</text>
+
+    <!-- Items -->
+    <g transform="translate(15, 42)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="155" height="36" rx="6" fill="#0a1a30" stroke="#2a5080" stroke-width="0.8"/>
+      <text x="10" y="16" fill="#a0c8ff" font-family="Microsoft YaHei, sans-serif" font-size="11">智能筒灯 ×3支</text>
+      <text x="10" y="30" fill="#6080a0" font-family="sans-serif" font-size="9">涂鸦Zigbee 恒流驱动</text>
+      <text x="140" y="24" fill="#5dd9a8" font-family="monospace" font-size="12" text-anchor="end">¥180</text>
+
+      <!-- Item 2 -->
+      <rect x="0" y="42" width="155" height="36" rx="6" fill="#0a1a30" stroke="#2a5080" stroke-width="0.8"/>
+      <text x="10" y="58" fill="#a0c8ff" font-family="Microsoft YaHei, sans-serif" font-size="11">无线开关 ×2个</text>
+      <text x="10" y="72" fill="#6080a0" font-family="sans-serif" font-size="9">贴墙即用 免布线</text>
+      <text x="140" y="64" fill="#5dd9a8" font-family="monospace" font-size="12" text-anchor="end">¥60</text>
+
+      <!-- Item 3 -->
+      <rect x="170" y="0" width="155" height="36" rx="6" fill="#0a1a30" stroke="#2a5080" stroke-width="0.8"/>
+      <text x="180" y="16" fill="#a0c8ff" font-family="Microsoft YaHei, sans-serif" font-size="11">Zigbee网关 ×1个</text>
+      <text x="180" y="30" fill="#6080a0" font-family="sans-serif" font-size="9">多设备接入中枢</text>
+      <text x="310" y="24" fill="#5dd9a8" font-family="monospace" font-size="12" text-anchor="end">¥80</text>
+
+      <!-- Item 4 -->
+      <rect x="170" y="42" width="155" height="36" rx="6" fill="#0a1a30" stroke="#2a5080" stroke-width="0.8"/>
+      <text x="180" y="58" fill="#a0c8ff" font-family="Microsoft YaHei, sans-serif" font-size="11">LED灯带 2米</text>
+      <text x="180" y="72" fill="#6080a0" font-family="sans-serif" font-size="9">窗帘盒氛围光</text>
+      <text x="310" y="64" fill="#5dd9a8" font-family="monospace" font-size="12" text-anchor="end">¥80</text>
+
+      <!-- Item 5 -->
+      <rect x="0" y="84" width="155" height="36" rx="6" fill="#0a1a30" stroke="#2a5080" stroke-width="0.8"/>
+      <text x="10" y="100" fill="#a0c8ff" font-family="Microsoft YaHei, sans-serif" font-size="11">安装辅料+工具</text>
+      <text x="10" y="114" fill="#6080a0" font-family="sans-serif" font-size="9">螺丝/胶带/螺丝刀</text>
+      <text x="140" y="106" fill="#5dd9a8" font-family="monospace" font-size="12" text-anchor="end">¥100</text>
+
+      <!-- Total -->
+      <rect x="170" y="84" width="155" height="36" rx="6" fill="#1a2a15" stroke="#5a9a30" stroke-width="1.2"/>
+      <text x="180" y="100" fill="#ffd93d" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="500">合计</text>
+      <text x="310" y="106" fill="#5dd9a8" font-family="monospace" font-size="14" font-weight="bold" text-anchor="end">¥500</text>
+    </g>
+
+    <!-- Key benefits -->
+    <g transform="translate(15, 138)">
+      <text x="0" y="12" fill="#5dd9a8" font-family="Microsoft YaHei, sans-serif" font-size="10">✓ 免改电路 ✓ 搬家带走 ✓ 手机+语音双控 ✓ 场景联动</text>
+      <text x="0" y="30" fill="#708090" font-family="Microsoft YaHei, sans-serif" font-size="9">约2小时完成安装，无需电工基础</text>
+    </g>
+  </g>
+
+  <!-- Bottom: Protocol comparison for rental -->
+  <g transform="translate(30, 255)">
+    <rect x="0" y="0" width="620" height="175" rx="10" fill="#0d1f38" stroke="#1a3a5c" stroke-width="1"/>
+    <rect x="0" y="0" width="620" height="32" rx="10" fill="#142a45"/>
+    <rect x="0" y="22" width="620" height="10" fill="#142a45"/>
+    <text x="310" y="22" text-anchor="middle" fill="#4a9eff" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="500">六种方案对比总览</text>
+
+    <!-- Table header -->
+    <g transform="translate(10, 42)">
+      <text x="0" y="12" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="500">方案</text>
+      <text x="90" y="12" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="500">成本</text>
+      <text x="160" y="12" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="500">难度</text>
+      <text x="220" y="12" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="500">适合谁</text>
+      <text x="330" y="12" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="500">核心优势</text>
+      <text x="520" y="12" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="500">评分</text>
+    </g>
+
+    <line x1="10" y1="52" x2="610" y2="52" stroke="#1a3a5c" stroke-width="0.8"/>
+
+    <!-- Rows -->
+    <!-- Row 1: Smart switch + normal light -->
+    <g transform="translate(10, 58)">
+      <text x="0" y="14" fill="#5dd9a8" font-family="Microsoft YaHei, sans-serif" font-size="10">①智能开关+普通灯</text>
+      <text x="90" y="14" fill="#c0d0d0" font-family="sans-serif" font-size="10">¥30-80/位</text>
+      <text x="160" y="14" fill="#c0d0d0" font-family="sans-serif" font-size="10">★☆☆</text>
+      <text x="220" y="14" fill="#a0b8c0" font-family="Microsoft YaHei, sans-serif" font-size="9">老房改造/新手</text>
+      <text x="330" y="14" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="9">三路独立控制·最稳定</text>
+      <rect x="520" y="3" width="70" height="16" rx="8" fill="#1a3a25" stroke="#3a8a50" stroke-width="0.8"/>
+      <text x="555" y="15" text-anchor="middle" fill="#5dd9a8" font-family="sans-serif" font-size="9">⭐ 推荐</text>
+    </g>
+
+    <!-- Row 2: Normal switch + smart bulb -->
+    <g transform="translate(10, 82)">
+      <text x="0" y="14" fill="#ff7070" font-family="Microsoft YaHei, sans-serif" font-size="10">②普通开关+智能灯</text>
+      <text x="90" y="14" fill="#c0d0d0" font-family="sans-serif" font-size="10">¥50-150/个</text>
+      <text x="160" y="14" fill="#c0d0d0" font-family="sans-serif" font-size="10">★☆☆</text>
+      <text x="220" y="14" fill="#a0b8c0" font-family="Microsoft YaHei, sans-serif" font-size="9">已买智能灯的</text>
+      <text x="330" y="14" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="9">❌ 关灯即离线的翻车区</text>
+      <rect x="520" y="3" width="70" height="16" rx="8" fill="#3a1515" stroke="#8a3030" stroke-width="0.8"/>
+      <text x="555" y="15" text-anchor="middle" fill="#ff7070" font-family="sans-serif" font-size="9">⚠ 踩坑</text>
+    </g>
+
+    <!-- Row 3: Lingdong + smart bulb -->
+    <g transform="translate(10, 106)">
+      <text x="0" y="14" fill="#efaf5a" font-family="Microsoft YaHei, sans-serif" font-size="10">③凌动开关+智能灯</text>
+      <text x="90" y="14" fill="#c0d0d0" font-family="sans-serif" font-size="10">¥80-200/位</text>
+      <text x="160" y="14" fill="#c0d0d0" font-family="sans-serif" font-size="10">★★☆</text>
+      <text x="220" y="14" fill="#a0b8c0" font-family="Microsoft YaHei, sans-serif" font-size="9">进阶玩家</text>
+      <text x="330" y="14" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="9">开关不断电·兼容好</text>
+      <rect x="520" y="3" width="70" height="16" rx="8" fill="#3a2a10" stroke="#8a7030" stroke-width="0.8"/>
+      <text x="555" y="15" text-anchor="middle" fill="#efaf5a" font-family="sans-serif" font-size="9">✓ 进阶</text>
+    </g>
+
+    <!-- Row 4: Wireless switch -->
+    <g transform="translate(10, 130)">
+      <text x="0" y="14" fill="#4a9eff" font-family="Microsoft YaHei, sans-serif" font-size="10">④无线开关+智能灯</text>
+      <text x="90" y="14" fill="#c0d0d0" font-family="sans-serif" font-size="10">¥300-500/房</text>
+      <text x="160" y="14" fill="#c0d0d0" font-family="sans-serif" font-size="10">★★☆</text>
+      <text x="220" y="14" fill="#a0b8c0" font-family="Microsoft YaHei, sans-serif" font-size="9">租房党</text>
+      <text x="330" y="14" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="9">免改电路·可搬家带走</text>
+      <rect x="520" y="3" width="70" height="16" rx="8" fill="#152540" stroke="#3068a0" stroke-width="0.8"/>
+      <text x="555" y="15" text-anchor="middle" fill="#4a9eff" font-family="sans-serif" font-size="9">🏠 租房</text>
+    </g>
+
+    <!-- Row 5: Full smart home -->
+    <g transform="translate(10, 154)">
+      <text x="0" y="14" fill="#b080ff" font-family="Microsoft YaHei, sans-serif" font-size="10">⑤⑥全屋智能系统</text>
+      <text x="90" y="14" fill="#c0d0d0" font-family="sans-serif" font-size="10">¥3000-8000</text>
+      <text x="160" y="14" fill="#c0d0d0" font-family="sans-serif" font-size="10">★★★</text>
+      <text x="220" y="14" fill="#a0b8c0" font-family="Microsoft YaHei, sans-serif" font-size="9">新房装修/土豪</text>
+      <text x="330" y="14" fill="#8090a0" font-family="Microsoft YaHei, sans-serif" font-size="9">全套联动·场景面板·传感器</text>
+      <rect x="520" y="3" width="70" height="16" rx="8" fill="#201535" stroke="#6040a0" stroke-width="0.8"/>
+      <text x="555" y="15" text-anchor="middle" fill="#b080ff" font-family="sans-serif" font-size="9">👑 完整</text>
+    </g>
+  </g>
+</svg>

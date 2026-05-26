@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f1f3d"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0099cc"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#cc4444"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd93d"/>
+      <stop offset="100%" stop-color="#ccaa00"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6bcb77"/>
+      <stop offset="100%" stop-color="#3d8b4a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="420" fill="url(#bgGrad)"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="340" y="42" text-anchor="middle" fill="#00d4ff" font-family="Consolas,monospace" font-size="20" font-weight="bold" filter="url(#glow)">全屋智能灯光 · 预算构成拆解</text>
+
+  <!-- Horizontal bar chart -->
+  <!-- Bar 1: 灯具本体 45% -->
+  <text x="30" y="105" fill="#8899aa" font-family="Consolas,monospace" font-size="13">灯具本体</text>
+  <rect x="150" y="92" width="380" height="22" rx="3" fill="#0d1f33" stroke="#1a3555" stroke-width="0.5"/>
+  <rect x="150" y="92" width="216" height="22" rx="3" fill="url(#g1)" opacity="0.9"/>
+  <text x="540" y="108" fill="#00d4ff" font-family="Consolas,monospace" font-size="14" font-weight="bold">45%</text>
+
+  <!-- Bar 2: 控制系统 22% -->
+  <text x="30" y="155" fill="#8899aa" font-family="Consolas,monospace" font-size="13">控制系统</text>
+  <rect x="150" y="142" width="380" height="22" rx="3" fill="#0d1f33" stroke="#1a3555" stroke-width="0.5"/>
+  <rect x="150" y="142" width="106" height="22" rx="3" fill="url(#g3)" opacity="0.9"/>
+  <text x="540" y="158" fill="#ffd93d" font-family="Consolas,monospace" font-size="14" font-weight="bold">22%</text>
+
+  <!-- Bar 3: 驱动电源 18% -->
+  <text x="30" y="205" fill="#8899aa" font-family="Consolas,monospace" font-size="13">驱动电源</text>
+  <rect x="150" y="192" width="380" height="22" rx="3" fill="#0d1f33" stroke="#1a3555" stroke-width="0.5"/>
+  <rect x="150" y="192" width="86" height="22" rx="3" fill="url(#g2)" opacity="0.9"/>
+  <text x="540" y="208" fill="#ff6b6b" font-family="Consolas,monospace" font-size="14" font-weight="bold">18%</text>
+
+  <!-- Bar 4: 安装调试 15% -->
+  <text x="30" y="255" fill="#8899aa" font-family="Consolas,monospace" font-size="13">安装调试</text>
+  <rect x="150" y="242" width="380" height="22" rx="3" fill="#0d1f33" stroke="#1a3555" stroke-width="0.5"/>
+  <rect x="150" y="242" width="72" height="22" rx="3" fill="url(#g4)" opacity="0.9"/>
+  <text x="540" y="258" fill="#6bcb77" font-family="Consolas,monospace" font-size="14" font-weight="bold">15%</text>
+
+  <!-- Key insight box -->
+  <rect x="30" y="298" width="620" height="105" rx="6" fill="#0d1a2d" stroke="#1a3555" stroke-width="1"/>
+  <text x="50" y="328" fill="#00d4ff" font-family="Consolas,monospace" font-size="14" font-weight="bold">&#x25B8; 关键洞察</text>
+  <text x="50" y="352" fill="#aabbcc" font-family="Consolas,monospace" font-size="11.5">&#x2022; 驱动电源占比不高（18%），但直接影响80%的掉线/频闪问题</text>
+  <text x="50" y="372" fill="#aabbcc" font-family="Consolas,monospace" font-size="11.5">&#x2022; 灯具本体是大头，建议先买样品实测显色和光衰再批量下单</text>
+  <text x="50" y="392" fill="#aabbcc" font-family="Consolas,monospace" font-size="11.5">&#x2022; Zigbee驱动（涂鸦方案）的整体稳定性优于蓝牙Mesh和Wi-Fi直连</text>
+
+  <!-- Footer -->
+  <text x="340" y="412" text-anchor="middle" fill="#334466" font-family="Consolas,monospace" font-size="10">nexlamp.com &#x2022; 2026全屋智能灯光预算指南</text>
+</svg>
