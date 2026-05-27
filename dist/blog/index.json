@@ -1,5 +1,23 @@
 [
   {
+    "title": "智能调光真的伤眼吗？PWM vs DALI vs CCR 调光技术全解析 + 护眼选购指南",
+    "slug": "smart-dimming-flicker-eye-protection-guide",
+    "date": "2026-05-27",
+    "category": "技术解析",
+    "description": "智能调光灯越来越普及，但\"越调越暗、眼睛越来越累\"的投诉也越来越多。本文深度解析PWM、DALI、CCR三种主流调光技术的原理与频闪风险，帮你看懂参数、选对产品，实现真正的护眼智能照明。",
+    "cover": "images/blog-smart-dimming-cover.png",
+    "excerpt": "智能调光灯越来越普及，但\"越调越暗、眼睛越来越累\"的投诉也越来越多。深度解析PWM、DALI、CCR三种主流调光技术，帮你选对护眼产品。"
+  },
+  {
+    "title": "Zigbee智能灯频繁掉线？5个真实原因+系统性解决方案",
+    "slug": "zigbee-light-dropout-fix",
+    "date": "2026-05-27",
+    "category": "智能家居",
+    "description": "Zigbee智能灯掉线是智能家居最常见的故障。本文深度分析信号遮挡、网状拓扑中断、驱动兼容性、信道干扰、Hub距离等5大原因，提供逐步排查与修复方法，避免花大价钱装了智障家居。",
+    "cover": "images/blog-zigbee-dropout-cover.jpg",
+    "excerpt": "智能灯隔三岔五掉线、App控制没反应、场景联动失效——这几乎是每个装了全屋智能的人都踩过的坑。本文从Zigbee网络原理出发，系统梳理5大真实原因，给出可操作的解决方案。"
+  },
+  {
     "title": "智能灯买完就翻车？90%的人都踩过这个坑——智能开关vs灯泡终极对比",
     "slug": "smart-light-pitfall-switch-vs-bulb",
     "date": "2026-05-26",

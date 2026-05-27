@@ -1,0 +1,107 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', monospace">
+  <defs>
+    <filter id="glow_blue">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- 背景 -->
+  <rect width="800" height="520" fill="#0a1628"/>
+  <!-- 网格 -->
+  <g stroke="#1a2a44" stroke-width="0.5" opacity="0.5">
+    <line x1="0" y1="40" x2="800" y2="40"/>
+    <line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="280" x2="800" y2="280"/>
+    <line x1="0" y1="320" x2="800" y2="320"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="440" x2="800" y2="440"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="80" y1="0" x2="80" y2="520"/>
+    <line x1="160" y1="0" x2="160" y2="520"/>
+    <line x1="240" y1="0" x2="240" y2="520"/>
+    <line x1="320" y1="0" x2="320" y2="520"/>
+    <line x1="400" y1="0" x2="400" y2="520"/>
+    <line x1="480" y1="0" x2="480" y2="520"/>
+    <line x1="560" y1="0" x2="560" y2="520"/>
+    <line x1="640" y1="0" x2="640" y2="520"/>
+    <line x1="720" y1="0" x2="720" y2="520"/>
+  </g>
+  <!-- 标题 -->
+  <rect x="20" y="12" width="380" height="26" rx="4" fill="#0d1f3a" stroke="#00d4ff" stroke-width="1"/>
+  <text x="30" y="30" fill="#00d4ff" font-size="13" font-weight="bold">// Zigbee Dropout Diagnostic Flow</text>
+  <!-- 起点 -->
+  <rect x="300" y="50" width="200" height="38" rx="6" fill="#0d2040" stroke="#00d4ff" stroke-width="2" filter="url(#glow_blue)"/>
+  <text x="400" y="74" fill="#00d4ff" font-size="12" font-weight="bold" text-anchor="middle">智能灯出现掉线</text>
+  <!-- 箭头 -->
+  <line x1="400" y1="88" x2="400" y2="108" stroke="#7be0ff" stroke-width="2"/>
+  <polygon points="394,108 406,108 400,118" fill="#7be0ff"/>
+  <!-- 判断1: 物理断电 -->
+  <polygon points="400,120 520,148 400,176 280,148" fill="#0d2a1a" stroke="#00ff88" stroke-width="2"/>
+  <text x="400" y="145" fill="#00ff88" font-size="10" font-weight="bold" text-anchor="middle">灯有没有被物理</text>
+  <text x="400" y="160" fill="#00ff88" font-size="10" font-weight="bold" text-anchor="middle">开关断电？</text>
+  <!-- 是 -->
+  <line x1="520" y1="148" x2="600" y2="148" stroke="#7be0ff" stroke-width="2"/>
+  <polygon points="600,143 612,148 600,153" fill="#7be0ff"/>
+  <text x="555" y="140" fill="#88ffbb" font-size="9" text-anchor="middle">是</text>
+  <rect x="612" y="126" width="160" height="44" rx="5" fill="#0a2a1a" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="692" y="146" fill="#00ff88" font-size="9" font-weight="bold" text-anchor="middle">改为软开关控制</text>
+  <text x="692" y="160" fill="#88ffbb" font-size="9" text-anchor="middle">保持灯具常供电</text>
+  <!-- 否 -->
+  <line x1="400" y1="176" x2="400" y2="196" stroke="#7be0ff" stroke-width="2"/>
+  <polygon points="394,196 406,196 400,206" fill="#7be0ff"/>
+  <text x="420" y="190" fill="#88ffbb" font-size="9">否</text>
+  <!-- 判断2: 区域集中 -->
+  <polygon points="400,208 520,236 400,264 280,236" fill="#0d2040" stroke="#00d4ff" stroke-width="2"/>
+  <text x="400" y="233" fill="#00d4ff" font-size="10" font-weight="bold" text-anchor="middle">掉线设备集中在</text>
+  <text x="400" y="248" fill="#00d4ff" font-size="10" font-weight="bold" text-anchor="middle">某一区域？</text>
+  <!-- 是 -->
+  <line x1="520" y1="236" x2="600" y2="236" stroke="#7be0ff" stroke-width="2"/>
+  <polygon points="600,231 612,236 600,241" fill="#7be0ff"/>
+  <text x="555" y="228" fill="#88ffbb" font-size="9" text-anchor="middle">是</text>
+  <rect x="612" y="214" width="160" height="44" rx="5" fill="#0a2040" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="692" y="234" fill="#00d4ff" font-size="9" font-weight="bold" text-anchor="middle">该区域增加</text>
+  <text x="692" y="248" fill="#7be0ff" font-size="9" text-anchor="middle">Zigbee路由节点</text>
+  <!-- 否 -->
+  <line x1="400" y1="264" x2="400" y2="284" stroke="#7be0ff" stroke-width="2"/>
+  <polygon points="394,284 406,284 400,294" fill="#7be0ff"/>
+  <text x="420" y="278" fill="#88ffbb" font-size="9">否</text>
+  <!-- 判断3: 固件 -->
+  <polygon points="400,296 520,324 400,352 280,324" fill="#0d1a2a" stroke="#7be0ff" stroke-width="2"/>
+  <text x="400" y="321" fill="#7be0ff" font-size="10" font-weight="bold" text-anchor="middle">Hub固件是</text>
+  <text x="400" y="336" fill="#7be0ff" font-size="10" font-weight="bold" text-anchor="middle">最新版本？</text>
+  <!-- 否 -->
+  <line x1="280" y1="324" x2="200" y2="324" stroke="#7be0ff" stroke-width="2"/>
+  <polygon points="200,319 188,324 200,329" fill="#7be0ff"/>
+  <text x="240" y="316" fill="#88ffbb" font-size="9" text-anchor="middle">否</text>
+  <rect x="28" y="302" width="160" height="44" rx="5" fill="#0a1a2a" stroke="#7be0ff" stroke-width="1.5"/>
+  <text x="108" y="322" fill="#7be0ff" font-size="9" font-weight="bold" text-anchor="middle">更新Hub固件</text>
+  <text x="108" y="336" fill="#5badff" font-size="9" text-anchor="middle">重新扫描设备</text>
+  <!-- 是 -->
+  <line x1="400" y1="352" x2="400" y2="372" stroke="#7be0ff" stroke-width="2"/>
+  <polygon points="394,372 406,372 400,382" fill="#7be0ff"/>
+  <text x="420" y="366" fill="#88ffbb" font-size="9">是</text>
+  <!-- 判断4: 信道 -->
+  <polygon points="400,384 520,412 400,440 280,412" fill="#1a1a0d" stroke="#ffaa00" stroke-width="2"/>
+  <text x="400" y="409" fill="#ffaa00" font-size="10" font-weight="bold" text-anchor="middle">Zigbee信道</text>
+  <text x="400" y="424" fill="#ffaa00" font-size="10" font-weight="bold" text-anchor="middle">是否25/26信道？</text>
+  <!-- 否 -->
+  <line x1="520" y1="412" x2="600" y2="412" stroke="#7be0ff" stroke-width="2"/>
+  <polygon points="600,407 612,412 600,417" fill="#7be0ff"/>
+  <text x="555" y="404" fill="#88ffbb" font-size="9" text-anchor="middle">否</text>
+  <rect x="612" y="390" width="160" height="44" rx="5" fill="#1a1a0d" stroke="#ffaa00" stroke-width="1.5"/>
+  <text x="692" y="410" fill="#ffaa00" font-size="9" font-weight="bold" text-anchor="middle">手动切换信道</text>
+  <text x="692" y="424" fill="#ffcc66" font-size="9" text-anchor="middle">改为ch25或ch26</text>
+  <!-- 是 -->
+  <line x1="400" y1="440" x2="400" y2="460" stroke="#7be0ff" stroke-width="2"/>
+  <polygon points="394,460 406,460 400,470" fill="#7be0ff"/>
+  <text x="420" y="454" fill="#88ffbb" font-size="9">还掉</text>
+  <!-- 最终判断 -->
+  <rect x="270" y="470" width="260" height="38" rx="6" fill="#2a0d0d" stroke="#ff4444" stroke-width="1.5"/>
+  <text x="400" y="492" fill="#ff6666" font-size="10" font-weight="bold" text-anchor="middle">更换驱动电源</text>
+  <text x="400" y="505" fill="#ff9999" font-size="9" text-anchor="middle">选认证驱动，纹波 &lt;150mV</text>
+</svg>

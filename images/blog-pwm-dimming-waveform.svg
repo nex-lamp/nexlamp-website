@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a40" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0a1628"/>
+  <rect width="800" height="400" fill="url(#grid1)"/>
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-family="monospace" font-size="18" fill="#64d2ff" filter="url(#glow1)">PWM DIMMING WAVEFORM ANALYSIS</text>
+  <text x="400" y="56" text-anchor="middle" font-family="monospace" font-size="11" fill="#4a7fa8">脉冲宽度调制调光波形 — 频闪危害随调光比减小而增大</text>
+  <!-- 100% Duty Cycle -->
+  <text x="30" y="105" font-family="monospace" font-size="11" fill="#a0c8e8">100% / 满亮</text>
+  <rect x="160" y="85" width="580" height="30" fill="#00d4ff" fill-opacity="0.85" filter="url(#glow1)" rx="2"/>
+  <text x="760" y="105" font-family="monospace" font-size="10" fill="#4af" text-anchor="end">无频闪</text>
+  <!-- 50% Duty Cycle -->
+  <text x="30" y="165" font-family="monospace" font-size="11" fill="#a0c8e8">50% / 半亮</text>
+  <rect x="160" y="145" width="72" height="28" fill="#00d4ff" fill-opacity="0.75" rx="1"/>
+  <rect x="305" y="145" width="72" height="28" fill="#00d4ff" fill-opacity="0.75" rx="1"/>
+  <rect x="450" y="145" width="72" height="28" fill="#00d4ff" fill-opacity="0.75" rx="1"/>
+  <rect x="595" y="145" width="72" height="28" fill="#00d4ff" fill-opacity="0.75" rx="1"/>
+  <rect x="668" y="145" width="73" height="28" fill="#00d4ff" fill-opacity="0.75" rx="1"/>
+  <text x="760" y="162" font-family="monospace" font-size="10" fill="#faad14" text-anchor="end">中风险</text>
+  <!-- 20% Duty Cycle -->
+  <text x="30" y="225" font-family="monospace" font-size="11" fill="#a0c8e8">20% / 昏暗</text>
+  <rect x="160" y="205" width="28" height="28" fill="#ff7a30" fill-opacity="0.9" rx="1"/>
+  <rect x="305" y="205" width="28" height="28" fill="#ff7a30" fill-opacity="0.9" rx="1"/>
+  <rect x="450" y="205" width="28" height="28" fill="#ff7a30" fill-opacity="0.9" rx="1"/>
+  <rect x="595" y="205" width="28" height="28" fill="#ff7a30" fill-opacity="0.9" rx="1"/>
+  <rect x="668" y="205" width="28" height="28" fill="#ff7a30" fill-opacity="0.9" rx="1"/>
+  <text x="760" y="222" font-family="monospace" font-size="10" fill="#ff4d4f" text-anchor="end">高风险！</text>
+  <!-- 10% Duty Cycle -->
+  <text x="30" y="285" font-family="monospace" font-size="11" fill="#a0c8e8">10% / 极暗</text>
+  <rect x="160" y="265" width="14" height="28" fill="#ff2222" fill-opacity="0.95" filter="url(#glow1)" rx="1"/>
+  <rect x="305" y="265" width="14" height="28" fill="#ff2222" fill-opacity="0.95" filter="url(#glow1)" rx="1"/>
+  <rect x="450" y="265" width="14" height="28" fill="#ff2222" fill-opacity="0.95" filter="url(#glow1)" rx="1"/>
+  <rect x="595" y="265" width="14" height="28" fill="#ff2222" fill-opacity="0.95" filter="url(#glow1)" rx="1"/>
+  <rect x="668" y="265" width="14" height="28" fill="#ff2222" fill-opacity="0.95" filter="url(#glow1)" rx="1"/>
+  <text x="760" y="282" font-family="monospace" font-size="10" fill="#ff2222" text-anchor="end">极高风险！90%时间为OFF</text>
+  <!-- Time axis -->
+  <line x1="160" y1="310" x2="740" y2="310" stroke="#4a7fa8" stroke-width="1.5"/>
+  <line x1="740" y1="310" x2="730" y2="305" stroke="#4a7fa8" stroke-width="1.5"/>
+  <line x1="740" y1="310" x2="730" y2="315" stroke="#4a7fa8" stroke-width="1.5"/>
+  <text x="745" y="313" font-family="monospace" font-size="11" fill="#4a7fa8">t</text>
+  <text x="400" y="340" text-anchor="middle" font-family="monospace" font-size="12" fill="#4a9a6a">结论：调光越暗，频闪占比越高，眼睛受到的不可见光刺激越强</text>
+  <!-- Legend -->
+  <rect x="160" y="360" width="12" height="12" fill="#00d4ff" rx="2"/>
+  <text x="178" y="372" font-family="monospace" font-size="10" fill="#a0c8e8">ON (发光)</text>
+  <rect x="280" y="360" width="12" height="12" fill="#1a2a40" stroke="#4a7fa8" stroke-width="1" rx="2"/>
+  <text x="298" y="372" font-family="monospace" font-size="10" fill="#a0c8e8">OFF (熄灭)</text>
+  <text x="500" y="372" font-family="monospace" font-size="10" fill="#64d2ff">频率: 400~1000 Hz (常见廉价方案)</text>
+</svg>

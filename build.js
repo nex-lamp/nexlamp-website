@@ -140,7 +140,12 @@ function parseFrontMatter(content) {
       const colonIndex = line.indexOf(':');
       if (colonIndex === -1) return;
       const key = line.substring(0, colonIndex).trim();
-      const value = line.substring(colonIndex + 1).trim();
+      let value = line.substring(colonIndex + 1).trim();
+      // Strip surrounding quotes from scalar values
+      if ((value.startsWith('"') && value.endsWith('"')) ||
+          (value.startsWith("'") && value.endsWith("'"))) {
+        value = value.slice(1, -1);
+      }
       if (key && value) {
         meta[key] = value;
       }

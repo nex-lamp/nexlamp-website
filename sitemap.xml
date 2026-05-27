@@ -26,6 +26,20 @@
   </url>
 
   <url>
+    <loc>https://www.nexlamp.com/dist/blog/smart-dimming-flicker-eye-protection-guide.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexlamp.com/dist/blog/zigbee-light-dropout-fix.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.nexlamp.com/dist/blog/smart-light-pitfall-switch-vs-bulb.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>

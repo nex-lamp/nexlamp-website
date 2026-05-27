@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a40" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="420" fill="#0a1628"/>
+  <rect width="800" height="420" fill="url(#grid2)"/>
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-family="monospace" font-size="17" fill="#64d2ff" filter="url(#glow2)">DIMMING TECHNOLOGY COMPARISON</text>
+  <text x="400" y="55" text-anchor="middle" font-family="monospace" font-size="11" fill="#4a7fa8">三种主流调光方案综合对比</text>
+  <!-- Column Headers -->
+  <rect x="30" y="70" width="220" height="36" fill="#0d1f35" rx="4"/>
+  <rect x="265" y="70" width="150" height="36" fill="#0d1f35" rx="4"/>
+  <rect x="430" y="70" width="150" height="36" fill="#0d1f35" rx="4"/>
+  <rect x="595" y="70" width="175" height="36" fill="#0d1f35" rx="4"/>
+  <text x="140" y="93" text-anchor="middle" font-family="monospace" font-size="13" fill="#a0c8e8">对比维度</text>
+  <text x="340" y="88" text-anchor="middle" font-family="monospace" font-size="13" fill="#00d4ff" filter="url(#glow2)">PWM</text>
+  <text x="340" y="102" text-anchor="middle" font-family="monospace" font-size="10" fill="#4a7fa8">脉冲宽度调制</text>
+  <text x="505" y="88" text-anchor="middle" font-family="monospace" font-size="13" fill="#4af06f" filter="url(#glow2)">CCR</text>
+  <text x="505" y="102" text-anchor="middle" font-family="monospace" font-size="10" fill="#4a7fa8">恒流调节</text>
+  <text x="682" y="88" text-anchor="middle" font-family="monospace" font-size="13" fill="#ffd666" filter="url(#glow2)">DALI</text>
+  <text x="682" y="102" text-anchor="middle" font-family="monospace" font-size="10" fill="#4a7fa8">数字协议</text>
+  <!-- Row 1: Flicker -->
+  <rect x="30" y="115" width="740" height="40" fill="#0d1f35" fill-opacity="0.5" rx="2"/>
+  <text x="140" y="140" text-anchor="middle" font-family="monospace" font-size="12" fill="#a0c8e8">频闪风险</text>
+  <text x="340" y="140" text-anchor="middle" font-family="monospace" font-size="13" fill="#ff4d4f" filter="url(#glow2)">⚠ 高（低占空比时）</text>
+  <text x="505" y="140" text-anchor="middle" font-family="monospace" font-size="13" fill="#4af06f" filter="url(#glow2)">✓ 几乎无频闪</text>
+  <text x="682" y="140" text-anchor="middle" font-family="monospace" font-size="13" fill="#ffd666">★ 依驱动而定</text>
+  <!-- Row 2: Eye Protection -->
+  <rect x="30" y="160" width="740" height="40" fill="#0a1628" rx="2"/>
+  <text x="140" y="185" text-anchor="middle" font-family="monospace" font-size="12" fill="#a0c8e8">护眼等级</text>
+  <text x="340" y="185" text-anchor="middle" font-family="monospace" font-size="13" fill="#ff7a30">★★☆☆☆</text>
+  <text x="505" y="185" text-anchor="middle" font-family="monospace" font-size="13" fill="#4af06f">★★★★★</text>
+  <text x="682" y="185" text-anchor="middle" font-family="monospace" font-size="13" fill="#ffd666">★★★★☆</text>
+  <!-- Row 3: Cost -->
+  <rect x="30" y="205" width="740" height="40" fill="#0d1f35" fill-opacity="0.5" rx="2"/>
+  <text x="140" y="230" text-anchor="middle" font-family="monospace" font-size="12" fill="#a0c8e8">成本</text>
+  <text x="340" y="230" text-anchor="middle" font-family="monospace" font-size="13" fill="#4af06f">低 ¥ — ¥</text>
+  <text x="505" y="230" text-anchor="middle" font-family="monospace" font-size="13" fill="#ffd666">中高 ¥¥ — ¥¥¥</text>
+  <text x="682" y="230" text-anchor="middle" font-family="monospace" font-size="13" fill="#ff7a30">高 ¥¥¥¥</text>
+  <!-- Row 4: Dimming depth -->
+  <rect x="30" y="250" width="740" height="40" fill="#0a1628" rx="2"/>
+  <text x="140" y="275" text-anchor="middle" font-family="monospace" font-size="12" fill="#a0c8e8">调光深度</text>
+  <text x="340" y="275" text-anchor="middle" font-family="monospace" font-size="13" fill="#4af06f">1% — 100%</text>
+  <text x="505" y="275" text-anchor="middle" font-family="monospace" font-size="13" fill="#ffd666">10% — 100%</text>
+  <text x="682" y="275" text-anchor="middle" font-family="monospace" font-size="13" fill="#4af06f">0.1% — 100%</text>
+  <!-- Row 5: Application -->
+  <rect x="30" y="295" width="740" height="40" fill="#0d1f35" fill-opacity="0.5" rx="2"/>
+  <text x="140" y="320" text-anchor="middle" font-family="monospace" font-size="12" fill="#a0c8e8">适用场景</text>
+  <text x="340" y="320" text-anchor="middle" font-family="monospace" font-size="11" fill="#a0c8e8">普通家用/氛围灯带</text>
+  <text x="505" y="320" text-anchor="middle" font-family="monospace" font-size="11" fill="#a0c8e8">卧室/儿童房/护眼台灯</text>
+  <text x="682" y="320" text-anchor="middle" font-family="monospace" font-size="11" fill="#a0c8e8">商业/医院/工厂</text>
+  <!-- Recommendation bar -->
+  <rect x="30" y="345" width="740" height="50" fill="#0d2a1a" rx="4" stroke="#4af06f" stroke-width="1.5"/>
+  <text x="400" y="368" text-anchor="middle" font-family="monospace" font-size="12" fill="#4af06f" filter="url(#glow2)">💡 护眼首选：CCR调光驱动 | 频率不足时：≥25kHz高频PWM也可接受</text>
+  <text x="400" y="386" text-anchor="middle" font-family="monospace" font-size="11" fill="#a0c8e8">验证方法：手机慢动作 (240fps+) 对准灯光 — 无黑条滚动 = 合格</text>
+  <!-- Source note -->
+  <text x="770" y="415" text-anchor="end" font-family="monospace" font-size="9" fill="#2a4a6a">nexlamp.com | 2026</text>
+</svg>
