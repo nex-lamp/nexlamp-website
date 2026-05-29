@@ -1,5 +1,23 @@
 [
   {
+    "title": "Matter协议来了，Zigbee智能灯还值得买吗？2026年智能照明协议选型终极指南",
+    "slug": "matter-vs-zigbee-smart-lighting-2026",
+    "date": "2026-05-29",
+    "category": "协议解析",
+    "description": "2026年Matter协议日趋成熟，Zigbee灯具价格探底。本文从协议原理、成本、设备生态、安装难度、未来兼容性五个维度深度对比Matter和Zigbee，为智能照明装修提供终极选型参考。",
+    "cover": "../../images/blog-matter-vs-zigbee-cover.png",
+    "excerpt": "Matter 1.4已发布，Zigbee灯具空前便宜——2026年装修到底该选哪个？本文从兼容性、成本、稳定性、未来兼容性四个维度深度对比，帮你做出不后悔的选择。"
+  },
+  {
+    "title": "智能灯总掉线？从协议选择到网络部署的完整排查指南",
+    "slug": "smart-light-disconnect-guide",
+    "date": "2026-05-29",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-2026-05-29-cover.png",
+    "excerpt": "智能灯掉线是用户最头疼的问题。本文从通信协议、网络部署、硬件选型三个层面，给出从简单到深度的完整排查方案，帮你彻底解决断连烦恼。"
+  },
+  {
     "title": "智能灯频闪和调光器不兼容？一篇文章彻底搞懂",
     "slug": "smart-light-flicker-dimmer-compatibility",
     "date": "2026-05-28",

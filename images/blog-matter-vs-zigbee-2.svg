@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" font-family="Consolas, 'Microsoft YaHei', monospace">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f1f3d"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1a3050" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <radialGradient id="centerGlow" cx="0.5" cy="0.32" r="0.5">
+      <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="680" height="420" fill="url(#bgGrad)"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+  <rect width="680" height="420" fill="url(#centerGlow)"/>
+
+  <!-- Title -->
+  <text x="340" y="38" text-anchor="middle" fill="#e0f7fa" font-size="18" font-weight="bold">Matter 跨平台兼容：一个协议，多平台控制</text>
+  <text x="340" y="58" text-anchor="middle" fill="#4f8fb0" font-size="11" font-family="'Microsoft YaHei', sans-serif">Zigbee: 每家的设备只能连自家的网关 &amp;#8226; Matter: 一个设备全平台通用</text>
+
+  <!-- Central Matter hub -->
+  <circle cx="340" cy="140" r="40" fill="#1a1020" stroke="#ff6b6b" stroke-width="2" filter="url(#glow)"/>
+  <text x="340" y="135" text-anchor="middle" fill="#ff6b6b" font-size="14" font-weight="bold">Matter</text>
+  <text x="340" y="152" text-anchor="middle" fill="#ee5a24" font-size="9">Protocol</text>
+
+  <!-- Devices at top connected to Matter -->
+  <line x1="340" y1="100" x2="120" y2="70" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="4,2" opacity="0.6"/>
+  <line x1="340" y1="100" x2="340" y2="60" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="4,2" opacity="0.6"/>
+  <line x1="340" y1="100" x2="560" y2="70" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="4,2" opacity="0.6"/>
+
+  <!-- Platform icons top -->
+  <rect x="60" y="45" width="120" height="36" rx="8" fill="#1a2a40" stroke="#2a5070" stroke-width="1"/>
+  <text x="120" y="68" text-anchor="middle" fill="#ff6b6b" font-size="12" font-weight="bold">Apple Home</text>
+  <rect x="280" y="38" width="120" height="36" rx="8" fill="#1a2a40" stroke="#2a5070" stroke-width="1"/>
+  <text x="340" y="61" text-anchor="middle" fill="#ff6b6b" font-size="12" font-weight="bold">Google Home</text>
+  <rect x="500" y="45" width="120" height="36" rx="8" fill="#1a2a40" stroke="#2a5070" stroke-width="1"/>
+  <text x="560" y="68" text-anchor="middle" fill="#ff6b6b" font-size="12" font-weight="bold">Amazon Alexa</text>
+
+  <!-- Matter devices -->
+  <text x="340" y="115" text-anchor="middle" fill="#8ab0d0" font-size="9" font-family="'Microsoft YaHei', sans-serif">一个Matter灯泡，三个平台都能控制</text>
+
+  <!-- Zigbee comparison section -->
+  <line x1="80" y1="195" x2="600" y2="195" stroke="#1a3050" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="340" y="220" text-anchor="middle" fill="#4f8fb0" font-size="12" font-family="'Microsoft YaHei', sans-serif">vs Zigbee: 每家各建围墙</text>
+
+  <!-- Zigbee ecosystems -->
+  <rect x="60" y="240" width="170" height="85" rx="8" fill="#1a2a40" stroke="#00b4d8" stroke-width="1" opacity="0.8"/>
+  <text x="145" y="265" text-anchor="middle" fill="#00b4d8" font-size="12" font-weight="bold">涂鸦 Zigbee 生态</text>
+  <text x="145" y="285" text-anchor="middle" fill="#6b9fc0" font-size="10" font-family="'Microsoft YaHei', sans-serif">涂鸦灯 → 涂鸦网关</text>
+  <text x="145" y="305" text-anchor="middle" fill="#6b9fc0" font-size="10" font-family="'Microsoft YaHei', sans-serif">米家APP → 米家网关</text>
+  <text x="145" y="320" text-anchor="middle" fill="#4a7a9a" font-size="9" font-family="'Microsoft YaHei', sans-serif">互相不通</text>
+
+  <rect x="255" y="240" width="170" height="85" rx="8" fill="#1a2a40" stroke="#00b4d8" stroke-width="1" opacity="0.8"/>
+  <text x="340" y="265" text-anchor="middle" fill="#00b4d8" font-size="12" font-weight="bold">绿米 Aqara 生态</text>
+  <text x="340" y="285" text-anchor="middle" fill="#6b9fc0" font-size="10" font-family="'Microsoft YaHei', sans-serif">Aqara灯 → Aqara网关</text>
+  <text x="340" y="305" text-anchor="middle" fill="#6b9fc0" font-size="10" font-family="'Microsoft YaHei', sans-serif">仅HomeKit/Aqara Home</text>
+  <text x="340" y="320" text-anchor="middle" fill="#4a7a9a" font-size="9" font-family="'Microsoft YaHei', sans-serif">封闭生态圈</text>
+
+  <rect x="450" y="240" width="170" height="85" rx="8" fill="#1a2a40" stroke="#00b4d8" stroke-width="1" opacity="0.8"/>
+  <text x="535" y="265" text-anchor="middle" fill="#00b4d8" font-size="12" font-weight="bold">欧瑞博 / 其他</text>
+  <text x="535" y="285" text-anchor="middle" fill="#6b9fc0" font-size="10" font-family="'Microsoft YaHei', sans-serif">各品牌独立网关</text>
+  <text x="535" y="305" text-anchor="middle" fill="#6b9fc0" font-size="10" font-family="'Microsoft YaHei', sans-serif">无法跨品牌联动</text>
+  <text x="535" y="320" text-anchor="middle" fill="#4a7a9a" font-size="9" font-family="'Microsoft YaHei', sans-serif">设备绑定平台</text>
+
+  <!-- Broken arrows between Zigbee boxes -->
+  <line x1="230" y1="275" x2="255" y2="275" stroke="#ff6b6b" stroke-width="1.5"/>
+  <line x1="425" y1="275" x2="450" y2="275" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="242" y="272" text-anchor="middle" fill="#ff6b6b" font-size="16">&#x2716;</text>
+  <text x="437" y="272" text-anchor="middle" fill="#ff6b6b" font-size="16">&#x2716;</text>
+
+  <!-- 2026 reality note -->
+  <rect x="140" y="345" width="400" height="55" rx="8" fill="#1a1020" stroke="#06d6a0" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="340" y="368" text-anchor="middle" fill="#06d6a0" font-size="12" font-weight="bold" font-family="'Microsoft YaHei', sans-serif">2026 现实：Zigbee设备通过双模网关桥接到 Matter</text>
+  <text x="340" y="390" text-anchor="middle" fill="#3ae0b0" font-size="10" font-family="'Microsoft YaHei', sans-serif">涂鸦/米家新网关已支持 Matter Bridge → 你的Zigbee灯也能出现在Apple Home里</text>
+</svg>

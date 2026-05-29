@@ -26,6 +26,20 @@
   </url>
 
   <url>
+    <loc>https://www.nexlamp.com/dist/blog/matter-vs-zigbee-smart-lighting-2026.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexlamp.com/dist/blog/smart-light-disconnect-guide.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.nexlamp.com/dist/blog/smart-light-flicker-dimmer-compatibility.html</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>

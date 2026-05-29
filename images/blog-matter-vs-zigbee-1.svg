@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" font-family="Consolas, 'Microsoft YaHei', monospace">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f1f3d"/>
+    </linearGradient>
+    <linearGradient id="zigbeeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#0077b6"/>
+    </linearGradient>
+    <linearGradient id="threadGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06d6a0"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="matterGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#ee5a24"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="neonBlue">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1a3050" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <rect width="680" height="420" fill="url(#bgGrad)"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="340" y="38" text-anchor="middle" fill="#e0f7fa" font-size="18" font-weight="bold">Matter / Zigbee / Thread 协议层次对比</text>
+  <text x="340" y="58" text-anchor="middle" fill="#4f8fb0" font-size="11" font-family="'Microsoft YaHei', sans-serif">Matter是应用层 &amp;#8226; Thread/Zigbee是网络层 &amp;#8226; 不在同一维度比较</text>
+
+  <!-- OSI Layer labels -->
+  <text x="20" y="100" fill="#6b9fc0" font-size="10" font-weight="bold">应用层</text>
+  <text x="20" y="200" fill="#6b9fc0" font-size="10" font-weight="bold">网络层</text>
+  <text x="20" y="300" fill="#6b9fc0" font-size="10" font-weight="bold">物理层</text>
+
+  <!-- Separation lines -->
+  <line x1="80" y1="88" x2="660" y2="88" stroke="#1a3050" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="80" y1="188" x2="660" y2="188" stroke="#1a3050" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="80" y1="288" x2="660" y2="288" stroke="#1a3050" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Matter App Layer -->
+  <rect x="100" y="95" width="540" height="80" rx="8" fill="url(#matterGrad)" opacity="0.15" stroke="#ff6b6b" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="370" y="125" text-anchor="middle" fill="#ff6b6b" font-size="16" font-weight="bold" filter="url(#neonBlue)">Matter 应用层协议 (Application Layer)</text>
+  <text x="370" y="148" text-anchor="middle" fill="#ee5a24" font-size="11" font-family="'Microsoft YaHei', sans-serif">设备发现 / 配网 / 控制 / 场景联动 &amp;#8226; 跨品牌跨平台通用语言</text>
+  <text x="370" y="168" text-anchor="middle" fill="#cc6644" font-size="9" font-family="'Microsoft YaHei', sans-serif">可运行于 Thread / Wi-Fi / 以太网之上</text>
+
+  <!-- Zigbee Network Layer -->
+  <rect x="100" y="195" width="250" height="80" rx="8" fill="url(#zigbeeGrad)" opacity="0.15" stroke="#00b4d8" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="225" y="225" text-anchor="middle" fill="#00b4d8" font-size="16" font-weight="bold" filter="url(#neonBlue)">Zigbee 3.0</text>
+  <text x="225" y="248" text-anchor="middle" fill="#48cae4" font-size="10" font-family="'Microsoft YaHei', sans-serif">网络层 + 自有应用层</text>
+  <text x="225" y="268" text-anchor="middle" fill="#3a8ea0" font-size="9" font-family="'Microsoft YaHei', sans-serif">Mesh组网 / 802.15.4</text>
+
+  <!-- Thread Network Layer -->
+  <rect x="390" y="195" width="250" height="80" rx="8" fill="url(#threadGrad)" opacity="0.15" stroke="#06d6a0" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="515" y="225" text-anchor="middle" fill="#06d6a0" font-size="16" font-weight="bold" filter="url(#neonBlue)">Thread</text>
+  <text x="515" y="248" text-anchor="middle" fill="#3ae0b0" font-size="10" font-family="'Microsoft YaHei', sans-serif">仅网络层，不含应用层</text>
+  <text x="515" y="268" text-anchor="middle" fill="#2a9a80" font-size="9" font-family="'Microsoft YaHei', sans-serif">IPv6 / Mesh / 802.15.4</text>
+
+  <!-- Physical Layer -->
+  <rect x="100" y="295" width="540" height="60" rx="8" fill="#1a3050" stroke="#2a5070" stroke-width="1"/>
+  <text x="370" y="322" text-anchor="middle" fill="#6b9fc0" font-size="12" font-weight="bold">IEEE 802.15.4 物理层 (Physical Layer)</text>
+  <text x="370" y="342" text-anchor="middle" fill="#4f8fb0" font-size="10" font-family="'Microsoft YaHei', sans-serif">2.4GHz ISM频段 &amp;#8226; 250kbps &amp;#8226; Zigbee和Thread共用同一物理层</text>
+
+  <!-- Arrows showing Matter relationship -->
+  <line x1="225" y1="195" x2="250" y2="175" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="515" y1="195" x2="490" y2="175" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Key legend at bottom -->
+  <rect x="160" y="370" width="360" height="35" rx="6" fill="#0a1628" stroke="#1a3050" stroke-width="0.5"/>
+  <circle cx="185" cy="387" r="5" fill="#ff6b6b"/>
+  <text x="196" y="392" fill="#8ab0d0" font-size="10" font-family="'Microsoft YaHei', sans-serif">Matter = 应用层跨平台语言</text>
+  <rect x="330" y="382" width="10" height="10" rx="2" fill="#00b4d8"/>
+  <text x="346" y="392" fill="#8ab0d0" font-size="10" font-family="'Microsoft YaHei', sans-serif">Zigbee = 成熟方案</text>
+  <circle cx="470" cy="387" r="5" fill="#06d6a0"/>
+  <text x="481" y="392" fill="#8ab0d0" font-size="10" font-family="'Microsoft YaHei', sans-serif">Thread = IP网络</text>
+</svg>
