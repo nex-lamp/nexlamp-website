@@ -18,6 +18,15 @@
     "excerpt": "智能灯掉线是用户最头疼的问题。本文从通信协议、网络部署、硬件选型三个层面，给出从简单到深度的完整排查方案，帮你彻底解决断连烦恼。"
   },
   {
+    "title": "全屋智能灯光色温选择终极指南：2700K还是4000K？装修翻车后才懂的6条铁律",
+    "slug": "smart-lighting-color-temperature-guide",
+    "date": "2026-05-29",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-2026-05-29-color-temperature-guide-cover.png",
+    "excerpt": "全屋灯光色温选错，再贵的灯也救不回来。本文从装修实战角度出发，讲清楚客厅、卧室、厨房、卫生间每个空间该用多少K的色温，智能灯色温可调到底是不是智商税，以及节律照明到底有没有科学依据。"
+  },
+  {
     "title": "智能灯频闪和调光器不兼容？一篇文章彻底搞懂",
     "slug": "smart-light-flicker-dimmer-compatibility",
     "date": "2026-05-28",

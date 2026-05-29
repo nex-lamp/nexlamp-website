@@ -1,0 +1,81 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="spectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7b00"/>
+      <stop offset="15%" stop-color="#ffb74d"/>
+      <stop offset="30%" stop-color="#ffe0b2"/>
+      <stop offset="50%" stop-color="#fff9c4"/>
+      <stop offset="70%" stop-color="#e3f2fd"/>
+      <stop offset="85%" stop-color="#90caf9"/>
+      <stop offset="100%" stop-color="#42a5f5"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#0a1628"/>
+  <rect width="800" height="420" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#64ffda" font-family="Consolas, monospace" font-size="18" font-weight="bold" filter="url(#glow)">全屋智能灯光色温选择图谱</text>
+  <text x="400" y="58" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="12">Color Temperature Selection Guide (CCT 1800K ~ 6500K)</text>
+
+  <!-- Spectrum bar -->
+  <rect x="60" y="85" width="680" height="40" rx="20" fill="url(#spectrum)" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- Temperature labels -->
+  <text x="60" y="150" text-anchor="middle" fill="#ff7b00" font-family="Consolas, monospace" font-size="11">1800K</text>
+  <text x="170" y="150" text-anchor="middle" fill="#ffb74d" font-family="Consolas, monospace" font-size="11">2700K</text>
+  <text x="280" y="150" text-anchor="middle" fill="#ffcc80" font-family="Consolas, monospace" font-size="11">3000K</text>
+  <text x="400" y="150" text-anchor="middle" fill="#fff9c4" font-family="Consolas, monospace" font-size="11">4000K</text>
+  <text x="520" y="150" text-anchor="middle" fill="#90caf9" font-family="Consolas, monospace" font-size="11">5000K</text>
+  <text x="630" y="150" text-anchor="middle" fill="#64b5f6" font-family="Consolas, monospace" font-size="11">5700K</text>
+  <text x="740" y="150" text-anchor="middle" fill="#42a5f5" font-family="Consolas, monospace" font-size="11">6500K</text>
+
+  <!-- Room cards row 1 -->
+  <!-- Warm zone -->
+  <rect x="60" y="175" width="180" height="95" rx="6" fill="#1a2740" stroke="#ff7b00" stroke-width="1" opacity="0.9"/>
+  <text x="150" y="198" text-anchor="middle" fill="#ff7b00" font-family="Consolas, monospace" font-size="13" font-weight="bold" filter="url(#glow)">🌙 卧室 &amp; 餐厅</text>
+  <text x="150" y="218" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="11">1800K-3000K</text>
+  <text x="150" y="238" text-anchor="middle" fill="#64ffda" font-family="Consolas, monospace" font-size="10">暖黄/暖白 · 放松 · 助眠</text>
+  <text x="150" y="256" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="9">夜灯 ≤2200K / 主灯 ~3000K</text>
+
+  <!-- Neutral warm zone -->
+  <rect x="255" y="175" width="180" height="95" rx="6" fill="#1a2740" stroke="#ffcc80" stroke-width="1" opacity="0.9"/>
+  <text x="345" y="198" text-anchor="middle" fill="#ffcc80" font-family="Consolas, monospace" font-size="13" font-weight="bold" filter="url(#glow)">🏠 客厅 · 玄关</text>
+  <text x="345" y="218" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="11">3000K-3500K</text>
+  <text x="345" y="238" text-anchor="middle" fill="#64ffda" font-family="Consolas, monospace" font-size="10">自然暖白 · 舒适 · 高级</text>
+  <text x="345" y="256" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="9">黄金色温区间 Ra≥90</text>
+
+  <!-- Neutral zone -->
+  <rect x="450" y="175" width="180" height="95" rx="6" fill="#1a2740" stroke="#fff9c4" stroke-width="1" opacity="0.9"/>
+  <text x="540" y="198" text-anchor="middle" fill="#fff9c4" font-family="Consolas, monospace" font-size="13" font-weight="bold" filter="url(#glow)">📖 书房 · 厨房</text>
+  <text x="540" y="218" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="11">3500K-4000K</text>
+  <text x="540" y="238" text-anchor="middle" fill="#64ffda" font-family="Consolas, monospace" font-size="10">中性白 · 清醒 · 真实</text>
+  <text x="540" y="256" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="9">厨房 Ra≥95 / 看书办公</text>
+
+  <!-- Cool zone -->
+  <rect x="645" y="175" width="110" height="95" rx="6" fill="#1a2740" stroke="#42a5f5" stroke-width="1" opacity="0.9"/>
+  <text x="700" y="198" text-anchor="middle" fill="#42a5f5" font-family="Consolas, monospace" font-size="13" font-weight="bold" filter="url(#glow)">🏢 办公</text>
+  <text x="700" y="218" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="11">5000K-6500K</text>
+  <text x="700" y="238" text-anchor="middle" fill="#64ffda" font-family="Consolas, monospace" font-size="10">冷白 · 专注 · 明亮</text>
+  <text x="700" y="256" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="9">⚠ 不适合住宅</text>
+
+  <!-- Key takeaways -->
+  <rect x="60" y="290" width="695" height="110" rx="6" fill="#111d32" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="80" y="315" fill="#64ffda" font-family="Consolas, monospace" font-size="13" font-weight="bold">💡 KEY RULES</text>
+  
+  <text x="95" y="340" fill="#8892b0" font-family="Consolas, monospace" font-size="11">1. 住宅黄金色温 = 3000K | 办公推荐 = 4000K | 6500K只给车库和办公室</text>
+  <text x="95" y="358" fill="#8892b0" font-family="Consolas, monospace" font-size="11">2. 同一空间所有光源色温差 ≤ 500K，避免"调色盘"效果</text>
+  <text x="95" y="376" fill="#8892b0" font-family="Consolas, monospace" font-size="11">3. 显色指数 Ra≥90 是底线，厨房/化妆区 ≥95，重点关注 R9 红色还原值</text>
+  <text x="95" y="394" fill="#8892b0" font-family="Consolas, monospace" font-size="11">4. 智能调色温是锦上添花，先选对基础色温再用自动化做渐变微调</text>
+
+  <!-- nexlamp watermark -->
+  <text x="790" y="412" text-anchor="end" fill="#1e3a5f" font-family="Consolas, monospace" font-size="9">nexlamp.com</text>
+</svg>

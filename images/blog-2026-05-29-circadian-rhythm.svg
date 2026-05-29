@@ -1,0 +1,96 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d2137"/>
+      <stop offset="50%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2137"/>
+    </linearGradient>
+    <linearGradient id="melatonin" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64ffda" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#64ffda" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#64ffda" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#0a1628"/>
+  <rect width="800" height="420" fill="url(#grid2)" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#64ffda" font-family="Consolas, monospace" font-size="18" font-weight="bold" filter="url(#glow2)">智能节律照明 · 24小时色温曲线</text>
+  <text x="400" y="55" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="12">Circadian Lighting &amp; Melatonin Cycle</text>
+
+  <!-- Time axis -->
+  <line x1="60" y1="350" x2="760" y2="350" stroke="#1e3a5f" stroke-width="1"/>
+  <!-- Time labels -->
+  <text x="60" y="370" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="10">00:00</text>
+  <text x="155" y="370" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="10">03:00</text>
+  <text x="250" y="370" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="10">06:00</text>
+  <text x="345" y="370" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="10">09:00</text>
+  <text x="440" y="370" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="10">12:00</text>
+  <text x="535" y="370" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="10">15:00</text>
+  <text x="630" y="370" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="10">18:00</text>
+  <text x="725" y="370" text-anchor="middle" fill="#8892b0" font-family="Consolas, monospace" font-size="10">21:00</text>
+
+  <!-- Melatonin curve (area) -->
+  <path d="M 60,340 Q 155,330 250,200 Q 300,140 345,120 Q 390,110 440,115 Q 490,125 535,160 Q 580,210 630,290 Q 680,320 760,340 L 760,340 L 60,340 Z"
+        fill="url(#melatonin)" opacity="0.3"/>
+  <path d="M 60,340 Q 155,330 250,200 Q 300,140 345,120 Q 390,110 440,115 Q 490,125 535,160 Q 580,210 630,290 Q 680,320 760,340"
+        fill="none" stroke="#64ffda" stroke-width="2" opacity="0.8"/>
+
+  <!-- Melatonin label -->
+  <text x="410" y="95" text-anchor="middle" fill="#64ffda" font-family="Consolas, monospace" font-size="11" filter="url(#glow2)">褪黑素分泌低谷 (日间清醒)</text>
+
+  <!-- CCT dots on curve -->
+  <circle cx="110" cy="338" r="6" fill="#ff6e00" stroke="#ff6e00" stroke-width="1" opacity="0.9"/>
+  <line x1="110" y1="338" x2="110" y2="310" stroke="#ff6e00" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <text x="100" y="303" text-anchor="end" fill="#ff6e00" font-family="Consolas, monospace" font-size="9">1800K 睡眠中</text>
+
+  <circle cx="250" cy="200" r="8" fill="#ff8f00" stroke="#ff8f00" stroke-width="2" filter="url(#glow2)"/>
+  <line x1="250" y1="200" x2="250" y2="140" stroke="#ff8f00" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <text x="250" y="133" text-anchor="middle" fill="#ff8f00" font-family="Consolas, monospace" font-size="9">06:30 日出模拟</text>
+  <text x="250" y="146" text-anchor="middle" fill="#ffb74d" font-family="Consolas, monospace" font-size="8">4000K 渐亮唤醒</text>
+
+  <circle cx="345" cy="120" r="8" fill="#ffb74d" stroke="#ffb74d" stroke-width="2" filter="url(#glow2)"/>
+  <line x1="345" y1="120" x2="345" y2="75" stroke="#ffb74d" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <text x="345" y="68" text-anchor="middle" fill="#ffb74d" font-family="Consolas, monospace" font-size="9">09:00 工作模式</text>
+  <text x="345" y="81" text-anchor="middle" fill="#ffcc80" font-family="Consolas, monospace" font-size="8">4000K 高效专注</text>
+
+  <circle cx="440" cy="115" r="8" fill="#fff9c4" stroke="#fff9c4" stroke-width="2" filter="url(#glow2)"/>
+  <line x1="440" y1="115" x2="440" y2="75" stroke="#fff9c4" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <text x="440" y="68" text-anchor="middle" fill="#fff9c4" font-family="Consolas, monospace" font-size="9">12:00 中午</text>
+  <text x="440" y="81" text-anchor="middle" fill="#ffe0b2" font-family="Consolas, monospace" font-size="8">3500K 自然光</text>
+
+  <circle cx="580" cy="210" r="8" fill="#ffb74d" stroke="#ffb74d" stroke-width="2"/>
+  <line x1="580" y1="210" x2="580" y2="155" stroke="#ffb74d" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <text x="580" y="148" text-anchor="middle" fill="#ffb74d" font-family="Consolas, monospace" font-size="9">18:00 日落过渡</text>
+  <text x="580" y="161" text-anchor="middle" fill="#ffcc80" font-family="Consolas, monospace" font-size="8">3000K 开始降色温</text>
+
+  <circle cx="725" cy="337" r="8" fill="#ff6e00" stroke="#ff6e00" stroke-width="2" filter="url(#glow2)"/>
+  <line x1="725" y1="337" x2="725" y2="280" stroke="#ff6e00" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <text x="715" y="273" text-anchor="end" fill="#ff6e00" font-family="Consolas, monospace" font-size="9">21:00 睡前模式</text>
+  <text x="715" y="286" text-anchor="end" fill="#ff7b00" font-family="Consolas, monospace" font-size="8">2200K 助眠暖光</text>
+
+  <!-- Phase labels -->
+  <rect x="60" y="380" width="180" height="25" rx="4" fill="#ff6e00" opacity="0.15"/>
+  <text x="150" y="397" text-anchor="middle" fill="#ff6e00" font-family="Consolas, monospace" font-size="10">DEEP SLEEP 深度睡眠</text>
+
+  <rect x="250" y="380" width="190" height="25" rx="4" fill="#ffb74d" opacity="0.15"/>
+  <text x="345" y="397" text-anchor="middle" fill="#ffb74d" font-family="Consolas, monospace" font-size="10">WAKE &amp; FOCUS 清醒·工作</text>
+
+  <rect x="490" y="380" width="160" height="25" rx="4" fill="#fff9c4" opacity="0.15"/>
+  <text x="570" y="397" text-anchor="middle" fill="#fff9c4" font-family="Consolas, monospace" font-size="10">ACTIVE 活跃时段</text>
+
+  <rect x="660" y="380" width="100" height="25" rx="4" fill="#ff6e00" opacity="0.15"/>
+  <text x="710" y="397" text-anchor="middle" fill="#ff6e00" font-family="Consolas, monospace" font-size="10">WIND DOWN</text>
+
+  <!-- nexlamp watermark -->
+  <text x="790" y="412" text-anchor="end" fill="#1e3a5f" font-family="Consolas, monospace" font-size="9">nexlamp.com</text>
+</svg>
