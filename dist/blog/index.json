@@ -1,5 +1,23 @@
 [
   {
+    "title": "智能灯频闪和调光器不兼容？一篇文章彻底搞懂",
+    "slug": "smart-light-flicker-dimmer-compatibility",
+    "date": "2026-05-28",
+    "category": "技术指南",
+    "description": "智能灯频闪和调光不兼容是装修后最常见的坑。本文从驱动电源原理出发，详解PWM频率、最小负载、单火开关漏电流等根本原因，并给出Zigbee/米家/DALI/0-10V各方案的选型建议。",
+    "cover": "images/blog-smart-light-flicker-cover.jpg",
+    "excerpt": "买了智能灯却发现一调光就闪烁、某些开关根本带不起来？本文深度拆解频闪的3大根源、调光器不兼容的4种表现，以及针对不同场景的解决方案。"
+  },
+  {
+    "title": "Zigbee智能灯老是掉线？5步自查排除法，从此告别断联烦恼",
+    "slug": "zigbee-smart-light-offline-fix",
+    "date": "2026-05-28",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-zigbee-troubleshoot-cover.png",
+    "excerpt": "买了Zigbee智能灯却频繁掉线？别急着退货。90%的断联问题都有规律可循——本文用真实案例拆解5大常见原因，手把手教你快速定位并永久解决Zigbee掉线问题。"
+  },
+  {
     "title": "智能调光真的伤眼吗？PWM vs DALI vs CCR 调光技术全解析 + 护眼选购指南",
     "slug": "smart-dimming-flicker-eye-protection-guide",
     "date": "2026-05-27",

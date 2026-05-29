@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a3a" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="450" fill="#0a1628"/>
+  <rect width="800" height="450" fill="url(#grid3)"/>
+
+  <!-- 标题栏 -->
+  <rect x="20" y="20" width="760" height="50" rx="4" fill="#0d1f35" stroke="#1e3a5f" stroke-width="1"/>
+  <circle cx="44" cy="45" r="8" fill="#ff5f56"/>
+  <circle cx="66" cy="45" r="8" fill="#ffbd2e"/>
+  <circle cx="88" cy="45" r="8" fill="#27c93f"/>
+  <text x="120" y="51" font-family="'Courier New', monospace" font-size="14" fill="#4fc3f7">
+    $ zigbee-fix --diagnosis-checklist --auto-remediate
+  </text>
+
+  <!-- 故障诊断清单 -->
+  <text x="400" y="100" font-family="'Courier New', monospace" font-size="13" fill="#64b5f6" text-anchor="middle">[ OFFLINE DEVICE DIAGNOSTIC CHECKLIST ]</text>
+
+  <!-- 检查项列表 -->
+  <!-- 项目1 -->
+  <rect x="30" y="115" width="350" height="45" rx="4" fill="#0a2010" stroke="#27c93f" stroke-width="1.5"/>
+  <text x="50" y="136" font-family="'Courier New', monospace" font-size="11" fill="#69f0ae">[PASS] 01. Power supply check</text>
+  <text x="50" y="152" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">      AC 220V input normal / LED driver output OK</text>
+
+  <!-- 项目2 -->
+  <rect x="30" y="168" width="350" height="45" rx="4" fill="#1a0a00" stroke="#ff5252" stroke-width="1.5"/>
+  <text x="50" y="189" font-family="'Courier New', monospace" font-size="11" fill="#ff5252">[FAIL] 02. Signal strength check</text>
+  <text x="50" y="205" font-family="'Courier New', monospace" font-size="10" fill="#ef9a9a">      RSSI: -95 dBm (threshold: -80 dBm) -- TOO WEAK!</text>
+
+  <!-- 项目3 -->
+  <rect x="30" y="221" width="350" height="45" rx="4" fill="#0a2010" stroke="#27c93f" stroke-width="1.5"/>
+  <text x="50" y="242" font-family="'Courier New', monospace" font-size="11" fill="#69f0ae">[PASS] 03. Zigbee channel conflict check</text>
+  <text x="50" y="258" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">      Channel 25 -- No WiFi overlap detected</text>
+
+  <!-- 项目4 -->
+  <rect x="30" y="274" width="350" height="45" rx="4" fill="#1a1000" stroke="#ffb74d" stroke-width="1.5"/>
+  <text x="50" y="295" font-family="'Courier New', monospace" font-size="11" fill="#ffb74d">[WARN] 04. Mesh routing depth check</text>
+  <text x="50" y="311" font-family="'Courier New', monospace" font-size="10" fill="#ffe0b2">      Hop count: 4 (max recommended: 3)</text>
+
+  <!-- 项目5 -->
+  <rect x="30" y="327" width="350" height="45" rx="4" fill="#0a2010" stroke="#27c93f" stroke-width="1.5"/>
+  <text x="50" y="348" font-family="'Courier New', monospace" font-size="11" fill="#69f0ae">[PASS] 05. Firmware version check</text>
+  <text x="50" y="364" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">      v3.6.2 -- Up to date</text>
+
+  <!-- 右侧修复建议 -->
+  <rect x="410" y="115" width="370" height="260" rx="4" fill="#0d1f35" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="595" y="138" font-family="'Courier New', monospace" font-size="12" fill="#64b5f6" text-anchor="middle">AUTO-FIX SUGGESTIONS</text>
+  <line x1="430" y1="145" x2="760" y2="145" stroke="#1e3a5f" stroke-width="1"/>
+
+  <text x="430" y="168" font-family="'Courier New', monospace" font-size="10" fill="#ffb74d">&gt; Problem: Weak RSSI (-95 dBm)</text>
+  <text x="430" y="185" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">  Option A: Add a router-capable</text>
+  <text x="430" y="200" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">    Zigbee bulb as mesh extender</text>
+  <text x="430" y="215" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">  Option B: Move gateway closer</text>
+  <text x="430" y="230" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">    to the offline device</text>
+
+  <text x="430" y="255" font-family="'Courier New', monospace" font-size="10" fill="#ffb74d">&gt; Problem: Hop count = 4</text>
+  <text x="430" y="272" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">  Add 1-2 router bulbs between</text>
+  <text x="430" y="287" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">  gateway and endpoint devices</text>
+  <text x="430" y="302" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">  to reduce hop depth to &lt;= 3</text>
+
+  <text x="430" y="327" font-family="'Courier New', monospace" font-size="10" fill="#69f0ae">&gt; Quick Fix: Force re-pair device</text>
+  <text x="430" y="342" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">  Hold reset button 5s until</text>
+  <text x="430" y="357" font-family="'Courier New', monospace" font-size="10" fill="#a5d6a7">  LED blinks 3x, then re-add</text>
+
+  <!-- 底部状态 -->
+  <rect x="30" y="385" width="740" height="50" rx="4" fill="#0d1f35" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="50" y="406" font-family="'Courier New', monospace" font-size="10" fill="#64b5f6">Diagnosis complete: 1 FAIL / 1 WARN / 3 PASS</text>
+  <text x="50" y="424" font-family="'Courier New', monospace" font-size="10" fill="#546e7a">nexlamp.com -- Tuya Zigbee Smart Lighting Solution -- Professional Grade LED Drivers</text>
+</svg>

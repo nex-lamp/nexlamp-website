@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="#0a1628"/>
+
+  <!-- Grid lines -->
+  <g stroke="#1a2a40" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="80" y1="0" x2="80" y2="520"/>
+    <line x1="160" y1="0" x2="160" y2="520"/>
+    <line x1="240" y1="0" x2="240" y2="520"/>
+    <line x1="320" y1="0" x2="320" y2="520"/>
+    <line x1="400" y1="0" x2="400" y2="520"/>
+    <line x1="480" y1="0" x2="480" y2="520"/>
+    <line x1="560" y1="0" x2="560" y2="520"/>
+    <line x1="640" y1="0" x2="640" y2="520"/>
+    <line x1="720" y1="0" x2="720" y2="520"/>
+  </g>
+
+  <!-- Title bar -->
+  <rect x="20" y="15" width="760" height="34" rx="6" fill="#0f2035" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.5"/>
+  <circle cx="38" cy="32" r="6" fill="#ff4757"/>
+  <circle cx="56" cy="32" r="6" fill="#ffa502"/>
+  <circle cx="74" cy="32" r="6" fill="#2ed573"/>
+  <text x="400" y="37" font-family="'Courier New', monospace" font-size="14" fill="#00d4ff" text-anchor="middle" filter="url(#glow2)">调光方案对比 - 综合性能评分</text>
+
+  <!-- Table header -->
+  <rect x="30" y="60" width="740" height="36" rx="4" fill="#0f2035" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="110" y="83" font-family="'Courier New', monospace" font-size="12" fill="#00d4ff" text-anchor="middle">调光方式</text>
+  <text x="225" y="83" font-family="'Courier New', monospace" font-size="12" fill="#00d4ff" text-anchor="middle">兼容性</text>
+  <text x="325" y="83" font-family="'Courier New', monospace" font-size="12" fill="#00d4ff" text-anchor="middle">布线难度</text>
+  <text x="430" y="83" font-family="'Courier New', monospace" font-size="12" fill="#00d4ff" text-anchor="middle">调光精度</text>
+  <text x="540" y="83" font-family="'Courier New', monospace" font-size="12" fill="#00d4ff" text-anchor="middle">智能联动</text>
+  <text x="645" y="83" font-family="'Courier New', monospace" font-size="12" fill="#00d4ff" text-anchor="middle">成本</text>
+  <text x="730" y="83" font-family="'Courier New', monospace" font-size="12" fill="#00d4ff" text-anchor="middle">推荐场景</text>
+
+  <!-- Separator lines -->
+  <line x1="165" y1="60" x2="165" y2="480" stroke="#1a3050" stroke-width="1"/>
+  <line x1="270" y1="60" x2="270" y2="480" stroke="#1a3050" stroke-width="1"/>
+  <line x1="372" y1="60" x2="372" y2="480" stroke="#1a3050" stroke-width="1"/>
+  <line x1="480" y1="60" x2="480" y2="480" stroke="#1a3050" stroke-width="1"/>
+  <line x1="594" y1="60" x2="594" y2="480" stroke="#1a3050" stroke-width="1"/>
+  <line x1="692" y1="60" x2="692" y2="480" stroke="#1a3050" stroke-width="1"/>
+
+  <!-- Row 1: 可控硅 TRIAC -->
+  <rect x="30" y="96" width="740" height="64" rx="2" fill="#ff4757" fill-opacity="0.06"/>
+  <text x="110" y="118" font-family="'Courier New', monospace" font-size="11" fill="#ff6b81" text-anchor="middle" font-weight="bold">可控硅</text>
+  <text x="110" y="134" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">TRIAC</text>
+  <text x="110" y="150" font-family="'Courier New', monospace" font-size="9" fill="#ffa502" text-anchor="middle">最普及</text>
+  <!-- Compat bar -->
+  <rect x="175" y="110" width="42" height="10" rx="2" fill="#ff4757" fill-opacity="0.3"/>
+  <rect x="175" y="110" width="42" height="10" rx="2" fill="#ff4757"/>
+  <text x="225" y="120" font-family="'Courier New', monospace" font-size="9" fill="#ff4757">★★☆☆☆</text>
+  <text x="225" y="135" font-family="'Courier New', monospace" font-size="9" fill="#8899aa">差，需专用驱动</text>
+  <!-- Wire -->
+  <text x="325" y="125" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">★★★★☆</text>
+  <text x="325" y="140" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">简单，无需额外线</text>
+  <!-- Precision -->
+  <text x="430" y="125" font-family="'Courier New', monospace" font-size="9" fill="#ffa502" text-anchor="middle">★★★☆☆</text>
+  <text x="430" y="140" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">一般</text>
+  <!-- Smart -->
+  <text x="540" y="125" font-family="'Courier New', monospace" font-size="9" fill="#ff4757" text-anchor="middle">★★☆☆☆</text>
+  <text x="540" y="140" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">需配套模块</text>
+  <!-- Cost -->
+  <text x="645" y="125" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">★★★★★</text>
+  <text x="645" y="140" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">最便宜</text>
+  <!-- Scene -->
+  <text x="730" y="120" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">预算有限</text>
+  <text x="730" y="133" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">普通家居</text>
+  <text x="730" y="146" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">客厅主灯</text>
+  <line x1="30" y1="160" x2="770" y2="160" stroke="#1a3050" stroke-width="1"/>
+
+  <!-- Row 2: 0-10V -->
+  <rect x="30" y="160" width="740" height="64" rx="2" fill="#0a1628"/>
+  <text x="110" y="182" font-family="'Courier New', monospace" font-size="11" fill="#00d4ff" text-anchor="middle" font-weight="bold">0-10V</text>
+  <text x="110" y="198" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">模拟调光</text>
+  <text x="110" y="214" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">工程首选</text>
+  <text x="225" y="185" font-family="'Courier New', monospace" font-size="9" fill="#2ed573">★★★★★</text>
+  <text x="225" y="200" font-family="'Courier New', monospace" font-size="9" fill="#8899aa">最佳，通用标准</text>
+  <text x="325" y="188" font-family="'Courier New', monospace" font-size="9" fill="#ffa502" text-anchor="middle">★★★☆☆</text>
+  <text x="325" y="203" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">需额外控制线</text>
+  <text x="430" y="188" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">★★★★☆</text>
+  <text x="430" y="203" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">线性平滑</text>
+  <text x="540" y="188" font-family="'Courier New', monospace" font-size="9" fill="#ffa502" text-anchor="middle">★★★☆☆</text>
+  <text x="540" y="203" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">需控制系统</text>
+  <text x="645" y="188" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">★★★★☆</text>
+  <text x="645" y="203" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">较低</text>
+  <text x="730" y="183" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">吊顶筒灯</text>
+  <text x="730" y="196" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">商业展示</text>
+  <text x="730" y="209" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">办公照明</text>
+  <line x1="30" y1="224" x2="770" y2="224" stroke="#1a3050" stroke-width="1"/>
+
+  <!-- Row 3: DALI -->
+  <rect x="30" y="224" width="740" height="64" rx="2" fill="#00d4ff" fill-opacity="0.04"/>
+  <text x="110" y="246" font-family="'Courier New', monospace" font-size="11" fill="#a29bfe" text-anchor="middle" font-weight="bold">DALI</text>
+  <text x="110" y="262" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">数字协议</text>
+  <text x="110" y="278" font-family="'Courier New', monospace" font-size="9" fill="#a29bfe" text-anchor="middle">精品高端</text>
+  <text x="225" y="249" font-family="'Courier New', monospace" font-size="9" fill="#2ed573">★★★★☆</text>
+  <text x="225" y="264" font-family="'Courier New', monospace" font-size="9" fill="#8899aa">好，标准协议</text>
+  <text x="325" y="252" font-family="'Courier New', monospace" font-size="9" fill="#ffa502" text-anchor="middle">★★☆☆☆</text>
+  <text x="325" y="267" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">需DALI总线</text>
+  <text x="430" y="252" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">★★★★★</text>
+  <text x="430" y="267" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">0.1%步进精度</text>
+  <text x="540" y="252" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">★★★★★</text>
+  <text x="540" y="267" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">最强，可寻址</text>
+  <text x="645" y="252" font-family="'Courier New', monospace" font-size="9" fill="#ff4757" text-anchor="middle">★★☆☆☆</text>
+  <text x="645" y="267" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">较贵</text>
+  <text x="730" y="247" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">精品住宅</text>
+  <text x="730" y="260" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">博物馆</text>
+  <text x="730" y="273" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">高端酒店</text>
+  <line x1="30" y1="288" x2="770" y2="288" stroke="#1a3050" stroke-width="1"/>
+
+  <!-- Row 4: Zigbee -->
+  <rect x="30" y="288" width="740" height="64" rx="2" fill="#2ed573" fill-opacity="0.05"/>
+  <text x="110" y="310" font-family="'Courier New', monospace" font-size="11" fill="#2ed573" text-anchor="middle" font-weight="bold">Zigbee</text>
+  <text x="110" y="326" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">无线协议</text>
+  <text x="110" y="342" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">年轻人首选</text>
+  <text x="225" y="313" font-family="'Courier New', monospace" font-size="9" fill="#ffa502">★★★★☆</text>
+  <text x="225" y="328" font-family="'Courier New', monospace" font-size="9" fill="#8899aa">好，需同生态Hub</text>
+  <text x="325" y="316" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">★★★★★</text>
+  <text x="325" y="331" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">无需布控制线</text>
+  <text x="430" y="316" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">★★★★☆</text>
+  <text x="430" y="331" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">平滑丝滑</text>
+  <text x="540" y="316" font-family="'Courier New', monospace" font-size="9" fill="#2ed573" text-anchor="middle">★★★★★</text>
+  <text x="540" y="331" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">全屋联动</text>
+  <text x="645" y="316" font-family="'Courier New', monospace" font-size="9" fill="#ffa502" text-anchor="middle">★★★☆☆</text>
+  <text x="645" y="331" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">中等</text>
+  <text x="730" y="311" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">智能公寓</text>
+  <text x="730" y="324" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">新装修</text>
+  <text x="730" y="337" font-family="'Courier New', monospace" font-size="9" fill="#8899aa" text-anchor="middle">全屋智能</text>
+  <line x1="30" y1="352" x2="770" y2="352" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Bottom info box -->
+  <rect x="30" y="362" width="740" height="112" rx="6" fill="#0f2035" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="50" y="384" font-family="'Courier New', monospace" font-size="11" fill="#00d4ff" filter="url(#glow2)">$ // 选型决策树</text>
+  <text x="50" y="404" font-family="'Courier New', monospace" font-size="10" fill="#8899aa">IF 要全屋联动 AND 不想布线  →  <tspan fill="#2ed573">Zigbee / 涂鸦无线</tspan></text>
+  <text x="50" y="420" font-family="'Courier New', monospace" font-size="10" fill="#8899aa">IF 精品住宅 OR 博物馆        →  <tspan fill="#a29bfe">DALI</tspan></text>
+  <text x="50" y="436" font-family="'Courier New', monospace" font-size="10" fill="#8899aa">IF 商业工程 AND 已有控制线  →  <tspan fill="#00d4ff">0-10V</tspan></text>
+  <text x="50" y="452" font-family="'Courier New', monospace" font-size="10" fill="#8899aa">IF 预算有限 AND 接受布线     →  <tspan fill="#ff6b81">可控硅（注意最小负载）</tspan></text>
+  <text x="690" y="468" font-family="'Courier New', monospace" font-size="9" fill="#2a3a50">nexlamp.com</text>
+
+  <!-- Footer -->
+  <text x="400" y="505" font-family="'Courier New', monospace" font-size="9" fill="#2a3a50" text-anchor="middle">nexlamp.com | Smart Lighting Technology</text>
+</svg>
