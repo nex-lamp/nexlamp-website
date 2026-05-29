@@ -48,6 +48,9 @@ function parseMarkdown(md) {
   html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
   html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
 
+  // Remove first h1 to avoid duplicate with template {{title}}
+  html = html.replace(/<h1>.*?<\/h1>\n*/, '');
+
   // Bold and italic
   html = html.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
   html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
