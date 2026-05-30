@@ -1,6 +1,4 @@
-github_push.py
-push_today.py
 zhihu_*.py
+*_push*.py
+*push*.py
 api_push.py
-push_to_github.py
-push_via_api.py
