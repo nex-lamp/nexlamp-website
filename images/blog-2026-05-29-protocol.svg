@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="gradWifi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#cc4400"/>
+    </linearGradient>
+    <linearGradient id="gradZigbee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#008866"/>
+    </linearGradient>
+    <linearGradient id="gradBLE" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4da6ff"/>
+      <stop offset="100%" stop-color="#0055cc"/>
+    </linearGradient>
+    <linearGradient id="gradMatter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="420" fill="#0a1628"/>
+  <rect width="680" height="420" fill="url(#grid)" opacity="0.3"/>
+
+  <text x="20" y="34" fill="#00ff88" font-family="Courier New,monospace" font-size="12" filter="url(#glow)">┌─ Protocol Comparison ──────────────────────────────────────────────┐</text>
+  <text x="20" y="50" fill="#00ff88" font-family="Courier New,monospace" font-size="12" filter="url(#glow)">│  Smart Lighting Communication Protocols                           │</text>
+
+  <!-- WiFi Card -->
+  <rect x="30" y="70" width="145" height="200" rx="6" fill="#0d1f3c" stroke="#ff6b35" stroke-width="1.5" opacity="0.9"/>
+  <rect x="30" y="70" width="145" height="32" rx="6" fill="url(#gradWifi)" opacity="0.3"/>
+  <text x="102" y="91" fill="#ff6b35" font-family="Consolas,monospace" font-size="14" text-anchor="middle" font-weight="bold">WiFi Direct</text>
+  <text x="42" y="120" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">📶 2.4GHz 直连</text>
+  <text x="42" y="138" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">📱 APP直控</text>
+  <line x1="42" y1="148" x2="160" y2="148" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="42" y="165" fill="#ff6b35" font-family="Arial,sans-serif" font-size="10">⚠ 路由器过载</text>
+  <text x="42" y="183" fill="#ff6b35" font-family="Arial,sans-serif" font-size="10">⚠ 信号盲区</text>
+  <text x="42" y="201" fill="#ff6b35" font-family="Arial,sans-serif" font-size="10">⚠ 2.4G拥堵</text>
+  <line x1="42" y1="211" x2="160" y2="211" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="42" y="228" fill="#00d4aa" font-family="Arial,sans-serif" font-size="10">✓ 安装简单</text>
+  <text x="42" y="246" fill="#00d4aa" font-family="Arial,sans-serif" font-size="10">✓ 无需网关</text>
+  <text x="42" y="264" fill="#ff8c55" font-family="Arial,sans-serif" font-size="9">建议：&amp;lt;10个设备</text>
+
+  <!-- Zigbee Card -->
+  <rect x="195" y="70" width="145" height="200" rx="6" fill="#0d1f3c" stroke="#00d4aa" stroke-width="2" opacity="0.9"/>
+  <rect x="195" y="70" width="145" height="32" rx="6" fill="url(#gradZigbee)" opacity="0.3"/>
+  <text x="267" y="91" fill="#00d4aa" font-family="Consolas,monospace" font-size="14" text-anchor="middle" font-weight="bold" filter="url(#glow)">Zigbee ★</text>
+  <text x="207" y="120" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">🕸 网状网络</text>
+  <text x="207" y="138" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">🏠 网关协调</text>
+  <line x1="207" y1="148" x2="325" y2="148" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="207" y="165" fill="#00d4aa" font-family="Arial,sans-serif" font-size="10">✓ 自组网自愈</text>
+  <text x="207" y="183" fill="#00d4aa" font-family="Arial,sans-serif" font-size="10">✓ 低功耗长距</text>
+  <text x="207" y="201" fill="#00d4aa" font-family="Arial,sans-serif" font-size="10">✓ 100+设备</text>
+  <line x1="207" y1="211" x2="325" y2="211" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="207" y="228" fill="#ff8c55" font-family="Arial,sans-serif" font-size="10">⚠ 需要网关</text>
+  <text x="207" y="246" fill="#ff8c55" font-family="Arial,sans-serif" font-size="10">⚠ 信道规划</text>
+  <text x="207" y="264" fill="#00d4aa" font-family="Arial,sans-serif" font-size="9">推荐：10~100+设备</text>
+
+  <!-- BLE Mesh Card -->
+  <rect x="360" y="70" width="145" height="200" rx="6" fill="#0d1f3c" stroke="#4da6ff" stroke-width="1.5" opacity="0.9"/>
+  <rect x="360" y="70" width="145" height="32" rx="6" fill="url(#gradBLE)" opacity="0.3"/>
+  <text x="432" y="91" fill="#4da6ff" font-family="Consolas,monospace" font-size="14" text-anchor="middle" font-weight="bold">BLE Mesh</text>
+  <text x="372" y="120" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">🔷 蓝牙网状</text>
+  <text x="372" y="138" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">📱 手机直配</text>
+  <line x1="372" y1="148" x2="490" y2="148" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="372" y="165" fill="#4da6ff" font-family="Arial,sans-serif" font-size="10">✓ 手机直连</text>
+  <text x="372" y="183" fill="#4da6ff" font-family="Arial,sans-serif" font-size="10">✓ 门锁/传感器</text>
+  <text x="372" y="201" fill="#ff8c55" font-family="Arial,sans-serif" font-size="10">⚠ 穿墙弱</text>
+  <line x1="372" y1="211" x2="490" y2="211" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="372" y="228" fill="#ff8c55" font-family="Arial,sans-serif" font-size="10">⚠ 网关近距</text>
+  <text x="372" y="246" fill="#ff8c55" font-family="Arial,sans-serif" font-size="10">⚠ 延迟偏高</text>
+  <text x="372" y="264" fill="#8899aa" font-family="Arial,sans-serif" font-size="9">适合：米家生态</text>
+
+  <!-- Matter Card -->
+  <rect x="525" y="70" width="135" height="200" rx="6" fill="#0d1f3c" stroke="#c084fc" stroke-width="1.5" opacity="0.9"/>
+  <rect x="525" y="70" width="135" height="32" rx="6" fill="url(#gradMatter)" opacity="0.3"/>
+  <text x="592" y="91" fill="#c084fc" font-family="Consolas,monospace" font-size="14" text-anchor="middle" font-weight="bold">Matter</text>
+  <text x="537" y="120" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">🌐 IP原生</text>
+  <text x="537" y="138" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">🔗 跨生态</text>
+  <line x1="537" y1="148" x2="645" y2="148" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="537" y="165" fill="#c084fc" font-family="Arial,sans-serif" font-size="10">✓ Apple/Google</text>
+  <text x="537" y="183" fill="#c084fc" font-family="Arial,sans-serif" font-size="10">✓ 未来标准</text>
+  <text x="537" y="201" fill="#ff8c55" font-family="Arial,sans-serif" font-size="10">⚠ 生态早期</text>
+  <line x1="537" y1="211" x2="645" y2="211" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="537" y="228" fill="#ff8c55" font-family="Arial,sans-serif" font-size="10">⚠ 设备少</text>
+  <text x="537" y="246" fill="#ff8c55" font-family="Arial,sans-serif" font-size="10">⚠ 兼容差</text>
+  <text x="537" y="264" fill="#8899aa" font-family="Arial,sans-serif" font-size="9">观望：2027+</text>
+
+  <text x="20" y="310" fill="#00ff88" font-family="Courier New,monospace" font-size="12" filter="url(#glow)">└────────────────────────────────────────────────────────────────────┘</text>
+
+  <text x="340" y="340" fill="#4da6ff" font-family="Courier New,monospace" font-size="11" text-anchor="middle">QUICK TIP: 中大户首选 Zigbee | WiFi仅限小户型 &amp;lt;10灯 | BLE看生态 | Matter 观望</text>
+
+  <text x="340" y="370" fill="#ff4444" font-family="Consolas,monospace" font-size="12" text-anchor="middle" filter="url(#glowStrong)">▶ 掉线修复口诀：先查电源 → 再看位置 → 固定信道 → 加中继 → 更新固件</text>
+
+  <text x="340" y="400" fill="#556677" font-family="Courier New,monospace" font-size="9" text-anchor="middle">nexlamp.com — Smart Lighting Protocol Guide</text>
+</svg>

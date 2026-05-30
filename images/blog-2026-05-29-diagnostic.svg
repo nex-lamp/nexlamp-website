@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500">
+  <defs>
+    <pattern id="grid3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1a2a4a" stroke-width="0.4"/>
+    </pattern>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#00d4aa"/>
+    </marker>
+  </defs>
+
+  <rect width="680" height="500" fill="#0a1628"/>
+  <rect width="680" height="500" fill="url(#grid3)" opacity="0.2"/>
+
+  <text x="16" y="28" fill="#00ff88" font-family="Courier New,monospace" font-size="12" filter="url(#glow3)">┌─ Diagnostic Flow: Smart Light Disconnect ─────────────────────────┐</text>
+
+  <!-- STEP 1 -->
+  <rect x="30" y="50" width="620" height="55" rx="6" fill="#0d1f3c" stroke="#ff8c55" stroke-width="1.5"/>
+  <text x="58" y="74" fill="#ff8c55" font-family="Consolas,monospace" font-size="13" font-weight="bold">[L1] </text>
+  <text x="100" y="74" fill="#ffffff" font-family="Arial,sans-serif" font-size="13" font-weight="bold">电源与物理位置检查</text>
+  <text x="100" y="95" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">网关移出金属柜 → 离WiFi路由器≥0.5m → USB延长线悬空 → 路由节点插永不断电插座</text>
+  <line x1="340" y1="105" x2="340" y2="130" stroke="#00d4aa" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- STEP 2 -->
+  <rect x="30" y="132" width="620" height="55" rx="6" fill="#0d1f3c" stroke="#ff8c55" stroke-width="1.5"/>
+  <text x="58" y="156" fill="#ff8c55" font-family="Consolas,monospace" font-size="13" font-weight="bold">[L2] </text>
+  <text x="100" y="156" fill="#ffffff" font-family="Arial,sans-serif" font-size="13" font-weight="bold">WiFi 信道冲突排查</text>
+  <text x="100" y="177" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">固定2.4GHz WiFi信道(1/6/11) → 选对应Zigbee信道(WiFi 1→Zigbee 15/ WiFi 6→Zigbee 20/ WiFi 11→Zigbee 25)</text>
+  <line x1="340" y1="187" x2="340" y2="212" stroke="#00d4aa" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- STEP 3 -->
+  <rect x="30" y="214" width="620" height="55" rx="6" fill="#0d1f3c" stroke="#ff8c55" stroke-width="1.5"/>
+  <text x="58" y="238" fill="#ff8c55" font-family="Consolas,monospace" font-size="13" font-weight="bold">[L3] </text>
+  <text x="100" y="238" fill="#ffffff" font-family="Arial,sans-serif" font-size="13" font-weight="bold">网状网络覆盖率评估</text>
+  <text x="100" y="259" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">查网关拓扑图 → 每6-8m一个常电路由 → 每设备≥2条路径 → 拔单个路由不掉片 → 楼梯口放桥接节点</text>
+  <line x1="340" y1="269" x2="340" y2="294" stroke="#00d4aa" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- STEP 4 -->
+  <rect x="30" y="296" width="620" height="55" rx="6" fill="#0d1f3c" stroke="#ff8c55" stroke-width="1.5"/>
+  <text x="58" y="320" fill="#ff8c55" font-family="Consolas,monospace" font-size="13" font-weight="bold">[L4] </text>
+  <text x="100" y="320" fill="#ffffff" font-family="Arial,sans-serif" font-size="13" font-weight="bold">固件与软件更新</text>
+  <text x="100" y="341" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">网关/集线器升级 → 备份网络配置 → 检查设备OTA → 若有问题回滚版本而非重配全网</text>
+  <line x1="340" y1="351" x2="340" y2="376" stroke="#00d4aa" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- STEP 5 -->
+  <rect x="30" y="378" width="620" height="38" rx="6" fill="#0d1f3c" stroke="#4da6ff" stroke-width="1.5"/>
+  <text x="58" y="402" fill="#4da6ff" font-family="Consolas,monospace" font-size="13" font-weight="bold">[L5] </text>
+  <text x="100" y="402" fill="#ffffff" font-family="Arial,sans-serif" font-size="13" font-weight="bold">最后手段 — 在最终安装位置重新配对</text>
+
+  <!-- Right side: metric -->
+  <rect x="30" y="430" width="300" height="55" rx="4" fill="#0d1f3c" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="50" y="450" fill="#00d4aa" font-family="Courier New,monospace" font-size="11">⏱ 预计耗时</text>
+  <text x="50" y="468" fill="#ffffff" font-family="Consolas,monospace" font-size="16" font-weight="bold">~1.5 小时</text>
+  <text x="160" y="468" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">完成全部5步排查</text>
+
+  <rect x="350" y="430" width="300" height="55" rx="4" fill="#0d1f3c" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="370" y="450" fill="#00d4aa" font-family="Courier New,monospace" font-size="11">⚙ 修复率</text>
+  <text x="370" y="468" fill="#00d4aa" font-family="Consolas,monospace" font-size="16" font-weight="bold" filter="url(#glow3)">99%</text>
+  <text x="440" y="468" fill="#8899aa" font-family="Arial,sans-serif" font-size="10">掉线问题可定位&amp;修复</text>
+</svg>
