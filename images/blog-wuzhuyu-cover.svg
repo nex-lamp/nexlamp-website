@@ -1,0 +1,281 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a44" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <pattern id="gridSmall" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#1a2a44" stroke-width="0.3" opacity="0.2"/>
+    </pattern>
+    <!-- Glow filters -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowSoft">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Light beam gradients -->
+    <linearGradient id="beamWarm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffb347" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beamCool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87ceeb" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#87ceeb" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beamNeutral" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff4e0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#fff4e0" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Zigbee signal -->
+    <radialGradient id="zigbeeSignal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4fc3f7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4fc3f7" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Title underline gradient -->
+    <linearGradient id="titleLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4fc3f7" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#4fc3f7" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#ffb347" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffb347" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a1628"/>
+  <rect width="1200" height="630" fill="url(#gridSmall)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- ===== ROOM CROSS-SECTION (center) ===== -->
+  <g transform="translate(180, 160)">
+    <!-- Room outline -->
+    <rect x="0" y="0" width="840" height="340" fill="none" stroke="#2a4a6e" stroke-width="2" stroke-dasharray="8,4"/>
+    <!-- Ceiling -->
+    <line x1="0" y1="0" x2="840" y2="0" stroke="#3a6a9e" stroke-width="3"/>
+    <!-- Floor -->
+    <line x1="0" y1="340" x2="840" y2="340" stroke="#3a6a9e" stroke-width="3"/>
+
+    <!-- === ZONE 1: Ambient Lighting (left) === -->
+    <g>
+      <!-- Zone label -->
+      <rect x="15" y="10" width="200" height="22" rx="3" fill="#ffb347" fill-opacity="0.15" stroke="#ffb347" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="115" y="26" text-anchor="middle" fill="#ffb347" font-family="'Courier New', monospace" font-size="11" font-weight="bold">ZONE A · 基础照明 3000K</text>
+
+      <!-- Downlight 1 -->
+      <rect x="80" y="-8" width="40" height="8" rx="2" fill="#2a4a6e" stroke="#ffb347" stroke-width="1.5"/>
+      <circle cx="100" cy="-4" r="3" fill="#ffb347" filter="url(#glow)"/>
+      <!-- Light beam -->
+      <polygon points="85,0 115,0 160,180 40,180" fill="url(#beamWarm)" opacity="0.5"/>
+
+      <!-- Downlight 2 -->
+      <rect x="160" y="-8" width="40" height="8" rx="2" fill="#2a4a6e" stroke="#ffb347" stroke-width="1.5"/>
+      <circle cx="180" cy="-4" r="3" fill="#ffb347" filter="url(#glow)"/>
+      <polygon points="165,0 195,0 240,180 120,180" fill="url(#beamWarm)" opacity="0.35"/>
+
+      <!-- Wiring from downlights -->
+      <line x1="100" y1="-8" x2="100" y2="-35" stroke="#ffb347" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+      <line x1="180" y1="-8" x2="180" y2="-35" stroke="#ffb347" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+      <!-- Circuit label -->
+      <text x="140" y="-40" text-anchor="middle" fill="#ffb347" font-family="'Courier New', monospace" font-size="9" opacity="0.7">CIRCUIT-1</text>
+    </g>
+
+    <!-- === ZONE 2: Accent Lighting (center) === -->
+    <g>
+      <rect x="250" y="10" width="200" height="22" rx="3" fill="#87ceeb" fill-opacity="0.15" stroke="#87ceeb" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="350" y="26" text-anchor="middle" fill="#87ceeb" font-family="'Courier New', monospace" font-size="11" font-weight="bold">ZONE B · 重点照明 2700K</text>
+
+      <!-- Track light / spot light -->
+      <rect x="310" y="-8" width="60" height="8" rx="2" fill="#2a4a6e" stroke="#87ceeb" stroke-width="1.5"/>
+      <!-- Spot head 1 -->
+      <polygon points="320,0 330,0 345,30 315,30" fill="#1a3a5e" stroke="#87ceeb" stroke-width="1"/>
+      <circle cx="330" cy="0" r="2.5" fill="#87ceeb" filter="url(#glow)"/>
+      <polygon points="315,30 345,30 380,160 280,160" fill="url(#beamCool)" opacity="0.4"/>
+
+      <!-- Spot head 2 -->
+      <polygon points="350,0 360,0 375,30 345,30" fill="#1a3a5e" stroke="#87ceeb" stroke-width="1"/>
+      <circle cx="355" cy="0" r="2.5" fill="#87ceeb" filter="url(#glow)"/>
+      <polygon points="345,30 375,30 410,160 310,160" fill="url(#beamCool)" opacity="0.3"/>
+
+      <!-- Artwork being illuminated -->
+      <rect x="280" y="165" width="60" height="80" rx="2" fill="none" stroke="#87ceeb" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+      <text x="310" y="210" text-anchor="middle" fill="#87ceeb" font-family="'Courier New', monospace" font-size="9" opacity="0.5">ART</text>
+
+      <!-- Wiring -->
+      <line x1="340" y1="-8" x2="340" y2="-35" stroke="#87ceeb" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+      <text x="340" y="-40" text-anchor="middle" fill="#87ceeb" font-family="'Courier New', monospace" font-size="9" opacity="0.7">CIRCUIT-2</text>
+    </g>
+
+    <!-- === ZONE 3: Ambient/Decor (right) === -->
+    <g>
+      <rect x="500" y="10" width="200" height="22" rx="3" fill="#fff4e0" fill-opacity="0.15" stroke="#fff4e0" stroke-width="0.8" stroke-opacity="0.5"/>
+      <text x="600" y="26" text-anchor="middle" fill="#fff4e0" font-family="'Courier New', monospace" font-size="11" font-weight="bold">ZONE C · 氛围照明 2700K</text>
+
+      <!-- LED strip on ceiling edge -->
+      <line x1="510" y1="5" x2="700" y2="5" stroke="#fff4e0" stroke-width="3" filter="url(#glow)"/>
+      <!-- Soft glow from strip -->
+      <rect x="510" y="5" width="190" height="80" fill="#fff4e0" opacity="0.06" rx="5"/>
+
+      <!-- Wall sconce -->
+      <rect x="530" y="80" width="8" height="40" rx="2" fill="#2a4a6e" stroke="#fff4e0" stroke-width="1"/>
+      <ellipse cx="534" cy="80" rx="12" ry="6" fill="#fff4e0" opacity="0.3" filter="url(#glow)"/>
+
+      <!-- Wiring -->
+      <line x1="600" y1="5" x2="600" y2="-35" stroke="#fff4e0" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+      <text x="600" y="-40" text-anchor="middle" fill="#fff4e0" font-family="'Courier New', monospace" font-size="9" opacity="0.7">CIRCUIT-3</text>
+    </g>
+
+    <!-- === Smart Gateway (center bottom) === -->
+    <g>
+      <rect x="370" y="250" width="100" height="50" rx="5" fill="#0e1e38" stroke="#4fc3f7" stroke-width="1.5"/>
+      <text x="420" y="270" text-anchor="middle" fill="#4fc3f7" font-family="'Courier New', monospace" font-size="10" font-weight="bold">Zigbee</text>
+      <text x="420" y="285" text-anchor="middle" fill="#4fc3f7" font-family="'Courier New', monospace" font-size="9" opacity="0.7">GATEWAY</text>
+      <!-- Antenna icon -->
+      <line x1="420" y1="245" x2="420" y2="250" stroke="#4fc3f7" stroke-width="1.5"/>
+      <circle cx="420" cy="250" r="1.5" fill="#4fc3f7"/>
+
+      <!-- Signal waves from gateway -->
+      <circle cx="420" cy="260" r="60" fill="none" stroke="#4fc3f7" stroke-width="0.5" opacity="0.2" stroke-dasharray="4,4"/>
+      <circle cx="420" cy="260" r="100" fill="none" stroke="#4fc3f7" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4"/>
+      <circle cx="420" cy="260" r="150" fill="none" stroke="#4fc3f7" stroke-width="0.5" opacity="0.1" stroke-dasharray="4,4"/>
+
+      <!-- Connection lines from gateway to lights -->
+      <line x1="370" y1="260" x2="100" y2="10" stroke="#4fc3f7" stroke-width="0.7" stroke-dasharray="3,5" opacity="0.3"/>
+      <line x1="370" y1="270" x2="330" y2="10" stroke="#4fc3f7" stroke-width="0.7" stroke-dasharray="3,5" opacity="0.3"/>
+      <line x1="470" y1="260" x2="600" y2="10" stroke="#4fc3f7" stroke-width="0.7" stroke-dasharray="3,5" opacity="0.3"/>
+    </g>
+
+    <!-- === Driver modules (small rectangles) === -->
+    <g>
+      <rect x="60" y="60" width="50" height="20" rx="3" fill="#0e1e38" stroke="#ffb347" stroke-width="1"/>
+      <text x="85" y="74" text-anchor="middle" fill="#ffb347" font-family="'Courier New', monospace" font-size="7">LED DRV</text>
+
+      <rect x="310" y="60" width="50" height="20" rx="3" fill="#0e1e38" stroke="#87ceeb" stroke-width="1"/>
+      <text x="335" y="74" text-anchor="middle" fill="#87ceeb" font-family="'Courier New', monospace" font-size="7">LED DRV</text>
+
+      <rect x="650" y="60" width="50" height="20" rx="3" fill="#0e1e38" stroke="#fff4e0" stroke-width="1"/>
+      <text x="675" y="74" text-anchor="middle" fill="#fff4e0" font-family="'Courier New', monospace" font-size="7">LED DRV</text>
+    </g>
+
+    <!-- === Zero-line note (annotation) === -->
+    <g>
+      <line x1="15" y1="-20" x2="60" y2="-20" stroke="#ef5350" stroke-width="1.5"/>
+      <circle cx="60" cy="-20" r="2" fill="#ef5350"/>
+      <text x="65" y="-17" fill="#ef5350" font-family="'Courier New', monospace" font-size="8" opacity="0.8">N线预留 ✓</text>
+    </g>
+
+    <!-- Floor reflection -->
+    <rect x="0" y="320" width="840" height="20" fill="#ffffff" opacity="0.02"/>
+  </g>
+
+  <!-- ===== SIDE ANNOTATIONS (left) ===== -->
+  <g transform="translate(30, 170)">
+    <!-- Color temperature scale -->
+    <text x="0" y="0" fill="#a0b0c0" font-family="'Courier New', monospace" font-size="10" font-weight="bold">COLOR TEMP</text>
+    <rect x="0" y="10" width="12" height="30" fill="#ffb347" rx="1"/>
+    <text x="18" y="30" fill="#ffb347" font-family="'Courier New', monospace" font-size="9">2700K</text>
+    <rect x="0" y="48" width="12" height="30" fill="#fff4e0" rx="1"/>
+    <text x="18" y="68" fill="#fff4e0" font-family="'Courier New', monospace" font-size="9">3000K</text>
+    <rect x="0" y="86" width="12" height="30" fill="#87ceeb" rx="1"/>
+    <text x="18" y="106" fill="#87ceeb" font-family="'Courier New', monospace" font-size="9">4000K</text>
+    <rect x="0" y="124" width="12" height="30" fill="#b0c4de" rx="1"/>
+    <text x="18" y="144" fill="#b0c4de" font-family="'Courier New', monospace" font-size="9">6500K</text>
+    <text x="0" y="174" fill="#ef5350" font-family="'Courier New', monospace" font-size="8" opacity="0.7">✗ 不推荐家用</text>
+  </g>
+
+  <!-- ===== SIDE ANNOTATIONS (right) ===== -->
+  <g transform="translate(1050, 170)">
+    <text x="0" y="0" fill="#a0b0c0" font-family="'Courier New', monospace" font-size="10" font-weight="bold">PROTOCOL</text>
+
+    <!-- Zigbee -->
+    <rect x="0" y="12" width="100" height="36" rx="4" fill="#4fc3f7" fill-opacity="0.1" stroke="#4fc3f7" stroke-width="1"/>
+    <text x="50" y="28" text-anchor="middle" fill="#4fc3f7" font-family="'Courier New', monospace" font-size="10" font-weight="bold">Zigbee</text>
+    <text x="50" y="42" text-anchor="middle" fill="#4fc3f7" font-family="'Courier New', monospace" font-size="7" opacity="0.7">★★★★★ 稳定</text>
+
+    <!-- WiFi -->
+    <rect x="0" y="58" width="100" height="36" rx="4" fill="#ffb347" fill-opacity="0.1" stroke="#ffb347" stroke-width="1"/>
+    <text x="50" y="74" text-anchor="middle" fill="#ffb347" font-family="'Courier New', monospace" font-size="10" font-weight="bold">Wi-Fi</text>
+    <text x="50" y="88" text-anchor="middle" fill="#ffb347" font-family="'Courier New', monospace" font-size="7" opacity="0.7">★★★ 延迟高</text>
+
+    <!-- Dimming -->
+    <text x="0" y="120" fill="#a0b0c0" font-family="'Courier New', monospace" font-size="10" font-weight="bold">DIMMING</text>
+    <rect x="0" y="130" width="100" height="22" rx="3" fill="#87ceeb" fill-opacity="0.08" stroke="#87ceeb" stroke-width="0.8"/>
+    <text x="50" y="145" text-anchor="middle" fill="#87ceeb" font-family="'Courier New', monospace" font-size="8">0-10V 无闪烁</text>
+    <rect x="0" y="158" width="100" height="22" rx="3" fill="#ef5350" fill-opacity="0.08" stroke="#ef5350" stroke-width="0.8"/>
+    <text x="50" y="173" text-anchor="middle" fill="#ef5350" font-family="'Courier New', monospace" font-size="8">TRIAC 兼容差</text>
+  </g>
+
+  <!-- ===== TITLE AREA (top) ===== -->
+  <g>
+    <!-- Background panel -->
+    <rect x="40" y="30" width="1120" height="90" rx="6" fill="#0a1628" fill-opacity="0.85" stroke="#2a4a6e" stroke-width="1"/>
+
+    <!-- Main title -->
+    <text x="600" y="68" text-anchor="middle" fill="#e8edf2" font-family="'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="28" font-weight="bold" letter-spacing="2">无主灯 + 智能照明 · 真实踩坑记录</text>
+
+    <!-- Decorative line -->
+    <line x1="200" y1="82" x2="1000" y2="82" stroke="url(#titleLine)" stroke-width="1.5"/>
+
+    <!-- Subtitle -->
+    <text x="600" y="102" text-anchor="middle" fill="#7a8ea0" font-family="'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="14" letter-spacing="1">装修前必看的避坑指南 — 分区布线 · 协议选择 · 调光兼容 · 色温搭配</text>
+  </g>
+
+  <!-- ===== BOTTOM TECHNICAL NOTES ===== -->
+  <g transform="translate(40, 540)">
+    <rect x="0" y="0" width="1120" height="60" rx="4" fill="#0a1628" fill-opacity="0.7" stroke="#1a2a44" stroke-width="1"/>
+
+    <!-- Warning symbols and notes -->
+    <text x="20" y="20" fill="#ef5350" font-family="'Courier New', monospace" font-size="12" font-weight="bold">⚠ 踩坑要点</text>
+
+    <g transform="translate(20, 32)">
+      <circle cx="6" cy="6" r="5" fill="none" stroke="#ffb347" stroke-width="1.2"/>
+      <text x="6" y="10" text-anchor="middle" fill="#ffb347" font-family="'Courier New', monospace" font-size="8" font-weight="bold">1</text>
+      <text x="16" y="10" fill="#c0d0e0" font-family="'Microsoft YaHei', sans-serif" font-size="9">分区布线·预留零线</text>
+    </g>
+    <g transform="translate(190, 32)">
+      <circle cx="6" cy="6" r="5" fill="none" stroke="#ffb347" stroke-width="1.2"/>
+      <text x="6" y="10" text-anchor="middle" fill="#ffb347" font-family="'Courier New', monospace" font-size="8" font-weight="bold">2</text>
+      <text x="16" y="10" fill="#c0d0e0" font-family="'Microsoft YaHei', sans-serif" font-size="9">智能灯≠智能开关</text>
+    </g>
+    <g transform="translate(350, 32)">
+      <circle cx="6" cy="6" r="5" fill="none" stroke="#ffb347" stroke-width="1.2"/>
+      <text x="6" y="10" text-anchor="middle" fill="#ffb347" font-family="'Courier New', monospace" font-size="8" font-weight="bold">3</text>
+      <text x="16" y="10" fill="#c0d0e0" font-family="'Microsoft YaHei', sans-serif" font-size="9">Zigbee优先·断网可用</text>
+    </g>
+    <g transform="translate(530, 32)">
+      <circle cx="6" cy="6" r="5" fill="none" stroke="#ef5350" stroke-width="1.2"/>
+      <text x="6" y="10" text-anchor="middle" fill="#ef5350" font-family="'Courier New', monospace" font-size="8" font-weight="bold">4</text>
+      <text x="16" y="10" fill="#c0d0e0" font-family="'Microsoft YaHei', sans-serif" font-size="9">调光闪烁查驱动</text>
+    </g>
+    <g transform="translate(690, 32)">
+      <circle cx="6" cy="6" r="5" fill="none" stroke="#ef5350" stroke-width="1.2"/>
+      <text x="6" y="10" text-anchor="middle" fill="#ef5350" font-family="'Courier New', monospace" font-size="8" font-weight="bold">5</text>
+      <text x="16" y="10" fill="#c0d0e0" font-family="'Microsoft YaHei', sans-serif" font-size="9">色温统一2700-3000K</text>
+    </g>
+    <g transform="translate(870, 32)">
+      <circle cx="6" cy="6" r="5" fill="none" stroke="#4fc3f7" stroke-width="1.2"/>
+      <text x="6" y="10" text-anchor="middle" fill="#4fc3f7" font-family="'Courier New', monospace" font-size="8" font-weight="bold">6</text>
+      <text x="16" y="10" fill="#c0d0e0" font-family="'Microsoft YaHei', sans-serif" font-size="9">射灯避免直射人眼</text>
+    </g>
+
+    <!-- nexLAMP branding -->
+    <text x="1100" y="38" text-anchor="end" fill="#3a5a7e" font-family="'Courier New', monospace" font-size="9" font-weight="bold">nexLAMP®</text>
+  </g>
+
+  <!-- ===== DECORATIVE ELEMENTS ===== -->
+  <!-- Corner marks -->
+  <g stroke="#2a4a6e" stroke-width="1" opacity="0.5">
+    <line x1="20" y1="15" x2="20" y2="30"/><line x1="15" y1="20" x2="30" y2="20"/>
+    <line x1="1180" y1="15" x2="1180" y2="30"/><line x1="1170" y1="20" x2="1185" y2="20"/>
+    <line x1="20" y1="600" x2="20" y2="615"/><line x1="15" y1="610" x2="30" y2="610"/>
+    <line x1="1180" y1="600" x2="1180" y2="615"/><line x1="1170" y1="610" x2="1185" y2="610"/>
+  </g>
+
+  <!-- Version info -->
+  <text x="1160" y="625" text-anchor="end" fill="#1a3a5e" font-family="'Courier New', monospace" font-size="8">v2026.06 · SCIENTIFIC ILLUSTRATION</text>
+</svg>

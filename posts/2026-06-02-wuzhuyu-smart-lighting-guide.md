@@ -4,7 +4,7 @@ date: "2026-06-02"
 category: "智能照明"
 tags: ["无主灯", "Zigbee", "智能家居", "装修避坑", "LED驱动"]
 excerpt: "无主灯已成装修标配，但超过60%的用户在完工后才发现各种问题。调光卡顿、智能灯掉线、色温偏差……这篇文章把最常见的10个踩坑场景全部整理出来，附带解决方案。"
-cover: "images/blog-wuzhuyu-cover.png"
+cover: "images/blog-wuzhuyu-cover.svg"
 slug: "wuzhuyu-smart-lighting-guide"
 ---
 
