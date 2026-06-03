@@ -26,6 +26,20 @@
   </url>
 
   <url>
+    <loc>https://www.nexlamp.com/dist/blog/smart-home-protocol-selection-guide-2026.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexlamp.com/dist/blog/zigbee-vs-matter-vs-ble-mesh.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.nexlamp.com/dist/blog/wuzhuyu-smart-lighting-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
