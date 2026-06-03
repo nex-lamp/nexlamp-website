@@ -22,7 +22,7 @@ const crypto = require('crypto');
 // ========================================
 const CONFIG = {
     // Security: Use environment variable in production
-    secret: process.env.WEBHOOK_SECRET || 'NEXLAMP_SECURE_TOKEN_2026',
+    secret: process.env.WEBHOOK_SECRET,
     
     // Content directory
     postsDir: process.env.POSTS_DIR || path.join(__dirname, 'posts'),
@@ -92,7 +92,7 @@ function verifySignature(payload, signature, secret) {
  * Validate request origin
  */
 function validateOrigin(origin) {
-    if (!origin) return true; // Allow requests without origin (e.g., curl)
+    if (!origin) return false; // �ܾ��� Origin ͷ������
     return CONFIG.allowedOrigins.includes(origin);
 }
 
@@ -232,13 +232,13 @@ async function handleWebhook(req, res) {
             return;
         }
         
-        // Simple secret validation (fallback)
-        if (body.secret && body.secret !== CONFIG.secret) {
-            res.statusCode = 403;
+        // ����ͨ�������������� WEBHOOK_SECRET
+        if (!CONFIG.secret) {
+            res.statusCode = 500;
             res.setHeader('Content-Type', 'application/json');
             res.end(JSON.stringify({
                 success: false,
-                error: 'Invalid secret'
+                error: 'Webhook not configured: WEBHOOK_SECRET not set'
             }));
             return;
         }
@@ -408,8 +408,8 @@ if (require.main === module) {
     
     console.log(`
 ╔════════════════════════════════════════╗
-║    Nexlamp Webhook Receiver            ║
-║    ${CONFIG.company}      ║
+�?   Nexlamp Webhook Receiver            �?
+�?   ${CONFIG.company}      �?
 ╚════════════════════════════════════════╝
 `);
     
@@ -433,7 +433,7 @@ if (require.main === module) {
   }'\n`);
         });
     } catch (error) {
-        console.error('❌ Failed to start server:', error.message);
+        console.error('�?Failed to start server:', error.message);
         console.log('\n💡 Tip: Install Express first: npm install express\n');
         process.exit(1);
     }

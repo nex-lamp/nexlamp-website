@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
     <title>涂鸦恒流驱动电源选型指南：7-50W全功率段方案解析 | 耐利普科技技术博客</title>
     <meta name="description" content="涂鸦恒流驱动电源7-50W选型指南，详解输出参数、调光协议、3C认证与安装要点，助力智能照明项目高效选型。">
     <meta name="keywords" content="涂鸦恒流驱动电源,LED驱动电源选型,智能照明驱动,Tuya调光,3C认证驱动电源">

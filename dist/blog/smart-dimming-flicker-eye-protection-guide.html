@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
     <title>智能调光真的伤眼吗？PWM vs DALI vs CCR 调光技术全解析 + 护眼选购指南 | 耐利普科技技术博客</title>
     <meta name="description" content="智能调光灯越来越普及，但"越调越暗、眼睛越来越累"的投诉也越来越多。本文深度解析PWM、DALI、CCR三种主流调光技术的原理与频闪风险，帮你看懂参数、选对产品，实现真正的护眼智能照明。">
     <meta name="keywords" content="智能照明,LED驱动电源">

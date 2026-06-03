@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
     <title>智能灯频闪和调光器不兼容？一篇文章彻底搞懂 | 耐利普科技技术博客</title>
     <meta name="description" content="智能灯频闪和调光不兼容是装修后最常见的坑。本文从驱动电源原理出发，详解PWM频率、最小负载、单火开关漏电流等根本原因，并给出Zigbee/米家/DALI/0-10V各方案的选型建议。">
     <meta name="keywords" content="智能灯频闪,调光器不兼容,LED频闪解决,Zigbee调光,涂鸦调光,单火开关频闪,PWM调光,DALI,0-10V">

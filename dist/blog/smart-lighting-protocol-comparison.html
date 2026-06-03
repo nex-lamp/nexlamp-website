@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
     <title>智能照明协议怎么选？Zigbee/蓝牙Mesh/Wi-Fi/DALI四大主流协议横评 | 耐利普科技技术博客</title>
     <meta name="description" content="深度对比Zigbee、蓝牙Mesh、Wi-Fi、DALI-2四大智能照明协议的优缺点和适用场景，附选型决策树和演进趋势分析。">
     <meta name="keywords" content="智能照明协议,Zigbee vs 蓝牙Mesh,DALI-2,Wi-Fi照明,Matter协议,照明选型">

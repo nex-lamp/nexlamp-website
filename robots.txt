@@ -1,39 +1,65 @@
 # robots.txt for Nexlamp Technology
 # https://www.nexlamp.com/
 
-User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://www.nexlamp.com/sitemap.xml
-
-# AI crawlers - explicitly allowed
-User-agent: ChatGPT-User
-Allow: /
-
+# Search engine crawlers - allowed
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: Baiduspider
 Allow: /
+
+User-agent: Sogou
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+# AI crawlers - blocked (prevent content from being used for AI training)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
 
 User-agent: ClaudeBot
-Allow: /
+Disallow: /
 
 User-agent: Bytespider
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
+Disallow: /
 
 User-agent: DeepSeekBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+# All other crawlers
+User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://www.nexlamp.com/sitemap.xml

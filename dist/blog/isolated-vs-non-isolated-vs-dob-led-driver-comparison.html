@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
     <title>隔离LED驱动电源 vs 非隔离 vs DOB：三类驱动方案全面对比与选型推荐 | 耐利普科技技术博客</title>
     <meta name="description" content="全面对比隔离LED驱动、非隔离LED驱动与DOB驱动的原理、安全性、效率、成本及应用场景，给出不同场景的选型推荐。">
     <meta name="keywords" content="隔离LED驱动,非隔离LED驱动,DOB驱动,LED电源选型,去电源化,智能照明">

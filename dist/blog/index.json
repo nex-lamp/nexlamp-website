@@ -1,5 +1,14 @@
 [
   {
+    "title": "无主灯 + 智能照明真实踩坑记录：装修前必看的避坑指南",
+    "slug": "wuzhuyu-smart-lighting-guide",
+    "date": "2026-06-02",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-wuzhuyu-cover.png",
+    "excerpt": "无主灯已成装修标配，但超过60%的用户在完工后才发现各种问题。调光卡顿、智能灯掉线、色温偏差……这篇文章把最常见的10个踩坑场景全部整理出来，附带解决方案。"
+  },
+  {
     "title": "Matter协议来了，Zigbee智能灯还值得买吗？2026年智能照明协议选型终极指南",
     "slug": "matter-vs-zigbee-smart-lighting-2026",
     "date": "2026-05-29",

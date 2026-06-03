@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
     <title>耐利普科技 | 智能照明与物联网解决方案 - Nexlamp Technology</title>
     <meta name="description" content="耐利普科技有限公司（Nexlamp Technology）专注于智能照明系统与物联网解决方案，为工业与商业领域提供高效节能的LED驱动电源与智能灯具产品。">
     <meta name="keywords" content="智能照明,LED驱动电源,物联网照明,耐利普,Nexlamp,工业照明">
