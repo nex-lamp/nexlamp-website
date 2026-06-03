@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 440">
+  <defs>
+    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="440" fill="#0a1628"/>
+  <rect width="680" height="440" fill="url(#grid2)" opacity="0.5"/>
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="680" height="36" fill="#0d1f3c"/>
+  <circle cx="16" cy="18" r="5" fill="#ff5f56"/>
+  <circle cx="32" cy="18" r="5" fill="#ffbd2e"/>
+  <circle cx="48" cy="18" r="5" fill="#27c93f"/>
+  <text x="340" y="23" text-anchor="middle" fill="#8899aa" font-family="Consolas,monospace" font-size="11">三种典型户型智能家居组网方案</text>
+
+  <!-- Scheme 1: Small -->
+  <rect x="15" y="48" width="210" height="180" rx="10" fill="#0d1f3c" stroke="#00d4ff" stroke-width="1" opacity="0.9"/>
+  <rect x="15" y="48" width="210" height="28" rx="10" fill="#00d4ff" opacity="0.15"/>
+  <text x="120" y="66" text-anchor="middle" fill="#00d4ff" font-family="sans-serif" font-size="12" font-weight="bold">小户型 / 租房</text>
+  <text x="120" y="86" text-anchor="middle" fill="#6688aa" font-family="sans-serif" font-size="9">50㎡以内 · 预算 1500-3000¥</text>
+
+  <!-- Small icons -->
+  <rect x="30" y="98" width="60" height="22" rx="4" fill="#ff9900" opacity="0.2" stroke="#ff9900" stroke-width="0.5"/>
+  <text x="60" y="113" text-anchor="middle" fill="#ff9900" font-family="sans-serif" font-size="8">蓝牙Mesh</text>
+  <text x="105" y="113" fill="#6688aa" font-family="sans-serif" font-size="7">主力协议</text>
+
+  <rect x="30" y="128" width="60" height="22" rx="4" fill="#00ff88" opacity="0.2" stroke="#00ff88" stroke-width="0.5"/>
+  <text x="60" y="143" text-anchor="middle" fill="#00ff88" font-family="sans-serif" font-size="8">WiFi</text>
+  <text x="105" y="143" fill="#6688aa" font-family="sans-serif" font-size="7">音箱+门锁</text>
+
+  <text x="30" y="176" fill="#6688aa" font-family="sans-serif" font-size="8">✓ 免布线免网关</text>
+  <text x="30" y="194" fill="#6688aa" font-family="sans-serif" font-size="8">✓ 搬走也能带走</text>
+  <text x="30" y="212" fill="#ff5f56" font-family="sans-serif" font-size="8">✗ 穿墙后信号衰减</text>
+
+  <!-- Scheme 2: Medium -->
+  <rect x="235" y="48" width="210" height="180" rx="10" fill="#0d1f3c" stroke="#ff9900" stroke-width="1.5" opacity="1"/>
+  <rect x="235" y="48" width="210" height="28" rx="10" fill="#ff9900" opacity="0.15"/>
+  <text x="340" y="66" text-anchor="middle" fill="#ff9900" font-family="sans-serif" font-size="12" font-weight="bold">中等户型 ⭐推荐</text>
+  <text x="340" y="86" text-anchor="middle" fill="#6688aa" font-family="sans-serif" font-size="9">80-120㎡ · 预算 5000-12000¥</text>
+
+  <rect x="250" y="98" width="60" height="22" rx="4" fill="#00d4ff" opacity="0.25" stroke="#00d4ff" stroke-width="0.5"/>
+  <text x="280" y="113" text-anchor="middle" fill="#00d4ff" font-family="sans-serif" font-size="8">Zigbee</text>
+  <text x="325" y="113" fill="#6688aa" font-family="sans-serif" font-size="7">主力协议</text>
+
+  <rect x="250" y="128" width="60" height="22" rx="4" fill="#00ff88" opacity="0.2" stroke="#00ff88" stroke-width="0.5"/>
+  <text x="280" y="143" text-anchor="middle" fill="#00ff88" font-family="sans-serif" font-size="8">WiFi</text>
+  <text x="325" y="143" fill="#6688aa" font-family="sans-serif" font-size="7">摄像头+音箱</text>
+
+  <text x="250" y="176" fill="#6688aa" font-family="sans-serif" font-size="8">✓ 15-30盏灯不掉线</text>
+  <text x="250" y="194" fill="#6688aa" font-family="sans-serif" font-size="8">✓ 设备越多信号越好</text>
+  <text x="250" y="212" fill="#00d4ff" font-family="sans-serif" font-size="8">★ 性价比最优方案</text>
+
+  <!-- Scheme 3: Large -->
+  <rect x="455" y="48" width="210" height="180" rx="10" fill="#0d1f3c" stroke="#cc66ff" stroke-width="1" opacity="0.9"/>
+  <rect x="455" y="48" width="210" height="28" rx="10" fill="#cc66ff" opacity="0.15"/>
+  <text x="560" y="66" text-anchor="middle" fill="#cc66ff" font-family="sans-serif" font-size="12" font-weight="bold">大平层 / 别墅</text>
+  <text x="560" y="86" text-anchor="middle" fill="#6688aa" font-family="sans-serif" font-size="9">150㎡+ · 预算 15000¥+</text>
+
+  <rect x="470" y="98" width="60" height="22" rx="4" fill="#00d4ff" opacity="0.25" stroke="#00d4ff" stroke-width="0.5"/>
+  <text x="500" y="113" text-anchor="middle" fill="#00d4ff" font-family="sans-serif" font-size="8">Zigbee</text>
+  <text x="545" y="113" fill="#6688aa" font-family="sans-serif" font-size="7">主照明</text>
+
+  <rect x="470" y="128" width="60" height="22" rx="4" fill="#cc66ff" opacity="0.25" stroke="#cc66ff" stroke-width="0.5"/>
+  <text x="500" y="143" text-anchor="middle" fill="#cc66ff" font-family="sans-serif" font-size="8">Matter</text>
+  <text x="545" y="143" fill="#6688aa" font-family="sans-serif" font-size="7">高端设备</text>
+
+  <text x="470" y="176" fill="#6688aa" font-family="sans-serif" font-size="8">✓ 双协议混合组网</text>
+  <text x="470" y="194" fill="#6688aa" font-family="sans-serif" font-size="8">✓ AC+AP全屋WiFi</text>
+  <text x="470" y="212" fill="#6688aa" font-family="sans-serif" font-size="8">★ 企业级路由器必备</text>
+
+  <!-- Bottom: Legend -->
+  <rect x="15" y="245" width="650" height="30" rx="6" fill="#0d1f3c" opacity="0.6"/>
+  <text x="340" y="265" text-anchor="middle" fill="#6688aa" font-family="sans-serif" font-size="9">📡 协议图例：
+    <tspan fill="#00d4ff">Zigbee=蓝色</tspan> ·
+    <tspan fill="#00ff88">WiFi=绿色</tspan> ·
+    <tspan fill="#ff9900">蓝牙Mesh=橙色</tspan> ·
+    <tspan fill="#cc66ff">Matter=紫色</tspan>
+  </text>
+
+  <!-- Timestamp -->
+  <text x="665" y="430" text-anchor="end" fill="#334466" font-family="Consolas,monospace" font-size="7">2026-06-03 | nexLAMP</text>
+</svg>
