@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700">
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2d4a" stroke-width="0.5" opacity="0.5"/>
+    </pattern>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong3">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="700" fill="#0a1628"/>
+  <rect width="800" height="700" fill="url(#grid3)"/>
+
+  <text x="400" y="35" text-anchor="middle" font-family="Consolas, monospace" font-size="20" fill="#00d4ff" filter="url(#glow3)" font-weight="bold">智能灯协议选型决策流程</text>
+
+  <!-- Start node -->
+  <rect x="310" y="55" width="180" height="40" rx="20" fill="#00d4ff" fill-opacity="0.2" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="400" y="80" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#00d4ff" filter="url(#glow3)" font-weight="bold">你想装智能灯？</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="95" x2="400" y2="125" stroke="#00d4ff" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="395,120 400,130 405,120" fill="#00d4ff" opacity="0.6"/>
+
+  <!-- Q1: 预算 -->
+  <rect x="250" y="130" width="300" height="50" rx="6" fill="#1a2d4a" stroke="#334466" stroke-width="1"/>
+  <text x="400" y="152" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#8899aa">20灯预算 &gt; 600 元？</text>
+  <text x="400" y="170" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#4a6a8a">(含网关+驱动)</text>
+
+  <!-- Yes branch (right) -->
+  <line x1="550" y1="155" x2="620" y2="155" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+  <text x="580" y="148" font-family="Consolas, monospace" font-size="11" fill="#00ff88">是</text>
+
+  <polygon points="615,150 625,155 615,160" fill="#00ff88" opacity="0.8"/>
+
+  <!-- Q2: Apple生态？ -->
+  <rect x="250" y="130" width="300" height="50" rx="6" fill="#1a2d4a" stroke="#334466" stroke-width="1"/>
+  <rect x="625" y="130" width="155" height="50" rx="6" fill="#1a2d4a" stroke="#334466" stroke-width="1"/>
+  <text x="702" y="152" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8899aa">Apple生态为主？</text>
+  <text x="702" y="170" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#4a6a8a">(HomeKit/HomePod)</text>
+
+  <!-- Yes -> Matter -->
+  <line x1="702" y1="180" x2="702" y2="210" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+  <text x="715" y="198" font-family="Consolas, monospace" font-size="10" fill="#00ff88">是</text>
+  <polygon points="697,205 702,215 707,205" fill="#00ff88" opacity="0.8"/>
+
+  <rect x="610" y="215" width="185" height="50" rx="8" fill="#a855f7" fill-opacity="0.15" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="702" y="238" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#a855f7" filter="url(#glow3)" font-weight="bold">选 Matter</text>
+  <text x="702" y="256" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#c084fc">HomeKit原生，跨平台</text>
+
+  <!-- No -> Q3 -->
+  <line x1="625" y1="155" x2="625" y2="155" stroke="#a855f7" stroke-width="0"/>
+  <line x1="625" y1="155" x2="625" y2="215" stroke="#22d3ee" stroke-width="0"/>
+  <line x1="702" y1="180" x2="625" y2="155" stroke="#f59e0b" stroke-width="1" opacity="0"/>
+
+  <!-- No from Q2 goes back up and right? No, actually Q2 no -> Zigbee or Q3 -->
+  <line x1="780" y1="155" x2="780" y2="215" stroke="#22d3ee" stroke-width="0"/>
+  <line x1="625" y1="155" x2="625" y2="270" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+  <text x="612" y="240" font-family="Consolas, monospace" font-size="10" fill="#f59e0b">否</text>
+
+  <!-- Q3: 设备数 -->
+  <rect x="475" y="270" width="300" height="50" rx="6" fill="#1a2d4a" stroke="#334466" stroke-width="1"/>
+  <text x="625" y="292" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#8899aa">智能灯 &gt; 20 个？</text>
+  <text x="625" y="310" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#4a6a8a">(全屋/大户型)</text>
+
+  <!-- Yes -> Zigbee -->
+  <line x1="625" y1="320" x2="625" y2="350" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+  <text x="638" y="338" font-family="Consolas, monospace" font-size="10" fill="#00ff88">是</text>
+  <polygon points="620,345 625,355 630,345" fill="#00ff88" opacity="0.8"/>
+
+  <rect x="500" y="355" width="250" height="55" rx="8" fill="#00d4ff" fill-opacity="0.15" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="625" y="378" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#00d4ff" filter="url(#glow3)" font-weight="bold">选 Zigbee</text>
+  <text x="625" y="400" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#4ad4ff">Mesh网络中继，越装越稳</text>
+
+  <!-- No -> 蓝牙Mesh or Zigbee small -->
+  <line x1="775" y1="295" x2="775" y2="355" stroke="#22d3ee" stroke-width="0"/>
+  <line x1="625" y1="295" x2="625" y2="430" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+  <text x="612" y="400" font-family="Consolas, monospace" font-size="10" fill="#f59e0b">否</text>
+
+  <!-- Q4: 稳定性要求 -->
+  <rect x="475" y="430" width="300" height="50" rx="6" fill="#1a2d4a" stroke="#334466" stroke-width="1"/>
+  <text x="625" y="452" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8899aa">追求稳定不折腾？</text>
+
+  <line x1="625" y1="480" x2="625" y2="510" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+  <text x="638" y="498" font-family="Consolas, monospace" font-size="10" fill="#00ff88">是</text>
+  <polygon points="620,505 625,515 630,505" fill="#00ff88" opacity="0.8"/>
+
+  <rect x="500" y="515" width="250" height="55" rx="8" fill="#00d4ff" fill-opacity="0.15" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="625" y="538" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#00d4ff" filter="url(#glow3)" font-weight="bold">选 Zigbee</text>
+  <text x="625" y="560" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#4ad4ff">小户型也推荐，一步到位</text>
+
+  <!-- No --> BLE Mesh -->
+  <line x1="775" y1="455" x2="775" y2="515" stroke="#22d3ee" stroke-width="0"/>
+  <line x1="625" y1="455" x2="625" y2="590" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+  <text x="612" y="560" font-family="Consolas, monospace" font-size="10" fill="#f59e0b">否</text>
+  <polygon points="620,585 625,595 630,585" fill="#f59e0b" opacity="0.7"/>
+
+  <rect x="540" y="595" width="170" height="55" rx="8" fill="#22d3ee" fill-opacity="0.1" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="625" y="618" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#22d3ee" filter="url(#glow3)" font-weight="bold">蓝牙 Mesh</text>
+  <text x="625" y="640" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#5eead4">预算紧，设备少就它</text>
+
+  <!-- No budget branch from Q1 -> Q1-alt -->
+  <line x1="250" y1="155" x2="155" y2="155" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+  <text x="220" y="148" font-family="Consolas, monospace" font-size="11" fill="#f59e0b">否</text>
+  <polygon points="160,150 150,155 160,160" fill="#f59e0b" opacity="0.7"/>
+
+  <!-- Budget low -> -->
+  <rect x="20" y="270" width="280" height="50" rx="6" fill="#1a2d4a" stroke="#334466" stroke-width="1"/>
+  <text x="160" y="292" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8899aa">追求最便宜能用就行？</text>
+
+  <line x1="160" y1="320" x2="160" y2="350" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+  <text x="173" y="338" font-family="Consolas, monospace" font-size="10" fill="#00ff88">是</text>
+  <polygon points="155,345 160,355 165,345" fill="#00ff88" opacity="0.8"/>
+
+  <rect x="75" y="355" width="170" height="55" rx="8" fill="#22d3ee" fill-opacity="0.1" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="160" y="378" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#22d3ee" filter="url(#glow3)" font-weight="bold">蓝牙 Mesh</text>
+  <text x="160" y="400" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#5eead4">省钱方案，小户型够用</text>
+
+  <!-- No -> Zigbee from budget low -->
+  <line x1="20" y1="295" x2="20" y2="355" stroke="#22d3ee" stroke-width="0"/>
+  <line x1="160" y1="295" x2="160" y2="430" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+  <text x="148" y="400" font-family="Consolas, monospace" font-size="10" fill="#f59e0b">否</text>
+  <polygon points="155,425 160,435 165,425" fill="#f59e0b" opacity="0.7"/>
+
+  <rect x="35" y="435" width="250" height="55" rx="8" fill="#00d4ff" fill-opacity="0.15" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="160" y="458" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#00d4ff" filter="url(#glow3)" font-weight="bold">选 Zigbee</text>
+  <text x="160" y="480" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#4ad4ff">咬咬牙上稳定方案</text>
+
+  <!-- Bottom summary -->
+  <rect x="50" y="530" width="700" height="1" fill="#1a2d4a"/>
+  <text x="400" y="615" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#4a6a8a">90% 的用户最终选择了 Zigbee — 因为"装完三年不用管"比"省两百块"更有价值</text>
+
+  <!-- Footer -->
+  <text x="400" y="675" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#1a3355">nexLAMP.com | 决策流程图 · 2026</text>
+</svg>

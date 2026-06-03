@@ -1,94 +1,99 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
   <defs>
-    <radialGradient id="bg1" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#0d1f3c"/>
-      <stop offset="100%" stop-color="#060d1a"/>
-    </radialGradient>
-    <filter id="glow1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2d4a" stroke-width="0.5" opacity="0.6"/>
+    </pattern>
+    <filter id="glow">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M2 1L8 5L2 9" fill="none" stroke="#4fc3f7" stroke-width="1.5"/>
-    </marker>
+    <filter id="glowStrong">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="zg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0077b6"/>
+    </linearGradient>
+    <linearGradient id="mg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6b21a8"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
   </defs>
-  <rect width="800" height="500" fill="url(#bg1)"/>
-  <!-- Grid -->
-  <g opacity="0.08" stroke="#4fc3f7" stroke-width="0.5">
-    <line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="200" x2="800" y2="200"/>
-    <line x1="0" y1="300" x2="800" y2="300"/><line x1="0" y1="400" x2="800" y2="400"/>
-    <line x1="200" y1="0" x2="200" y2="500"/><line x1="400" y1="0" x2="400" y2="500"/>
-    <line x1="600" y1="0" x2="600" y2="500"/>
-  </g>
+
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
   <!-- Title -->
-  <text x="400" y="42" text-anchor="middle" font-family="monospace" font-size="18" fill="#4fc3f7" filter="url(#glow1)">PROTOCOL COMPARISON MATRIX</text>
-  <text x="400" y="64" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6b8dad">四大智能照明协议核心参数对比</text>
-  <!-- Zigbee -->
-  <rect x="40" y="90" width="170" height="370" rx="8" fill="rgba(0,200,83,0.08)" stroke="#00c853" stroke-width="0.8"/>
-  <text x="125" y="118" text-anchor="middle" font-family="monospace" font-size="16" fill="#00c853" filter="url(#glow1)">Zigbee</text>
-  <text x="125" y="138" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#4caf50">IEEE 802.15.4</text>
-  <text x="60" y="170" font-family="sans-serif" font-size="11" fill="#b0bec5">频率: 2.4GHz</text>
-  <text x="60" y="192" font-family="sans-serif" font-size="11" fill="#b0bec5">速率: 250kbps</text>
-  <text x="60" y="214" font-family="sans-serif" font-size="11" fill="#b0bec5">距离: 10-100m</text>
-  <text x="60" y="236" font-family="sans-serif" font-size="11" fill="#b0bec5">节点: 65535+</text>
-  <text x="60" y="258" font-family="sans-serif" font-size="11" fill="#b0bec5">功耗: 极低</text>
-  <text x="60" y="290" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ Mesh自组网</text>
-  <text x="60" y="310" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 大规模部署</text>
-  <text x="60" y="330" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 低功耗稳定</text>
-  <text x="60" y="360" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 需要网关</text>
-  <text x="60" y="380" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 协议碎片化</text>
-  <text x="60" y="400" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 开发门槛高</text>
-  <rect x="60" y="420" width="130" height="24" rx="4" fill="rgba(0,200,83,0.2)"/>
-  <text x="125" y="436" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#69f0ae">适用: 工程项目</text>
-  <!-- BLE Mesh -->
-  <rect x="230" y="90" width="170" height="370" rx="8" fill="rgba(33,150,243,0.08)" stroke="#2196f3" stroke-width="0.8"/>
-  <text x="315" y="118" text-anchor="middle" font-family="monospace" font-size="16" fill="#2196f3" filter="url(#glow1)">BLE Mesh</text>
-  <text x="315" y="138" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#64b5f6">Bluetooth 5.0+</text>
-  <text x="250" y="170" font-family="sans-serif" font-size="11" fill="#b0bec5">频率: 2.4GHz</text>
-  <text x="250" y="192" font-family="sans-serif" font-size="11" fill="#b0bec5">速率: 1-2Mbps</text>
-  <text x="250" y="214" font-family="sans-serif" font-size="11" fill="#b0bec5">距离: 10-50m</text>
-  <text x="250" y="236" font-family="sans-serif" font-size="11" fill="#b0bec5">节点: 32767</text>
-  <text x="250" y="258" font-family="sans-serif" font-size="11" fill="#b0bec5">功耗: 低</text>
-  <text x="250" y="290" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 手机直连</text>
-  <text x="250" y="310" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 生态丰富</text>
-  <text x="250" y="330" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 部署简单</text>
-  <text x="250" y="360" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 节点数受限</text>
-  <text x="250" y="380" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 功耗&gt;Zigbee</text>
-  <text x="250" y="400" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 延迟略高</text>
-  <rect x="250" y="420" width="130" height="24" rx="4" fill="rgba(33,150,243,0.2)"/>
-  <text x="315" y="436" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#64b5f6">适用: 家用照明</text>
-  <!-- Wi-Fi -->
-  <rect x="420" y="90" width="170" height="370" rx="8" fill="rgba(255,152,0,0.08)" stroke="#ff9800" stroke-width="0.8"/>
-  <text x="505" y="118" text-anchor="middle" font-family="monospace" font-size="16" fill="#ff9800" filter="url(#glow1)">Wi-Fi</text>
-  <text x="505" y="138" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#ffb74d">IEEE 802.11</text>
-  <text x="440" y="170" font-family="sans-serif" font-size="11" fill="#b0bec5">频率: 2.4/5GHz</text>
-  <text x="440" y="192" font-family="sans-serif" font-size="11" fill="#b0bec5">速率: 54-600Mbps</text>
-  <text x="440" y="214" font-family="sans-serif" font-size="11" fill="#b0bec5">距离: 10-30m</text>
-  <text x="440" y="236" font-family="sans-serif" font-size="11" fill="#b0bec5">节点: 20-30</text>
-  <text x="440" y="258" font-family="sans-serif" font-size="11" fill="#b0bec5">功耗: 高</text>
-  <text x="440" y="290" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 无需网关</text>
-  <text x="440" y="310" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 带宽高</text>
-  <text x="440" y="330" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 互联网直连</text>
-  <text x="440" y="360" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 功耗过高</text>
-  <text x="440" y="380" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 节点数极少</text>
-  <text x="440" y="400" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 路由器瓶颈</text>
-  <rect x="440" y="420" width="130" height="24" rx="4" fill="rgba(255,152,0,0.2)"/>
-  <text x="505" y="436" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#ffb74d">适用: 少量设备</text>
-  <!-- DALI -->
-  <rect x="610" y="90" width="150" height="370" rx="8" fill="rgba(171,71,188,0.08)" stroke="#ab47bc" stroke-width="0.8"/>
-  <text x="685" y="118" text-anchor="middle" font-family="monospace" font-size="16" fill="#ab47bc" filter="url(#glow1)">DALI-2</text>
-  <text x="685" y="138" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#ce93d8">IEC 62386</text>
-  <text x="625" y="170" font-family="sans-serif" font-size="11" fill="#b0bec5">总线: 有线</text>
-  <text x="625" y="192" font-family="sans-serif" font-size="11" fill="#b0bec5">速率: 1200bps</text>
-  <text x="625" y="214" font-family="sans-serif" font-size="11" fill="#b0bec5">距离: 300m</text>
-  <text x="625" y="236" font-family="sans-serif" font-size="11" fill="#b0bec5">节点: 64/组</text>
-  <text x="625" y="258" font-family="sans-serif" font-size="11" fill="#b0bec5">功耗: 极低</text>
-  <text x="625" y="290" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 精准调光</text>
-  <text x="625" y="310" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 标准化高</text>
-  <text x="625" y="330" font-family="sans-serif" font-size="11" fill="#69f0ae">✓ 可靠性极强</text>
-  <text x="625" y="360" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 布线复杂</text>
-  <text x="625" y="380" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 成本较高</text>
-  <text x="625" y="400" font-family="sans-serif" font-size="11" fill="#ff5252">✗ 仅照明控制</text>
-  <rect x="625" y="420" width="120" height="24" rx="4" fill="rgba(171,71,188,0.2)"/>
-  <text x="685" y="436" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#ce93d8">适用: 商业照明</text>
+  <text x="400" y="45" text-anchor="middle" font-family="Consolas, monospace" font-size="22" fill="#00d4ff" filter="url(#glow)" font-weight="bold">智能灯协议对比 — Zigbee vs Matter vs 蓝牙 Mesh</text>
+  <line x1="50" y1="58" x2="750" y2="58" stroke="#00d4ff" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Column Headers -->
+  <text x="150" y="90" text-anchor="middle" font-family="Consolas, monospace" font-size="18" fill="url(#zg)" filter="url(#glow)" font-weight="bold">Zigbee</text>
+  <text x="400" y="90" text-anchor="middle" font-family="Consolas, monospace" font-size="18" fill="url(#mg)" filter="url(#glow)" font-weight="bold">Matter</text>
+  <text x="650" y="90" text-anchor="middle" font-family="Consolas, monospace" font-size="18" fill="url(#bg)" filter="url(#glow)" font-weight="bold">蓝牙 Mesh</text>
+
+  <line x1="50" y1="100" x2="750" y2="100" stroke="#1a2d4a" stroke-width="1"/>
+
+  <!-- Row: 稳定性 -->
+  <text x="30" y="135" font-family="Consolas, monospace" font-size="13" fill="#8899aa">稳定性</text>
+  <text x="150" y="135" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#00d4ff" filter="url(#glow)">★★★★★</text>
+  <text x="400" y="135" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#a855f7" filter="url(#glow)">★★★★☆</text>
+  <text x="650" y="135" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#22d3ee">★★★☆☆</text>
+  <line x1="50" y1="150" x2="750" y2="150" stroke="#1a2d4a" stroke-width="0.5"/>
+
+  <!-- Row: 生态兼容 -->
+  <text x="30" y="180" font-family="Consolas, monospace" font-size="13" fill="#8899aa">生态兼容</text>
+  <text x="150" y="180" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#00d4ff" filter="url(#glow)">★★★★★</text>
+  <text x="400" y="180" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#a855f7" filter="url(#glow)">★★★★☆</text>
+  <text x="650" y="180" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#22d3ee">★★☆☆☆</text>
+  <line x1="50" y1="195" x2="750" y2="195" stroke="#1a2d4a" stroke-width="0.5"/>
+
+  <!-- Row: 延迟 -->
+  <text x="30" y="225" font-family="Consolas, monospace" font-size="13" fill="#8899aa">响应延迟</text>
+  <text x="150" y="225" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#00d4ff" filter="url(#glow)">50-200ms</text>
+  <text x="400" y="225" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#a855f7" filter="url(#glow)">30-150ms</text>
+  <text x="650" y="225" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#22d3ee">100-500ms</text>
+  <line x1="50" y1="240" x2="750" y2="240" stroke="#1a2d4a" stroke-width="0.5"/>
+
+  <!-- Row: 设备上限 -->
+  <text x="30" y="270" font-family="Consolas, monospace" font-size="13" fill="#8899aa">设备上限</text>
+  <text x="150" y="270" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#00d4ff" filter="url(#glow)">200+</text>
+  <text x="400" y="270" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#a855f7" filter="url(#glow)">250+</text>
+  <text x="650" y="270" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#22d3ee">~50</text>
+  <line x1="50" y1="285" x2="750" y2="285" stroke="#1a2d4a" stroke-width="0.5"/>
+
+  <!-- Row: 成本 -->
+  <text x="30" y="315" font-family="Consolas, monospace" font-size="13" fill="#8899aa">单灯成本</text>
+  <text x="150" y="315" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#00d4ff" filter="url(#glow)">25-35元</text>
+  <text x="400" y="315" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#a855f7" filter="url(#glow)">50-80元</text>
+  <text x="650" y="315" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#22d3ee">15-25元</text>
+  <line x1="50" y1="330" x2="750" y2="330" stroke="#1a2d4a" stroke-width="0.5"/>
+
+  <!-- Bottom: recommendation bar -->
+  <rect x="100" y="360" width="200" height="55" rx="8" fill="#00d4ff" fill-opacity="0.1" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="200" y="382" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#00d4ff" filter="url(#glow)">✓ 推荐场景</text>
+  <text x="200" y="405" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#4ad4ff">毛坯装修 · 全屋智能 · 工程</text>
+
+  <rect x="350" y="360" width="200" height="55" rx="8" fill="#a855f7" fill-opacity="0.1" stroke="#a855f7" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="450" y="382" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#a855f7" filter="url(#glow)">→ 未来之选</text>
+  <text x="450" y="405" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#c084fc">Apple生态 · 跨平台需求</text>
+
+  <rect x="600" y="360" width="150" height="55" rx="8" fill="#22d3ee" fill-opacity="0.1" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="675" y="382" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#22d3ee">⚠ 小户型</text>
+  <text x="675" y="405" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#5eead4">＜20设备 · 预算有限</text>
+
+  <!-- Footer -->
+  <line x1="50" y1="440" x2="750" y2="440" stroke="#1a2d4a" stroke-width="0.5"/>
+  <text x="400" y="465" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#334466">nexLAMP.com | 协议对比 · 2026</text>
+
+  <!-- Decorative elements -->
+  <circle cx="50" cy="50" r="2" fill="#00d4ff" opacity="0.5"/>
+  <circle cx="750" cy="50" r="2" fill="#a855f7" opacity="0.5"/>
+  <circle cx="50" cy="450" r="2" fill="#22d3ee" opacity="0.5"/>
+  <circle cx="750" cy="450" r="2" fill="#00d4ff" opacity="0.5"/>
 </svg>

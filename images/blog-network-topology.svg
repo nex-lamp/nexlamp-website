@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2d4a" stroke-width="0.5" opacity="0.5"/>
+    </pattern>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong2">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+
+  <text x="400" y="35" text-anchor="middle" font-family="Consolas, monospace" font-size="20" fill="#00d4ff" filter="url(#glow2)" font-weight="bold">协议网络拓扑对比</text>
+
+  <!-- Zigbee Topology (left) -->
+  <rect x="30" y="55" width="230" height="210" rx="8" fill="#00d4ff" fill-opacity="0.05" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="145" y="80" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#00d4ff" filter="url(#glow2)" font-weight="bold">Zigbee Mesh</text>
+
+  <!-- Gateway -->
+  <rect x="95" y="95" width="100" height="30" rx="4" fill="#00d4ff" fill-opacity="0.2" stroke="#00d4ff" stroke-width="1"/>
+  <text x="145" y="115" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#00d4ff">Zigbee 网关</text>
+
+  <!-- Devices -->
+  <circle cx="65" cy="155" r="18" fill="#0a1628" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="65" y="160" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#00d4ff">灯</text>
+  <line x1="83" y1="155" x2="115" y2="110" stroke="#00d4ff" stroke-width="0.8" opacity="0.4"/>
+
+  <circle cx="145" cy="165" r="18" fill="#0a1628" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="145" y="170" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#00d4ff">灯</text>
+  <line x1="145" y1="147" x2="145" y2="125" stroke="#00d4ff" stroke-width="0.8" opacity="0.4"/>
+
+  <circle cx="225" cy="155" r="18" fill="#0a1628" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="225" y="160" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#00d4ff">灯</text>
+  <line x1="207" y1="155" x2="175" y2="110" stroke="#00d4ff" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Mesh lines between devices -->
+  <line x1="145" y1="155" x2="225" y2="155" stroke="#00d4ff" stroke-width="0.5" opacity="0.3" stroke-dasharray="4,4"/>
+  <line x1="145" y1="155" x2="65" y2="155" stroke="#00d4ff" stroke-width="0.5" opacity="0.3" stroke-dasharray="4,4"/>
+
+  <text x="145" y="210" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#3a6a9a">设备互相中继，越装越稳</text>
+  <text x="145" y="230" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#3a6a9a">独立通道，不抢WiFi</text>
+  <text x="145" y="250" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#00ff88" filter="url(#glow2)">✓ 稳定性最优</text>
+
+  <!-- Matter Topology (center) -->
+  <rect x="285" y="55" width="230" height="210" rx="8" fill="#a855f7" fill-opacity="0.05" stroke="#a855f7" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="400" y="80" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#a855f7" filter="url(#glow2)" font-weight="bold">Matter (Thread)</text>
+
+  <rect x="320" y="95" width="160" height="30" rx="4" fill="#a855f7" fill-opacity="0.2" stroke="#a855f7" stroke-width="1"/>
+  <text x="400" y="115" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#a855f7">Border Router + 网关</text>
+
+  <circle cx="330" cy="155" r="18" fill="#0a1628" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="330" y="160" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#a855f7">灯</text>
+  <line x1="350" y1="155" x2="380" y2="110" stroke="#a855f7" stroke-width="0.8" opacity="0.4"/>
+
+  <circle cx="400" cy="165" r="18" fill="#0a1628" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="400" y="170" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#a855f7">灯</text>
+  <line x1="400" y1="147" x2="400" y2="125" stroke="#a855f7" stroke-width="0.8" opacity="0.4"/>
+
+  <circle cx="470" cy="155" r="18" fill="#0a1628" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="470" y="160" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#a855f7">灯</text>
+  <line x1="450" y1="155" x2="420" y2="110" stroke="#a855f7" stroke-width="0.8" opacity="0.4"/>
+
+  <text x="400" y="210" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#7c3aed">Thread Mesh 底层，跨平台</text>
+  <text x="400" y="230" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#7c3aed">需 Border Router 做边界路由</text>
+  <text x="400" y="250" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#c084fc" filter="url(#glow2)">→ 未来趋势</text>
+
+  <!-- BLE Mesh Topology (right) -->
+  <rect x="540" y="55" width="230" height="210" rx="8" fill="#22d3ee" fill-opacity="0.05" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="655" y="80" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#22d3ee" filter="url(#glow2)" font-weight="bold">蓝牙 Mesh</text>
+
+  <rect x="580" y="95" width="150" height="30" rx="4" fill="#22d3ee" fill-opacity="0.15" stroke="#22d3ee" stroke-width="1"/>
+  <text x="655" y="115" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#22d3ee">手机/蓝牙网关</text>
+
+  <circle cx="585" cy="155" r="18" fill="#0a1628" stroke="#22d3ee" stroke-width="1.5" opacity="0.7"/>
+  <text x="585" y="160" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#22d3ee">灯</text>
+
+  <circle cx="655" cy="145" r="18" fill="#0a1628" stroke="#22d3ee" stroke-width="1.5" opacity="0.7"/>
+  <text x="655" y="150" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#22d3ee">灯</text>
+
+  <circle cx="720" cy="165" r="18" fill="#0a1628" stroke="#22d3ee" stroke-width="1.5" opacity="0.7"/>
+  <text x="720" y="170" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#22d3ee">灯</text>
+
+  <!-- Flood lines (broadcast) -->
+  <line x1="585" y1="145" x2="720" y2="165" stroke="#22d3ee" stroke-width="0.5" opacity="0.2" stroke-dasharray="2,4"/>
+  <line x1="655" y1="145" x2="720" y2="165" stroke="#22d3ee" stroke-width="0.5" opacity="0.2" stroke-dasharray="2,4"/>
+  <line x1="585" y1="145" x2="655" y2="145" stroke="#22d3ee" stroke-width="0.5" opacity="0.2" stroke-dasharray="2,4"/>
+
+  <text x="655" y="210" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#2dd4bf">泛洪广播，指令全网复制</text>
+  <text x="655" y="230" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#2dd4bf">设备多了互相干扰</text>
+  <text x="655" y="250" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#f59e0b">⚠ 30+设备开始卡</text>
+
+  <!-- Bottom: Architecture comparison -->
+  <rect x="30" y="285" width="740" height="85" rx="6" fill="#0a1628" stroke="#1a2d4a" stroke-width="1"/>
+  <text x="50" y="310" font-family="Consolas, monospace" font-size="12" fill="#8899aa" font-weight="bold">// 网络架构速览</text>
+  <text x="50" y="335" font-family="Consolas, monospace" font-size="11" fill="#4a6a8a">Zigbee:  coordinator ─── router ─── end-device    (星型+Mesh混合，路由节点中继)</text>
+  <text x="50" y="355" font-family="Consolas, monospace" font-size="11" fill="#4a6a8a">Matter:  border_router ─── thread_node ─── endpoint (Thread Mesh底层，IP化统一标准)</text>
+
+  <!-- Footer -->
+  <line x1="30" y1="395" x2="770" y2="395" stroke="#1a2d4a" stroke-width="0.5"/>
+  <text x="90" y="420" font-family="Consolas, monospace" font-size="10" fill="#1a3355">$ zigbee --deploy . --mesh --scale 200</text>
+  <text x="490" y="420" font-family="Consolas, monospace" font-size="10" fill="#1a3355">$ matter --init --require border_router</text>
+
+  <rect x="30" y="445" width="740" height="35" rx="4" fill="#00d4ff" fill-opacity="0.05" stroke="#00d4ff" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="400" y="467" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#00d4ff" filter="url(#glow2)">结论：灯具首选 Zigbee  Mesh 网络，设备越多越稳定，独立频道不争抢带宽</text>
+</svg>
