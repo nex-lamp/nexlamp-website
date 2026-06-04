@@ -1,5 +1,41 @@
 [
   {
+    "title": "智能灯为什么老掉线？Zigbee全屋智能离线排查完整指南",
+    "slug": "zigbee-smart-light-disconnection-troubleshooting-2026",
+    "date": "2026-06-04",
+    "category": "智能照明",
+    "description": "系统排查智能照明设备离线原因，从网关部署、信道规划、信号强度到供电稳定性，附真实案例和优化方案。",
+    "cover": "/images/blog-zigbee-troubleshooting-cover.png",
+    "excerpt": "智能灯半夜突然离线、语音控制失灵、APP显示设备不在线——这是智能家居用户最头疼的问题。本文从网关位置、WiFi干扰、信道选择、供电稳定性四个维度给出系统排查方案。"
+  },
+  {
+    "title": "智能灯老是掉线？Zigbee网络稳定性终极排查指南",
+    "slug": "zigbee-network-troubleshooting-guide",
+    "date": "2026-06-04",
+    "category": "技术指南",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-zigbee-troubleshooting-cover.png",
+    "excerpt": "智能灯频繁离线、延迟高、场景不同步——这些不是设备质量问题，而是Zigbee网络规划出了问题。手把手教你排查干扰源、优化信道、增强信号覆盖，打造不掉线的智能灯光系统。"
+  },
+  {
+    "title": "智能家居协议到底怎么选？2026年Zigbee/WiFi/蓝牙Mesh/Matter/Thread全解析",
+    "slug": "smart-home-protocol-selection-guide-2026",
+    "date": "2026-06-03",
+    "category": "技术科普",
+    "description": "详解Zigbee、WiFi、蓝牙Mesh、Matter、Thread五种智能家居协议的优劣对比与适用场景，结合2026年最新趋势给出实际装修选购建议。",
+    "cover": "../../images/blog-smart-home-protocol-2026-cover.png",
+    "excerpt": "超68%智能家居故障源于协议选型不匹配。从协议原理、实际场景、性价比三个维度全面解析五大协议，帮你一次选对、少花冤枉钱。"
+  },
+  {
+    "title": "智能灯协议怎么选？Zigbee、Matter、蓝牙Mesh 到底哪个不踩坑",
+    "slug": "zigbee-vs-matter-vs-ble-mesh",
+    "date": "2026-06-03",
+    "category": "smart-lighting",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-zigbee-vs-matter-cover.png",
+    "excerpt": "装修装智能灯，Zigbee、Matter、蓝牙Mesh三种协议到底怎么选？这篇从稳定性、生态兼容、延迟、成本四个维度全面对比，帮你装修不踩坑。"
+  },
+  {
     "title": "无主灯 + 智能照明真实踩坑记录：装修前必看的避坑指南",
     "slug": "wuzhuyu-smart-lighting-guide",
     "date": "2026-06-02",
