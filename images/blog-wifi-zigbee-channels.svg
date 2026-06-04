@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowRed">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#grad1)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="20" font-weight="bold" filter="url(#glow)">WiFi 与 Zigbee 2.4GHz 信道频谱分布</text>
+  <line x1="180" y1="50" x2="620" y2="50" stroke="#00d4ff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Frequency axis -->
+  <line x1="60" y1="80" x2="740" y2="80" stroke="#2a3a5a" stroke-width="1"/>
+  <text x="400" y="72" text-anchor="middle" fill="#667788" font-family="monospace" font-size="10">2400 MHz ——————————————————— 2480 MHz</text>
+
+  <!-- Major frequency ticks -->
+  <line x1="60" y1="75" x2="60" y2="85" stroke="#667788" stroke-width="1"/>
+  <text x="60" y="97" text-anchor="middle" fill="#667788" font-family="monospace" font-size="10">2400</text>
+  <line x1="400" y1="75" x2="400" y2="85" stroke="#667788" stroke-width="1"/>
+  <text x="400" y="97" text-anchor="middle" fill="#667788" font-family="monospace" font-size="10">2440</text>
+  <line x1="740" y1="75" x2="740" y2="85" stroke="#667788" stroke-width="1"/>
+  <text x="740" y="97" text-anchor="middle" fill="#667788" font-family="monospace" font-size="10">2480</text>
+
+  <!-- WiFi Channel 1 -->
+  <rect x="60" y="120" width="100" height="50" rx="6" fill="#3355aa" stroke="#5588ee" stroke-width="1.5" opacity="0.7"/>
+  <text x="110" y="143" text-anchor="middle" fill="#aaccff" font-family="monospace" font-size="12" font-weight="bold">WiFi 信道 1</text>
+  <text x="110" y="160" text-anchor="middle" fill="#6688bb" font-family="monospace" font-size="10">2412 MHz</text>
+
+  <!-- WiFi Channel 6 -->
+  <rect x="300" y="120" width="100" height="50" rx="6" fill="#3355aa" stroke="#5588ee" stroke-width="1.5" opacity="0.7"/>
+  <text x="350" y="143" text-anchor="middle" fill="#aaccff" font-family="monospace" font-size="12" font-weight="bold">WiFi 信道 6</text>
+  <text x="350" y="160" text-anchor="middle" fill="#6688bb" font-family="monospace" font-size="10">2437 MHz</text>
+
+  <!-- WiFi Channel 11 -->
+  <rect x="540" y="120" width="100" height="50" rx="6" fill="#3355aa" stroke="#5588ee" stroke-width="1.5" opacity="0.7"/>
+  <text x="590" y="143" text-anchor="middle" fill="#aaccff" font-family="monospace" font-size="12" font-weight="bold">WiFi 信道 11</text>
+  <text x="590" y="160" text-anchor="middle" fill="#6688bb" font-family="monospace" font-size="10">2462 MHz</text>
+
+  <!-- Zigbee Channels row -->
+  <text x="400" y="218" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="14" font-weight="bold" filter="url(#glow)">Zigbee 可用信道 (涂鸦默认 11)</text>
+
+  <!-- Zigbee Channel 11 -->
+  <rect x="60" y="235" width="85" height="42" rx="6" fill="#0a3a1a" stroke="#00ff88" stroke-width="2"/>
+  <text x="102" y="255" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold" filter="url(#glow)">Z 11</text>
+  <text x="102" y="272" text-anchor="middle" fill="#448866" font-family="monospace" font-size="9">2405 MHz ⬅默认</text>
+
+  <!-- Zigbee Channel 15 -->
+  <rect x="340" y="235" width="85" height="42" rx="6" fill="#0a3a1a" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="382" y="255" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold">Z 15</text>
+  <text x="382" y="272" text-anchor="middle" fill="#448866" font-family="monospace" font-size="9">2425 MHz</text>
+
+  <!-- Zigbee Channel 20 -->
+  <rect x="580" y="235" width="85" height="42" rx="6" fill="#0a3a1a" stroke="#00ff88" stroke-width="1.5"/>
+  <text x="622" y="255" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold">Z 20</text>
+  <text x="622" y="272" text-anchor="middle" fill="#448866" font-family="monospace" font-size="9">2450 MHz</text>
+
+  <!-- Conflict zone markers -->
+  <!-- WiFi Ch1 &amp; Zigbee Ch11 overlap -->
+  <rect x="60" y="300" width="175" height="35" rx="4" fill="#ff2244" opacity="0.15" stroke="#ff2244" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="147" y="322" text-anchor="middle" fill="#ff4466" font-family="monospace" font-size="10">⚠ 信道冲突区域</text>
+
+  <!-- WiFi Ch6 &amp; Zigbee Ch15 overlap -->
+  <rect x="290" y="300" width="150" height="35" rx="4" fill="#ff2244" opacity="0.15" stroke="#ff2244" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="365" y="322" text-anchor="middle" fill="#ff4466" font-family="monospace" font-size="10">⚠ 部分重叠</text>
+
+  <!-- Recommended -->
+  <rect x="580" y="300" width="110" height="35" rx="4" fill="#00ff44" opacity="0.1" stroke="#00ff44" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="635" y="322" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="10">✅ 推荐信道</text>
+
+  <!-- Bottom recommendations -->
+  <rect x="60" y="365" width="680" height="120" rx="6" fill="#0a1a30" stroke="#1a2a4a" stroke-width="1"/>
+
+  <!-- Terminal style header -->
+  <rect x="60" y="365" width="680" height="20" rx="6" fill="#1a2a4a"/>
+  <text x="75" y="379" fill="#00d4ff" font-family="monospace" font-size="10">$ zigbee-channel-analyzer --show-recommendations</text>
+
+  <text x="80" y="405" fill="#00ff88" font-family="monospace" font-size="12">▶ WiFi信道1 + Zigbee信道11 → 部分重叠，勉强可用但非最优</text>
+  <text x="80" y="425" fill="#ffaa00" font-family="monospace" font-size="12">▶ WiFi信道6 + Zigbee信道15 → 中度干扰，不推荐同时使用</text>
+  <text x="80" y="445" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold" filter="url(#glow)">▶ Zigbee信道20 (2450MHz) → 与WiFi信道1/6/11隔离度最高 ✅ 推荐</text>
+  <text x="80" y="470" fill="#667788" font-family="monospace" font-size="11">提示：涂鸦网关可在后台修改信道，但需重新组网，操作前备份设备列表。</text>
+
+  <text x="760" y="492" text-anchor="end" fill="#334466" font-family="monospace" font-size="9">nexlamp.com</text>
+</svg>

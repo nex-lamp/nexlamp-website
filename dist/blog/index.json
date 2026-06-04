@@ -5,7 +5,7 @@
     "date": "2026-06-04",
     "category": "智能照明",
     "description": "系统排查智能照明设备离线原因，从网关部署、信道规划、信号强度到供电稳定性，附真实案例和优化方案。",
-    "cover": "/images/blog-zigbee-troubleshooting-cover.png",
+    "cover": "/images/blog-zigbee-troubleshoot-cover.png",
     "excerpt": "智能灯半夜突然离线、语音控制失灵、APP显示设备不在线——这是智能家居用户最头疼的问题。本文从网关位置、WiFi干扰、信道选择、供电稳定性四个维度给出系统排查方案。"
   },
   {
