@@ -1,5 +1,23 @@
 [
   {
+    "title": "你的智能灯真的不闪吗？LED驱动电源频闪问题全解析",
+    "slug": "2026-06-05-led-driver-flicker-guide",
+    "date": "2026-06-05",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-2026-06-05-flicker-cover.png",
+    "excerpt": "智能灯开低亮度时莫名闪烁？护眼模式反而更伤眼？问题的根源90%在驱动电源。一文搞懂PWM调光频闪原理、判断方法和选型避坑。"
+  },
+  {
+    "title": "AI如何重塑智能照明：从被动节能到主动智能的三大跃迁",
+    "slug": "ai-smart-lighting-transformation-2026",
+    "date": "2026-06-05",
+    "category": "智能照明",
+    "description": "深度解析2026年AI与智能照明的三大核心变化：场景自适应、节律照明、预测性维护，以及Zigbee如何成为AI照明的基础设施。",
+    "cover": "images/ai-smart-lighting-2026-cover.jpg",
+    "excerpt": "2026年，AI不再是智能照明的噱头，而是真正改变了灯光与人的关系。从定时开关到场景自适应，从手动调光到节律跟随，照明行业正经历从'被动节能'到'主动智能'的范式转移。"
+  },
+  {
     "title": "智能灯为什么老掉线？Zigbee全屋智能离线排查完整指南",
     "slug": "zigbee-smart-light-disconnection-troubleshooting-2026",
     "date": "2026-06-04",

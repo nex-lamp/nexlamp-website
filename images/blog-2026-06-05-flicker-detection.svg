@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2d4a" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowRed">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="ledGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+  <!-- Frame -->
+  <rect x="30" y="20" width="740" height="460" rx="8" fill="none" stroke="#1e3a5f" stroke-width="1.5"/>
+  <rect x="30" y="20" width="740" height="32" rx="8" fill="#0d1f35"/>
+  <rect x="30" y="44" width="740" height="8" fill="#0d1f35"/>
+  <circle cx="50" cy="36" r="5" fill="#ff5f57"/>
+  <circle cx="70" cy="36" r="5" fill="#febc2e"/>
+  <circle cx="90" cy="36" r="5" fill="#28c840"/>
+  <text x="60" y="37" font-family="monospace" font-size="11" fill="#7eb8da" text-anchor="start" dominant-baseline="central">&lt; Flicker Detection Guide &gt;</text>
+  <!-- Title -->
+  <text x="400" y="80" font-family="monospace" font-size="15" fill="#00d4ff" text-anchor="middle" filter="url(#glow2)">HOW TO DETECT LED FLICKER</text>
+  <!-- Method 1: Phone Camera -->
+  <rect x="50" y="100" width="340" height="175" rx="6" fill="#0d1f35" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="70" y="125" font-family="monospace" font-size="13" fill="#00d4ff" font-weight="bold">Method 1: Phone Camera</text>
+  <text x="70" y="150" font-family="monospace" font-size="11" fill="#8899aa">1. Open camera app</text>
+  <text x="70" y="168" font-family="monospace" font-size="11" fill="#8899aa">2. Point at the light source</text>
+  <text x="70" y="186" font-family="monospace" font-size="11" fill="#8899aa">3. Look for wave patterns</text>
+  <!-- Phone mockup -->
+  <rect x="100" y="200" width="60" height="55" rx="6" fill="#111" stroke="#334" stroke-width="1"/>
+  <rect x="105" y="205" width="50" height="42" rx="2" fill="#1a1a2e"/>
+  <!-- Wave pattern in phone -->
+  <polyline points="108,226 115,218 122,234 129,214 136,230 143,216 150,232" fill="none" stroke="#ff6b6b" stroke-width="1.5" filter="url(#glowRed)"/>
+  <text x="175" y="218" font-family="monospace" font-size="10" fill="#ff6b6b">BANDS DETECTED</text>
+  <text x="175" y="234" font-family="monospace" font-size="10" fill="#ff6b6b">= FLICKER EXISTS</text>
+  <!-- Method 2: Paper Fan -->
+  <rect x="410" y="100" width="340" height="175" rx="6" fill="#0d1f35" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="430" y="125" font-family="monospace" font-size="13" fill="#00d4ff" font-weight="bold">Method 2: Paper Fan Test</text>
+  <text x="430" y="150" font-family="monospace" font-size="11" fill="#8899aa">1. Hold white paper under light</text>
+  <text x="430" y="168" font-family="monospace" font-size="11" fill="#8899aa">2. Wave it rapidly side to side</text>
+  <text x="430" y="186" font-family="monospace" font-size="11" fill="#8899aa">3. Check for strobe bands</text>
+  <!-- Fan illustration -->
+  <ellipse cx="530" cy="228" rx="35" ry="18" fill="none" stroke="#28c840" stroke-width="1.5" filter="url(#glow2)" transform="rotate(-20 530 228)"/>
+  <line x1="530" y1="228" x2="530" y2="195" stroke="#28c840" stroke-width="1"/>
+  <text x="585" y="218" font-family="monospace" font-size="10" fill="#28c840">STROBE BANDS</text>
+  <text x="585" y="234" font-family="monospace" font-size="10" fill="#28c840">= FLICKER EXISTS</text>
+  <!-- Safety Table -->
+  <rect x="50" y="295" width="700" height="160" rx="6" fill="#0d1f35" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="70" y="318" font-family="monospace" font-size="13" fill="#00d4ff" font-weight="bold">Flicker Safety Reference</text>
+  <!-- Table headers -->
+  <text x="80" y="345" font-family="monospace" font-size="11" fill="#7eb8da">Frequency Range</text>
+  <text x="280" y="345" font-family="monospace" font-size="11" fill="#7eb8da">Risk Level</text>
+  <text x="460" y="345" font-family="monospace" font-size="11" fill="#7eb8da">Symptoms</text>
+  <text x="620" y="345" font-family="monospace" font-size="11" fill="#7eb8da">Verdict</text>
+  <line x1="50" y1="352" x2="750" y2="352" stroke="#1e3a5f" stroke-width="0.8"/>
+  <!-- Row 1 -->
+  <text x="80" y="372" font-family="monospace" font-size="11" fill="#ff6b6b">&lt; 100 Hz</text>
+  <text x="280" y="372" font-family="monospace" font-size="11" fill="#ff6b6b">HIGH</text>
+  <text x="460" y="372" font-family="monospace" font-size="10" fill="#cc8888">Visible strobe, headache</text>
+  <text x="620" y="372" font-family="monospace" font-size="11" fill="#ff4444">AVOID</text>
+  <!-- Row 2 -->
+  <text x="80" y="395" font-family="monospace" font-size="11" fill="#febc2e">100-3kHz</text>
+  <text x="280" y="395" font-family="monospace" font-size="11" fill="#febc2e">MEDIUM</text>
+  <text x="460" y="395" font-family="monospace" font-size="10" fill="#ccaa66">Eye strain, fatigue</text>
+  <text x="620" y="395" font-family="monospace" font-size="11" fill="#febc2e">CAUTION</text>
+  <!-- Row 3 -->
+  <text x="80" y="418" font-family="monospace" font-size="11" fill="#28c840">&gt; 3kHz</text>
+  <text x="280" y="418" font-family="monospace" font-size="11" fill="#28c840">LOW</text>
+  <text x="460" y="418" font-family="monospace" font-size="10" fill="#66cc88">Generally safe</text>
+  <text x="620" y="418" font-family="monospace" font-size="11" fill="#28c840">OK</text>
+  <!-- Row 4 -->
+  <text x="80" y="441" font-family="monospace" font-size="11" fill="#00d4ff">No flicker</text>
+  <text x="280" y="441" font-family="monospace" font-size="11" fill="#00d4ff">NONE</text>
+  <text x="460" y="441" font-family="monospace" font-size="10" fill="#66aacc">Analog dimming</text>
+  <text x="620" y="441" font-family="monospace" font-size="11" fill="#00d4ff">BEST</text>
+</svg>

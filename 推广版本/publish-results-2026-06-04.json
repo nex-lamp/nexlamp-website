@@ -1,0 +1,19 @@
+{
+  "devto": {
+    "status": "failed",
+    "error": "{\"error\":\"Canonical url has already been taken. Email support@dev.to for further details.\",\"status\":422}"
+  },
+  "zhihu": {
+    "status": "success",
+    "url": "https://zhuanlan.zhihu.com/p/2045848087466337925",
+    "draft_id": "2045848087466337925"
+  },
+  "juejin": {
+    "status": "failed",
+    "error": "json: cannot unmarshal bool into Go struct field ArticleDraftReq.is_english of type int16"
+  },
+  "linkedin": {
+    "status": "skipped",
+    "reason": "CDP Chrome not running"
+  }
+}

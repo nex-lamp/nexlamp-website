@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2d4a" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="pwmGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0066ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect width="800" height="500" fill="url(#grid1)"/>
+  <!-- Terminal frame -->
+  <rect x="30" y="20" width="740" height="460" rx="8" fill="none" stroke="#1e3a5f" stroke-width="1.5"/>
+  <rect x="30" y="20" width="740" height="32" rx="8" fill="#0d1f35"/>
+  <rect x="30" y="44" width="740" height="8" fill="#0d1f35"/>
+  <circle cx="50" cy="36" r="5" fill="#ff5f57"/>
+  <circle cx="70" cy="36" r="5" fill="#febc2e"/>
+  <circle cx="90" cy="36" r="5" fill="#28c840"/>
+  <text x="60" y="37" font-family="monospace" font-size="11" fill="#7eb8da" text-anchor="start" dominant-baseline="central">&lt; PWM vs Analog Dimming &gt;</text>
+  <!-- Title -->
+  <text x="400" y="82" font-family="monospace" font-size="16" fill="#00d4ff" text-anchor="middle" filter="url(#glow1)">LED DIMMING COMPARISON</text>
+  <!-- PWM Section -->
+  <text x="80" y="115" font-family="monospace" font-size="13" fill="#ff6b6b" font-weight="bold">PWM Dimming</text>
+  <text x="80" y="135" font-family="monospace" font-size="11" fill="#8899aa">Rapid ON/OFF switching</text>
+  <!-- PWM waveform -->
+  <polyline points="80,230 80,170 180,170 180,230 280,230 280,170 380,170 380,230 480,230 480,170 580,170 580,230 680,230 680,170 720,170 720,230" fill="none" stroke="url(#pwmGrad)" stroke-width="2.5" filter="url(#glow1)"/>
+  <line x1="80" y1="230" x2="720" y2="230" stroke="#1e3a5f" stroke-width="0.8" stroke-dasharray="4,4"/>
+  <text x="80" y="250" font-family="monospace" font-size="10" fill="#556677">100%</text>
+  <text x="380" y="250" font-family="monospace" font-size="10" fill="#556677">Duty Cycle: 50%</text>
+  <!-- Flicker indicator -->
+  <rect x="80" y="270" width="640" height="50" rx="4" fill="#1a1020" stroke="#ff6b6b" stroke-width="0.8"/>
+  <text x="400" y="290" font-family="monospace" font-size="11" fill="#ff6b6b" text-anchor="middle">FLICKER DETECTED</text>
+  <text x="400" y="308" font-family="monospace" font-size="10" fill="#ff4444" text-anchor="middle">Risk: Headache / Eye Strain below 3kHz</text>
+  <!-- Analog Section -->
+  <text x="80" y="355" font-family="monospace" font-size="13" fill="#28c840" font-weight="bold">Analog Dimming</text>
+  <text x="80" y="375" font-family="monospace" font-size="11" fill="#8899aa">Continuous current reduction</text>
+  <!-- Analog waveform - smooth -->
+  <path d="M80,440 Q200,440 280,430 Q360,415 440,405 Q520,395 600,390 Q660,385 720,383" fill="none" stroke="#28c840" stroke-width="2.5" filter="url(#glow1)"/>
+  <line x1="80" y1="440" x2="720" y2="440" stroke="#1e3a5f" stroke-width="0.8" stroke-dasharray="4,4"/>
+  <text x="80" y="460" font-family="monospace" font-size="10" fill="#556677">100%</text>
+  <text x="720" y="460" font-family="monospace" font-size="10" fill="#28c840">Smooth ~ No Flicker</text>
+</svg>
