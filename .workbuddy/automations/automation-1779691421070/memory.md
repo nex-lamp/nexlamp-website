@@ -1,5 +1,15 @@
 # Automation Memory
 
+## 2026-06-05: LED驱动电源频闪问题全解析
+- 选题: 智能灯频闪/调光闪烁+LED驱动电源兼容性（多平台热搜最高痛点）
+- 文章: posts/2026-06-05-led-driver-flicker-guide.md (~1100字) + 3 SVG + PIL合成封面
+- 网站: ✅ build.js构建31篇，已在上次commit推送（1acc702）
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/is-your-smart-light-really-flicker-free-a-complete-guide-to-led-driver-flicker-2529
+- 知乎: ✅ https://zhuanlan.zhihu.com/p/2046209051172794887（API发布）
+- 掘金: ❌ API路由变更(draft/create返回err_no=2)，需更新API端点
+- LinkedIn: ⚠️ CDP Chrome未运行，跳过
+- 踩坑: ImageGen队列满→PIL合成封面替代；掘金JSON需用json.dump生成而非手写；知乎cookie格式为list需先join
+
 ## 2026-06-04: Zigbee网络稳定性排查指南全平台发布
 - 选题: Zigbee掉线排查（与上次协议对比互补，用户痛点更直接）
 - 文章: posts/2026-06-04-zigbee-troubleshooting.md (~1400字) + 3 SVG + AI封面
