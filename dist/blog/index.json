@@ -1,5 +1,23 @@
 [
   {
+    "title": "2026年买LED灯必读：新国标GB 30255生效，4个参数帮你避坑",
+    "slug": "2026-06-08-gb30255-led-standard-guide",
+    "date": "2026-06-08",
+    "category": "选灯指南",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-2026-06-08-gb30255-cover.png",
+    "excerpt": "GB 30255-2026已于2026年3月1日强制执行。旧标灯还能卖多久？能效1级和3级差多少？色温、显色指数、光效怎么看？一文帮你读懂新国标，买灯不再踩坑。"
+  },
+  {
+    "title": "LED调光驱动电源选购避坑指南：从0-10V到DALI，新手如何一次选对？",
+    "slug": "led-dimming-driver-purchase-guide-2026",
+    "date": "2026-06-08",
+    "category": "选型指南",
+    "description": "选购LED调光驱动电源最容易踩的5个坑：频闪、不兼容、功率虚标、协议选错、安装反了。本文系统梳理开关/可控硅/0-10V/DALI/Zigbee/蓝牙Mesh六种调光方式的选择逻辑，附Nexlamp驱动电源选型对照表。",
+    "cover": "images/blog-led-dimming-driver-cover.png",
+    "excerpt": "装修换了智能灯却频闪、调不亮、一调就灭？问题十有八九出在驱动电源上。本文用大白话讲透6种调光方式的区别和选购要点，帮你一次选对不踩坑。"
+  },
+  {
     "title": "你的智能灯真的不闪吗？LED驱动电源频闪问题全解析",
     "slug": "2026-06-05-led-driver-flicker-guide",
     "date": "2026-06-05",
