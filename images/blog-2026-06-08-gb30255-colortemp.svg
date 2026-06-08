@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0d2137"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#ffcc00"/>
+    </linearGradient>
+    <linearGradient id="neutral" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffcc00"/>
+      <stop offset="100%" style="stop-color:#ffffff"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#aaddff"/>
+      <stop offset="100%" style="stop-color:#00d4ff"/>
+    </linearGradient>
+    <filter id="neon2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-filter">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <!-- Grid -->
+  <g opacity="0.06" stroke="#00d4ff" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/><line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="100" y1="0" x2="100" y2="500"/><line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/><line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/><line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="48" fill="#00d4ff" font-family="Consolas,monospace" font-size="18" text-anchor="middle" filter="url(#neon2)" font-weight="bold">COLOR TEMPERATURE / SCENE GUIDE</text>
+  <text x="400" y="74" fill="#7aa8c7" font-family="Consolas,monospace" font-size="13" text-anchor="middle">LED Correlated Color Temperature (CCT) Matching</text>
+  <!-- Color temperature spectrum bar -->
+  <rect x="80" y="100" width="640" height="20" rx="10" fill="#0d2137" stroke="#1a3a5c" stroke-width="1"/>
+  <rect x="80" y="100" width="213" height="20" rx="10" fill="url(#warm)" opacity="0.8"/>
+  <rect x="293" y="100" width="214" height="20" fill="url(#neutral)" opacity="0.8"/>
+  <rect x="507" y="100" width="213" height="20" rx="10" fill="url(#cool)" opacity="0.8"/>
+  <text x="186" y="115" fill="#fff" font-family="Consolas,monospace" font-size="11" text-anchor="middle" font-weight="bold">2700K</text>
+  <text x="400" y="115" fill="#333" font-family="Consolas,monospace" font-size="11" text-anchor="middle" font-weight="bold">4000K</text>
+  <text x="614" y="115" fill="#003366" font-family="Consolas,monospace" font-size="11" text-anchor="middle" font-weight="bold">6500K</text>
+  <!-- Scene 1: Warm -->
+  <g>
+    <rect x="60" y="150" width="210" height="260" rx="12" fill="#0d2137" stroke="#ff6b35" stroke-width="1" opacity="0.9"/>
+    <!-- Glow -->
+    <ellipse cx="165" cy="190" rx="50" ry="30" fill="#ff6b35" opacity="0.15" filter="url(#glow-filter)"/>
+    <text x="165" y="185" fill="#ff6b35" font-family="Consolas,monospace" font-size="28" text-anchor="middle" font-weight="bold">2700-3000K</text>
+    <text x="165" y="210" fill="#ffcc88" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" font-weight="bold">暖白光</text>
+    <line x1="85" y1="225" x2="245" y2="225" stroke="#ff6b35" stroke-width="0.5" opacity="0.3"/>
+    <text x="165" y="252" fill="#7aa8c7" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">氛围感 / 温馨</text>
+    <rect x="85" y="272" width="160" height="30" rx="6" fill="#1a2a3c"/>
+    <text x="165" y="292" fill="#e0c8a0" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">卧室</text>
+    <rect x="85" y="310" width="160" height="30" rx="6" fill="#1a2a3c"/>
+    <text x="165" y="330" fill="#e0c8a0" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">餐厅</text>
+    <rect x="85" y="348" width="160" height="30" rx="6" fill="#1a2a3c"/>
+    <text x="165" y="368" fill="#e0c8a0" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">客厅氛围灯</text>
+  </g>
+  <!-- Scene 2: Neutral -->
+  <g>
+    <rect x="295" y="150" width="210" height="260" rx="12" fill="#0d2137" stroke="#ffcc00" stroke-width="1" opacity="0.9"/>
+    <ellipse cx="400" cy="190" rx="50" ry="30" fill="#ffcc00" opacity="0.12" filter="url(#glow-filter)"/>
+    <text x="400" y="185" fill="#ffcc00" font-family="Consolas,monospace" font-size="28" text-anchor="middle" font-weight="bold">4000K</text>
+    <text x="400" y="210" fill="#ffee88" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" font-weight="bold">自然白光</text>
+    <line x1="320" y1="225" x2="480" y2="225" stroke="#ffcc00" stroke-width="0.5" opacity="0.3"/>
+    <text x="400" y="252" fill="#7aa8c7" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">中性 / 舒适</text>
+    <rect x="320" y="272" width="160" height="30" rx="6" fill="#1a2a3c"/>
+    <text x="400" y="292" fill="#e8e0c0" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">客厅主灯</text>
+    <rect x="320" y="310" width="160" height="30" rx="6" fill="#1a2a3c"/>
+    <text x="400" y="330" fill="#e8e0c0" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">厨房</text>
+    <rect x="320" y="348" width="160" height="30" rx="6" fill="#1a2a3c"/>
+    <text x="400" y="368" fill="#e8e0c0" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">办公室</text>
+  </g>
+  <!-- Scene 3: Cool -->
+  <g>
+    <rect x="530" y="150" width="210" height="260" rx="12" fill="#0d2137" stroke="#00d4ff" stroke-width="1" opacity="0.9"/>
+    <ellipse cx="635" cy="190" rx="50" ry="30" fill="#00d4ff" opacity="0.12" filter="url(#glow-filter)"/>
+    <text x="635" y="185" fill="#00d4ff" font-family="Consolas,monospace" font-size="28" text-anchor="middle" font-weight="bold">5000-6500K</text>
+    <text x="635" y="210" fill="#88ddff" font-family="Arial,sans-serif" font-size="14" text-anchor="middle" font-weight="bold">冷白光</text>
+    <line x1="555" y1="225" x2="715" y2="225" stroke="#00d4ff" stroke-width="0.5" opacity="0.3"/>
+    <text x="635" y="252" fill="#7aa8c7" font-family="Arial,sans-serif" font-size="13" text-anchor="middle">清爽 / 提神</text>
+    <rect x="555" y="272" width="160" height="30" rx="6" fill="#1a2a3c"/>
+    <text x="635" y="292" fill="#a0d8ff" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">书房</text>
+    <rect x="555" y="310" width="160" height="30" rx="6" fill="#1a2a3c"/>
+    <text x="635" y="330" fill="#a0d8ff" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">工作区</text>
+    <rect x="555" y="348" width="160" height="30" rx="6" fill="#1a2a3c"/>
+    <text x="635" y="368" fill="#a0d8ff" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">厨房操作台</text>
+  </g>
+  <!-- Bottom warning -->
+  <rect x="120" y="435" width="560" height="40" rx="8" fill="#1a1a2e" stroke="#ff4444" stroke-width="1" opacity="0.9"/>
+  <text x="400" y="460" fill="#ff6666" font-family="Arial,sans-serif" font-size="13" text-anchor="middle" font-weight="bold">同一空间请统一色温，避免混用导致视觉不适</text>
+</svg>
