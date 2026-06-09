@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowNo">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1a3050" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+
+  <rect width="680" height="380" fill="url(#bg)"/>
+  <rect width="680" height="380" fill="url(#grid)"/>
+
+  <!-- Terminal bar -->
+  <rect x="0" y="0" width="680" height="28" fill="#0d1a2d" rx="4"/>
+  <circle cx="16" cy="14" r="5" fill="#ff5f56"/>
+  <circle cx="36" cy="14" r="5" fill="#ffbd2e"/>
+  <circle cx="56" cy="14" r="5" fill="#27c93f"/>
+  <text x="340" y="18" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="10">flicker_analyzer.py ~ ieee_1789_compliance_check</text>
+
+  <text x="340" y="52" text-anchor="middle" fill="#00f2fe" font-family="monospace" font-size="16" font-weight="bold" filter="url(#glow)">LED驱动频闪对比 — IEEE 1789 标准</text>
+
+  <!-- Bad driver -->
+  <rect x="25" y="70" width="300" height="135" rx="6" fill="#0d1a2d" stroke="#ff4757" stroke-width="1"/>
+  <text x="175" y="92" text-anchor="middle" fill="#ff4757" font-family="monospace" font-size="12" font-weight="bold" filter="url(#glow)">&#x2716; 普通恒流驱动</text>
+
+  <!-- Ripple waveform bad -->
+  <text x="35" y="115" fill="#64748b" font-family="monospace" font-size="8">输出纹波: 30-50%</text>
+  <path d="M35,120 Q45,105 55,120 Q65,135 75,120 Q85,105 95,120 Q105,135 115,120 Q125,105 135,120 Q145,135 155,120 Q165,105 175,120 Q185,135 195,120 Q205,105 215,120 Q225,135 235,120 Q245,105 255,120 Q265,135 275,120 Q285,105 295,120 Q305,135 315,120" fill="none" stroke="#ff4757" stroke-width="2.5" opacity="0.8"/>
+
+  <text x="35" y="150" fill="#64748b" font-family="monospace" font-size="8">频闪百分比 &gt;10% | 调光深度10%</text>
+  <rect x="35" y="155" width="90" height="18" rx="3" fill="#ff4757" opacity="0.2"/>
+  <text x="35" y="168" fill="#ff4757" font-family="monospace" font-size="8">High Risk &#x26A0;</text>
+
+  <rect x="140" y="155" width="170" height="18" rx="2" fill="#0d1a2d" stroke="#ff4757" stroke-width="0.5"/>
+  <text x="225" y="168" text-anchor="middle" fill="#ff4757" font-family="monospace" font-size="8">ipRGC感知→褪黑素紊乱</text>
+
+  <!-- Arrow -->
+  <line x1="325" y1="137" x2="355" y2="137" stroke="#1a3050" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Good driver -->
+  <rect x="355" y="70" width="300" height="135" rx="6" fill="#0d1a2d" stroke="#27c93f" stroke-width="1"/>
+  <text x="505" y="92" text-anchor="middle" fill="#27c93f" font-family="monospace" font-size="12" font-weight="bold" filter="url(#glow)">&#x2714; HCL级恒流驱动</text>
+
+  <!-- Ripple waveform good -->
+  <text x="365" y="115" fill="#64748b" font-family="monospace" font-size="8">输出纹波: &lt;5%</text>
+  <path d="M365,120 Q375,118 385,120 Q395,122 405,120 Q415,118 425,120 Q435,122 445,120 Q455,118 465,120 Q475,122 485,120 Q495,118 505,120 Q515,122 525,120 Q535,118 545,120 Q555,122 565,120 Q575,118 585,120 Q595,122 605,120 Q615,118 625,120 Q635,122 645,120" fill="none" stroke="#27c93f" stroke-width="2.5" opacity="0.9"/>
+
+  <text x="365" y="150" fill="#64748b" font-family="monospace" font-size="8">频闪百分比 &lt;3% | 调光深度0.1%</text>
+  <rect x="365" y="155" width="90" height="18" rx="3" fill="#27c93f" opacity="0.2"/>
+  <text x="365" y="168" fill="#27c93f" font-family="monospace" font-size="8">No Risk &#x2714;</text>
+
+  <rect x="470" y="155" width="170" height="18" rx="2" fill="#0d1a2d" stroke="#27c93f" stroke-width="0.5"/>
+  <text x="555" y="168" text-anchor="middle" fill="#27c93f" font-family="monospace" font-size="8">ipRGC无应激→节律正常</text>
+
+  <!-- IEEE 1789 Risk Matrix -->
+  <text x="340" y="235" text-anchor="middle" fill="#ffd166" font-family="monospace" font-size="12" font-weight="bold" filter="url(#glow)">IEEE 1789 频闪风险分级矩阵</text>
+
+  <rect x="25" y="248" width="630" height="110" rx="6" fill="#0d1a2d" stroke="#1a3050" stroke-width="0.5"/>
+
+  <!-- Matrix content -->
+  <rect x="35" y="258" width="150" height="90" rx="4" fill="#27c93f" opacity="0.1" stroke="#27c93f" stroke-width="0.5"/>
+  <text x="110" y="280" text-anchor="middle" fill="#27c93f" font-family="monospace" font-size="11" font-weight="bold">No Risk</text>
+  <text x="110" y="298" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">频闪百分比 &lt; 3%</text>
+  <text x="110" y="314" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">频率 &gt; 25kHz</text>
+  <text x="110" y="335" text-anchor="middle" fill="#27c93f" font-family="monospace" font-size="9">&#x2714; HCL推荐等级</text>
+
+  <rect x="200" y="258" width="150" height="90" rx="4" fill="#ffd166" opacity="0.1" stroke="#ffd166" stroke-width="0.5"/>
+  <text x="275" y="280" text-anchor="middle" fill="#ffd166" font-family="monospace" font-size="11" font-weight="bold">Low Risk</text>
+  <text x="275" y="298" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">频闪百分比 3-10%</text>
+  <text x="275" y="314" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">频率 1-25kHz</text>
+  <text x="275" y="335" text-anchor="middle" fill="#ffd166" font-family="monospace" font-size="9">&#x25B3; 可接受</text>
+
+  <rect x="365" y="258" width="150" height="90" rx="4" fill="#ff4757" opacity="0.1" stroke="#ff4757" stroke-width="0.5"/>
+  <text x="440" y="280" text-anchor="middle" fill="#ff4757" font-family="monospace" font-size="11" font-weight="bold">High Risk</text>
+  <text x="440" y="298" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">频闪百分比 &gt; 10%</text>
+  <text x="440" y="314" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">频率 &lt; 1kHz</text>
+  <text x="440" y="335" text-anchor="middle" fill="#ff4757" font-family="monospace" font-size="9">&#x2716; 不推荐</text>
+
+  <rect x="530" y="258" width="115" height="90" rx="4" fill="#0d1a2d" stroke="#64748b" stroke-width="0.5"/>
+  <text x="587" y="280" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="11" font-weight="bold">检测方法</text>
+  <text x="587" y="300" text-anchor="middle" fill="#4facfe" font-family="monospace" font-size="8">手机摄像头</text>
+  <text x="587" y="316" text-anchor="middle" fill="#4facfe" font-family="monospace" font-size="8">看滚动条纹</text>
+  <text x="587" y="335" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">专业: 频闪分析仪</text>
+
+  <!-- Status -->
+  <rect x="60" y="350" width="560" height="20" rx="3" fill="#0d1a2d" stroke="#1a3050" stroke-width="0.5"/>
+  <text x="340" y="363" text-anchor="middle" fill="#27c93f" font-family="monospace" font-size="9">IEEE 1789 COMPLIANT | FLICKER_PERCENT: 2.1% | PWM_FREQ: 30000Hz | SAFE_FOR_SLEEP: TRUE</text>
+</svg>

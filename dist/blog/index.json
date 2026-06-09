@@ -1,5 +1,23 @@
 [
   {
+    "title": "智能灯真的能改善睡眠吗？一文讲透健康照明技术原理与选购指南",
+    "slug": "human-centric-lighting-health-guide",
+    "date": "2026-06-09",
+    "category": "健康照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-hcl-cover.png",
+    "excerpt": "人因照明（HCL）不只是营销概念。本文从LED驱动电源的底层技术出发，讲清楚色温、照度、频闪如何影响你的睡眠节律，以及选购健康照明产品时真正该看的三个硬指标。"
+  },
+  {
+    "title": "无主灯设计怎么做才不翻车？智能筒灯射灯选购安装全攻略",
+    "slug": "no-main-light-smart-lighting-guide-2026",
+    "date": "2026-06-09",
+    "category": "智能照明",
+    "description": "无主灯设计翻车率为什么这么高？从灯位布局、筒灯射灯选型、智能调光方案到布线预留，一篇讲透无主灯智能照明的正确做法。内含常见翻车案例和避坑清单。",
+    "cover": "../../images/blog-no-main-light-cover.png",
+    "excerpt": "无主灯设计在小红书火了两年，但翻车案例也数不胜数。本文从筒灯射灯选型、智能调光兼容性、布线预留三个维度，帮你避开90%的人都会踩的坑。"
+  },
+  {
     "title": "2026年买LED灯必读：新国标GB 30255生效，4个参数帮你避坑",
     "slug": "2026-06-08-gb30255-led-standard-guide",
     "date": "2026-06-08",

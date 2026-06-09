@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f2340"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <rect width="680" height="420" fill="url(#bgGrad)"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+  
+  <text x="340" y="25" text-anchor="middle" fill="#4da6ff" font-family="monospace" font-size="14" font-weight="bold" filter="url(#glow)">无主灯智能照明控制架构 — 从云端到灯具全链路</text>
+
+  <!-- Cloud Layer -->
+  <rect x="170" y="45" width="340" height="55" rx="8" fill="#0d1f3c" stroke="#2a4a6c" stroke-width="1"/>
+  <text x="340" y="65" text-anchor="middle" fill="#4da6ff" font-family="monospace" font-size="11" font-weight="bold" filter="url(#glow)">🧠 涂鸦 IoT 云平台</text>
+  <text x="340" y="82" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="9">智能场景引擎 · 定时任务 · 语音控制 · 远程管理</text>
+  
+  <!-- Arrow down -->
+  <line x1="340" y1="100" x2="340" y2="118" stroke="#4da6ff" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="335,115 340,122 345,115" fill="#4da6ff" opacity="0.5"/>
+
+  <!-- Control Layer (3 columns) -->
+  <!-- Column 1: App -->
+  <rect x="50" y="125" width="130" height="65" rx="6" fill="#0d1f3c" stroke="#1a3a5c" stroke-width="1"/>
+  <text x="115" y="145" text-anchor="middle" fill="#5a7a9c" font-family="monospace" font-size="9">📱 手机 APP</text>
+  <text x="115" y="162" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">涂鸦智能 / Smart Life</text>
+  <text x="115" y="178" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">分组 · 场景 · 定时</text>
+  
+  <!-- Column 2: Scene Panel -->
+  <rect x="220" y="125" width="130" height="65" rx="6" fill="#0d1f3c" stroke="#1a3a5c" stroke-width="1"/>
+  <text x="285" y="145" text-anchor="middle" fill="#5a7a9c" font-family="monospace" font-size="9">🎛️ 场景面板</text>
+  <text x="285" y="162" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">会客模式 · 观影模式</text>
+  <text x="285" y="178" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">阅读模式 · 夜灯模式</text>
+  
+  <!-- Column 3: Voice -->
+  <rect x="390" y="125" width="130" height="65" rx="6" fill="#0d1f3c" stroke="#1a3a5c" stroke-width="1"/>
+  <text x="455" y="145" text-anchor="middle" fill="#5a7a9c" font-family="monospace" font-size="9">🗣️ 语音助手</text>
+  <text x="455" y="162" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">小爱 / 天猫精灵</text>
+  <text x="455" y="178" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">Google Home / Siri</text>
+
+  <!-- Arrows down from control to gateway -->
+  <line x1="115" y1="190" x2="115" y2="215" stroke="#4da6ff" stroke-width="1" opacity="0.4"/>
+  <line x1="285" y1="190" x2="285" y2="215" stroke="#4da6ff" stroke-width="1" opacity="0.4"/>
+  <line x1="455" y1="190" x2="455" y2="215" stroke="#4da6ff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Gateway Layer - Central Hub -->
+  <rect x="150" y="215" width="250" height="50" rx="25" fill="#0a2a4a" stroke="#4da6ff" stroke-width="2"/>
+  <text x="275" y="236" text-anchor="middle" fill="#4da6ff" font-family="monospace" font-size="11" font-weight="bold" filter="url(#glow)">🌐 Zigbee 3.0 网关（涂鸦）</text>
+  <text x="275" y="252" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">Mesh 组网 · 自修复路由 · 最大128节点</text>
+
+  <!-- Arrow down from gateway -->
+  <polygon points="265,265 275,280 285,265" fill="#4dff88" opacity="0.6"/>
+  <line x1="275" y1="265" x2="275" y2="280" stroke="#4dff88" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Device Layer - 4 Device Groups -->
+  <text x="340" y="298" text-anchor="middle" fill="#4dff88" font-family="monospace" font-size="10" font-weight="bold">🟢 Zigbee 设备层 — Mesh 互联</text>
+
+  <!-- Zone 1: Downlights -->
+  <rect x="30" y="310" width="140" height="100" rx="6" fill="#0d1f3c" stroke="#1a3a5c" stroke-width="1"/>
+  <text x="100" y="332" text-anchor="middle" fill="#4da6ff" font-family="monospace" font-size="10" font-weight="bold">💡 筒灯组</text>
+  <text x="100" y="350" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">NEX2 智能筒灯 x8</text>
+  <text x="100" y="366" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">7W | Ra90 | 调光调色</text>
+  <text x="100" y="382" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">涂鸦Zigbee驱动</text>
+  <rect x="45" y="390" width="110" height="14" rx="7" fill="#1a3a5c"/>
+  <text x="100" y="401" text-anchor="middle" fill="#4dff88" font-family="monospace" font-size="7">基础照明区</text>
+
+  <!-- Zone 2: Spotlights -->
+  <rect x="190" y="310" width="140" height="100" rx="6" fill="#0d1f3c" stroke="#1a3a5c" stroke-width="1"/>
+  <text x="260" y="332" text-anchor="middle" fill="#ffaa00" font-family="monospace" font-size="10" font-weight="bold">🎯 射灯组</text>
+  <text x="260" y="350" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">NEX6 COB射灯 x6</text>
+  <text x="260" y="366" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">7W | Ra98 | 24°/36°</text>
+  <text x="260" y="382" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">涂鸦Zigbee调光驱动</text>
+  <rect x="205" y="390" width="110" height="14" rx="7" fill="#1a3a5c"/>
+  <text x="260" y="401" text-anchor="middle" fill="#ffaa00" font-family="monospace" font-size="7">重点照明区</text>
+
+  <!-- Zone 3: LED Strips -->
+  <rect x="350" y="310" width="140" height="100" rx="6" fill="#0d1f3c" stroke="#1a3a5c" stroke-width="1"/>
+  <text x="420" y="332" text-anchor="middle" fill="#ff6b6b" font-family="monospace" font-size="10" font-weight="bold">💫 灯带组</text>
+  <text x="420" y="350" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">COB灯带 14W/m x15m</text>
+  <text x="420" y="366" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">24V低压 | 无光斑</text>
+  <text x="420" y="382" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">Zigbee调光控制器</text>
+  <rect x="365" y="390" width="110" height="14" rx="7" fill="#1a3a5c"/>
+  <text x="420" y="401" text-anchor="middle" fill="#ff6b6b" font-family="monospace" font-size="7">氛围照明区</text>
+
+  <!-- Zone 4: Signal Repeater -->
+  <rect x="510" y="310" width="140" height="100" rx="6" fill="#0d1f3c" stroke="#1a3a5c" stroke-width="1"/>
+  <text x="580" y="332" text-anchor="middle" fill="#5a7a9c" font-family="monospace" font-size="10" font-weight="bold">📡 信号中继</text>
+  <text x="580" y="350" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">Zigbee 智能插座 x3</text>
+  <text x="580" y="366" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">常供电 = 路由节点</text>
+  <text x="580" y="382" text-anchor="middle" fill="#3a5a7c" font-family="monospace" font-size="8">Mesh 覆盖增强</text>
+  <rect x="525" y="390" width="110" height="14" rx="7" fill="#1a3a5c"/>
+  <text x="580" y="401" text-anchor="middle" fill="#5a7a9c" font-family="monospace" font-size="7">信号保障层</text>
+
+  <text x="340" y="418" text-anchor="middle" fill="#2a4a6c" font-family="monospace" font-size="8">nexlamp.com — 每层至少1个常供电路由节点保障Mesh稳定</text>
+</svg>
