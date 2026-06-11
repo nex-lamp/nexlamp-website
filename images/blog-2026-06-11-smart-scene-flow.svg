@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480">
+  <defs>
+    <pattern id="grid3" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#0d2137" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="bgGlow3" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#0d2137" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0a1628" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowWarm">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="680" height="480" fill="url(#bgGlow3)"/>
+  <rect width="680" height="480" fill="url(#grid3)"/>
+
+  <!-- Title -->
+  <text x="340" y="38" text-anchor="middle" fill="#ffd700" font-family="monospace" font-size="20" font-weight="bold" filter="url(#glowWarm)">AI Smart Lighting Scene Flow — Beyond Voice Control</text>
+  <line x1="40" y1="50" x2="640" y2="50" stroke="#ffd700" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Scene 1: Morning -->
+  <rect x="40" y="70" width="180" height="120" rx="8" fill="#0a1a2e" stroke="#00d4ff" stroke-width="1"/>
+  <rect x="40" y="70" width="180" height="32" rx="8" fill="#00d4ff" opacity="0.15"/>
+  <text x="130" y="91" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="13" font-weight="bold" filter="url(#glow3)">Morning 7:00</text>
+  <text x="55" y="120" fill="#8899aa" font-family="monospace" font-size="10">色温: 5000K 冷白</text>
+  <text x="55" y="138" fill="#8899aa" font-family="monospace" font-size="10">亮度: 80% 渐亮</text>
+  <text x="55" y="156" fill="#8899aa" font-family="monospace" font-size="10">触发: 定时+光线传感器</text>
+  <text x="55" y="174" fill="#667788" font-family="monospace" font-size="9">模拟自然日出，抑制褪黑素</text>
+
+  <line x1="220" y1="130" x2="255" y2="130" stroke="#00d4ff" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+  <!-- Scene 2: Work -->
+  <rect x="255" y="70" width="180" height="120" rx="8" fill="#0a1a2e" stroke="#ffffff" stroke-width="1"/>
+  <rect x="255" y="70" width="180" height="32" rx="8" fill="#ffffff" opacity="0.08"/>
+  <text x="345" y="91" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="13" font-weight="bold">Work 9:00-18:00</text>
+  <text x="270" y="120" fill="#8899aa" font-family="monospace" font-size="10">色温: 4000K 自然白</text>
+  <text x="270" y="138" fill="#8899aa" font-family="monospace" font-size="10">亮度: 100%</text>
+  <text x="270" y="156" fill="#8899aa" font-family="monospace" font-size="10">触发: 存在传感器</text>
+  <text x="270" y="174" fill="#667788" font-family="monospace" font-size="9">照度充足，保持专注</text>
+
+  <line x1="435" y1="130" x2="470" y2="130" stroke="#ffffff" stroke-width="1.5"/>
+
+  <!-- Scene 3: Evening -->
+  <rect x="470" y="70" width="180" height="120" rx="8" fill="#0a1a2e" stroke="#ff6b35" stroke-width="1"/>
+  <rect x="470" y="70" width="180" height="32" rx="8" fill="#ff6b35" opacity="0.15"/>
+  <text x="560" y="91" text-anchor="middle" fill="#ff6b35" font-family="monospace" font-size="13" font-weight="bold" filter="url(#glow3)">Evening 19:00</text>
+  <text x="485" y="120" fill="#8899aa" font-family="monospace" font-size="10">色温: 3000K 暖黄</text>
+  <text x="485" y="138" fill="#8899aa" font-family="monospace" font-size="10">亮度: 60%</text>
+  <text x="485" y="156" fill="#8899aa" font-family="monospace" font-size="10">触发: 定时+日落同步</text>
+  <text x="485" y="174" fill="#667788" font-family="monospace" font-size="9">放松助眠，减少蓝光</text>
+
+  <!-- Arrow down from all three -->
+  <line x1="130" y1="190" x2="130" y2="230" stroke="#00d4ff" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="345" y1="190" x2="345" y2="230" stroke="#ffffff" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="560" y1="190" x2="560" y2="230" stroke="#ff6b35" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- AI Brain -->
+  <rect x="200" y="230" width="280" height="65" rx="10" fill="#0a1a2e" stroke="#ffd700" stroke-width="2"/>
+  <text x="340" y="255" text-anchor="middle" fill="#ffd700" font-family="monospace" font-size="15" font-weight="bold" filter="url(#glowWarm)">AI Smart Hub</text>
+  <text x="340" y="275" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="10">自适应调度 + 用户习惯学习 + 场景编排</text>
+  <text x="340" y="290" text-anchor="middle" fill="#667788" font-family="monospace" font-size="9">Zigbee Gateway | Matter Controller | Local AI</text>
+
+  <!-- Arrow down from AI -->
+  <line x1="340" y1="295" x2="340" y2="335" stroke="#ffd700" stroke-width="2"/>
+
+  <!-- Scenes row -->
+  <text x="340" y="355" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="11">Smart Scenes</text>
+
+  <!-- 4 scene cards -->
+  <rect x="40" y="370" width="130" height="48" rx="6" fill="#0a1a2e" stroke="#00d4ff" stroke-width="1"/>
+  <text x="105" y="392" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="11" filter="url(#glow3)">观影模式</text>
+  <text x="105" y="408" text-anchor="middle" fill="#667788" font-family="monospace" font-size="9">10% 暖光</text>
+
+  <rect x="190" y="370" width="130" height="48" rx="6" fill="#0a1a2e" stroke="#7b61ff" stroke-width="1"/>
+  <text x="255" y="392" text-anchor="middle" fill="#7b61ff" font-family="monospace" font-size="11" filter="url(#glow3)">起夜模式</text>
+  <text x="255" y="408" text-anchor="middle" fill="#667788" font-family="monospace" font-size="9">2% 最低亮度</text>
+
+  <rect x="340" y="370" width="130" height="48" rx="6" fill="#0a1a2e" stroke="#ff6b35" stroke-width="1"/>
+  <text x="405" y="392" text-anchor="middle" fill="#ff6b35" font-family="monospace" font-size="11" filter="url(#glow3)">会客模式</text>
+  <text x="405" y="408" text-anchor="middle" fill="#667788" font-family="monospace" font-size="9">80% 自然光</text>
+
+  <rect x="490" y="370" width="130" height="48" rx="6" fill="#0a1a2e" stroke="#00e676" stroke-width="1"/>
+  <text x="555" y="392" text-anchor="middle" fill="#00e676" font-family="monospace" font-size="11" filter="url(#glow3)">离家模式</text>
+  <text x="555" y="408" text-anchor="middle" fill="#667788" font-family="monospace" font-size="9">全关 + 安防</text>
+
+  <!-- Bottom terminal -->
+  <rect x="40" y="440" width="600" height="28" rx="4" fill="#0d2137"/>
+  <text x="60" y="458" fill="#00e676" font-family="monospace" font-size="10">$ scene --activate "movie-night" → Brightness: 10% | CCT: 2700K | RGB: #FF8C00 | Duration: 3hrs</text>
+</svg>

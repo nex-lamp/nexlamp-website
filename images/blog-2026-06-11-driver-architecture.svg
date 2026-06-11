@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480">
+  <defs>
+    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#0d2137" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="bgGlow2" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#0d2137" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0a1628" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGreen">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="680" height="480" fill="url(#bgGlow2)"/>
+  <rect width="680" height="480" fill="url(#grid2)"/>
+
+  <!-- Title -->
+  <text x="340" y="38" text-anchor="middle" fill="#00e676" font-family="monospace" font-size="20" font-weight="bold" filter="url(#glowGreen)">LED Driver Architecture — The Heart of Smart Light</text>
+  <line x1="40" y1="50" x2="640" y2="50" stroke="#00e676" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Input Stage -->
+  <rect x="40" y="70" width="160" height="50" rx="6" fill="#0a1a2e" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="120" y="92" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="12" font-weight="bold" filter="url(#glow2)">AC Input</text>
+  <text x="120" y="108" text-anchor="middle" fill="#667788" font-family="monospace" font-size="9">100-240V AC</text>
+
+  <line x1="200" y1="95" x2="240" y2="95" stroke="#00d4ff" stroke-width="1.5"/>
+
+  <!-- EMI Filter -->
+  <rect x="240" y="70" width="130" height="50" rx="6" fill="#0a1a2e" stroke="#ff6b35" stroke-width="1.5"/>
+  <text x="305" y="92" text-anchor="middle" fill="#ff6b35" font-family="monospace" font-size="11" font-weight="bold">EMI Filter</text>
+  <text x="305" y="108" text-anchor="middle" fill="#667788" font-family="monospace" font-size="9">共模电感 + X/Y 电容</text>
+
+  <line x1="370" y1="95" x2="410" y2="95" stroke="#ff6b35" stroke-width="1.5"/>
+
+  <!-- Rectifier -->
+  <rect x="410" y="70" width="100" height="50" rx="6" fill="#0a1a2e" stroke="#7b61ff" stroke-width="1.5"/>
+  <text x="460" y="92" text-anchor="middle" fill="#7b61ff" font-family="monospace" font-size="11" font-weight="bold">Rectifier</text>
+  <text x="460" y="108" text-anchor="middle" fill="#667788" font-family="monospace" font-size="9">AC→DC</text>
+
+  <line x1="510" y1="95" x2="550" y2="95" stroke="#7b61ff" stroke-width="1.5"/>
+
+  <!-- PFC -->
+  <rect x="550" y="70" width="100" height="50" rx="6" fill="#0a1a2e" stroke="#00e676" stroke-width="1.5"/>
+  <text x="600" y="92" text-anchor="middle" fill="#00e676" font-family="monospace" font-size="11" font-weight="bold">PFC</text>
+  <text x="600" y="108" text-anchor="middle" fill="#667788" font-family="monospace" font-size="9">功率因数 &gt;0.9</text>
+
+  <!-- Arrow down from PFC to Buck -->
+  <line x1="600" y1="120" x2="600" y2="155" stroke="#00e676" stroke-width="1.5"/>
+
+  <!-- DC-DC Buck Converter -->
+  <rect x="450" y="155" width="220" height="55" rx="6" fill="#0a1a2e" stroke="#00e676" stroke-width="2"/>
+  <text x="560" y="178" text-anchor="middle" fill="#00e676" font-family="monospace" font-size="13" font-weight="bold" filter="url(#glowGreen)">DC-DC Buck Converter</text>
+  <text x="560" y="198" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="10">恒流输出 | PWM调光 0.1%-100% | 纹波 &lt;1%</text>
+
+  <!-- Arrow to LED -->
+  <line x1="560" y1="210" x2="560" y2="250" stroke="#00e676" stroke-width="2"/>
+
+  <!-- LED Load -->
+  <rect x="470" y="250" width="180" height="45" rx="22" fill="#0a1a2e" stroke="#ffd700" stroke-width="2"/>
+  <text x="560" y="272" text-anchor="middle" fill="#ffd700" font-family="monospace" font-size="13" font-weight="bold" filter="url(#glow2)">LED Array</text>
+  <text x="560" y="288" text-anchor="middle" fill="#667788" font-family="monospace" font-size="9">SMD2835 / COB 灯珠</text>
+
+  <!-- Control Module (left side) -->
+  <rect x="50" y="155" width="175" height="140" rx="6" fill="#0a1a2e" stroke="#7b61ff" stroke-width="1.5"/>
+  <text x="137" y="180" text-anchor="middle" fill="#7b61ff" font-family="monospace" font-size="13" font-weight="bold">MCU Control</text>
+  <line x1="70" y1="190" x2="205" y2="190" stroke="#7b61ff" stroke-width="0.5" opacity="0.3"/>
+
+  <rect x="65" y="198" width="145" height="22" rx="3" fill="#0d1a2e" stroke="#00d4ff" stroke-width="0.8"/>
+  <text x="137" y="213" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="10">Zigbee SoC</text>
+
+  <rect x="65" y="226" width="145" height="22" rx="3" fill="#0d1a2e" stroke="#ff6b35" stroke-width="0.8"/>
+  <text x="137" y="241" text-anchor="middle" fill="#ff6b35" font-family="monospace" font-size="10">PWM Generator</text>
+
+  <rect x="65" y="254" width="145" height="22" rx="3" fill="#0d1a2e" stroke="#00e676" stroke-width="0.8"/>
+  <text x="137" y="269" text-anchor="middle" fill="#00e676" font-family="monospace" font-size="10">I2C/UART Sensors</text>
+
+  <!-- MCU to Buck connection -->
+  <line x1="225" y1="210" x2="450" y2="178" stroke="#7b61ff" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="310" y="200" text-anchor="middle" fill="#7b61ff" font-family="monospace" font-size="9">PWM dimming</text>
+
+  <text x="310" y="215" text-anchor="middle" fill="#556677" font-family="monospace" font-size="8">1000Hz+ PWM signal</text>
+
+  <!-- Protection annotations -->
+  <rect x="50" y="320" width="580" height="55" rx="6" fill="#0a1a2e" stroke="#ff6b35" stroke-width="0.8" opacity="0.8"/>
+  <text x="340" y="342" text-anchor="middle" fill="#ff6b35" font-family="monospace" font-size="11" font-weight="bold">Protection Circuit</text>
+  <text x="100" y="362" fill="#8899aa" font-family="monospace" font-size="9">过温保护 OTP</text>
+  <text x="260" y="362" fill="#8899aa" font-family="monospace" font-size="9">过压保护 OVP</text>
+  <text x="420" y="362" fill="#8899aa" font-family="monospace" font-size="9">短路保护 SCP</text>
+  <text x="560" y="362" fill="#8899aa" font-family="monospace" font-size="9">过流保护 OCP</text>
+
+  <!-- Bottom info -->
+  <text x="60" y="410" fill="#667788" font-family="monospace" font-size="10">好驱动 = 恒流 + 低纹波 + 高频PWM + 完整保护</text>
+  <text x="60" y="430" fill="#556677" font-family="monospace" font-size="9">频闪指数 &lt;8% (IEEE 1789) | PWM频率 &gt;1000Hz | 电解电容 105°C寿命 &gt;10000h</text>
+  <text x="60" y="450" fill="#556677" font-family="monospace" font-size="9">差驱动症状: 手机拍摄可见条纹 / 调光抖动 / 用半年就坏</text>
+
+  <!-- Terminal header -->
+  <rect x="50" y="390" width="580" height="22" rx="3" fill="#0d2137"/>
+  <text x="60" y="405" fill="#00e676" font-family="monospace" font-size="9">┌─ LED Driver Quality Checklist ──────────────────────────┐</text>
+</svg>
