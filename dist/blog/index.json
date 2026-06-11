@@ -1,5 +1,23 @@
 [
   {
+    "title": "2026年AI智能照明避坑指南：普通人选灯最容易踩的5个坑",
+    "slug": "ai-smart-lighting-buying-guide-2026",
+    "date": "2026-06-11",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-2026-06-11-ai-lighting-cover.png",
+    "excerpt": "AI智能照明时代来了，但90%的人装完智能灯才发现：连不上、延迟大、语音不灵、钱花了不少效果为零。这篇文章用5个真实踩坑案例，帮你省下至少3000块冤枉钱。"
+  },
+  {
+    "title": "Matter已来，现在买Zigbee智能灯会不会过时？2026年智能照明协议终极选购指南",
+    "slug": "zigbee-vs-matter-smart-lighting-guide-2026",
+    "date": "2026-06-11",
+    "category": "智能照明",
+    "description": "Matter协议2026年全面推广，智能照明用户面临Zigbee vs Matter的选择困境。本文深度分析两大协议的差异、互操作性、成本对比和场景适配，帮你判断现在买Zigbee智能灯是明智还是踩坑。",
+    "cover": "../../images/blog-zigbee-vs-matter-cover-2026.png",
+    "excerpt": "Matter协议2026年正式落地，很多装修中的用户都在纠结：现在买Zigbee智能灯会不会过时？本文从协议本质、兼容路径、实际成本和场景适配四个维度，帮你做出正确选择。"
+  },
+  {
     "title": "智能灯真的能改善睡眠吗？一文讲透健康照明技术原理与选购指南",
     "slug": "human-centric-lighting-health-guide",
     "date": "2026-06-09",
