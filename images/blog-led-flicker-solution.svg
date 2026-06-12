@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480">
+  <defs>
+    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1a2744" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f1f3d"/>
+    </linearGradient>
+    <filter id="glow2"><feGaussianBlur stdDeviation="3"/><feMerge><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowRed"><feGaussianBlur stdDeviation="4"/><feMerge><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowGreen"><feGaussianBlur stdDeviation="4"/><feMerge><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="680" height="480" fill="url(#bgGrad2)"/>
+  <rect width="680" height="480" fill="url(#grid2)"/>
+
+  <!-- Title -->
+  <text x="340" y="30" text-anchor="middle" fill="#5c8db5" font-size="14" font-family="monospace" font-weight="bold">LED频闪成因 &amp; 解决方案 — 驱动电源是核心</text>
+  <line x1="40" y1="40" x2="640" y2="40" stroke="#1a2744" stroke-width="1"/>
+
+  <!-- === Problem Side (Left) === -->
+  <rect x="20" y="55" width="300" height="180" rx="6" fill="#151020" stroke="#2a2030" stroke-width="1"/>
+  <text x="170" y="78" text-anchor="middle" fill="#ff6688" font-size="12" font-family="monospace" font-weight="bold">❌ 劣质驱动 — 频闪来源</text>
+
+  <!-- AC waveform -->
+  <polyline points="50,115 68,95 86,135 104,95 122,135 140,95 158,135 176,95 194,135 212,95 230,135 248,95 266,135 284,95 302,135" fill="none" stroke="#ff6644" stroke-width="1.5" opacity="0.7"/>
+  <text x="175" y="152" text-anchor="middle" fill="#7a6a7a" font-size="9" font-family="monospace">220V AC → 整流 → 滤波不彻底</text>
+
+  <!-- Result: Flicker waveform -->
+  <polyline points="50,180 62,165 74,195 86,165 98,195 110,165 122,195 134,165 146,195 158,165 170,195 182,165 194,195 206,165 218,195 230,165 242,195 254,165 266,195 278,165 290,195 302,165" fill="none" stroke="#ff4466" stroke-width="2" filter="url(#glowRed)"/>
+  <text x="170" y="215" text-anchor="middle" fill="#ff6688" font-size="9" font-family="monospace">输出纹波大 → 100Hz频闪 | PWM低频 → 闪烁</text>
+
+  <!-- Arrow -->
+  <text x="340" y="145" text-anchor="middle" fill="#3a5a8a" font-size="24">→</text>
+
+  <!-- === Solution Side (Right) === -->
+  <rect x="360" y="55" width="300" height="180" rx="6" fill="#101520" stroke="#1a3040" stroke-width="1"/>
+  <text x="510" y="78" text-anchor="middle" fill="#44cc88" font-size="12" font-family="monospace" font-weight="bold">✅ 优质驱动 — 无频闪方案</text>
+
+  <!-- Smooth DC waveform -->
+  <line x1="400" y1="115" x2="620" y2="115" stroke="#44cc88" stroke-width="2.5" filter="url(#glowGreen)"/>
+  <text x="510" y="140" text-anchor="middle" fill="#7a9a8a" font-size="9" font-family="monospace">高PF恒流驱动 + 多级滤波</text>
+
+  <!-- Result: Clean output -->
+  <line x1="400" y1="185" x2="620" y2="185" stroke="#44cc88" stroke-width="2" filter="url(#glowGreen)"/>
+  <text x="510" y="210" text-anchor="middle" fill="#66cc99" font-size="9" font-family="monospace">纹波 &lt;3% | PWM &gt;4kHz → 无频闪</text>
+
+  <!-- === Bottom: Comparison Table === -->
+  <rect x="20" y="255" width="640" height="200" rx="6" fill="#0d1220" stroke="#1a2744" stroke-width="1"/>
+
+  <text x="40" y="280" fill="#4a7aaf" font-size="11" font-family="monospace" font-weight="bold">方案对比</text>
+  <line x1="40" y1="288" x2="640" y2="288" stroke="#1a2744" stroke-width="0.5"/>
+
+  <!-- Table header -->
+  <rect x="30" y="298" width="640" height="22" fill="#0a1220" rx="2"/>
+  <text x="55" y="313" fill="#5c8db5" font-size="9" font-family="monospace">方案类型</text>
+  <text x="190" y="313" fill="#5c8db5" font-size="9" font-family="monospace">频闪%</text>
+  <text x="280" y="313" fill="#5c8db5" font-size="9" font-family="monospace">PWM频率</text>
+  <text x="400" y="313" fill="#5c8db5" font-size="9" font-family="monospace">成本</text>
+  <text x="500" y="313" fill="#5c8db5" font-size="9" font-family="monospace">适用场景</text>
+
+  <!-- Row 1: bad -->
+  <text x="55" y="338" fill="#ff6688" font-size="9" font-family="monospace">阻容降压</text>
+  <text x="190" y="338" fill="#ff6688" font-size="9" font-family="monospace">30%+</text>
+  <text x="280" y="338" fill="#7a6a7a" font-size="9" font-family="monospace">无PWM</text>
+  <text x="400" y="338" fill="#7a6a7a" font-size="9" font-family="monospace">¥3-5</text>
+  <text x="500" y="338" fill="#ff6688" font-size="9" font-family="monospace">已淘汰</text>
+
+  <!-- Row 2: medium -->
+  <text x="55" y="362" fill="#ffaa44" font-size="9" font-family="monospace">普通恒流+低频PWM</text>
+  <text x="190" y="362" fill="#ffaa44" font-size="9" font-family="monospace">10-25%</text>
+  <text x="280" y="362" fill="#7a6a7a" font-size="9" font-family="monospace">200-500Hz</text>
+  <text x="400" y="362" fill="#7a6a7a" font-size="9" font-family="monospace">¥8-15</text>
+  <text x="500" y="362" fill="#ffaa44" font-size="9" font-family="monospace">走廊/阳台</text>
+
+  <!-- Row 3: good -->
+  <text x="55" y="386" fill="#66cc99" font-size="9" font-family="monospace">高PF恒流+高频PWM</text>
+  <text x="190" y="386" fill="#66cc99" font-size="9" font-family="monospace">3-8%</text>
+  <text x="280" y="386" fill="#6aaa8a" font-size="9" font-family="monospace">1-4kHz</text>
+  <text x="400" y="386" fill="#7a6a7a" font-size="9" font-family="monospace">¥15-30</text>
+  <text x="500" y="386" fill="#66cc99" font-size="9" font-family="monospace">客厅/卧室</text>
+
+  <!-- Row 4: best -->
+  <text x="55" y="410" fill="#44cc88" font-size="9" font-family="monospace">无频闪恒流 + 0-10V/DALI</text>
+  <text x="190" y="410" fill="#44cc88" font-size="9" font-family="monospace">&lt;3%</text>
+  <text x="280" y="410" fill="#6aaa8a" font-size="9" font-family="monospace">&gt;4kHz</text>
+  <text x="400" y="410" fill="#7a6a7a" font-size="9" font-family="monospace">¥25-50</text>
+  <text x="500" y="410" fill="#44cc88" font-size="9" font-family="monospace">儿童房/办公</text>
+
+  <!-- Legend -->
+  <rect x="30" y="435" width="10" height="10" fill="#ff6688" rx="1"/>
+  <text x="45" y="444" fill="#7a6a7a" font-size="8" font-family="monospace">避免</text>
+  <rect x="80" y="435" width="10" height="10" fill="#ffaa44" rx="1"/>
+  <text x="95" y="444" fill="#7a6a7a" font-size="8" font-family="monospace">可接受</text>
+  <rect x="140" y="435" width="10" height="10" fill="#66cc99" rx="1"/>
+  <text x="155" y="444" fill="#7a6a7a" font-size="8" font-family="monospace">推荐</text>
+  <rect x="195" y="435" width="10" height="10" fill="#44cc88" rx="1"/>
+  <text x="210" y="444" fill="#7a6a7a" font-size="8" font-family="monospace">最佳</text>
+</svg>
