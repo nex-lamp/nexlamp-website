@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#120d28"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <!-- Grid -->
+  <g stroke="#1a2a4c" stroke-width="0.3" opacity="0.4">
+    <line x1="0" y1="50" x2="800" y2="50"/><line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="450"/><line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="450"/><line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="500" y1="0" x2="500" y2="450"/><line x1="600" y1="0" x2="600" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="18" font-weight="bold" filter="url(#glow2)">LED调光协议对比矩阵</text>
+  <!-- Table Header -->
+  <rect x="40" y="70" width="720" height="40" rx="4" fill="#0d2a4a" stroke="#00d4ff" stroke-width="0.5"/>
+  <text x="110" y="95" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="12" font-weight="bold">协议</text>
+  <text x="260" y="95" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="12" font-weight="bold">调光范围</text>
+  <text x="400" y="95" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="12" font-weight="bold">稳定性</text>
+  <text x="530" y="95" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="12" font-weight="bold">布线复杂度</text>
+  <text x="670" y="95" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="12" font-weight="bold">推荐场景</text>
+  <!-- Row 1: TRIAC -->
+  <rect x="40" y="115" width="720" height="45" rx="4" fill="#1a0a0a" stroke="#ff3535" stroke-width="0.5" opacity="0.7"/>
+  <text x="110" y="142" text-anchor="middle" fill="#ff6b35" font-family="monospace" font-size="12" font-weight="bold">TRIAC</text>
+  <text x="260" y="142" text-anchor="middle" fill="#ff6b35" font-family="monospace" font-size="11">10%-100%</text>
+  <!-- Stability bar -->
+  <rect x="355" y="130" width="90" height="10" rx="2" fill="#1a0a0a"/>
+  <rect x="355" y="130" width="25" height="10" rx="2" fill="#ff3535"/>
+  <text x="400" y="155" text-anchor="middle" fill="#996060" font-family="monospace" font-size="8">低</text>
+  <text x="530" y="142" text-anchor="middle" fill="#8a6060" font-family="monospace" font-size="11">简单（替开关）</text>
+  <text x="670" y="142" text-anchor="middle" fill="#8a6060" font-family="monospace" font-size="11">❌ 不推荐LED</text>
+  <!-- Row 2: ELV -->
+  <rect x="40" y="165" width="720" height="45" rx="4" fill="#1a1508" stroke="#cc8800" stroke-width="0.5" opacity="0.7"/>
+  <text x="110" y="192" text-anchor="middle" fill="#cc8800" font-family="monospace" font-size="12" font-weight="bold">ELV</text>
+  <text x="260" y="192" text-anchor="middle" fill="#cc8800" font-family="monospace" font-size="11">5%-100%</text>
+  <rect x="355" y="180" width="90" height="10" rx="2" fill="#1a1508"/>
+  <rect x="355" y="180" width="50" height="10" rx="2" fill="#cc8800"/>
+  <text x="400" y="205" text-anchor="middle" fill="#8a7a40" font-family="monospace" font-size="8">中</text>
+  <text x="530" y="192" text-anchor="middle" fill="#8a7a40" font-family="monospace" font-size="11">简单（替开关）</text>
+  <text x="670" y="192" text-anchor="middle" fill="#8a7a40" font-family="monospace" font-size="11">家装改造</text>
+  <!-- Row 3: 0-10V -->
+  <rect x="40" y="215" width="720" height="45" rx="4" fill="#0a1a0a" stroke="#00ff88" stroke-width="0.5" opacity="0.7"/>
+  <text x="110" y="242" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold">0-10V</text>
+  <text x="260" y="242" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="11">1%-100%</text>
+  <rect x="355" y="230" width="90" height="10" rx="2" fill="#0a1a0a"/>
+  <rect x="355" y="230" width="75" height="10" rx="2" fill="#00ff88"/>
+  <text x="400" y="255" text-anchor="middle" fill="#409960" font-family="monospace" font-size="8">高</text>
+  <text x="530" y="242" text-anchor="middle" fill="#409960" font-family="monospace" font-size="11">中等（需信号线）</text>
+  <text x="670" y="242" text-anchor="middle" fill="#409960" font-family="monospace" font-size="11">✅ 商业照明</text>
+  <!-- Row 4: DALI -->
+  <rect x="40" y="265" width="720" height="45" rx="4" fill="#0a0a2a" stroke="#6644ff" stroke-width="0.5" opacity="0.7"/>
+  <text x="110" y="292" text-anchor="middle" fill="#6644ff" font-family="monospace" font-size="12" font-weight="bold">DALI</text>
+  <text x="260" y="292" text-anchor="middle" fill="#6644ff" font-family="monospace" font-size="11">0.1%-100%</text>
+  <rect x="355" y="280" width="90" height="10" rx="2" fill="#0a0a2a"/>
+  <rect x="355" y="280" width="90" height="10" rx="2" fill="#6644ff"/>
+  <text x="400" y="305" text-anchor="middle" fill="#6060aa" font-family="monospace" font-size="8">极高</text>
+  <text x="530" y="292" text-anchor="middle" fill="#6060aa" font-family="monospace" font-size="11">复杂（专用总线）</text>
+  <text x="670" y="292" text-anchor="middle" fill="#6060aa" font-family="monospace" font-size="11">✅ 高端项目</text>
+  <!-- Row 5: PWM -->
+  <rect x="40" y="315" width="720" height="45" rx="4" fill="#0a1a0a" stroke="#00ff88" stroke-width="0.5" opacity="0.7"/>
+  <text x="110" y="342" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold">PWM</text>
+  <text x="260" y="342" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="11">0.1%-100%</text>
+  <rect x="355" y="330" width="90" height="10" rx="2" fill="#0a1a0a"/>
+  <rect x="355" y="330" width="85" height="10" rx="2" fill="#00ff88"/>
+  <text x="400" y="355" text-anchor="middle" fill="#409960" font-family="monospace" font-size="8">高</text>
+  <text x="530" y="342" text-anchor="middle" fill="#409960" font-family="monospace" font-size="11">低（驱动内置）</text>
+  <text x="670" y="342" text-anchor="middle" fill="#409960" font-family="monospace" font-size="11">✅ 智能家居首选</text>
+  <!-- Legend / Key takeaway -->
+  <rect x="40" y="380" width="720" height="50" rx="6" fill="#0d2137" stroke="#00d4ff" stroke-width="0.8"/>
+  <text x="400" y="403" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="13" font-weight="bold">💡 核心结论：PWM + 0-10V 双协议驱动 = 智能调光最优解</text>
+  <text x="400" y="422" text-anchor="middle" fill="#8ab4d4" font-family="monospace" font-size="10">Matter负责基础控制 → Zigbee/PWM原生协议负责深度调光 → 驱动双接口兜底</text>
+</svg>
