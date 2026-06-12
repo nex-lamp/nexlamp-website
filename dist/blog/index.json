@@ -1,5 +1,23 @@
 [
   {
+    "title": "智能灯频闪怎么解决？LED驱动电源与健康照明选购全攻略",
+    "slug": "led-flicker-healthy-lighting-guide-2026",
+    "date": "2026-06-12",
+    "category": "智能照明",
+    "description": "智能灯频闪是90%的用户都遇到过的LED照明痛点。本文从频闪成因（驱动电源纹波/PWM调光）、手机检测法、IEEE 1789频闪百分比标准出发，深度解析如何选购真正无频闪的智能灯具。耐利普Nexlamp涂鸦Zigbee智能照明产品线全系采用无频闪驱动方案，通过3C认证，守护家庭健康光环境。",
+    "cover": "images/blog-led-flicker-cover.png",
+    "excerpt": "智能灯频闪是LED照明最常见的痛点之一——眼睛疲劳、头痛、甚至影响儿童视力。本文从驱动电源原理出发，深度解析频闪成因、手机检测法、频闪百分比标准，以及如何选购真正无频闪的智能灯具，附带2026年主流方案对比。"
+  },
+  {
+    "title": "无主灯智能调光翻车全排查：闪烁、掉线、不兼容的终极解决方案",
+    "slug": "smart-dimming-troubleshooting-guide",
+    "date": "2026-06-12",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-smart-dimming-cover.png",
+    "excerpt": "无主灯+智能调光是装修热门，但调光闪烁、设备掉线、协议不兼容三大翻车让无数人崩溃。本文从LED驱动原理出发，给出系统级排查方案。"
+  },
+  {
     "title": "2026年AI智能照明避坑指南：普通人选灯最容易踩的5个坑",
     "slug": "ai-smart-lighting-buying-guide-2026",
     "date": "2026-06-11",
