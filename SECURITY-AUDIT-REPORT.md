@@ -34,10 +34,10 @@
 ### 问题代码
 ```python
 # .workbuddy/push_to_github.py
-TOKEN = "REDACTED_PAT"
+TOKEN = "github_pat_REDACTED"
 
 # .workbuddy/push_via_api.py
-TOKEN = 'REDACTED_PAT'
+TOKEN = 'github_pat_REDACTED'
 ```
 
 ### 影响
@@ -86,14 +86,14 @@ TOKEN = 'REDACTED_PAT'
 ### 问题代码
 ```python
 # .workbuddy/publish_devto.py:4
-API_KEY = "REDACTED_DEVTO_KEY"
+API_KEY = "REDACTED"
 
 # publish_devto_0612.py:17
-"api-key": "REDACTED_DEVTO_KEY",
+"api-key": "REDACTED",
 ```
 ```javascript
 // webhook-receiver.js:25
-secret: process.env.WEBHOOK_SECRET || 'NEXLAMP_SECURE_TOKEN_2026',
+secret: process.env.WEBHOOK_SECRET || 'REDACTED',
 ```
 
 ### 影响
@@ -359,7 +359,7 @@ res.setHeader('Access-Control-Allow-Origin', origin || 'null');
 
 ### 问题代码
 ```javascript
-phone: '13825496855'
+phone: 'REDACTED'
 ```
 
 ### 修复
