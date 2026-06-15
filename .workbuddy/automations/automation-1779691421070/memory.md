@@ -1,5 +1,15 @@
 # Automation Memory
 
+## 2026-06-11: AI智能照明避坑指南
+- 选题: AI智能照明5大避坑（协议、驱动、语音控制、布线、AI噱头）
+- 文章: posts/2026-06-11-ai-smart-lighting-buying-guide.md (~1400字) + 3 SVG + AI封面(去水印)
+- 网站: ✅ build.js 37篇 + GitHub API推送(3302510)
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/5-common-pitfalls-when-buying-ai-smart-lights-in-2026-and-how-to-avoid-them-23cj
+- 知乎: ✅ https://zhuanlan.zhihu.com/p/2048384163380835152（publish返回200）
+- 掘金: ✅ publish需用draft_id参数（非article_id）
+- LinkedIn: ⚠️ CDP Chrome未运行，跳过
+- 踩坑: 掘金publish API参数纠正(draft_id vs article_id)；知乎publish返回200即成功
+
 ## 2026-06-05: LED驱动电源频闪问题全解析
 - 选题: 智能灯频闪/调光闪烁+LED驱动电源兼容性（多平台热搜最高痛点）
 - 文章: posts/2026-06-05-led-driver-flicker-guide.md (~1100字) + 3 SVG + PIL合成封面

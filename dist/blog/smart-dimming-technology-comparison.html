@@ -149,18 +149,21 @@
 <h2>PWM调光</h2>
 <h3>工作原理</h3>
 <p>PWM（Pulse Width Modulation，脉冲宽度调制）通过快速开关LED来控制平均亮度。占空比决定亮度：</p>
-<ul><li>占空比100% = 全亮</li>
+<ul>
+<li>占空比100% = 全亮</li>
 <li>占空比50% = 半亮</li>
 <li>占空比1% = 极低亮度</li>
 </ul>
 <h3>优势</h3>
-<ul><li>调光精度高（1%级调光）</li>
+<ul>
+<li>调光精度高（1%级调光）</li>
 <li>无色偏（LED始终工作在额定电流）</li>
 <li>成本低（单线控制）</li>
 <li>兼容性好（几乎所有MCU都支持PWM输出）</li>
 </ul>
 <h3>劣势</h3>
-<ul><li>低频PWM可能产生频闪</li>
+<ul>
+<li>低频PWM可能产生频闪</li>
 <li>信号线过长可能失真</li>
 <li>不适合远距离传输</li>
 <li>单向控制，无法读取灯具状态</li>
@@ -168,18 +171,21 @@
 <h2>0-10V调光</h2>
 <h3>工作原理</h3>
 <p>0-10V调光是模拟调光标准，通过改变0-10V直流电压信号控制亮度：</p>
-<ul><li>10V = 全亮</li>
+<ul>
+<li>10V = 全亮</li>
 <li>1V = 最低亮度</li>
 <li>0V = 关闭</li>
 </ul>
 <h3>优势</h3>
-<ul><li>标准化程度高（IEC 60929）</li>
+<ul>
+<li>标准化程度高（IEC 60929）</li>
 <li>实现简单，接线方便</li>
 <li>兼容传统照明控制系统</li>
 <li>传输距离可达100米</li>
 </ul>
 <h3>劣势</h3>
-<ul><li>调光精度有限（约5-10%步进）</li>
+<ul>
+<li>调光精度有限（约5-10%步进）</li>
 <li>线性度依赖驱动电源质量</li>
 <li>单向控制，无反馈</li>
 <li>多路灯具间亮度一致性较差</li>
@@ -188,45 +194,99 @@
 <h2>DALI调光</h2>
 <h3>工作原理</h3>
 <p>DALI（Digital Addressable Lighting Interface）是数字调光协议，每个设备有独立地址，支持双向通信：</p>
-<ul><li>数字信号，抗干扰能力强</li>
+<ul>
+<li>数字信号，抗干扰能力强</li>
 <li>每个设备独立寻址和分组</li>
 <li>支持场景存储和调用</li>
 <li>可读取设备状态和故障信息</li>
 </ul>
 <h3>优势</h3>
-<ul><li>精确到0.1%的对数调光曲线</li>
+<ul>
+<li>精确到0.1%的对数调光曲线</li>
 <li>每个设备独立控制</li>
 <li>双向通信，可读取状态</li>
 <li>16个场景预设</li>
 <li>标准化，多品牌互操作</li>
 </ul>
 <h3>劣势</h3>
-<ul><li>成本最高</li>
+<ul>
+<li>成本最高</li>
 <li>需要专用DALI控制器/网关</li>
 <li>布线需遵守DALI规范</li>
 <li>调试需要专业工具</li>
 </ul>
 <h2>综合对比</h2>
-<table><tr><th>维度</th><th>PWM</th><th>0-10V</th><th>DALI-2</th></tr>
-<tr><td>调光精度</td><td>1%</td><td>5-10%</td><td>0.1%</td></tr>
-<tr><td>调光范围</td><td>1-100%</td><td>10-100%</td><td>0.1-100%</td></tr>
-<tr><td>通信方式</td><td>单向</td><td>单向</td><td>双向</td></tr>
-<tr><td>寻址能力</td><td>无</td><td>无</td><td>64地址/总线</td></tr>
-<tr><td>传输距离</td><td>10-30m</td><td>100m</td><td>300m</td></tr>
-<tr><td>抗干扰</td><td>一般</td><td>一般</td><td>强</td></tr>
-<tr><td>成本指数</td><td>★</td><td>★★</td><td>★★★</td></tr>
-<tr><td>施工难度</td><td>简单</td><td>简单</td><td>中等</td></tr>
-</table>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>PWM</th>
+<th>0-10V</th>
+<th>DALI-2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>调光精度</td>
+<td>1%</td>
+<td>5-10%</td>
+<td>0.1%</td>
+</tr>
+<tr>
+<td>调光范围</td>
+<td>1-100%</td>
+<td>10-100%</td>
+<td>0.1-100%</td>
+</tr>
+<tr>
+<td>通信方式</td>
+<td>单向</td>
+<td>单向</td>
+<td>双向</td>
+</tr>
+<tr>
+<td>寻址能力</td>
+<td>无</td>
+<td>无</td>
+<td>64地址/总线</td>
+</tr>
+<tr>
+<td>传输距离</td>
+<td>10-30m</td>
+<td>100m</td>
+<td>300m</td>
+</tr>
+<tr>
+<td>抗干扰</td>
+<td>一般</td>
+<td>一般</td>
+<td>强</td>
+</tr>
+<tr>
+<td>成本指数</td>
+<td>★</td>
+<td>★★</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>施工难度</td>
+<td>简单</td>
+<td>简单</td>
+<td>中等</td>
+</tr>
+</tbody></table>
 <h2>选型建议</h2>
-<blockquote><p>选择调光技术的核心原则是<strong>匹配项目需求</strong>，而非追求最先进的技术。</p></blockquote>
-<ul><li><strong>智能家居</strong>：PWM + 蓝牙Mesh（低成本、快速部署）</li>
+<blockquote>
+<p>选择调光技术的核心原则是<strong>匹配项目需求</strong>，而非追求最先进的技术。</p>
+</blockquote>
+<ul>
+<li><strong>智能家居</strong>：PWM + 蓝牙Mesh（低成本、快速部署）</li>
 <li><strong>办公照明</strong>：0-10V（性价比最优、满足基本调光）</li>
 <li><strong>商业照明</strong>：DALI-2（精确控制、场景丰富、可扩展）</li>
 <li><strong>工业照明</strong>：DALI-2 + 0-10V（核心区域DALI，辅区0-10V）</li>
 <li><strong>户外照明</strong>：DALI-2 + NB-IoT（远程监控、节能管理）</li>
 </ul>
-耐利普科技的LED驱动电源支持PWM、0-10V和DALI-2三种调光方式，可满足不同项目的需求。如需调光方案咨询，请联系技术团队。
-<p><script type="application/ld+json">
+<p>耐利普科技的LED驱动电源支持PWM、0-10V和DALI-2三种调光方式，可满足不同项目的需求。如需调光方案咨询，请联系技术团队。</p>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -273,10 +333,11 @@
     }
   ]
 }
-</script></p>
+</script>
+
 <h2>常见问题</h2>
 <h3>Q: PWM调光会伤眼吗？</h3>
-<p>A: 高频PWM（频率>3kHz）的开关切换速度远超人眼感知范围，不会产生可见频闪，对眼睛没有影响。但低频PWM（<1kHz）可能产生明显频闪，长时间暴露可能引起视觉疲劳和不适。选择驱动电源时应确认PWM频率足够高，一般建议3kHz以上。</p>
+<p>A: 高频PWM（频率&gt;3kHz）的开关切换速度远超人眼感知范围，不会产生可见频闪，对眼睛没有影响。但低频PWM（&lt;1kHz）可能产生明显频闪，长时间暴露可能引起视觉疲劳和不适。选择驱动电源时应确认PWM频率足够高，一般建议3kHz以上。</p>
 <h3>Q: 0-10V和1-10V调光有什么区别？</h3>
 <p>A: 两者都是模拟电压调光，核心区别在于最低电压时的关灯行为：<strong>0-10V</strong>在信号降至0V时灯具关闭；<strong>1-10V</strong>在信号降至1V时灯具维持最低亮度而不会关闭。如果需要通过调光信号实现关灯功能，应选择0-10V；如果只需调光不需要关灯，1-10V即可。</p>
 <h3>Q: DALI-2比DALI好在哪里？</h3>
@@ -285,6 +346,7 @@
 <p>A: 恒流调光不会缩短LED寿命，反而可能<strong>延长</strong>。调光时LED工作电流降低，结温随之下降，而LED寿命与结温成反比——温度越低寿命越长。PWM调光虽然峰值电流不变，但平均功率降低同样有利于散热。需要注意的是，劣质驱动电源在低亮度时可能输出不稳定，应选择品质可靠的产品。</p>
 <h3>Q: 小项目有必要上DALI吗？</h3>
 <p>A: 一般来说，灯具数量<strong>少于20盏</strong>的小项目没有必要使用DALI。DALI的优势在于大规模系统的精确分组控制和状态反馈，但需要专用的DALI控制器或网关，成本较高。小型项目使用PWM或0-10V调光更经济实用。只有当项目需要精细的单灯控制、场景预设或设备状态监控时，才值得考虑DALI。</p>
+
                         </div>
                     </div>
                     <aside class="post-sidebar">

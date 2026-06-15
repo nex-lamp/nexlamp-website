@@ -144,98 +144,187 @@
                         </div>
                         <div class="post-content">
                             <div class="post-cover"><img src="../../images/blog-zigbee-troubleshoot-cover.png" alt="Zigbee智能灯老是掉线？5步自查排除法，从此告别断联烦恼"></div>
-                            <p>装了一套Zigbee智能灯，结果手机APP里灯具显示"离线"，语音助手喊半天没反应——这个场景你一定不陌生。</p>
-<p>知乎、CSDN、各大论坛里，"Zigbee掉线"是智能家居讨论最热的话题之一。涂鸦平台的工程师反馈，超过60%的售后问题都与网络稳定性有关，而这些问题中有90%其实可以自己解决。</p>
+                            <p>装了一套Zigbee智能灯，结果手机APP里灯具显示&quot;离线&quot;，语音助手喊半天没反应——这个场景你一定不陌生。</p>
+<p>知乎、CSDN、各大论坛里，&quot;Zigbee掉线&quot;是智能家居讨论最热的话题之一。涂鸦平台的工程师反馈，超过60%的售后问题都与网络稳定性有关，而这些问题中有90%其实可以自己解决。</p>
 <p>本文整理了最常见的5类掉线原因和对应解法，帮你系统性地从根上解决问题。</p>
 <hr>
 <h2>先理解Zigbee网络的工作原理</h2>
-<img src="../../images/blog-zigbee-troubleshoot-1.svg" alt="Zigbee网络拓扑图" loading="lazy">
+<p><img src="../../images/blog-zigbee-troubleshoot-1.svg" alt="Zigbee网络拓扑图"></p>
 <p>Zigbee采用<strong>网状（Mesh）组网</strong>，设备分三类角色：</p>
-<ul><li><strong>协调器（Gateway）</strong>：网关，是整个网络的"大脑"，负责设备注册和数据转发</li>
+<ul>
+<li><strong>协调器（Gateway）</strong>：网关，是整个网络的&quot;大脑&quot;，负责设备注册和数据转发</li>
 <li><strong>路由器（Router）</strong>：通常是有固定电源的设备（如LED驱动控制的灯具），可以<strong>中继信号</strong>，覆盖更远的距离</li>
 <li><strong>终端节点（End Device）</strong>：通常是电池供电设备（如遥控器、传感器），只能直连或通过路由器跳一级</li>
 </ul>
-<strong>关键点</strong>：Mesh网络中，每台路由器设备都是信号中继站。网络越"密"，信号越稳定。
+<p><strong>关键点</strong>：Mesh网络中，每台路由器设备都是信号中继站。网络越&quot;密&quot;，信号越稳定。</p>
 <hr>
 <h2>第一步：排查信号强度（RSSI值）</h2>
 <p>这是掉线的头号原因。Zigbee工作在2.4GHz频段，穿墙能力不强，距离一远信号就衰减。</p>
 <p><strong>如何查看RSSI</strong>：</p>
-<p>在涂鸦SmartLife APP中进入"设备信息" → "调试信息"，找到信号强度值。</p>
-<table><tr><th>RSSI值</th><th>状态</th><th>处理建议</th></tr>
-<tr><td>-60 dBm以上</td><td>🟢 优秀</td><td>无需处理</td></tr>
-<tr><td>-60 ~ -80 dBm</td><td>🟡 正常</td><td>正常使用</td></tr>
-<tr><td>-80 ~ -90 dBm</td><td>🟠 偏弱</td><td>建议补强</td></tr>
-<tr><td>-90 dBm以下</td><td>🔴 危险</td><td>高概率掉线</td></tr>
-</table>
-<strong>解决方法</strong>：
+<p>在涂鸦SmartLife APP中进入&quot;设备信息&quot; → &quot;调试信息&quot;，找到信号强度值。</p>
+<table>
+<thead>
+<tr>
+<th>RSSI值</th>
+<th>状态</th>
+<th>处理建议</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-60 dBm以上</td>
+<td>🟢 优秀</td>
+<td>无需处理</td>
+</tr>
+<tr>
+<td>-60 ~ -80 dBm</td>
+<td>🟡 正常</td>
+<td>正常使用</td>
+</tr>
+<tr>
+<td>-80 ~ -90 dBm</td>
+<td>🟠 偏弱</td>
+<td>建议补强</td>
+</tr>
+<tr>
+<td>-90 dBm以下</td>
+<td>🔴 危险</td>
+<td>高概率掉线</td>
+</tr>
+</tbody></table>
+<p><strong>解决方法</strong>：</p>
+<ol>
 <li><strong>缩短距离</strong>：将网关移近问题设备，两者之间不要超过2面承重墙</li>
 <li><strong>增加中继节点</strong>：在网关和离线设备之间增加一个有固定电源的Zigbee灯具，让它充当路由器角色</li>
+</ol>
 <hr>
 <h2>第二步：检查2.4GHz频道冲突</h2>
-<img src="../../images/blog-zigbee-troubleshoot-2.svg" alt="Zigbee信道干扰分析" loading="lazy">
+<p><img src="../../images/blog-zigbee-troubleshoot-2.svg" alt="Zigbee信道干扰分析"></p>
 <p>这是最容易被忽略、也是最毁灭性的问题。</p>
 <p>Zigbee使用2.4GHz频段的<strong>CH11~CH26</strong>，而家用WiFi路由器也在同一频段工作。当Zigbee信道和WiFi信道发生重叠，就会产生严重干扰：</p>
-<table><tr><th>Zigbee信道</th><th>重叠的WiFi信道</th><th>风险等级</th></tr>
-<tr><td>CH11 (2405 MHz)</td><td>WiFi CH1</td><td>🔴 严重冲突</td></tr>
-<tr><td>CH14 (2420 MHz)</td><td>WiFi CH1/6</td><td>🟠 中度冲突</td></tr>
-<tr><td>CH19 (2445 MHz)</td><td>WiFi CH6</td><td>🟠 中度冲突</td></tr>
-<tr><td><strong>CH25 (2475 MHz)</strong></td><td><strong>无重叠</strong></td><td><strong>🟢 推荐使用</strong></td></tr>
-<tr><td><strong>CH26 (2480 MHz)</strong></td><td><strong>无重叠</strong></td><td><strong>🟢 推荐使用</strong></td></tr>
-</table>
-<strong>解决方法</strong>：
+<table>
+<thead>
+<tr>
+<th>Zigbee信道</th>
+<th>重叠的WiFi信道</th>
+<th>风险等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CH11 (2405 MHz)</td>
+<td>WiFi CH1</td>
+<td>🔴 严重冲突</td>
+</tr>
+<tr>
+<td>CH14 (2420 MHz)</td>
+<td>WiFi CH1/6</td>
+<td>🟠 中度冲突</td>
+</tr>
+<tr>
+<td>CH19 (2445 MHz)</td>
+<td>WiFi CH6</td>
+<td>🟠 中度冲突</td>
+</tr>
+<tr>
+<td><strong>CH25 (2475 MHz)</strong></td>
+<td><strong>无重叠</strong></td>
+<td><strong>🟢 推荐使用</strong></td>
+</tr>
+<tr>
+<td><strong>CH26 (2480 MHz)</strong></td>
+<td><strong>无重叠</strong></td>
+<td><strong>🟢 推荐使用</strong></td>
+</tr>
+</tbody></table>
+<p><strong>解决方法</strong>：</p>
+<ol>
 <li>登录涂鸦网关管理后台，找到Zigbee信道设置</li>
 <li>将信道从默认CH11改为<strong>CH25或CH26</strong></li>
 <li>修改后等待2~5分钟，设备会自动重新入网</li>
+</ol>
 <hr>
 <h2>第三步：检查Mesh网络深度</h2>
 <p>Zigbee Mesh理论上支持多跳转发，但实际上<strong>跳数越多，延迟和掉线风险越高</strong>。</p>
 <p>超过3跳的链路在压力下容易断联。</p>
-<p><strong>典型问题场景</strong>：
-<ul><li>大户型或复式楼只放了一个网关</li>
+<p><strong>典型问题场景</strong>：</p>
+<ul>
+<li>大户型或复式楼只放了一个网关</li>
 <li>走廊/卫生间灯具全是电池供电设备（无法中继）</li>
-<li>路由器设备（有源灯具）分布不均，某些区域"信号孤岛"</li>
+<li>路由器设备（有源灯具）分布不均，某些区域&quot;信号孤岛&quot;</li>
 </ul>
-<strong>诊断方法</strong>：用APP查看掉线设备的"路由路径"，超过3跳就需要优化。</p>
-<p><strong>解决方法</strong>：
-<ul><li>在信号稀薄区域增加1~2个有源Zigbee灯具（如nexlamp的筒灯或射灯），这些灯具内置Zigbee路由功能，会自动加入Mesh网络充当中继节点</li>
+<p><strong>诊断方法</strong>：用APP查看掉线设备的&quot;路由路径&quot;，超过3跳就需要优化。</p>
+<p><strong>解决方法</strong>：</p>
+<ul>
+<li>在信号稀薄区域增加1~2个有源Zigbee灯具（如nexlamp的筒灯或射灯），这些灯具内置Zigbee路由功能，会自动加入Mesh网络充当中继节点</li>
 </ul>
-<hr></p>
+<hr>
 <h2>第四步：排查LED驱动电源问题</h2>
-<img src="../../images/blog-zigbee-troubleshoot-3.svg" alt="Zigbee故障诊断清单" loading="lazy">
+<p><img src="../../images/blog-zigbee-troubleshoot-3.svg" alt="Zigbee故障诊断清单"></p>
 <p>这个原因经常被用户忽视——<strong>LED驱动电源质量差，会导致Zigbee模组供电不稳定</strong>，进而引发周期性掉线。</p>
-<p>常见症状：
-<ul><li>灯具每隔几小时就掉线一次，重新上电就好</li>
+<p>常见症状：</p>
+<ul>
+<li>灯具每隔几小时就掉线一次，重新上电就好</li>
 <li>某些天气（如夏天高温）掉线更频繁</li>
 <li>同一批灯具，有些稳定有些掉线</li>
 </ul>
-<strong>根因</strong>：劣质驱动电源在温升或负载变化时，输出电压会偏移，导致Zigbee模组复位重启。</p>
-<p><strong>检查方法</strong>：
+<p><strong>根因</strong>：劣质驱动电源在温升或负载变化时，输出电压会偏移，导致Zigbee模组复位重启。</p>
+<p><strong>检查方法</strong>：</p>
+<ol>
 <li>用万用表测量驱动电源的12V/24V输出端，稳定灯具的输出电压应在额定值±5%以内</li>
-<li>掉线灯具的驱动输出如果抖动超过±10%，就是驱动问题</li></p>
-<p><strong>解决方法</strong>：更换符合标准的LED驱动电源。nexlamp的涂鸦Zigbee系列配套驱动均通过EMC认证，输出纹波<1%，不会因供电问题导致Zigbee掉线。</p>
+<li>掉线灯具的驱动输出如果抖动超过±10%，就是驱动问题</li>
+</ol>
+<p><strong>解决方法</strong>：更换符合标准的LED驱动电源。nexlamp的涂鸦Zigbee系列配套驱动均通过EMC认证，输出纹波&lt;1%，不会因供电问题导致Zigbee掉线。</p>
 <hr>
 <h2>第五步：强制重新配对</h2>
 <p>如果以上排查都没有发现问题，可以尝试强制重新配对：</p>
-<pre><code class="language-">1. 在APP中删除掉线设备
-<li>灯具断电，等待10秒</li>
-<li>重新上电，快速开关3次（或长按5秒）直到灯闪烁</li>
-<li>在APP中重新添加设备</li>
-<li>添加时确保手机靠近设备，入网成功后再移到原位</code></pre></li>
+<pre><code>1. 在APP中删除掉线设备
+2. 灯具断电，等待10秒
+3. 重新上电，快速开关3次（或长按5秒）直到灯闪烁
+4. 在APP中重新添加设备
+5. 添加时确保手机靠近设备，入网成功后再移到原位
+</code></pre>
 <p><strong>为什么这样有效</strong>？重新配对会让设备重新扫描并选择最优路由路径，解决因网络拓扑变化（如增减其他设备）导致的路由失效问题。</p>
 <hr>
 <h2>总结：掉线原因速查表</h2>
-<table><tr><th>症状</th><th>最可能原因</th><th>首选解法</th></tr>
-<tr><td>特定房间/区域的灯全掉线</td><td>信号覆盖不足</td><td>增加中继节点</td></tr>
-<tr><td>随机掉线，重启网关恢复</td><td>信道干扰</td><td>切换到CH25/CH26</td></tr>
-<tr><td>整套灯在同一时间掉线</td><td>网关问题/断网</td><td>检查网关和网络</td></tr>
-<tr><td>单个灯反复掉线</td><td>驱动电源不稳定</td><td>换驱动或重新配对</td></tr>
-<tr><td>新增设备后其他灯变不稳定</td><td>网络容量/跳数问题</td><td>优化网络拓扑</td></tr>
-</table>
+<table>
+<thead>
+<tr>
+<th>症状</th>
+<th>最可能原因</th>
+<th>首选解法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>特定房间/区域的灯全掉线</td>
+<td>信号覆盖不足</td>
+<td>增加中继节点</td>
+</tr>
+<tr>
+<td>随机掉线，重启网关恢复</td>
+<td>信道干扰</td>
+<td>切换到CH25/CH26</td>
+</tr>
+<tr>
+<td>整套灯在同一时间掉线</td>
+<td>网关问题/断网</td>
+<td>检查网关和网络</td>
+</tr>
+<tr>
+<td>单个灯反复掉线</td>
+<td>驱动电源不稳定</td>
+<td>换驱动或重新配对</td>
+</tr>
+<tr>
+<td>新增设备后其他灯变不稳定</td>
+<td>网络容量/跳数问题</td>
+<td>优化网络拓扑</td>
+</tr>
+</tbody></table>
 <hr>
 <p>Zigbee的稳定性本质上是<strong>网络规划问题</strong>，不是玄学。设备密度合理、信道干净、驱动供电稳定，Zigbee智能灯可以做到几年不掉线。</p>
 <p>如果你正在规划新装或改造智能照明，欢迎咨询nexlamp的Zigbee方案——我们提供从LED驱动电源到控制模组的完整解决方案，并提供网络规划建议。</p>
 <hr>
 <p><em>作者：nexlamp技术团队 | 联系：<a href="https://nexlamp.com">nexlamp.com</a></em></p>
+
                         </div>
                     </div>
                     <aside class="post-sidebar">

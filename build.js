@@ -3,7 +3,7 @@
 /**
  * Nexlamp Static Site Builder
  * Scans /posts/*.md and generates HTML blog pages
- * ZERO external dependencies - uses built-in Markdown parser
+ * Uses `marked` for safe Markdown parsing (XSS protection)
  *
  * Usage:
  *   node build.js                # Build all posts
@@ -22,6 +22,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { marked } = require('marked');
 
 // --- Configuration ---
 const POSTS_DIR = path.join(__dirname, 'posts');
@@ -29,96 +30,16 @@ const OUTPUT_DIR = path.join(__dirname, 'dist', 'blog');
 const TEMPLATE_FILE = path.join(__dirname, 'post.html');
 const BLOG_PAGE = path.join(__dirname, 'blog.html');
 
-// --- Simple Markdown Parser (no external deps) ---
+// --- Markdown Parser (using marked, with XSS protection) ---
 function parseMarkdown(md) {
-  let html = md.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  let content = md.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
 
-  // Code blocks (```lang ... ```)
-  html = html.replace(/```(\w*)\n([\s\S]*?)```/g, function (_, lang, code) {
-    const escaped = code.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    return '<pre><code class="language-' + lang + '">' + escaped.trim() + '</code></pre>';
-  });
-
-  // Inline code
-  html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
-
-  // Headings
-  html = html.replace(/^#### (.+)$/gm, '<h4>$1</h4>');
-  html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
-  html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
-  html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
-
-  // Remove first h1 to avoid duplicate with template {{title}}
-  html = html.replace(/<h1>.*?<\/h1>\n*/, '');
-
-  // Bold and italic
-  html = html.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
-  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-  html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
-
-  // Images (MUST be before links, because ![alt](url) contains [alt](url))
-  // Fix relative paths: Markdown uses "images/xxx" but blog HTML is in dist/blog/,
+  // Fix relative image paths: Markdown uses "images/xxx" but blog HTML is in dist/blog/,
   // so "images/" must become "../../images/" to resolve correctly
-  html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, function(match, alt, src) {
-    if (src.startsWith('images/')) {
-      src = '../../' + src;
-    }
-    return '<img src="' + src + '" alt="' + alt + '" loading="lazy">';
-  });
+  content = content.replace(/!\[([^\]]*)\]\(images\//g, '![$1](../../images/');
 
-  // Links
-  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
-
-  // Blockquotes
-  html = html.replace(/^> (.+)$/gm, '<blockquote><p>$1</p></blockquote>');
-
-  // Unordered lists
-  html = html.replace(/^[\-\*] (.+)$/gm, '<li>$1</li>');
-  html = html.replace(/((?:<li>.*<\/li>\n?)+)/g, '<ul>$1</ul>');
-
-  // Ordered lists
-  html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
-
-  // Horizontal rules
-  html = html.replace(/^---$/gm, '<hr>');
-
-  // Tables (improved)
-  const lines = html.split('\n');
-  const processedLines = [];
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-    const rowMatch = line.match(/^\|(.+)\|$/);
-    if (!rowMatch) {
-      processedLines.push(line);
-      continue;
-    }
-    const content = rowMatch[1];
-    // Check if next line is a separator (|---|---|)
-    const isHeader = (i + 1 < lines.length && lines[i + 1].match(/^\|[\s\-\|:]+\|$/));
-    // Check if current line IS a separator
-    if (content.match(/^[\s\-\|:]+$/)) {
-      // Skip separator rows entirely
-      continue;
-    }
-    const cells = content.split('|').map(function (c) { return c.trim(); });
-    const tag = isHeader ? 'th' : 'td';
-    processedLines.push('<tr>' + cells.map(function (c) { return '<' + tag + '>' + c + '</' + tag + '>'; }).join('') + '</tr>');
-  }
-  html = processedLines.join('\n');
-  // Pass 2: wrap consecutive <tr> rows into <table>
-  html = html.replace(/((?:<tr>.*<\/tr>\n?)+)/g, '<table>$1</table>');
-
-  // Paragraphs (lines that aren't already wrapped)
-  html = html.split('\n\n').map(function (block) {
-    block = block.trim();
-    if (!block) return '';
-    if (block.match(/^<(h[1-6]|ul|ol|li|pre|blockquote|table|tr|td|th|hr|img)/)) return block;
-    return '<p>' + block + '</p>';
-  }).join('\n');
-
-  // Clean up empty paragraphs
-  html = html.replace(/<p>\s*<\/p>/g, '');
-
+  // Use marked for safe HTML generation (auto-escapes HTML in markdown)
+  const html = marked.parse(content);
   return html;
 }
 
@@ -194,6 +115,9 @@ function buildPost(filePath, template) {
   // Build related posts list (placeholder)
   const relatedHtml = '<li><a href="../../blog.html">\u6D4F\u89C8\u6240\u6709\u6587\u7AE0</a></li>';
 
+  // Remove first h1 to avoid duplicate with template {{title}}
+  let finalContent = htmlContent.replace(/<h1>.*?<\/h1>\n*/, '');
+
   // Replace template placeholders
   let output = template
     .replace(/\{\{title\}\}/g, meta.title)
@@ -205,7 +129,7 @@ function buildPost(filePath, template) {
     .replace(/\{\{category\}\}/g, meta.category)
     .replace(/\{\{cover\}\}/g, meta.cover || 'images/blog-default.jpg')
     .replace(/\{\{coverImage\}\}/g, coverHtml)
-    .replace(/\{\{content\}\}/g, htmlContent)
+    .replace(/\{\{content\}\}/g, finalContent)
     .replace(/\{\{relatedPosts\}\}/g, relatedHtml);
 
   // Write output
@@ -218,7 +142,7 @@ function buildPost(filePath, template) {
 
 // --- Main Build ---
 function build() {
-  console.log('\n\uD83D\uDD28 Nexlamp Static Site Builder');
+  console.log('\uD83D\uDD28 Nexlamp Static Site Builder');
   console.log('================================\n');
 
   // Ensure output directory exists
@@ -330,7 +254,7 @@ function generateSitemap(posts) {
 
 // --- Watch Mode ---
 function watch() {
-  console.log('\n\uD83D\uDC40 Watching /posts/ for changes... (Ctrl+C to stop)\n');
+  console.log('\uD83D\uDC40 Watching /posts/ for changes... (Ctrl+C to stop)\n');
   build();
 
   let debounceTimer = null;
@@ -355,7 +279,7 @@ if (args.includes('--watch') || args.includes('-w')) {
   console.log('Options:');
   console.log('  --watch, -w    Watch for changes and rebuild');
   console.log('  --help, -h     Show this help\n');
-  console.log('No external dependencies required.\n');
+  console.log('Uses marked for safe Markdown parsing.\n');
 } else {
   build();
 }

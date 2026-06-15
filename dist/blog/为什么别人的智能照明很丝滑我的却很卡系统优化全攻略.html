@@ -145,77 +145,134 @@
                         <div class="post-content">
                             <div class="post-cover"><img src="../../images/blog-smart-lighting-optimization-cover.png" alt="为什么别人的智能照明很丝滑，我的却很卡？系统优化全攻略"></div>
                             <h2>引言</h2>
-<p>装了一屋子智能灯，满怀期待地喊一声"开灯"——结果等了1秒灯才亮。别人家的智能灯响应丝滑无感，你家却像在看PPT。问题出在哪？</p>
-<p><strong>90%的"卡"不是设备问题，而是系统问题。</strong> 智能照明是一个"云-网-关-端"的链路，任何一个环节拖后腿，整个体验都会崩。这篇文章从延迟的根源出发，帮你逐一定位并解决。</p>
+<p>装了一屋子智能灯，满怀期待地喊一声&quot;开灯&quot;——结果等了1秒灯才亮。别人家的智能灯响应丝滑无感，你家却像在看PPT。问题出在哪？</p>
+<p><strong>90%的&quot;卡&quot;不是设备问题，而是系统问题。</strong> 智能照明是一个&quot;云-网-关-端&quot;的链路，任何一个环节拖后腿，整个体验都会崩。这篇文章从延迟的根源出发，帮你逐一定位并解决。</p>
 <h2>第一步：理解延迟从哪来</h2>
-<img src="../../images/blog-smart-lighting-latency-bottleneck.svg" alt="延迟瓶颈定位" loading="lazy">
+<p><img src="../../images/blog-smart-lighting-latency-bottleneck.svg" alt="延迟瓶颈定位"></p>
 <p>一条灯光控制指令从你的手机到灯泡亮起，典型路径是：</p>
 <p><strong>手机APP → 云端服务器 → 网关 → 无线网络 → 灯泡执行</strong></p>
 <p>每个环节都有延迟，最慢的那个就是瓶颈：</p>
-<table><tr><th>环节</th><th>典型延迟</th><th>优化空间</th></tr>
-<tr><td>云端往返</td><td>300-800ms</td><td>★★★★★ 启用本地执行</td></tr>
-<tr><td>网关转发</td><td>20-80ms</td><td>★★★ 网关升级/合理负载</td></tr>
-<tr><td>无线传输</td><td>10-50ms</td><td>★★★★ 网络优化</td></tr>
-<tr><td>设备执行</td><td>10-50ms</td><td>★★ 固件升级</td></tr>
-</table>
-<strong>结论：如果你的指令每次都绕行云端，光是云端往返就吃掉500ms+，这就是"卡"的元凶。</strong>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th>典型延迟</th>
+<th>优化空间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>云端往返</td>
+<td>300-800ms</td>
+<td>★★★★★ 启用本地执行</td>
+</tr>
+<tr>
+<td>网关转发</td>
+<td>20-80ms</td>
+<td>★★★ 网关升级/合理负载</td>
+</tr>
+<tr>
+<td>无线传输</td>
+<td>10-50ms</td>
+<td>★★★★ 网络优化</td>
+</tr>
+<tr>
+<td>设备执行</td>
+<td>10-50ms</td>
+<td>★★ 固件升级</td>
+</tr>
+</tbody></table>
+<p><strong>结论：如果你的指令每次都绕行云端，光是云端往返就吃掉500ms+，这就是&quot;卡&quot;的元凶。</strong></p>
 <h2>瓶颈一：云端依赖——最大的延迟杀手</h2>
 <h3>问题本质</h3>
-<p>大部分轻智能设备（Wi-Fi灯泡、智能插座）的控制逻辑跑在云端。你说"开灯"，指令先飞到云端服务器，云端解析后再飞回来。哪怕网络再好，这个往返也至少300ms起，遇上服务器负载高或网络波动，1-2秒都正常。</p>
+<p>大部分轻智能设备（Wi-Fi灯泡、智能插座）的控制逻辑跑在云端。你说&quot;开灯&quot;，指令先飞到云端服务器，云端解析后再飞回来。哪怕网络再好，这个往返也至少300ms起，遇上服务器负载高或网络波动，1-2秒都正常。</p>
 <h3>解决方案：启用本地场景执行</h3>
 <p>如果你的系统有网关（如涂鸦网关、Home Assistant），一定要把联动场景配置为<strong>本地执行</strong>：</p>
-<ul><li><strong>涂鸦生态</strong>：在APP中创建"智能场景"时选择"本地执行"（需网关支持）</li>
+<ul>
+<li><strong>涂鸦生态</strong>：在APP中创建&quot;智能场景&quot;时选择&quot;本地执行&quot;（需网关支持）</li>
 <li><strong>Home Assistant</strong>：所有自动化默认本地运行，天然优势</li>
 <li><strong>Matter协议</strong>：设备原生支持本地发现与控制，无需云端中转</li>
 </ul>
-本地执行后，延迟从500ms+直接降到30-100ms，<strong>这是性价比最高的优化手段，没有之一。</strong>
+<p>本地执行后，延迟从500ms+直接降到30-100ms，<strong>这是性价比最高的优化手段，没有之一。</strong></p>
 <h2>瓶颈二：2.4G Wi-Fi 拥塞——最常见的隐形坑</h2>
 <h3>问题本质</h3>
-<p>几乎所有智能家居设备都工作在2.4GHz频段。你的路由器、邻居的路由器、蓝牙设备、微波炉都在抢占这个频段。当信道拥堵时，丢包率飙升，设备频繁重传，表现就是"时灵时不灵"。</p>
+<p>几乎所有智能家居设备都工作在2.4GHz频段。你的路由器、邻居的路由器、蓝牙设备、微波炉都在抢占这个频段。当信道拥堵时，丢包率飙升，设备频繁重传，表现就是&quot;时灵时不灵&quot;。</p>
 <h3>解决方案</h3>
+<ol>
 <li><strong>换Wi-Fi 6路由器</strong>：Wi-Fi 6的OFDMA和BSS Coloring技术显著降低多设备场景下的干扰和延迟</li>
 <li><strong>手动选信道</strong>：用Wi-Fi分析工具（如Wi-Fi Analyzer）扫描，选最空闲的1/6/11信道</li>
 <li><strong>Mesh组网</strong>：大户型单路由覆盖不足时，用Mesh扩展覆盖，但注意下一节的拓扑优化</li>
 <li><strong>隔离IoT网络</strong>：给智能设备单独的SSID/VLAN，减少与手机电脑的带宽竞争</li>
+</ol>
 <h2>瓶颈三：网关过载——被忽视的性能瓶颈</h2>
 <h3>问题本质</h3>
-<p>很多人一个网关带40-50个设备，觉得"还能连上"就没问题。但网关的CPU和内存是有限的——设备数超过一定阈值后，处理每条指令的耗时开始线性增加，联动的实时性急剧下降。</p>
+<p>很多人一个网关带40-50个设备，觉得&quot;还能连上&quot;就没问题。但网关的CPU和内存是有限的——设备数超过一定阈值后，处理每条指令的耗时开始线性增加，联动的实时性急剧下降。</p>
 <h3>解决方案</h3>
-<ul><li><strong>单网关建议≤32个设备</strong>（Zigbee规范建议上限）</li>
+<ul>
+<li><strong>单网关建议≤32个设备</strong>（Zigbee规范建议上限）</li>
 <li><strong>网关居中放置</strong>：确保到各设备的信号质量均衡</li>
 <li><strong>多网关分区</strong>：大户型按楼层/区域部署多个网关，各自管理本地设备</li>
 <li><strong>固件保持最新</strong>：厂商经常在固件中优化调度算法和内存管理</li>
 </ul>
 <h2>瓶颈四：Mesh拓扑过深——延迟叠加的陷阱</h2>
-<img src="../../images/blog-smart-lighting-topology.svg" alt="网络拓扑优化方案" loading="lazy">
+<p><img src="../../images/blog-smart-lighting-topology.svg" alt="网络拓扑优化方案"></p>
 <h3>问题本质</h3>
 <p>Zigbee设备之间会自动组Mesh网，信号弱的设备会通过其他设备中继。每增加一跳，延迟增加30-80ms。如果一个灯泡距离网关3跳，光是无线传输就吃了100-240ms。</p>
 <h3>解决方案</h3>
-<ul><li><strong>控制跳数≤2</strong>：通过合理放置网关和补充路由器节点（Zigbee Router），减少必要的跳数</li>
+<ul>
+<li><strong>控制跳数≤2</strong>：通过合理放置网关和补充路由器节点（Zigbee Router），减少必要的跳数</li>
 <li><strong>有线回程</strong>：Mesh组网时优先用有线回程连接节点，无线回程会叠加延迟</li>
 <li><strong>补充常电设备</strong>：常电Zigbee设备（如智能插座）天然充当中继节点，合理分布可优化路由路径</li>
-<li><strong>定期重建拓扑</strong>：部分网关支持"重建Mesh"功能，可优化路由表</li>
+<li><strong>定期重建拓扑</strong>：部分网关支持&quot;重建Mesh&quot;功能，可优化路由表</li>
 </ul>
 <h2>瓶颈五：固件老旧——效率的隐性损耗</h2>
 <h3>问题本质</h3>
 <p>旧固件可能使用低效的通信协议栈、未优化的调度算法，甚至存在已知的延迟bug。很多用户装好设备从不升级固件，白白浪费了厂商的优化成果。</p>
 <h3>解决方案</h3>
-<ul><li><strong>定期检查OTA升级</strong>：每月检查一次设备固件更新</li>
+<ul>
+<li><strong>定期检查OTA升级</strong>：每月检查一次设备固件更新</li>
 <li><strong>Zigbee 3.0迁移</strong>：如果设备还跑在Zigbee 1.2上，升级到3.0能显著改善组网效率</li>
 <li><strong>Matter就绪</strong>：新购设备优先选Matter协议，本地控制+跨生态兼容</li>
 </ul>
 <h2>优化效果总结</h2>
-<img src="../../images/blog-smart-lighting-optimization.svg" alt="系统优化全攻略" loading="lazy">
-<table><tr><th>优化措施</th><th>延迟改善</th><th>实施难度</th></tr>
-<tr><td>启用本地场景执行</td><td>500ms+→30-100ms</td><td>★☆☆☆☆</td></tr>
-<tr><td>Wi-Fi 6+信道优化</td><td>丢包率降80%</td><td>★★☆☆☆</td></tr>
-<tr><td>网关分区+居中放置</td><td>响应提速3-5倍</td><td>★★☆☆☆</td></tr>
-<tr><td>Mesh拓扑≤2跳</td><td>延迟降60%</td><td>★★★☆☆</td></tr>
-<tr><td>固件/协议升级</td><td>效率提升20-40%</td><td>★☆☆☆☆</td></tr>
-</table>
-<strong>综合优化后，端到端延迟从500ms+降至30-80ms——从"明显卡顿"变成"几乎无感"。</strong>
+<p><img src="../../images/blog-smart-lighting-optimization.svg" alt="系统优化全攻略"></p>
+<table>
+<thead>
+<tr>
+<th>优化措施</th>
+<th>延迟改善</th>
+<th>实施难度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>启用本地场景执行</td>
+<td>500ms+→30-100ms</td>
+<td>★☆☆☆☆</td>
+</tr>
+<tr>
+<td>Wi-Fi 6+信道优化</td>
+<td>丢包率降80%</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>网关分区+居中放置</td>
+<td>响应提速3-5倍</td>
+<td>★★☆☆☆</td>
+</tr>
+<tr>
+<td>Mesh拓扑≤2跳</td>
+<td>延迟降60%</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td>固件/协议升级</td>
+<td>效率提升20-40%</td>
+<td>★☆☆☆☆</td>
+</tr>
+</tbody></table>
+<p><strong>综合优化后，端到端延迟从500ms+降至30-80ms——从&quot;明显卡顿&quot;变成&quot;几乎无感&quot;。</strong></p>
 <h2>结语</h2>
-<p>智能照明"卡"不是设备不行，是系统没调好。先定位瓶颈（云端？网络？网关？拓扑？固件？），再针对性优化，效果立竿见影。如果只能做一件事——<strong>先把本地场景执行开起来</strong>，这是投入产出比最高的优化。</p>
+<p>智能照明&quot;卡&quot;不是设备不行，是系统没调好。先定位瓶颈（云端？网络？网关？拓扑？固件？），再针对性优化，效果立竿见影。如果只能做一件事——<strong>先把本地场景执行开起来</strong>，这是投入产出比最高的优化。</p>
+
                         </div>
                     </div>
                     <aside class="post-sidebar">

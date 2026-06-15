@@ -148,79 +148,202 @@
 <h3>1. 电气参数匹配</h3>
 <h4>输出功率</h4>
 <p>LED驱动电源的额定功率应大于灯具总功率的1.2倍，预留适当余量：</p>
-<pre><code class="language-">驱动电源功率 ≥ 灯具功率 × 1.2</code></pre>
+<pre><code>驱动电源功率 ≥ 灯具功率 × 1.2
+</code></pre>
 <p>例如：10W的LED灯具，建议选择12W及以上的驱动电源。</p>
 <h4>输出电流</h4>
 <p>恒流驱动电源的输出电流必须与LED模组的工作电流匹配：</p>
-<table><tr><th>LED类型</th><th>典型工作电流</th><th>建议驱动电流</th></tr>
-<tr><td>小功率LED (0.1W)</td><td>20-30mA</td><td>25mA</td></tr>
-<tr><td>中功率LED (0.5W)</td><td>100-150mA</td><td>120mA</td></tr>
-<tr><td>大功率LED (1-3W)</td><td>300-700mA</td><td>350mA/700mA</td></tr>
-<tr><td>COB模组</td><td>500mA-1A</td><td>根据规格书</td></tr>
-</table>
+<table>
+<thead>
+<tr>
+<th>LED类型</th>
+<th>典型工作电流</th>
+<th>建议驱动电流</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>小功率LED (0.1W)</td>
+<td>20-30mA</td>
+<td>25mA</td>
+</tr>
+<tr>
+<td>中功率LED (0.5W)</td>
+<td>100-150mA</td>
+<td>120mA</td>
+</tr>
+<tr>
+<td>大功率LED (1-3W)</td>
+<td>300-700mA</td>
+<td>350mA/700mA</td>
+</tr>
+<tr>
+<td>COB模组</td>
+<td>500mA-1A</td>
+<td>根据规格书</td>
+</tr>
+</tbody></table>
 <h4>输出电压范围</h4>
 <p>驱动电源的输出电压范围必须覆盖LED灯具的工作电压：</p>
-<pre><code class="language-">Vout_min ≤ Vled ≤ Vout_max</code></pre>
+<pre><code>Vout_min ≤ Vled ≤ Vout_max
+</code></pre>
 <h3>2. 调光协议选择</h3>
-<table><tr><th>协议</th><th>调光范围</th><th>适用场景</th><th>成本</th></tr>
-<tr><td>0-10V</td><td>1-100%</td><td>商业照明</td><td>低</td></tr>
-<tr><td>PWM</td><td>0.1-100%</td><td>智能照明</td><td>中</td></tr>
-<tr><td>DALI-2</td><td>0.1-100%</td><td>大型项目</td><td>高</td></tr>
-<tr><td>可控硅</td><td>10-100%</td><td>传统改造</td><td>低</td></tr>
-<tr><td>蓝牙Mesh</td><td>0.1-100%</td><td>智能家居</td><td>中</td></tr>
-</table>
+<table>
+<thead>
+<tr>
+<th>协议</th>
+<th>调光范围</th>
+<th>适用场景</th>
+<th>成本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0-10V</td>
+<td>1-100%</td>
+<td>商业照明</td>
+<td>低</td>
+</tr>
+<tr>
+<td>PWM</td>
+<td>0.1-100%</td>
+<td>智能照明</td>
+<td>中</td>
+</tr>
+<tr>
+<td>DALI-2</td>
+<td>0.1-100%</td>
+<td>大型项目</td>
+<td>高</td>
+</tr>
+<tr>
+<td>可控硅</td>
+<td>10-100%</td>
+<td>传统改造</td>
+<td>低</td>
+</tr>
+<tr>
+<td>蓝牙Mesh</td>
+<td>0.1-100%</td>
+<td>智能家居</td>
+<td>中</td>
+</tr>
+</tbody></table>
 <h3>3. 防护等级(IP代码)</h3>
-<table><tr><th>应用场景</th><th>推荐IP等级</th><th>说明</th></tr>
-<tr><td>室内办公</td><td>IP20</td><td>防尘，无防水</td></tr>
-<tr><td>商业店铺</td><td>IP40</td><td>防大于1mm固体</td></tr>
-<tr><td>厨房/浴室</td><td>IP54</td><td>防尘防溅水</td></tr>
-<tr><td>户外照明</td><td>IP65/IP66</td><td>防尘防喷水</td></tr>
-<tr><td>水下/泳池</td><td>IP68</td><td>持续潜水</td></tr>
-</table>
+<table>
+<thead>
+<tr>
+<th>应用场景</th>
+<th>推荐IP等级</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>室内办公</td>
+<td>IP20</td>
+<td>防尘，无防水</td>
+</tr>
+<tr>
+<td>商业店铺</td>
+<td>IP40</td>
+<td>防大于1mm固体</td>
+</tr>
+<tr>
+<td>厨房/浴室</td>
+<td>IP54</td>
+<td>防尘防溅水</td>
+</tr>
+<tr>
+<td>户外照明</td>
+<td>IP65/IP66</td>
+<td>防尘防喷水</td>
+</tr>
+<tr>
+<td>水下/泳池</td>
+<td>IP68</td>
+<td>持续潜水</td>
+</tr>
+</tbody></table>
 <h2>安装环境考量</h2>
 <h3>温度因素</h3>
 <p>驱动电源的工作温度范围直接影响寿命：</p>
-<ul><li><strong>标准型</strong>: -20℃~+50℃</li>
+<ul>
+<li><strong>标准型</strong>: -20℃~+50℃</li>
 <li><strong>工业级</strong>: -40℃~+70℃</li>
 <li><strong>高温型</strong>: -20℃~+80℃</li>
 </ul>
-<strong>温度降额使用原则：</strong>
-环境温度每升高10℃，驱动电源寿命约减半。建议在最高环境温度下保留20%功率余量。
+<p><strong>温度降额使用原则：</strong>
+环境温度每升高10℃，驱动电源寿命约减半。建议在最高环境温度下保留20%功率余量。</p>
 <h3>散热设计</h3>
-<li><strong>自然散热</strong></li>
-   - 适用于小功率(<30W)
-   - 需要良好的空气流通
-   - 避免密闭安装
-<li><strong>强制散热</strong></li>
-   - 适用于大功率(>50W)
-   - 配合散热片或风扇
-   - 注意防尘维护
+<ol>
+<li><p><strong>自然散热</strong></p>
+<ul>
+<li>适用于小功率(&lt;30W)</li>
+<li>需要良好的空气流通</li>
+<li>避免密闭安装</li>
+</ul>
+</li>
+<li><p><strong>强制散热</strong></p>
+<ul>
+<li>适用于大功率(&gt;50W)</li>
+<li>配合散热片或风扇</li>
+<li>注意防尘维护</li>
+</ul>
+</li>
+</ol>
 <h2>认证要求</h2>
 <h3>国内认证</h3>
-<ul><li><strong>3C认证</strong>：强制性产品认证，所有在国内销售的LED驱动电源必须通过</li>
+<ul>
+<li><strong>3C认证</strong>：强制性产品认证，所有在国内销售的LED驱动电源必须通过</li>
 <li><strong>CQC认证</strong>：自愿性认证，品质保证</li>
 </ul>
 <h3>国际认证</h3>
-<table><tr><th>认证</th><th>适用地区</th><th>说明</th></tr>
-<tr><td>CE</td><td>欧盟</td><td>安全+EMC</td></tr>
-<tr><td>UL</td><td>北美</td><td>安全认证</td></tr>
-<tr><td>ETL</td><td>北美</td><td>互认认证</td></tr>
-<tr><td>SAA</td><td>澳洲</td><td>安全认证</td></tr>
-<tr><td>PSE</td><td>日本</td><td>强制性安全</td></tr>
-</table>
+<table>
+<thead>
+<tr>
+<th>认证</th>
+<th>适用地区</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CE</td>
+<td>欧盟</td>
+<td>安全+EMC</td>
+</tr>
+<tr>
+<td>UL</td>
+<td>北美</td>
+<td>安全认证</td>
+</tr>
+<tr>
+<td>ETL</td>
+<td>北美</td>
+<td>互认认证</td>
+</tr>
+<tr>
+<td>SAA</td>
+<td>澳洲</td>
+<td>安全认证</td>
+</tr>
+<tr>
+<td>PSE</td>
+<td>日本</td>
+<td>强制性安全</td>
+</tr>
+</tbody></table>
 <h2>选型检查清单</h2>
-<ul><li>[ ] 确认LED灯具的额定功率和工作电流</li>
-<li>[ ] 计算所需驱动电源功率（×1.2倍余量）</li>
-<li>[ ] 确定调光需求和协议类型</li>
-<li>[ ] 评估安装环境的IP等级要求</li>
-<li>[ ] 确认工作温度范围</li>
-<li>[ ] 检查所需认证（3C/CE/UL等）</li>
-<li>[ ] 确认输入电压范围（AC 85-265V或特定电压）</li>
-<li>[ ] 评估尺寸和安装方式</li>
-<li>[ ] 确认质保期和供应商服务</li>
+<ul>
+<li><input disabled="" type="checkbox"> 确认LED灯具的额定功率和工作电流</li>
+<li><input disabled="" type="checkbox"> 计算所需驱动电源功率（×1.2倍余量）</li>
+<li><input disabled="" type="checkbox"> 确定调光需求和协议类型</li>
+<li><input disabled="" type="checkbox"> 评估安装环境的IP等级要求</li>
+<li><input disabled="" type="checkbox"> 确认工作温度范围</li>
+<li><input disabled="" type="checkbox"> 检查所需认证（3C/CE/UL等）</li>
+<li><input disabled="" type="checkbox"> 确认输入电压范围（AC 85-265V或特定电压）</li>
+<li><input disabled="" type="checkbox"> 评估尺寸和安装方式</li>
+<li><input disabled="" type="checkbox"> 确认质保期和供应商服务</li>
 </ul>
 <h2>常见问题</h2>
-<p><script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -275,9 +398,10 @@
     }
   ]
 }
-</script></p>
+</script>
+
 <h3>Q: 驱动电源功率选大了会损坏LED吗？</h3>
-<p>A: 恒流驱动电源不会。恒流电源会自动调整输出电压以维持设定电流。但功率余量过大（>2倍）会造成效率降低和成本浪费。</p>
+<p>A: 恒流驱动电源不会。恒流电源会自动调整输出电压以维持设定电流。但功率余量过大（&gt;2倍）会造成效率降低和成本浪费。</p>
 <h3>Q: 可以混用不同品牌的DALI-2设备吗？</h3>
 <p>A: DALI-2协议保证了基本的互操作性，但高级功能可能因厂商实现不同而有差异。建议关键项目做兼容性测试。</p>
 <h3>Q: 户外驱动电源必须选IP67吗？</h3>
@@ -287,16 +411,44 @@
 <h3>Q: LED驱动电源坏了可以维修吗？</h3>
 <p>A: 一般<strong>不建议维修，直接更换更安全经济</strong>。驱动电源内部涉及高压电路和精密元器件，自行拆解维修存在安全风险，且维修后性能和可靠性难以保证。正规品牌驱动电源价格不高，更换新品更省时省力，也能获得完整的质保服务。</p>
 <h3>Q: 驱动电源的功率因数(PF)重要吗？</h3>
-<p>A: 功率因数对大功率驱动电源很重要。根据国际标准，<strong>功率大于25W的LED驱动电源必须满足PF>0.9的要求</strong>；25W以下的小功率驱动电源对PF要求较低。功率因数低会导致无功功率增大，增加电网负担，在大型照明项目中可能产生额外电费。选型时大功率场合务必关注PF值。</p>
+<p>A: 功率因数对大功率驱动电源很重要。根据国际标准，<strong>功率大于25W的LED驱动电源必须满足PF&gt;0.9的要求</strong>；25W以下的小功率驱动电源对PF要求较低。功率因数低会导致无功功率增大，增加电网负担，在大型照明项目中可能产生额外电费。选型时大功率场合务必关注PF值。</p>
 <h2>推荐方案</h2>
-<table><tr><th>应用场景</th><th>推荐方案</th><th>参考型号</th></tr>
-<tr><td>办公室面板灯</td><td>0-10V调光/36W/IP20</td><td>NL-36V-0-10V</td></tr>
-<tr><td>商场筒灯</td><td>DALI-2/24W/IP20</td><td>NL-24D-DALI2</td></tr>
-<tr><td>工矿灯</td><td>1-10V/150W/IP65</td><td>NL-150H-1-10V</td></tr>
-<tr><td>路灯</td><td>定时调光/100W/IP66</td><td>NL-100S-Timer</td></tr>
-<tr><td>智能家居</td><td>蓝牙Mesh/12W/IP20</td><td>NL-12B-BLE</td></tr>
-</table>
-如需具体型号的技术规格书或样品支持，请联系我们的销售团队。
+<table>
+<thead>
+<tr>
+<th>应用场景</th>
+<th>推荐方案</th>
+<th>参考型号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>办公室面板灯</td>
+<td>0-10V调光/36W/IP20</td>
+<td>NL-36V-0-10V</td>
+</tr>
+<tr>
+<td>商场筒灯</td>
+<td>DALI-2/24W/IP20</td>
+<td>NL-24D-DALI2</td>
+</tr>
+<tr>
+<td>工矿灯</td>
+<td>1-10V/150W/IP65</td>
+<td>NL-150H-1-10V</td>
+</tr>
+<tr>
+<td>路灯</td>
+<td>定时调光/100W/IP66</td>
+<td>NL-100S-Timer</td>
+</tr>
+<tr>
+<td>智能家居</td>
+<td>蓝牙Mesh/12W/IP20</td>
+<td>NL-12B-BLE</td>
+</tr>
+</tbody></table>
+<p>如需具体型号的技术规格书或样品支持，请联系我们的销售团队。</p>
+
                         </div>
                     </div>
                     <aside class="post-sidebar">

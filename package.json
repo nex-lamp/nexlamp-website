@@ -21,7 +21,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "marked": "^12.0.0"
+    "marked": "^12.0.2"
   },
   "devDependencies": {
     "express": "^4.18.0",

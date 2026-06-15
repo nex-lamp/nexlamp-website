@@ -1,4 +1,19 @@
-zhihu_*.py
+# === Security: Credentials & Secrets ===
 *_push*.py
 *push*.py
 api_push.py
+*.env
+.env
+juejin_cookies.json
+zhihu_auth_state.json
+linkedin_auth_state.json
+*_auth_state.json
+
+# === Build artifacts ===
+dist/
+node_modules/
+
+# === Platform publish scripts (contain API keys) ===
+publish_devto*.py
+publish_zhihu*.py
+publish_juejin*.py

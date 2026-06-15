@@ -22,7 +22,11 @@ const crypto = require('crypto');
 // ========================================
 const CONFIG = {
     // Security: Use environment variable in production
-    secret: process.env.WEBHOOK_SECRET || 'NEXLAMP_SECURE_TOKEN_2026',
+    secret: (() => {
+        const s = process.env.WEBHOOK_SECRET;
+        if (!s) { console.error('FATAL: WEBHOOK_SECRET environment variable is required'); process.exit(1); }
+        return s;
+    })(),
     
     // Content directory
     postsDir: process.env.POSTS_DIR || path.join(__dirname, 'posts'),
@@ -37,7 +41,7 @@ const CONFIG = {
     
     // Company info (for logging)
     company: 'Nexlamp Technology Co., Ltd.',
-    phone: '13825496855'
+    phone: process.env.COMPANY_PHONE || ''
 };
 
 // ========================================
@@ -92,7 +96,7 @@ function verifySignature(payload, signature, secret) {
  * Validate request origin
  */
 function validateOrigin(origin) {
-    if (!origin) return true; // Allow requests without origin (e.g., curl)
+    if (!origin) return false; // Reject requests without Origin header
     return CONFIG.allowedOrigins.includes(origin);
 }
 
@@ -179,7 +183,7 @@ async function handleWebhook(req, res) {
     // Set CORS headers
     const origin = req.headers.origin;
     if (validateOrigin(origin)) {
-        res.setHeader('Access-Control-Allow-Origin', origin || '*');
+        res.setHeader('Access-Control-Allow-Origin', origin || 'null');
         res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
         res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Webhook-Signature, Authorization');
     }
@@ -420,7 +424,7 @@ if (require.main === module) {
             console.log(`📡 Webhook endpoint: http://localhost:${port}/webhook/new-content`);
             console.log(`🏥 Health check: http://localhost:${port}/health`);
             console.log(`\n📁 Posts directory: ${CONFIG.postsDir}`);
-            console.log(`🔒 Secret: ${CONFIG.secret.substring(0, 8)}...`);
+            console.log('🔒 Secret: loaded from environment variable');
             console.log(`\nExample curl command:`);
             console.log(`curl -X POST http://localhost:${port}/webhook/new-content \\
   -H "Content-Type: application/json" \\

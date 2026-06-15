@@ -146,57 +146,102 @@
                             
                             <h2>三层架构模型</h2>
 <p>物联网照明系统通常采用三层架构，从下至上分别为：</p>
+<ol>
 <li><strong>设备层</strong>（感知与执行）</li>
 <li><strong>网关层</strong>（边缘计算与协议转换）</li>
 <li><strong>平台层</strong>（数据管理与业务逻辑）</li>
+</ol>
 <h2>设备层设计</h2>
 <h3>LED驱动电源</h3>
 <p>设备层的基础是LED驱动电源，它既是执行器（控制亮度），也是传感器（上报状态）：</p>
-<ul><li><strong>控制通道</strong>：接收调光指令，执行亮度调节</li>
+<ul>
+<li><strong>控制通道</strong>：接收调光指令，执行亮度调节</li>
 <li><strong>状态上报</strong>：电流、电压、温度、运行时长</li>
 <li><strong>故障检测</strong>：过压、过流、过温、开路、短路</li>
 </ul>
 <h3>传感器节点</h3>
-<ul><li>微波雷达传感器：存在检测</li>
+<ul>
+<li>微波雷达传感器：存在检测</li>
 <li>环境光传感器：恒照度控制</li>
 <li>人体红外传感器：触发控制</li>
 </ul>
 <h3>通信协议选择</h3>
-<table><tr><th>协议</th><th>延迟</th><th>功耗</th><th>节点数</th><th>适用场景</th></tr>
-<tr><td>DALI-2</td><td><5ms</td><td>低</td><td>64</td><td>室内精准控光</td></tr>
-<tr><td>Zigbee 3.0</td><td>50-200ms</td><td>极低</td><td>32767</td><td>大规模无线</td></tr>
-<tr><td>BLE Mesh</td><td>30-100ms</td><td>低</td><td>32767</td><td>快速部署</td></tr>
-<tr><td>LoRa</td><td>1-3s</td><td>极低</td><td>10000+</td><td>户外远距</td></tr>
-</table>
+<table>
+<thead>
+<tr>
+<th>协议</th>
+<th>延迟</th>
+<th>功耗</th>
+<th>节点数</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DALI-2</td>
+<td>&lt;5ms</td>
+<td>低</td>
+<td>64</td>
+<td>室内精准控光</td>
+</tr>
+<tr>
+<td>Zigbee 3.0</td>
+<td>50-200ms</td>
+<td>极低</td>
+<td>32767</td>
+<td>大规模无线</td>
+</tr>
+<tr>
+<td>BLE Mesh</td>
+<td>30-100ms</td>
+<td>低</td>
+<td>32767</td>
+<td>快速部署</td>
+</tr>
+<tr>
+<td>LoRa</td>
+<td>1-3s</td>
+<td>极低</td>
+<td>10000+</td>
+<td>户外远距</td>
+</tr>
+</tbody></table>
 <h2>网关层设计</h2>
 <p>网关是连接设备层和平台层的桥梁，核心功能：</p>
+<ol>
 <li><strong>协议转换</strong>：DALI-2 ↔ IP，Zigbee ↔ IP</li>
 <li><strong>边缘计算</strong>：本地场景控制、定时任务、联动规则</li>
 <li><strong>数据缓存</strong>：断网时本地存储，恢复后上报</li>
 <li><strong>OTA升级</strong>：对设备层进行固件升级</li>
-<blockquote><p>网关的<strong>边缘计算能力</strong>是保证系统可靠性的关键——即使云平台不可达，本地场景和定时任务仍可正常执行。</p></blockquote>
+</ol>
+<blockquote>
+<p>网关的<strong>边缘计算能力</strong>是保证系统可靠性的关键——即使云平台不可达，本地场景和定时任务仍可正常执行。</p>
+</blockquote>
 <h2>平台层设计</h2>
 <h3>核心模块</h3>
-<ul><li><strong>设备管理</strong>：注册、配置、状态监控</li>
+<ul>
+<li><strong>设备管理</strong>：注册、配置、状态监控</li>
 <li><strong>场景管理</strong>：场景创建、定时调度、联动规则</li>
 <li><strong>数据分析</strong>：能耗统计、故障预警、优化建议</li>
 <li><strong>用户管理</strong>：权限控制、操作审计</li>
 </ul>
 <h3>技术选型</h3>
-<ul><li><strong>数据库</strong>：时序数据库（InfluxDB/TDengine）存储设备状态</li>
+<ul>
+<li><strong>数据库</strong>：时序数据库（InfluxDB/TDengine）存储设备状态</li>
 <li><strong>消息队列</strong>：MQTT/EMQX处理设备上报数据</li>
 <li><strong>API网关</strong>：RESTful API + WebSocket</li>
 <li><strong>前端</strong>：Web管理后台 + 移动APP</li>
 </ul>
 <h2>安全设计</h2>
-<ul><li><strong>传输加密</strong>：TLS 1.3全链路加密</li>
+<ul>
+<li><strong>传输加密</strong>：TLS 1.3全链路加密</li>
 <li><strong>设备认证</strong>：一机一密 + 证书双向认证</li>
 <li><strong>访问控制</strong>：RBAC权限模型</li>
 <li><strong>数据脱敏</strong>：敏感数据加密存储</li>
 </ul>
 <h2>部署建议</h2>
-<p>对于中小规模项目（<1000个节点），建议采用<strong>一体机部署</strong>方案——将网关和平台功能集成在一台边缘服务器上，降低部署复杂度和成本。</p>
+<p>对于中小规模项目（&lt;1000个节点），建议采用<strong>一体机部署</strong>方案——将网关和平台功能集成在一台边缘服务器上，降低部署复杂度和成本。</p>
 <p>耐利普科技提供从设备层到平台层的全栈解决方案，支持私有化部署和SaaS模式，可根据项目规模灵活选择。</p>
+
                         </div>
                     </div>
                     <aside class="post-sidebar">
