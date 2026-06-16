@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'Segoe UI',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#1a1a3e"/>
+    </linearGradient>
+    <linearGradient id="warmG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff9800"/>
+      <stop offset="100%" stop-color="#ff5722"/>
+    </linearGradient>
+    <linearGradient id="coolG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2196f3"/>
+      <stop offset="100%" stop-color="#00bcd4"/>
+    </linearGradient>
+    <linearGradient id="amberG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffc107"/>
+      <stop offset="100%" stop-color="#ff9800"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Grid lines -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="75" x2="800" y2="75"/><line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">节律照明的光谱控制原理</text>
+  <text x="400" y="60" text-anchor="middle" fill="#8899bb" font-size="12">Circadian Lighting Spectral Control</text>
+  <!-- Sun arc (day cycle) -->
+  <path d="M 100,350 Q 400,100 700,350" fill="none" stroke="#ff980055" stroke-width="2" stroke-dasharray="4,4"/>
+  <circle cx="100" cy="350" r="20" fill="#ff5722" opacity="0.6" filter="url(#glow)"/>
+  <text x="100" y="355" text-anchor="middle" fill="#ffffff" font-size="9">日出</text>
+  <circle cx="250" cy="210" r="22" fill="#ff9800" opacity="0.7" filter="url(#glow)"/>
+  <text x="250" y="215" text-anchor="middle" fill="#ffffff" font-size="9">上午</text>
+  <circle cx="400" cy="130" r="25" fill="#fff3e0" opacity="0.9" filter="url(#glow)"/>
+  <text x="400" y="135" text-anchor="middle" fill="#1a1a2e" font-size="10" font-weight="bold">正午</text>
+  <circle cx="550" cy="210" r="22" fill="#ff9800" opacity="0.7" filter="url(#glow)"/>
+  <text x="550" y="215" text-anchor="middle" fill="#ffffff" font-size="9">下午</text>
+  <circle cx="700" cy="350" r="20" fill="#ff5722" opacity="0.5" filter="url(#glow)"/>
+  <text x="700" y="355" text-anchor="middle" fill="#ffffff" font-size="9">日落</text>
+  <!-- Spectrum bars -->
+  <g transform="translate(80,370)">
+    <!-- Morning spectrum -->
+    <rect x="0" y="0" width="100" height="12" rx="3" fill="url(#coolG)" opacity="0.8"/>
+    <rect x="0" y="0" width="30" height="12" rx="3" fill="url(#warmG)" opacity="0.6"/>
+    <text x="50" y="25" text-anchor="middle" fill="#8899bb" font-size="10">6500K 冷白</text>
+    <!-- Noon spectrum -->
+    <rect x="140" y="0" width="100" height="12" rx="3" fill="url(#coolG)" opacity="0.9"/>
+    <text x="190" y="25" text-anchor="middle" fill="#8899bb" font-size="10">5000K 正白</text>
+    <!-- Evening spectrum -->
+    <rect x="280" y="0" width="100" height="12" rx="3" fill="url(#warmG)" opacity="0.8"/>
+    <rect x="280" y="0" width="20" height="12" rx="3" fill="url(#coolG)" opacity="0.3"/>
+    <text x="330" y="25" text-anchor="middle" fill="#8899bb" font-size="10">3500K 暖白</text>
+    <!-- Night spectrum -->
+    <rect x="420" y="0" width="100" height="12" rx="3" fill="url(#amberG)" opacity="0.7"/>
+    <text x="470" y="25" text-anchor="middle" fill="#8899bb" font-size="10">2700K 暖光</text>
+  </g>
+  <!-- LED Channel Diagram -->
+  <g transform="translate(80,90)">
+    <!-- Cold white channel -->
+    <rect x="0" y="0" width="220" height="55" rx="8" fill="#1e3a5f" stroke="#2196f3" stroke-width="1.5" opacity="0.9"/>
+    <text x="15" y="20" fill="#2196f3" font-size="11" font-weight="bold">冷白通道 CH1</text>
+    <text x="15" y="38" fill="#6688aa" font-size="9">PWM: 6500K | 蓝光峰值 450nm</text>
+    <rect x="170" y="10" width="35" height="14" rx="3" fill="#2196f3" opacity="0.7"/>
+    <text x="187" y="21" text-anchor="middle" fill="#fff" font-size="8">CH1</text>
+    <!-- Warm white channel -->
+    <rect x="250" y="0" width="220" height="55" rx="8" fill="#3a2a1e" stroke="#ff9800" stroke-width="1.5" opacity="0.9"/>
+    <text x="265" y="20" fill="#ff9800" font-size="11" font-weight="bold">暖白通道 CH2</text>
+    <text x="265" y="38" fill="#aa8866" font-size="9">PWM: 2700K | 低蓝光成分</text>
+    <rect x="420" y="10" width="35" height="14" rx="3" fill="#ff9800" opacity="0.7"/>
+    <text x="437" y="21" text-anchor="middle" fill="#fff" font-size="8">CH2</text>
+  </g>
+  <!-- Amber channel (3-channel) -->
+  <g transform="translate(80,155)">
+    <rect x="0" y="0" width="220" height="55" rx="8" fill="#3a2e1e" stroke="#ffc107" stroke-width="1.5" opacity="0.9"/>
+    <text x="15" y="20" fill="#ffc107" font-size="11" font-weight="bold">琥珀通道 CH3</text>
+    <text x="15" y="38" fill="#aa9966" font-size="9">补充610nm琥珀光 | 蓝光补偿</text>
+    <rect x="170" y="10" width="35" height="14" rx="3" fill="#ffc107" opacity="0.7"/>
+    <text x="187" y="21" text-anchor="middle" fill="#1a1a2e" font-size="8">CH3</text>
+  </g>
+  <!-- Driver chip icon -->
+  <g transform="translate(330,155)">
+    <rect x="0" y="0" width="140" height="55" rx="8" fill="#1a2a1a" stroke="#4caf50" stroke-width="1.5" opacity="0.9"/>
+    <text x="15" y="20" fill="#4caf50" font-size="11" font-weight="bold">LED驱动 IC</text>
+    <text x="15" y="38" fill="#66aa66" font-size="9">3-CH 恒流 | 20kHz PWM</text>
+  </g>
+  <!-- Arrow from driver to channels -->
+  <line x1="320" y1="182" x2="300" y2="182" stroke="#4caf50" stroke-width="1.5" opacity="0.6" marker-end="none"/>
+  <polygon points="302,178 295,182 302,186" fill="#4caf50" opacity="0.6"/>
+  <!-- Footer -->
+  <text x="400" y="435" text-anchor="middle" fill="#556688" font-size="10">NEXLAMP — 三通道独立恒流驱动，从光谱层面实现真正的节律照明</text>
+</svg>

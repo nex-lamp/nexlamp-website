@@ -1,5 +1,23 @@
 [
   {
+    "title": "节律照明是智商税吗？从LED驱动技术拆解人因照明真相",
+    "slug": "节律照明是智商税吗从led驱动技术拆解人因照明真相",
+    "date": "2026-06-16",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "智能灯+智能开关怎么搭才不踩坑？2026零火线布线+涂鸦Zigbee选型全攻略",
+    "slug": "smart-light-smart-switch-wiring-guide-2026",
+    "date": "2026-06-16",
+    "category": "装修攻略",
+    "description": "新房装修或老房改造,智能灯+智能开关到底怎么搭配?零火线/单火线/灵动开关怎么选?本文用真实工程经验,讲清2026年最稳的智能灯光方案",
+    "cover": "images/blog-smart-light-switch-cover.png",
+    "excerpt": "装修完才发现开关底盒没有零线,智能灯一关墙开就掉线,调光频闪到怀疑人生...这不是你一个人遇到的坑,这是90%智能家居用户的第一道坎。"
+  },
+  {
     "title": "智能灯频闪怎么解决？LED驱动电源与健康照明选购全攻略",
     "slug": "led-flicker-healthy-lighting-guide-2026",
     "date": "2026-06-12",

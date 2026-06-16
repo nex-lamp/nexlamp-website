@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" width="680" height="460">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#06101e"/>
+    </linearGradient>
+    <linearGradient id="ok" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7ec27e"/>
+      <stop offset="100%" stop-color="#5b8c5a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a3f" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7ec27e"/>
+    </marker>
+  </defs>
+  <rect width="680" height="460" fill="url(#bg)"/>
+  <rect width="680" height="460" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="340" y="40" text-anchor="middle" font-family="Consolas, monospace" font-size="18" fill="#7ec27e" font-weight="bold">智能灯光装修落地流程图</text>
+  <text x="340" y="60" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#6a8290">SMART LIGHTING INSTALLATION FLOW</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(60,90)">
+    <circle cx="30" cy="30" r="22" fill="#1a3050" stroke="#5b9bd5" stroke-width="1.5"/>
+    <text x="30" y="35" text-anchor="middle" font-family="Consolas" font-size="14" fill="#5b9bd5" font-weight="bold">1</text>
+    <text x="65" y="20" font-family="Consolas, monospace" font-size="12" fill="#7ec27e" font-weight="bold">预埋零线</text>
+    <text x="65" y="38" font-family="Consolas, monospace" font-size="10" fill="#9fb4c4">开关底盒预留 1.5mm² 蓝色零线</text>
+    <text x="65" y="52" font-family="Consolas, monospace" font-size="9" fill="#6a8290">多花 ¥5-10/米，未来省 10倍</text>
+  </g>
+  <line x1="100" y1="135" x2="100" y2="155" stroke="#7ec27e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(60,160)">
+    <circle cx="30" cy="30" r="22" fill="#1a3050" stroke="#5b9bd5" stroke-width="1.5"/>
+    <text x="30" y="35" text-anchor="middle" font-family="Consolas" font-size="14" fill="#5b9bd5" font-weight="bold">2</text>
+    <text x="65" y="20" font-family="Consolas, monospace" font-size="12" fill="#7ec27e" font-weight="bold">网关选址</text>
+    <text x="65" y="38" font-family="Consolas, monospace" font-size="10" fill="#9fb4c4">房屋中心、远离金属遮挡</text>
+    <text x="65" y="52" font-family="Consolas, monospace" font-size="9" fill="#6a8290">覆盖半径 8-12 米</text>
+  </g>
+  <line x1="100" y1="205" x2="100" y2="225" stroke="#7ec27e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(60,230)">
+    <circle cx="30" cy="30" r="22" fill="#1a3050" stroke="#5b9bd5" stroke-width="1.5"/>
+    <text x="30" y="35" text-anchor="middle" font-family="Consolas" font-size="14" fill="#5b9bd5" font-weight="bold">3</text>
+    <text x="65" y="20" font-family="Consolas, monospace" font-size="12" fill="#7ec27e" font-weight="bold">灯具+驱动选型</text>
+    <text x="65" y="38" font-family="Consolas, monospace" font-size="10" fill="#9fb4c4">Zigbee 3.0 / Matter + 3C 认证驱动</text>
+    <text x="65" y="52" font-family="Consolas, monospace" font-size="9" fill="#6a8290">推荐 NEXLAMP 涂鸦认证系列</text>
+  </g>
+  <line x1="100" y1="275" x2="100" y2="295" stroke="#7ec27e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Step 4 -->
+  <g transform="translate(60,300)">
+    <circle cx="30" cy="30" r="22" fill="#1a3050" stroke="#5b9bd5" stroke-width="1.5"/>
+    <text x="30" y="35" text-anchor="middle" font-family="Consolas" font-size="14" fill="#5b9bd5" font-weight="bold">4</text>
+    <text x="65" y="20" font-family="Consolas, monospace" font-size="12" fill="#7ec27e" font-weight="bold">开关安装</text>
+    <text x="65" y="38" font-family="Consolas, monospace" font-size="10" fill="#9fb4c4">零火智能开关 / 凌动开关</text>
+    <text x="65" y="52" font-family="Consolas, monospace" font-size="9" fill="#6a8290">按回路分别接线</text>
+  </g>
+  <line x1="100" y1="345" x2="100" y2="365" stroke="#7ec27e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Step 5 -->
+  <g transform="translate(60,370)">
+    <circle cx="30" cy="30" r="22" fill="#1a3050" stroke="#7ec27e" stroke-width="1.5"/>
+    <text x="30" y="35" text-anchor="middle" font-family="Consolas" font-size="14" fill="#7ec27e" font-weight="bold">5</text>
+    <text x="65" y="20" font-family="Consolas, monospace" font-size="12" fill="#7ec27e" font-weight="bold">场景调试</text>
+    <text x="65" y="38" font-family="Consolas, monospace" font-size="10" fill="#9fb4c4">回家/观影/睡眠/起夜 4 套场景</text>
+    <text x="65" y="52" font-family="Consolas, monospace" font-size="9" fill="#6a8290">验收完工</text>
+  </g>
+
+  <!-- Right side: Check list -->
+  <g transform="translate(380,90)">
+    <rect width="240" height="320" rx="8" fill="#0f1e30" stroke="url(#ok)" stroke-width="1.5"/>
+    <text x="120" y="28" text-anchor="middle" font-family="Consolas" font-size="13" fill="#7ec27e" font-weight="bold">验收清单 CHECKLIST</text>
+    <line x1="20" y1="42" x2="220" y2="42" stroke="#7ec27e" stroke-width="0.5" opacity="0.4"/>
+
+    <text x="30" y="65" font-family="Consolas" font-size="10" fill="#7ec27e">[1] 零线到位 (火/零/灯控)</text>
+    <text x="30" y="88" font-family="Consolas" font-size="10" fill="#7ec27e">[2] 网关 LED 状态正常</text>
+    <text x="30" y="111" font-family="Consolas" font-size="10" fill="#7ec27e">[3] Zigbee 通道避 WiFi-1 信道</text>
+    <text x="30" y="134" font-family="Consolas" font-size="10" fill="#7ec27e">[4] 灯具 3C 认证 (查证书号)</text>
+    <text x="30" y="157" font-family="Consolas" font-size="10" fill="#7ec27e">[5] 驱动无频闪 (手机拍照测)</text>
+    <text x="30" y="180" font-family="Consolas" font-size="10" fill="#7ec27e">[6] 调光范围 0.1%-100% 平滑</text>
+    <text x="30" y="203" font-family="Consolas" font-size="10" fill="#7ec27e">[7] 场景联动 ≤ 0.5s 响应</text>
+    <text x="30" y="226" font-family="Consolas" font-size="10" fill="#7ec27e">[8] 断网仍可本地控制</text>
+    <text x="30" y="249" font-family="Consolas" font-size="10" fill="#7ec27e">[9] APP / 语音 / 物理 三控</text>
+    <text x="30" y="272" font-family="Consolas" font-size="10" fill="#7ec27e">[10] 质保 ≥ 5 年 (驱动)</text>
+
+    <line x1="20" y1="285" x2="220" y2="285" stroke="#7ec27e" stroke-width="0.5" opacity="0.4"/>
+    <text x="120" y="305" text-anchor="middle" font-family="Consolas" font-size="10" fill="#e8b04a" font-weight="bold">省 20000 改造费</text>
+  </g>
+
+  <!-- Bottom -->
+  <text x="340" y="440" text-anchor="middle" font-family="Consolas, monospace" font-size="10" fill="#6a8290">耐利普科技 NEXLAMP | 涂鸦Zigbee智能照明方案专家 | 13825496855</text>
+</svg>

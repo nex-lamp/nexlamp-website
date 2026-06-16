@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="680" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#06101e"/>
+    </linearGradient>
+    <linearGradient id="ok" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7ec27e"/>
+      <stop offset="100%" stop-color="#5b8c5a"/>
+    </linearGradient>
+    <linearGradient id="neutral" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5b9bd5"/>
+      <stop offset="100%" stop-color="#3a6d99"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a3f" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="680" height="420" fill="url(#bg)"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="340" y="40" text-anchor="middle" font-family="Consolas, monospace" font-size="18" fill="#7ec27e" font-weight="bold">涂鸦Zigbee智能灯光系统架构</text>
+  <text x="340" y="60" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#6a8290">TUYA ZIGBEE SMART LIGHTING ARCHITECTURE</text>
+
+  <!-- Layer 1: Control -->
+  <g transform="translate(60,90)">
+    <rect width="560" height="50" rx="6" fill="#0f1e30" stroke="#5b9bd5" stroke-width="1"/>
+    <text x="280" y="22" text-anchor="middle" font-family="Consolas" font-size="11" fill="#6a8290">L1 - 控制层 CONTROL LAYER</text>
+    <rect x="20" y="28" width="90" height="16" rx="3" fill="#1a3050"/>
+    <text x="65" y="40" text-anchor="middle" font-family="Consolas" font-size="10" fill="#5b9bd5">手机 APP</text>
+    <rect x="130" y="28" width="90" height="16" rx="3" fill="#1a3050"/>
+    <text x="175" y="40" text-anchor="middle" font-family="Consolas" font-size="10" fill="#5b9bd5">小爱 / Siri</text>
+    <rect x="240" y="28" width="100" height="16" rx="3" fill="#1a3050"/>
+    <text x="290" y="40" text-anchor="middle" font-family="Consolas" font-size="10" fill="#5b9bd5">无线开关 / 场景</text>
+    <rect x="360" y="28" width="90" height="16" rx="3" fill="#1a3050"/>
+    <text x="405" y="40" text-anchor="middle" font-family="Consolas" font-size="10" fill="#5b9bd5">智能传感器</text>
+    <rect x="470" y="28" width="70" height="16" rx="3" fill="#1a3050"/>
+    <text x="505" y="40" text-anchor="middle" font-family="Consolas" font-size="10" fill="#5b9bd5">HA 接入</text>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="340" y1="145" x2="340" y2="165" stroke="#7ec27e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7ec27e"/>
+    </marker>
+  </defs>
+
+  <!-- Layer 2: Gateway -->
+  <g transform="translate(220,170)">
+    <rect width="240" height="40" rx="6" fill="#152238" stroke="url(#ok)" stroke-width="1.5"/>
+    <text x="120" y="25" text-anchor="middle" font-family="Consolas" font-size="12" fill="#7ec27e" font-weight="bold">涂鸦 Zigbee 3.0 网关 (本地+云)</text>
+  </g>
+
+  <!-- Arrows out -->
+  <g stroke="#7ec27e" stroke-width="1.5" fill="none">
+    <path d="M 280 215 L 140 245" marker-end="url(#arr)"/>
+    <path d="M 340 215 L 340 245" marker-end="url(#arr)"/>
+    <path d="M 400 215 L 540 245" marker-end="url(#arr)"/>
+  </g>
+
+  <!-- Layer 3: Devices -->
+  <g transform="translate(40,250)">
+    <!-- Smart Light -->
+    <rect width="160" height="100" rx="6" fill="#0f1e30" stroke="url(#ok)" stroke-width="1"/>
+    <text x="80" y="22" text-anchor="middle" font-family="Consolas" font-size="11" fill="#7ec27e" font-weight="bold">Zigbee 智能灯具</text>
+    <text x="80" y="42" text-anchor="middle" font-family="Consolas" font-size="9" fill="#9fb4c4">调光 / 调色温 / 场景</text>
+    <line x1="20" y1="55" x2="140" y2="55" stroke="#1a2a3f"/>
+    <text x="80" y="72" text-anchor="middle" font-family="Consolas" font-size="9" fill="#6a8290">↓</text>
+    <text x="80" y="88" text-anchor="middle" font-family="Consolas" font-size="10" fill="#5b9bd5">3C 认证驱动电源</text>
+
+    <!-- Smart Switch -->
+    <rect x="180" width="160" height="100" rx="6" fill="#0f1e30" stroke="url(#ok)" stroke-width="1"/>
+    <text x="260" y="22" text-anchor="middle" font-family="Consolas" font-size="11" fill="#7ec27e" font-weight="bold">Zigbee 智能开关</text>
+    <text x="260" y="42" text-anchor="middle" font-family="Consolas" font-size="9" fill="#9fb4c4">零火线 / 凌动 / 无线</text>
+    <line x1="200" y1="55" x2="320" y2="55" stroke="#1a2a3f"/>
+    <text x="260" y="72" text-anchor="middle" font-family="Consolas" font-size="9" fill="#6a8290">↓</text>
+    <text x="260" y="88" text-anchor="middle" font-family="Consolas" font-size="10" fill="#5b9bd5">场景联动 / 远程</text>
+
+    <!-- Driver -->
+    <rect x="360" width="240" height="100" rx="6" fill="#0f1e30" stroke="url(#ok)" stroke-width="1"/>
+    <text x="480" y="22" text-anchor="middle" font-family="Consolas" font-size="11" fill="#7ec27e" font-weight="bold">NEXLAMP 涂鸦恒流驱动电源</text>
+    <text x="480" y="42" text-anchor="middle" font-family="Consolas" font-size="9" fill="#9fb4c4">7-12W / 3C 认证 / 0-10V / PWM / DALI</text>
+    <line x1="380" y1="55" x2="580" y2="55" stroke="#1a2a3f"/>
+    <text x="480" y="72" text-anchor="middle" font-family="Consolas" font-size="9" fill="#6a8290">↓</text>
+    <text x="480" y="88" text-anchor="middle" font-family="Consolas" font-size="10" fill="#5b9bd5">无频闪 / 恒功率 / 5年质保</text>
+  </g>
+
+  <!-- Bottom -->
+  <text x="340" y="395" text-anchor="middle" font-family="Consolas" fontospace" font-size="10" fill="#6a8290">耐利普科技 NEXLAMP | 涂鸦Zigbee智能照明方案专家 | 13825496855</text>
+</svg>
