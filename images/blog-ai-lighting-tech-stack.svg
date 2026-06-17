@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f2040"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffaa00" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffaa00" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1a3050" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="460" fill="url(#bg2)"/>
+  <rect width="680" height="460" fill="url(#grid2)"/>
+
+  <!-- Title -->
+  <text x="340" y="32" text-anchor="middle" fill="#00d4ff" font-family="Consolas,monospace" font-size="18" font-weight="bold" filter="url(#glow2)">AI智能照明技术架构</text>
+
+  <!-- Layer 1: Perception -->
+  <rect x="40" y="55" width="600" height="72" rx="6" fill="url(#g1)" stroke="#00d4ff" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="55" y="76" fill="#00d4ff" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glow2)">感知层</text>
+  <text x="55" y="110" fill="#88aacc" font-family="Consolas,monospace" font-size="10">毫米波雷达 (静止人体检测)  |  光照传感器  |  温湿度传感器  |  门窗磁  |  PIR</text>
+
+  <!-- Layer 2: Connectivity -->
+  <rect x="40" y="138" width="600" height="55" rx="6" fill="url(#g2)" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="55" y="159" fill="#ff6b6b" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glow2)">连接层</text>
+  <text x="55" y="178" fill="#88aacc" font-family="Consolas,monospace" font-size="10">Zigbee 3.0  |  Matter / Thread  |  BLE Mesh  |  Wi-Fi 6  |  DALI-2</text>
+
+  <!-- Layer 3: AI Core -->
+  <rect x="40" y="204" width="600" height="72" rx="6" fill="url(#g3)" stroke="#ffaa00" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="55" y="225" fill="#ffaa00" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glow2)">AI决策层 (核心)</text>
+  <text x="55" y="245" fill="#88aacc" font-family="Consolas,monospace" font-size="10">人因照明算法  |  行为学习引擎  |  自然语言解析(LLM)  |  场景自适应匹配</text>
+  <text x="55" y="262" fill="#667788" font-family="Consolas,monospace" font-size="9">学习作息习惯 → 预测需求 → 自主调光调色温 → 持续优化</text>
+
+  <!-- Layer 4: Application -->
+  <rect x="40" y="287" width="600" height="72" rx="6" fill="url(#g4)" stroke="#00ff88" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="55" y="308" fill="#00ff88" font-family="Consolas,monospace" font-size="13" font-weight="bold" filter="url(#glow2)">应用层</text>
+  <text x="55" y="328" fill="#88aacc" font-family="Consolas,monospace" font-size="10">"一日四时"节律管理  |  自然语音控制  |  观影/阅读/睡眠场景  |  能耗优化</text>
+  <text x="55" y="346" fill="#667788" font-family="Consolas,monospace" font-size="9">晨醒6000K提神 → 午间4000K专注 → 傍晚3000K放松 → 夜间2200K助眠</text>
+
+  <!-- Connector arrows between layers -->
+  <line x1="340" y1="127" x2="340" y2="138" stroke="#445566" stroke-width="1"/>
+  <line x1="340" y1="193" x2="340" y2="204" stroke="#445566" stroke-width="1"/>
+  <line x1="340" y1="276" x2="340" y2="287" stroke="#445566" stroke-width="1"/>
+
+  <!-- Bottom: Entry path -->
+  <rect x="100" y="378" width="480" height="55" rx="8" fill="#0d1a30" stroke="#334466" stroke-width="1"/>
+  <text x="340" y="400" text-anchor="middle" fill="#00ff88" font-family="Consolas,monospace" font-size="12" font-weight="bold" filter="url(#glow2)">普通人入门路径</text>
+  <text x="340" y="420" text-anchor="middle" fill="#88aacc" font-family="Consolas,monospace" font-size="10">Zigbee网关(¥150) → 智能灯(¥80/个) → 人在传感器(¥200) → 入门AI照明体验 ≈ ¥3000</text>
+
+  <!-- Version tag -->
+  <text x="670" y="450" text-anchor="end" fill="#334466" font-family="Consolas,monospace" font-size="9">nexlamp.com · 2026</text>
+</svg>

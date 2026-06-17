@@ -43,6 +43,18 @@ function parseMarkdown(md) {
   return html;
 }
 
+
+// --- HTML escape helper (SEC #4 hardening) ---
+function escapeHtml(str) {
+  if (str == null) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 // --- Parse Front Matter ---
 function parseFrontMatter(content) {
   const meta = {
@@ -109,7 +121,7 @@ function buildPost(filePath, template) {
     if (coverSrc.startsWith('images/')) {
       coverSrc = '../../' + coverSrc;
     }
-    coverHtml = '<div class="post-cover"><img src="' + coverSrc + '" alt="' + meta.title + '"></div>';
+    coverHtml = '<div class="post-cover"><img src="' + escapeHtml(coverSrc) + '" alt="' + escapeHtml(meta.title) + '"></div>';
   }
 
   // Build related posts list (placeholder)

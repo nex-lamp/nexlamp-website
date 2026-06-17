@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2137"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="heatGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  <!-- 网格 -->
+  <g stroke="#1a3a5c" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="50" x2="800" y2="50"/><line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="50" y1="0" x2="50" y2="500"/><line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="150" y1="0" x2="150" y2="500"/><line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="250" y1="0" x2="250" y2="500"/><line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="350" y1="0" x2="350" y2="500"/><line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="450" y1="0" x2="450" y2="500"/><line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="550" y1="0" x2="550" y2="500"/><line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="650" y1="0" x2="650" y2="500"/><line x1="700" y1="0" x2="700" y2="500"/>
+    <line x1="750" y1="0" x2="750" y2="500"/>
+  </g>
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" fill="#ff6b35" font-size="22" font-family="monospace" filter="url(#glow)">夏天LED灯故障根因分析</text>
+  <!-- LED灯具模型 -->
+  <g transform="translate(200,80)">
+    <!-- 灯壳 -->
+    <ellipse cx="200" cy="60" rx="120" ry="50" fill="#1a2a3a" stroke="#5b8c5a" stroke-width="1.5"/>
+    <!-- 灯珠 -->
+    <g fill="#ffdd44" filter="url(#glow)">
+      <circle cx="130" cy="55" r="8"/><circle cx="155" cy="55" r="8"/>
+      <circle cx="180" cy="55" r="8"/><circle cx="205" cy="55" r="8"/>
+      <circle cx="230" cy="55" r="8"/><circle cx="255" cy="55" r="8"/>
+      <circle cx="280" cy="55" r="8"/>
+    </g>
+    <!-- 高温警告 -->
+    <circle cx="200" cy="60" r="65" fill="#ff4444" opacity="0.08" filter="url(#heatGlow)"/>
+    <text x="200" y="75" text-anchor="middle" fill="#ff6b35" font-size="10" font-family="monospace">外壳温度 68°C</text>
+  </g>
+  <!-- 驱动电源内部 -->
+  <g transform="translate(100,160)">
+    <!-- 驱动板 -->
+    <rect x="0" y="0" width="600" height="150" rx="8" fill="#0f2a3f" stroke="#3a5a7c" stroke-width="1"/>
+    <text x="300" y="20" text-anchor="middle" fill="#7ec27e" font-size="13" font-family="monospace">驱动电源内部 · 高温薄弱环节</text>
+    <!-- 电解电容 -->
+    <g transform="translate(40,40)">
+      <rect x="0" y="0" width="80" height="90" rx="6" fill="#1a2a4a" stroke="#4a6a8a" stroke-width="1"/>
+      <rect x="15" y="15" width="50" height="60" rx="4" fill="#2a3a5a" stroke="#ff9500" stroke-width="1"/>
+      <!-- 电容符号 -->
+      <line x1="30" y1="25" x2="30" y2="55" stroke="#ff9500" stroke-width="2"/>
+      <line x1="50" y1="25" x2="50" y2="55" stroke="#ff9500" stroke-width="2"/>
+      <!-- 温度标注 -->
+      <rect x="15" y="15" width="50" height="60" rx="4" fill="#ff4444" opacity="0.15"/>
+      <text x="40" y="85" text-anchor="middle" fill="#ff9500" font-size="11" font-family="monospace">电解电容</text>
+      <text x="40" y="105" text-anchor="middle" fill="#88aacc" font-size="9" font-family="monospace">50°C→5万h</text>
+      <text x="40" y="118" text-anchor="middle" fill="#ff4444" font-size="9" font-family="monospace">80°C→5千h</text>
+    </g>
+    <!-- MOS管 -->
+    <g transform="translate(180,40)">
+      <rect x="0" y="0" width="80" height="90" rx="6" fill="#1a2a4a" stroke="#4a6a8a" stroke-width="1"/>
+      <rect x="15" y="15" width="50" height="60" rx="4" fill="#2a3a5a" stroke="#ff6b35" stroke-width="1"/>
+      <!-- MOS管符号 -->
+      <line x1="25" y1="30" x2="25" y2="60" stroke="#ff6b35" stroke-width="2"/>
+      <line x1="35" y1="30" x2="35" y2="60" stroke="#ff6b35" stroke-width="2"/>
+      <line x1="45" y1="30" x2="45" y2="60" stroke="#ff6b35" stroke-width="2"/>
+      <line x1="25" y1="40" x2="45" y2="40" stroke="#ff6b35" stroke-width="1.5"/>
+      <!-- 过温标注 -->
+      <rect x="15" y="15" width="50" height="60" rx="4" fill="#ff4444" opacity="0.15"/>
+      <text x="40" y="85" text-anchor="middle" fill="#ff6b35" font-size="11" font-family="monospace">MOS管</text>
+      <text x="40" y="105" text-anchor="middle" fill="#88aacc" font-size="9" font-family="monospace">过温→Rds↑</text>
+      <text x="40" y="118" text-anchor="middle" fill="#ff4444" font-size="9" font-family="monospace">恶性循环</text>
+    </g>
+    <!-- 控制IC -->
+    <g transform="translate(320,40)">
+      <rect x="0" y="0" width="80" height="90" rx="6" fill="#1a2a4a" stroke="#4a6a8a" stroke-width="1"/>
+      <rect x="15" y="15" width="50" height="60" rx="4" fill="#2a3a5a" stroke="#4fc3f7" stroke-width="1"/>
+      <!-- IC符号 -->
+      <rect x="25" y="25" width="30" height="30" rx="2" fill="#3a4a6a" stroke="#4fc3f7" stroke-width="1"/>
+      <circle cx="35" cy="35" r="3" fill="#4fc3f7"/>
+      <circle cx="45" cy="35" r="3" fill="#4fc3f7"/>
+      <circle cx="35" cy="45" r="3" fill="#4fc3f7"/>
+      <circle cx="45" cy="45" r="3" fill="#4fc3f7"/>
+      <!-- 过温标注 -->
+      <rect x="15" y="15" width="50" height="60" rx="4" fill="#ff4444" opacity="0.15"/>
+      <text x="40" y="85" text-anchor="middle" fill="#4fc3f7" font-size="11" font-family="monospace">控制IC</text>
+      <text x="40" y="105" text-anchor="middle" fill="#88aacc" font-size="9" font-family="monospace">超温停机</text>
+      <text x="40" y="118" text-anchor="middle" fill="#ff4444" font-size="9" font-family="monospace">误触发保护</text>
+    </g>
+    <!-- 恶性循环箭头 -->
+    <g transform="translate(460,40)">
+      <rect x="0" y="0" width="120" height="90" rx="6" fill="#1a2a4a" stroke="#ff4444" stroke-width="1.5"/>
+      <!-- 循环图 -->
+      <circle cx="60" cy="50" r="30" fill="none" stroke="#ff4444" stroke-width="1.5" stroke-dasharray="6,3"/>
+      <text x="60" y="30" text-anchor="middle" fill="#ff4444" font-size="9" font-family="monospace">越热→效率↓</text>
+      <text x="60" y="50" text-anchor="middle" fill="#ff6b35" font-size="9" font-family="monospace">效率↓→更热</text>
+      <text x="60" y="70" text-anchor="middle" fill="#ff4444" font-size="9" font-family="monospace">恶性循环!</text>
+      <!-- 旋转箭头 -->
+      <polygon points="90,22 95,28 85,28" fill="#ff4444"/>
+      <polygon points="30,78 25,72 35,72" fill="#ff4444"/>
+    </g>
+  </g>
+  <!-- 结论 -->
+  <g transform="translate(100,350)">
+    <rect x="0" y="0" width="600" height="120" rx="8" fill="#0f2a3f" stroke="#7ec27e" stroke-width="1.5"/>
+    <text x="300" y="25" text-anchor="middle" fill="#7ec27e" font-size="14" font-family="monospace">选购要点</text>
+    <g transform="translate(20,45)">
+      <circle cx="10" cy="10" r="8" fill="#7ec27e" opacity="0.3"/>
+      <text x="10" y="14" text-anchor="middle" fill="#7ec27e" font-size="10" font-family="monospace">1</text>
+      <text x="30" y="14" fill="#e0e0e0" font-size="12" font-family="monospace">工作温度范围 ≥ +65°C</text>
+    </g>
+    <g transform="translate(20,75)">
+      <circle cx="10" cy="10" r="8" fill="#7ec27e" opacity="0.3"/>
+      <text x="10" y="14" text-anchor="middle" fill="#7ec27e" font-size="10" font-family="monospace">2</text>
+      <text x="30" y="14" fill="#e0e0e0" font-size="12" font-family="monospace">OTP过温保护机制（降额而非烧毁）</text>
+    </g>
+    <g transform="translate(320,45)">
+      <circle cx="10" cy="10" r="8" fill="#7ec27e" opacity="0.3"/>
+      <text x="10" y="14" text-anchor="middle" fill="#7ec27e" font-size="10" font-family="monospace">3</text>
+      <text x="30" y="14" fill="#e0e0e0" font-size="12" font-family="monospace">灯具整体散热结构设计</text>
+    </g>
+    <g transform="translate(320,75)">
+      <circle cx="10" cy="10" r="8" fill="#5b8c5a" opacity="0.3"/>
+      <text x="10" y="14" text-anchor="middle" fill="#5b8c5a" font-size="10" font-family="monospace">✓</text>
+      <text x="30" y="14" fill="#5b8c5a" font-size="12" font-family="monospace">NEXLAMP: -25°C ~ +70°C + OTP</text>
+    </g>
+  </g>
+</svg>

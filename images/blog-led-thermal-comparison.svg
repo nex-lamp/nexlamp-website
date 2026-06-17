@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2137"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="heatGlow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  <!-- 网格 -->
+  <g stroke="#1a3a5c" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="50" x2="800" y2="50"/><line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="50" y1="0" x2="50" y2="500"/><line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="150" y1="0" x2="150" y2="500"/><line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="250" y1="0" x2="250" y2="500"/><line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="350" y1="0" x2="350" y2="500"/><line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="450" y1="0" x2="450" y2="500"/><line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="550" y1="0" x2="550" y2="500"/><line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="650" y1="0" x2="650" y2="500"/><line x1="700" y1="0" x2="700" y2="500"/>
+    <line x1="750" y1="0" x2="750" y2="500"/>
+  </g>
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" fill="#7ec27e" font-size="22" font-family="monospace" filter="url(#glow)">劣质驱动 vs NEXLAMP驱动 · 夏季对比</text>
+  <!-- 夏天环境 -->
+  <g transform="translate(50,60)">
+    <!-- 太阳图标 -->
+    <circle cx="700" cy="20" r="25" fill="#ff6b35" opacity="0.3" filter="url(#heatGlow)"/>
+    <circle cx="700" cy="20" r="15" fill="#ffdd44" opacity="0.5"/>
+    <text x="700" y="55" text-anchor="middle" fill="#ff6b35" font-size="11" font-family="monospace">夏季 38°C</text>
+  </g>
+  <!-- 劣质驱动 -->
+  <g transform="translate(50,80)">
+    <rect x="0" y="0" width="350" height="380" rx="8" fill="#0f1a2f" stroke="#ff4444" stroke-width="1.5"/>
+    <text x="175" y="25" text-anchor="middle" fill="#ff4444" font-size="16" font-family="monospace">❌ 劣质驱动电源</text>
+    <!-- 薄铜箔PCB -->
+    <g transform="translate(20,45)">
+      <rect x="0" y="0" width="310" height="50" rx="4" fill="#1a2a3a" stroke="#ff4444" stroke-width="0.5"/>
+      <text x="155" y="18" text-anchor="middle" fill="#88aacc" font-size="10" font-family="monospace">1oz薄铜箔PCB</text>
+      <!-- 小铜区 -->
+      <rect x="80" y="22" width="40" height="20" fill="#c87533" opacity="0.3"/>
+      <rect x="200" y="22" width="30" height="20" fill="#c87533" opacity="0.3"/>
+      <text x="155" y="40" text-anchor="middle" fill="#ff4444" font-size="9" font-family="monospace">铜面积小 → 热量堆积</text>
+    </g>
+    <!-- 塑料外壳 -->
+    <g transform="translate(20,105)">
+      <rect x="0" y="0" width="310" height="50" rx="4" fill="#1a2a3a" stroke="#ff4444" stroke-width="0.5"/>
+      <rect x="100" y="10" width="110" height="30" rx="4" fill="#4a3a2a" stroke="#8a7a6a" stroke-width="1"/>
+      <text x="155" y="30" text-anchor="middle" fill="#8a7a6a" font-size="9" font-family="monospace">塑料外壳 · 不导热</text>
+      <text x="155" y="45" text-anchor="middle" fill="#ff4444" font-size="9" font-family="monospace">热量被困内部 → 烤箱效应</text>
+    </g>
+    <!-- 无OTP -->
+    <g transform="translate(20,165)">
+      <rect x="0" y="0" width="310" height="50" rx="4" fill="#1a2a3a" stroke="#ff4444" stroke-width="0.5"/>
+      <text x="155" y="18" text-anchor="middle" fill="#88aacc" font-size="10" font-family="monospace">无过温保护</text>
+      <!-- 温度飙升曲线 -->
+      <polyline points="50,40 100,38 150,35 200,30 250,25 280,20" fill="none" stroke="#ff4444" stroke-width="2"/>
+      <text x="155" y="48" text-anchor="middle" fill="#ff4444" font-size="9" font-family="monospace">温度一路飙升 → 直接烧毁</text>
+    </g>
+    <!-- 标称温度 -->
+    <g transform="translate(20,225)">
+      <rect x="0" y="0" width="310" height="40" rx="4" fill="#2a1a1a" stroke="#ff4444" stroke-width="1"/>
+      <text x="155" y="25" text-anchor="middle" fill="#ff4444" font-size="12" font-family="monospace">工作范围: -20°C ~ +50°C ❌</text>
+    </g>
+    <!-- 结果 -->
+    <g transform="translate(20,275)">
+      <rect x="0" y="0" width="310" height="90" rx="4" fill="#1a0a0a" stroke="#ff4444" stroke-width="1.5"/>
+      <text x="155" y="20" text-anchor="middle" fill="#ff4444" font-size="13" font-family="monospace">夏天结果</text>
+      <text x="155" y="45" text-anchor="middle" fill="#ff6b35" font-size="11" font-family="monospace">亮度骤降 → 灯具烧毁</text>
+      <text x="155" y="65" text-anchor="middle" fill="#ff6b35" font-size="11" font-family="monospace">电容爆浆 → 不可修复</text>
+      <text x="155" y="85" text-anchor="middle" fill="#886666" font-size="9" font-family="monospace">寿命: 3-6个月（夏季）</text>
+    </g>
+  </g>
+  <!-- NEXLAMP驱动 -->
+  <g transform="translate(400,80)">
+    <rect x="0" y="0" width="350" height="380" rx="8" fill="#0f1a2f" stroke="#7ec27e" stroke-width="1.5"/>
+    <text x="175" y="25" text-anchor="middle" fill="#7ec27e" font-size="16" font-family="monospace">✅ NEXLAMP驱动电源</text>
+    <!-- 厚铜箔PCB -->
+    <g transform="translate(20,45)">
+      <rect x="0" y="0" width="310" height="50" rx="4" fill="#1a2a3a" stroke="#7ec27e" stroke-width="0.5"/>
+      <text x="155" y="18" text-anchor="middle" fill="#88aacc" font-size="10" font-family="monospace">2oz厚铜箔PCB</text>
+      <!-- 大铜区 -->
+      <rect x="40" y="22" width="100" height="20" fill="#c87533" opacity="0.5"/>
+      <rect x="170" y="22" width="100" height="20" fill="#c87533" opacity="0.5"/>
+      <text x="155" y="40" text-anchor="middle" fill="#7ec27e" font-size="9" font-family="monospace">大面积铺铜 → 热量快速传导</text>
+    </g>
+    <!-- 铝壳封装 -->
+    <g transform="translate(20,105)">
+      <rect x="0" y="0" width="310" height="50" rx="4" fill="#1a2a3a" stroke="#7ec27e" stroke-width="0.5"/>
+      <rect x="100" y="10" width="110" height="30" rx="4" fill="#607080" stroke="#a0b0c0" stroke-width="1"/>
+      <text x="155" y="30" text-anchor="middle" fill="#a0b0c0" font-size="9" font-family="monospace">铝壳封装 · 高效导热</text>
+      <text x="155" y="45" text-anchor="middle" fill="#7ec27e" font-size="9" font-family="monospace">热量传至灯具散热结构</text>
+    </g>
+    <!-- 智能OTP -->
+    <g transform="translate(20,165)">
+      <rect x="0" y="0" width="310" height="50" rx="4" fill="#1a2a3a" stroke="#7ec27e" stroke-width="0.5"/>
+      <text x="155" y="18" text-anchor="middle" fill="#88aacc" font-size="10" font-family="monospace">智能OTP过温保护</text>
+      <!-- 降额曲线 -->
+      <polyline points="50,38 100,38 150,36 200,32 250,38 280,42" fill="none" stroke="#7ec27e" stroke-width="2"/>
+      <text x="155" y="48" text-anchor="middle" fill="#7ec27e" font-size="9" font-family="monospace">高温降额 → 自动恢复</text>
+    </g>
+    <!-- 标称温度 -->
+    <g transform="translate(20,225)">
+      <rect x="0" y="0" width="310" height="40" rx="4" fill="#1a2a1a" stroke="#7ec27e" stroke-width="1"/>
+      <text x="155" y="25" text-anchor="middle" fill="#7ec27e" font-size="12" font-family="monospace">工作范围: -25°C ~ +70°C ✅</text>
+    </g>
+    <!-- 结果 -->
+    <g transform="translate(20,275)">
+      <rect x="0" y="0" width="310" height="90" rx="4" fill="#0a1a0a" stroke="#7ec27e" stroke-width="1.5"/>
+      <text x="155" y="20" text-anchor="middle" fill="#7ec27e" font-size="13" font-family="monospace">夏天结果</text>
+      <text x="155" y="45" text-anchor="middle" fill="#5b8c5a" font-size="11" font-family="monospace">高温降额 → 稳定运行</text>
+      <text x="155" y="65" text-anchor="middle" fill="#5b8c5a" font-size="11" font-family="monospace">温度下降 → 全功率恢复</text>
+      <text x="155" y="85" text-anchor="middle" fill="#88aa88" font-size="9" font-family="monospace">寿命: 5万+小时（全季）</text>
+    </g>
+  </g>
+</svg>

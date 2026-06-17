@@ -1,5 +1,23 @@
 [
   {
+    "title": "AI智能照明到底值不值得装？2026年普通人入门全攻略",
+    "slug": "ai-smart-lighting-beginners-guide-2026",
+    "date": "2026-06-17",
+    "category": "智能照明",
+    "description": "AI智能照明从概念走向落地，毫米波雷达、人因照明、大语言模型控制成为2026年三大技术热点。本文用最通俗的语言讲清楚AI智能照明和普通智能灯的区别，入门需要什么设备、花多少钱、有哪些坑要避开。",
+    "cover": "../../images/blog-ai-smart-lighting-cover.png",
+    "excerpt": "AI智能照明从概念走向落地，毫米波雷达、人因照明、大语言模型控制成为2026年三大技术热点。本文用普通人听得懂的语言，讲清楚AI智能照明是什么、值不值得装、入门需要什么设备、花多少钱。"
+  },
+  {
+    "title": "夏天LED灯为什么容易坏？驱动电源散热设计才是关键",
+    "slug": "led-driver-thermal-design-summer-guide",
+    "date": "2026-06-17",
+    "category": "LED驱动技术",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-led-thermal-cover.png",
+    "excerpt": "你的LED灯夏天用几个月就变暗甚至烧掉？问题不在灯珠，而在驱动电源的散热设计。本文从热管理原理出发，拆解驱动电源过温降额、PCB散热路径、过温保护机制，帮你选到能扛住40°C高温的靠谱驱动。"
+  },
+  {
     "title": "节律照明是智商税吗？从LED驱动技术拆解人因照明真相",
     "slug": "节律照明是智商税吗从led驱动技术拆解人因照明真相",
     "date": "2026-06-16",

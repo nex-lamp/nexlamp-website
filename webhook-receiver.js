@@ -221,28 +221,29 @@ async function handleWebhook(req, res) {
         
         // Parse body
         const body = await parseBody(req);
-        
-        // Verify signature (if provided)
-        const signature = req.headers['x-webhook-signature'];
         const payload = JSON.stringify(body);
-        
-        if (signature && !verifySignature(payload, signature, CONFIG.secret)) {
+
+        // MANDATORY signature verification - no signature = no write.
+        // Previously this was optional (only checked when the header was present),
+        // which let an attacker bypass auth entirely by omitting the header. See SEC #3.
+        const signature = req.headers['x-webhook-signature'];
+
+        if (!signature) {
+            res.statusCode = 403;
+            res.setHeader('Content-Type', 'application/json');
+            res.end(JSON.stringify({
+                success: false,
+                error: 'Missing signature. X-Webhook-Signature header is required.'
+            }));
+            return;
+        }
+
+        if (!verifySignature(payload, signature, CONFIG.secret)) {
             res.statusCode = 403;
             res.setHeader('Content-Type', 'application/json');
             res.end(JSON.stringify({
                 success: false,
                 error: 'Invalid signature'
-            }));
-            return;
-        }
-        
-        // Simple secret validation (fallback)
-        if (body.secret && body.secret !== CONFIG.secret) {
-            res.statusCode = 403;
-            res.setHeader('Content-Type', 'application/json');
-            res.end(JSON.stringify({
-                success: false,
-                error: 'Invalid secret'
             }));
             return;
         }
@@ -271,7 +272,7 @@ async function handleWebhook(req, res) {
             message: 'Content received and saved',
             data: {
                 filename: `${filename}.md`,
-                path: filePath,
+                // path omitted to avoid leaking absolute filesystem path (SEC #5)
                 title: body.title,
                 category: body.category || 'General',
                 date: body.date || new Date().toISOString().split('T')[0]
@@ -425,16 +426,16 @@ if (require.main === module) {
             console.log(`🏥 Health check: http://localhost:${port}/health`);
             console.log(`\n📁 Posts directory: ${CONFIG.postsDir}`);
             console.log('🔒 Secret: loaded from environment variable');
-            console.log(`\nExample curl command:`);
-            console.log(`curl -X POST http://localhost:${port}/webhook/new-content \\
-  -H "Content-Type: application/json" \\
-  -d '{
-    "secret": "${CONFIG.secret}",
-    "title": "New Article Title",
-    "body": "Article content in Markdown...",
-    "category": "Technical",
-    "tags": ["LED", "Smart Lighting"]
-  }'\n`);
+            console.log(`\nExample curl command (HMAC signature required, see SEC #3):`);
+            console.log(`curl -X POST http://localhost:${port}/webhook/new-content \
+              -H "Content-Type: application/json" \
+              -H "X-Webhook-Signature: <HMAC-SHA256 of JSON body, keyed by $WEBHOOK_SECRET>" \
+              -d '{
+                "title": "New Article Title",
+                "body": "Article content in Markdown...",
+                "category": "Technical",
+                "tags": ["LED", "Smart Lighting"]
+              }'\n`);
         });
     } catch (error) {
         console.error('❌ Failed to start server:', error.message);

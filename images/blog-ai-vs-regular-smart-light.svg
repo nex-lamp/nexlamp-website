@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f2040"/>
+    </linearGradient>
+    <linearGradient id="glow-blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="glow-green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1a3050" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="420" fill="url(#bg)"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="340" y="35" text-anchor="middle" fill="#00d4ff" font-family="Consolas,monospace" font-size="18" font-weight="bold" filter="url(#glow)">AI智能照明 vs 普通智能灯</text>
+
+  <!-- Left Box: Regular Smart Light -->
+  <rect x="30" y="55" width="295" height="330" rx="8" fill="#0d1a30" stroke="#334466" stroke-width="1"/>
+  <rect x="30" y="55" width="295" height="32" rx="8" fill="#1a2a44"/>
+  <rect x="30" y="67" width="295" height="20" fill="#1a2a44"/>
+  <text x="177" y="76" text-anchor="middle" fill="#8899bb" font-family="Consolas,monospace" font-size="12">■ 普通智能灯 (自动化)</text>
+
+  <!-- Regular items -->
+  <text x="50" y="110" fill="#667788" font-family="Consolas,monospace" font-size="11">控制方式</text>
+  <text x="50" y="128" fill="#00d4ff" font-family="Consolas,monospace" font-size="11" opacity="0.7">手机App / 语音助手</text>
+  <text x="50" y="155" fill="#667788" font-family="Consolas,monospace" font-size="11">传感器</text>
+  <text x="50" y="173" fill="#ffaa00" font-family="Consolas,monospace" font-size="11" opacity="0.8">红外PIR — 仅检测移动</text>
+  <text x="50" y="200" fill="#667788" font-family="Consolas,monospace" font-size="11">智能程度</text>
+  <text x="50" y="218" fill="#ff6666" font-family="Consolas,monospace" font-size="11" opacity="0.8">被动执行，无自主决策</text>
+  <text x="50" y="245" fill="#667788" font-family="Consolas,monospace" font-size="11">场景适应</text>
+  <text x="50" y="263" fill="#ffaa00" font-family="Consolas,monospace" font-size="11" opacity="0.8">预设场景，手动切换</text>
+  <text x="50" y="290" fill="#667788" font-family="Consolas,monospace" font-size="11">痛点</text>
+  <text x="50" y="308" fill="#ff4444" font-family="Consolas,monospace" font-size="11">坐着不动灯就灭</text>
+  <text x="50" y="326" fill="#ff4444" font-family="Consolas,monospace" font-size="11">半夜起床全屋亮瞎眼</text>
+  <text x="50" y="344" fill="#ff4444" font-family="Consolas,monospace" font-size="11">跨品牌设备不互通</text>
+
+  <!-- Arrow -->
+  <text x="340" y="225" text-anchor="middle" fill="#00ff88" font-family="Consolas,monospace" font-size="28" filter="url(#glow)">→</text>
+
+  <!-- Right Box: AI Smart Lighting -->
+  <rect x="355" y="55" width="295" height="330" rx="8" fill="#0d1a30" stroke="#00ff88" stroke-width="1.5"/>
+  <rect x="355" y="55" width="295" height="32" rx="8" fill="url(#glow-green)"/>
+  <rect x="355" y="67" width="295" height="20" fill="url(#glow-green)"/>
+  <text x="502" y="76" text-anchor="middle" fill="#00ff88" font-family="Consolas,monospace" font-size="12" font-weight="bold" filter="url(#glow)">◆ AI智能照明 (智能化)</text>
+
+  <!-- AI items -->
+  <text x="375" y="110" fill="#667788" font-family="Consolas,monospace" font-size="11">控制方式</text>
+  <text x="375" y="128" fill="#00ff88" font-family="Consolas,monospace" font-size="11">自然语言 + AI自主决策</text>
+  <text x="375" y="155" fill="#667788" font-family="Consolas,monospace" font-size="11">传感器</text>
+  <text x="375" y="173" fill="#00ff88" font-family="Consolas,monospace" font-size="11">毫米波雷达 — 识别静坐/姿势/呼吸</text>
+  <text x="375" y="200" fill="#667788" font-family="Consolas,monospace" font-size="11">智能程度</text>
+  <text x="375" y="218" fill="#00ff88" font-family="Consolas,monospace" font-size="11">学习习惯，自主调光调色温</text>
+  <text x="375" y="245" fill="#667788" font-family="Consolas,monospace" font-size="11">场景适应</text>
+  <text x="375" y="263" fill="#00ff88" font-family="Consolas,monospace" font-size="11">实时感知 → 自动匹配光环境</text>
+  <text x="375" y="290" fill="#667788" font-family="Consolas,monospace" font-size="11">体验</text>
+  <text x="375" y="308" fill="#00ff88" font-family="Consolas,monospace" font-size="11">看电影静坐不会黑灯</text>
+  <text x="375" y="326" fill="#00ff88" font-family="Consolas,monospace" font-size="11">半夜起床自动微亮引导</text>
+  <text x="375" y="344" fill="#00ff88" font-family="Consolas,monospace" font-size="11">Matter/Zigbee跨品牌互联</text>
+
+  <!-- Footer -->
+  <text x="340" y="408" text-anchor="middle" fill="#445566" font-family="Consolas,monospace" font-size="10">核心区别：自动化 = 被动执行指令 | AI化 = 主动感知+学习+自适应</text>
+</svg>

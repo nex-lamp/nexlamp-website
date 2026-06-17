@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2137"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  <!-- 网格线 -->
+  <g stroke="#1a3a5c" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="50" x2="800" y2="50"/><line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="50" y1="0" x2="50" y2="500"/><line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="150" y1="0" x2="150" y2="500"/><line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="250" y1="0" x2="250" y2="500"/><line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="350" y1="0" x2="350" y2="500"/><line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="450" y1="0" x2="450" y2="500"/><line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="550" y1="0" x2="550" y2="500"/><line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="650" y1="0" x2="650" y2="500"/><line x1="700" y1="0" x2="700" y2="500"/>
+    <line x1="750" y1="0" x2="750" y2="500"/>
+  </g>
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" fill="#7ec27e" font-size="22" font-family="monospace" filter="url(#glow)">LED驱动电源 · 三条散热路径</text>
+  <!-- PCB铜箔散热 -->
+  <g transform="translate(80,80)">
+    <rect x="0" y="0" width="180" height="120" rx="8" fill="#0f2a3f" stroke="#7ec27e" stroke-width="1.5"/>
+    <!-- PCB板 -->
+    <rect x="30" y="30" width="120" height="60" rx="4" fill="#1a4a2e" stroke="#5b8c5a" stroke-width="1"/>
+    <!-- 铜箔区域 -->
+    <rect x="35" y="35" width="110" height="50" rx="2" fill="#c87533" opacity="0.6"/>
+    <rect x="40" y="40" width="30" height="40" fill="#d4943a" opacity="0.8"/>
+    <rect x="80" y="40" width="30" height="40" fill="#d4943a" opacity="0.8"/>
+    <!-- 元件 -->
+    <rect x="55" y="48" width="12" height="20" fill="#333" stroke="#7ec27e" stroke-width="0.5"/>
+    <rect x="95" y="48" width="12" height="20" fill="#333" stroke="#7ec27e" stroke-width="0.5"/>
+    <!-- 热量箭头 -->
+    <g fill="#ff6b35" filter="url(#glow)">
+      <polygon points="150,60 170,50 170,70"/>
+      <polygon points="150,60 130,50 130,70"/>
+    </g>
+    <text x="90" y="140" text-anchor="middle" fill="#e0e0e0" font-size="13" font-family="monospace">1. PCB铜箔散热</text>
+    <text x="90" y="158" text-anchor="middle" fill="#88aacc" font-size="11" font-family="monospace">2oz厚铜 · 大面积铺铜</text>
+  </g>
+  <!-- 外壳导热 -->
+  <g transform="translate(300,80)">
+    <rect x="0" y="0" width="180" height="120" rx="8" fill="#0f2a3f" stroke="#7ec27e" stroke-width="1.5"/>
+    <!-- 铝壳 -->
+    <rect x="30" y="20" width="120" height="80" rx="6" fill="#607080" stroke="#a0b0c0" stroke-width="1"/>
+    <!-- 内部PCB -->
+    <rect x="45" y="35" width="90" height="50" rx="3" fill="#1a4a2e" stroke="#5b8c5a" stroke-width="0.5"/>
+    <!-- 热传导箭头 -->
+    <g fill="#ff9500" filter="url(#glow2)">
+      <polygon points="155,60 175,55 175,65"/>
+    </g>
+    <!-- 温度梯度 -->
+    <rect x="30" y="20" width="120" height="5" fill="#ff6b35" opacity="0.3"/>
+    <rect x="30" y="25" width="120" height="5" fill="#ff9500" opacity="0.2"/>
+    <text x="90" y="140" text-anchor="middle" fill="#e0e0e0" font-size="13" font-family="monospace">2. 外壳导热</text>
+    <text x="90" y="158" text-anchor="middle" fill="#88aacc" font-size="11" font-family="monospace">铝壳封装 · 金属导热</text>
+  </g>
+  <!-- 对流散热 -->
+  <g transform="translate(520,80)">
+    <rect x="0" y="0" width="180" height="120" rx="8" fill="#0f2a3f" stroke="#7ec27e" stroke-width="1.5"/>
+    <!-- 开放式结构 -->
+    <rect x="30" y="20" width="120" height="80" rx="6" fill="none" stroke="#7ec27e" stroke-width="1" stroke-dasharray="4,3"/>
+    <!-- 内部元件 -->
+    <rect x="50" y="40" width="80" height="40" rx="3" fill="#1a4a2e" stroke="#5b8c5a" stroke-width="0.5"/>
+    <!-- 空气流通箭头 -->
+    <g fill="#4fc3f7" filter="url(#glow)" opacity="0.8">
+      <polygon points="20,55 30,45 30,65"/>
+      <polygon points="20,70 30,60 30,80"/>
+      <polygon points="160,55 170,45 170,65"/>
+      <polygon points="160,70 170,60 170,80"/>
+    </g>
+    <!-- 上方散热孔 -->
+    <g fill="#4fc3f7" opacity="0.5">
+      <rect x="60" y="18" width="8" height="4" rx="1"/>
+      <rect x="75" y="18" width="8" height="4" rx="1"/>
+      <rect x="90" y="18" width="8" height="4" rx="1"/>
+      <rect x="105" y="18" width="8" height="4" rx="1"/>
+    </g>
+    <text x="90" y="140" text-anchor="middle" fill="#e0e0e0" font-size="13" font-family="monospace">3. 对流散热</text>
+    <text x="90" y="158" text-anchor="middle" fill="#88aacc" font-size="11" font-family="monospace">开放式 · 空气流通</text>
+  </g>
+  <!-- 降额曲线 -->
+  <g transform="translate(80,220)">
+    <rect x="0" y="0" width="640" height="220" rx="8" fill="#0f2a3f" stroke="#3a5a7c" stroke-width="1"/>
+    <text x="320" y="25" text-anchor="middle" fill="#7ec27e" font-size="14" font-family="monospace">过温降额曲线（OTP）</text>
+    <!-- 坐标轴 -->
+    <line x1="60" y1="180" x2="600" y2="180" stroke="#3a5a7c" stroke-width="1.5"/>
+    <line x1="60" y1="40" x2="60" y2="180" stroke="#3a5a7c" stroke-width="1.5"/>
+    <!-- Y轴标签 -->
+    <text x="45" y="50" text-anchor="end" fill="#88aacc" font-size="10" font-family="monospace">100%</text>
+    <text x="45" y="95" text-anchor="end" fill="#88aacc" font-size="10" font-family="monospace">75%</text>
+    <text x="45" y="140" text-anchor="end" fill="#88aacc" font-size="10" font-family="monospace">50%</text>
+    <!-- X轴标签 -->
+    <text x="120" y="198" text-anchor="middle" fill="#88aacc" font-size="10" font-family="monospace">25°C</text>
+    <text x="200" y="198" text-anchor="middle" fill="#88aacc" font-size="10" font-family="monospace">40°C</text>
+    <text x="300" y="198" text-anchor="middle" fill="#88aacc" font-size="10" font-family="monospace">60°C</text>
+    <text x="400" y="198" text-anchor="middle" fill="#ff6b35" font-size="10" font-family="monospace">75°C</text>
+    <text x="500" y="198" text-anchor="middle" fill="#ff4444" font-size="10" font-family="monospace">85°C</text>
+    <text x="570" y="198" text-anchor="middle" fill="#ff4444" font-size="10" font-family="monospace">90°C</text>
+    <!-- 全功率区域 -->
+    <line x1="60" y1="50" x2="200" y2="50" stroke="#7ec27e" stroke-width="2" filter="url(#glow)"/>
+    <line x1="200" y1="50" x2="300" y2="50" stroke="#7ec27e" stroke-width="2" filter="url(#glow)"/>
+    <!-- 降额区域 -->
+    <line x1="300" y1="50" x2="400" y2="95" stroke="#ff9500" stroke-width="2" filter="url(#glow)"/>
+    <line x1="400" y1="95" x2="500" y2="140" stroke="#ff6b35" stroke-width="2" filter="url(#glow)"/>
+    <!-- 关断区域 -->
+    <line x1="500" y1="140" x2="570" y2="180" stroke="#ff4444" stroke-width="2" filter="url(#glow)"/>
+    <!-- 区域标注 -->
+    <rect x="65" y="42" width="135" height="18" rx="3" fill="#7ec27e" opacity="0.15"/>
+    <text x="130" y="56" text-anchor="middle" fill="#7ec27e" font-size="10" font-family="monospace">全功率输出</text>
+    <rect x="300" y="75" width="100" height="18" rx="3" fill="#ff9500" opacity="0.15"/>
+    <text x="350" y="88" text-anchor="middle" fill="#ff9500" font-size="10" font-family="monospace">逐步降额</text>
+    <rect x="400" y="110" width="100" height="18" rx="3" fill="#ff6b35" opacity="0.15"/>
+    <text x="450" y="123" text-anchor="middle" fill="#ff6b35" font-size="10" font-family="monospace">输出50-70%</text>
+    <rect x="500" y="155" width="70" height="18" rx="3" fill="#ff4444" opacity="0.15"/>
+    <text x="535" y="168" text-anchor="middle" fill="#ff4444" font-size="10" font-family="monospace">关断保护</text>
+    <!-- 临界线 -->
+    <line x1="300" y1="40" x2="300" y2="180" stroke="#ff9500" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.5"/>
+    <line x1="500" y1="40" x2="500" y2="180" stroke="#ff4444" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.5"/>
+  </g>
+</svg>
