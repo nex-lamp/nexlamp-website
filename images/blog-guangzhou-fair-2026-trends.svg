@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%"><stop offset="0%" stop-color="#0d1f3c"/><stop offset="100%" stop-color="#0a1628"/></radialGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00d4aa"/><stop offset="100%" stop-color="#00a3d4"/></linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff6b6b"/><stop offset="100%" stop-color="#ee5a24"/></linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a29bfe"/><stop offset="100%" stop-color="#6c5ce7"/></linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fdcb6e"/><stop offset="100%" stop-color="#f39c12"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="420" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g opacity="0.06" stroke="#4a9eff">
+    <line x1="0" y1="70" x2="680" y2="70"/><line x1="0" y1="140" x2="680" y2="140"/>
+    <line x1="0" y1="210" x2="680" y2="210"/><line x1="0" y1="280" x2="680" y2="280"/>
+    <line x1="0" y1="350" x2="680" y2="350"/>
+    <line x1="170" y1="0" x2="170" y2="420"/><line x1="340" y1="0" x2="340" y2="420"/>
+    <line x1="510" y1="0" x2="510" y2="420"/>
+  </g>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="680" height="42" fill="#0d1a30" opacity="0.9"/>
+  <text x="16" y="27" fill="#4a9eff" font-family="Consolas,monospace" font-size="13">[光亚展2026] 智能照明四大趋势</text>
+  <circle cx="646" cy="21" r="6" fill="#ff5f56"/><circle cx="664" cy="21" r="6" fill="#ffbd2e"/>
+
+  <!-- Card 1 -->
+  <rect x="20" y="58" width="300" height="155" rx="6" fill="#0d1f3c" stroke="#00d4aa" stroke-width="1" opacity="0.9"/>
+  <rect x="20" y="58" width="300" height="28" rx="6" fill="#00d4aa" opacity="0.15"/>
+  <text x="32" y="77" fill="#00d4aa" font-family="Consolas,monospace" font-size="13" filter="url(#glow)">01 全屋智能进入"可用时代"</text>
+  <text x="32" y="100" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ 本地化运行架构 → 断网照样联动</text>
+  <text x="32" y="120" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ Zigbee Mesh自修复 → 设备不掉线</text>
+  <text x="32" y="140" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ 模块化部署 → 先装客厅再加卧室</text>
+  <text x="32" y="165" fill="#4a9eff" font-family="Microsoft YaHei,sans-serif" font-size="10">Zigbee满意度比Wi-Fi高37个百分点</text>
+  <circle cx="304" cy="73" r="10" fill="none" stroke="#00d4aa" stroke-width="1" opacity="0.5"/>
+  <text x="300" y="77" fill="#00d4aa" font-family="Consolas,monospace" font-size="9">✓</text>
+
+  <!-- Card 2 -->
+  <rect x="360" y="58" width="300" height="155" rx="6" fill="#0d1f3c" stroke="#ff6b6b" stroke-width="1" opacity="0.9"/>
+  <rect x="360" y="58" width="300" height="28" rx="6" fill="#ff6b6b" opacity="0.12"/>
+  <text x="372" y="77" fill="#ff6b6b" font-family="Consolas,monospace" font-size="13" filter="url(#glow)">02 Matter协议规模化落地</text>
+  <text x="372" y="100" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ 跨品牌统一接入 → 告别生态绑架</text>
+  <text x="372" y="120" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ Apple/Google/涂鸦全兼容</text>
+  <text x="372" y="140" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ 换平台零成本 → 不被一个品牌绑定</text>
+  <text x="372" y="165" fill="#4a9eff" font-family="Microsoft YaHei,sans-serif" font-size="10">2026下半年买灯认准Matter认证</text>
+  <circle cx="644" cy="73" r="10" fill="none" stroke="#ff6b6b" stroke-width="1" opacity="0.5"/>
+  <text x="640" y="77" fill="#ff6b6b" font-family="Consolas,monospace" font-size="9">⚡</text>
+
+  <!-- Card 3 -->
+  <rect x="20" y="233" width="300" height="155" rx="6" fill="#0d1f3c" stroke="#a29bfe" stroke-width="1" opacity="0.9"/>
+  <rect x="20" y="233" width="300" height="28" rx="6" fill="#a29bfe" opacity="0.12"/>
+  <text x="32" y="252" fill="#a29bfe" font-family="Consolas,monospace" font-size="13" filter="url(#glow)">03 AI让灯学会"理解人"</text>
+  <text x="32" y="275" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ 自然语言创建场景："观影模式"</text>
+  <text x="32" y="295" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ 自动学习习惯 → 1-2周自适应用户</text>
+  <text x="32" y="315" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ 从"人学习系统"到"系统理解人"</text>
+  <text x="32" y="340" fill="#4a9eff" font-family="Microsoft YaHei,sans-serif" font-size="10">范式转移：不再需要学App操作</text>
+  <circle cx="304" cy="248" r="10" fill="none" stroke="#a29bfe" stroke-width="1" opacity="0.5"/>
+  <text x="300" y="252" fill="#a29bfe" font-family="Consolas,monospace" font-size="9">🧠</text>
+
+  <!-- Card 4 -->
+  <rect x="360" y="233" width="300" height="155" rx="6" fill="#0d1f3c" stroke="#fdcb6e" stroke-width="1" opacity="0.9"/>
+  <rect x="360" y="233" width="300" height="28" rx="6" fill="#fdcb6e" opacity="0.12"/>
+  <text x="372" y="252" fill="#fdcb6e" font-family="Consolas,monospace" font-size="13" filter="url(#glow)">04 健康照明从噱头变刚需</text>
+  <text x="372" y="275" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ 全光谱LED成本降40% → 百元级普及</text>
+  <text x="372" y="295" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ Ra98+可调色温 → 模拟自然光节律</text>
+  <text x="372" y="315" fill="#8899aa" font-family="Microsoft YaHei,sans-serif" font-size="11">✓ 护眼国家标准引入临床效果指标</text>
+  <text x="372" y="340" fill="#4a9eff" font-family="Microsoft YaHei,sans-serif" font-size="10">5000元搞定全屋人因照明方案</text>
+  <circle cx="644" cy="248" r="10" fill="none" stroke="#fdcb6e" stroke-width="1" opacity="0.5"/>
+  <text x="640" y="252" fill="#fdcb6e" font-family="Consolas,monospace" font-size="9">☀</text>
+
+  <!-- Bottom bar -->
+  <rect x="20" y="398" width="640" height="14" rx="3" fill="#0d1a30" opacity="0.7"/>
+  <text x="340" y="409" fill="#4a9eff" font-family="Consolas,monospace" font-size="9" text-anchor="middle">技术驱动 → 价值驱动 | 行业成熟信号：稳定性 &amp; 易用性 &gt; 参数表 | Nexlamp 2026</text>
+</svg>
