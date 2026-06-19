@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="glowBig">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="420" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g stroke="#1a2a4a" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="60" x2="680" y2="60"/>
+    <line x1="0" y1="210" x2="680" y2="210"/>
+    <line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="170" y1="0" x2="170" y2="420"/>
+    <line x1="340" y1="0" x2="340" y2="420"/>
+    <line x1="510" y1="0" x2="510" y2="420"/>
+  </g>
+
+  <!-- Title -->
+  <text x="340" y="35" text-anchor="middle" fill="#7ec8e3" font-family="monospace" font-size="16" font-weight="bold">分房HCL方案 · 优先级 &amp; 预算</text>
+
+  <!-- Priority 1: Bedroom -->
+  <g>
+    <rect x="20" y="55" width="205" height="120" rx="8" fill="#0d1f3c" stroke="#44dd44" stroke-width="1.5" opacity="0.95"/>
+    <rect x="20" y="55" width="205" height="28" rx="8" fill="#44dd44" opacity="0.15"/>
+    <text x="122" y="74" text-anchor="middle" fill="#44dd44" font-family="monospace" font-size="11" font-weight="bold">🛏 卧室 · 最高优先级</text>
+    <text x="35" y="100" fill="#7ec8e3" font-family="monospace" font-size="9">⏰ 睡前60分钟切换暖光</text>
+    <text x="35" y="116" fill="#7ec8e3" font-family="monospace" font-size="9">🎯 色温: 2200-2700K</text>
+    <text x="35" y="132" fill="#7ec8e3" font-family="monospace" font-size="9">💡 床头智能灯泡×2</text>
+    <text x="35" y="148" fill="#7ec8e3" font-family="monospace" font-size="9">🙅 避免开顶灯+镜前灯</text>
+    <text x="35" y="164" fill="#44dd44" font-family="monospace" font-size="9" font-weight="bold">💰 ~ ¥70 (2颗灯泡)</text>
+  </g>
+
+  <!-- Priority 2: Living Room -->
+  <g>
+    <rect x="237" y="55" width="205" height="120" rx="8" fill="#0d1f3c" stroke="#5b9bd5" stroke-width="1.5" opacity="0.95"/>
+    <rect x="237" y="55" width="205" height="28" rx="8" fill="#5b9bd5" opacity="0.1"/>
+    <text x="339" y="74" text-anchor="middle" fill="#5b9bd5" font-family="monospace" font-size="11" font-weight="bold">🛋 客厅 · 次高优先级</text>
+    <text x="252" y="100" fill="#7ec8e3" font-family="monospace" font-size="9">⏰ 17点起逐步降色温</text>
+    <text x="252" y="116" fill="#7ec8e3" font-family="monospace" font-size="9">🎯 4000K→3000K→2200K</text>
+    <text x="252" y="132" fill="#7ec8e3" font-family="monospace" font-size="9">💡 TV背景灯带+落地灯</text>
+    <text x="252" y="148" fill="#7ec8e3" font-family="monospace" font-size="9">🙅 磁吸轨道别用4000K固定</text>
+    <text x="252" y="164" fill="#5b9bd5" font-family="monospace" font-size="9" font-weight="bold">💰 ~ ¥120 (灯带+灯泡)</text>
+  </g>
+
+  <!-- Priority 3: Kitchen -->
+  <g>
+    <rect x="454" y="55" width="205" height="120" rx="8" fill="#0d1f3c" stroke="#ffe082" stroke-width="1.5" opacity="0.95"/>
+    <rect x="454" y="55" width="205" height="28" rx="8" fill="#ffe082" opacity="0.08"/>
+    <text x="556" y="74" text-anchor="middle" fill="#ffe082" font-family="monospace" font-size="11" font-weight="bold">🍳 厨房 · 早晨清醒剂</text>
+    <text x="469" y="100" fill="#7ec8e3" font-family="monospace" font-size="9">⏰ 早6-8点高色温唤醒</text>
+    <text x="469" y="116" fill="#7ec8e3" font-family="monospace" font-size="9">🎯 色温: 5000-6500K</text>
+    <text x="469" y="132" fill="#7ec8e3" font-family="monospace" font-size="9">💡 橱柜灯带+天花板灯</text>
+    <text x="469" y="148" fill="#7ec8e3" font-family="monospace" font-size="9">🔆 高亮度=快速开机</text>
+    <text x="469" y="164" fill="#ffe082" font-family="monospace" font-size="9" font-weight="bold">💰 ~ ¥50 (橱柜灯带)</text>
+  </g>
+
+  <!-- Priority 4: Office -->
+  <g>
+    <rect x="237" y="190" width="205" height="120" rx="8" fill="#0d1f3c" stroke="#7ec8e3" stroke-width="1.5" opacity="0.95"/>
+    <rect x="237" y="190" width="205" height="28" rx="8" fill="#7ec8e3" opacity="0.1"/>
+    <text x="339" y="209" text-anchor="middle" fill="#7ec8e3" font-family="monospace" font-size="11" font-weight="bold">💻 书房 · 生产力保障</text>
+    <text x="252" y="235" fill="#7ec8e3" font-family="monospace" font-size="9">⏰ 工作段: 4000-5000K</text>
+    <text x="252" y="251" fill="#7ec8e3" font-family="monospace" font-size="9">🎯 下午5点后降至3000K</text>
+    <text x="252" y="267" fill="#7ec8e3" font-family="monospace" font-size="9">💡 可调色温台灯</text>
+    <text x="252" y="283" fill="#7ec8e3" font-family="monospace" font-size="9">📏 桌面照度≥300 lux</text>
+    <text x="252" y="299" fill="#7ec8e3" font-family="monospace" font-size="9" font-weight="bold">💰 ~ ¥80 (台灯)</text>
+  </g>
+
+  <!-- Total budget -->
+  <rect x="237" y="325" width="422" height="40" rx="8" fill="#0d1f3c" stroke="#44dd44" stroke-width="2"/>
+  <text x="448" y="350" text-anchor="middle" fill="#44dd44" font-family="monospace" font-size="13" font-weight="bold">💰 全屋HCL总预算: ¥320 (四房方案)  ·  无需电工  ·  即插即用</text>
+
+  <!-- Skip list -->
+  <rect x="20" y="190" width="205" height="175" rx="8" fill="#0d1f3c" stroke="#ff4444" stroke-width="1.5" opacity="0.9"/>
+  <rect x="20" y="190" width="205" height="28" rx="8" fill="#ff4444" opacity="0.1"/>
+  <text x="122" y="209" text-anchor="middle" fill="#ff4444" font-family="monospace" font-size="11" font-weight="bold">❌ 常见踩坑</text>
+  <text x="35" y="237" fill="#ff6666" font-family="monospace" font-size="9">⚡ 只调暗不调色温</text>
+  <text x="35" y="255" fill="#ff6666" font-family="monospace" font-size="9">⚡ 全屋2700K固定暖光</text>
+  <text x="35" y="273" fill="#ff6666" font-family="monospace" font-size="9">⚡ 卫生间镜前灯太亮</text>
+  <text x="35" y="291" fill="#ff6666" font-family="monospace" font-size="9">⚡ 手机屏幕不管</text>
+  <text x="35" y="309" fill="#ff6666" font-family="monospace" font-size="9">⚡ 买"暖光"就不管白天</text>
+  <text x="35" y="327" fill="#ff6666" font-family="monospace" font-size="9">⚡ 驱动电源深度不够</text>
+  <text x="35" y="345" fill="#ff6666" font-family="monospace" font-size="9">⚡ 射灯选色温靠猜</text>
+
+  <!-- Bottom note -->
+  <text x="122" y="410" text-anchor="middle" fill="#445566" font-family="monospace" font-size="9">NEXLAMP · 可调光LED驱动电源专家</text>
+</svg>

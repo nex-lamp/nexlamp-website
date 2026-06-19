@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="redGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="20" font-weight="bold">LED驱动电源兼容性：三大常见问题</text>
+  <text x="400" y="62" text-anchor="middle" fill="#8892b0" font-family="Arial,sans-serif" font-size="13">旧房改造中最容易被忽视的关键环节</text>
+  
+  <!-- Problem 1: Flicker -->
+  <g transform="translate(150,180)">
+    <!-- Warning icon -->
+    <polygon points="0,-40 35,25 -35,25" fill="none" stroke="#ff6b6b" stroke-width="2.5" filter="url(#redGlow)"/>
+    <text x="0" y="12" text-anchor="middle" fill="#ff6b6b" font-family="Arial,sans-serif" font-size="28" font-weight="bold">!</text>
+    
+    <text x="0" y="55" text-anchor="middle" fill="#ff6b6b" font-family="Arial,sans-serif" font-size="15" font-weight="bold">调光闪烁</text>
+    <text x="0" y="78" text-anchor="middle" fill="#8892b0" font-family="Arial,sans-serif" font-size="11">旧驱动不支持PWM调光</text>
+    <text x="0" y="96" text-anchor="middle" fill="#8892b0" font-family="Arial,sans-serif" font-size="11">低亮度时频闪明显</text>
+    
+    <!-- Flickering light lines -->
+    <line x1="-20" y1="115" x2="20" y2="115" stroke="#ff6b6b" stroke-width="2" opacity="0.3"/>
+    <line x1="-25" y1="125" x2="25" y2="125" stroke="#ff6b6b" stroke-width="3" opacity="0.7"/>
+    <line x1="-18" y1="135" x2="18" y2="135" stroke="#ff6b6b" stroke-width="1" opacity="0.2"/>
+    <line x1="-22" y1="145" x2="22" y2="145" stroke="#ff6b6b" stroke-width="2.5" opacity="0.8"/>
+    
+    <!-- Solution box -->
+    <rect x="-70" y="170" width="140" height="50" rx="6" fill="#1a2530" stroke="#00e676" stroke-width="1"/>
+    <text x="0" y="190" text-anchor="middle" fill="#00e676" font-family="Arial,sans-serif" font-size="11" font-weight="bold">解决方案</text>
+    <text x="0" y="208" text-anchor="middle" fill="#a0b0c0" font-family="Arial,sans-serif" font-size="10">更换0-10V/DALI调光驱动</text>
+  </g>
+  
+  <!-- Problem 2: Standby Power -->
+  <g transform="translate(400,180)">
+    <!-- Warning icon -->
+    <polygon points="0,-40 35,25 -35,25" fill="none" stroke="#ffa726" stroke-width="2.5" filter="url(#redGlow)"/>
+    <text x="0" y="12" text-anchor="middle" fill="#ffa726" font-family="Arial,sans-serif" font-size="28" font-weight="bold">!</text>
+    
+    <text x="0" y="55" text-anchor="middle" fill="#ffa726" font-family="Arial,sans-serif" font-size="15" font-weight="bold">待机功耗过高</text>
+    <text x="0" y="78" text-anchor="middle" fill="#8892b0" font-family="Arial,sans-serif" font-size="11">智能关灯后微电流持续</text>
+    <text x="0" y="96" text-anchor="middle" fill="#8892b0" font-family="Arial,sans-serif" font-size="11">驱动发热加速老化</text>
+    
+    <!-- Power consumption graph -->
+    <line x1="-35" y1="110" x2="35" y2="110" stroke="#ffa726" stroke-width="1" opacity="0.5"/>
+    <rect x="-35" y="120" width="15" height="50" rx="2" fill="#ffa726" opacity="0.3"/>
+    <text x="-27" y="145" text-anchor="middle" fill="#ffa726" font-family="Arial,sans-serif" font-size="8" opacity="0.7">旧</text>
+    <rect x="-10" y="145" width="15" height="25" rx="2" fill="#00e676" opacity="0.3"/>
+    <text x="-2" y="162" text-anchor="middle" fill="#00e676" font-family="Arial,sans-serif" font-size="8" opacity="0.7">新</text>
+    <text x="30" y="140" text-anchor="middle" fill="#8892b0" font-family="Arial,sans-serif" font-size="9">&gt;2W</text>
+    <text x="30" y="165" text-anchor="middle" fill="#00e676" font-family="Arial,sans-serif" font-size="9">&lt;0.5W</text>
+    
+    <!-- Solution box -->
+    <rect x="-70" y="170" width="140" height="50" rx="6" fill="#1a2530" stroke="#00e676" stroke-width="1"/>
+    <text x="0" y="190" text-anchor="middle" fill="#00e676" font-family="Arial,sans-serif" font-size="11" font-weight="bold">解决方案</text>
+    <text x="0" y="208" text-anchor="middle" fill="#a0b0c0" font-family="Arial,sans-serif" font-size="10">选待机功耗&lt;0.5W驱动</text>
+  </g>
+  
+  <!-- Problem 3: Power Mismatch -->
+  <g transform="translate(650,180)">
+    <!-- Warning icon -->
+    <polygon points="0,-40 35,25 -35,25" fill="none" stroke="#ab47bc" stroke-width="2.5" filter="url(#redGlow)"/>
+    <text x="0" y="12" text-anchor="middle" fill="#ab47bc" font-family="Arial,sans-serif" font-size="28" font-weight="bold">!</text>
+    
+    <text x="0" y="55" text-anchor="middle" fill="#ab47bc" font-family="Arial,sans-serif" font-size="15" font-weight="bold">功率不匹配</text>
+    <text x="0" y="78" text-anchor="middle" fill="#8892b0" font-family="Arial,sans-serif" font-size="11">免零线开关最小负载5W</text>
+    <text x="0" y="96" text-anchor="middle" fill="#8892b0" font-family="Arial,sans-serif" font-size="11">低功率LED无法正常取电</text>
+    
+    <!-- Power scale -->
+    <rect x="-40" y="115" width="80" height="12" rx="6" fill="#1a2530" stroke="#ab47bc" stroke-width="1"/>
+    <rect x="-40" y="115" width="16" height="12" rx="6" fill="#ff6b6b" opacity="0.5"/>
+    <text x="-32" y="145" text-anchor="middle" fill="#8892b0" font-family="Arial,sans-serif" font-size="9">&lt;5W</text>
+    <text x="0" y="145" text-anchor="middle" fill="#00e676" font-family="Arial,sans-serif" font-size="9">5-20W</text>
+    <text x="35" y="145" text-anchor="middle" fill="#00e676" font-family="Arial,sans-serif" font-size="9">20W+</text>
+    <text x="-32" y="158" text-anchor="middle" fill="#ff6b6b" font-family="Arial,sans-serif" font-size="9">✗</text>
+    <text x="0" y="158" text-anchor="middle" fill="#00e676" font-family="Arial,sans-serif" font-size="9">✓</text>
+    <text x="35" y="158" text-anchor="middle" fill="#00e676" font-family="Arial,sans-serif" font-size="9">✓</text>
+    
+    <!-- Solution box -->
+    <rect x="-70" y="170" width="140" height="50" rx="6" fill="#1a2530" stroke="#00e676" stroke-width="1"/>
+    <text x="0" y="190" text-anchor="middle" fill="#00e676" font-family="Arial,sans-serif" font-size="11" font-weight="bold">解决方案</text>
+    <text x="0" y="208" text-anchor="middle" fill="#a0b0c0" font-family="Arial,sans-serif" font-size="10">并联补偿电容或换低功率开关</text>
+  </g>
+  
+  <!-- Bottom note -->
+  <rect x="50" y="445" width="700" height="36" rx="8" fill="#1a2530" stroke="#ffa726" stroke-width="0.5"/>
+  <text x="400" y="468" text-anchor="middle" fill="#ffa726" font-family="Arial,sans-serif" font-size="12">⚠ 驱动电源兼容性检查是旧房改造的必做步骤，改造前务必确认原驱动型号和参数</text>
+</svg>
