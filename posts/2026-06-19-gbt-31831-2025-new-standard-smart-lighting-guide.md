@@ -6,7 +6,7 @@ tags: ["GB/T 31831-2025", "新国标", "LED驱动电源", "智能照明选型", 
 excerpt: 2026年4月1日GB/T 31831-2025《LED室内照明应用技术要求》新国标正式实施，LED室内照明进入健康+智能双重升级时代。本文从新国标核心变化、驱动电源选型、协议选择三大维度，帮你避坑。
 description: GB/T 31831-2025新国标4月1日实施，LED智能照明选型避坑指南。涵盖频闪指标、驱动电源、Zigbee/Matter协议选型。
 keywords: GB/T 31831-2025,LED新国标,智能照明选型,LED驱动电源,涂鸦Zigbee,无主灯设计,频闪
-cover: images/blog-2026-06-19-gbt31831-cover.jpg
+cover: images/blog-2026-06-19-gbt31831-cover.png
 slug: gbt-31831-2025-new-standard-smart-lighting-guide
 ---
 

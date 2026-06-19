@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#14253f"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  <g opacity="0.15" stroke="#7ec27e" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+  </g>
+  <text x="400" y="40" text-anchor="middle" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="bold" filter="url(#glow3)">无主灯设计选购清单 · 抄作业</text>
+  <text x="400" y="68" text-anchor="middle" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="13" opacity="0.8">同一空间统一灯具 + 统一驱动 + 统一协议 = 不踩雷</text>
+  <line x1="60" y1="95" x2="740" y2="95" stroke="#7ec27e" stroke-width="1" opacity="0.4"/>
+  <g transform="translate(80, 130)">
+    <rect x="0" y="0" width="155" height="320" rx="8" fill="#1a2f4f" stroke="#7ec27e" stroke-width="1.5"/>
+    <rect x="0" y="0" width="155" height="40" rx="8" fill="#243d5e"/>
+    <text x="77" y="25" text-anchor="middle" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">客厅无主灯</text>
+    <text x="14" y="65" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">灯具方案</text>
+    <text x="14" y="83" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">COB筒灯</text>
+    <text x="14" y="110" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">驱动方案</text>
+    <text x="14" y="128" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">涂鸦Zigbee恒流</text>
+    <text x="14" y="155" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">光束角</text>
+    <text x="14" y="173" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">15°/24°/36°</text>
+    <text x="14" y="200" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">显色 Ra</text>
+    <text x="14" y="218" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">≥ 98</text>
+    <text x="14" y="245" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">眩光 UGR</text>
+    <text x="14" y="263" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">≤ 19</text>
+    <text x="14" y="290" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">推荐款</text>
+    <text x="14" y="308" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">NEX3 / NEX6</text>
+  </g>
+  <g transform="translate(245, 130)">
+    <rect x="0" y="0" width="155" height="320" rx="8" fill="#1a2f4f" stroke="#7ec27e" stroke-width="1.5"/>
+    <rect x="0" y="0" width="155" height="40" rx="8" fill="#243d5e"/>
+    <text x="77" y="25" text-anchor="middle" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">卧室健康</text>
+    <text x="14" y="65" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">灯具方案</text>
+    <text x="14" y="83" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">RG0吸顶灯</text>
+    <text x="14" y="110" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">驱动方案</text>
+    <text x="14" y="128" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">涂鸦调光驱动</text>
+    <text x="14" y="155" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">调光深度</text>
+    <text x="14" y="173" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">1% - 100%</text>
+    <text x="14" y="200" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">频闪 Pst</text>
+    <text x="14" y="218" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">≤ 0.5</text>
+    <text x="14" y="245" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">蓝光等级</text>
+    <text x="14" y="263" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">RG0 豁免级</text>
+    <text x="14" y="290" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">推荐款</text>
+    <text x="14" y="308" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">NEX1 风云</text>
+  </g>
+  <g transform="translate(410, 130)">
+    <rect x="0" y="0" width="155" height="320" rx="8" fill="#1a2f4f" stroke="#7ec27e" stroke-width="1.5"/>
+    <rect x="0" y="0" width="155" height="40" rx="8" fill="#243d5e"/>
+    <text x="77" y="25" text-anchor="middle" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">儿童房/书房</text>
+    <text x="14" y="65" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">灯具方案</text>
+    <text x="14" y="83" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">全光谱灯具</text>
+    <text x="14" y="110" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">驱动方案</text>
+    <text x="14" y="128" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">0-10V/DALI</text>
+    <text x="14" y="155" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">色温调节</text>
+    <text x="14" y="173" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">2700K-5000K</text>
+    <text x="14" y="200" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">显色 Ra</text>
+    <text x="14" y="218" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">≥ 95</text>
+    <text x="14" y="245" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">蓝光等级</text>
+    <text x="14" y="263" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">RG0</text>
+    <text x="14" y="290" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">推荐款</text>
+    <text x="14" y="308" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">NEX4 王炸</text>
+  </g>
+  <g transform="translate(575, 130)">
+    <rect x="0" y="0" width="155" height="320" rx="8" fill="#1a2f4f" stroke="#7ec27e" stroke-width="1.5"/>
+    <rect x="0" y="0" width="155" height="40" rx="8" fill="#243d5e"/>
+    <text x="77" y="25" text-anchor="middle" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">商业空间</text>
+    <text x="14" y="65" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">灯具方案</text>
+    <text x="14" y="83" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">DALI-2 筒灯</text>
+    <text x="14" y="110" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">驱动方案</text>
+    <text x="14" y="128" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">DALI-2 中央控制</text>
+    <text x="14" y="155" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">调光精度</text>
+    <text x="14" y="173" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">0.1% 步进</text>
+    <text x="14" y="200" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">场景联动</text>
+    <text x="14" y="218" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">支持</text>
+    <text x="14" y="245" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">能效</text>
+    <text x="14" y="263" fill="#a8d5a8" font-family="Microsoft YaHei, sans-serif" font-size="10">待机 ≤ 0.5W</text>
+    <text x="14" y="290" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">推荐款</text>
+    <text x="14" y="308" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">DALI 专用</text>
+  </g>
+  <text x="400" y="475" text-anchor="middle" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" filter="url(#glow3)">NEXLAMP 耐利普 · 涂鸦Zigbee驱动 + 3C认证</text>
+</svg>
