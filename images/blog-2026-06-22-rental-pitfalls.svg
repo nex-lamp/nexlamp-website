@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#050d1a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2940" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="ok" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7ec27e"/>
+      <stop offset="100%" stop-color="#5b8c5a"/>
+    </linearGradient>
+    <linearGradient id="bad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <text x="400" y="48" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="22" font-weight="bold">出租屋智能灯 · 5大避坑指南</text>
+  <text x="400" y="72" text-anchor="middle" fill="#8a9bb0" font-family="monospace" font-size="12">5 PITFALLS · LEARN BEFORE YOU BUY</text>
+
+  <line x1="50" y1="100" x2="750" y2="100" stroke="#1a2940" stroke-width="1"/>
+
+  <g transform="translate(50,120)">
+    <rect x="0" y="0" width="345" height="60" rx="6" fill="#0d1c30" stroke="#ff6b6b" stroke-width="1"/>
+    <circle cx="30" cy="30" r="16" fill="url(#bad)"/>
+    <text x="30" y="35" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14" font-weight="bold">✗</text>
+    <text x="60" y="25" fill="#ff6b6b" font-family="monospace" font-size="12" font-weight="bold">坑1：买了需零线的智能开关</text>
+    <text x="60" y="46" fill="#8a9bb0" font-family="monospace" font-size="10">出租屋99%是单火线 → 必须选单火版或电池无线开关</text>
+  </g>
+
+  <g transform="translate(405,120)">
+    <rect x="0" y="0" width="345" height="60" rx="6" fill="#0d1c30" stroke="#ff6b6b" stroke-width="1"/>
+    <circle cx="30" cy="30" r="16" fill="url(#bad)"/>
+    <text x="30" y="35" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14" font-weight="bold">✗</text>
+    <text x="60" y="25" fill="#ff6b6b" font-family="monospace" font-size="12" font-weight="bold">坑2：全屋Wi-Fi灯泡压垮路由器</text>
+    <text x="60" y="46" fill="#8a9bb0" font-family="monospace" font-size="10">10+ Wi-Fi灯泡拥堵2.4G → 改用Zigbee/蓝牙Mesh</text>
+  </g>
+
+  <g transform="translate(50,195)">
+    <rect x="0" y="0" width="345" height="60" rx="6" fill="#0d1c30" stroke="#ff6b6b" stroke-width="1"/>
+    <circle cx="30" cy="30" r="16" fill="url(#bad)"/>
+    <text x="30" y="35" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14" font-weight="bold">✗</text>
+    <text x="60" y="25" fill="#ff6b6b" font-family="monospace" font-size="12" font-weight="bold">坑3：电池灯选了不可换电池款</text>
+    <text x="60" y="46" fill="#8a9bb0" font-family="monospace" font-size="10">内置锂电池1年衰减就报废 → 必须选18650/AA可换</text>
+  </g>
+
+  <g transform="translate(405,195)">
+    <rect x="0" y="0" width="345" height="60" rx="6" fill="#0d1c30" stroke="#ff6b6b" stroke-width="1"/>
+    <circle cx="30" cy="30" r="16" fill="url(#bad)"/>
+    <text x="30" y="35" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14" font-weight="bold">✗</text>
+    <text x="60" y="25" fill="#ff6b6b" font-family="monospace" font-size="12" font-weight="bold">坑4：3M胶粘不牢半夜掉落</text>
+    <text x="60" y="46" fill="#8a9bb0" font-family="monospace" font-size="10">酒精擦→等30秒→重物加螺丝；500g以上必选磁吸</text>
+  </g>
+
+  <g transform="translate(50,270)">
+    <rect x="0" y="0" width="345" height="60" rx="6" fill="#0d1c30" stroke="#ff6b6b" stroke-width="1"/>
+    <circle cx="30" cy="30" r="16" fill="url(#bad)"/>
+    <text x="30" y="35" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="14" font-weight="bold">✗</text>
+    <text x="60" y="25" fill="#ff6b6b" font-family="monospace" font-size="12" font-weight="bold">坑5：多品牌混搭无法联动</text>
+    <text x="60" y="46" fill="#8a9bb0" font-family="monospace" font-size="10">米家/涂鸦/HomeKit互不兼容 → 出租屋只选1个生态</text>
+  </g>
+
+  <g transform="translate(405,270)">
+    <rect x="0" y="0" width="345" height="60" rx="6" fill="#0d1c30" stroke="#7ec27e" stroke-width="1.5"/>
+    <text x="20" y="25" fill="#7ec27e" font-family="monospace" font-size="13" font-weight="bold">★ 出租屋最优解</text>
+    <text x="20" y="44" fill="#ffd166" font-family="monospace" font-size="11">米家 / 涂鸦Zigbee + 电池款灯 + 智能插座</text>
+  </g>
+
+  <g transform="translate(50,360)">
+    <rect x="0" y="0" width="700" height="115" rx="8" fill="#0d1c30" stroke="#5b8c5a" stroke-width="1.5"/>
+    <text x="350" y="25" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="14" font-weight="bold">退租无损拆解流程 · 10-15 分钟</text>
+
+    <g transform="translate(20,45)">
+      <text x="0" y="0" fill="#ffd166" font-family="monospace" font-size="11" font-weight="bold">1. 智能灯泡</text>
+      <text x="0" y="18" fill="#8a9bb0" font-family="monospace" font-size="10">拧下带走（普通灯泡留下）</text>
+    </g>
+    <g transform="translate(180,45)">
+      <text x="0" y="0" fill="#ffd166" font-family="monospace" font-size="11" font-weight="bold">2. 电池灯条</text>
+      <text x="0" y="18" fill="#8a9bb0" font-family="monospace" font-size="10">吹风机热30秒后撕除</text>
+    </g>
+    <g transform="translate(340,45)">
+      <text x="0" y="0" fill="#ffd166" font-family="monospace" font-size="11" font-weight="bold">3. 智能插座</text>
+      <text x="0" y="18" fill="#8a9bb0" font-family="monospace" font-size="10">拔下换回普通插座</text>
+    </g>
+    <g transform="translate(500,45)">
+      <text x="0" y="0" fill="#ffd166" font-family="monospace" font-size="11" font-weight="bold">4. 无线开关</text>
+      <text x="0" y="18" fill="#8a9bb0" font-family="monospace" font-size="10">电池款直接拆 / 粘贴款加热</text>
+    </g>
+
+    <line x1="20" y1="78" x2="680" y2="78" stroke="#1a2940" stroke-width="1"/>
+    <text x="350" y="98" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="11">✓ 房东无感 / 押金无损 / 自动化配置云端保留</text>
+  </g>
+</svg>

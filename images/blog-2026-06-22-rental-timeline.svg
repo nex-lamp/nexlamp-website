@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#050d1a"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2940" stroke-width="0.5"/>
+    </pattern>
+    <radialGradient id="bulbGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffd166" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#ffd166" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <text x="400" y="48" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="22" font-weight="bold">3小时出租屋改造 · 房间推进流程</text>
+  <text x="400" y="72" text-anchor="middle" fill="#8a9bb0" font-family="monospace" font-size="12">3 HOURS · LIVING ROOM → BEDROOM → KITCHEN</text>
+
+  <line x1="50" y1="100" x2="750" y2="100" stroke="#1a2940" stroke-width="1"/>
+
+  <g transform="translate(60,130)">
+    <rect x="0" y="0" width="220" height="320" rx="8" fill="#0d1c30" stroke="#7ec27e" stroke-width="1.5"/>
+    <rect x="0" y="0" width="220" height="32" rx="8" fill="#7ec27e" fill-opacity="0.2"/>
+    <text x="20" y="22" fill="#7ec27e" font-family="monospace" font-size="13" font-weight="bold">① 客厅 · 15min</text>
+    <text x="200" y="22" text-anchor="end" fill="#7ec27e" font-family="monospace" font-size="11">LIVING</text>
+
+    <circle cx="110" cy="100" r="40" fill="url(#bulbGlow)"/>
+    <ellipse cx="110" cy="100" rx="22" ry="20" fill="#ffd166"/>
+    <rect x="100" y="118" width="20" height="6" fill="#5b8c5a"/>
+    <rect x="98" y="124" width="24" height="3" fill="#5b8c5a"/>
+    <text x="110" y="170" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="11">智能灯泡</text>
+    <text x="110" y="186" text-anchor="middle" fill="#8a9bb0" font-family="monospace" font-size="10">拧上原吸顶灯</text>
+
+    <text x="20" y="220" fill="#7ec27e" font-family="monospace" font-size="11">+ 沙发背电池灯带</text>
+    <text x="20" y="240" fill="#7ec27e" font-family="monospace" font-size="11">+ 电视柜智能插座</text>
+    <text x="20" y="260" fill="#7ec27e" font-family="monospace" font-size="11">+ 门口无线双键开关</text>
+
+    <rect x="15" y="280" width="190" height="28" rx="4" fill="#7ec27e" fill-opacity="0.1" stroke="#7ec27e" stroke-width="0.5"/>
+    <text x="110" y="299" text-anchor="middle" fill="#ffd166" font-family="monospace" font-size="10">回家3秒进入氛围</text>
+  </g>
+
+  <g transform="translate(290,130)">
+    <rect x="0" y="0" width="220" height="320" rx="8" fill="#0d1c30" stroke="#7ec27e" stroke-width="1.5"/>
+    <rect x="0" y="0" width="220" height="32" rx="8" fill="#7ec27e" fill-opacity="0.2"/>
+    <text x="20" y="22" fill="#7ec27e" font-family="monospace" font-size="13" font-weight="bold">② 卧室 · 20min</text>
+    <text x="200" y="22" text-anchor="end" fill="#7ec27e" font-family="monospace" font-size="11">BEDROOM</text>
+
+    <rect x="80" y="65" width="60" height="50" rx="3" fill="none" stroke="#7ec27e" stroke-width="1.5"/>
+    <ellipse cx="110" cy="90" rx="15" ry="13" fill="#ffd166" fill-opacity="0.6"/>
+    <text x="110" y="140" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="11">主灯：2700K暖光</text>
+    <text x="110" y="156" text-anchor="middle" fill="#8a9bb0" font-family="monospace" font-size="10">+ 可调色温款</text>
+
+    <text x="20" y="190" fill="#7ec27e" font-family="monospace" font-size="11">+ 床头人体感应夜灯</text>
+    <text x="20" y="210" fill="#7ec27e" font-family="monospace" font-size="11">+ 床底RGB灯带（1%起夜）</text>
+    <text x="20" y="230" fill="#7ec27e" font-family="monospace" font-size="11">+ 床头无线旋钮开关</text>
+
+    <rect x="15" y="260" width="190" height="48" rx="4" fill="#0a1628" stroke="#ffd166" stroke-width="1"/>
+    <text x="110" y="280" text-anchor="middle" fill="#ffd166" font-family="monospace" font-size="10" font-weight="bold">⚠ 重点</text>
+    <text x="110" y="298" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="10">最低亮度必须＜1%</text>
+  </g>
+
+  <g transform="translate(520,130)">
+    <rect x="0" y="0" width="220" height="320" rx="8" fill="#0d1c30" stroke="#7ec27e" stroke-width="1.5"/>
+    <rect x="0" y="0" width="220" height="32" rx="8" fill="#7ec27e" fill-opacity="0.2"/>
+    <text x="20" y="22" fill="#7ec27e" font-family="monospace" font-size="13" font-weight="bold">③ 厨卫 · 10min</text>
+    <text x="200" y="22" text-anchor="end" fill="#7ec27e" font-family="monospace" font-size="11">KITCHEN</text>
+
+    <rect x="40" y="60" width="140" height="20" rx="3" fill="none" stroke="#7ec27e" stroke-width="1.5"/>
+    <rect x="50" y="65" width="120" height="10" fill="#7ec27e" fill-opacity="0.5"/>
+    <text x="110" y="100" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="11">吊柜手扫灯条</text>
+    <text x="110" y="116" text-anchor="middle" fill="#8a9bb0" font-family="monospace" font-size="10">挥手即开（防湿手）</text>
+
+    <text x="20" y="155" fill="#7ec27e" font-family="monospace" font-size="11">+ 镜前电池款灯</text>
+    <text x="20" y="175" fill="#7ec27e" font-family="monospace" font-size="11">+ 卫生间 IP44+ 灯泡</text>
+
+    <rect x="15" y="210" width="190" height="98" rx="4" fill="#0a1628" stroke="#5b8c5a" stroke-width="1"/>
+    <text x="110" y="232" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="11" font-weight="bold">厨卫改造核心</text>
+    <text x="110" y="255" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="10">• 必须选防水款 IP44+</text>
+    <text x="110" y="273" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="10">• 手扫控制（避湿手）</text>
+    <text x="110" y="291" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="10">• USB 充电款免布线</text>
+  </g>
+
+  <g transform="translate(50,470)">
+    <rect x="0" y="0" width="700" height="20" rx="3" fill="#0d1c30" stroke="#5b8c5a" stroke-width="0.5"/>
+    <text x="350" y="14" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="11">总计：3小时 / 800-1500元 / 0布线 / 退租可全带走</text>
+  </g>
+</svg>
