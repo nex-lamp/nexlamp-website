@@ -1,5 +1,23 @@
 [
   {
+    "title": "AI来了，你的智能灯还只是远程开关吗？2026年真正智能照明选购指南",
+    "slug": "ai-smart-lighting-purchase-guide-2026",
+    "date": "2026-06-23",
+    "category": "智能照明",
+    "description": "2026年AI智能照明选购指南：区分真正智能灯与伪智能，协议选择Zigbee/Matter，健康照明节律调光，新国标合规，避坑选购。",
+    "cover": "images/blog-ai-smart-lighting-2026-cover.png",
+    "excerpt": "2026年AI与照明深度融合，但90%的'智能灯'其实只是WiFi遥控灯。本文教你区分真正智能照明和伪智能，从协议选择到AI功能，给你一份实战选购指南。"
+  },
+  {
+    "title": "Matter协议2026实测：一标通吃的美梦，醒了没？",
+    "slug": "matter-reality-check-2026",
+    "date": "2026-06-23",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-matter-reality-cover.png",
+    "excerpt": "Matter协议发布三年了，号称终结智能家居碎片化。实际体验到底如何？跨品牌配网顺不顺利？调光功能全不全？国内能不能用？这篇文章用实测数据给你讲清楚。"
+  },
+  {
     "title": "出租屋免布线智能灯改造：3小时搞定全屋氛围感，退租还能带走",
     "slug": "rental-no-rewire-smart-lighting-guide",
     "date": "2026-06-22",

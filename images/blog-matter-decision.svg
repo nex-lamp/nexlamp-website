@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#111d33"/>
+    </linearGradient>
+    <filter id="g3"><feGaussianBlur stdDeviation="3"/><feMerge><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg3)"/>
+  <text x="340" y="32" text-anchor="middle" fill="#44aaff" font-family="monospace" font-size="17" font-weight="bold" filter="url(#g3)">2026 年 Matter 设备选购决策树</text>
+  <text x="340" y="50" text-anchor="middle" fill="#445566" font-family="monospace" font-size="11">Should You Buy Matter Devices? Decision Tree</text>
+  <rect x="250" y="65" width="180" height="36" rx="18" fill="#44aaff" opacity="0.15" stroke="#44aaff" stroke-width="1.5"/>
+  <text x="340" y="88" text-anchor="middle" fill="#44aaff" font-family="monospace" font-size="13" font-weight="bold">你在多平台用智能家居？</text>
+  <line x1="340" y1="101" x2="340" y2="118" stroke="#44aaff" stroke-width="1.5"/>
+  <line x1="340" y1="118" x2="170" y2="118" stroke="#44aaff" stroke-width="1" opacity="0.5"/>
+  <line x1="340" y1="118" x2="510" y2="118" stroke="#44aaff" stroke-width="1" opacity="0.5"/>
+  <line x1="170" y1="118" x2="170" y2="135" stroke="#44aaff" stroke-width="1" opacity="0.5"/>
+  <line x1="510" y1="118" x2="510" y2="135" stroke="#44aaff" stroke-width="1" opacity="0.5"/>
+  <text x="140" y="112" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="11">YES</text>
+  <rect x="80" y="135" width="180" height="36" rx="8" fill="#00ff88" opacity="0.08" stroke="#00ff88" stroke-width="1"/>
+  <text x="170" y="154" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="12">Matter → 必选项</text>
+  <text x="170" y="167" text-anchor="middle" fill="#668866" font-family="monospace" font-size="9">跨平台兼容是无价的</text>
+  <text x="480" y="112" text-anchor="middle" fill="#ffcc00" font-family="monospace" font-size="11">NO</text>
+  <rect x="420" y="135" width="180" height="36" rx="8" fill="#ffcc00" opacity="0.08" stroke="#ffcc00" stroke-width="1"/>
+  <text x="510" y="154" text-anchor="middle" fill="#ffcc00" font-family="monospace" font-size="12">Matter → 可选项</text>
+  <text x="510" y="167" text-anchor="middle" fill="#887766" font-family="monospace" font-size="9">单生态用户无增量价值</text>
+  <line x1="170" y1="171" x2="170" y2="195" stroke="#00ff88" stroke-width="1" opacity="0.5"/>
+  <line x1="510" y1="171" x2="510" y2="195" stroke="#ffcc00" stroke-width="1" opacity="0.5"/>
+  <rect x="80" y="195" width="180" height="36" rx="8" fill="#00ff88" opacity="0.05" stroke="#00ff88" stroke-width="0.8" opacity="0.7"/>
+  <text x="170" y="211" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="11">灯泡/插座/传感器</text>
+  <text x="170" y="225" text-anchor="middle" fill="#448866" font-family="monospace" font-size="9">基础功能覆盖完整</text>
+  <rect x="420" y="195" width="180" height="36" rx="8" fill="#ffcc00" opacity="0.05" stroke="#ffcc00" stroke-width="0.8" opacity="0.7"/>
+  <text x="510" y="211" text-anchor="middle" fill="#ffcc00" font-family="monospace" font-size="11">纯生态设备更便宜</text>
+  <text x="510" y="225" text-anchor="middle" fill="#887766" font-family="monospace" font-size="9">Zigbee/Wi-Fi 性价比高</text>
+  <rect x="30" y="260" width="290" height="130" rx="6" fill="none" stroke="#00ff88" stroke-width="0.8" opacity="0.3"/>
+  <text x="175" y="283" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="13" font-weight="bold">推荐 Matter</text>
+  <text x="50" y="305" fill="#889999" font-family="monospace" font-size="11">Apple + Google 混用</text>
+  <text x="50" y="323" fill="#889999" font-family="monospace" font-size="11">Home Assistant 玩家</text>
+  <text x="50" y="341" fill="#889999" font-family="monospace" font-size="11">新装修从零搭建</text>
+  <text x="50" y="359" fill="#889999" font-family="monospace" font-size="11">重视未来可扩展性</text>
+  <text x="50" y="377" fill="#889999" font-family="monospace" font-size="11">预算充足（+20~30%）</text>
+  <rect x="360" y="260" width="290" height="130" rx="6" fill="none" stroke="#ff6644" stroke-width="0.8" opacity="0.3"/>
+  <text x="505" y="283" text-anchor="middle" fill="#ff6644" font-family="monospace" font-size="13" font-weight="bold">不着急 Matter</text>
+  <text x="380" y="305" fill="#889999" font-family="monospace" font-size="11">纯米家/华为生态用户</text>
+  <text x="380" y="323" fill="#889999" font-family="monospace" font-size="11">需要高级智能场景</text>
+  <text x="380" y="341" fill="#889999" font-family="monospace" font-size="11">预算有限优先性价比</text>
+  <text x="380" y="359" fill="#889999" font-family="monospace" font-size="11">LED驱动电源采购商</text>
+  <text x="380" y="377" fill="#889999" font-family="monospace" font-size="11">等国内生态成熟再入</text>
+</svg>
