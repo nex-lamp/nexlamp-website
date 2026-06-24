@@ -1,5 +1,23 @@
 [
   {
+    "title": "2026年AI氛围灯选购指南：从驱动到协议，买之前必须知道的3件事",
+    "slug": "2026-06-24-ai-ambient-light-guide",
+    "date": "2026-06-24",
+    "category": "智能照明选购",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-ai-ambient-light-cover.png",
+    "excerpt": "小红书刷到AI氛围灯就下单？别急——你以为买的是灯，实际买的是驱动和协议。这篇文章从LED驱动、语音生态和通信协议三个维度，帮你避开2026年AI氛围灯最大的坑。"
+  },
+  {
+    "title": "全光谱LED灯是智商税吗？2026年健康照明选购避坑指南",
+    "slug": "full-spectrum-healthy-lighting-guide-2026",
+    "date": "2026-06-24",
+    "category": "技术科普",
+    "description": "全光谱LED灯到底是真护眼还是智商税？本文详解Ra显色指数、R9红光值、光谱连续性、蓝光RG0等级、频闪检测方法，结合GB7793-2025新国标，教你避开参数虚标陷阱，选对真正护眼的健康照明灯具。",
+    "cover": "/images/blog-full-spectrum-healthy-lighting-cover.png",
+    "excerpt": "全光谱LED灯销量年增35%，市场突破300亿，但\"智商税\"争议从未停止。本文从光谱原理、Ra/R9参数、蓝光危害、频闪检测到GB7793-2025新国标，帮你真正看懂全光谱灯。"
+  },
+  {
     "title": "AI来了，你的智能灯还只是远程开关吗？2026年真正智能照明选购指南",
     "slug": "ai-smart-lighting-purchase-guide-2026",
     "date": "2026-06-23",

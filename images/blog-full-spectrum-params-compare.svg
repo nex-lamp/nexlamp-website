@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0a1f3a"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="550" fill="url(#bg2)"/>
+  <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+  </pattern>
+  <rect width="800" height="550" fill="url(#grid2)"/>
+
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" fill="#00d4ff" font-size="22" font-weight="bold" filter="url(#glow2)">全光谱 vs 普通LED — 核心参数对比</text>
+  <line x1="150" y1="50" x2="650" y2="50" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- 图例 -->
+  <rect x="200" y="68" width="16" height="16" fill="#ff6b6b" opacity="0.8"/>
+  <text x="222" y="82" fill="#ff6b6b" font-size="13">普通LED</text>
+  <rect x="320" y="68" width="16" height="16" fill="#ffd43b" opacity="0.8"/>
+  <text x="342" y="82" fill="#ffd43b" font-size="13">合格全光谱</text>
+  <rect x="460" y="68" width="16" height="16" fill="#51cf66" opacity="0.8"/>
+  <text x="482" y="82" fill="#51cf66" font-size="13">优秀全光谱</text>
+
+  <!-- Ra -->
+  <text x="50" y="140" fill="#aabbcc" font-size="14">Ra 显色指数</text>
+  <rect x="250" y="120" width="120" height="28" rx="4" fill="#ff6b6b" fill-opacity="0.2" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="310" y="139" text-anchor="middle" fill="#ff6b6b" font-size="14">≥80</text>
+  <rect x="400" y="120" width="120" height="28" rx="4" fill="#ffd43b" fill-opacity="0.2" stroke="#ffd43b" stroke-width="1"/>
+  <text x="460" y="139" text-anchor="middle" fill="#ffd43b" font-size="14">≥95</text>
+  <rect x="550" y="120" width="120" height="28" rx="4" fill="#51cf66" fill-opacity="0.2" stroke="#51cf66" stroke-width="1"/>
+  <text x="610" y="139" text-anchor="middle" fill="#51cf66" font-size="14">≥97</text>
+
+  <!-- R9 -->
+  <line x1="40" y1="170" x2="760" y2="170" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="50" y="200" fill="#aabbcc" font-size="14">R9 饱和红色</text>
+  <rect x="250" y="180" width="120" height="28" rx="4" fill="#ff6b6b" fill-opacity="0.2" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="310" y="199" text-anchor="middle" fill="#ff6b6b" font-size="14">10-20</text>
+  <rect x="400" y="180" width="120" height="28" rx="4" fill="#ffd43b" fill-opacity="0.2" stroke="#ffd43b" stroke-width="1"/>
+  <text x="460" y="199" text-anchor="middle" fill="#ffd43b" font-size="14">≥90</text>
+  <rect x="550" y="180" width="120" height="28" rx="4" fill="#51cf66" fill-opacity="0.2" stroke="#51cf66" stroke-width="1"/>
+  <text x="610" y="199" text-anchor="middle" fill="#51cf66" font-size="14">≥95</text>
+
+  <!-- R15 -->
+  <line x1="40" y1="230" x2="760" y2="230" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="50" y="260" fill="#aabbcc" font-size="14">R15 亚洲肤色</text>
+  <rect x="250" y="240" width="120" height="28" rx="4" fill="#ff6b6b" fill-opacity="0.2" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="310" y="259" text-anchor="middle" fill="#ff6b6b" font-size="14">50-60</text>
+  <rect x="400" y="240" width="120" height="28" rx="4" fill="#ffd43b" fill-opacity="0.2" stroke="#ffd43b" stroke-width="1"/>
+  <text x="460" y="259" text-anchor="middle" fill="#ffd43b" font-size="14">≥90</text>
+  <rect x="550" y="240" width="120" height="28" rx="4" fill="#51cf66" fill-opacity="0.2" stroke="#51cf66" stroke-width="1"/>
+  <text x="610" y="259" text-anchor="middle" fill="#51cf66" font-size="14">≥95</text>
+
+  <!-- 蓝光危害 -->
+  <line x1="40" y1="290" x2="760" y2="290" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="50" y="320" fill="#aabbcc" font-size="14">蓝光危害等级</text>
+  <rect x="250" y="300" width="120" height="28" rx="4" fill="#ff6b6b" fill-opacity="0.2" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="310" y="319" text-anchor="middle" fill="#ff6b6b" font-size="14">RG1</text>
+  <rect x="400" y="300" width="120" height="28" rx="4" fill="#ffd43b" fill-opacity="0.2" stroke="#ffd43b" stroke-width="1"/>
+  <text x="460" y="319" text-anchor="middle" fill="#ffd43b" font-size="14">RG0</text>
+  <rect x="550" y="300" width="120" height="28" rx="4" fill="#51cf66" fill-opacity="0.2" stroke="#51cf66" stroke-width="1"/>
+  <text x="610" y="319" text-anchor="middle" fill="#51cf66" font-size="14">RG0</text>
+
+  <!-- 色容差 -->
+  <line x1="40" y1="350" x2="760" y2="350" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="50" y="380" fill="#aabbcc" font-size="14">色容差 SDCM</text>
+  <rect x="250" y="360" width="120" height="28" rx="4" fill="#ff6b6b" fill-opacity="0.2" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="310" y="379" text-anchor="middle" fill="#ff6b6b" font-size="14">≤6</text>
+  <rect x="400" y="360" width="120" height="28" rx="4" fill="#ffd43b" fill-opacity="0.2" stroke="#ffd43b" stroke-width="1"/>
+  <text x="460" y="379" text-anchor="middle" fill="#ffd43b" font-size="14">≤3</text>
+  <rect x="550" y="360" width="120" height="28" rx="4" fill="#51cf66" fill-opacity="0.2" stroke="#51cf66" stroke-width="1"/>
+  <text x="610" y="379" text-anchor="middle" fill="#51cf66" font-size="14">≤2</text>
+
+  <!-- 频闪 -->
+  <line x1="40" y1="410" x2="760" y2="410" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="50" y="440" fill="#aabbcc" font-size="14">频闪百分比</text>
+  <rect x="250" y="420" width="120" height="28" rx="4" fill="#ff6b6b" fill-opacity="0.2" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="310" y="439" text-anchor="middle" fill="#ff6b6b" font-size="14">&gt;10%</text>
+  <rect x="400" y="420" width="120" height="28" rx="4" fill="#ffd43b" fill-opacity="0.2" stroke="#ffd43b" stroke-width="1"/>
+  <text x="460" y="439" text-anchor="middle" fill="#ffd43b" font-size="14">&lt;3.2%</text>
+  <rect x="550" y="420" width="120" height="28" rx="4" fill="#51cf66" fill-opacity="0.2" stroke="#51cf66" stroke-width="1"/>
+  <text x="610" y="439" text-anchor="middle" fill="#51cf66" font-size="14">&lt;1%</text>
+
+  <!-- 关键提示 -->
+  <line x1="40" y1="470" x2="760" y2="470" stroke="#1a2a4a" stroke-width="0.5"/>
+  <rect x="60" y="485" width="680" height="45" rx="6" fill="#ffd43b" fill-opacity="0.08" stroke="#ffd43b" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="400" y="505" text-anchor="middle" fill="#ffd43b" font-size="14">核心口诀：看Ra更要看R9 &amp; 无第三方光谱报告 = 假全光谱</text>
+  <text x="400" y="522" text-anchor="middle" fill="#5a7a9a" font-size="11">基于 GB7793-2025 新国标要求 | 耐利普 Nexlamp 技术团队</text>
+</svg>

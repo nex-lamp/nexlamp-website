@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%"><stop offset="0%" stop-color="#0d1f3c"/><stop offset="100%" stop-color="#0a1628"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowWarn"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Grid -->
+  <g stroke="#1a2a4a" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="60" x2="800" y2="60"/><line x1="0" y1="120" x2="800" y2="120"/><line x1="0" y1="180" x2="800" y2="180"/><line x1="0" y1="240" x2="800" y2="240"/><line x1="0" y1="300" x2="800" y2="300"/><line x1="0" y1="360" x2="800" y2="360"/><line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="133" y1="0" x2="133" y2="500"/><line x1="266" y1="0" x2="266" y2="500"/><line x1="400" y1="0" x2="400" y2="500"/><line x1="533" y1="0" x2="533" y2="500"/><line x1="666" y1="0" x2="666" y2="500"/>
+  </g>
+  <text x="400" y="38" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="18" font-weight="bold" filter="url(#glow)">通信协议对比：WiFi vs Zigbee vs BLE Mesh</text>
+  <!-- WiFi Column -->
+  <rect x="50" y="80" width="210" height="340" rx="8" fill="none" stroke="#ff6b6b" stroke-width="1.5" opacity="0.7"/>
+  <rect x="50" y="80" width="210" height="36" rx="8" fill="#ff6b6b" opacity="0.15"/>
+  <text x="155" y="104" text-anchor="middle" fill="#ff6b6b" font-family="monospace" font-size="15" font-weight="bold">📶 WiFi</text>
+  <text x="155" y="135" text-anchor="middle" fill="#5a7aaa" font-family="monospace" font-size="11">成本低 · 免网关</text>
+  <line x1="70" y1="150" x2="240" y2="150" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="70" y="175" fill="#7ec27e" font-family="monospace" font-size="11">✓ 即插即用</text>
+  <text x="70" y="198" fill="#7ec27e" font-family="monospace" font-size="11">✓ 单品价格低</text>
+  <text x="70" y="221" fill="#ff6b6b" font-family="monospace" font-size="11">✗ 断网即变"傻灯"</text>
+  <text x="70" y="244" fill="#ff6b6b" font-family="monospace" font-size="11">✗ 10+设备拖慢路由</text>
+  <text x="70" y="267" fill="#ff6b6b" font-family="monospace" font-size="11">✗ 响应延迟 &gt;0.5s</text>
+  <text x="70" y="290" fill="#ff6b6b" font-family="monospace" font-size="11">✗ 无本地联动</text>
+  <line x1="70" y1="305" x2="240" y2="305" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="155" y="330" text-anchor="middle" fill="#ff6b6b" font-family="monospace" font-size="11">适合：单灯/出租屋</text>
+  <text x="155" y="355" text-anchor="middle" fill="#5a7aaa" font-family="monospace" font-size="10">⚠ 不推荐多灯场景</text>
+  <!-- Zigbee Column -->
+  <rect x="295" y="80" width="210" height="340" rx="8" fill="none" stroke="#00d4aa" stroke-width="2" filter="url(#glow)"/>
+  <rect x="295" y="80" width="210" height="36" rx="8" fill="#00d4aa" opacity="0.12"/>
+  <text x="400" y="104" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="15" font-weight="bold">🔗 Zigbee 3.0</text>
+  <text x="400" y="135" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="11">低功耗 · 自组网</text>
+  <line x1="315" y1="150" x2="485" y2="150" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="315" y="175" fill="#7ec27e" font-family="monospace" font-size="11">✓ 响应 &lt;0.2s</text>
+  <text x="315" y="198" fill="#7ec27e" font-family="monospace" font-size="11">✓ 断网仍可本地联动</text>
+  <text x="315" y="221" fill="#7ec27e" font-family="monospace" font-size="11">✓ 20+设备无压力</text>
+  <text x="315" y="244" fill="#7ec27e" font-family="monospace" font-size="11">✓ 低功耗长续航</text>
+  <text x="315" y="267" fill="#ff6b6b" font-family="monospace" font-size="11">✗ 需要网关</text>
+  <text x="315" y="290" fill="#ff6b6b" font-family="monospace" font-size="11">✗ 单价略高</text>
+  <line x1="315" y1="305" x2="485" y2="305" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="400" y="330" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="12" font-weight="bold">★ 全屋智能首选</text>
+  <text x="400" y="355" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="10">推荐指数 ★★★★★</text>
+  <!-- BLE Mesh Column -->
+  <rect x="540" y="80" width="210" height="340" rx="8" fill="none" stroke="#ff9800" stroke-width="1.5" opacity="0.7"/>
+  <rect x="540" y="80" width="210" height="36" rx="8" fill="#ff9800" opacity="0.12"/>
+  <text x="645" y="104" text-anchor="middle" fill="#ff9800" font-family="monospace" font-size="15" font-weight="bold">🔵 BLE Mesh</text>
+  <text x="645" y="135" text-anchor="middle" fill="#5a7aaa" font-family="monospace" font-size="11">手机直连 · 免网关</text>
+  <line x1="560" y1="150" x2="730" y2="150" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="560" y="175" fill="#7ec27e" font-family="monospace" font-size="11">✓ 无需网关</text>
+  <text x="560" y="198" fill="#7ec27e" font-family="monospace" font-size="11">✓ 手机直接控制</text>
+  <text x="560" y="221" fill="#ff6b6b" font-family="monospace" font-size="11">✗ 穿墙能力弱</text>
+  <text x="560" y="244" fill="#ff6b6b" font-family="monospace" font-size="11">✗ 大户型体验差</text>
+  <text x="560" y="267" fill="#ff6b6b" font-family="monospace" font-size="11">✗ 远距离不稳定</text>
+  <text x="560" y="290" fill="#5a7aaa" font-family="monospace" font-size="11">- 生态碎片化</text>
+  <line x1="560" y1="305" x2="730" y2="305" stroke="#1a2a4a" stroke-width="0.5"/>
+  <text x="645" y="330" text-anchor="middle" fill="#ff9800" font-family="monospace" font-size="11">适合：单间/小户型</text>
+  <text x="645" y="355" text-anchor="middle" fill="#5a7aaa" font-family="monospace" font-size="10">⚠ 大户型请绕道</text>
+  <!-- Bottom verdict -->
+  <rect x="100" y="440" width="600" height="40" rx="6" fill="#0a0f1a" opacity="0.85"/>
+  <text x="400" y="465" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="12" filter="url(#glow)">💡 结论：追求稳定选 Zigbee，追求性价比选 WiFi，追求未来兼容选 Matter</text>
+</svg>

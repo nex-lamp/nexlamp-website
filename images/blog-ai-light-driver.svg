@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%"><stop offset="0%" stop-color="#0d1f3c"/><stop offset="100%" stop-color="#0a1628"/></radialGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00d4aa"/><stop offset="100%" stop-color="#009688"/></linearGradient>
+    <linearGradient id="line1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#7ec27e" stop-opacity="0.3"/><stop offset="100%" stop-color="#00d4aa" stop-opacity="0.8"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowStrong"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Grid -->
+  <g stroke="#1a2a4a" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="50" x2="800" y2="50"/><line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="200" x2="800" y2="200"/><line x1="0" y1="250" x2="800" y2="250"/><line x1="0" y1="300" x2="800" y2="300"/><line x1="0" y1="350" x2="800" y2="350"/><line x1="0" y1="400" x2="800" y2="400"/><line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="100" y1="0" x2="100" y2="500"/><line x1="200" y1="0" x2="200" y2="500"/><line x1="300" y1="0" x2="300" y2="500"/><line x1="400" y1="0" x2="400" y2="500"/><line x1="500" y1="0" x2="500" y2="500"/><line x1="600" y1="0" x2="600" y2="500"/><line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="18" font-weight="bold" filter="url(#glow)">AI氛围灯 · LED驱动架构</text>
+  <text x="400" y="58" text-anchor="middle" fill="#5a7aaa" font-family="monospace" font-size="11">LED Driver Architecture for AI Ambient Light</text>
+  <!-- Central core -->
+  <rect x="280" y="160" width="240" height="160" rx="12" fill="none" stroke="url(#core)" stroke-width="2" filter="url(#glow)"/>
+  <rect x="290" y="170" width="220" height="140" rx="8" fill="#00d4aa" opacity="0.08"/>
+  <text x="400" y="210" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="16" font-weight="bold" filter="url(#glow)">LED 驱动电源</text>
+  <text x="400" y="235" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="11">Driver Core</text>
+  <text x="400" y="260" text-anchor="middle" fill="#5a7aaa" font-family="monospace" font-size="10">AC-DC | 恒流输出 | PWM调光</text>
+  <text x="400" y="280" text-anchor="middle" fill="#5a7aaa" font-family="monospace" font-size="10">过温保护 | 短路保护 | EMI滤波</text>
+  <!-- Left: AC Input -->
+  <rect x="40" y="200" width="160" height="60" rx="6" fill="none" stroke="#7ec27e" stroke-width="1.5" opacity="0.8"/>
+  <text x="120" y="226" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="12">AC 输入</text>
+  <text x="120" y="246" text-anchor="middle" fill="#5a7aaa" font-family="monospace" font-size="10">100-240V 50/60Hz</text>
+  <line x1="200" y1="230" x2="280" y2="230" stroke="#7ec27e" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+  <!-- Right: LED Output -->
+  <rect x="600" y="185" width="160" height="50" rx="6" fill="none" stroke="#7ec27e" stroke-width="1.5" opacity="0.8"/>
+  <text x="680" y="208" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="12">LED 灯珠</text>
+  <text x="680" y="225" text-anchor="middle" fill="#5a7aaa" font-family="monospace" font-size="10">CCT + RGB 输出</text>
+  <line x1="520" y1="210" x2="600" y2="210" stroke="#7ec27e" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+  <!-- Top: MCU + Control -->
+  <rect x="300" y="85" width="200" height="50" rx="6" fill="none" stroke="#ff9800" stroke-width="1.5" opacity="0.8"/>
+  <text x="400" y="106" text-anchor="middle" fill="#ff9800" font-family="monospace" font-size="12">MCU 控制芯片</text>
+  <text x="400" y="124" text-anchor="middle" fill="#5a7aaa" font-family="monospace" font-size="10">WiFi/Zigbee/BLE 通信模块</text>
+  <line x1="400" y1="135" x2="400" y2="160" stroke="#ff9800" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+  <!-- Bottom: Features -->
+  <rect x="310" y="360" width="85" height="40" rx="5" fill="#7ec27e" opacity="0.12" stroke="#7ec27e" stroke-width="1"/>
+  <text x="352" y="385" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="10">Flicker-Free</text>
+  <rect x="410" y="360" width="85" height="40" rx="5" fill="#00d4aa" opacity="0.12" stroke="#00d4aa" stroke-width="1"/>
+  <text x="452" y="385" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="10">0.1% 深度调光</text>
+  <line x1="360" y1="320" x2="352" y2="360" stroke="#7ec27e" stroke-width="1" opacity="0.4"/>
+  <line x1="440" y1="320" x2="452" y2="360" stroke="#00d4aa" stroke-width="1" opacity="0.4"/>
+  <!-- Terminal-style bottom info -->
+  <rect x="30" y="440" width="740" height="40" rx="4" fill="#0a0f1a" opacity="0.8"/>
+  <text x="50" y="462" fill="#00d4aa" font-family="monospace" font-size="11">$ driver_status --check</text>
+  <text x="250" y="462" fill="#5a7aaa" font-family="monospace" font-size="11">[OK] PF&gt;0.9  [OK] THD&lt;15%  [OK] Efficiency&gt;88%</text>
+</svg>
