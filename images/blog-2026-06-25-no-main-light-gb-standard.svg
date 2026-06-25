@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f2444"/>
+    </linearGradient>
+    <linearGradient id="oldBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="newBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#166534"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg1)"/>
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="800" y1="0" x2="800" y2="600"/>
+    <line x1="1000" y1="0" x2="1000" y2="600"/>
+  </g>
+  <text x="60" y="60" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="bold" filter="url(#glow)">GB 30255-2026 新国标核心变化</text>
+  <text x="60" y="92" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="14">2027.09 强制实施 — 智能照明能效全面收紧</text>
+  <text x="60" y="160" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">待机功耗对比 (Standby Power)</text>
+  <text x="120" y="200" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="12">GB 30255-2019</text>
+  <rect x="220" y="180" width="700" height="28" fill="url(#oldBar)" rx="3" filter="url(#glow)"/>
+  <text x="930" y="200" fill="#ef4444" font-family="Consolas, monospace" font-size="16" font-weight="bold">1.5 W</text>
+  <text x="120" y="250" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="12">GB 30255-2026</text>
+  <rect x="220" y="230" width="140" height="28" fill="url(#newBar)" rx="3" filter="url(#glow)"/>
+  <text x="370" y="250" fill="#22c55e" font-family="Consolas, monospace" font-size="16" font-weight="bold">≤ 0.3 W ↓80%</text>
+  <g transform="translate(60, 310)">
+    <rect width="260" height="220" fill="#0f2444" stroke="#22c55e" stroke-width="1.5" rx="8"/>
+    <circle cx="30" cy="30" r="8" fill="#22c55e" filter="url(#glow)"/>
+    <text x="50" y="36" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">覆盖范围扩大</text>
+    <text x="20" y="80" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">• 小光束角筒灯(射灯)</text>
+    <text x="20" y="105" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">• LED 高天棚灯</text>
+    <text x="20" y="130" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">• 替换型双端 LED 灯</text>
+    <text x="20" y="155" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">• 调光/调色/智能灯具</text>
+    <text x="20" y="190" fill="#7ec27e" font-family="Consolas, monospace" font-size="11">→ 智能产品全面纳入能效</text>
+  </g>
+  <g transform="translate(340, 310)">
+    <rect width="260" height="220" fill="#0f2444" stroke="#3b82f6" stroke-width="1.5" rx="8"/>
+    <circle cx="30" cy="30" r="8" fill="#3b82f6" filter="url(#glow)"/>
+    <text x="50" y="36" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">能效等级提升</text>
+    <text x="20" y="80" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">3 级准入门槛整体上调</text>
+    <text x="20" y="105" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">2 级节能产品区分度↑</text>
+    <text x="20" y="130" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">60-115 lm/W 分级</text>
+    <text x="20" y="155" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">高显色/防眩/智能有修正</text>
+    <text x="20" y="190" fill="#7ec27e" font-family="Consolas, monospace" font-size="11">→ 光效质量双重要求</text>
+  </g>
+  <g transform="translate(620, 310)">
+    <rect width="260" height="220" fill="#0f2444" stroke="#f59e0b" stroke-width="1.5" rx="8"/>
+    <circle cx="30" cy="30" r="8" fill="#f59e0b" filter="url(#glow)"/>
+    <text x="50" y="36" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">高端产品修正</text>
+    <text x="20" y="80" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">• 高显色 Ra≥90</text>
+    <text x="20" y="105" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">• 防眩光设计</text>
+    <text x="20" y="130" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">• 智能调控产品</text>
+    <text x="20" y="170" fill="#7ec27e" font-family="Consolas, monospace" font-size="11">→ 优质产品留出通道</text>
+    <text x="20" y="195" fill="#7ec27e" font-family="Consolas, monospace" font-size="11">→ 不再"过了就行"</text>
+  </g>
+  <g transform="translate(900, 310)">
+    <rect width="240" height="220" fill="#0f2444" stroke="#ef4444" stroke-width="1.5" rx="8"/>
+    <circle cx="30" cy="30" r="8" fill="#ef4444" filter="url(#glow)"/>
+    <text x="50" y="36" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">消费者影响</text>
+    <text x="20" y="80" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">宣传"待机 1W"</text>
+    <text x="20" y="100" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">→ 只是合规线</text>
+    <text x="20" y="140" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">省电标杆 0.3W</text>
+    <text x="20" y="160" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">→ 才是真省电</text>
+    <text x="20" y="195" fill="#fca5a5" font-family="Consolas, monospace" font-size="11">小厂加速淘汰</text>
+  </g>
+</svg>

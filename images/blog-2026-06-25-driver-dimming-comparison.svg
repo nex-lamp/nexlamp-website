@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f2444"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg2)"/>
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="800" y1="0" x2="800" y2="600"/>
+  </g>
+  <text x="60" y="60" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="bold" filter="url(#glow2)">无主灯调光：兼容 ≠ 能调</text>
+  <text x="60" y="92" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="14">两类调光波形实测对比 — 频闪/深度/SVM 风险</text>
+  <g transform="translate(60, 130)">
+    <text x="0" y="0" fill="#ef4444" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">① PWM 廉价调光（典型翻车）</text>
+    <text x="0" y="20" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="11">频率低、占空比跳动 → 频闪 + 色偏</text>
+    <rect x="0" y="30" width="1080" height="100" fill="#0a1628" stroke="#ef4444" stroke-width="1" rx="4"/>
+    <path d="M 0,80 L 0,40 L 20,40 L 20,80 L 40,80 L 40,40 L 60,40 L 60,80 L 80,80 L 80,40 L 100,40 L 100,80 L 120,80 L 120,40 L 140,40 L 140,80 L 160,80 L 160,40 L 180,40 L 180,80 L 200,80 L 200,40 L 220,40 L 220,80 L 240,80 L 240,40 L 260,40 L 260,80 L 280,80 L 280,40 L 300,40 L 300,80 L 320,80 L 320,40 L 340,40 L 340,80 L 360,80 L 360,40 L 380,40 L 380,80 L 400,80 L 400,40 L 420,40 L 420,80 L 440,80 L 440,40 L 460,40 L 460,80 L 480,80 L 480,40 L 500,40 L 500,80 L 520,80 L 520,40 L 540,40 L 540,80 L 560,80 L 560,40 L 580,40 L 580,80 L 600,80 L 600,40 L 620,40 L 620,80 L 640,80 L 640,40 L 660,40 L 660,80 L 680,80 L 680,40 L 700,40 L 700,80 L 720,80 L 720,40 L 740,40 L 740,80 L 760,80 L 760,40 L 780,40 L 780,80 L 800,80 L 800,40 L 820,40 L 820,80 L 840,80 L 840,40 L 860,40 L 860,80 L 880,80 L 880,40 L 900,40 L 900,80 L 920,80 L 920,40 L 940,40 L 940,80 L 960,80 L 960,40 L 980,40 L 980,80 L 1000,80 L 1000,40 L 1020,40 L 1020,80 L 1040,80 L 1040,40 L 1060,40 L 1060,80 L 1080,80 L 1080,40"
+          stroke="#ef4444" stroke-width="2" fill="none" filter="url(#glow2)"/>
+    <text x="0" y="155" fill="#fca5a5" font-family="Consolas, monospace" font-size="12">SVM: 1.8 (IEEE 1789 高风险) | 调光深度 ≥ 5%</text>
+  </g>
+  <g transform="translate(60, 320)">
+    <text x="0" y="0" fill="#22c55e" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">② 模拟恒流 0-10V 调光（推荐）</text>
+    <text x="0" y="20" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="11">对数曲线 + 电流连续可调 → 0.1% 无极调光</text>
+    <rect x="0" y="30" width="1080" height="100" fill="#0a1628" stroke="#22c55e" stroke-width="1" rx="4"/>
+    <path d="M 0,80 Q 100,80 200,75 T 400,55 T 600,30 T 800,15 T 1000,8 L 1080,5"
+          stroke="#22c55e" stroke-width="2.5" fill="none" filter="url(#glow2)"/>
+    <text x="0" y="155" fill="#86efac" font-family="Consolas, monospace" font-size="12">SVM: 0.3 (IEEE 1789 无风险) | 调光深度 0.1%</text>
+  </g>
+  <g transform="translate(60, 510)">
+    <text x="0" y="0" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">采购提示：</text>
+    <text x="90" y="0" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="13">要求供应商提供 1% 调光深度波形 + SVM 数据，或认准 IEEE 1789 无频闪认证</text>
+  </g>
+</svg>

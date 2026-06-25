@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="Consolas, monospace">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2440"/>
+    </linearGradient>
+    <linearGradient id="simGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#ee5a5a"/>
+    </linearGradient>
+    <linearGradient id="digGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4ecdc4"/>
+      <stop offset="100%" stop-color="#3db8af"/>
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bgGrad1)"/>
+  <rect width="1200" height="600" fill="url(#grid1)"/>
+
+  <!-- 标题栏 -->
+  <rect x="40" y="30" width="1120" height="50" fill="#0d2440" stroke="#4ecdc4" stroke-width="1" rx="4"/>
+  <text x="60" y="62" fill="#4ecdc4" font-size="22" font-weight="bold">▎SMART DIMMING PROTOCOLS · 智能调光协议分类</text>
+  <text x="1140" y="62" fill="#7ec27e" font-size="14" text-anchor="end">2026 Edition</text>
+
+  <!-- 根节点 -->
+  <rect x="500" y="110" width="200" height="50" fill="#1a3a5c" stroke="#7ec27e" stroke-width="2" rx="6" filter="url(#glow1)"/>
+  <text x="600" y="142" fill="#7ec27e" font-size="18" font-weight="bold" text-anchor="middle">调光协议 DIMMING</text>
+
+  <!-- 连接线 根到两大类 -->
+  <line x1="600" y1="160" x2="280" y2="210" stroke="#ff6b6b" stroke-width="2"/>
+  <line x1="600" y1="160" x2="920" y2="210" stroke="#4ecdc4" stroke-width="2"/>
+  <text x="430" y="195" fill="#ff6b6b" font-size="12">模拟信号</text>
+  <text x="700" y="195" fill="#4ecdc4" font-size="12">数字信号</text>
+
+  <!-- 左侧：模拟调光 -->
+  <rect x="100" y="210" width="360" height="40" fill="url(#simGrad)" rx="6"/>
+  <text x="280" y="237" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">▌ 模拟调光 ANALOG</text>
+
+  <rect x="60" y="270" width="200" height="80" fill="#0d2440" stroke="#ff6b6b" stroke-width="1.5" rx="4"/>
+  <text x="160" y="300" fill="#ff6b6b" font-size="16" font-weight="bold" text-anchor="middle">可控硅 TRIAC</text>
+  <text x="160" y="320" fill="#9bb0c4" font-size="11" text-anchor="middle">导通角调节</text>
+  <text x="160" y="338" fill="#7ec27e" font-size="11" text-anchor="middle">¥8-15/颗</text>
+
+  <line x1="280" y1="230" x2="160" y2="270" stroke="#ff6b6b" stroke-width="1.5"/>
+
+  <rect x="300" y="270" width="200" height="80" fill="#0d2440" stroke="#ff6b6b" stroke-width="1.5" rx="4"/>
+  <text x="400" y="300" fill="#ff6b6b" font-size="16" font-weight="bold" text-anchor="middle">0-10V</text>
+  <text x="400" y="320" fill="#9bb0c4" font-size="11" text-anchor="middle">电压信号 1V-10V</text>
+  <text x="400" y="338" fill="#7ec27e" font-size="11" text-anchor="middle">¥25-30/颗</text>
+
+  <line x1="280" y1="230" x2="400" y2="270" stroke="#ff6b6b" stroke-width="1.5"/>
+
+  <!-- 右侧：数字调光 -->
+  <rect x="740" y="210" width="360" height="40" fill="url(#digGrad)" rx="6"/>
+  <text x="920" y="237" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">▌ 数字调光 DIGITAL</text>
+
+  <rect x="700" y="270" width="200" height="80" fill="#0d2440" stroke="#4ecdc4" stroke-width="1.5" rx="4"/>
+  <text x="800" y="300" fill="#4ecdc4" font-size="16" font-weight="bold" text-anchor="middle">DALI-2</text>
+  <text x="800" y="320" fill="#9bb0c4" font-size="11" text-anchor="middle">IEC 62386 寻址</text>
+  <text x="800" y="338" fill="#7ec27e" font-size="11" text-anchor="middle">¥40-55/颗</text>
+
+  <line x1="920" y1="230" x2="800" y2="270" stroke="#4ecdc4" stroke-width="1.5"/>
+
+  <rect x="940" y="270" width="200" height="80" fill="#0d2440" stroke="#4ecdc4" stroke-width="1.5" rx="4"/>
+  <text x="1040" y="300" fill="#4ecdc4" font-size="16" font-weight="bold" text-anchor="middle">Zigbee 3.0</text>
+  <text x="1040" y="320" fill="#9bb0c4" font-size="11" text-anchor="middle">无线涂鸦/米家</text>
+  <text x="1040" y="338" fill="#7ec27e" font-size="11" text-anchor="middle">¥25-30/颗</text>
+
+  <line x1="920" y1="230" x2="1040" y2="270" stroke="#4ecdc4" stroke-width="1.5"/>
+
+  <!-- 底部特征对比表 -->
+  <rect x="40" y="380" width="1120" height="180" fill="#0d2440" stroke="#1a3a5c" stroke-width="1" rx="4"/>
+  <text x="60" y="410" fill="#7ec27e" font-size="16" font-weight="bold">▎核心特征对比</text>
+
+  <text x="60" y="445" fill="#ff6b6b" font-size="13" font-weight="bold">⚠ 模拟调光</text>
+  <text x="180" y="445" fill="#9bb0c4" font-size="12">• 便宜（¥8-30）</text>
+  <text x="380" y="445" fill="#9bb0c4" font-size="12">• 抗干扰弱</text>
+  <text x="580" y="445" fill="#9bb0c4" font-size="12">• 兼容性差</text>
+  <text x="780" y="445" fill="#9bb0c4" font-size="12">• 阶梯感明显</text>
+
+  <text x="60" y="475" fill="#4ecdc4" font-size="13" font-weight="bold">✓ 数字调光</text>
+  <text x="180" y="475" fill="#9bb0c4" font-size="12">• 略贵（¥25-55）</text>
+  <text x="380" y="475" fill="#9bb0c4" font-size="12">• 抗干扰强</text>
+  <text x="580" y="475" fill="#9bb0c4" font-size="12">• 自动寻址</text>
+  <text x="780" y="475" fill="#9bb0c4" font-size="12">• 调光曲线平滑</text>
+
+  <text x="60" y="510" fill="#7ec27e" font-size="13" font-weight="bold">★ 2026推荐</text>
+  <text x="180" y="510" fill="#9bb0c4" font-size="12">• 家庭：0-10V（性价比首选）</text>
+  <text x="500" y="510" fill="#9bb0c4" font-size="12">• 智能：Zigbee（涂鸦生态）</text>
+  <text x="820" y="510" fill="#9bb0c4" font-size="12">• 豪宅：DALI-2</text>
+
+  <text x="60" y="540" fill="#ffd93d" font-size="12" font-weight="bold">⚡ 新国标GB/T 31831-2025：所有调光驱动需3C认证 + Pst≤1.0 + SVM≤1.8</text>
+</svg>

@@ -1,5 +1,23 @@
 [
   {
+    "title": "无主灯驱动选型避坑指南：GB 30255-2026 新国标下，LED 驱动电源怎么挑才不踩雷",
+    "slug": "no-main-light-driver-selection-2026",
+    "date": "2026-06-25",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-2026-06-25-no-main-light-driver-cover.png",
+    "excerpt": "\"2027 年 9 月 GB 30255-2026 强制实施，无主灯驱动待机功耗被砍到 0.3W，色温/显指/光束角全要分级。本文从装修业主和工程商两个视角，拆解选型时最容易踩的 6 个坑。"
+  },
+  {
+    "title": "智能灯调光总翻车？2026驱动电源选型避坑：DALI/0-10V/可控硅/Zigbee到底怎么选",
+    "slug": "smart-dimming-driver-selection-guide-2026",
+    "date": "2026-06-25",
+    "category": "选型指南",
+    "description": "2026智能灯调光驱动电源选型指南。深度对比DALI/0-10V/可控硅/Zigbee四种调光协议的兼容性、频闪、成本和适用场景,帮你避开调光翻车90%的坑。",
+    "cover": "images/blog-2026-06-25-smart-dimming-driver-guide-cover.png",
+    "excerpt": "智能灯调光一调就闪、到50%就跳变、跟墙壁开关打架？90%问题出在驱动电源和调光协议不匹配。本文用一张决策树讲清DALI/0-10V/可控硅/Zigbee四大协议的本质区别，附2026年实测推荐方案。"
+  },
+  {
     "title": "2026年AI氛围灯选购指南：从驱动到协议，买之前必须知道的3件事",
     "slug": "2026-06-24-ai-ambient-light-guide",
     "date": "2026-06-24",

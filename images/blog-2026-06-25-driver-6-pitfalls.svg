@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f2444"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg3)"/>
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="900" y1="0" x2="900" y2="600"/>
+  </g>
+  <text x="60" y="60" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="bold" filter="url(#glow3)">无主灯驱动选型 6 大避坑指南</text>
+  <text x="60" y="92" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="14">装修业主 + 工程商 通用速查</text>
+  <g transform="translate(60, 130)">
+    <rect width="260" height="120" fill="#0f2444" stroke="#ef4444" stroke-width="1.5" rx="8"/>
+    <text x="15" y="30" fill="#ef4444" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">坑 1 · 功率 vs 光效</text>
+    <text x="15" y="60" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">12W 灯差 30% 光效很常见</text>
+    <text x="15" y="82" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">GB 3 级 60-115 lm/W 分级</text>
+    <text x="15" y="106" fill="#86efac" font-family="Consolas, monospace" font-size="11">→ 优先看 lm/W</text>
+  </g>
+  <g transform="translate(340, 130)">
+    <rect width="260" height="120" fill="#0f2444" stroke="#f59e0b" stroke-width="1.5" rx="8"/>
+    <text x="15" y="30" fill="#f59e0b" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">坑 2 · 调光兼容性</text>
+    <text x="15" y="60" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">"兼容"≠"真能调"</text>
+    <text x="15" y="82" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">低亮度频闪是典型症状</text>
+    <text x="15" y="106" fill="#86efac" font-family="Consolas, monospace" font-size="11">→ 要 1% 调光波形图</text>
+  </g>
+  <g transform="translate(620, 130)">
+    <rect width="260" height="120" fill="#0f2444" stroke="#3b82f6" stroke-width="1.5" rx="8"/>
+    <text x="15" y="30" fill="#3b82f6" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">坑 3 · 功率配置</text>
+    <text x="15" y="60" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">驱动应 = 灯具 × 110%</text>
+    <text x="15" y="82" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">24V 灯带每 5m 重算压降</text>
+    <text x="15" y="106" fill="#86efac" font-family="Consolas, monospace" font-size="11">→ 留 10% 余量延寿</text>
+  </g>
+  <g transform="translate(900, 130)">
+    <rect width="240" height="120" fill="#0f2444" stroke="#a855f7" stroke-width="1.5" rx="8"/>
+    <text x="15" y="30" fill="#a855f7" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">坑 4 · 智能联动</text>
+    <text x="15" y="60" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">协议 ≠ 本地化执行</text>
+    <text x="15" y="82" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">断网时场景能否照跑</text>
+    <text x="15" y="106" fill="#86efac" font-family="Consolas, monospace" font-size="11">→ 问"断网怎么办"</text>
+  </g>
+  <g transform="translate(60, 280)">
+    <rect width="260" height="120" fill="#0f2444" stroke="#22c55e" stroke-width="1.5" rx="8"/>
+    <text x="15" y="30" fill="#22c55e" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">坑 5 · 防眩与 SVM</text>
+    <text x="15" y="60" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">深杯灯具对光源指向性高</text>
+    <text x="15" y="82" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">纹波大 → 边缘色差</text>
+    <text x="15" y="106" fill="#86efac" font-family="Consolas, monospace" font-size="11">→ SVM ≤ 0.4 为佳</text>
+  </g>
+  <g transform="translate(340, 280)">
+    <rect width="260" height="120" fill="#0f2444" stroke="#ec4899" stroke-width="1.5" rx="8"/>
+    <text x="15" y="30" fill="#ec4899" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">坑 6 · 售后质保</text>
+    <text x="15" y="60" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">驱动单独 5 年质保</text>
+    <text x="15" y="82" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">3 年以下慎选</text>
+    <text x="15" y="106" fill="#86efac" font-family="Consolas, monospace" font-size="11">→ 写进合同</text>
+  </g>
+  <g transform="translate(620, 280)">
+    <rect width="520" height="120" fill="#0f2444" stroke="#7ec27e" stroke-width="2" rx="8"/>
+    <text x="15" y="30" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">工程商项目选型 SOP</text>
+    <text x="15" y="58" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">项目需求 → 灯具清单 → 驱动 110% 配置 → 调光协议确认</text>
+    <text x="15" y="80" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12">SVM ≤ 0.4 测试 → 待机 ≤ 0.3W → 7 天老化 → 验收</text>
+    <text x="15" y="106" fill="#86efac" font-family="Consolas, monospace" font-size="11">→ 别省老化：72h 满载可炸掉 80% 早期失效品</text>
+  </g>
+  <g transform="translate(60, 450)">
+    <rect width="1080" height="80" fill="#0f2444" stroke="#7ec27e" stroke-width="2" rx="8"/>
+    <text x="20" y="32" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">业主速查三件套</text>
+    <text x="20" y="60" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="13">① 看能效标识（3 级起步）  ② 看调光深度（≤1% 无极调光）  ③ 看质保年限（驱动单独 5 年）</text>
+  </g>
+</svg>
