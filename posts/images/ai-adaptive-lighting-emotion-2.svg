@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#162a4a"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- 背景 -->
+  <rect width="680" height="420" fill="url(#bg2)" rx="8"/>
+  <!-- 网格 -->
+  <g opacity="0.06" stroke="#4fc3f7">
+    <line x1="0" y1="0" x2="680" y2="420"/>
+    <line x1="680" y1="0" x2="0" y2="420"/>
+    <line x1="340" y1="0" x2="340" y2="420"/>
+    <line x1="0" y1="210" x2="680" y2="210"/>
+  </g>
+  <!-- 标题 -->
+  <text x="340" y="35" text-anchor="middle" fill="#81d4fa" font-size="16" font-family="sans-serif" font-weight="bold" filter="url(#glow2)">AI自适应照明三层搭建方案</text>
+  <!-- 第一层：色温可调 -->
+  <rect x="40" y="60" width="200" height="310" fill="#162a4a" stroke="#4fc3f7" stroke-width="1.5" rx="8" opacity="0.8"/>
+  <rect x="40" y="60" width="200" height="40" fill="#4fc3f7" opacity="0.15" rx="8"/>
+  <text x="140" y="85" text-anchor="middle" fill="#81d4fa" font-size="14" font-family="sans-serif" font-weight="bold">第一层：色温可调</text>
+  <text x="140" y="85" text-anchor="middle" fill="#81d4fa" font-size="14" font-family="sans-serif" font-weight="bold"/>
+  <text x="60" y="120" fill="#c8d8e8" font-size="11" font-family="sans-serif">最低门槛 · 约¥200-400/支</text>
+  <line x1="60" y1="130" x2="220" y2="130" stroke="#4fc3f7" stroke-width="0.5" opacity="0.3"/>
+  <!-- 灯泡图标 -->
+  <circle cx="140" cy="165" r="25" fill="#ffb347" opacity="0.2"/>
+  <circle cx="140" cy="165" r="12" fill="#ffb347" opacity="0.6" filter="url(#glow2)"/>
+  <text x="140" y="200" text-anchor="middle" fill="#c8d8e8" font-size="10" font-family="sans-serif">2700K-6500K</text>
+  <text x="140" y="215" text-anchor="middle" fill="#c8d8e8" font-size="10" font-family="sans-serif">全色温范围调节</text>
+  <text x="60" y="250" fill="#c8d8e8" font-size="10" font-family="sans-serif">✦ APP定时色温切换</text>
+  <text x="60" y="270" fill="#c8d8e8" font-size="10" font-family="sans-serif">✦ 4时段自动方案</text>
+  <text x="60" y="290" fill="#c8d8e8" font-size="10" font-family="sans-serif">✦ 涂鸦Zigbee协议</text>
+  <text x="60" y="320" fill="#ff8c42" font-size="11" font-family="sans-serif" font-weight="bold">适合：入门体验</text>
+  <!-- 第二层：传感器联动 -->
+  <rect x="260" y="60" width="200" height="310" fill="#162a4a" stroke="#ffb347" stroke-width="1.5" rx="8" opacity="0.8"/>
+  <rect x="260" y="60" width="200" height="40" fill="#ffb347" opacity="0.15" rx="8"/>
+  <text x="360" y="85" text-anchor="middle" fill="#ffb347" font-size="14" font-family="sans-serif" font-weight="bold">第二层：传感器联动</text>
+  <text x="280" y="120" fill="#c8d8e8" font-size="11" font-family="sans-serif">推荐配置 · +¥100-200</text>
+  <line x1="280" y1="130" x2="440" y2="130" stroke="#ffb347" stroke-width="0.5" opacity="0.3"/>
+  <!-- 传感器图标 -->
+  <rect x="330" y="155" width="30" height="30" fill="#4fc3f7" opacity="0.2" rx="4"/>
+  <circle cx="345" cy="170" r="8" fill="#4fc3f7" opacity="0.6" filter="url(#glow2)"/>
+  <rect x="370" y="155" width="30" height="30" fill="#ffb347" opacity="0.2" rx="4"/>
+  <circle cx="385" cy="170" r="8" fill="#ffb347" opacity="0.6" filter="url(#glow2)"/>
+  <text x="360" y="200" text-anchor="middle" fill="#c8d8e8" font-size="10" font-family="sans-serif">人体+光照度传感器</text>
+  <text x="280" y="250" fill="#c8d8e8" font-size="10" font-family="sans-serif">✦ 人来灯亮 · 人走灯灭</text>
+  <text x="280" y="270" fill="#c8d8e8" font-size="10" font-family="sans-serif">✦ 环境亮度自动适配</text>
+  <text x="280" y="290" fill="#c8d8e8" font-size="10" font-family="sans-serif">✦ 场景联动自动化</text>
+  <text x="280" y="320" fill="#ffb347" font-size="11" font-family="sans-serif" font-weight="bold">适合：日常舒适</text>
+  <!-- 第三层：全屋场景 -->
+  <rect x="480" y="60" width="160" height="310" fill="#162a4a" stroke="#ff8c42" stroke-width="1.5" rx="8" opacity="0.8"/>
+  <rect x="480" y="60" width="160" height="40" fill="#ff8c42" opacity="0.15" rx="8"/>
+  <text x="560" y="85" text-anchor="middle" fill="#ff8c42" font-size="14" font-family="sans-serif" font-weight="bold">第三层：全屋场景</text>
+  <text x="500" y="120" fill="#c8d8e8" font-size="11" font-family="sans-serif">终极方案 · 全屋联动</text>
+  <line x1="500" y1="130" x2="620" y2="130" stroke="#ff8c42" stroke-width="0.5" opacity="0.3"/>
+  <!-- 全屋图标 -->
+  <rect x="530" y="155" width="60" height="35" fill="#ff8c42" opacity="0.12" rx="4"/>
+  <text x="560" y="178" text-anchor="middle" fill="#ff8c42" font-size="12" font-family="sans-serif" opacity="0.8">全屋</text>
+  <text x="500" y="220" fill="#c8d8e8" font-size="9" font-family="sans-serif">客厅 4000K+2700K观影</text>
+  <text x="500" y="240" fill="#c8d8e8" font-size="9" font-family="sans-serif">卧室 3000K+2000K助眠</text>
+  <text x="500" y="260" fill="#c8d8e8" font-size="9" font-family="sans-serif">书房 5000K专注+4000K阅读</text>
+  <text x="500" y="290" fill="#c8d8e8" font-size="10" font-family="sans-serif">✦ Zigbee网关统一管理</text>
+  <text x="500" y="310" fill="#c8d8e8" font-size="10" font-family="sans-serif">✦ 一键切换全屋场景</text>
+  <text x="500" y="340" fill="#ff8c42" font-size="11" font-family="sans-serif" font-weight="bold">适合：极致体验</text>
+  <!-- 连接箭头 -->
+  <path d="M 245,215 L 255,215" stroke="#4fc3f7" stroke-width="2" opacity="0.5"/>
+  <path d="M 465,215 L 475,215" stroke="#ffb347" stroke-width="2" opacity="0.5"/>
+  <!-- 底部说明 -->
+  <text x="340" y="400" text-anchor="middle" fill="#81d4fa" font-size="10" font-family="sans-serif" opacity="0.5">Nexlamp涂鸦Zigbee筒灯/射灯 · Ra98全光谱 · 2700K-6500K全色温</text>
+</svg>
