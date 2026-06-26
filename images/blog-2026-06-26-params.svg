@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f1f3a"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#00b4d8"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c4dff"/>
+      <stop offset="100%" stop-color="#651fff"/>
+    </linearGradient>
+    <linearGradient id="glow3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00e676"/>
+      <stop offset="100%" stop-color="#00c853"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#00e5ff" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#7c4dff" flood-opacity="0.3"/>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="monospace" font-size="24" fill="#00e5ff" font-weight="bold" filter="url(#shadow)">SMART LIGHT CORE PARAMETERS</text>
+  <line x1="150" y1="65" x2="650" y2="65" stroke="#00e5ff" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- 5 Parameter Cards -->
+  <!-- Param 1: CRI Ra -->
+  <g transform="translate(30, 90)">
+    <rect x="0" y="0" width="135" height="170" rx="6" fill="#0d1f3c" stroke="#00e5ff" stroke-width="1" opacity="0.9"/>
+    <rect x="0" y="0" width="135" height="4" rx="2" fill="url(#glow1)"/>
+    <text x="67" y="30" text-anchor="middle" font-family="monospace" font-size="11" fill="#00e5ff" opacity="0.7">Ra / CRI</text>
+    <text x="67" y="60" text-anchor="middle" font-family="monospace" font-size="32" fill="#00e5ff" font-weight="bold">90+</text>
+    <text x="67" y="85" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">显色指数</text>
+    <line x1="15" y1="100" x2="120" y2="100" stroke="#1a2a4a" stroke-width="0.5"/>
+    <text x="67" y="118" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">Ra≥90 高显色</text>
+    <text x="67" y="136" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">R9≥50 红色还原</text>
+    <text x="67" y="154" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">太阳光=100</text>
+  </g>
+
+  <!-- Param 2: CCT -->
+  <g transform="translate(185, 90)">
+    <rect x="0" y="0" width="135" height="170" rx="6" fill="#0d1f3c" stroke="#7c4dff" stroke-width="1" opacity="0.9"/>
+    <rect x="0" y="0" width="135" height="4" rx="2" fill="url(#glow2)"/>
+    <text x="67" y="30" text-anchor="middle" font-family="monospace" font-size="11" fill="#7c4dff" opacity="0.7">色温 / CCT</text>
+    <text x="67" y="60" text-anchor="middle" font-family="monospace" font-size="32" fill="#7c4dff" font-weight="bold">2700</text>
+    <text x="67" y="80" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">- 6500K</text>
+    <line x1="15" y1="100" x2="120" y2="100" stroke="#1a2a4a" stroke-width="0.5"/>
+    <text x="67" y="118" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">SDCM≤3</text>
+    <text x="67" y="136" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">色容差一致</text>
+    <text x="67" y="154" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">HCL自适应色温</text>
+  </g>
+
+  <!-- Param 3: Flicker -->
+  <g transform="translate(340, 90)">
+    <rect x="0" y="0" width="135" height="170" rx="6" fill="#0d1f3c" stroke="#00e676" stroke-width="1" opacity="0.9"/>
+    <rect x="0" y="0" width="135" height="4" rx="2" fill="url(#glow3)"/>
+    <text x="67" y="30" text-anchor="middle" font-family="monospace" font-size="11" fill="#00e676" opacity="0.7">频闪 / Flicker</text>
+    <text x="67" y="60" text-anchor="middle" font-family="monospace" font-size="32" fill="#00e676" font-weight="bold">&lt;5%</text>
+    <text x="67" y="85" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">频闪百分比</text>
+    <line x1="15" y1="100" x2="120" y2="100" stroke="#1a2a4a" stroke-width="0.5"/>
+    <text x="67" y="118" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">直流无频闪</text>
+    <text x="67" y="136" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">手机相机可测</text>
+    <text x="67" y="154" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">新国标≤5%</text>
+  </g>
+
+  <!-- Param 4: Driver -->
+  <g transform="translate(495, 90)">
+    <rect x="0" y="0" width="135" height="170" rx="6" fill="#0d1f3c" stroke="#ff6d00" stroke-width="1" opacity="0.9"/>
+    <rect x="0" y="0" width="135" height="4" rx="2" fill="#ff6d00"/>
+    <text x="67" y="30" text-anchor="middle" font-family="monospace" font-size="11" fill="#ff6d00" opacity="0.7">驱动 / Driver</text>
+    <text x="67" y="60" text-anchor="middle" font-family="monospace" font-size="32" fill="#ff6d00" font-weight="bold">PF 0.9</text>
+    <text x="67" y="85" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">功率因数</text>
+    <line x1="15" y1="100" x2="120" y2="100" stroke="#1a2a4a" stroke-width="0.5"/>
+    <text x="67" y="118" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">日系电容</text>
+    <text x="67" y="136" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">四重保护</text>
+    <text x="67" y="154" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">平滑调光</text>
+  </g>
+
+  <!-- Param 5: Protocol -->
+  <g transform="translate(650, 90)">
+    <rect x="0" y="0" width="120" height="170" rx="6" fill="#0d1f3c" stroke="#e040fb" stroke-width="1" opacity="0.9"/>
+    <rect x="0" y="0" width="120" height="4" rx="2" fill="#e040fb"/>
+    <text x="60" y="30" text-anchor="middle" font-family="monospace" font-size="11" fill="#e040fb" opacity="0.7">协议 / Proto</text>
+    <text x="60" y="60" text-anchor="middle" font-family="monospace" font-size="28" fill="#e040fb" font-weight="bold">Zigbee</text>
+    <text x="60" y="80" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">+ Matter</text>
+    <line x1="15" y1="100" x2="105" y2="100" stroke="#1a2a4a" stroke-width="0.5"/>
+    <text x="60" y="118" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">跨品牌互通</text>
+    <text x="60" y="136" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">128设备</text>
+    <text x="60" y="154" text-anchor="middle" font-family="monospace" font-size="9" fill="#5a7a9a">OTA升级</text>
+  </g>
+
+  <!-- Footer / Score meter -->
+  <g transform="translate(0, 290)">
+    <text x="400" y="20" text-anchor="middle" font-family="monospace" font-size="13" fill="#5a7a9a">2026 NEW STANDARD GB/T 31831-2025</text>
+
+    <!-- 5 checkmarks -->
+    <g transform="translate(50, 50)">
+      <rect x="0" y="0" width="650" height="60" rx="8" fill="#0d1f3c" stroke="#1a2a4a" stroke-width="1"/>
+      <text x="40" y="40" font-family="monospace" font-size="16" fill="#00e5ff">✓ Ra≥90</text>
+      <text x="165" y="40" font-family="monospace" font-size="16" fill="#7c4dff">✓ SDCM≤3</text>
+      <text x="305" y="40" font-family="monospace" font-size="16" fill="#00e676">✓ 频闪&lt;5%</text>
+      <text x="465" y="40" font-family="monospace" font-size="16" fill="#ff6d00">✓ PF≥0.9</text>
+      <text x="600" y="40" font-family="monospace" font-size="16" fill="#e040fb">✓ Zigbee</text>
+    </g>
+  </g>
+
+  <!-- Terminal-style bottom -->
+  <g transform="translate(70, 420)">
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#5a7a9a">$ check-light-quality --standard GB/T-31831-2025</text>
+    <text x="0" y="18" font-family="monospace" font-size="11" fill="#00e676">[PASS] Ra: 92 | R9: 65 | SDCM: 1.8 | Flicker: 2.1% | PF: 0.94</text>
+    <text x="0" y="36" font-family="monospace" font-size="11" fill="#00e5ff">[OK] Protocol: Zigbee 3.0 + Matter OTA ready</text>
+    <text x="0" y="54" font-family="monospace" font-size="11" fill="#5a7a9a">$ _</text>
+  </g>
+</svg>
