@@ -1,5 +1,23 @@
 [
   {
+    "title": "2026智能灯选购终极指南：看懂这5个核心参数，没人能坑你",
+    "slug": "2026-06-26-smart-light-buying-parameters-guide",
+    "date": "2026-06-26",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-2026-06-26-cover.png",
+    "excerpt": "智能灯挑花眼？显色指数、色温、频闪、驱动电源、协议兼容性——这5个参数才是决定一盏灯好不好的关键。2026新国标实施后，会看参数比会看价格更重要。"
+  },
+  {
+    "title": "灯光正在偷偷影响你的情绪和睡眠——AI自适应照明到底值不值？",
+    "slug": "ai-adaptive-lighting-emotion-sleep-guide-2026",
+    "date": "2026-06-26",
+    "category": "智能照明",
+    "description": "深度解析2026年AI自适应照明与全光谱LED如何影响情绪和睡眠，色温调节的科学原理与选购建议，涂鸦Zigbee智能照明实战经验分享。",
+    "cover": "images/ai-adaptive-lighting-emotion-sleep-2026-cover.jpg",
+    "excerpt": "2026年照明行业最火的话题不是协议也不是功率，而是\"灯光如何影响你的情绪\"。AI自适应照明、全光谱健康LED、色温自动调节——这些新概念到底值不值得你买单？"
+  },
+  {
     "title": "无主灯驱动选型避坑指南：GB 30255-2026 新国标下，LED 驱动电源怎么挑才不踩雷",
     "slug": "no-main-light-driver-selection-2026",
     "date": "2026-06-25",
