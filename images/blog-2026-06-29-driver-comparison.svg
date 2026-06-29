@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" width="680" height="480">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#061020;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="tier1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5eead4;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#22d3ee;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="tier2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#818cf8;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="tier3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fb7185;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.95"/>
+    </linearGradient>
+    <pattern id="grid2" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1e3a5f" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="680" height="480" fill="url(#bg2)"/>
+  <rect width="680" height="480" fill="url(#grid2)"/>
+
+  <!-- 标题 -->
+  <text x="340" y="32" text-anchor="middle" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">三类 LED 驱动芯片调光性能对比</text>
+  <text x="340" y="54" text-anchor="middle" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="12">实测 1000 小时老化 + 30 次开关循环</text>
+
+  <!-- 第一梯队 -->
+  <g transform="translate(30,80)">
+    <rect width="620" height="115" rx="10" fill="#0a1f33" stroke="url(#tier1)" stroke-width="1.5"/>
+    <text x="20" y="28" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold">★ 第一梯队：进口/品牌自研</text>
+    <text x="20" y="48" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">代表：TI LM3409HV · 英飞凌 ILD8150 · 涂鸦 TY-LED-8D</text>
+
+    <!-- 性能条 -->
+    <text x="20" y="72" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">调光深度</text>
+    <rect x="100" y="64" width="500" height="12" rx="2" fill="#0f2847"/>
+    <rect x="100" y="64" width="495" height="12" rx="2" fill="url(#tier1)"/>
+    <text x="606" y="73" text-anchor="end" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">0.1%-100%</text>
+
+    <text x="20" y="92" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">PWM 频率</text>
+    <rect x="100" y="84" width="500" height="12" rx="2" fill="#0f2847"/>
+    <rect x="100" y="84" width="490" height="12" rx="2" fill="url(#tier1)"/>
+    <text x="606" y="93" text-anchor="end" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">&gt; 4kHz</text>
+  </g>
+
+  <!-- 第二梯队 -->
+  <g transform="translate(30,210)">
+    <rect width="620" height="115" rx="10" fill="#15102b" stroke="url(#tier2)" stroke-width="1.5"/>
+    <text x="20" y="28" fill="#a78bfa" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold">◆ 第二梯队：国产中端</text>
+    <text x="20" y="48" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">代表：晶丰明源 BP1632 · 士兰微 SD7861 · 富满 FM6353</text>
+
+    <text x="20" y="72" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">调光深度</text>
+    <rect x="100" y="64" width="500" height="12" rx="2" fill="#1e1b3a"/>
+    <rect x="100" y="64" width="340" height="12" rx="2" fill="url(#tier2)"/>
+    <text x="606" y="73" text-anchor="end" fill="#a78bfa" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">1%-100%</text>
+
+    <text x="20" y="92" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">PWM 频率</text>
+    <rect x="100" y="84" width="500" height="12" rx="2" fill="#1e1b3a"/>
+    <rect x="100" y="84" width="280" height="12" rx="2" fill="url(#tier2)"/>
+    <text x="606" y="93" text-anchor="end" fill="#a78bfa" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">1-2kHz</text>
+  </g>
+
+  <!-- 第三梯队 -->
+  <g transform="translate(30,340)">
+    <rect width="620" height="115" rx="10" fill="#1a0a0f" stroke="url(#tier3)" stroke-width="1.5"/>
+    <text x="20" y="28" fill="#fb7185" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold">▲ 第三梯队：白牌/超低成本</text>
+    <text x="20" y="48" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">代表：各种「通用 LED 驱动 IC」</text>
+
+    <text x="20" y="72" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">调光深度</text>
+    <rect x="100" y="64" width="500" height="12" rx="2" fill="#3a1a1a"/>
+    <rect x="100" y="64" width="200" height="12" rx="2" fill="url(#tier3)"/>
+    <text x="606" y="73" text-anchor="end" fill="#fb7185" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">5%-100%</text>
+
+    <text x="20" y="92" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">PWM 频率</text>
+    <rect x="100" y="84" width="500" height="12" rx="2" fill="#3a1a1a"/>
+    <rect x="100" y="84" width="120" height="12" rx="2" fill="url(#tier3)"/>
+    <text x="606" y="93" text-anchor="end" fill="#fb7185" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">&lt; 500Hz</text>
+  </g>
+
+  <!-- 频闪指数对照 -->
+  <text x="340" y="470" text-anchor="middle" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11">SVM &lt; 0.4（不可视）   ·   SVM 0.6-1.0（部分可感）   ·   SVM &gt; 1.3（多数可感）</text>
+</svg>

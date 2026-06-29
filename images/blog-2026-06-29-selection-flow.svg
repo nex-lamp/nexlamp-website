@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 540" width="680" height="540">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#061020;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5eead4;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#7ec27e;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="check" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.9"/>
+    </linearGradient>
+    <pattern id="grid3" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1e3a5f" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5eead4"/>
+    </marker>
+  </defs>
+  <rect width="680" height="540" fill="url(#bg3)"/>
+  <rect width="680" height="540" fill="url(#grid3)"/>
+
+  <!-- 标题 -->
+  <text x="340" y="32" text-anchor="middle" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">AI 调光智能灯选购：4 步避坑法</text>
+  <text x="340" y="54" text-anchor="middle" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="12">从产品参数到现场实测，识别真假「无频闪」</text>
+
+  <!-- 步骤1 -->
+  <g transform="translate(60,90)">
+    <circle cx="20" cy="20" r="20" fill="url(#flow)"/>
+    <text x="20" y="26" text-anchor="middle" fill="#0a1628" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">1</text>
+    <rect x="56" y="0" width="500" height="80" rx="8" fill="#0a1f33" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="72" y="22" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">看调光下限参数</text>
+    <text x="72" y="42" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">产品页标"调光范围"或"Dimming Range"</text>
+    <text x="72" y="60" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">5%-100% → 低成本驱动</text>
+    <text x="320" y="60" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="10">0.1%-100% → 好驱动</text>
+  </g>
+
+  <!-- 步骤2 -->
+  <g transform="translate(60,190)">
+    <circle cx="20" cy="20" r="20" fill="url(#flow)"/>
+    <text x="20" y="26" text-anchor="middle" fill="#0a1628" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">2</text>
+    <rect x="56" y="0" width="500" height="80" rx="8" fill="#0a1f33" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="72" y="22" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">看频闪认证标识</text>
+    <text x="72" y="42" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">包装上印 IEEE 1789 / SVM&lt;1.0 / PAR1789 合规编号</text>
+    <text x="72" y="60" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">只写"无频闪"四字无认证 → 营销话术</text>
+  </g>
+
+  <!-- 步骤3 -->
+  <g transform="translate(60,290)">
+    <circle cx="20" cy="20" r="20" fill="url(#flow)"/>
+    <text x="20" y="26" text-anchor="middle" fill="#0a1628" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">3</text>
+    <rect x="56" y="0" width="500" height="80" rx="8" fill="#0a1f33" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="72" y="22" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">看协议深度调光指令</text>
+    <text x="72" y="42" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">涂鸦 Zigbee / 米家 BLE Mesh / Zigbee 3.0 Level Control 0-254</text>
+    <text x="72" y="60" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">便宜灯固件只解析 0-100 → 1% 反而关灯</text>
+  </g>
+
+  <!-- 步骤4 -->
+  <g transform="translate(60,390)">
+    <circle cx="20" cy="20" r="20" fill="url(#flow)"/>
+    <text x="20" y="26" text-anchor="middle" fill="#0a1628" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">4</text>
+    <rect x="56" y="0" width="500" height="80" rx="8" fill="#0a1f33" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="72" y="22" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">现场实测频闪</text>
+    <text x="72" y="42" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">调到最低亮度，用手机慢动作 960fps 或"频闪仪"App 拍</text>
+    <text x="72" y="60" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">画面有横纹滚动 → 有频闪</text>
+  </g>
+
+  <!-- 底部结论 -->
+  <g transform="translate(60,490)">
+    <rect width="556" height="36" rx="6" fill="url(#check)" opacity="0.9"/>
+    <text x="278" y="23" text-anchor="middle" fill="#ffffff" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="bold">4 步全过 = 真正的 AI 调光好灯 · 1 步不达标 = 退货</text>
+  </g>
+</svg>

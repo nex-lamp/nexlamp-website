@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#061020;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5eead4;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#5b8c5a;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="bad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fb7185;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.9"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1e3a5f" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg)"/>
+  <rect width="680" height="400" fill="url(#grid)"/>
+
+  <!-- 标题 -->
+  <text x="340" y="32" text-anchor="middle" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">AI 调光频闪成因：算法与驱动的协同断层</text>
+  <text x="340" y="54" text-anchor="middle" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="12">Algorithm vs Driver Chip Mismatch</text>
+
+  <!-- 三个阶段框 -->
+  <!-- 1. 环境光传感器 -->
+  <g transform="translate(40,90)">
+    <rect width="160" height="80" rx="8" fill="#0f2847" stroke="#5eead4" stroke-width="1.5"/>
+    <text x="80" y="28" text-anchor="middle" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">环境光传感器</text>
+    <text x="80" y="50" text-anchor="middle" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">光敏电阻检测</text>
+    <text x="80" y="68" text-anchor="middle" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">采样频率 100Hz</text>
+  </g>
+
+  <!-- 2. AI算法 -->
+  <g transform="translate(260,90)">
+    <rect width="160" height="80" rx="8" fill="#0f2847" stroke="#5eead4" stroke-width="1.5"/>
+    <text x="80" y="28" text-anchor="middle" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">AI 调光算法</text>
+    <text x="80" y="50" text-anchor="middle" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="11">动态计算亮度目标</text>
+    <text x="80" y="68" text-anchor="middle" fill="#94a3b8" font-family="Microsoft YaHei, sans-serif" font-size="10">毫秒级响应</text>
+  </g>
+
+  <!-- 3. 驱动芯片 (频闪发生地) -->
+  <g transform="translate(480,90)">
+    <rect width="160" height="80" rx="8" fill="#1a0a0f" stroke="#fb7185" stroke-width="2"/>
+    <text x="80" y="28" text-anchor="middle" fill="#fb7185" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">LED 驱动芯片</text>
+    <text x="80" y="50" text-anchor="middle" fill="#fecaca" font-family="Microsoft YaHei, sans-serif" font-size="11">PWM / 模拟调光</text>
+    <text x="80" y="68" text-anchor="middle" fill="#fda4af" font-family="Microsoft YaHei, sans-serif" font-size="10">⚠ 频闪发生地</text>
+  </g>
+
+  <!-- 箭头 -->
+  <path d="M 200 130 L 260 130" stroke="url(#ai)" stroke-width="2" fill="none" marker-end="url(#arrowG)"/>
+  <path d="M 420 130 L 480 130" stroke="url(#bad)" stroke-width="2" fill="none" marker-end="url(#arrowR)"/>
+  <defs>
+    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5eead4"/>
+    </marker>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#fb7185"/>
+    </marker>
+  </defs>
+
+  <!-- 波形对比 -->
+  <text x="40" y="208" fill="#cbd5e1" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="bold">驱动输出波形对比（5% 亮度下）</text>
+
+  <!-- 好驱动波形 -->
+  <g transform="translate(40,225)">
+    <text x="0" y="14" fill="#5eead4" font-family="Microsoft YaHei, sans-serif" font-size="11">✓ 高端驱动 (4kHz PWM)</text>
+    <rect x="0" y="22" width="600" height="42" fill="#0f1f2e" stroke="#1e3a5f" rx="4"/>
+    <path d="M 0 43 L 8 24 L 16 24 L 24 62 L 32 24 L 40 24 L 48 62 L 56 24 L 64 24 L 72 62 L 80 24 L 88 24 L 96 62 L 104 24 L 112 24 L 120 62 L 128 24 L 136 24 L 144 62 L 152 24 L 160 24 L 168 62 L 176 24 L 184 24 L 192 62 L 200 24 L 208 24 L 216 62 L 224 24 L 232 24 L 240 62 L 248 24 L 256 24 L 264 62 L 272 24 L 280 24 L 288 62 L 296 24 L 304 24 L 312 62 L 320 24 L 328 24 L 336 62 L 344 24 L 352 24 L 360 62 L 368 24 L 376 24 L 384 62 L 392 24 L 400 24 L 408 62 L 416 24 L 424 24 L 432 62 L 440 24 L 448 24 L 456 62 L 464 24 L 472 24 L 480 62 L 488 24 L 496 24 L 504 62 L 512 24 L 520 24 L 528 62 L 536 24 L 544 24 L 552 62 L 560 24 L 568 24 L 576 62 L 584 24 L 592 24 L 600 62" stroke="#5eead4" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- 差驱动波形 -->
+  <g transform="translate(40,295)">
+    <text x="0" y="14" fill="#fb7185" font-family="Microsoft YaHei, sans-serif" font-size="11">✗ 低成本驱动 (500Hz PWM)</text>
+    <rect x="0" y="22" width="600" height="42" fill="#1a0a0f" stroke="#5c1a1a" rx="4"/>
+    <path d="M 0 43 L 30 24 L 60 62 L 90 24 L 120 62 L 150 24 L 180 62 L 210 24 L 240 62 L 270 24 L 300 62 L 330 24 L 360 62 L 390 24 L 420 62 L 450 24 L 480 62 L 510 24 L 540 62 L 570 24 L 600 62" stroke="#fb7185" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- 底部说明 -->
+  <text x="340" y="385" text-anchor="middle" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="11" font-style="italic">PWM 频率越高 + 模拟调光介入越早，频闪感知越弱</text>
+</svg>
