@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="Consolas, 'Microsoft YaHei', monospace">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2540"/>
+    </linearGradient>
+    <linearGradient id="heatGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff6b35" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="moistureGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4dabf7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4dabf7" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="voltGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd43b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffd43b" stop-opacity="0.1"/>
+    </linearGradient>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="480" fill="url(#bgGrad1)"/>
+  <rect width="800" height="480" fill="url(#grid1)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" fill="#7ec27e" font-size="22" font-weight="bold" text-anchor="middle" filter="url(#glow1)">夏季智能灯三重暴击 = 灯具集体翻车的真相</text>
+  <text x="400" y="60" fill="#7a8fa3" font-size="13" text-anchor="middle">温度 × 湿度 × 电压 · 三维环境压力测试</text>
+
+  <!-- Heat column -->
+  <g transform="translate(80,100)">
+    <rect x="0" y="0" width="180" height="320" fill="none" stroke="#1f4068" stroke-width="1" rx="8"/>
+    <rect x="20" y="60" width="140" height="240" fill="url(#heatGrad)" rx="4"/>
+    <circle cx="90" cy="60" r="28" fill="#ff6b35" filter="url(#glow1)"/>
+    <text x="90" y="68" fill="#fff" font-size="28" text-anchor="middle">🌡</text>
+    <text x="90" y="30" fill="#ff8c42" font-size="16" font-weight="bold" text-anchor="middle">① 高温</text>
+    <text x="90" y="120" fill="#fff" font-size="14" text-anchor="middle">吊顶内 55-65℃</text>
+    <text x="90" y="145" fill="#ffaa7a" font-size="11" text-anchor="middle">电容寿命 ÷ 4</text>
+    <text x="20" y="190" fill="#ffaa7a" font-size="11">• 105℃电容</text>
+    <text x="20" y="208" fill="#ffaa7a" font-size="11">  设计寿命1.5年</text>
+    <text x="20" y="232" fill="#ffaa7a" font-size="11">• 每升10℃</text>
+    <text x="20" y="250" fill="#ffaa7a" font-size="11">  寿命减半</text>
+    <text x="20" y="274" fill="#ffaa7a" font-size="11">• 实际环境 55℃</text>
+    <text x="20" y="292" fill="#ffaa7a" font-size="11">  寿命→3个月</text>
+  </g>
+
+  <!-- Moisture column -->
+  <g transform="translate(310,100)">
+    <rect x="0" y="0" width="180" height="320" fill="none" stroke="#1f4068" stroke-width="1" rx="8"/>
+    <rect x="20" y="60" width="140" height="240" fill="url(#moistureGrad)" rx="4"/>
+    <circle cx="90" cy="60" r="28" fill="#4dabf7" filter="url(#glow1)"/>
+    <text x="90" y="68" fill="#fff" font-size="28" text-anchor="middle">💧</text>
+    <text x="90" y="30" fill="#4dabf7" font-size="16" font-weight="bold" text-anchor="middle">② 潮湿</text>
+    <text x="90" y="120" fill="#fff" font-size="14" text-anchor="middle">梅雨季 RH 80-95%</text>
+    <text x="90" y="145" fill="#a3d5ff" font-size="11" text-anchor="middle">PCB 慢性中毒</text>
+    <text x="20" y="190" fill="#a3d5ff" font-size="11">• 无三防漆驱动</text>
+    <text x="20" y="208" fill="#a3d5ff" font-size="11">  3个月焊点腐蚀</text>
+    <text x="20" y="232" fill="#a3d5ff" font-size="11">• Zigbee模块受潮</text>
+    <text x="20" y="250" fill="#a3d5ff" font-size="11">  信号衰减30%</text>
+    <text x="20" y="274" fill="#a3d5ff" font-size="11">• 重灾区5位置:</text>
+    <text x="20" y="292" fill="#a3d5ff" font-size="11">  厨/卫/阳/玄/地</text>
+  </g>
+
+  <!-- Voltage column -->
+  <g transform="translate(540,100)">
+    <rect x="0" y="0" width="180" height="320" fill="none" stroke="#1f4068" stroke-width="1" rx="8"/>
+    <rect x="20" y="60" width="140" height="240" fill="url(#voltGrad)" rx="4"/>
+    <circle cx="90" cy="60" r="28" fill="#ffd43b" filter="url(#glow1)"/>
+    <text x="90" y="68" fill="#fff" font-size="28" text-anchor="middle">⚡</text>
+    <text x="90" y="30" fill="#ffd43b" font-size="16" font-weight="bold" text-anchor="middle">③ 电压</text>
+    <text x="90" y="120" fill="#fff" font-size="14" text-anchor="middle">夏季220V→200V</text>
+    <text x="90" y="145" fill="#ffe680" font-size="11" text-anchor="middle">空调启动冲击</text>
+    <text x="20" y="190" fill="#ffe680" font-size="11">• 空调+热水器</text>
+    <text x="20" y="208" fill="#ffe680" font-size="11">  电流瞬间 30A→60A</text>
+    <text x="20" y="232" fill="#ffe680" font-size="11">• 劣质驱动</text>
+    <text x="20" y="250" fill="#ffe680" font-size="11">  200V就欠压保护</text>
+    <text x="20" y="274" fill="#ffe680" font-size="11">• PWM 频率漂移</text>
+    <text x="20" y="292" fill="#ffe680" font-size="11">  灯开始"跳舞"</text>
+  </g>
+
+  <!-- Bottom: 5-step check -->
+  <g transform="translate(40,440)">
+    <rect x="0" y="0" width="720" height="28" fill="#0f2440" stroke="#7ec27e" stroke-width="1" rx="4" opacity="0.9"/>
+    <text x="14" y="18" fill="#7ec27e" font-size="12" font-weight="bold">夏季自检5步</text>
+    <text x="110" y="18" fill="#a3d5ff" font-size="11">① 摸驱动&lt;50℃  ② 看PCB无氧化  ③ 测电压&gt;205V  ④ 关空调单开灯  ⑤ Zigbee RSSI&gt;-85dBm</text>
+  </g>
+</svg>

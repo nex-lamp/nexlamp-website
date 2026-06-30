@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="Consolas, 'Microsoft YaHei', monospace">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2540"/>
+    </linearGradient>
+    <linearGradient id="hotspot1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ff6b35" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="hotspot2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd43b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffd43b" stop-opacity="0.2"/>
+    </linearGradient>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="480" fill="url(#bgGrad3)"/>
+  <rect width="800" height="480" fill="url(#grid3)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" fill="#7ec27e" font-size="22" font-weight="bold" text-anchor="middle" filter="url(#glow3)">2026 夏季 5 大灯具翻车重灾区</text>
+  <text x="400" y="62" fill="#7a8fa3" font-size="12" text-anchor="middle">翻车概率从高到低 · 对号入座，看你家灯在不在榜</text>
+
+  <!-- Bathroom (highest) -->
+  <g transform="translate(40,90)">
+    <rect x="0" y="0" width="720" height="58" fill="url(#hotspot1)" stroke="#ff6b35" stroke-width="1.5" rx="8"/>
+    <circle cx="40" cy="29" r="22" fill="#ff6b35" filter="url(#glow3)"/>
+    <text x="40" y="36" fill="#fff" font-size="18" text-anchor="middle" font-weight="bold">1</text>
+    <text x="80" y="22" fill="#ffaa7a" font-size="15" font-weight="bold">卫生间 95% 翻车率</text>
+    <text x="80" y="42" fill="#fff" font-size="11">IP54 防水筒灯 + 全灌胶驱动 · 远离花洒 0.6m 以上安装</text>
+    <text x="680" y="36" fill="#ff6b35" font-size="11" text-anchor="end" font-weight="bold">→ 立即换</text>
+  </g>
+
+  <!-- Kitchen -->
+  <g transform="translate(40,158)">
+    <rect x="0" y="0" width="720" height="58" fill="url(#hotspot1)" stroke="#ff8c42" stroke-width="1" rx="8" opacity="0.85"/>
+    <circle cx="40" cy="29" r="22" fill="#ff8c42" filter="url(#glow3)"/>
+    <text x="40" y="36" fill="#fff" font-size="18" text-anchor="middle" font-weight="bold">2</text>
+    <text x="80" y="22" fill="#ffaa7a" font-size="15" font-weight="bold">厨房 80% 翻车率</text>
+    <text x="80" y="42" fill="#fff" font-size="11">三防漆驱动 + 远离灶台 1.5m · 油烟+水汽双重夹击</text>
+    <text x="680" y="36" fill="#ff8c42" font-size="11" text-anchor="end" font-weight="bold">→ 必换</text>
+  </g>
+
+  <!-- Balcony -->
+  <g transform="translate(40,226)">
+    <rect x="0" y="0" width="720" height="58" fill="url(#hotspot2)" stroke="#ffa94d" stroke-width="1" rx="8"/>
+    <circle cx="40" cy="29" r="22" fill="#ffa94d" filter="url(#glow3)"/>
+    <text x="40" y="36" fill="#fff" font-size="18" text-anchor="middle" font-weight="bold">3</text>
+    <text x="80" y="22" fill="#ffd8a8" font-size="15" font-weight="bold">阳台/半户外玄关 75%</text>
+    <text x="80" y="42" fill="#fff" font-size="11">IP65 灯具 + 镀金接线端子 · 直晒+暴雨双重考验</text>
+    <text x="680" y="36" fill="#ffa94d" font-size="11" text-anchor="end" font-weight="bold">→ 必换</text>
+  </g>
+
+  <!-- Basement -->
+  <g transform="translate(40,294)">
+    <rect x="0" y="0" width="720" height="58" fill="url(#hotspot2)" stroke="#ffd43b" stroke-width="1" rx="8" opacity="0.85"/>
+    <circle cx="40" cy="29" r="22" fill="#ffd43b" filter="url(#glow3)"/>
+    <text x="40" y="36" fill="#fff" font-size="18" text-anchor="middle" font-weight="bold">4</text>
+    <text x="80" y="22" fill="#ffe680" font-size="15" font-weight="bold">地下室/车库 60%</text>
+    <text x="80" y="42" fill="#fff" font-size="11">加防潮箱 + 防霉涂层 PCB · 通风差湿气排不出去</text>
+    <text x="680" y="36" fill="#ffd43b" font-size="11" text-anchor="end" font-weight="bold">→ 建议换</text>
+  </g>
+
+  <!-- Bedroom -->
+  <g transform="translate(40,362)">
+    <rect x="0" y="0" width="720" height="58" fill="#1f4068" stroke="#74c0fc" stroke-width="1" rx="8" opacity="0.6"/>
+    <circle cx="40" cy="29" r="22" fill="#74c0fc" filter="url(#glow3)"/>
+    <text x="40" y="36" fill="#0a1628" font-size="18" text-anchor="middle" font-weight="bold">5</text>
+    <text x="80" y="22" fill="#a3d5ff" font-size="15" font-weight="bold">卧室无主灯吊顶 40%</text>
+    <text x="80" y="42" fill="#fff" font-size="11">驱动加主动散热片 · 或选外置驱动（不进吊顶）</text>
+    <text x="680" y="36" fill="#74c0fc" font-size="11" text-anchor="end" font-weight="bold">→ 优化</text>
+  </g>
+
+  <!-- Bottom: tip -->
+  <g transform="translate(40,440)">
+    <rect x="0" y="0" width="720" height="28" fill="#0f2440" stroke="#7ec27e" stroke-width="1" rx="4" opacity="0.9"/>
+    <text x="14" y="18" fill="#7ec27e" font-size="12" font-weight="bold">土办法</text>
+    <text x="78" y="18" fill="#a3d5ff" font-size="11">已装半年+的智能灯，夏天在灯具旁放 5 元小风扇对着驱动吹 — 可延寿 1-2 年</text>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="Consolas, 'Microsoft YaHei', monospace">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2540"/>
+    </linearGradient>
+    <linearGradient id="badGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ff6b35" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="goodGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#51cf66" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#51cf66" stop-opacity="0.05"/>
+    </linearGradient>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="480" fill="url(#bgGrad2)"/>
+  <rect width="800" height="480" fill="url(#grid2)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" fill="#7ec27e" font-size="22" font-weight="bold" text-anchor="middle" filter="url(#glow2)">耐利普 2026 夏季选型 3 条硬标准</text>
+  <text x="400" y="62" fill="#7a8fa3" font-size="12" text-anchor="middle">三条全部满足，南方梅雨 + 北方桑拿天都能扛住</text>
+
+  <!-- Card 1: Capacitor -->
+  <g transform="translate(40,100)">
+    <rect x="0" y="0" width="230" height="320" fill="none" stroke="#1f4068" stroke-width="1" rx="10"/>
+    <rect x="0" y="0" width="230" height="60" fill="url(#badGrad)" rx="10"/>
+    <text x="115" y="36" fill="#ff6b35" font-size="16" font-weight="bold" text-anchor="middle">标准 ①</text>
+    <text x="115" y="56" fill="#ffaa7a" font-size="11" text-anchor="middle">电容 + 散热</text>
+
+    <text x="20" y="92" fill="#fff" font-size="13" font-weight="bold">普通驱动</text>
+    <text x="20" y="112" fill="#7a8fa3" font-size="11">105℃ / 4000 小时</text>
+    <text x="20" y="132" fill="#7a8fa3" font-size="11">无散热设计</text>
+    <rect x="20" y="145" width="190" height="1" fill="#1f4068"/>
+
+    <text x="20" y="172" fill="#51cf66" font-size="13" font-weight="bold">耐利普标准</text>
+    <text x="20" y="192" fill="#a3d5ff" font-size="11">• 105℃ / 12000小时</text>
+    <text x="20" y="212" fill="#a3d5ff" font-size="11">  长寿命电解电容</text>
+    <text x="20" y="232" fill="#a3d5ff" font-size="11">• 全铝壳灌胶</text>
+    <text x="20" y="252" fill="#a3d5ff" font-size="11">• 散热鳍片设计</text>
+    <rect x="20" y="265" width="190" height="1" fill="#1f4068"/>
+    <text x="20" y="285" fill="#7ec27e" font-size="11" font-weight="bold">夏季 55℃ 实测寿命</text>
+    <text x="20" y="305" fill="#fff" font-size="18" font-weight="bold" filter="url(#glow2)">4 年+</text>
+  </g>
+
+  <!-- Card 2: Conformal Coating -->
+  <g transform="translate(285,100)">
+    <rect x="0" y="0" width="230" height="320" fill="none" stroke="#1f4068" stroke-width="1" rx="10"/>
+    <rect x="0" y="0" width="230" height="60" fill="url(#badGrad)" rx="10"/>
+    <text x="115" y="36" fill="#ff6b35" font-size="16" font-weight="bold" text-anchor="middle">标准 ②</text>
+    <text x="115" y="56" fill="#ffaa7a" font-size="11" text-anchor="middle">三防漆 + 镀金端子</text>
+
+    <text x="20" y="92" fill="#fff" font-size="13" font-weight="bold">普通驱动</text>
+    <text x="20" y="112" fill="#7a8fa3" font-size="11">裸PCB / 锡端子</text>
+    <text x="20" y="132" fill="#7a8fa3" font-size="11">100% 缺失防护</text>
+    <rect x="20" y="145" width="190" height="1" fill="#1f4068"/>
+
+    <text x="20" y="172" fill="#51cf66" font-size="13" font-weight="bold">耐利普标准</text>
+    <text x="20" y="192" fill="#a3d5ff" font-size="11">• PCB 三层三防漆</text>
+    <text x="20" y="212" fill="#a3d5ff" font-size="11">  防潮+防霉+防盐雾</text>
+    <text x="20" y="232" fill="#a3d5ff" font-size="11">• 接线端子镀金</text>
+    <text x="20" y="252" fill="#a3d5ff" font-size="11">• 通过 96h 盐雾测试</text>
+    <rect x="20" y="265" width="190" height="1" fill="#1f4068"/>
+    <text x="20" y="285" fill="#7ec27e" font-size="11" font-weight="bold">南方 RH 90%+ 环境</text>
+    <text x="20" y="305" fill="#fff" font-size="18" font-weight="bold" filter="url(#glow2)">5 年无氧化</text>
+  </g>
+
+  <!-- Card 3: Wide Voltage -->
+  <g transform="translate(530,100)">
+    <rect x="0" y="0" width="230" height="320" fill="none" stroke="#1f4068" stroke-width="1" rx="10"/>
+    <rect x="0" y="0" width="230" height="60" fill="url(#badGrad)" rx="10"/>
+    <text x="115" y="36" fill="#ff6b35" font-size="16" font-weight="bold" text-anchor="middle">标准 ③</text>
+    <text x="115" y="56" fill="#ffaa7a" font-size="11" text-anchor="middle">宽电压 + 智能保护</text>
+
+    <text x="20" y="92" fill="#fff" font-size="13" font-weight="bold">普通驱动</text>
+    <text x="20" y="112" fill="#7a8fa3" font-size="11">220V 标称 / ±10%</text>
+    <text x="20" y="132" fill="#7a8fa3" font-size="11">200V 启动欠压保护</text>
+    <rect x="20" y="145" width="190" height="1" fill="#1f4068"/>
+
+    <text x="20" y="172" fill="#51cf66" font-size="13" font-weight="bold">耐利普标准</text>
+    <text x="20" y="192" fill="#a3d5ff" font-size="11">• 90-265V 全电压</text>
+    <text x="20" y="212" fill="#a3d5ff" font-size="11">  自适应范围</text>
+    <text x="20" y="232" fill="#a3d5ff" font-size="11">• 180V 仍正常工作</text>
+    <text x="20" y="252" fill="#a3d5ff" font-size="11">• 智能降功率不停机</text>
+    <rect x="20" y="265" width="190" height="1" fill="#1f4068"/>
+    <text x="20" y="285" fill="#7ec27e" font-size="11" font-weight="bold">空调+热水器同时开</text>
+    <text x="20" y="305" fill="#fff" font-size="18" font-weight="bold" filter="url(#glow2)">灯不"打嗝"</text>
+  </g>
+
+  <!-- Bottom note -->
+  <g transform="translate(40,440)">
+    <rect x="0" y="0" width="720" height="28" fill="#0f2440" stroke="#7ec27e" stroke-width="1" rx="4" opacity="0.9"/>
+    <text x="14" y="18" fill="#7ec27e" font-size="12" font-weight="bold">3条全过</text>
+    <text x="78" y="18" fill="#a3d5ff" font-size="11">≈ 耐利普 2026 全系夏季款已全部升级 · 筒灯/射灯/灯带/磁吸灯全场景覆盖</text>
+  </g>
+</svg>

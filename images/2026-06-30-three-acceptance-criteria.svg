@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0e1a"/>
+      <stop offset="1" stop-color="#10182a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  <text x="400" y="40" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="22" font-weight="bold" fill="#e0e6f0">无主灯驱动系统：3 个验收硬指标</text>
+  <text x="400" y="65" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" fill="#7a8a9a">Ask these 3 questions before signing off on your ceiling design</text>
+
+  <!-- Card 1 -->
+  <g transform="translate(50,110)">
+    <rect x="0" y="0" width="220" height="320" fill="#131825" stroke="#7ec27e" stroke-width="1.5" rx="10"/>
+    <rect x="0" y="0" width="220" height="50" fill="#1a3a1a" rx="10"/>
+    <text x="110" y="32" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="bold" fill="#7ec27e">01</text>
+    <text x="110" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="bold" fill="#e0e6f0">恒流 vs 恒压</text>
+    <line x1="30" y1="95" x2="190" y2="95" stroke="#2a3548" stroke-width="1"/>
+    <text x="110" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#a0b0c0">射灯 / 筒灯</text>
+    <text x="110" y="138" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="bold" fill="#7ec27e">必须用恒流</text>
+    <text x="110" y="165" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#a0b0c0">灯带才用恒压</text>
+    <text x="110" y="183" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="bold" fill="#7ec27e">12V / 24V</text>
+    <line x1="30" y1="210" x2="190" y2="210" stroke="#2a3548" stroke-width="1"/>
+    <text x="110" y="235" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#7a8a9a">混用 = 烧灯 / 频闪</text>
+    <text x="110" y="270" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold" fill="#ff6b6b">⚠ 验收必问</text>
+    <text x="110" y="290" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#7a8a9a">看驱动铭牌</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(290,110)">
+    <rect x="0" y="0" width="220" height="320" fill="#131825" stroke="#7ec27e" stroke-width="1.5" rx="10"/>
+    <rect x="0" y="0" width="220" height="50" fill="#1a3a1a" rx="10"/>
+    <text x="110" y="32" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="bold" fill="#7ec27e">02</text>
+    <text x="110" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="bold" fill="#e0e6f0">PWM 频率</text>
+    <line x1="30" y1="95" x2="190" y2="95" stroke="#2a3548" stroke-width="1"/>
+    <text x="110" y="120" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ff6b6b">≤ 1kHz</text>
+    <text x="110" y="138" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ff6b6b">可见频闪</text>
+    <text x="110" y="165" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffd93d">1-3kHz</text>
+    <text x="110" y="183" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ffd93d">不可见但伤眼</text>
+    <text x="110" y="210" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#7ec27e" font-weight="bold">≥ 20kHz</text>
+    <text x="110" y="228" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#7ec27e" font-weight="bold">安全无感</text>
+    <line x1="30" y1="248" x2="190" y2="248" stroke="#2a3548" stroke-width="1"/>
+    <text x="110" y="270" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold" fill="#ff6b6b">⚠ 必查参数</text>
+    <text x="110" y="290" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#7a8a9a">要 datasheet</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(530,110)">
+    <rect x="0" y="0" width="220" height="320" fill="#131825" stroke="#7ec27e" stroke-width="1.5" rx="10"/>
+    <rect x="0" y="0" width="220" height="50" fill="#1a3a1a" rx="10"/>
+    <text x="110" y="32" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="36" font-weight="bold" fill="#7ec27e">03</text>
+    <text x="110" y="80" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="bold" fill="#e0e6f0">调光下限</text>
+    <line x1="30" y1="95" x2="190" y2="95" stroke="#2a3548" stroke-width="1"/>
+    <text x="110" y="125" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#a0b0c0">标称 1%</text>
+    <text x="110" y="143" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ff6b6b">实测 5-8%</text>
+    <text x="110" y="160" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" fill="#7a8a9a">(行业潜规则)</text>
+    <text x="110" y="195" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#7ec27e" font-weight="bold">实测 ≤ 0.1%</text>
+    <text x="110" y="213" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#7ec27e" font-weight="bold">色温偏移 ≤ 50K</text>
+    <line x1="30" y1="235" x2="190" y2="235" stroke="#2a3548" stroke-width="1"/>
+    <text x="110" y="260" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold" fill="#ff6b6b">⚠ 必须实测</text>
+    <text x="110" y="278" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#7a8a9a">要求 5% 亮度数据</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(400,460)">
+    <text text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold" fill="#7ec27e">驱动选对了，无主灯才不会翻车</text>
+  </g>
+</svg>

@@ -1,5 +1,23 @@
 [
   {
+    "title": "无主灯住进去就翻车？90%的人没看懂LED驱动的调光逻辑",
+    "slug": "main-lightless-fail-led-driver-dimming-logic",
+    "date": "2026-06-30",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "../images/2026-06-30-main-lightless-fail-led-driver-cover.jpg",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "新房第一个夏天，灯具集体翻车？夏季高温+潮湿+用电高峰三重暴击",
+    "slug": "new-home-summer-lighting-breakdown-2026",
+    "date": "2026-06-30",
+    "category": "维护指南",
+    "description": "2026年夏季新房智能灯集体翻车真相：高温、潮湿、用电高峰对LED驱动的三重压力测试，以及耐利普的3层防护选型标准。",
+    "cover": "../images/blog-2026-06-30-summer-stress-cover.png",
+    "excerpt": "新房第一个夏天，灯具集体翻车？这不是质量问题，是环境压力测试。"
+  },
+  {
     "title": "智能灯调光越调越闪？2026年AI调光频闪真相：3类驱动芯片与4步避坑法",
     "slug": "2026-06-29-ai-dimming-flicker-truth",
     "date": "2026-06-29",
