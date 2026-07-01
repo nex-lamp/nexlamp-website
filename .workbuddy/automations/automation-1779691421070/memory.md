@@ -1,5 +1,18 @@
 # Automation Memory
 
+## 2026-06-29: 智能灯掉线——驱动电源才是稳定性关键
+- 选题: 多平台搜索确认"智能灯掉线/协议选型"是2026年6月最热话题
+- 文章: posts/2026-06-29-smart-light-disconnect-driver-fix.md (~1300字) + 3 SVG + AI封面(去水印)
+- 网站: ✅ build.js 59篇 + git pull --rebase + git push成功
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/your-smart-lights-keep-disconnecting-stop-blaming-the-protocol-check-the-led-driver-2026-guide-2kc3
+- 掘金: ✅ (article_id: 7656380711865253940)
+- 知乎: ❌ 账号异常被限制(403 PermissionDeniedException)
+- LinkedIn: ⚠️ CDP Chrome未运行，跳过
+- 今日头条 微头条: ✅
+- 今日头条 文章: ✅
+- 小红书: ⚠️ xhs-mcp未连接，跳过
+- 踩坑: 掘金create需最少字段(category_id+tag_ids+title+brief_content+mark_content+editor_type)，多字段返回err_no=2；update端点也返回err_no=2；知乎PUT publish生效但账号被限
+
 ## 2026-06-11: AI智能照明避坑指南
 - 选题: AI智能照明5大避坑（协议、驱动、语音控制、布线、AI噱头）
 - 文章: posts/2026-06-11-ai-smart-lighting-buying-guide.md (~1400字) + 3 SVG + AI封面(去水印)
