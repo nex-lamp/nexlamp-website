@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#0a1628"/>
+  <!-- 网格 -->
+  <g opacity="0.08" stroke="#2478c2" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/><line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="35" fill="#7ec27e" font-size="18" font-weight="bold" text-anchor="middle">30㎡出租屋 · 智能照明改造预算分配</text>
+
+  <!-- 饼图 -->
+  <!-- 轨道灯 ¥225 = 42% -->
+  <path d="M300,250 L300,100 A150,150 0 0,1 438.6,319.3 Z" fill="#7ec27e" opacity="0.8"/>
+  <text x="380" y="190" fill="#0a1628" font-size="11" font-weight="bold" text-anchor="middle">42%</text>
+  <text x="380" y="205" fill="#0a1628" font-size="9" text-anchor="middle">轨道灯 ¥225</text>
+
+  <!-- 网关 ¥60 = 11% -->
+  <path d="M300,250 L438.6,319.3 A150,150 0 0,1 378.2,387.1 Z" fill="#2478c2" opacity="0.8"/>
+  <text x="385" y="330" fill="#fff" font-size="10" text-anchor="middle">11%</text>
+
+  <!-- 灯带 ¥60 = 11% -->
+  <path d="M300,250 L378.2,387.1 A150,150 0 0,1 300,400 Z" fill="#ff6b6b" opacity="0.8"/>
+  <text x="330" y="350" fill="#fff" font-size="10" text-anchor="middle">11%</text>
+
+  <!-- 筒灯 ¥190 = 36% -->
+  <path d="M300,250 L300,400 A150,150 0 0,1 300,100 Z" fill="#ffd700" opacity="0.8"/>
+  <text x="250" y="310" fill="#0a1628" font-size="11" font-weight="bold" text-anchor="middle">36%</text>
+  <text x="250" y="325" fill="#0a1628" font-size="9" text-anchor="middle">卧室筒灯 ¥190</text>
+
+  <!-- 网关标注单独 -->
+  <text x="370" y="345" fill="#2478c2" font-size="9" text-anchor="middle">网关¥60</text>
+  <text x="320" y="365" fill="#ff6b6b" font-size="9" text-anchor="middle">灯带¥60</text>
+
+  <!-- 中心圆 -->
+  <circle cx="300" cy="250" r="60" fill="#0a1628" stroke="#1a3a5a" stroke-width="2"/>
+  <text x="300" y="240" fill="#7ec27e" font-size="16" font-weight="bold" text-anchor="middle">¥535</text>
+  <text x="300" y="260" fill="#8090a0" font-size="10" text-anchor="middle">全屋总价</text>
+
+  <!-- 详细清单 -->
+  <rect x="500" y="70" width="280" height="350" rx="8" fill="#1a2a4a" stroke="#3a5a7a" stroke-width="0.5"/>
+
+  <text x="640" y="95" fill="#7ec27e" font-size="13" font-weight="bold" text-anchor="middle">明细清单</text>
+
+  <!-- 客厅 -->
+  <rect x="520" y="110" width="240" height="60" rx="4" fill="#1a3a5a"/>
+  <text x="530" y="130" fill="#ffd700" font-size="11" font-weight="bold">客厅 · 磁吸轨道+射灯</text>
+  <text x="530" y="150" fill="#c0d0e0" font-size="10">1轨3灯 · ¥120+3×¥35</text>
+  <text x="745" y="150" fill="#7ec27e" font-size="11" font-weight="bold" text-anchor="end">¥225</text>
+
+  <!-- 卧室 -->
+  <rect x="520" y="180" width="240" height="60" rx="4" fill="#1a3a5a"/>
+  <text x="530" y="200" fill="#ffd700" font-size="11" font-weight="bold">卧室 · 磁吸轨道+筒灯</text>
+  <text x="530" y="220" fill="#c0d0e0" font-size="10">1轨2灯 · ¥120+2×¥35</text>
+  <text x="745" y="220" fill="#7ec27e" font-size="11" font-weight="bold" text-anchor="end">¥190</text>
+
+  <!-- 厨房 -->
+  <rect x="520" y="250" width="240" height="60" rx="4" fill="#1a3a5a"/>
+  <text x="530" y="270" fill="#ff6b6b" font-size="11" font-weight="bold">厨房 · Zigbee灯带</text>
+  <text x="530" y="290" fill="#c0d0e0" font-size="10">2条×¥30 · 1m/条</text>
+  <text x="745" y="290" fill="#7ec27e" font-size="11" font-weight="bold" text-anchor="end">¥60</text>
+
+  <!-- 网关 -->
+  <rect x="520" y="320" width="240" height="60" rx="4" fill="#1a3a5a"/>
+  <text x="530" y="340" fill="#2478c2" font-size="11" font-weight="bold">涂鸦Zigbee网关</text>
+  <text x="530" y="360" fill="#c0d0e0" font-size="10">1个 · 全屋控制中枢</text>
+  <text x="745" y="360" fill="#7ec27e" font-size="11" font-weight="bold" text-anchor="end">¥60</text>
+
+  <!-- 合计 -->
+  <rect x="520" y="390" width="240" height="30" rx="4" fill="#7ec27e" opacity="0.3"/>
+  <text x="640" y="410" fill="#7ec27e" font-size="13" font-weight="bold" text-anchor="middle">合计 ¥535</text>
+
+  <!-- 底部提示 -->
+  <text x="400" y="475" fill="#8090a0" font-size="10" text-anchor="middle">比房东原装吸顶灯体验提升10倍 · 退租恢复0成本</text>
+</svg>
