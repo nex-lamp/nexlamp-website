@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f35;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="450" x2="800" y2="450" />
+  </g>
+  <text x="400" y="45" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="bold" fill="#ffffff">低待机功耗智能灯选购决策</text>
+  <text x="400" y="75" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" fill="#7ec27e">按这个流程排查，避开"待机刺客"</text>
+  <g transform="translate(100,130)">
+    <rect x="0" y="0" width="180" height="70" rx="8" fill="#162b4d" stroke="#7ec27e" stroke-width="2" />
+    <text x="90" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#ffffff" font-weight="bold">Step 1</text>
+    <text x="90" y="55" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#a0c4ff">优先选 Zigbee</text>
+  </g>
+  <g transform="translate(180,200)">
+    <line x1="0" y1="0" x2="0" y2="30" stroke="#7ec27e" stroke-width="2" />
+    <polygon points="0,30 -6,20 6,20" fill="#7ec27e" />
+  </g>
+  <g transform="translate(100,230)">
+    <rect x="0" y="0" width="180" height="70" rx="8" fill="#162b4d" stroke="#7ec27e" stroke-width="2" />
+    <text x="90" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#ffffff" font-weight="bold">Step 2</text>
+    <text x="90" y="55" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#a0c4ff">看待机功耗参数</text>
+  </g>
+  <g transform="translate(180,300)">
+    <line x1="0" y1="0" x2="0" y2="30" stroke="#7ec27e" stroke-width="2" />
+    <polygon points="0,30 -6,20 6,20" fill="#7ec27e" />
+  </g>
+  <g transform="translate(100,330)">
+    <rect x="0" y="0" width="180" height="70" rx="8" fill="#162b4d" stroke="#7ec27e" stroke-width="2" />
+    <text x="90" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#ffffff" font-weight="bold">Step 3</text>
+    <text x="90" y="55" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#a0c4ff">认准新国标标识</text>
+  </g>
+  <g transform="translate(360,160)">
+    <rect x="0" y="0" width="340" height="240" rx="8" fill="#0f2744" stroke="#5b8c5a" stroke-width="2" />
+    <text x="170" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#ffffff" font-weight="bold">检查清单</text>
+    <text x="30" y="75" font-family="sans-serif" font-size="14" fill="#7ec27e">✓</text>
+    <text x="55" y="75" font-family="sans-serif" font-size="13" fill="#ffffff">通信协议：Zigbee &gt; Matter &gt; Wi-Fi</text>
+    <text x="30" y="110" font-family="sans-serif" font-size="14" fill="#7ec27e">✓</text>
+    <text x="55" y="110" font-family="sans-serif" font-size="13" fill="#ffffff">待机功耗 ≤ 0.5W（新国标要求）</text>
+    <text x="30" y="145" font-family="sans-serif" font-size="14" fill="#7ec27e">✓</text>
+    <text x="55" y="145" font-family="sans-serif" font-size="13" fill="#ffffff">关闭 unnecessary 指示灯/夜灯</text>
+    <text x="30" y="180" font-family="sans-serif" font-size="14" fill="#7ec27e">✓</text>
+    <text x="55" y="180" font-family="sans-serif" font-size="13" fill="#ffffff">驱动电源选隔离反激方案</text>
+    <text x="30" y="215" font-family="sans-serif" font-size="14" fill="#7ec27e">✓</text>
+    <text x="55" y="215" font-family="sans-serif" font-size="13" fill="#ffffff">实际用功率计验证一遍</text>
+  </g>
+</svg>
