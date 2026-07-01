@@ -1,5 +1,23 @@
 [
   {
+    "title": "出租屋智能照明改造：租房党也能拥有好灯光",
+    "slug": "rental-smart-lighting-transformation-guide-2026",
+    "date": "2026-07-01",
+    "category": "智能照明",
+    "description": "出租屋智能照明改造全攻略：不改线不砸墙，涂鸦Zigbee智能射灯+筒灯即插即用方案，色温场景联动设置，租房党低成本好灯光实战指南。",
+    "cover": "images/rental-smart-lighting-cover-2026.jpg",
+    "excerpt": "租房不能改线、不能砸墙、退租还得恢复原状——但你的灯光不该因此妥协。从选灯到布光到场景联动，这份出租屋智能照明改造指南教你用最少的钱、最不伤墙的方式，把出租屋的灯光体验拉满。"
+  },
+  {
+    "title": "智能灯待机耗电实测：为什么你家灯没开，电表还在转？",
+    "slug": "2026-07-01-smart-light-standby-power-truth",
+    "date": "2026-07-01",
+    "category": "智能照明",
+    "description": "2026年智能灯待机功耗实测分析，LED驱动电源待机耗电根因，选购低待机功耗智能灯指南，帮你避开隐形电费陷阱。",
+    "cover": "../../images/blog-2026-07-01-cover.png",
+    "excerpt": "灯明明关了，电表还在悄悄走。实测多品牌智能灯待机功耗，差距最高达20倍。问题不在灯泡，而在驱动电源的'偷电'设计。"
+  },
+  {
     "title": "无主灯住进去就翻车？90%的人没看懂LED驱动的调光逻辑",
     "slug": "main-lightless-fail-led-driver-dimming-logic",
     "date": "2026-06-30",
