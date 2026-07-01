@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <!-- 背景 -->
+  <rect width="800" height="550" fill="#0a1628"/>
+  <!-- 网格装饰 -->
+  <g opacity="0.08" stroke="#2478c2" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/><line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/><line x1="0" y1="500" x2="800" y2="500"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="35" fill="#7ec27e" font-size="16" font-weight="bold" text-anchor="middle">出租屋智能照明 · 场景联动架构</text>
+
+  <!-- 触发层 -->
+  <rect x="30" y="60" width="740" height="70" rx="8" fill="#1a2a4a" stroke="#ffd700" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="400" y="80" fill="#ffd700" font-size="13" font-weight="bold" text-anchor="middle">触发层（Trigger）</text>
+
+  <!-- 触发器 -->
+  <rect x="60" y="95" width="140" height="25" rx="12" fill="#ffd700" opacity="0.2" stroke="#ffd700" stroke-width="0.5"/>
+  <text x="130" y="112" fill="#ffd700" font-size="11" text-anchor="middle">语音指令"我回来了"</text>
+
+  <rect x="220" y="95" width="140" height="25" rx="12" fill="#ffd700" opacity="0.2" stroke="#ffd700" stroke-width="0.5"/>
+  <text x="290" y="112" fill="#ffd700" font-size="11" text-anchor="middle">语音指令"看电影"</text>
+
+  <rect x="380" y="95" width="140" height="25" rx="12" fill="#ffd700" opacity="0.2" stroke="#ffd700" stroke-width="0.5"/>
+  <text x="450" y="112" fill="#ffd700" font-size="11" text-anchor="middle">语音指令"晚安"</text>
+
+  <rect x="540" y="95" width="200" height="25" rx="12" fill="#ffd700" opacity="0.2" stroke="#ffd700" stroke-width="0.5"/>
+  <text x="640" y="112" fill="#ffd700" font-size="11" text-anchor="middle">GPS到家 / 定时23:00</text>
+
+  <!-- 连接线 -->
+  <line x1="130" y1="130" x2="130" y2="170" stroke="#ffd700" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="290" y1="130" x2="290" y2="170" stroke="#ffd700" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="450" y1="130" x2="450" y2="170" stroke="#ffd700" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- 涂鸦App中枢 -->
+  <rect x="250" y="170" width="300" height="50" rx="8" fill="#7ec27e"/>
+  <text x="400" y="195" fill="#0a1628" font-size="14" font-weight="bold" text-anchor="middle">涂鸦智能App · 场景引擎</text>
+
+  <!-- Zigbee网关 -->
+  <rect x="250" y="230" width="300" height="40" rx="6" fill="#1a3a5a" stroke="#2478c2" stroke-width="1"/>
+  <text x="400" y="255" fill="#2478c2" font-size="12" text-anchor="middle">涂鸦Zigbee网关 · Mesh组网</text>
+
+  <!-- 场景分支 -->
+  <!-- 回家模式 -->
+  <rect x="50" y="290" width="200" height="120" rx="8" fill="#1a2a4a" stroke="#7ec27e" stroke-width="1.5"/>
+  <rect x="50" y="290" width="200" height="30" rx="8" fill="#7ec27e"/>
+  <text x="150" y="310" fill="#0a1628" font-size="12" font-weight="bold" text-anchor="middle">回家模式</text>
+  <text x="150" y="335" fill="#c0d0e0" font-size="10" text-anchor="middle">玄关灯 100% 暖光亮起</text>
+  <text x="150" y="352" fill="#c0d0e0" font-size="10" text-anchor="middle">客厅灯 渐亮到70% 暖光</text>
+  <text x="150" y="369" fill="#c0d0e0" font-size="10" text-anchor="middle">原吸顶灯 自动关闭</text>
+  <text x="150" y="393" fill="#ffd700" font-size="10" text-anchor="middle">2700K · 像回了家</text>
+
+  <!-- 观影模式 -->
+  <rect x="290" y="290" width="200" height="120" rx="8" fill="#1a2a4a" stroke="#5b8c5a" stroke-width="1.5"/>
+  <rect x="290" y="290" width="200" height="30" rx="8" fill="#5b8c5a"/>
+  <text x="390" y="310" fill="#0a1628" font-size="12" font-weight="bold" text-anchor="middle">观影模式</text>
+  <text x="390" y="335" fill="#c0d0e0" font-size="10" text-anchor="middle">客厅灯 降至5%暖光</text>
+  <text x="390" y="352" fill="#c0d0e0" font-size="10" text-anchor="middle">电视区域灯 全关闭</text>
+  <text x="390" y="369" fill="#c0d0e0" font-size="10" text-anchor="middle">走廊灯 2%微光常亮</text>
+  <text x="390" y="393" fill="#ffd700" font-size="10" text-anchor="middle">2700K 5% · 氛围拉满</text>
+
+  <!-- 睡眠模式 -->
+  <rect x="530" y="290" width="220" height="120" rx="8" fill="#1a2a4a" stroke="#ff6b6b" stroke-width="1.5"/>
+  <rect x="530" y="290" width="220" height="30" rx="8" fill="#ff6b6b"/>
+  <text x="640" y="310" fill="#0a1628" font-size="12" font-weight="bold" text-anchor="middle">睡眠模式</text>
+  <text x="640" y="335" fill="#c0d0e0" font-size="10" text-anchor="middle">卧室灯 渐降到2%暖光</text>
+  <text x="640" y="352" fill="#c0d0e0" font-size="10" text-anchor="middle">5分钟后完全关闭</text>
+  <text x="640" y="369" fill="#c0d0e0" font-size="10" text-anchor="middle">走廊小夜灯 2%常亮</text>
+  <text x="640" y="393" fill="#ffd700" font-size="10" text-anchor="middle">2700K 2% · 安稳入睡</text>
+
+  <!-- 连接线到场景 -->
+  <line x1="150" y1="270" x2="150" y2="290" stroke="#7ec27e" stroke-width="1"/>
+  <line x1="390" y1="270" x2="390" y2="290" stroke="#5b8c5a" stroke-width="1"/>
+  <line x1="640" y1="270" x2="640" y2="290" stroke="#ff6b6b" stroke-width="1"/>
+
+  <!-- 底部关键提示 -->
+  <rect x="50" y="430" width="700" height="55" rx="8" fill="#1a2a4a" stroke="#2478c2" stroke-width="0.5"/>
+  <text x="400" y="455" fill="#2478c2" font-size="12" font-weight="bold" text-anchor="middle">租房铁律：不动硬装 · 即插即用 · 退租30分钟恢复</text>
+  <text x="400" y="475" fill="#8090a0" font-size="10" text-anchor="middle">涂鸦Zigbee · 自组Mesh · 断网可用 · 单网关支持200+设备 · 拔走即迁移</text>
+
+  <!-- Nexlamp标注 -->
+  <text x="400" y="525" fill="#7ec27e" font-size="10" text-anchor="middle" opacity="0.6">NEXLAMP · 涂鸦Zigbee智能照明 · nexlamp.com</text>
+</svg>
