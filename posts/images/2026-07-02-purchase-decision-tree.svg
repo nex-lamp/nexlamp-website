@@ -1,0 +1,80 @@
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#162240"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="680" height="400" fill="url(#bg3)"/>
+  <!-- Grid lines -->
+  <g opacity="0.05" stroke="#7ec27e" stroke-width="0.5">
+    <line x1="0" y1="80" x2="680" y2="80"/><line x1="0" y1="160" x2="680" y2="160"/><line x1="0" y1="240" x2="680" y2="240"/><line x1="0" y1="320" x2="680" y2="320"/>
+    <line x1="170" y1="0" x2="170" y2="400"/><line x1="340" y1="0" x2="340" y2="400"/><line x1="510" y1="0" x2="510" y2="400"/>
+  </g>
+  <!-- Title -->
+  <text x="340" y="30" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle" font-family="Arial,sans-serif">新国标下智能灯选购决策树</text>
+  <text x="340" y="50" fill="#7ec27e" font-size="11" text-anchor="middle" font-family="Arial,sans-serif">5条铁律 | GB 30255-2026 合规选购流程</text>
+  <!-- Decision tree -->
+  <!-- Root node -->
+  <rect x="260" y="70" width="160" height="40" rx="20" fill="#0a1628" stroke="#7ec27e" stroke-width="2" filter="url(#glow3)"/>
+  <text x="340" y="95" fill="#7ec27e" font-size="14" text-anchor="middle" font-weight="bold" font-family="Arial,sans-serif">开始选购</text>
+  <!-- Branch lines -->
+  <line x1="340" y1="110" x2="340" y2="130" stroke="#7ec27e" stroke-width="1.5"/>
+  <!-- Level 1: 能效 -->
+  <rect x="200" y="130" width="280" height="36" rx="8" fill="#1a2a4a" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="340" y="152" fill="#ffffff" font-size="13" text-anchor="middle" font-family="Arial,sans-serif">① 看能效等级 → 只选1级或2级 (≥90 Lm/W)</text>
+  <!-- Pass/Fail branches -->
+  <line x1="340" y1="166" x2="340" y2="185" stroke="#7ec27e" stroke-width="1"/>
+  <!-- Level 2: Ra -->
+  <rect x="200" y="185" width="280" height="36" rx="8" fill="#1a2a4a" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="340" y="207" fill="#ffffff" font-size="13" text-anchor="middle" font-family="Arial,sans-serif">② 看Ra值 → 家居Ra≥90，优选Ra98</text>
+  <line x1="340" y1="221" x2="340" y2="240" stroke="#7ec27e" stroke-width="1"/>
+  <!-- Level 3: 待机 -->
+  <rect x="200" y="240" width="280" height="36" rx="8" fill="#1a2a4a" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="340" y="262" fill="#ffffff" font-size="13" text-anchor="middle" font-family="Arial,sans-serif">③ 看待机功耗 → ≤0.5W，选Zigbee方案</text>
+  <line x1="340" y1="276" x2="340" y2="295" stroke="#7ec27e" stroke-width="1"/>
+  <!-- Level 4: 调光 -->
+  <rect x="200" y="295" width="280" height="36" rx="8" fill="#1a2a4a" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="340" y="317" fill="#ffffff" font-size="13" text-anchor="middle" font-family="Arial,sans-serif">④ 看调光 → 0-100%无极调光，无频闪</text>
+  <line x1="340" y1="331" x2="340" y2="350" stroke="#7ec27e" stroke-width="1"/>
+  <!-- Level 5: 驱动 -->
+  <rect x="200" y="350" width="280" height="36" rx="8" fill="#0a1628" stroke="#7ec27e" stroke-width="2" filter="url(#glow3)"/>
+  <text x="340" y="372" fill="#7ec27e" font-size="13" text-anchor="middle" font-weight="bold" font-family="Arial,sans-serif">⑤ 看驱动 → 3C认证恒流驱动</text>
+  <!-- Side annotations -->
+  <!-- Fail path -->
+  <g transform="translate(520, 130)">
+    <rect x="0" y="0" width="140" height="36" rx="8" fill="#2a0a0a" stroke="#ff6b35" stroke-width="1"/>
+    <text x="70" y="15" fill="#ff6b35" font-size="10" text-anchor="middle" font-family="Arial,sans-serif">光效&lt;75 Lm/W</text>
+    <text x="70" y="28" fill="#ff6b35" font-size="10" text-anchor="middle" font-family="Arial,sans-serif">❌ 不合格</text>
+  </g>
+  <line x1="480" y1="148" x2="520" y2="148" stroke="#ff6b35" stroke-width="1" stroke-dasharray="4"/>
+  <!-- Zigbee advantage -->
+  <g transform="translate(520, 240)">
+    <rect x="0" y="0" width="140" height="36" rx="8" fill="#0a1628" stroke="#7ec27e" stroke-width="1.5"/>
+    <text x="70" y="15" fill="#7ec27e" font-size="10" text-anchor="middle" font-family="Arial,sans-serif">Zigbee待机0.1-0.3W</text>
+    <text x="70" y="28" fill="#7ec27e" font-size="10" text-anchor="middle" font-family="Arial,sans-serif">✅ 远低于0.5W</text>
+  </g>
+  <line x1="480" y1="258" x2="520" y2="258" stroke="#7ec27e" stroke-width="1"/>
+  <!-- WiFi warning -->
+  <g transform="translate(520, 295)">
+    <rect x="0" y="0" width="140" height="36" rx="8" fill="#2a0a0a" stroke="#ff6b35" stroke-width="1"/>
+    <text x="70" y="15" fill="#ff6b35" font-size="10" text-anchor="middle" font-family="Arial,sans-serif">WiFi待机2-5W</text>
+    <text x="70" y="28" fill="#ff6b35" font-size="10" text-anchor="middle" font-family="Arial,sans-serif">❌ 超标淘汰</text>
+  </g>
+  <line x1="480" y1="313" x2="520" y2="313" stroke="#ff6b35" stroke-width="1" stroke-dasharray="4"/>
+  <!-- Final result -->
+  <rect x="340" y="380" width="0" height="0" rx="0"/>
+  <!-- Left side: protocol comparison -->
+  <g transform="translate(30, 130)">
+    <text x="0" y="0" fill="#7ec27e" font-size="12" font-weight="bold" font-family="Arial,sans-serif">调光协议选择</text>
+    <text x="0" y="20" fill="#aaaaaa" font-size="10" font-family="Arial,sans-serif">DALI-2 → 专业场景</text>
+    <text x="0" y="36" fill="#aaaaaa" font-size="10" font-family="Arial,sans-serif">0-10V → 商用通用</text>
+    <text x="0" y="52" fill="#7ec27e" font-size="10" font-weight="bold" font-family="Arial,sans-serif">Zigbee → 智能家居最优</text>
+    <text x="0" y="68" fill="#aaaaaa" font-size="10" font-family="Arial,sans-serif">可控硅 → 低端兼容</text>
+  </g>
+</svg>
