@@ -1,5 +1,18 @@
 # Automation Memory
 
+## 2026-07-01: 智能灯待机耗电实测——驱动电源的"偷电"设计
+- 选题: 多平台搜索确认"智能灯待机耗电/电费账单"是2026年6月底-7月初热门话题（今日头条/小红书热议）
+- 文章: posts/2026-07-01-smart-light-standby-power-truth.md (~1300字) + 3 SVG + AI封面(去水印)
+- 网站: ✅ build.js 63篇 + GitHub API推送成功(commit 1ecd8360)
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/smart-light-standby-power-the-20x-gap-nobody-talks-about-2026-guide-2i1f
+- 知乎: ✅ https://zhuanlan.zhihu.com/p/2055672536629765669 (API发布成功)
+- 掘金: ✅ article_id=7657189484552847366
+- LinkedIn: ⚠️ CDP Chrome未运行，跳过
+- 今日头条 微头条: ✅
+- 今日头条 文章: ✅
+- 小红书: ⚠️ xhs-mcp未连接，跳过
+- 踩坑: git push被墙失败→改用GitHub API; toutiao-ops article需用--content-file避免命令行超长; 知乎cookie格式为dict直接取cookies字段
+
 ## 2026-06-29: 智能灯掉线——驱动电源才是稳定性关键
 - 选题: 多平台搜索确认"智能灯掉线/协议选型"是2026年6月最热话题
 - 文章: posts/2026-06-29-smart-light-disconnect-driver-fix.md (~1300字) + 3 SVG + AI封面(去水印)
