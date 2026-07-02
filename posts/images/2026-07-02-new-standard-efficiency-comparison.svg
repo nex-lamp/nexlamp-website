@@ -1,0 +1,90 @@
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1a2a4a"/>
+    </linearGradient>
+    <linearGradient id="green1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#7ec27e"/>
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="680" height="400" fill="url(#bg1)"/>
+  <!-- Grid -->
+  <g opacity="0.08" stroke="#4CAF50" stroke-width="0.5">
+    <line x1="0" y1="0" x2="680" y2="400"/>
+    <line x1="170" y1="0" x2="170" y2="400"/>
+    <line x1="340" y1="0" x2="340" y2="400"/>
+    <line x1="510" y1="0" x2="510" y2="400"/>
+    <line x1="0" y1="100" x2="680" y2="100"/>
+    <line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="300" x2="680" y2="300"/>
+  </g>
+  <!-- Title -->
+  <text x="340" y="35" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle" font-family="Arial,sans-serif">GB 30255-2026 能效等级对比</text>
+  <!-- Subtitle -->
+  <text x="340" y="58" fill="#7ec27e" font-size="13" text-anchor="middle" font-family="Arial,sans-serif">光效门槛全面提升 | 旧标准 vs 新标准</text>
+  <!-- Bar chart: Old vs New -->
+  <!-- Level 1 -->
+  <g>
+    <text x="40" y="95" fill="#aaaaaa" font-size="12" font-family="Arial,sans-serif">1级(最高)</text>
+    <rect x="130" y="82" width="180" height="24" rx="4" fill="#ff6b35" opacity="0.8"/>
+    <text x="310" y="97" fill="#ff6b35" font-size="11" font-family="Arial,sans-serif">90 Lm/W</text>
+    <rect x="340" y="82" width="210" height="24" rx="4" fill="url(#green1)" filter="url(#glow1)"/>
+    <text x="555" y="97" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial,sans-serif">105 Lm/W (+17%)</text>
+    <text x="620" y="97" fill="#7ec27e" font-size="10" font-family="Arial,sans-serif">▲</text>
+  </g>
+  <!-- Level 2 -->
+  <g>
+    <text x="40" y="155" fill="#aaaaaa" font-size="12" font-family="Arial,sans-serif">2级</text>
+    <rect x="130" y="142" width="150" height="24" rx="4" fill="#ff6b35" opacity="0.8"/>
+    <text x="285" y="157" fill="#ff6b35" font-size="11" font-family="Arial,sans-serif">75 Lm/W</text>
+    <rect x="340" y="142" width="180" height="24" rx="4" fill="url(#green1)" filter="url(#glow1)"/>
+    <text x="525" y="157" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial,sans-serif">90 Lm/W (+20%)</text>
+    <text x="620" y="157" fill="#7ec27e" font-size="10" font-family="Arial,sans-serif">▲</text>
+  </g>
+  <!-- Level 3 (准入门槛) -->
+  <g>
+    <text x="40" y="215" fill="#aaaaaa" font-size="12" font-family="Arial,sans-serif">3级(准入)</text>
+    <rect x="130" y="202" width="120" height="24" rx="4" fill="#ff6b35" opacity="0.8"/>
+    <text x="255" y="217" fill="#ff6b35" font-size="11" font-family="Arial,sans-serif">60 Lm/W</text>
+    <rect x="340" y="202" width="150" height="24" rx="4" fill="url(#green1)" filter="url(#glow1)"/>
+    <text x="495" y="217" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial,sans-serif">75 Lm/W (+25%)</text>
+    <text x="620" y="217" fill="#7ec27e" font-size="10" font-family="Arial,sans-serif">▲</text>
+  </g>
+  <!-- Divider -->
+  <line x1="340" y1="240" x2="340" y2="250" stroke="#7ec27e" stroke-width="2" opacity="0.5"/>
+  <!-- Key changes section -->
+  <text x="340" y="275" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle" font-family="Arial,sans-serif">新国标四大核心变化</text>
+  <!-- Icons + text -->
+  <g>
+    <!-- 1 -->
+    <circle cx="80" cy="310" r="18" fill="#0a1628" stroke="#7ec27e" stroke-width="2"/>
+    <text x="80" y="314" fill="#7ec27e" font-size="14" text-anchor="middle" font-family="Arial,sans-serif">1</text>
+    <text x="105" y="305" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial,sans-serif">光效门槛+25%</text>
+    <text x="105" y="318" fill="#aaaaaa" font-size="10" font-family="Arial,sans-serif">准入线从60→75 Lm/W</text>
+    <!-- 2 -->
+    <circle cx="250" cy="310" r="18" fill="#0a1628" stroke="#7ec27e" stroke-width="2"/>
+    <text x="250" y="314" fill="#7ec27e" font-size="14" text-anchor="middle" font-family="Arial,sans-serif">2</text>
+    <text x="275" y="305" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial,sans-serif">待机功耗≤0.5W</text>
+    <text x="275" y="318" fill="#aaaaaa" font-size="10" font-family="Arial,sans-serif">WiFi灯淘汰，Zigbee优势</text>
+    <!-- 3 -->
+    <circle cx="420" cy="310" r="18" fill="#0a1628" stroke="#7ec27e" stroke-width="2"/>
+    <text x="420" y="314" fill="#7ec27e" font-size="14" text-anchor="middle" font-family="Arial,sans-serif">3</text>
+    <text x="445" y="305" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial,sans-serif">Ra≥90强制</text>
+    <text x="445" y="318" fill="#aaaaaa" font-size="10" font-family="Arial,sans-serif">家居照明显色指数升级</text>
+    <!-- 4 -->
+    <circle cx="580" cy="310" r="18" fill="#0a1628" stroke="#7ec27e" stroke-width="2"/>
+    <text x="580" y="314" fill="#7ec27e" font-size="14" text-anchor="middle" font-family="Arial,sans-serif">4</text>
+    <text x="605" y="305" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial,sans-serif">调光性能考核</text>
+    <text x="605" y="318" fill="#aaaaaa" font-size="10" font-family="Arial,sans-serif">无频闪+5%调光深度</text>
+  </g>
+  <!-- Footer -->
+  <text x="340" y="370" fill="#7ec27e" font-size="11" text-anchor="middle" font-family="Arial,sans-serif">NEXLAMP全系列 | 光效≥90 Lm/W | Ra≥90-98 | Zigbee待机0.3W | 3C认证驱动</text>
+  <text x="340" y="388" fill="#666666" font-size="9" text-anchor="middle" font-family="Arial,sans-serif">www.nexlamp.com</text>
+</svg>
