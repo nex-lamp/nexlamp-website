@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f35;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d6bcf;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7ec27e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b8c5a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9f43;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="520" fill="url(#bgGrad)" />
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="450" x2="800" y2="450" />
+    <line x1="0" y1="500" x2="800" y2="500" />
+  </g>
+  <text x="400" y="45" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="bold" fill="#ffffff">AI智能灯的三层架构</text>
+  <text x="400" y="75" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" fill="#7ec27e">传感器收集数据，算法做决策，驱动电源执行</text>
+
+  <!-- Layer 1: Sensors -->
+  <g transform="translate(200,120)" filter="url(#glow)">
+    <polygon points="0,60 100,0 300,0 400,60 300,120 100,120" fill="url(#layer1)" opacity="0.9" />
+    <text x="200" y="55" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="bold" fill="#ffffff">传感器层</text>
+    <text x="200" y="82" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#e0f0ff">雷达 / 红外 / 环境光</text>
+  </g>
+
+  <!-- Layer 2: Algorithm -->
+  <g transform="translate(200,230)" filter="url(#glow)">
+    <polygon points="0,60 100,0 300,0 400,60 300,120 100,120" fill="url(#layer2)" opacity="0.9" />
+    <text x="200" y="55" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="bold" fill="#ffffff">算法层</text>
+    <text x="200" y="82" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#e8f5e9">学习 / 决策 / 调光策略</text>
+  </g>
+
+  <!-- Layer 3: Driver -->
+  <g transform="translate(200,340)" filter="url(#glow)">
+    <polygon points="0,60 100,0 300,0 400,60 300,120 100,120" fill="url(#layer3)" opacity="0.9" />
+    <text x="200" y="55" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="bold" fill="#ffffff">驱动电源层</text>
+    <text x="200" y="82" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#fff3e0">稳定电流 / 无频闪 / 长寿命</text>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3" opacity="0.6">
+    <line x1="400" y1="245" x2="400" y2="225" marker-end="url(#arrow)" />
+    <line x1="400" y1="355" x2="400" y2="335" marker-end="url(#arrow)" />
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 L2,5 Z" fill="#ffffff" />
+    </marker>
+  </defs>
+
+  <g transform="translate(620,120)">
+    <rect x="0" y="0" width="140" height="340" rx="10" fill="#162b4d" stroke="#4a9eff" stroke-width="1" />
+    <text x="70" y="35" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="bold" fill="#ffffff">判断标准</text>
+    <text x="70" y="75" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#4a9eff">有没有雷达？</text>
+    <text x="70" y="105" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#4a9eff">能感知存在？</text>
+    <text x="70" y="160" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#7ec27e">是固定规则</text>
+    <text x="70" y="190" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#7ec27e">还是学习？</text>
+    <text x="70" y="245" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#ff9f43">调光平滑吗？</text>
+    <text x="70" y="275" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#ff9f43">驱动隔离吗？</text>
+    <text x="70" y="305" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#ff9f43">寿命多长？</text>
+  </g>
+
+  <g transform="translate(80,470)">
+    <rect x="0" y="0" width="640" height="35" rx="8" fill="#162b4d" stroke="#7ec27e" stroke-width="1" />
+    <text x="320" y="23" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#ffffff">三层都强，才是真智能；任何一层拉胯，都会让体验打折</text>
+  </g>
+</svg>

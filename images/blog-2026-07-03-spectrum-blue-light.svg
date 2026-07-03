@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+    <linearGradient id="blueDanger" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b6cff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1a2a8a" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="blueGood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7eb8ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4a7abf" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="warmLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffc864" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff9632" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg1)"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#e0e8ff">LED蓝光光谱：有害 vs 必需</text>
+  <text x="400" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#8899bb">波长415-455nm（高能危害） vs 460-490nm（节律必需）</text>
+  
+  <!-- Spectrum bar -->
+  <rect x="80" y="120" width="640" height="40" rx="4" fill="#1a1e3a" stroke="#334466" stroke-width="1"/>
+  
+  <!-- UV region -->
+  <rect x="80" y="120" width="60" height="40" rx="4" fill="#6a0dad" opacity="0.4"/>
+  <text x="110" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#aa88dd">UV</text>
+  
+  <!-- Blue danger zone 415-455nm -->
+  <rect x="140" y="120" width="100" height="40" rx="0" fill="url(#blueDanger)" filter="url(#glow)"/>
+  <text x="190" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff" font-weight="bold">415-455nm</text>
+  
+  <!-- Blue good zone 460-490nm -->
+  <rect x="240" y="120" width="80" height="40" rx="0" fill="url(#blueGood)"/>
+  <text x="280" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ccddff">460-490nm</text>
+  
+  <!-- Green region -->
+  <rect x="320" y="120" width="140" height="40" fill="#2a8a4a" opacity="0.3"/>
+  <text x="390" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#66aa77">绿光区</text>
+  
+  <!-- Yellow/warm region -->
+  <rect x="460" y="120" width="120" height="40" fill="#ff9632" opacity="0.25"/>
+  <text x="520" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ffcc88">暖光区</text>
+  
+  <!-- Red region -->
+  <rect x="580" y="120" width="140" height="40" fill="#cc3344" opacity="0.25"/>
+  <text x="650" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#dd6677">红光区</text>
+  
+  <!-- Wavelength labels -->
+  <text x="80" y="175" font-family="Arial,sans-serif" font-size="10" fill="#667799">380nm</text>
+  <text x="240" y="175" font-family="Arial,sans-serif" font-size="10" fill="#667799">500nm</text>
+  <text x="460" y="175" font-family="Arial,sans-serif" font-size="10" fill="#667799">580nm</text>
+  <text x="580" y="175" font-family="Arial,sans-serif" font-size="10" fill="#667799">630nm</text>
+  <text x="700" y="175" font-family="Arial,sans-serif" font-size="10" fill="#667799">780nm</text>
+  
+  <!-- Danger zone annotation -->
+  <line x1="190" y1="165" x2="190" y2="220" stroke="#ff4444" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="110" y="220" width="160" height="80" rx="8" fill="#1a0a0a" stroke="#ff4444" stroke-width="1.5"/>
+  <text x="190" y="240" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#ff6666" font-weight="bold">&#x26A0; 高能短波蓝光</text>
+  <text x="190" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ff8888">视网膜氧化损伤</text>
+  <text x="190" y="278" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ff8888">加速黄斑区退化</text>
+  <text x="190" y="296" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ff9999">RG2级灯 = 需限制</text>
+  
+  <!-- Good zone annotation -->
+  <line x1="280" y1="165" x2="280" y2="220" stroke="#7eb8ff" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="200" y="220" width="160" height="80" rx="8" fill="#0a1a2a" stroke="#7eb8ff" stroke-width="1.5"/>
+  <text x="280" y="240" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#7eb8ff" font-weight="bold">&#x2713; 节律必需蓝光</text>
+  <text x="280" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#99ccff">抑制褪黑素 / 保持清醒</text>
+  <text x="280" y="278" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#99ccff">调节昼夜节律</text>
+  <text x="280" y="296" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#aaddff">白天适量 = 健康</text>
+  
+  <!-- RG classification -->
+  <rect x="80" y="330" width="200" height="60" rx="8" fill="#0a2a0a" stroke="#44cc44" stroke-width="1.5"/>
+  <text x="180" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#44cc44" font-weight="bold">RG0 豁免级</text>
+  <text x="180" y="372" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#66dd66">短波蓝光安全 &#x2714;</text>
+  
+  <rect x="300" y="330" width="200" height="60" rx="8" fill="#2a1a0a" stroke="#ffaa44" stroke-width="1.5"/>
+  <text x="400" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#ffaa44" font-weight="bold">RG1 I级风险</text>
+  <text x="400" y="372" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffcc88">轻微溢出 &#x26A0;</text>
+  
+  <rect x="520" y="330" width="200" height="60" rx="8" fill="#2a0a0a" stroke="#ff4444" stroke-width="1.5"/>
+  <text x="620" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#ff4444" font-weight="bold">RG2 II级风险</text>
+  <text x="620" y="372" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ff6666">蓝光超标 &#x2716;</text>
+  
+  <!-- Bottom note -->
+  <text x="400" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7788aa">选购底线：阅读灯 &amp; 工作灯必须 RG0（蓝光豁免级）</text>
+  <text x="400" y="455" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#556677">来源：GB/T 20145-2026 蓝光安全分级标准</text>
+  
+  <!-- NEXLAMP watermark -->
+  <text x="760" y="490" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#334455" letter-spacing="3">NEXLAMP</text>
+</svg>

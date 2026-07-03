@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f35;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goodGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7ec27e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b8c5a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="midGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff9f43;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="badGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bgGrad)" />
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="450" x2="800" y2="450" />
+    <line x1="0" y1="500" x2="800" y2="500" />
+  </g>
+  <text x="400" y="45" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="bold" fill="#ffffff">AI调光的最终考验：驱动电源</text>
+  <text x="400" y="75" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" fill="#7ec27e">再聪明的算法，也要靠驱动电源把光稳住</text>
+
+  <!-- Table Header -->
+  <g transform="translate(80,110)">
+    <rect x="0" y="0" width="640" height="45" rx="6" fill="#162b4d" stroke="#4a9eff" stroke-width="1" />
+    <text x="100" y="30" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="bold" fill="#ffffff">驱动类型</text>
+    <text x="260" y="30" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="bold" fill="#ffffff">调光体验</text>
+    <text x="420" y="30" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="bold" fill="#ffffff">健康影响</text>
+    <text x="570" y="30" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="bold" fill="#ffffff">寿命</text>
+  </g>
+
+  <!-- Row 1: Good -->
+  <g transform="translate(80,165)">
+    <rect x="0" y="0" width="640" height="75" rx="6" fill="#0f1f38" stroke="#7ec27e" stroke-width="1" opacity="0.9" />
+    <text x="100" y="30" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="bold" fill="#7ec27e">优质隔离驱动</text>
+    <text x="100" y="52" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#a0c4ff">0-10V / DALI / PWM</text>
+    <text x="260" y="41" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#ffffff">1%-100%平滑无频闪</text>
+    <text x="420" y="41" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#ffffff">低蓝光、低视觉疲劳</text>
+    <text x="570" y="41" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#ffffff">3-5万小时</text>
+  </g>
+
+  <!-- Row 2: Mid -->
+  <g transform="translate(80,250)">
+    <rect x="0" y="0" width="640" height="75" rx="6" fill="#0f1f38" stroke="#ff9f43" stroke-width="1" opacity="0.9" />
+    <text x="100" y="30" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="bold" fill="#ff9f43">普通非隔离驱动</text>
+    <text x="100" y="52" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#a0c4ff">低成本PWM方案</text>
+    <text x="260" y="41" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#ffffff">低亮度闪烁、跳变</text>
+    <text x="420" y="41" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#ffffff">长时间用眼易疲劳</text>
+    <text x="570" y="41" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#ffffff">1-2万小时</text>
+  </g>
+
+  <!-- Row 3: Bad -->
+  <g transform="translate(80,335)">
+    <rect x="0" y="0" width="640" height="75" rx="6" fill="#0f1f38" stroke="#ff6b6b" stroke-width="1" opacity="0.9" />
+    <text x="100" y="30" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="bold" fill="#ff6b6b">廉价可控硅驱动</text>
+    <text x="100" y="52" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" fill="#a0c4ff">老旧调光兼容方案</text>
+    <text x="260" y="41" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#ffffff">调光范围窄、异响</text>
+    <text x="420" y="41" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#ffffff">频闪明显、可能头痛</text>
+    <text x="570" y="41" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#ffffff">几千小时</text>
+  </g>
+
+  <g transform="translate(80,430)">
+    <rect x="0" y="0" width="640" height="60" rx="8" fill="#162b4d" stroke="#ff6b6b" stroke-width="1" />
+    <text x="320" y="25" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" fill="#ffffff" font-weight="bold">关键结论</text>
+    <text x="320" y="48" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#a0c4ff">AI护眼灯翻车，往往不是算法不行，而是驱动电源让调光过程频闪超标</text>
+  </g>
+</svg>

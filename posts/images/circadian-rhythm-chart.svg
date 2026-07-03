@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#162440"/>
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5a623" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f5a623" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="coolGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4fc3f7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#4fc3f7" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="sleepGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8a65" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ff8a65" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="680" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.08" stroke="#4fc3f7" stroke-width="0.5">
+    <line x1="0" y1="50" x2="680" y2="50"/><line x1="0" y1="100" x2="680" y2="100"/>
+    <line x1="0" y1="150" x2="680" y2="150"/><line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="250" x2="680" y2="250"/><line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="0" y1="350" x2="680" y2="350"/>
+    <line x1="50" y1="0" x2="50" y2="400"/><line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="150" y1="0" x2="150" y2="400"/><line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="250" y1="0" x2="250" y2="400"/><line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="350" y1="0" x2="350" y2="400"/><line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="450" y1="0" x2="450" y2="400"/><line x1="500" y1="0" x2="500" y2="400"/>
+    <line x1="550" y1="0" x2="550" y2="400"/><line x1="600" y1="0" x2="600" y2="400"/>
+    <line x1="650" y1="0" x2="650" y2="400"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="340" y="35" text-anchor="middle" fill="#e0e0e0" font-size="16" font-weight="bold" letter-spacing="3">AI节律照明 · 色温与生物钟同步曲线</text>
+  
+  <!-- Timeline axis -->
+  <line x1="60" y1="310" x2="620" y2="310" stroke="#556677" stroke-width="1.5"/>
+  <g fill="#8899aa" font-size="10">
+    <text x="60" y="325">6:00</text><text x="120" y="325">8:00</text>
+    <text x="180" y="325">10:00</text><text x="240" y="325">12:00</text>
+    <text x="300" y="325">14:00</text><text x="360" y="325">16:00</text>
+    <text x="420" y="325">18:00</text><text x="480" y="325">20:00</text>
+    <text x="540" y="325">22:00</text><text x="600" y="325">24:00</text>
+  </g>
+  
+  <!-- Color temperature curve -->
+  <path d="M60,80 C90,80 120,85 150,90 C180,100 210,110 240,115 C270,120 300,125 330,130 C360,140 390,160 420,180 C450,220 470,250 480,270 C500,290 530,295 560,295 C580,295 600,295 620,295" stroke="#f5a623" stroke-width="2.5" fill="none" filter="url(#glow)"/>
+  
+  <!-- Brightness curve -->
+  <path d="M60,180 C90,140 120,90 150,80 C180,75 210,75 240,80 C270,85 300,90 330,95 C360,100 390,120 420,150 C450,200 470,250 480,280 C500,295 530,300 560,310 C580,310 600,310 620,310" stroke="#4fc3f7" stroke-width="2" fill="none" filter="url(#glow)" opacity="0.8"/>
+  
+  <!-- Light beam effects at key time points -->
+  <!-- Morning: cool white -->
+  <circle cx="150" cy="90" r="8" fill="#4fc3f7" filter="url(#softGlow)" opacity="0.9"/>
+  <line x1="150" y1="98" x2="150" y2="310" stroke="url(#coolGrad)" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Daytime: neutral -->
+  <circle cx="300" cy="125" r="6" fill="#e0e0e0" filter="url(#softGlow)" opacity="0.7"/>
+  <line x1="300" y1="131" x2="300" y2="310" stroke="#e0e0e0" stroke-width="1.5" opacity="0.2"/>
+  
+  <!-- Evening: warm -->
+  <circle cx="420" cy="180" r="8" fill="#f5a623" filter="url(#softGlow)" opacity="0.9"/>
+  <line x1="420" y1="188" x2="420" y2="310" stroke="url(#warmGrad)" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Night: deep warm -->
+  <circle cx="540" cy="295" r="6" fill="#ff8a65" filter="url(#softGlow)" opacity="0.6"/>
+  <line x1="540" y1="301" x2="540" y2="310" stroke="url(#sleepGrad)" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Zone labels -->
+  <rect x="60" y="55" width="200" height="22" rx="4" fill="#4fc3f7" opacity="0.15"/>
+  <text x="160" y="70" text-anchor="middle" fill="#4fc3f7" font-size="11" font-weight="bold">晨间唤醒 4500-5000K</text>
+  
+  <rect x="240" y="70" width="200" height="22" rx="4" fill="#e0e0e0" opacity="0.1"/>
+  <text x="340" y="85" text-anchor="middle" fill="#ccddee" font-size="11">日间专注 3500-4000K</text>
+  
+  <rect x="420" y="148" width="140" height="22" rx="4" fill="#f5a623" opacity="0.15"/>
+  <text x="490" y="163" text-anchor="middle" fill="#f5a623" font-size="11" font-weight="bold">日落缓降 2700-3000K</text>
+  
+  <rect x="520" y="272" width="100" height="22" rx="4" fill="#ff8a65" opacity="0.15"/>
+  <text x="570" y="287" text-anchor="middle" fill="#ff8a65" font-size="11" font-weight="bold">夜灯 ≤2700K</text>
+  
+  <!-- Legend -->
+  <g transform="translate(60,355)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#f5a623" stroke-width="2.5"/>
+    <text x="25" y="4" fill="#f5a623" font-size="10">色温(K)</text>
+    <line x1="100" y1="0" x2="120" y2="0" stroke="#4fc3f7" stroke-width="2" opacity="0.8"/>
+    <text x="125" y="4" fill="#4fc3f7" font-size="10">亮度(%)</text>
+  </g>
+  
+  <!-- Melatonin curve (subtle) -->
+  <path d="M60,340 C90,340 120,340 150,335 C180,330 210,325 240,320 C270,318 300,316 330,310 C360,305 390,280 420,250 C450,220 470,180 480,150 C500,120 530,100 560,90 C580,85 600,80 620,80" stroke="#b388ff" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+  <text x="605" y="75" fill="#b388ff" font-size="9" opacity="0.6">褪黑素↑</text>
+  
+  <!-- NEXLAMP branding -->
+  <text x="620" y="385" text-anchor="end" fill="#7ec27e" font-size="10" font-weight="bold" letter-spacing="2">NEXLAMP</text>
+</svg>

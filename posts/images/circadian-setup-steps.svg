@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#162440"/>
+    </linearGradient>
+    <filter id="gl3">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="680" height="400" fill="url(#bg3)"/>
+  
+  <!-- Grid -->
+  <g opacity="0.06" stroke="#4fc3f7" stroke-width="0.5">
+    <line x1="0" y1="40" x2="680" y2="40"/><line x1="0" y1="80" x2="680" y2="80"/>
+    <line x1="0" y1="120" x2="680" y2="120"/><line x1="0" y1="160" x2="680" y2="160"/>
+    <line x1="0" y1="200" x2="680" y2="200"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="280" x2="680" y2="280"/><line x1="0" y1="320" x2="680" y2="320"/>
+    <line x1="0" y1="360" x2="680" y2="360"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" fill="#e0e0e0" font-size="15" font-weight="bold" letter-spacing="3">4步搭建节律照明 · 从选购到落地</text>
+  
+  <!-- Step boxes -->
+  <!-- Step 1 -->
+  <rect x="30" y="50" width="155" height="130" rx="8" fill="#0d1f36" stroke="#4fc3f7" stroke-width="1"/>
+  <circle cx="60" cy="75" r="14" fill="#4fc3f7" opacity="0.2"/>
+  <text x="60" y="80" text-anchor="middle" fill="#4fc3f7" font-size="16" font-weight="bold" filter="url(#gl3)">1</text>
+  <text x="100" y="80" text-anchor="start" fill="#4fc3f7" font-size="12" font-weight="bold">确认需求</text>
+  <text x="45" y="100" fill="#aab8cc" font-size="9">卧室：晨间唤醒</text>
+  <text x="45" y="115" fill="#aab8cc" font-size="9">+夜间助眠（重点）</text>
+  <text x="45" y="130" fill="#aab8cc" font-size="9">客厅：阅读冷光</text>
+  <text x="45" y="145" fill="#aab8cc" font-size="9">+观影暖光</text>
+  <text x="45" y="160" fill="#aab8cc" font-size="9">厨房：只需亮度调节</text>
+  <rect x="35" y="168" width="145" height="4" rx="2" fill="#4fc3f7" opacity="0.3"/>
+  
+  <!-- Step 2 -->
+  <rect x="195" y="50" width="155" height="130" rx="8" fill="#0d1f36" stroke="#7ec27e" stroke-width="1"/>
+  <circle cx="225" cy="75" r="14" fill="#7ec27e" opacity="0.2"/>
+  <text x="225" y="80" text-anchor="middle" fill="#7ec27e" font-size="16" font-weight="bold" filter="url(#gl3)">2</text>
+  <text x="265" y="80" text-anchor="start" fill="#7ec27e" font-size="12" font-weight="bold">选灯&amp;驱动</text>
+  <text x="210" y="100" fill="#aab8cc" font-size="9">筒灯：NEX1/NEX3</text>
+  <text x="210" y="115" fill="#aab8cc" font-size="9">84款全尺寸覆盖</text>
+  <text x="210" y="130" fill="#aab8cc" font-size="9">射灯：NEX4-9</text>
+  <text x="210" y="145" fill="#aab8cc" font-size="9">192款 Ra98高显色</text>
+  <text x="210" y="160" fill="#7ec27e" font-size="9">⚠ 必选涂鸦Zigbee版</text>
+  <rect x="200" y="168" width="145" height="4" rx="2" fill="#7ec27e" opacity="0.3"/>
+  
+  <!-- Step 3 -->
+  <rect x="360" y="50" width="155" height="130" rx="8" fill="#0d1f36" stroke="#f5a623" stroke-width="1"/>
+  <circle cx="390" cy="75" r="14" fill="#f5a623" opacity="0.2"/>
+  <text x="390" y="80" text-anchor="middle" fill="#f5a623" font-size="16" font-weight="bold" filter="url(#gl3)">3</text>
+  <text x="430" y="80" text-anchor="start" fill="#f5a623" font-size="12" font-weight="bold">配置场景</text>
+  <text x="375" y="100" fill="#4fc3f7" font-size="9">晨光唤醒 6:30</text>
+  <text x="375" y="115" fill="#aab8cc" font-size="9">→ 4500K 亮度60%</text>
+  <text x="375" y="130" fill="#f5a623" font-size="9">日落缓降 18:00</text>
+  <text x="375" y="145" fill="#aab8cc" font-size="9">→ 3000K 亮度40%</text>
+  <text x="375" y="160" fill="#ff8a65" font-size="9">夜灯助眠 21:30</text>
+  <rect x="365" y="168" width="145" height="4" rx="2" fill="#f5a623" opacity="0.3"/>
+  
+  <!-- Step 4 -->
+  <rect x="525" y="50" width="155" height="130" rx="8" fill="#0d1f36" stroke="#b388ff" stroke-width="1"/>
+  <circle cx="555" cy="75" r="14" fill="#b388ff" opacity="0.2"/>
+  <text x="555" y="80" text-anchor="middle" fill="#b388ff" font-size="16" font-weight="bold" filter="url(#gl3)">4</text>
+  <text x="595" y="80" text-anchor="start" fill="#b388ff" font-size="12" font-weight="bold">7天微调</text>
+  <text x="540" y="100" fill="#aab8cc" font-size="9">观察睡眠质量变化</text>
+  <text x="540" y="115" fill="#aab8cc" font-size="9">微调触发时间</text>
+  <text x="540" y="130" fill="#aab8cc" font-size="9">晚睡→推迟助眠</text>
+  <text x="540" y="145" fill="#aab8cc" font-size="9">早醒→提前唤醒</text>
+  <text x="540" y="160" fill="#b388ff" font-size="9">个性化节律曲线</text>
+  <rect x="530" y="168" width="145" height="4" rx="2" fill="#b388ff" opacity="0.3"/>
+  
+  <!-- Flow arrows between steps -->
+  <g stroke="#556677" stroke-width="1.5" fill="none">
+    <path d="M185,120 L195,120" marker-end="url(#arr)"/>
+    <path d="M350,120 L360,120"/>
+    <path d="M515,120 L525,120"/>
+  </g>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#556677"/>
+    </marker>
+  </defs>
+  
+  <!-- Bottom: AI evolution timeline -->
+  <text x="340" y="210" text-anchor="middle" fill="#e0e0e0" font-size="13" font-weight="bold" letter-spacing="2">节律照明进化路线</text>
+  
+  <!-- Timeline -->
+  <line x1="60" y1="240" x2="620" y2="240" stroke="#556677" stroke-width="1.5"/>
+  
+  <!-- Stage 1 -->
+  <circle cx="100" cy="240" r="8" fill="#4fc3f7" filter="url(#gl3)"/>
+  <text x="100" y="260" text-anchor="middle" fill="#4fc3f7" font-size="10" font-weight="bold">手动调光</text>
+  <text x="100" y="275" text-anchor="middle" fill="#8899aa" font-size="8">App设置色温</text>
+  <text x="100" y="288" text-anchor="middle" fill="#8899aa" font-size="8">每次手动切换</text>
+  
+  <!-- Stage 2 -->
+  <circle cx="250" cy="240" r="8" fill="#f5a623" filter="url(#gl3)"/>
+  <text x="250" y="260" text-anchor="middle" fill="#f5a623" font-size="10" font-weight="bold">定时节律</text>
+  <text x="250" y="275" text-anchor="middle" fill="#8899aa" font-size="8">时间触发色温</text>
+  <text x="250" y="288" text-anchor="middle" fill="#8899aa" font-size="8">涂鸦App场景</text>
+  
+  <!-- Stage 3 -->
+  <circle cx="400" cy="240" r="8" fill="#7ec27e" filter="url(#gl3)"/>
+  <text x="400" y="260" text-anchor="middle" fill="#7ec27e" font-size="10" font-weight="bold">传感器联动</text>
+  <text x="400" y="275" text-anchor="middle" fill="#8899aa" font-size="8">环境光+雷达</text>
+  <text x="400" y="288" text-anchor="middle" fill="#8899aa" font-size="8">有人/无人自适应</text>
+  
+  <!-- Stage 4 -->
+  <circle cx="550" cy="240" r="8" fill="#b388ff" filter="url(#gl3)"/>
+  <text x="550" y="260" text-anchor="middle" fill="#b388ff" font-size="10" font-weight="bold">AI自学习</text>
+  <text x="550" y="275" text-anchor="middle" fill="#8899aa" font-size="8">7天学习作息</text>
+  <text x="550" y="288" text-anchor="middle" fill="#8899aa" font-size="8">个性化节律曲线</text>
+  
+  <!-- Arrow marks on timeline -->
+  <path d="M100,234 L100,246" stroke="#4fc3f7" stroke-width="1"/>
+  <path d="M250,234 L250,246" stroke="#f5a623" stroke-width="1"/>
+  <path d="M400,234 L400,246" stroke="#7ec27e" stroke-width="1"/>
+  <path d="M550,234 L550,246" stroke="#b388ff" stroke-width="1"/>
+  
+  <!-- Current position marker -->
+  <rect x="350" y="220" width="110" height="18" rx="9" fill="#7ec27e" opacity="0.2" stroke="#7ec27e" stroke-width="0.5"/>
+  <text x="405" y="232" text-anchor="middle" fill="#7ec27e" font-size="9" font-weight="bold">← 2026当前阶段</text>
+  
+  <!-- Tip box -->
+  <rect x="50" y="320" width="580" height="55" rx="6" fill="#0d1f36" stroke="#7ec27e" stroke-width="0.8"/>
+  <text x="70" y="340" fill="#7ec27e" font-size="11" font-weight="bold">💡 Nexlamp节律照明方案</text>
+  <text x="70" y="355" fill="#ccddee" font-size="10">涂鸦Zigbee筒灯/射灯 + 涂鸦App场景引擎 + 毫米波雷达（可选）= 当前阶段"传感器联动"方案</text>
+  <text x="70" y="370" fill="#8899aa" font-size="9">色温2700-5000K全可调 | 3C认证伊戈尔驱动无频闪 | 待机≤0.5W | www.nexlamp.com</text>
+  
+  <!-- NEXLAMP branding -->
+  <text x="620" y="395" text-anchor="end" fill="#7ec27e" font-size="10" font-weight="bold" letter-spacing="2">NEXLAMP</text>
+</svg>

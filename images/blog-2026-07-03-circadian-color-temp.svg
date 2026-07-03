@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+    <linearGradient id="morningCt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff5cc"/>
+      <stop offset="100%" stop-color="#ffe088"/>
+    </linearGradient>
+    <linearGradient id="dayCt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffe088"/>
+      <stop offset="100%" stop-color="#e8f0ff"/>
+    </linearGradient>
+    <linearGradient id="eveningCt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8f0ff"/>
+      <stop offset="100%" stop-color="#ffcc66"/>
+    </linearGradient>
+    <linearGradient id="nightCt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffcc66"/>
+      <stop offset="100%" stop-color="#ff8832"/>
+    </linearGradient>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#e0e8ff">色温节律：灯光应该跟着自然走</text>
+  <text x="400" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#8899bb">智能灯的色温必须随时间自动调节，而非手动拉滑块</text>
+  
+  <!-- Timeline axis -->
+  <rect x="60" y="120" width="680" height="8" rx="4" fill="#1a2a44"/>
+  
+  <!-- Time segments with color -->
+  <rect x="60" y="120" width="170" height="8" rx="4" fill="url(#morningCt)" filter="url(#softglow)"/>
+  <rect x="230" y="120" width="220" height="8" rx="0" fill="url(#dayCt)"/>
+  <rect x="450" y="120" width="150" height="8" rx="0" fill="url(#eveningCt)"/>
+  <rect x="600" y="120" width="140" height="8" rx="4" fill="url(#nightCt)" filter="url(#softglow)"/>
+  
+  <!-- Time labels -->
+  <text x="145" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffe088">6:00-9:00</text>
+  <text x="340" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#e8f0ff">9:00-17:00</text>
+  <text x="525" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ccddff">17:00-20:00</text>
+  <text x="670" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffaa66">20:00+</text>
+  
+  <!-- Period labels -->
+  <text x="145" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8899bb">晨起唤醒</text>
+  <text x="340" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8899bb">高效工作</text>
+  <text x="525" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8899bb">放松过渡</text>
+  <text x="670" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8899bb">助眠准备</text>
+  
+  <!-- Detail cards -->
+  <!-- Morning card -->
+  <rect x="60" y="190" width="170" height="120" rx="8" fill="#1a1822" stroke="#ffe088" stroke-width="1"/>
+  <text x="145" y="215" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#ffe088" font-weight="bold">4000K</text>
+  <text x="145" y="235" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ccbb88">中性白光</text>
+  <text x="145" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#aa9966">&#x2713; 抑制褪黑素</text>
+  <text x="145" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#aa9966">&#x2713; 帮助快速唤醒</text>
+  <text x="145" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#aa9966">&#x2713; 模拟清晨日光</text>
+  <text x="145" y="300" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#778855">ipRGC信号：白天来了</text>
+  
+  <!-- Day card -->
+  <rect x="230" y="190" width="220" height="120" rx="8" fill="#1a1822" stroke="#e8f0ff" stroke-width="1"/>
+  <text x="340" y="215" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#e8f0ff" font-weight="bold">5000-5500K</text>
+  <text x="340" y="235" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#bbccdd">日光白</text>
+  <text x="340" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#99aabb">&#x2713; 维持专注高效</text>
+  <text x="340" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#99aabb">&#x2713; 清晰辨色力</text>
+  <text x="340" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#99aabb">&#x2713; 最适合阅读工作</text>
+  <text x="340" y="300" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#7788aa">连续蓝光适量供给</text>
+  
+  <!-- Evening card -->
+  <rect x="450" y="190" width="150" height="120" rx="8" fill="#1a1822" stroke="#ccddff" stroke-width="1"/>
+  <text x="525" y="215" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#ccddff" font-weight="bold">3000-3500K</text>
+  <text x="525" y="235" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#aabbcc">暖白</text>
+  <text x="525" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8899aa">&#x2713; 放松情绪</text>
+  <text x="525" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8899aa">&#x2713; 过渡到夜间</text>
+  <text x="525" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8899aa">&#x2713; 家庭互动场景</text>
+  <text x="525" y="300" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#667788">开始减少蓝光刺激</text>
+  
+  <!-- Night card -->
+  <rect x="600" y="190" width="140" height="120" rx="8" fill="#1a0a0a" stroke="#ff8832" stroke-width="1"/>
+  <text x="670" y="215" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#ffaa44" font-weight="bold">&lt;2700K</text>
+  <text x="670" y="235" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffcc88">暖黄光</text>
+  <text x="670" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cc8844">&#x2713; 释放褪黑素</text>
+  <text x="670" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cc8844">&#x2713; 促进自然睡眠</text>
+  <text x="670" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cc8844">&#x2713; 最小蓝光刺激</text>
+  <text x="670" y="300" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#996633">ipRGC信号：该休息了</text>
+  
+  <!-- Problem box -->
+  <rect x="60" y="330" width="340" height="60" rx="8" fill="#2a0a0a" stroke="#ff4444" stroke-width="1.5"/>
+  <text x="230" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#ff6666" font-weight="bold">&#x2716; 大多数智能灯的问题</text>
+  <text x="230" y="370" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ff8888">只会调亮度，色温要手动拉 &#x2192; 晚上还在4000K</text>
+  
+  <!-- Solution box -->
+  <rect x="400" y="330" width="340" height="60" rx="8" fill="#0a2a1a" stroke="#44cc88" stroke-width="1.5"/>
+  <text x="570" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#44cc88" font-weight="bold">&#x2714; 节律照明才是答案</text>
+  <text x="570" y="370" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#66dd88">色温自动跟随时间过渡 &#x2192; 无需手动干预</text>
+  
+  <!-- Key insight -->
+  <rect x="60" y="405" width="680" height="50" rx="8" fill="#0e1222" stroke="#5566aa" stroke-width="1"/>
+  <text x="400" y="428" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#bbccff" font-weight="bold">核心：驱动电源需支持多通道独立调光（冷暖双色温独立控制）</text>
+  <text x="400" y="448" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8899bb">色温过渡平滑 &#x2192; 像自然光一样渐变 &#x2192; 这才是2026年"健康升维"的核心</text>
+  
+  <!-- NEXLAMP watermark -->
+  <text x="760" y="490" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#334455" letter-spacing="3">NEXLAMP</text>
+</svg>

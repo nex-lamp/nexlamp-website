@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#141830"/>
+    </linearGradient>
+    <linearGradient id="flickerHigh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff4444" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ff4444" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ff4444" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="flickerLow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#44cc88" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#44cc88" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#44cc88" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#e0e8ff">频闪深度对比：驱动电源是根因</text>
+  <text x="400" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#8899bb">便宜驱动 vs 品质恒流，频闪深度差距可达10倍</text>
+  
+  <!-- Left panel: bad driver -->
+  <rect x="40" y="90" width="350" height="190" rx="10" fill="#1a0a0a" stroke="#ff4444" stroke-width="1.5"/>
+  <text x="215" y="115" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#ff6666" font-weight="bold">低质驱动（RC滤波）</text>
+  
+  <!-- Flicker waveform - high modulation -->
+  <polyline points="60,160 80,200 100,140 120,210 140,130 160,215 180,125 200,220 220,120 240,225 260,115 280,230 300,110 320,228 340,118 360,220 380,125" fill="none" stroke="#ff4444" stroke-width="2.5" filter="url(#flickerHigh)"/>
+  
+  <text x="215" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#ff8888">频闪深度 ~30-50%</text>
+  <text x="215" y="278" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#aa6666">睫状肌持续微调 &#x2192; 深层疲劳</text>
+  <text x="215" y="295" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#776666">SVM &gt; 1.0 | RG2级频闪风险</text>
+  
+  <!-- Right panel: good driver -->
+  <rect x="410" y="90" width="350" height="190" rx="10" fill="#0a2a1a" stroke="#44cc88" stroke-width="1.5"/>
+  <text x="585" y="115" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#44cc88" font-weight="bold">品质驱动（主动PFC+低纹波）</text>
+  
+  <!-- Stable waveform - low modulation -->
+  <polyline points="430,170 450,168 470,172 490,170 510,169 530,171 550,170 570,169 590,171 610,170 630,168 650,172 670,170 690,169 710,171 730,170 750,170" fill="none" stroke="#44cc88" stroke-width="2.5" filter="url(#flickerLow)"/>
+  
+  <text x="585" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#66dd88">频闪深度 &lt; 1-5%</text>
+  <text x="585" y="278" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#44aa66">瞳孔稳定 &#x2192; 视觉舒适</text>
+  <text x="585" y="295" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#338855">SVM &lt; 0.2 | 欧盟2027标准提前达标</text>
+  
+  <!-- Standards comparison table -->
+  <rect x="40" y="310" width="720" height="140" rx="10" fill="#0e1222" stroke="#334466" stroke-width="1"/>
+  
+  <text x="400" y="335" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#aabbee" font-weight="bold">频闪标准对比</text>
+  
+  <!-- Table headers -->
+  <text x="80" y="365" font-family="Arial,sans-serif" font-size="12" fill="#8899bb" font-weight="bold">标准</text>
+  <text x="260" y="365" font-family="Arial,sans-serif" font-size="12" fill="#8899bb" font-weight="bold">频闪深度要求</text>
+  <text x="460" y="365" font-family="Arial,sans-serif" font-size="12" fill="#8899bb" font-weight="bold">SVM要求</text>
+  <text x="620" y="365" font-family="Arial,sans-serif" font-size="12" fill="#8899bb" font-weight="bold">适用场景</text>
+  
+  <line x1="40" y1="375" x2="760" y2="375" stroke="#334455" stroke-width="1"/>
+  
+  <!-- IEEE -->
+  <text x="80" y="395" font-family="Arial,sans-serif" font-size="11" fill="#ccddff">IEEE推荐</text>
+  <text x="260" y="395" font-family="Arial,sans-serif" font-size="11" fill="#ccddff">&lt; 10%（一般）/ &lt; 5%（阅读）</text>
+  <text x="460" y="395" font-family="Arial,sans-serif" font-size="11" fill="#ccddff">—</text>
+  <text x="620" y="395" font-family="Arial,sans-serif" font-size="11" fill="#ccddff">全球通用参考</text>
+  
+  <!-- EU -->
+  <text x="80" y="415" font-family="Arial,sans-serif" font-size="11" fill="#ccddff">欧盟2027</text>
+  <text x="260" y="415" font-family="Arial,sans-serif" font-size="11" fill="#ccddff">—</text>
+  <text x="460" y="415" font-family="Arial,sans-serif" font-size="11" fill="#ffaa44">SVM &lt; 0.4</text>
+  <text x="620" y="415" font-family="Arial,sans-serif" font-size="11" fill="#ccddff">强制实施</text>
+  
+  <!-- NEXLAMP -->
+  <text x="80" y="435" font-family="Arial,sans-serif" font-size="11" fill="#44cc88" font-weight="bold">NEXLAMP</text>
+  <text x="260" y="435" font-family="Arial,sans-serif" font-size="11" fill="#44cc88" font-weight="bold">&lt; 1-5%</text>
+  <text x="460" y="435" font-family="Arial,sans-serif" font-size="11" fill="#44cc88" font-weight="bold">SVM &lt; 0.2</text>
+  <text x="620" y="435" font-family="Arial,sans-serif" font-size="11" fill="#44cc88" font-weight="bold">提前达标 &#x2714;</text>
+  
+  <!-- Bottom note -->
+  <text x="400" y="470" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7788aa">频闪根因在驱动电源：恒流纹波控制能力是关键硬件指标</text>
+  
+  <!-- NEXLAMP watermark -->
+  <text x="760" y="490" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#334455" letter-spacing="3">NEXLAMP</text>
+</svg>
