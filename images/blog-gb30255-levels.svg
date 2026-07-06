@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9ca3af"/>
+      <stop offset="100%" stop-color="#6b7280"/>
+    </linearGradient>
+    <linearGradient id="bronze" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="400" fill="url(#bg)"/>
+  <rect width="680" height="400" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="340" y="35" text-anchor="middle" fill="#64b5f6" font-family="monospace" font-size="16" font-weight="bold">GB 30255-2026 能效等级标准</text>
+  <line x1="120" y1="45" x2="560" y2="45" stroke="#2478C2" stroke-width="1" opacity="0.3"/>
+
+  <!-- Level 1 Gold -->
+  <rect x="40" y="70" width="180" height="290" rx="10" fill="#1a1a0a" stroke="#fbbf24" stroke-width="2"/>
+  <rect x="40" y="70" width="180" height="40" rx="10" fill="#3d2e0a"/>
+  <text x="130" y="96" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="15" font-weight="bold">★ 1级能效 ★</text>
+  <text x="130" y="128" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="12" filter="url(#glow)">最高节能等级</text>
+  <line x1="60" y1="142" x2="200" y2="142" stroke="#fbbf24" stroke-width="0.5" opacity="0.5"/>
+  <text x="60" y="168" fill="#fcd34d" font-family="monospace" font-size="11">筒灯光效 ≥75 lm/W</text>
+  <text x="60" y="192" fill="#fcd34d" font-family="monospace" font-size="11">待机功率 ≤0.5W</text>
+  <text x="60" y="216" fill="#fcd34d" font-family="monospace" font-size="11">Ra ≥90 默认标配</text>
+  <text x="60" y="240" fill="#fcd34d" font-family="monospace" font-size="11">适用：</text>
+  <text x="60" y="262" fill="#fcd34d" font-family="monospace" font-size="10">• 儿童房/书房</text>
+  <text x="60" y="280" fill="#fcd34d" font-family="monospace" font-size="10">• 高端住宅</text>
+  <text x="60" y="298" fill="#fcd34d" font-family="monospace" font-size="10">• 酒店/办公</text>
+  <text x="130" y="340" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="9" opacity="0.7">推荐首选</text>
+
+  <!-- Level 2 Silver -->
+  <rect x="250" y="70" width="180" height="290" rx="10" fill="#151520" stroke="#9ca3af" stroke-width="2"/>
+  <rect x="250" y="70" width="180" height="40" rx="10" fill="#2a2a35"/>
+  <text x="340" y="96" text-anchor="middle" fill="#d1d5db" font-family="monospace" font-size="15" font-weight="bold">★★ 2级能效 ★★</text>
+  <text x="340" y="128" text-anchor="middle" fill="#9ca3af" font-family="monospace" font-size="12">节能达标</text>
+  <line x1="270" y1="142" x2="410" y2="142" stroke="#9ca3af" stroke-width="0.5" opacity="0.5"/>
+  <text x="270" y="168" fill="#d1d5db" font-family="monospace" font-size="11">筒灯光效 ≥65 lm/W</text>
+  <text x="270" y="192" fill="#d1d5db" font-family="monospace" font-size="11">待机功率 ≤1.5W</text>
+  <text x="270" y="216" fill="#d1d5db" font-family="monospace" font-size="11">Ra ≥80 达标</text>
+  <text x="270" y="240" fill="#d1d5db" font-family="monospace" font-size="11">适用：</text>
+  <text x="270" y="262" fill="#d1d5db" font-family="monospace" font-size="10">• 客厅/卧室</text>
+  <text x="270" y="280" fill="#d1d5db" font-family="monospace" font-size="10">• 普通商用</text>
+  <text x="270" y="298" fill="#d1d5db" font-family="monospace" font-size="10">• 公共区域</text>
+  <text x="340" y="340" text-anchor="middle" fill="#9ca3af" font-family="monospace" font-size="9" opacity="0.7">性价比之选</text>
+
+  <!-- Level 3 Bronze -->
+  <rect x="460" y="70" width="180" height="290" rx="10" fill="#1a1008" stroke="#b45309" stroke-width="2"/>
+  <rect x="460" y="70" width="180" height="40" rx="10" fill="#2a1a0a"/>
+  <text x="550" y="96" text-anchor="middle" fill="#d97706" font-family="monospace" font-size="15" font-weight="bold">★★★ 3级能效 ★★★</text>
+  <text x="550" y="128" text-anchor="middle" fill="#b45309" font-family="monospace" font-size="12">市场准入底线</text>
+  <line x1="480" y1="142" x2="620" y2="142" stroke="#b45309" stroke-width="0.5" opacity="0.5"/>
+  <text x="480" y="168" fill="#d97706" font-family="monospace" font-size="11">筒灯光效 ≥55 lm/W</text>
+  <text x="480" y="192" fill="#d97706" font-family="monospace" font-size="11">待机功率 ≤2.5W</text>
+  <text x="480" y="216" fill="#d97706" font-family="monospace" font-size="11">Ra ≥80 及格</text>
+  <text x="480" y="240" fill="#d97706" font-family="monospace" font-size="11">适用：</text>
+  <text x="480" y="262" fill="#d97706" font-family="monospace" font-size="10">• 储藏室/走廊</text>
+  <text x="480" y="280" fill="#d97706" font-family="monospace" font-size="10">• 临时照明</text>
+  <text x="480" y="298" fill="#d97706" font-family="monospace" font-size="10">• 辅助光源</text>
+  <text x="550" y="340" text-anchor="middle" fill="#b45309" font-family="monospace" font-size="9" opacity="0.7">底线标准</text>
+
+  <!-- Bottom bar -->
+  <rect x="40" y="375" width="600" height="2" fill="#2478C2" opacity="0.2"/>
+  <text x="340" y="393" text-anchor="middle" fill="#555" font-family="monospace" font-size="10">数值为筒灯(≤12W冷白光)示意范围，实际以标准全文为准</text>
+</svg>
