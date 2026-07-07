@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+    <linearGradient id="driverBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2040"/>
+      <stop offset="100%" stop-color="#0d1528"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <text x="400" y="35" font-family="Arial,sans-serif" font-size="20" fill="#e0e8ff" text-anchor="middle" font-weight="bold">人因照明驱动电源三大硬指标</text>
+  <!-- Indicator 1: Dual-channel -->
+  <rect x="40" y="60" width="230" height="190" rx="10" fill="url(#driverBody)" stroke="#4488ff" stroke-width="2"/>
+  <text x="155" y="90" font-family="Arial,sans-serif" font-size="14" fill="#4488ff" text-anchor="middle" font-weight="bold">① 双路恒流混光</text>
+  <rect x="60" y="105" width="190" height="50" rx="5" fill="#0d1528" stroke="#aaccff" stroke-width="1"/>
+  <text x="155" y="125" font-family="Arial,sans-serif" font-size="10" fill="#aaccff" text-anchor="middle">冷白LED ← 恒流路A</text>
+  <text x="155" y="140" font-family="Arial,sans-serif" font-size="10" fill="#ffaa44" text-anchor="middle">暖白LED ← 恒流路B</text>
+  <!-- Mixing illustration -->
+  <circle cx="100" cy="175" r="18" fill="#4488ff" opacity="0.7" filter="url(#glow2)"/>
+  <circle cx="210" cy="175" r="18" fill="#ffaa44" opacity="0.7" filter="url(#glow2)"/>
+  <circle cx="155" cy="175" r="18" fill="#ddc866" opacity="0.8" filter="url(#glow2)"/>
+  <text x="155" y="178" font-family="Arial,sans-serif" font-size="8" fill="#111" text-anchor="middle">混光</text>
+  <text x="155" y="210" font-family="Arial,sans-serif" font-size="9" fill="#66ffaa" text-anchor="middle">任何色温点同时驱动冷暖两路</text>
+  <text x="155" y="225" font-family="Arial,sans-serif" font-size="9" fill="#8899aa" text-anchor="middle">CCT连续可调，无跳变</text>
+  <!-- Indicator 2: Deep dimming -->
+  <rect x="290" y="60" width="230" height="190" rx="10" fill="url(#driverBody)" stroke="#ffaa44" stroke-width="2"/>
+  <text x="405" y="90" font-family="Arial,sans-serif" font-size="14" fill="#ffaa44" text-anchor="middle" font-weight="bold">② 0.1%深度调光</text>
+  <!-- Dimming depth bar -->
+  <rect x="310" y="110" width="190" height="18" rx="3" fill="#111830"/>
+  <rect x="310" y="110" width="19" height="18" rx="3" fill="#ffaa44" filter="url(#glow2)"/>
+  <text x="340" y="124" font-family="Arial,sans-serif" font-size="8" fill="#fff">0.1%</text>
+  <!-- Labels -->
+  <text x="405" y="148" font-family="Arial,sans-serif" font-size="9" fill="#66ffaa">✓ 模拟+PWM混合调光</text>
+  <text x="405" y="163" font-family="Arial,sans-serif" font-size="9" fill="#66ffaa">✓ 低亮度无频闪</text>
+  <text x="405" y="178" font-family="Arial,sans-serif" font-size="9" fill="#ff4466">✗ 纯PWM &lt;5%: 频闪加剧</text>
+  <text x="405" y="193" font-family="Arial,sans-serif" font-size="9" fill="#ff4466">✗ 纯PWM &lt;5%: 色温偏移</text>
+  <text x="405" y="215" font-family="Arial,sans-serif" font-size="9" fill="#8899aa">深夜助眠需 1-5lux (≈0.1%输出)</text>
+  <text x="405" y="230" font-family="Arial,sans-serif" font-size="9" fill="#8899aa">1%亮度≈10lux 依然刺眼</text>
+  <!-- Indicator 3: Gradient curve -->
+  <rect x="540" y="60" width="230" height="190" rx="10" fill="url(#driverBody)" stroke="#66ffaa" stroke-width="2"/>
+  <text x="655" y="90" font-family="Arial,sans-serif" font-size="14" fill="#66ffaa" text-anchor="middle" font-weight="bold">③ 24h渐变曲线</text>
+  <!-- Mini gradient timeline -->
+  <line x1="560" y2="160" y1="160" x2="750" stroke="#334" stroke-width="1"/>
+  <!-- Dawn curve -->
+  <path d="M560,200 C580,200 600,140 620,120 C640,110 670,110 690,110 C710,140 730,190 750,200" fill="none" stroke="#ddc866" stroke-width="2" filter="url(#glow2)"/>
+  <!-- Sun/moon markers -->
+  <circle cx="560" cy="200" r="5" fill="#ff8800" filter="url(#glow2)"/>
+  <circle cx="650" cy="110" r="5" fill="#aaccff" filter="url(#glow2)"/>
+  <circle cx="750" cy="200" r="5" fill="#ff8800" filter="url(#glow2)"/>
+  <text x="655" y="175" font-family="Arial,sans-serif" font-size="9" fill="#66ffaa">8时段色温/亮度渐变设定</text>
+  <text x="655" y="190" font-family="Arial,sans-serif" font-size="9" fill="#66ffaa">过渡速率 0.5-30min 可调</text>
+  <text x="655" y="215" font-family="Arial,sans-serif" font-size="9" fill="#8899aa">本地执行，断网不中断</text>
+  <text x="655" y="230" font-family="Arial,sans-serif" font-size="9" fill="#8899aa">涂鸦Zigbee方案已支持</text>
+  <!-- Bottom: Selection checklist -->
+  <rect x="40" y="270" width="720" height="100" rx="10" fill="#0d1528" stroke="#e0e8ff" stroke-width="1.5"/>
+  <text x="400" y="295" font-family="Arial,sans-serif" font-size="16" fill="#e0e8ff" text-anchor="middle" font-weight="bold">选购节律灯三个硬标准</text>
+  <!-- Three checklist items -->
+  <rect x="60" y="310" width="220" height="45" rx="5" fill="#111830" stroke="#4488ff" stroke-width="1"/>
+  <text x="170" y="325" font-family="Arial,sans-serif" font-size="10" fill="#4488ff" text-anchor="middle" font-weight="bold">驱动方案</text>
+  <text x="170" y="340" font-family="Arial,sans-serif" font-size="9" fill="#8899aa" text-anchor="middle">双路恒流混光 vs 单路切换?</text>
+  <text x="170" y="352" font-family="Arial,sans-serif" font-size="8" fill="#ff4466" text-anchor="middle">"双色温切换"=跳变驱动</text>
+  <rect x="290" y="310" width="220" height="45" rx="5" fill="#111830" stroke="#ffaa44" stroke-width="1"/>
+  <text x="400" y="325" font-family="Arial,sans-serif" font-size="10" fill="#ffaa44" text-anchor="middle" font-weight="bold">调光深度</text>
+  <text x="400" y="340" font-family="Arial,sans-serif" font-size="9" fill="#8899aa" text-anchor="middle">最低亮度 0.1% vs 1%?</text>
+  <text x="400" y="352" font-family="Arial,sans-serif" font-size="8" fill="#ff4466" text-anchor="middle">1%≈10lux 深夜仍刺眼</text>
+  <rect x="520" y="310" width="220" height="45" rx="5" fill="#111830" stroke="#66ffaa" stroke-width="1"/>
+  <text x="630" y="325" font-family="Arial,sans-serif" font-size="10" fill="#66ffaa" text-anchor="middle" font-weight="bold">渐变模式</text>
+  <text x="630" y="340" font-family="Arial,sans-serif" font-size="9" fill="#8899aa" text-anchor="middle">自动曲线 vs 手动切换?</text>
+  <text x="630" y="352" font-family="Arial,sans-serif" font-size="8" fill="#ff4466" text-anchor="middle">"一键助眠"=伪节律</text>
+  <!-- Footer -->
+  <text x="400" y="420" font-family="Arial,sans-serif" font-size="11" fill="#556677" text-anchor="middle">NEXLAMP | 专业LED驱动电源 | 双路恒流混光 + 0.1%深度调光 + 24h渐变曲线</text>
+  <text x="400" y="438" font-family="Arial,sans-serif" font-size="9" fill="#445566" text-anchor="middle">驱动才是节律灯的底层支撑——缺任何一样，只是能调色温的普通灯</text>
+</svg>

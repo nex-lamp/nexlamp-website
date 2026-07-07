@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+    <linearGradient id="warmLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff8c00"/>
+      <stop offset="100%" stop-color="#ffcc44"/>
+    </linearGradient>
+    <linearGradient id="coolLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4488ff"/>
+      <stop offset="100%" stop-color="#aaccff"/>
+    </linearGradient>
+    <linearGradient id="mixLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff9944"/>
+      <stop offset="50%" stop-color="#ddc866"/>
+      <stop offset="100%" stop-color="#88bbff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <!-- Title -->
+  <text x="400" y="38" font-family="Arial,sans-serif" font-size="20" fill="#e0e8ff" text-anchor="middle" font-weight="bold">人因照明色温渐变曲线 vs 常见"节律灯"跳变</text>
+  <!-- Timeline axis -->
+  <line x1="60" y2="390" y1="390" x2="740" stroke="#334" stroke-width="1.5"/>
+  <text x="60" y="408" font-family="Arial,sans-serif" font-size="11" fill="#8899aa">6:00</text>
+  <text x="200" y="408" font-family="Arial,sans-serif" font-size="11" fill="#8899aa">10:00</text>
+  <text x="400" y="408" font-family="Arial,sans-serif" font-size="11" fill="#8899aa">14:00</text>
+  <text x="600" y="408" font-family="Arial,sans-serif" font-size="11" fill="#8899aa">18:00</text>
+  <text x="740" y="408" font-family="Arial,sans-serif" font-size="11" fill="#8899aa">22:00</text>
+  <!-- CCT axis -->
+  <text x="30" y="60" font-family="Arial,sans-serif" font-size="10" fill="#aaccff">6500K</text>
+  <text x="30" y="200" font-family="Arial,sans-serif" font-size="10" fill="#ddc866">4000K</text>
+  <text x="30" y="370" font-family="Arial,sans-serif" font-size="10" fill="#ffaa44">1800K</text>
+  <!-- True HCL smooth curve -->
+  <path d="M60,370 C120,340 180,120 300,70 C400,60 500,80 580,160 C640,260 680,360 740,370" fill="none" stroke="url(#mixLight)" stroke-width="3" filter="url(#glow)"/>
+  <text x="260" y="55" font-family="Arial,sans-serif" font-size="12" fill="#66ffaa" font-weight="bold">✓ 真人因照明（双路混光渐变）</text>
+  <!-- Fake HCL step curve -->
+  <path d="M60,370 L60,120 L300,120 L300,70 L500,70 L500,260 L580,260 L580,370 L740,370" fill="none" stroke="#ff4466" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <text x="500" y="245" font-family="Arial,sans-serif" font-size="12" fill="#ff6688" font-weight="bold">✗ 伪节律灯（色温跳变）</text>
+  <!-- Annotations -->
+  <rect x="100" y="115" width="160" height="20" rx="4" fill="#0a0e1a" stroke="#ff4466" stroke-width="1"/>
+  <text x="180" y="128" font-family="Arial,sans-serif" font-size="10" fill="#ff6688" text-anchor="middle">跳变刺激应激反应</text>
+  <rect x="140" y="310" width="120" height="20" rx="4" fill="#0a0e1a" stroke="#66ffaa" stroke-width="1"/>
+  <text x="200" y="323" font-family="Arial,sans-serif" font-size="10" fill="#66ffaa" text-anchor="middle">30分钟缓慢渐变</text>
+  <!-- Light color indicators at key points -->
+  <circle cx="60" cy="370" r="6" fill="#ff8800" filter="url(#glow)"/>
+  <circle cx="300" cy="70" r="6" fill="#aaccff" filter="url(#glow)"/>
+  <circle cx="740" cy="370" r="6" fill="#ff8800" filter="url(#glow)"/>
+  <!-- Driver box illustration -->
+  <rect x="560" y="50" width="170" height="90" rx="6" fill="#0d1528" stroke="#4488ff" stroke-width="1.5"/>
+  <text x="645" y="72" font-family="Arial,sans-serif" font-size="11" fill="#4488ff" text-anchor="middle" font-weight="bold">双路恒流驱动</text>
+  <line x1="580" y1="82" x2="710" y2="82" stroke="#334" stroke-width="0.5"/>
+  <text x="645" y="100" font-family="Arial,sans-serif" font-size="9" fill="#88bbff">冷白路: 0-100% 独立可调</text>
+  <text x="645" y="115" font-family="Arial,sans-serif" font-size="9" fill="#ffaa44">暖白路: 0-100% 独立可调</text>
+  <text x="645" y="130" font-family="Arial,sans-serif" font-size="9" fill="#66ffaa">混光算法: CCT连续可调</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#1a1e3a"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  <text x="400" y="35" font-family="Arial,sans-serif" font-size="20" fill="#e0e8ff" text-anchor="middle" font-weight="bold">人因照明：光追随你的生物节律</text>
+  <!-- Central person silhouette -->
+  <ellipse cx="400" cy="250" rx="30" ry="50" fill="#1a2040" stroke="#8899aa" stroke-width="1.5"/>
+  <circle cx="400" cy="185" r="20" fill="#1a2040" stroke="#8899aa" stroke-width="1.5"/>
+  <!-- 4 time zones around person -->
+  <!-- Morning: upper-left -->
+  <rect x="80" y="100" width="160" height="140" rx="10" fill="#0d1528" stroke="#aaccff" stroke-width="1.5"/>
+  <text x="160" y="125" font-family="Arial,sans-serif" font-size="12" fill="#aaccff" text-anchor="middle" font-weight="bold">☀ 早晨</text>
+  <text x="160" y="145" font-family="Arial,sans-serif" font-size="10" fill="#aaccff" text-anchor="middle">4000-6500K 高色温</text>
+  <text x="160" y="162" font-family="Arial,sans-serif" font-size="10" fill="#aaccff" text-anchor="middle">高照度 300-500lux</text>
+  <text x="160" y="180" font-family="Arial,sans-serif" font-size="9" fill="#66ffaa" text-anchor="middle">抑制褪黑素 → 清醒</text>
+  <!-- Light beam from morning to person -->
+  <line x1="240" y1="170" x2="370" y2="210" stroke="#aaccff" stroke-width="2" filter="url(#glow3)" opacity="0.6"/>
+  <circle cx="160" cy="210" r="20" fill="#aaccff" opacity="0.15" filter="url(#softGlow)"/>
+  <!-- Afternoon: upper-right -->
+  <rect x="560" y="100" width="160" height="140" rx="10" fill="#0d1528" stroke="#ddc866" stroke-width="1.5"/>
+  <text x="640" y="125" font-family="Arial,sans-serif" font-size="12" fill="#ddc866" text-anchor="middle" font-weight="bold">🌤 午后</text>
+  <text x="640" y="145" font-family="Arial,sans-serif" font-size="10" fill="#ddc866" text-anchor="middle">3500-4000K 中色温</text>
+  <text x="640" y="162" font-family="Arial,sans-serif" font-size="10" fill="#ddc866" text-anchor="middle">中等照度 200-300lux</text>
+  <text x="640" y="180" font-family="Arial,sans-serif" font-size="9" fill="#66ffaa" text-anchor="middle">维持专注 → 稳态</text>
+  <line x1="560" y1="170" x2="430" y2="210" stroke="#ddc866" stroke-width="2" filter="url(#glow3)" opacity="0.6"/>
+  <circle cx="640" cy="210" r="20" fill="#ddc866" opacity="0.15" filter="url(#softGlow)"/>
+  <!-- Evening: lower-left -->
+  <rect x="80" y="300" width="160" height="140" rx="10" fill="#0d1528" stroke="#ffaa44" stroke-width="1.5"/>
+  <text x="160" y="325" font-family="Arial,sans-serif" font-size="12" fill="#ffaa44" text-anchor="middle" font-weight="bold">🌅 傍晚</text>
+  <text x="160" y="345" font-family="Arial,sans-serif" font-size="10" fill="#ffaa44" text-anchor="middle">2700-3000K 低色温</text>
+  <text x="160" y="362" font-family="Arial,sans-serif" font-size="10" fill="#ffaa44" text-anchor="middle">降低照度 50-150lux</text>
+  <text x="160" y="380" font-family="Arial,sans-serif" font-size="9" fill="#66ffaa" text-anchor="middle">促褪黑素分泌 → 放松</text>
+  <line x1="240" y1="340" x2="370" y2="280" stroke="#ffaa44" stroke-width="2" filter="url(#glow3)" opacity="0.6"/>
+  <circle cx="160" cy="390" r="20" fill="#ffaa44" opacity="0.15" filter="url(#softGlow)"/>
+  <!-- Night: lower-right -->
+  <rect x="560" y="300" width="160" height="140" rx="10" fill="#0d1528" stroke="#ff6644" stroke-width="1.5"/>
+  <text x="640" y="325" font-family="Arial,sans-serif" font-size="12" fill="#ff6644" text-anchor="middle" font-weight="bold">🌙 深夜</text>
+  <text x="640" y="345" font-family="Arial,sans-serif" font-size="10" fill="#ff6644" text-anchor="middle">1800-2200K 极低色温</text>
+  <text x="640" y="362" font-family="Arial,sans-serif" font-size="10" fill="#ff6644" text-anchor="middle">极低照度 1-5lux</text>
+  <text x="640" y="380" font-family="Arial,sans-serif" font-size="9" fill="#66ffaa" text-anchor="middle">助眠不扰眠 → 入睡</text>
+  <line x1="560" y1="340" x2="430" y2="280" stroke="#ff6644" stroke-width="2" filter="url(#glow3)" opacity="0.6"/>
+  <circle cx="640" cy="390" r="15" fill="#ff6644" opacity="0.1" filter="url(#softGlow)"/>
+  <!-- Central label -->
+  <rect x="340" y="238" width="120" height="30" rx="5" fill="#0d1528" stroke="#66ffaa" stroke-width="1.5"/>
+  <text x="400" y="257" font-family="Arial,sans-serif" font-size="11" fill="#66ffaa" text-anchor="middle" font-weight="bold">生物节律中枢</text>
+  <!-- Bottom note -->
+  <text x="400" y="470" font-family="Arial,sans-serif" font-size="11" fill="#556677" text-anchor="middle">关键：色温渐变需20-30分钟过渡 — 瞬间切换反而刺激应激反应</text>
+  <text x="400" y="488" font-family="Arial,sans-serif" font-size="9" fill="#445566" text-anchor="middle">NEXLAMP | 双路恒流驱动电源让光真正追随节律</text>
+</svg>
