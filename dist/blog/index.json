@@ -1,5 +1,32 @@
 [
   {
+    "title": "人因照明不是噱头：节律光背后的LED驱动电源设计真相",
+    "slug": "2026-07-07-hcl-driver-design-truth",
+    "date": "2026-07-07",
+    "category": "人因照明",
+    "description": "人因照明节律光真相解析，LED驱动电源双色温混光技术，CCT调光曲线设计，2026年健康光环境选购指南，AI自适应照明驱动方案",
+    "cover": "../../images/blog-2026-07-07-hcl-driver-cover.png",
+    "excerpt": "市面上标着'节律灯'的产品，90%只是手机APP调个色温。真正的人因照明需要驱动电源层面支持双色温无缝混光、0.1%级深度调光和24小时渐变曲线——缺了这三样，节律光就是摆设。本文拆解人因照明的驱动电源底层逻辑，告诉你怎么买到真正有用的节律灯。"
+  },
+  {
+    "title": "智能灯装上后手机拍照全是波纹？频闪实战排查与LED驱动选型指南",
+    "slug": "smart-light-flicker-troubleshooting-guide-2026",
+    "date": "2026-07-07",
+    "category": "维护指南",
+    "description": "智能灯频闪怎么解决？从手机拍照波纹到眼睛疲劳，手把手教你排查LED驱动与调光器兼容问题，附2026年驱动选型 checklist。",
+    "cover": "images/blog-2026-07-07-flicker-troubleshooting-cover.png",
+    "excerpt": "智能灯调光后出现频闪、手机拍照有波纹、眼睛发酸，多半不是灯的问题，而是驱动和调光器不匹配。本文给出一套家庭可用的排查流程和驱动选型要点。"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-07",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
     "title": "GB 30255-2026新国标来了！智能LED灯选型这3个指标比瓦数更重要",
     "slug": "gb-30255-2026-led-lighting-standard-selection-guide",
     "date": "2026-07-06",
