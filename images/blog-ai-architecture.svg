@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="gradHeader" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2478C2"/><stop offset="100%" stop-color="#7ec27e"/>
+    </linearGradient>
+    <linearGradient id="gradCloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2478C2"/><stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="url(#gradHeader)" font-family="'Microsoft YaHei', sans-serif" font-size="20" font-weight="bold" filter="url(#glow)">AI智能照明技术架构</text>
+  <line x1="80" y1="52" x2="720" y2="52" stroke="#2478C2" stroke-width="1" opacity="0.5"/>
+
+  <!-- Layer 1: Perception Layer -->
+  <rect x="50" y="70" width="700" height="90" rx="8" fill="none" stroke="#7ec27e" stroke-width="1" opacity="0.6"/>
+  <text x="70" y="92" fill="#7ec27e" font-family="monospace" font-size="11" filter="url(#glow)">PERCEPTION LAYER / 感知层</text>
+
+  <!-- Sensor Cards -->
+  <rect x="80" y="100" width="130" height="45" rx="6" fill="#0d1f35" stroke="#2478C2" stroke-width="0.8"/>
+  <text x="145" y="118" text-anchor="middle" fill="#7ec27e" font-family="'Microsoft YaHei', sans-serif" font-size="10">毫米波雷达</text>
+  <text x="145" y="135" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">Presence &amp; Tracking</text>
+
+  <rect x="240" y="100" width="130" height="45" rx="6" fill="#0d1f35" stroke="#2478C2" stroke-width="0.8"/>
+  <text x="305" y="118" text-anchor="middle" fill="#7ec27e" font-family="'Microsoft YaHei', sans-serif" font-size="10">环境光传感器</text>
+  <text x="305" y="135" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">Ambient Light</text>
+
+  <rect x="400" y="100" width="130" height="45" rx="6" fill="#0d1f35" stroke="#2478C2" stroke-width="0.8"/>
+  <text x="465" y="118" text-anchor="middle" fill="#7ec27e" font-family="'Microsoft YaHei', sans-serif" font-size="10">温湿度传感器</text>
+  <text x="465" y="135" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">Temp &amp; Humidity</text>
+
+  <rect x="560" y="100" width="130" height="45" rx="6" fill="#0d1f35" stroke="#2478C2" stroke-width="0.8"/>
+  <text x="625" y="118" text-anchor="middle" fill="#7ec27e" font-family="'Microsoft YaHei', sans-serif" font-size="10">门窗磁/场景面板</text>
+  <text x="625" y="135" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">User Input</text>
+
+  <!-- Layer 2: Network Layer -->
+  <rect x="50" y="175" width="700" height="70" rx="8" fill="none" stroke="#2478C2" stroke-width="1" opacity="0.6"/>
+  <text x="70" y="197" fill="#2478C2" font-family="monospace" font-size="11" filter="url(#glow)">NETWORK LAYER / 网络层</text>
+
+  <rect x="100" y="205" width="140" height="30" rx="15" fill="#1a3a5a" stroke="#2478C2" stroke-width="0.8"/>
+  <text x="170" y="224" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="10">Zigbee 3.0 Mesh</text>
+
+  <rect x="260" y="205" width="100" height="30" rx="15" fill="#1a3a5a" stroke="#2478C2" stroke-width="0.8"/>
+  <text x="310" y="224" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="10">WiFi 6</text>
+
+  <rect x="380" y="205" width="100" height="30" rx="15" fill="#1a3a5a" stroke="#2478C2" stroke-width="0.8"/>
+  <text x="430" y="224" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="10">BLE Mesh</text>
+
+  <rect x="500" y="205" width="120" height="30" rx="15" fill="#1a3a5a" stroke="#2478C2" stroke-width="0.8"/>
+  <text x="560" y="224" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="10">Thread/Matter</text>
+
+  <!-- Arrows down -->
+  <line x1="230" y1="160" x2="230" y2="175" stroke="#2478C2" stroke-width="1" opacity="0.4"/>
+  <line x1="400" y1="160" x2="400" y2="175" stroke="#2478C2" stroke-width="1" opacity="0.4"/>
+  <line x1="570" y1="160" x2="570" y2="175" stroke="#2478C2" stroke-width="1" opacity="0.4"/>
+
+  <!-- Layer 3: AI Gateway -->
+  <rect x="50" y="260" width="700" height="80" rx="8" fill="none" stroke="#7ec27e" stroke-width="1.5" opacity="0.8"/>
+  <text x="70" y="282" fill="#7ec27e" font-family="monospace" font-size="11" filter="url(#glow)">AI GATEWAY / AI网关层</text>
+
+  <rect x="80" y="292" width="150" height="38" rx="6" fill="#0d1f35" stroke="#7ec27e" stroke-width="1"/>
+  <text x="155" y="308" text-anchor="middle" fill="#fff" font-family="'Microsoft YaHei', sans-serif" font-size="10">实时规则引擎</text>
+  <text x="155" y="322" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="7">&lt;100ms Latency</text>
+
+  <rect x="260" y="292" width="150" height="38" rx="6" fill="#0d1f35" stroke="#7ec27e" stroke-width="1"/>
+  <text x="335" y="308" text-anchor="middle" fill="#fff" font-family="'Microsoft YaHei', sans-serif" font-size="10">本地AI推理</text>
+  <text x="335" y="322" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="7">Edge Inference</text>
+
+  <rect x="440" y="292" width="150" height="38" rx="6" fill="#0d1f35" stroke="#7ec27e" stroke-width="1"/>
+  <text x="515" y="308" text-anchor="middle" fill="#fff" font-family="'Microsoft YaHei', sans-serif" font-size="10">HCL引擎</text>
+  <text x="515" y="322" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="7">Circadian Curve</text>
+
+  <rect x="620" y="292" width="110" height="38" rx="6" fill="#0d1f35" stroke="#7ec27e" stroke-width="1"/>
+  <text x="675" y="308" text-anchor="middle" fill="#fff" font-family="'Microsoft YaHei', sans-serif" font-size="10">离线运行</text>
+  <text x="675" y="322" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="7">No Cloud OK</text>
+
+  <!-- Cloud AI box -->
+  <rect x="640" y="235" width="100" height="20" rx="4" fill="#1a3a2a" stroke="#7ec27e" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <text x="690" y="249" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="8">Cloud AI</text>
+  <line x1="690" y1="235" x2="690" y2="260" stroke="#7ec27e" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <!-- Layer 4: Execution Layer -->
+  <rect x="50" y="355" width="700" height="90" rx="8" fill="none" stroke="#2478C2" stroke-width="1" opacity="0.6"/>
+  <text x="70" y="377" fill="#2478C2" font-family="monospace" font-size="11" filter="url(#glow)">EXECUTION LAYER / 执行层</text>
+
+  <rect x="80" y="387" width="140" height="45" rx="6" fill="#0d1f35" stroke="#7ec27e" stroke-width="0.8"/>
+  <text x="150" y="404" text-anchor="middle" fill="#7ec27e" font-family="'Microsoft YaHei', sans-serif" font-size="10">双色温筒灯</text>
+  <text x="150" y="422" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">2700K–6500K</text>
+
+  <rect x="250" y="387" width="140" height="45" rx="6" fill="#0d1f35" stroke="#7ec27e" stroke-width="0.8"/>
+  <text x="320" y="404" text-anchor="middle" fill="#7ec27e" font-family="'Microsoft YaHei', sans-serif" font-size="10">智能射灯</text>
+  <text x="320" y="422" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">Spotlight AI</text>
+
+  <rect x="420" y="387" width="140" height="45" rx="6" fill="#0d1f35" stroke="#7ec27e" stroke-width="0.8"/>
+  <text x="490" y="404" text-anchor="middle" fill="#7ec27e" font-family="'Microsoft YaHei', sans-serif" font-size="10">LED灯带</text>
+  <text x="490" y="422" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">COB Strip</text>
+
+  <rect x="590" y="387" width="140" height="45" rx="6" fill="#0d1f35" stroke="#7ec27e" stroke-width="0.8"/>
+  <text x="660" y="404" text-anchor="middle" fill="#7ec27e" font-family="'Microsoft YaHei', sans-serif" font-size="10">驱动电源</text>
+  <text x="660" y="422" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">Dual PWM Driver</text>
+
+  <!-- Bottom info -->
+  <text x="400" y="480" text-anchor="middle" fill="#2a4a6a" font-family="monospace" font-size="9">© NEXLAMP Technology  |  Zigbee 3.0  |  HCL  |  Edge AI</text>
+
+  <!-- Connector lines between layers -->
+  <line x1="400" y1="245" x2="400" y2="260" stroke="#7ec27e" stroke-width="1.5" opacity="0.6"/>
+  <line x1="400" y1="340" x2="400" y2="355" stroke="#2478C2" stroke-width="1.5" opacity="0.6"/>
+</svg>

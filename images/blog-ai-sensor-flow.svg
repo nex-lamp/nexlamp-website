@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="gradHeader" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2478C2"/><stop offset="100%" stop-color="#7ec27e"/>
+    </linearGradient>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2478C2"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7ec27e"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <text x="400" y="38" text-anchor="middle" fill="url(#gradHeader)" font-family="'Microsoft YaHei', sans-serif" font-size="20" font-weight="bold" filter="url(#glow)">毫米波雷达+AI传感器自适应照明联动流程</text>
+  <line x1="80" y1="52" x2="720" y2="52" stroke="#2478C2" stroke-width="1" opacity="0.5"/>
+
+  <!-- Room layout -->
+  <rect x="60" y="80" width="680" height="330" rx="10" fill="none" stroke="#1a3a5a" stroke-width="1"/>
+
+  <!-- Room zones -->
+  <rect x="80" y="100" width="300" height="140" rx="8" fill="#0d1f35" stroke="#2478C2" stroke-width="0.5" opacity="0.6"/>
+  <text x="230" y="120" text-anchor="middle" fill="#5a7a9a" font-family="'Microsoft YaHei', sans-serif" font-size="11">客厅主区</text>
+
+  <rect x="400" y="100" width="140" height="140" rx="8" fill="#0d1f35" stroke="#2478C2" stroke-width="0.5" opacity="0.6"/>
+  <text x="470" y="120" text-anchor="middle" fill="#5a7a9a" font-family="'Microsoft YaHei', sans-serif" font-size="11">书房</text>
+
+  <rect x="560" y="100" width="160" height="140" rx="8" fill="#0d1f35" stroke="#2478C2" stroke-width="0.5" opacity="0.6"/>
+  <text x="640" y="120" text-anchor="middle" fill="#5a7a9a" font-family="'Microsoft YaHei', sans-serif" font-size="11">卧室</text>
+
+  <!-- Person in living room -->
+  <circle cx="180" cy="190" r="10" fill="none" stroke="#7ec27e" stroke-width="2" filter="url(#glow)"/>
+  <text x="180" y="210" text-anchor="middle" fill="#7ec27e" font-family="'Microsoft YaHei', sans-serif" font-size="9">用户</text>
+
+  <!-- Radar sensor on ceiling -->
+  <rect x="150" y="100" width="70" height="24" rx="12" fill="#1a3a5a" stroke="#7ec27e" stroke-width="1"/>
+  <text x="185" y="116" text-anchor="middle" fill="#fff" font-family="'Microsoft YaHei', sans-serif" font-size="9">雷达传感器</text>
+
+  <!-- Detection arcs -->
+  <path d="M 185 124 Q 130 170 100 230" fill="none" stroke="#7ec27e" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+  <path d="M 185 124 Q 240 170 270 230" fill="none" stroke="#7ec27e" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+  <path d="M 185 124 L 185 230" fill="none" stroke="#7ec27e" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+
+  <!-- Lights in living room -->
+  <circle cx="140" cy="145" r="6" fill="#2478C2" opacity="0.7" filter="url(#glow)"/>
+  <circle cx="230" cy="145" r="6" fill="#2478C2" opacity="0.7" filter="url(#glow)"/>
+  <circle cx="140" cy="195" r="6" fill="#2478C2" opacity="0.7" filter="url(#glow)"/>
+
+  <!-- Light in study -->
+  <circle cx="470" cy="160" r="6" fill="#2478C2" opacity="0.3"/>
+  <text x="470" y="180" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="7">无人-关闭</text>
+
+  <!-- Light in bedroom -->
+  <circle cx="640" cy="160" r="6" fill="#2478C2" opacity="0.3"/>
+  <text x="640" y="180" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="7">无人-关闭</text>
+
+  <!-- Data flow info boxes below rooms -->
+  <rect x="80" y="260" width="300" height="60" rx="6" fill="#0d1f35" stroke="#7ec27e" stroke-width="0.8"/>
+  <text x="230" y="280" text-anchor="middle" fill="#7ec27e" font-family="'Microsoft YaHei', sans-serif" font-size="10">雷达检测到：1人在沙发区</text>
+  <text x="230" y="298" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">坐标(x:180,y:190) | 静止检测: ON | 呼吸频率: 16bpm</text>
+  <text x="230" y="312" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="7">—&gt; 触发"休闲模式": 色温3000K, 亮度60%</text>
+
+  <!-- AI Gateway -->
+  <rect x="400" y="260" width="320" height="60" rx="6" fill="#0d1f35" stroke="#2478C2" stroke-width="1"/>
+  <text x="560" y="278" text-anchor="middle" fill="#2478C2" font-family="'Microsoft YaHei', sans-serif" font-size="10">AI网关处理</text>
+  <text x="560" y="296" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">时间: 20:15 → 匹配用户习惯"晚间阅读"</text>
+  <text x="560" y="312" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="8">传感器+时间+习惯 → 输出: 客厅筒灯(阅读4000K/80%)</text>
+
+  <!-- Arrows -->
+  <line x1="380" y1="290" x2="400" y2="290" stroke="#7ec27e" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- Bottom process bar -->
+  <rect x="60" y="420" width="680" height="50" rx="6" fill="#0d1f35" stroke="#2478C2" stroke-width="0.5"/>
+
+  <text x="110" y="442" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="9">①传感器采集</text>
+  <text x="235" y="442" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="7">—&gt;</text>
+  <text x="280" y="442" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="9">②Zigbee上传</text>
+  <text x="405" y="442" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="7">—&gt;</text>
+  <text x="450" y="442" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="9">③AI推理决策</text>
+  <text x="575" y="442" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="7">—&gt;</text>
+  <text x="620" y="442" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="9">④灯具响应</text>
+  <text x="690" y="455" text-anchor="middle" fill="#5a7a9a" font-family="monospace" font-size="7">&lt;100ms</text>
+</svg>

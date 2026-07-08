@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#141830"/>
+    </linearGradient>
+    <linearGradient id="greenBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2a5c2a"/>
+      <stop offset="100%" stop-color="#5b8c5a"/>
+    </linearGradient>
+    <linearGradient id="blueBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a6fba"/>
+      <stop offset="100%" stop-color="#3a9fd8"/>
+    </linearGradient>
+    <linearGradient id="redBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#cc2222"/>
+      <stop offset="100%" stop-color="#ff4444"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <!-- Subtle grid -->
+  <g opacity="0.05" stroke="#7ec8f8" stroke-width="0.5">
+    <line x1="0" y1="0" x2="800" y2="500"/>
+    <line x1="0" y1="125" x2="800" y2="125"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="35" fill="#ffffff" font-size="16" font-family="Arial" text-anchor="middle" font-weight="bold" opacity="0.95">防雷等级场景适配 — 选对不花冤枉钱</text>
+  <!-- Scene boxes -->
+  <!-- Indoor -->
+  <rect x="30" y="65" rx="12" ry="12" width="230" height="180" fill="#1a2a3a" stroke="#5b8c5a" stroke-width="1.5" opacity="0.9"/>
+  <text x="145" y="90" fill="#5b8c5a" font-size="14" font-family="Arial" text-anchor="middle" font-weight="bold">室内场景</text>
+  <text x="145" y="110" fill="#aaaaaa" font-size="10" font-family="Arial" text-anchor="middle">家居 / 办公 / 商场</text>
+  <!-- Indoor icon: house -->
+  <path d="M110 130 L145 115 L180 130 L180 170 L110 170 Z" fill="none" stroke="#5b8c5a" stroke-width="1.5" opacity="0.6"/>
+  <rect x="130" y="145" rx="2" ry="2" width="30" height="25" fill="#5b8c5a" opacity="0.2" stroke="#5b8c5a" stroke-width="1"/>
+  <!-- Level bar: 4KV -->
+  <rect x="55" y="185" rx="3" ry="3" width="150" height="18" fill="url(#greenBar)" opacity="0.8"/>
+  <text x="130" y="198" fill="#ffffff" font-size="11" font-family="Arial" text-anchor="middle" font-weight="bold">4KV 差模 + 2KV 共模</text>
+  <text x="145" y="218" fill="#aaaaaa" font-size="9" font-family="Arial" text-anchor="middle">标准推荐 Level 3</text>
+  <!--南方升级提示 -->
+  <text x="145" y="238" fill="#ff6b6b" font-size="9" font-family="Arial" text-anchor="middle" opacity="0.8">⚠️ 南方雷暴区 → 升级 6KV</text>
+  <!-- Semi-outdoor -->
+  <rect x="290" y="65" rx="12" ry="12" width="230" height="180" fill="#1a2a3a" stroke="#3a9fd8" stroke-width="1.5" opacity="0.9"/>
+  <text x="405" y="90" fill="#3a9fd8" font-size="14" font-family="Arial" text-anchor="middle" font-weight="bold">半户外场景</text>
+  <text x="405" y="110" fill="#aaaaaa" font-size="10" font-family="Arial" text-anchor="middle">走廊 / 露台 / 庭院灯</text>
+  <!-- Semi-outdoor icon: covered area -->
+  <path d="M350 130 L405 115 L460 130" fill="none" stroke="#3a9fd8" stroke-width="1.5" opacity="0.6"/>
+  <rect x="365" y="140" rx="3" ry="3" width="40" height="30" fill="#3a9fd8" opacity="0.2" stroke="#3a9fd8" stroke-width="1"/>
+  <circle cx="385" cy="155" r="6" fill="#ffffff" opacity="0.4"/>
+  <!-- Level bar: 6KV -->
+  <rect x="315" y="185" rx="3" ry="3" width="150" height="18" fill="url(#blueBar)" opacity="0.8"/>
+  <text x="390" y="198" fill="#ffffff" font-size="11" font-family="Arial" text-anchor="middle" font-weight="bold">6KV 差模 + 4KV 共模</text>
+  <text x="405" y="218" fill="#aaaaaa" font-size="9" font-family="Arial" text-anchor="middle">标准推荐 Level 4</text>
+  <text x="405" y="238" fill="#7ec8f8" font-size="9" font-family="Arial" text-anchor="middle" opacity="0.8">信号线需加GDT共模保护</text>
+  <!-- Full outdoor -->
+  <rect x="550" y="65" rx="12" ry="12" width="230" height="180" fill="#1a2a3a" stroke="#ff4444" stroke-width="1.5" opacity="0.9"/>
+  <text x="665" y="90" fill="#ff4444" font-size="14" font-family="Arial" text-anchor="middle" font-weight="bold">全户外场景</text>
+  <text x="665" y="110" fill="#aaaaaa" font-size="10" font-family="Arial" text-anchor="middle">路灯 / 港口 / 高速公路</text>
+  <!-- Outdoor icon: pole light -->
+  <line x1="665" y1="125" x2="665" y2="170" stroke="#ff4444" stroke-width="2" opacity="0.5"/>
+  <path d="M640 125 L665 115 L690 125" fill="none" stroke="#ff4444" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="665" cy="120" r="5" fill="#ffcc44" opacity="0.5" filter="url(#glow2)"/>
+  <!-- Level bar: 10KV -->
+  <rect x="575" y="185" rx="3" ry="3" width="150" height="18" fill="url(#redBar)" opacity="0.8"/>
+  <text x="650" y="198" fill="#ffffff" font-size="11" font-family="Arial" text-anchor="middle" font-weight="bold">10KV 差模 + 12KV 共模</text>
+  <text x="665" y="218" fill="#aaaaaa" font-size="9" font-family="Arial" text-anchor="middle">Level X — 高雷暴区必须</text>
+  <text x="665" y="238" fill="#ff6b6b" font-size="9" font-family="Arial" text-anchor="middle" opacity="0.8">⚠️ 配电箱加SPD + 驱动两级配合</text>
+  <!-- Comparison table section -->
+  <rect x="30" y="270" rx="8" ry="8" width="740" height="210" fill="#1a2a3a" stroke="#7ec8f8" stroke-width="0.8" opacity="0.7"/>
+  <text x="400" y="295" fill="#ffffff" font-size="13" font-family="Arial" text-anchor="middle" font-weight="bold">IEC 61000-4-5 测试等级对照表</text>
+  <!-- Table headers -->
+  <text x="110" y="315" fill="#7ec8f8" font-size="11" font-family="Arial" text-anchor="middle" font-weight="bold">等级</text>
+  <text x="260" y="315" fill="#7ec8f8" font-size="11" font-family="Arial" text-anchor="middle" font-weight="bold">差模电压</text>
+  <text x="430" y="315" fill="#7ec8f8" font-size="11" font-family="Arial" text-anchor="middle" font-weight="bold">共模电压</text>
+  <text x="620" y="315" fill="#7ec8f8" font-size="11" font-family="Arial" text-anchor="middle" font-weight="bold">适用场景</text>
+  <!-- Separator -->
+  <line x1="50" y1="325" x2="750" y2="325" stroke="#7ec8f8" stroke-width="0.5" opacity="0.3"/>
+  <!-- Row Level 2 -->
+  <text x="110" y="345" fill="#aaaaaa" font-size="10" font-family="Arial" text-anchor="middle">Level 2</text>
+  <text x="260" y="345" fill="#aaaaaa" font-size="10" font-family="Arial" text-anchor="middle">1KV</text>
+  <text x="430" y="345" fill="#aaaaaa" font-size="10" font-family="Arial" text-anchor="middle">2KV</text>
+  <text x="620" y="345" fill="#aaaaaa" font-size="10" font-family="Arial" text-anchor="middle">纯室内稳定电网</text>
+  <!-- Row Level 3 -->
+  <text x="110" y="370" fill="#5b8c5a" font-size="10" font-family="Arial" text-anchor="middle" font-weight="bold">Level 3</text>
+  <text x="260" y="370" fill="#5b8c5a" font-size="10" font-family="Arial" text-anchor="middle">2KV</text>
+  <text x="430" y="370" fill="#5b8c5a" font-size="10" font-family="Arial" text-anchor="middle">4KV</text>
+  <text x="620" y="370" fill="#5b8c5a" font-size="10" font-family="Arial" text-anchor="middle">室内/商用 — 基础推荐</text>
+  <!-- Row Level 4 -->
+  <text x="110" y="395" fill="#3a9fd8" font-size="10" font-family="Arial" text-anchor="middle" font-weight="bold">Level 4</text>
+  <text x="260" y="395" fill="#3a9fd8" font-size="10" font-family="Arial" text-anchor="middle">4KV</text>
+  <text x="430" y="395" fill="#3a9fd8" font-size="10" font-family="Arial" text-anchor="middle">8KV</text>
+  <text x="620" y="395" fill="#3a9fd8" font-size="10" font-family="Arial" text-anchor="middle">户外普通环境</text>
+  <!-- Row Level X -->
+  <text x="110" y="420" fill="#ff4444" font-size="10" font-family="Arial" text-anchor="middle" font-weight="bold">Level X</text>
+  <text x="260" y="420" fill="#ff4444" font-size="10" font-family="Arial" text-anchor="middle">6-10KV</text>
+  <text x="430" y="420" fill="#ff4444" font-size="10" font-family="Arial" text-anchor="middle">12-20KV</text>
+  <text x="620" y="420" fill="#ff4444" font-size="10" font-family="Arial" text-anchor="middle">高雷暴区/空旷户外</text>
+  <!-- Row separators -->
+  <line x1="50" y1="355" x2="750" y2="355" stroke="#7ec8f8" stroke-width="0.3" opacity="0.2"/>
+  <line x1="50" y1="380" x2="750" y2="380" stroke="#7ec8f8" stroke-width="0.3" opacity="0.2"/>
+  <line x1="50" y1="405" x2="750" y2="405" stroke="#7ec8f8" stroke-width="0.3" opacity="0.2"/>
+  <!-- Warning note -->
+  <text x="400" y="460" fill="#ff6b6b" font-size="10" font-family="Arial" text-anchor="middle" opacity="0.9">⚠️ 选购驱动电源时务必确认：差模&amp;共模是否都覆盖，仅标差模的"防雷"不够</text>
+</svg>

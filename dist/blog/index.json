@@ -1,5 +1,32 @@
 [
   {
+    "title": "AI来了，你的灯比你更懂你？2026年AI智能照明从手动调光到自适应照明的真相",
+    "slug": "ai-smart-lighting-adaptive-guide-2026",
+    "date": "2026-07-08",
+    "category": "智能照明",
+    "description": "2026年AI智能照明从概念走向落地，但到底是真智能还是营销噱头？从人因照明、毫米波雷达感知到AI自适应调光，拆解AI如何真正改变你家的灯光体验，并给出选购避坑指南。",
+    "cover": "../../images/blog-ai-smart-lighting-cover.png",
+    "excerpt": "2026年AI智能照明从概念走向落地，但到底是真智能还是营销噱头？本文从人因照明（HCL）、毫米波雷达感知、AI自适应调光三个核心技术出发，拆解AI如何真正改变你家的灯光体验，并给出选购避坑指南。"
+  },
+  {
+    "title": "夏季雷雨LED灯频坏？驱动电源防雷浪涌你选对了吗",
+    "slug": "夏季雷雨led灯频坏驱动电源防雷浪涌你选对了吗",
+    "date": "2026-07-08",
+    "category": "维护指南",
+    "description": "夏季雷雨LED灯频繁损坏的根因是驱动电源缺少浪涌保护，本文详解雷击3种杀伤路径及4KV/6KV/10KV防雷等级选型方法",
+    "cover": "images/blog-surge-protection-guide.jpg",
+    "excerpt": "夏季雷雨季LED灯集体\"阵亡\"？根本原因是驱动电源没做浪涌保护。本文拆解雷击浪涌对LED驱动的3种杀伤路径，教你按场景选对4KV/6KV/10KV防雷等级，一文搞懂SPD选型与安装避坑。"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-08",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
     "title": "人因照明不是噱头：节律光背后的LED驱动电源设计真相",
     "slug": "2026-07-07-hcl-driver-design-truth",
     "date": "2026-07-07",
@@ -18,13 +45,13 @@
     "excerpt": "智能灯调光后出现频闪、手机拍照有波纹、眼睛发酸，多半不是灯的问题，而是驱动和调光器不匹配。本文给出一套家庭可用的排查流程和驱动选型要点。"
   },
   {
-    "title": "未命名文章",
-    "slug": "未命名文章",
+    "title": "Human Centric Lighting Isn't a gimmick: The LED Driver Truth Behind Circadian Light",
+    "slug": "devto-2026-07-07-hcl-driver-design-truth",
     "date": "2026-07-07",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
+    "category": "Human Centric Lighting",
+    "description": "Human Centric Lighting truth, LED driver dual-channel color mixing, CCT dimming curve design, 2026 healthy light buying guide, AI adaptive lighting driver",
+    "cover": "../../images/blog-2026-07-07-hcl-driver-cover.png",
+    "excerpt": "90% of 'circadian lights' on the market just change color temperature via an app. True HCL requires dual-channel seamless color mixing, 0.1% deep dimming, and 24-hour gradient curves at the driver level — without these, circadian lighting is just decoration."
   },
   {
     "title": "GB 30255-2026新国标来了！智能LED灯选型这3个指标比瓦数更重要",
