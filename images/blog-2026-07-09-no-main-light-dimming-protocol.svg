@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f35;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="680" height="400" fill="url(#bgGrad)"/>
+  <rect width="680" height="400" fill="url(#grid)"/>
+
+  <text x="340" y="40" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" letter-spacing="2">调光协议必须配对</text>
+  <text x="340" y="68" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#8ba3c7">混用协议 = 调光失灵 + 低亮度频闪</text>
+
+  <!-- Left: Control system -->
+  <rect x="50" y="100" width="180" height="260" rx="12" fill="#0f2744" stroke="#1a4a7a" stroke-width="1.5" opacity="0.9"/>
+  <text x="140" y="130" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold" fill="#ffffff">控制系统</text>
+
+  <rect x="75" y="150" width="130" height="32" rx="6" fill="#1a3a5c" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="140" y="171" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">Zigbee网关</text>
+
+  <rect x="75" y="195" width="130" height="32" rx="6" fill="#1a3a5c" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="140" y="216" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">0-10V调光器</text>
+
+  <rect x="75" y="240" width="130" height="32" rx="6" fill="#1a3a5c" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="140" y="261" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">可控硅开关</text>
+
+  <rect x="75" y="285" width="130" height="32" rx="6" fill="#1a3a5c" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="140" y="306" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">DALI系统</text>
+
+  <!-- Right: Driver -->
+  <rect x="450" y="100" width="180" height="260" rx="12" fill="#0f2744" stroke="#1a4a7a" stroke-width="1.5" opacity="0.9"/>
+  <text x="540" y="130" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold" fill="#ffffff">驱动电源</text>
+
+  <rect x="475" y="150" width="130" height="32" rx="6" fill="#1a3a5c" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="540" y="171" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">Zigbee调光驱动</text>
+
+  <rect x="475" y="195" width="130" height="32" rx="6" fill="#1a3a5c" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="540" y="216" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">0-10V驱动</text>
+
+  <rect x="475" y="240" width="130" height="32" rx="6" fill="#1a3a5c" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="540" y="261" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">可控硅调光驱动</text>
+
+  <rect x="475" y="285" width="130" height="32" rx="6" fill="#1a3a5c" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="540" y="306" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">DALI驱动</text>
+
+  <!-- Center: matched connection -->
+  <rect x="260" y="100" width="160" height="260" rx="12" fill="#0f2744" stroke="#1a4a7a" stroke-width="1.5" opacity="0.9"/>
+  <text x="340" y="130" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold" fill="#7ec27e">匹配原则</text>
+
+  <text x="340" y="170" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#ffffff">Zigbee → Zigbee</text>
+  <text x="340" y="200" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#ffffff">0-10V → 0-10V</text>
+  <text x="340" y="230" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#ffffff">可控硅 → 可控硅</text>
+  <text x="340" y="260" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#ffffff">DALI → DALI</text>
+
+  <rect x="280" y="285" width="120" height="50" rx="8" fill="#3a1a1a" stroke="#ff6b6b" stroke-width="1.5" opacity="0.9"/>
+  <text x="340" y="305" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#ff6b6b">协议混用 = 频闪</text>
+  <text x="340" y="323" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#ffffff">或无法调光</text>
+
+  <!-- Connection lines -->
+  <line x1="230" y1="166" x2="260" y2="166" stroke="#7ec27e" stroke-width="2" opacity="0.6"/>
+  <line x1="230" y1="211" x2="260" y2="211" stroke="#7ec27e" stroke-width="2" opacity="0.6"/>
+  <line x1="230" y1="256" x2="260" y2="256" stroke="#7ec27e" stroke-width="2" opacity="0.6"/>
+  <line x1="230" y1="301" x2="260" y2="301" stroke="#7ec27e" stroke-width="2" opacity="0.6"/>
+
+  <line x1="420" y1="166" x2="450" y2="166" stroke="#7ec27e" stroke-width="2" opacity="0.6"/>
+  <line x1="420" y1="211" x2="450" y2="211" stroke="#7ec27e" stroke-width="2" opacity="0.6"/>
+  <line x1="420" y1="256" x2="450" y2="256" stroke="#7ec27e" stroke-width="2" opacity="0.6"/>
+  <line x1="420" y1="301" x2="450" y2="301" stroke="#7ec27e" stroke-width="2" opacity="0.6"/>
+
+  <text x="340" y="385" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#8ba3c7">协议统一，是无主灯稳定调光的前提</text>
+</svg>

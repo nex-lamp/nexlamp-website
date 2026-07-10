@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f35;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="680" height="400" fill="url(#bgGrad)"/>
+  <rect width="680" height="400" fill="url(#grid)"/>
+
+  <text x="340" y="40" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" letter-spacing="2">光束角决定光型</text>
+  <text x="340" y="68" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#8ba3c7">筒灯洒光 vs 射灯聚光，选错就是翻车现场</text>
+
+  <!-- Downlight panel -->
+  <rect x="40" y="95" width="190" height="285" rx="12" fill="#0f2744" stroke="#1a4a7a" stroke-width="1.5" opacity="0.9"/>
+  <text x="135" y="125" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold" fill="#7ec27e">筒灯 · 90°光束角</text>
+  <text x="135" y="145" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#8ba3c7">基础照明 / 均匀洒光</text>
+
+  <g transform="translate(135, 185)">
+    <polygon points="0,0 -55,110 55,110" fill="#1a3a5c" stroke="#7ec27e" stroke-width="2" opacity="0.6" filter="url(#glow)"/>
+    <line x1="0" y1="0" x2="-55" y2="110" stroke="#7ec27e" stroke-width="1.5" opacity="0.8"/>
+    <line x1="0" y1="0" x2="55" y2="110" stroke="#7ec27e" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="8" fill="#7ec27e" filter="url(#glow)"/>
+  </g>
+  <text x="135" y="315" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">过道 / 厨房 / 玄关</text>
+  <text x="135" y="335" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#8ba3c7">光束宽，地面均匀亮</text>
+
+  <!-- Spotlight 36° panel -->
+  <rect x="245" y="95" width="190" height="285" rx="12" fill="#0f2744" stroke="#1a4a7a" stroke-width="1.5" opacity="0.9"/>
+  <text x="340" y="125" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold" fill="#7ec27e">射灯 · 36°光束角</text>
+  <text x="340" y="145" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#8ba3c7">重点照明 / 茶几餐桌</text>
+
+  <g transform="translate(340, 185)">
+    <polygon points="0,0 -22,110 22,110" fill="#1a3a5c" stroke="#7ec27e" stroke-width="2" opacity="0.6" filter="url(#glow)"/>
+    <line x1="0" y1="0" x2="-22" y2="110" stroke="#7ec27e" stroke-width="1.5" opacity="0.8"/>
+    <line x1="0" y1="0" x2="22" y2="110" stroke="#7ec27e" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="8" fill="#7ec27e" filter="url(#glow)"/>
+  </g>
+  <text x="340" y="315" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">茶几 / 餐桌 / 沙发</text>
+  <text x="340" y="335" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#8ba3c7">光束集中，边缘有阴影</text>
+
+  <!-- Wall wash 24° panel -->
+  <rect x="450" y="95" width="190" height="285" rx="12" fill="#0f2744" stroke="#1a4a7a" stroke-width="1.5" opacity="0.9"/>
+  <text x="545" y="125" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold" fill="#7ec27e">射灯 · 24°光束角</text>
+  <text x="545" y="145" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#8ba3c7">洗墙 / 装饰画 / 重点</text>
+
+  <g transform="translate(545, 185)">
+    <polygon points="0,0 -15,110 15,110" fill="#1a3a5c" stroke="#7ec27e" stroke-width="2" opacity="0.6" filter="url(#glow)"/>
+    <line x1="0" y1="0" x2="-15" y2="110" stroke="#7ec27e" stroke-width="1.5" opacity="0.8"/>
+    <line x1="0" y1="0" x2="15" y2="110" stroke="#7ec27e" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="8" fill="#7ec27e" filter="url(#glow)"/>
+  </g>
+  <text x="545" y="315" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffffff">背景墙 / 挂画 / 立面</text>
+  <text x="545" y="335" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#8ba3c7">光斑清晰，有立体感</text>
+
+  <text x="340" y="385" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#8ba3c7">无主灯不是满天星，而是按功能分区布光</text>
+</svg>

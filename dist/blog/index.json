@@ -1,5 +1,50 @@
 [
   {
+    "title": "智能灯正在\"偷听\"你？从LED驱动电源看安全漏洞的硬件根源",
+    "slug": "智能灯正在偷听你从led驱动电源看安全漏洞的硬件根源",
+    "date": "2026-07-10",
+    "category": "安全科普",
+    "description": "智能灯隐私安全漏洞的硬件根源：从LED驱动电源MCU固件、调试接口、OTA通道三个维度拆解安全盲区及防护方案",
+    "cover": "images/blog-smart-light-security-driver.jpg",
+    "excerpt": "18万家庭被偷窥不是耸人听闻。大多数人只担心云端/App隐私，但真正的安全漏洞从LED驱动电源的硬件就开始了——裸露的调试接口、未加密的MCU固件、可被逆向的OTA通道。本文从硬件设计层面拆解3大安全盲区，给出工程级的防护方案。"
+  },
+  {
+    "title": "你的智能灯一年'偷'了多少电？待机功耗真相与省电选型指南",
+    "slug": "smart-light-standby-power-hidden-electricity-cost-guide-2026",
+    "date": "2026-07-10",
+    "category": "智能照明",
+    "description": "智能灯待机功耗0.2-0.5W看似微不足道，全屋30盏灯一年却能多耗200+度电。本文结合GB 30255-2026新国标要求，实测对比Zigbee/WiFi/蓝牙Mesh三种协议的待机功耗差异，给出低功耗驱动选型3条硬规则。",
+    "cover": "images/smart-light-standby-power-cover-2026.jpg",
+    "excerpt": "智能灯关了还在耗电？全屋智能照明系统一年多交多少电费？本文用实测数据揭开待机功耗真相，教你选低功耗驱动、合规新国标，堵住电费漏洞。"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-10",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "COB灯带到底值不值？压降、频闪与驱动选型的避坑实录",
+    "slug": "cob-led-strip-voltage-drop-driver-guide-2026",
+    "date": "2026-07-09",
+    "category": "选型指南",
+    "description": "COB灯带和SMD灯带怎么选？低压灯带压降、频闪、驱动匹配问题一文讲透，附COB灯带驱动选型 checklist。",
+    "cover": "images/blog-2026-07-09-cob-strip-cover.png",
+    "excerpt": "COB灯带因为发光均匀、无颗粒感，成了2026年装修氛围光的热门选择。但它比SMD灯带贵，还容易遇到压降发暗、尾部频闪、驱动不匹配等问题。本文从实际安装经验出发，讲清楚COB灯带怎么选驱动、怎么布线才不踩坑。"
+  },
+  {
+    "title": "无主灯装完像出租屋？90%的人忽略了这3个选灯细节",
+    "slug": "no-main-light-design-pitfalls-3-details-2026",
+    "date": "2026-07-09",
+    "category": "设计指南",
+    "description": "无主灯装完像出租屋？从光束角、调光驱动、显色指数三个选灯细节切入，讲清楚无主灯设计翻车的真正原因和补救方法。",
+    "cover": "images/blog-2026-07-09-no-main-light-cover.png",
+    "excerpt": "无主灯翻车的真实原因，往往不是设计师没审美，而是选灯时忽略了光束角、驱动协议、显色指数这三个硬指标。本文从实战角度帮你避开最常见的坑。"
+  },
+  {
     "title": "AI来了，你的灯比你更懂你？2026年AI智能照明从手动调光到自适应照明的真相",
     "slug": "ai-smart-lighting-adaptive-guide-2026",
     "date": "2026-07-08",
@@ -18,13 +63,13 @@
     "excerpt": "夏季雷雨季LED灯集体\"阵亡\"？根本原因是驱动电源没做浪涌保护。本文拆解雷击浪涌对LED驱动的3种杀伤路径，教你按场景选对4KV/6KV/10KV防雷等级，一文搞懂SPD选型与安装避坑。"
   },
   {
-    "title": "未命名文章",
-    "slug": "未命名文章",
+    "title": "Your LED Lights Keep Breaking After Thunderstorms? The Surge Protection Truth Nobody Tells You",
+    "slug": "your-led-lights-keep-breaking-after-thunderstorms-the-surge-protection-truth-nob",
     "date": "2026-07-08",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
+    "category": "Technical Guide",
+    "description": "LED lights break after thunderstorms because of surge voltage on power lines, not direct strikes. Learn how to choose the right surge protection level for LED drivers.",
+    "cover": "images/blog-surge-protection-guide.jpg",
+    "excerpt": "Summer thunderstorm season means LED lights dying in batches. 90% of the damage isn't from direct lightning strikes — it's from induced surge voltage on power lines destroying the driver's internal components. This guide breaks down the 3 surge attack paths and teaches you how to choose the right 4KV/6KV/10KV protection level for your scenario."
   },
   {
     "title": "人因照明不是噱头：节律光背后的LED驱动电源设计真相",

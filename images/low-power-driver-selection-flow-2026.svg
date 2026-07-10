@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="100%">
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#3a8fd4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="800" height="540" fill="#0a1628" rx="12"/>
+  <rect width="800" height="540" fill="url(#grid3)" rx="12" opacity="0.3"/>
+  <text x="400" y="45" font-family="monospace" font-size="20" fill="#3a8fd4" text-anchor="middle" font-weight="500" filter="url(#glow3)">低功耗智能灯选型决策流程</text>
+
+  <rect x="300" y="75" width="200" height="50" fill="#185fa5" rx="8" filter="url(#glow3)"/>
+  <text x="400" y="97" font-family="monospace" font-size="13" fill="#e6f1fb" text-anchor="middle">开始选型</text>
+  <text x="400" y="110" font-family="sans-serif" font-size="10" fill="#85b7eb" text-anchor="middle">智能LED灯具</text>
+
+  <line x1="400" y1="125" x2="400" y2="145" stroke="#3a8fd4" stroke-width="1" marker-end="url(#arrow3)"/>
+
+  <rect x="250" y="150" width="300" height="50" fill="#14233f" rx="8" stroke="#1d9e75" stroke-width="0.5"/>
+  <text x="400" y="172" font-family="monospace" font-size="13" fill="#1d9e75" text-anchor="middle">规则1: 协议选择</text>
+  <text x="400" y="190" font-family="sans-serif" font-size="11" fill="#5dcaa5" text-anchor="middle">优先Zigbee(0.1-0.2W) 避WiFi(0.5W)</text>
+
+  <line x1="400" y1="200" x2="400" y2="220" stroke="#3a8fd4" stroke-width="1" marker-end="url(#arrow3)"/>
+
+  <rect x="60" y="230" width="170" height="50" fill="#0f6e56" rx="8"/>
+  <text x="145" y="252" font-family="monospace" font-size="12" fill="#9fe1cb" text-anchor="middle">选Zigbee ✅</text>
+  <text x="145" y="268" font-family="sans-serif" font-size="10" fill="#5dcaa5" text-anchor="middle">待机0.2W 稳定Mesh</text>
+  <line x1="400" y1="220" x2="145" y2="230" stroke="#1d9e75" stroke-width="0.5" marker-end="url(#arrow3)"/>
+
+  <rect x="570" y="230" width="170" height="50" fill="#26215c" rx="8" stroke="#7f77dd" stroke-width="0.5"/>
+  <text x="655" y="252" font-family="monospace" font-size="12" fill="#afa9ec" text-anchor="middle">选BLE Mesh ⚠</text>
+  <text x="655" y="268" font-family="sans-serif" font-size="10" fill="#7f77dd" text-anchor="middle">待机0.3W 居中方案</text>
+  <line x1="400" y1="220" x2="655" y2="230" stroke="#534ab7" stroke-width="0.5" marker-end="url(#arrow3)"/>
+
+  <rect x="300" y="300" width="200" height="50" fill="#14233f" rx="8" stroke="#3a8fd4" stroke-width="0.5"/>
+  <text x="400" y="322" font-family="monospace" font-size="13" fill="#3a8fd4" text-anchor="middle">规则2: 验驱动参数</text>
+  <text x="400" y="340" font-family="sans-serif" font-size="11" fill="#85b7eb" text-anchor="middle">空载损耗≤0.15W才合规</text>
+
+  <line x1="145" y1="280" x2="400" y2="300" stroke="#1d9e75" stroke-width="0.5" marker-end="url(#arrow3)"/>
+
+  <rect x="60" y="365" width="170" height="55" fill="#0f6e56" rx="8"/>
+  <text x="145" y="385" font-family="monospace" font-size="12" fill="#9fe1cb" text-anchor="middle">≤0.15W ✅</text>
+  <text x="145" y="403" font-family="sans-serif" font-size="10" fill="#5dcaa5" text-anchor="middle">1级能效 完全合规</text>
+  <line x1="400" y1="350" x2="145" y2="365" stroke="#1d9e75" stroke-width="0.5" marker-end="url(#arrow3)"/>
+
+  <rect x="250" y="365" width="170" height="55" fill="#14233f" rx="8" stroke="#ef9f27" stroke-width="0.5"/>
+  <text x="335" y="385" font-family="monospace" font-size="12" fill="#fac775" text-anchor="middle">0.3-0.5W ⚠</text>
+  <text x="335" y="403" font-family="sans-serif" font-size="10" fill="#ba7517" text-anchor="middle">2-3级能效 临界合规</text>
+  <line x1="400" y1="350" x2="335" y2="365" stroke="#ef9f27" stroke-width="0.5" marker-end="url(#arrow3)"/>
+
+  <rect x="440" y="365" width="170" height="55" fill="#501313" rx="8" stroke="#e24b4a" stroke-width="0.5"/>
+  <text x="525" y="385" font-family="monospace" font-size="12" fill="#f09595" text-anchor="middle">&gt;0.5W ❌</text>
+  <text x="525" y="403" font-family="sans-serif" font-size="10" fill="#e24b4a" text-anchor="middle">2027年起不合规</text>
+  <line x1="400" y1="350" x2="525" y2="365" stroke="#e24b4a" stroke-width="0.5" marker-end="url(#arrow3)"/>
+
+  <rect x="300" y="440" width="200" height="45" fill="#14233f" rx="8" stroke="#1d9e75" stroke-width="0.5"/>
+  <text x="400" y="462" font-family="monospace" font-size="13" fill="#1d9e75" text-anchor="middle">规则3: 全屋预算</text>
+  <text x="400" y="480" font-family="sans-serif" font-size="10" fill="#5dcaa5" text-anchor="middle">30盏灯总待机≤6W</text>
+
+  <line x1="145" y1="420" x2="400" y2="440" stroke="#1d9e75" stroke-width="0.5" marker-end="url(#arrow3)"/>
+
+  <rect x="300" y="500" width="200" height="30" fill="#185fa5" rx="6" filter="url(#glow3)"/>
+  <text x="400" y="517" font-family="monospace" font-size="12" fill="#e6f1fb" text-anchor="middle">选型完成 ✅ 省电合规</text>
+  <line x1="400" y1="485" x2="400" y2="500" stroke="#1d9e75" stroke-width="1" marker-end="url(#arrow3)"/>
+</svg>

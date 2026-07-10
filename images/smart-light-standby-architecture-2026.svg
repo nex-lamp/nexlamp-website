@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#3a8fd4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="#0a1628" rx="12"/>
+  <rect width="800" height="500" fill="url(#grid2)" rx="12" opacity="0.3"/>
+  <text x="400" y="45" font-family="monospace" font-size="20" fill="#3a8fd4" text-anchor="middle" font-weight="500" filter="url(#glow2)">智能灯"关闭"≠"断电" 架构图</text>
+
+  <rect x="180" y="70" width="440" height="320" fill="#0d1e36" rx="16" stroke="#1a3a5a" stroke-width="1"/>
+  <text x="400" y="95" font-family="monospace" font-size="14" fill="#8899bb" text-anchor="middle">智能LED灯具内部架构</text>
+
+  <rect x="220" y="110" width="360" height="80" fill="#14233f" rx="8" stroke="#3a8fd4" stroke-width="0.5"/>
+  <text x="400" y="135" font-family="monospace" font-size="12" fill="#3a8fd4" text-anchor="middle">无线控制模块 (始终在线)</text>
+  <rect x="240" y="155" width="90" height="25" fill="#185fa5" rx="4"/>
+  <text x="285" y="168" font-family="monospace" font-size="10" fill="#e6f1fb" text-anchor="middle">Zigbee</text>
+  <rect x="340" y="155" width="90" height="25" fill="#534ab7" rx="4"/>
+  <text x="385" y="168" font-family="monospace" font-size="10" fill="#cecbf6" text-anchor="middle">WiFi</text>
+  <rect x="440" y="155" width="90" height="25" fill="#0f6e56" rx="4"/>
+  <text x="485" y="168" font-family="monospace" font-size="10" fill="#9fe1cb" text-anchor="middle">BLE Mesh</text>
+  <text x="400" y="192" font-family="sans-serif" font-size="10" fill="#e24b4a" text-anchor="middle">⚡ 待机功耗来源: 0.1-0.5W</text>
+
+  <rect x="220" y="210" width="360" height="55" fill="#14233f" rx="8" stroke="#1d9e75" stroke-width="0.5"/>
+  <text x="400" y="232" font-family="monospace" font-size="12" fill="#1d9e75" text-anchor="middle">恒流驱动电源</text>
+  <text x="400" y="250" font-family="monospace" font-size="10" fill="#5dcaa5" text-anchor="middle">空载损耗: 优质≤0.15W | 劣质0.5W+</text>
+
+  <rect x="220" y="275" width="360" height="55" fill="#14233f" rx="8" stroke="#ef9f27" stroke-width="0.5"/>
+  <text x="400" y="297" font-family="monospace" font-size="12" fill="#ef9f27" text-anchor="middle">LED光源模块 (关灯=熄灭)</text>
+  <text x="400" y="315" font-family="monospace" font-size="10" fill="#fac775" text-anchor="middle">关灯时功率=0W | 开灯时功率=标称值</text>
+
+  <line x1="400" y1="110" x2="400" y2="210" stroke="#3a8fd4" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="400" y1="265" x2="400" y2="275" stroke="#1d9e75" stroke-width="0.5"/>
+
+  <rect x="200" y="340" width="160" height="30" fill="#185fa5" rx="6" opacity="0.8"/>
+  <text x="280" y="358" font-family="monospace" font-size="11" fill="#e6f1fb" text-anchor="middle">电源输入 220V</text>
+  <line x1="280" y1="340" x2="280" y2="330" stroke="#185fa5" stroke-width="0.5" marker-end="url(#arrow2)"/>
+
+  <rect x="440" y="340" width="160" height="30" fill="#0f6e56" rx="6" opacity="0.8"/>
+  <text x="520" y="358" font-family="monospace" font-size="11" fill="#9fe1cb" text-anchor="middle">Zigbee网关待机</text>
+  <text x="520" y="388" font-family="monospace" font-size="10" fill="#667788" text-anchor="middle">约1W额外功耗</text>
+
+  <rect x="180" y="410" width="440" height="40" fill="#0d1e36" rx="8" stroke="#e24b4a" stroke-width="0.5"/>
+  <text x="400" y="432" font-family="monospace" font-size="12" fill="#e24b4a" text-anchor="middle">结论: 关灯=光源熄灭, 但控制模块+驱动始终在线消耗电能</text>
+
+  <rect x="50" y="130" width="110" height="50" fill="#14233f" rx="8" stroke="#667788" stroke-width="0.5"/>
+  <text x="105" y="152" font-family="sans-serif" font-size="11" fill="#888780" text-anchor="middle">传统LED</text>
+  <text x="105" y="168" font-family="monospace" font-size="10" fill="#5f5e5a" text-anchor="middle">断电=0W</text>
+
+  <rect x="50" y="200" width="110" height="50" fill="#14233f" rx="8" stroke="#3a8fd4" stroke-width="0.5"/>
+  <text x="105" y="222" font-family="sans-serif" font-size="11" fill="#3a8fd4" text-anchor="middle">智能灯</text>
+  <text x="105" y="238" font-family="monospace" font-size="10" fill="#85b7eb" text-anchor="middle">关灯≠断电</text>
+
+  <text x="400" y="488" font-family="sans-serif" font-size="11" fill="#667788" text-anchor="middle">智能灯的"关"只是关闭光源输出，控制模块仍需保持待命接收指令</text>
+</svg>

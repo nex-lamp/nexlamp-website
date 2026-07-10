@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e20"/>
+      <stop offset="100%" style="stop-color:#151835"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="400" fill="url(#bgGrad3)"/>
+
+  <!-- Grid -->
+  <g opacity="0.08">
+    <pattern id="grid3" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#4488ff" stroke-width="0.4"/>
+    </pattern>
+    <rect width="680" height="400" fill="url(#grid3)"/>
+  </g>
+
+  <!-- Title -->
+  <text x="340" y="30" font-family="sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">驱动电源选型安全指标对照表</text>
+  <text x="340" y="46" font-family="monospace" font-size="9" fill="#5577aa" text-anchor="middle">LED Driver Security Feature Comparison Matrix</text>
+
+  <!-- Table structure -->
+  <!-- Header row -->
+  <g transform="translate(40, 60)">
+    <rect width="600" height="30" rx="4" fill="#1a2030" stroke="#334455" stroke-width="1"/>
+    <text x="75" y="20" font-family="sans-serif" font-size="10" fill="#4488ff" text-anchor="middle" font-weight="bold">安全维度</text>
+    <text x="225" y="20" font-family="sans-serif" font-size="10" fill="#44ff88" text-anchor="middle" font-weight="bold">✓ 低风险指标</text>
+    <text x="435" y="20" font-family="sans-serif" font-size="10" fill="#ff4444" text-anchor="middle" font-weight="bold">✗ 高风险指标</text>
+    <!-- Divider lines -->
+    <line x1="150" y1="5" x2="150" y2="25" stroke="#334455" stroke-width="1"/>
+    <line x1="320" y1="5" x2="320" y2="25" stroke="#334455" stroke-width="1"/>
+  </g>
+
+  <!-- Row 1: Debug interface -->
+  <g transform="translate(40, 92)">
+    <rect width="600" height="28" rx="3" fill="#0d1117" stroke="#222333" stroke-width="1"/>
+    <text x="75" y="18" font-family="sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">调试接口</text>
+    <text x="225" y="18" font-family="monospace" font-size="8" fill="#44ff88" text-anchor="middle">熔丝烧断/SWD锁死</text>
+    <text x="435" y="18" font-family="monospace" font-size="8" fill="#ff4444" text-anchor="middle">焊盘裸露/串口回显</text>
+    <line x1="150" y1="5" x2="150" y2="25" stroke="#222333" stroke-width="1"/>
+    <line x1="320" y1="5" x2="320" y2="25" stroke="#222333" stroke-width="1"/>
+    <!-- Security level indicator -->
+    <rect x="560" y="8" width="30" height="14" rx="2" fill="#ff2222" opacity="0.6"/>
+    <text x="575" y="18" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle">关键</text>
+  </g>
+
+  <!-- Row 2: Firmware encryption -->
+  <g transform="translate(40, 122)">
+    <rect width="600" height="28" rx="3" fill="#0d1117" stroke="#222333" stroke-width="1"/>
+    <text x="75" y="18" font-family="sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">固件加密</text>
+    <text x="225" y="18" font-family="monospace" font-size="8" fill="#44ff88" text-anchor="middle">AES-128+OTP密钥</text>
+    <text x="435" y="18" font-family="monospace" font-size="8" fill="#ff4444" text-anchor="middle">明文存储/密钥硬编码</text>
+    <line x1="150" y1="5" x2="150" y2="25" stroke="#222333" stroke-width="1"/>
+    <line x1="320" y1="5" x2="320" y2="25" stroke="#222333" stroke-width="1"/>
+    <rect x="560" y="8" width="30" height="14" rx="2" fill="#ff2222" opacity="0.6"/>
+    <text x="575" y="18" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle">关键</text>
+  </g>
+
+  <!-- Row 3: OTA security -->
+  <g transform="translate(40, 152)">
+    <rect width="600" height="28" rx="3" fill="#0d1117" stroke="#222333" stroke-width="1"/>
+    <text x="75" y="18" font-family="sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">OTA安全</text>
+    <text x="225" y="18" font-family="monospace" font-size="8" fill="#44ff88" text-anchor="middle">ECDSA签名+防回滚</text>
+    <text x="435" y="18" font-family="monospace" font-size="8" fill="#ff4444" text-anchor="middle">仅CRC校验/可回滚</text>
+    <line x1="150" y1="5" x2="150" y2="25" stroke="#222333" stroke-width="1"/>
+    <line x1="320" y1="5" x2="320" y2="25" stroke="#222333" stroke-width="1"/>
+    <rect x="560" y="8" width="30" height="14" rx="2" fill="#ffaa00" opacity="0.6"/>
+    <text x="575" y="18" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle">重要</text>
+  </g>
+
+  <!-- Row 4: Communication encryption -->
+  <g transform="translate(40, 182)">
+    <rect width="600" height="28" rx="3" fill="#0d1117" stroke="#222333" stroke-width="1"/>
+    <text x="75" y="18" font-family="sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">通信加密</text>
+    <text x="225" y="18" font-family="monospace" font-size="8" fill="#44ff88" text-anchor="middle">Zigbee 3.0/BLE 5.2+</text>
+    <text x="435" y="18" font-family="monospace" font-size="8" fill="#ff4444" text-anchor="middle">老版本无加密</text>
+    <line x1="150" y1="5" x2="150" y2="25" stroke="#222333" stroke-width="1"/>
+    <line x1="320" y1="5" x2="320" y2="25" stroke="#222333" stroke-width="1"/>
+    <rect x="560" y="8" width="30" height="14" rx="2" fill="#ffaa00" opacity="0.6"/>
+    <text x="575" y="18" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle">重要</text>
+  </g>
+
+  <!-- Row 5: Physical protection -->
+  <g transform="translate(40, 212)">
+    <rect width="600" height="28" rx="3" fill="#0d1117" stroke="#222333" stroke-width="1"/>
+    <text x="75" y="18" font-family="sans-serif" font-size="9" fill="#ffffff" text-anchor="middle">物理防护</text>
+    <text x="225" y="18" font-family="monospace" font-size="8" fill="#44ff88" text-anchor="middle">防拆检测/EEPROM保护</text>
+    <text x="435" y="18" font-family="monospace" font-size="8" fill="#ff4444" text-anchor="middle">无防护/可轻松拆解</text>
+    <line x1="150" y1="5" x2="150" y2="25" stroke="#222333" stroke-width="1"/>
+    <line x1="320" y1="5" x2="320" y2="25" stroke="#222333" stroke-width="1"/>
+    <rect x="560" y="8" width="30" height="14" rx="2" fill="#44aaff" opacity="0.5"/>
+    <text x="575" y="18" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle">注意</text>
+  </g>
+
+  <!-- Visual security score radar -->
+  <g transform="translate(540, 290)">
+    <!-- Radar background -->
+    <polygon points="0,-70 70,0 0,70 -70,0" fill="#0d1117" stroke="#334455" stroke-width="1"/>
+    <polygon points="0,-50 50,0 0,50 -50,0" fill="none" stroke="#222333" stroke-width="0.5"/>
+    <polygon points="0,-30 30,0 0,30 -30,0" fill="none" stroke="#222333" stroke-width="0.5"/>
+
+    <!-- Axes labels -->
+    <text x="0" y="-75" font-family="monospace" font-size="7" fill="#aaaaaa" text-anchor="middle">调试接口</text>
+    <text x="75" y="5" font-family="monospace" font-size="7" fill="#aaaaaa" text-anchor="start">固件加密</text>
+    <text x="0" y="75" font-family="monospace" font-size="7" fill="#aaaaaa" text-anchor="middle">OTA安全</text>
+    <text x="-75" y="5" font-family="monospace" font-size="7" fill="#aaaaaa" text-anchor="end">通信加密</text>
+
+    <!-- Unsafe driver shape (red) -->
+    <polygon points="0,-60 60,0 0,55 -55,0" fill="#ff3333" opacity="0.2" stroke="#ff3333" stroke-width="1.5"/>
+
+    <!-- Safe driver shape (green) -->
+    <polygon points="0,-15 15,0 0,15 -15,0" fill="#44ff88" opacity="0.3" stroke="#44ff88" stroke-width="1.5"/>
+
+    <!-- Legend -->
+    <rect x="-60" y="90" width="8" height="8" fill="#ff3333" opacity="0.5"/>
+    <text x="-48" y="98" font-family="monospace" font-size="7" fill="#ff6666">廉价方案</text>
+    <rect x="0" y="90" width="8" height="8" fill="#44ff88" opacity="0.5"/>
+    <text x="12" y="98" font-family="monospace" font-size="7" fill="#66ffaa">安全方案</text>
+  </g>
+
+  <!-- Key recommendation box -->
+  <g transform="translate(40, 260)">
+    <rect width="440" height="120" rx="8" fill="#0a1520" stroke="#44ff88" stroke-width="2" filter="url(#glow3)"/>
+    <text x="20" y="25" font-family="sans-serif" font-size="12" fill="#44ff88" font-weight="bold">💡 选型建议</text>
+
+    <circle cx="30" cy="50" r="5" fill="#44ff88" opacity="0.8"/>
+    <text x="45" y="55" font-family="sans-serif" font-size="9" fill="#cccccc">优先选 Zigbee 3.0 认证驱动方案（端到端加密强制要求）</text>
+
+    <circle cx="30" cy="72" r="5" fill="#44aaff" opacity="0.8"/>
+    <text x="45" y="77" font-family="sans-serif" font-size="9" fill="#cccccc">要求厂商提供安全认证报告（调试口锁定+固件加密）</text>
+
+    <circle cx="30" cy="94" r="5" fill="#ffaa00" opacity="0.8"/>
+    <text x="45" y="99" font-family="sans-serif" font-size="9" fill="#cccccc">不选价格异常低方案 — 安全设计有成本，省掉的是隐私</text>
+
+    <text x="220" y="115" font-family="monospace" font-size="7" fill="#5577aa" text-anchor="middle">多问一句"固件加密了吗？调试口锁了吗？"</text>
+  </g>
+
+  <!-- Bottom -->
+  <text x="340" y="395" font-family="sans-serif" font-size="8" fill="#445566" text-anchor="middle">NEXLAMP | 智能照明安全选型指南 2026</text>
+</svg>

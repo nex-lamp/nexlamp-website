@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1e35;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2d4a" stroke-width="1"/>
+    </pattern>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="stripGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8f3ff;stop-opacity:1" />
+      <stop offset="55%" style="stop-color:#c2d9f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a7a9a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="460" fill="url(#bgGrad2)"/>
+  <rect width="800" height="460" fill="url(#grid2)"/>
+
+  <!-- Terminal window frame -->
+  <rect x="20" y="20" width="760" height="420" rx="10" fill="none" stroke="#3a5a8a" stroke-width="2"/>
+  <rect x="20" y="20" width="760" height="36" rx="10" fill="#13243d"/>
+  <circle cx="44" cy="38" r="6" fill="#ff5f57"/>
+  <circle cx="64" cy="38" r="6" fill="#febc2e"/>
+  <circle cx="84" cy="38" r="6" fill="#28c840"/>
+  <text x="400" y="44" text-anchor="middle" fill="#7ec27e" font-family="Consolas, monospace" font-size="14" font-weight="bold">cob_strip_voltage_drop_diagram.svg</text>
+
+  <!-- Title -->
+  <text x="400" y="90" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, sans-serif" font-size="22" font-weight="bold">COB 灯带压降与补电方案</text>
+
+  <!-- Driver box -->
+  <g transform="translate(80, 160)">
+    <rect x="0" y="0" width="130" height="90" rx="6" fill="#1a2d4a" stroke="#7ec27e" stroke-width="2" filter="url(#glow2)"/>
+    <text x="65" y="32" text-anchor="middle" fill="#7ec27e" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">24V 驱动</text>
+    <text x="65" y="55" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="12">恒压输出</text>
+    <text x="65" y="76" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="12">PWM ≥ 3kHz</text>
+  </g>
+
+  <!-- Wire from driver -->
+  <path d="M210 205 L280 205" stroke="#7ec27e" stroke-width="3" fill="none"/>
+  <text x="245" y="195" text-anchor="middle" fill="#7ec27e" font-family="Consolas, monospace" font-size="12">24.2V</text>
+
+  <!-- COB Strip -->
+  <g transform="translate(280, 185)">
+    <rect x="0" y="0" width="420" height="40" rx="4" fill="url(#stripGrad)" filter="url(#glow2)"/>
+    <!-- Chip dots fading -->
+    <circle cx="30" cy="20" r="4" fill="#3a5a8a"/>
+    <circle cx="80" cy="20" r="4" fill="#3a5a8a"/>
+    <circle cx="130" cy="20" r="4" fill="#3a5a8a"/>
+    <circle cx="180" cy="20" r="4" fill="#3a5a8a"/>
+    <circle cx="230" cy="20" r="4" fill="#3a5a8a" opacity="0.7"/>
+    <circle cx="280" cy="20" r="4" fill="#3a5a8a" opacity="0.5"/>
+    <circle cx="330" cy="20" r="4" fill="#3a5a8a" opacity="0.3"/>
+    <circle cx="380" cy="20" r="4" fill="#3a5a8a" opacity="0.2"/>
+    <text x="210" y="65" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="12">8m COB 灯带（单端供电）</text>
+  </g>
+
+  <!-- Voltage labels along strip -->
+  <text x="300" y="170" fill="#7ec27e" font-family="Consolas, monospace" font-size="12">24.2V</text>
+  <text x="500" y="170" fill="#c2a05a" font-family="Consolas, monospace" font-size="12">22.1V</text>
+  <text x="680" y="170" fill="#e07a5f" font-family="Consolas, monospace" font-size="12">19.8V ⚠</text>
+
+  <!-- Arrows indicating dimming -->
+  <path d="M300 250 L500 250" stroke="#5a7a9a" stroke-width="2" marker-end="url(#arrowDim)"/>
+  <defs>
+    <marker id="arrowDim" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L0 6 L9 3 z" fill="#5a7a9a"/>
+    </marker>
+  </defs>
+  <text x="400" y="270" text-anchor="middle" fill="#8aaacc" font-family="Segoe UI, sans-serif" font-size="12">越往后越暗：压降导致亮度衰减</text>
+
+  <!-- Solution box -->
+  <g transform="translate(120, 310)">
+    <rect x="0" y="0" width="560" height="100" rx="8" fill="#0f1f36" stroke="#2a456e" stroke-width="1"/>
+    <text x="280" y="28" text-anchor="middle" fill="#7ec27e" font-family="Segoe UI, sans-serif" font-size="15" font-weight="bold">正确做法：分段 + 中间补电</text>
+
+    <!-- Mini diagram -->
+    <rect x="40" y="45" width="80" height="28" rx="3" fill="#1a2d4a" stroke="#7ec27e" stroke-width="1"/>
+    <text x="80" y="64" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="10">驱动</text>
+    <path d="M120 59 L160 59" stroke="#7ec27e" stroke-width="2"/>
+    <rect x="160" y="45" width="120" height="28" rx="3" fill="#d4e6ff"/>
+    <text x="220" y="64" text-anchor="middle" fill="#0a1628" font-family="Consolas, monospace" font-size="10">4m COB</text>
+    <path d="M280 59 L320 59" stroke="#7ec27e" stroke-width="2"/>
+    <text x="300" y="54" text-anchor="middle" fill="#7ec27e" font-family="Consolas, monospace" font-size="10">补电</text>
+    <rect x="320" y="45" width="120" height="28" rx="3" fill="#d4e6ff"/>
+    <text x="380" y="64" text-anchor="middle" fill="#0a1628" font-family="Consolas, monospace" font-size="10">4m COB</text>
+
+    <text x="280" y="88" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="11">每段 ≤ 5m，尾端电压保持 23V 以上，亮度一致</text>
+  </g>
+
+  <!-- Footer note -->
+  <text x="400" y="435" text-anchor="middle" fill="#5a7a9a" font-family="Consolas, monospace" font-size="11">NEXLAMP · LED Driver &amp; Smart Lighting Solutions</text>
+</svg>

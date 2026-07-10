@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%">
+  <defs>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="barBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a8fd4"/>
+      <stop offset="1" stop-color="#185fa5"/>
+    </linearGradient>
+    <linearGradient id="barPurple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7f77dd"/>
+      <stop offset="1" stop-color="#534ab7"/>
+    </linearGradient>
+    <linearGradient id="barGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d9e75"/>
+      <stop offset="1" stop-color="#0f6e56"/>
+    </linearGradient>
+    <linearGradient id="barGray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#888780"/>
+      <stop offset="1" stop-color="#5f5e5a"/>
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="520" fill="#0a1628" rx="12"/>
+  <rect width="800" height="520" fill="url(#grid1)" rx="12" opacity="0.3"/>
+  <text x="400" y="50" font-family="monospace" font-size="22" fill="#3a8fd4" text-anchor="middle" font-weight="500" filter="url(#glow1)">智能灯待机功耗实测对比</text>
+  <text x="400" y="78" font-family="sans-serif" font-size="13" fill="#8899bb" text-anchor="middle">单盏灯 / 全屋30盏 / 年增电费(0.6元/度)</text>
+
+  <text x="70" y="420" font-family="monospace" font-size="11" fill="#667788">0W</text>
+  <text x="70" y="358" font-family="monospace" font-size="11" fill="#667788">0.1W</text>
+  <text x="70" y="296" font-family="monospace" font-size="11" fill="#667788">0.2W</text>
+  <text x="70" y="234" font-family="monospace" font-size="11" fill="#667788">0.3W</text>
+  <text x="70" y="172" font-family="monospace" font-size="11" fill="#667788">0.4W</text>
+  <text x="70" y="110" font-family="monospace" font-size="11" fill="#667788">0.5W</text>
+  <line x1="90" y1="420" x2="750" y2="420" stroke="#1a2a4a" stroke-width="1"/>
+  <line x1="90" y1="358" x2="750" y2="358" stroke="#1a2a4a" stroke-width="0.5"/>
+  <line x1="90" y1="296" x2="750" y2="296" stroke="#1a2a4a" stroke-width="0.5"/>
+  <line x1="90" y1="234" x2="750" y2="234" stroke="#1a2a4a" stroke-width="0.5"/>
+  <line x1="90" y1="172" x2="750" y2="172" stroke="#1a2a4a" stroke-width="0.5"/>
+  <line x1="90" y1="110" x2="750" y2="110" stroke="#1a2a4a" stroke-width="0.5"/>
+
+  <rect x="130" y="420" width="100" height="0" fill="url(#barGray)" rx="4" opacity="0.7"/>
+  <text x="180" y="430" font-family="sans-serif" font-size="13" fill="#aab4cc" text-anchor="middle">传统LED</text>
+  <text x="180" y="448" font-family="monospace" font-size="10" fill="#667788" text-anchor="middle">0W | ¥0/年</text>
+
+  <rect x="280" y="296" width="100" height="124" fill="url(#barGreen)" rx="4" filter="url(#glow1)"/>
+  <text x="330" y="430" font-family="sans-serif" font-size="13" fill="#1d9e75" text-anchor="middle">Zigbee</text>
+  <text x="330" y="448" font-family="monospace" font-size="10" fill="#5dcaa5" text-anchor="middle">0.2W | ¥31/年</text>
+  <text x="330" y="276" font-family="monospace" font-size="11" fill="#5dcaa5" text-anchor="middle">0.2W ★</text>
+
+  <rect x="440" y="234" width="100" height="186" fill="url(#barPurple)" rx="4" filter="url(#glow1)"/>
+  <text x="490" y="430" font-family="sans-serif" font-size="13" fill="#7f77dd" text-anchor="middle">BLE Mesh</text>
+  <text x="490" y="448" font-family="monospace" font-size="10" fill="#afa9ec" text-anchor="middle">0.3W | ¥47/年</text>
+  <text x="490" y="214" font-family="monospace" font-size="11" fill="#afa9ec" text-anchor="middle">0.3W</text>
+
+  <rect x="600" y="110" width="100" height="310" fill="url(#barBlue)" rx="4" filter="url(#glow1)"/>
+  <text x="650" y="430" font-family="sans-serif" font-size="13" fill="#3a8fd4" text-anchor="middle">WiFi</text>
+  <text x="650" y="448" font-family="monospace" font-size="10" fill="#85b7eb" text-anchor="middle">0.5W | ¥79/年</text>
+  <text x="650" y="90" font-family="monospace" font-size="11" fill="#e24b4a" text-anchor="middle">0.5W ⚠最高</text>
+
+  <rect x="130" y="472" width="570" height="2" fill="#3a8fd4" opacity="0.3" rx="1"/>
+  <text x="400" y="498" font-family="sans-serif" font-size="12" fill="#8899bb" text-anchor="middle">GB 30255-2026 1级能效限值: ≤0.2W | 3级能效限值: ≤0.5W | WiFi驱动2027年起可能不合规</text>
+</svg>

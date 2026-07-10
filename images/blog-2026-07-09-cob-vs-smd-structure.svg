@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1e35;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2d4a" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="url(#bgGrad)"/>
+  <rect width="800" height="420" fill="url(#grid)"/>
+
+  <!-- Terminal window frame -->
+  <rect x="20" y="20" width="760" height="380" rx="10" fill="none" stroke="#3a5a8a" stroke-width="2"/>
+  <rect x="20" y="20" width="760" height="36" rx="10" fill="#13243d"/>
+  <circle cx="44" cy="38" r="6" fill="#ff5f57"/>
+  <circle cx="64" cy="38" r="6" fill="#febc2e"/>
+  <circle cx="84" cy="38" r="6" fill="#28c840"/>
+  <text x="400" y="44" text-anchor="middle" fill="#7ec27e" font-family="Consolas, monospace" font-size="14" font-weight="bold">COB_vs_SMD_structure_comparison.svg</text>
+
+  <!-- Title -->
+  <text x="400" y="90" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, sans-serif" font-size="22" font-weight="bold">COB 与 SMD 灯带结构对比</text>
+
+  <!-- SMD Section -->
+  <g transform="translate(80, 130)">
+    <rect x="0" y="0" width="300" height="240" rx="8" fill="#0f1f36" stroke="#2a456e" stroke-width="1"/>
+    <text x="150" y="32" text-anchor="middle" fill="#7ec27e" font-family="Segoe UI, sans-serif" font-size="16" font-weight="bold">SMD 灯带</text>
+    <text x="150" y="54" text-anchor="middle" fill="#8aaacc" font-family="Segoe UI, sans-serif" font-size="12">表面贴装灯珠 / 有明显颗粒感</text>
+
+    <!-- PCB -->
+    <rect x="30" y="80" width="240" height="50" rx="4" fill="#1a2d4a" stroke="#3a5a8a" stroke-width="1"/>
+
+    <!-- SMD LEDs -->
+    <g filter="url(#glow)">
+      <rect x="55" y="85" width="28" height="28" rx="3" fill="#f0f4ff"/>
+      <rect x="115" y="85" width="28" height="28" rx="3" fill="#f0f4ff"/>
+      <rect x="175" y="85" width="28" height="28" rx="3" fill="#f0f4ff"/>
+      <rect x="235" y="85" width="28" height="28" rx="3" fill="#f0f4ff"/>
+    </g>
+
+    <!-- Light beams (dotted gaps) -->
+    <path d="M69 65 L69 45 M139 65 L139 45 M209 65 L209 45" stroke="#5a8acc" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="150" y="175" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="12">● 单颗灯珠发光</text>
+    <text x="150" y="198" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="12">● 灯珠间存在暗区</text>
+    <text x="150" y="221" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="12">● 发光角度约 120°</text>
+  </g>
+
+  <!-- COB Section -->
+  <g transform="translate(420, 130)">
+    <rect x="0" y="0" width="300" height="240" rx="8" fill="#0f1f36" stroke="#2a456e" stroke-width="1"/>
+    <text x="150" y="32" text-anchor="middle" fill="#7ec27e" font-family="Segoe UI, sans-serif" font-size="16" font-weight="bold">COB 灯带</text>
+    <text x="150" y="54" text-anchor="middle" fill="#8aaacc" font-family="Segoe UI, sans-serif" font-size="12">芯片板上封装 / 连续均匀发光</text>
+
+    <!-- PCB -->
+    <rect x="30" y="80" width="240" height="50" rx="4" fill="#1a2d4a" stroke="#3a5a8a" stroke-width="1"/>
+
+    <!-- COB continuous chip strip -->
+    <rect x="45" y="90" width="210" height="22" rx="2" fill="#2d3a4f"/>
+    <g filter="url(#glow)">
+      <rect x="45" y="90" width="210" height="22" rx="2" fill="#d4e6ff" opacity="0.9"/>
+    </g>
+    <!-- Chip dots -->
+    <circle cx="65" cy="101" r="3" fill="#7ec27e"/>
+    <circle cx="95" cy="101" r="3" fill="#7ec27e"/>
+    <circle cx="125" cy="101" r="3" fill="#7ec27e"/>
+    <circle cx="155" cy="101" r="3" fill="#7ec27e"/>
+    <circle cx="185" cy="101" r="3" fill="#7ec27e"/>
+    <circle cx="215" cy="101" r="3" fill="#7ec27e"/>
+    <circle cx="245" cy="101" r="3" fill="#7ec27e"/>
+
+    <!-- Continuous light beam -->
+    <path d="M45 78 Q150 55 255 78" fill="none" stroke="#a8d0ff" stroke-width="3" filter="url(#glow)"/>
+    <text x="150" y="175" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="12">● 芯片密集排列</text>
+    <text x="150" y="198" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="12">● 荧光胶连续覆盖</text>
+    <text x="150" y="221" text-anchor="middle" fill="#8aaacc" font-family="Consolas, monospace" font-size="12">● 发光角度可达 180°</text>
+  </g>
+
+  <!-- Footer note -->
+  <text x="400" y="395" text-anchor="middle" fill="#5a7a9a" font-family="Consolas, monospace" font-size="11">NEXLAMP · LED Driver &amp; Smart Lighting Solutions</text>
+</svg>
