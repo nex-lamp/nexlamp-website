@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Consolas, Monaco, monospace">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1b30"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00cc66" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5a" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+  <text x="400" y="40" text-anchor="middle" fill="#5db8e8" font-size="20" font-weight="bold">4 步判断你的智能灯能否"断网可控"</text>
+  <text x="400" y="60" text-anchor="middle" fill="#88aacc" font-size="11">5 分钟自检清单 / 耐利普科技 NEXLAMP 内部资料</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(60, 100)">
+    <rect x="0" y="0" width="320" height="80" rx="8" fill="#0d2a1a" stroke="url(#greenGrad)" stroke-width="1.5"/>
+    <circle cx="30" cy="40" r="20" fill="#00ff88"/>
+    <text x="30" y="46" text-anchor="middle" fill="#0a1628" font-size="18" font-weight="bold">1</text>
+    <text x="65" y="30" fill="#00ff88" font-size="14" font-weight="bold">看说明书：本地通信</text>
+    <text x="65" y="50" fill="#aaddcc" font-size="11">查找"本地通信""local control"等字样</text>
+    <text x="65" y="66" fill="#88ffaa" font-size="10">✅ 有 → 断网可控 / ❌ 无 → 高度依赖云端</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(420, 100)">
+    <rect x="0" y="0" width="320" height="80" rx="8" fill="#0d2a1a" stroke="url(#greenGrad)" stroke-width="1.5"/>
+    <circle cx="30" cy="40" r="20" fill="#00ff88"/>
+    <text x="30" y="46" text-anchor="middle" fill="#0a1628" font-size="18" font-weight="bold">2</text>
+    <text x="65" y="30" fill="#00ff88" font-size="14" font-weight="bold">拔 WAN 口网线测试</text>
+    <text x="65" y="50" fill="#aaddcc" font-size="11">不是断 WiFi，是物理拔掉路由器上网线</text>
+    <text x="65" y="66" fill="#88ffaa" font-size="10">✅ 灯能开 → 本地 Mesh / ❌ 全失灵 → 云端依赖</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(60, 210)">
+    <rect x="0" y="0" width="320" height="80" rx="8" fill="#0d2a1a" stroke="url(#greenGrad)" stroke-width="1.5"/>
+    <circle cx="30" cy="40" r="20" fill="#00ff88"/>
+    <text x="30" y="46" text-anchor="middle" fill="#0a1628" font-size="18" font-weight="bold">3</text>
+    <text x="65" y="30" fill="#00ff88" font-size="14" font-weight="bold">测无线开关独立性</text>
+    <text x="65" y="50" fill="#aaddcc" font-size="11">不通过 App 设置，开关能否直接控灯</text>
+    <text x="65" y="66" fill="#88ffaa" font-size="10">✅ 直接可控 → 本地 Mesh / ❌ 需 App → 半依赖</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(420, 210)">
+    <rect x="0" y="0" width="320" height="80" rx="8" fill="#0d2a1a" stroke="url(#greenGrad)" stroke-width="1.5"/>
+    <circle cx="30" cy="40" r="20" fill="#00ff88"/>
+    <text x="30" y="46" text-anchor="middle" fill="#0a1628" font-size="18" font-weight="bold">4</text>
+    <text x="65" y="30" fill="#00ff88" font-size="14" font-weight="bold">看网关断电表现</text>
+    <text x="65" y="50" fill="#aaddcc" font-size="11">关掉网关电源，灯之间还能通信</text>
+    <text x="65" y="66" fill="#88ffaa" font-size="10">✅ 强本地 Mesh / ❌ 全失灵 → 伪本地方案</text>
+  </g>
+
+  <!-- 底部对比表 -->
+  <g transform="translate(60, 320)">
+    <rect x="0" y="0" width="680" height="140" rx="8" fill="#0d1b30" stroke="#5db8e8" stroke-width="1"/>
+    <text x="340" y="25" text-anchor="middle" fill="#5db8e8" font-size="14" font-weight="bold">📊 方案对比速查表</text>
+
+    <!-- 表头 -->
+    <rect x="20" y="40" width="640" height="22" fill="#1a3a5a"/>
+    <text x="120" y="55" text-anchor="middle" fill="#5db8e8" font-size="11" font-weight="bold">评估维度</text>
+    <text x="280" y="55" text-anchor="middle" fill="#ff6666" font-size="11" font-weight="bold">WiFi 智能灯（云端依赖）</text>
+    <text x="540" y="55" text-anchor="middle" fill="#00ff88" font-size="11" font-weight="bold">Zigbee 智能灯（本地 Mesh）</text>
+
+    <text x="120" y="78" text-anchor="middle" fill="#88aacc" font-size="10">断网能否开灯</text>
+    <text x="280" y="78" text-anchor="middle" fill="#ffaa66" font-size="10">✖ 完全失灵</text>
+    <text x="540" y="78" text-anchor="middle" fill="#88ffaa" font-size="10">✓ 开关/场景照常</text>
+
+    <text x="120" y="95" text-anchor="middle" fill="#88aacc" font-size="10">服务器故障时</text>
+    <text x="280" y="95" text-anchor="middle" fill="#ffaa66" font-size="10">✖ 4 天无法用</text>
+    <text x="540" y="95" text-anchor="middle" fill="#88ffaa" font-size="10">✓ 仅 App 暂失效</text>
+
+    <text x="120" y="112" text-anchor="middle" fill="#88aacc" font-size="10">多设备稳定性</text>
+    <text x="280" y="112" text-anchor="middle" fill="#ffaa66" font-size="10">✖ 30+设备易崩</text>
+    <text x="540" y="112" text-anchor="middle" fill="#88ffaa" font-size="10">✓ 自愈 Mesh 网络</text>
+
+    <text x="120" y="129" text-anchor="middle" fill="#88aacc" font-size="10">隐私与控制权</text>
+    <text x="280" y="129" text-anchor="middle" fill="#ffaa66" font-size="10">✖ 钥匙在云端</text>
+    <text x="540" y="129" text-anchor="middle" fill="#88ffaa" font-size="10">✓ 钥匙在网关</text>
+  </g>
+
+  <text x="400" y="485" text-anchor="middle" fill="#5db8e8" font-size="12" font-style="italic">耐利普科技 NEXLAMP · 涂鸦 Zigbee 智能照明方案 · 3C 认证</text>
+</svg>
