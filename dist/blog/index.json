@@ -1,5 +1,50 @@
 [
   {
+    "title": "第三代半导体杀入LED驱动电源：SiC和GaN到底差别在哪？",
+    "slug": "sic-gan-led-driver-revolution",
+    "date": "2026-07-14",
+    "category": "技术前沿",
+    "description": "碳化硅(SiC)和氮化镓(GaN)正从电动汽车和快充领域杀入LED驱动电源市场。本文用大白话讲清楚两种材料的区别、适用场景，以及对你买灯选灯的实际影响。",
+    "cover": "images/blog-sic-gan-2026-cover.png",
+    "excerpt": "SiC和GaN正从快充领域杀入LED驱动电源市场。本文用大白话讲清两种材料的区别、适用场景和选购建议。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-14",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-14",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "SiC vs GaN: Why the LED Driver Revolution Matters for Your Next Light Fixture",
+    "slug": "sic-vs-gan-why-the-led-driver-revolution-matters-for-your-next-light-fixture",
+    "date": "2026-07-14",
+    "category": "技术文章",
+    "description": "Silicon Carbide (SiC) and Gallium Nitride (GaN) are entering the LED driver market in 2026. Here is what they mean for efficiency, longevity, and your next lighting decision.",
+    "cover": "",
+    "excerpt": "Silicon Carbide (SiC) and Gallium Nitride (GaN) are entering the LED driver market in 2026. Here is what they mean for efficiency, longevity, and your next lighting decision."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-14",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
     "title": "智能灯突然全屋失灵？2026年6月美的云端故障给所有智能家居用户敲的警钟",
     "slug": "cloud-dependent-smart-light-trap-2026",
     "date": "2026-07-13",
@@ -9,31 +54,13 @@
     "excerpt": "2026年6月29日美的云端服务器故障，10万+用户空调集体失控4天。智能灯的道理一模一样——当你买的灯100%依赖云端时，服务器一崩，你连开关都要等工程师修好。本文用真实案例+实测对比，告诉你怎么挑一盏\\\"断网也能用\\\"的智能灯。"
   },
   {
-    "title": "未命名文章",
-    "slug": "未命名文章",
+    "title": "LED驱动电源发热与寿命：为什么你的智能灯用不到一年就变暗了？",
+    "slug": "led驱动电源发热与寿命为什么你的智能灯用不到一年就变暗了",
     "date": "2026-07-13",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
+    "category": "技术科普",
+    "description": "智能灯一年变暗的真相：LED驱动电源发热与寿命关系解析，教你从温度、效率、电容、功率冗余四个维度选对驱动电源。",
     "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-07-13",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-13",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
+    "excerpt": "灯珠寿命50000小时，但大量智能灯用户一年不到就变暗。问题不在灯珠，而在LED驱动电源的发热与寿命。本文从温度、效率、电容三个维度讲透驱动电源选型的核心。"
   },
   {
     "title": "智能灯正在\"偷听\"你？从LED驱动电源看安全漏洞的硬件根源",
