@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" style="background:#0a0e17">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#141b2d"/>
+    </linearGradient>
+  </defs>
+  <rect width="680" height="420" fill="url(#bg3)"/>
+  
+  <text x="340" y="38" text-anchor="middle" fill="#e0e8f0" font-size="20" font-weight="bold" font-family="Arial, sans-serif">效率革命的数字：第三代半导体如何碾压传统硅</text>
+  <line x1="80" y1="48" x2="600" y2="48" stroke="#2a3040" stroke-width="1"/>
+  
+  <!-- Section A: Efficiency Numbers -->
+  <text x="50" y="80" fill="#8899aa" font-size="13" font-family="Arial, sans-serif" font-weight="bold">转换效率对比 (满载)</text>
+  
+  <!-- Efficiency bars -->
+  <!-- Si -->
+  <text x="50" y="115" fill="#8899aa" font-size="12" font-family="Arial, sans-serif">传统硅 Si</text>
+  <rect x="160" y="103" width="180" height="18" rx="4" fill="#1e2638"/>
+  <rect x="160" y="103" width="180" height="18" rx="4" fill="#555555"/>
+  <text x="346" y="116" fill="#e0e0e0" font-size="11" font-weight="bold" font-family="Arial, sans-serif">85–90%</text>
+  
+  <!-- GaN -->
+  <text x="50" y="147" fill="#8899aa" font-size="12" font-family="Arial, sans-serif">氮化镓 GaN</text>
+  <rect x="160" y="135" width="370" height="18" rx="4" fill="#1e2638"/>
+  <rect x="160" y="135" width="370" height="18" rx="4" fill="#0090ff"/>
+  <text x="536" y="148" fill="#e0e0e0" font-size="11" font-weight="bold" font-family="Arial, sans-serif">94–98%</text>
+  
+  <!-- SiC -->
+  <text x="50" y="179" fill="#8899aa" font-size="12" font-family="Arial, sans-serif">碳化硅 SiC</text>
+  <rect x="160" y="167" width="390" height="18" rx="4" fill="#1e2638"/>
+  <rect x="160" y="167" width="390" height="18" rx="4" fill="#f7931e"/>
+  <text x="556" y="180" fill="#e0e0e0" font-size="11" font-weight="bold" font-family="Arial, sans-serif">92–98%+</text>
+  
+  <!-- Section B: Key Metrics Comparison Table -->
+  <text x="50" y="220" fill="#8899aa" font-size="13" font-family="Arial, sans-serif" font-weight="bold">核心指标对比表</text>
+  
+  <!-- Table -->
+  <rect x="50" y="235" width="580" height="155" rx="6" fill="#141b2d" stroke="#2a3040" stroke-width="1"/>
+  
+  <!-- Header -->
+  <rect x="50" y="235" width="580" height="28" rx="6" fill="#1a2540"/>
+  <rect x="50" y="253" width="580" height="10" fill="#1a2540"/>
+  
+  <text x="100" y="254" text-anchor="middle" fill="#8899aa" font-size="10" font-weight="bold" font-family="Arial, sans-serif">指标</text>
+  <text x="220" y="254" text-anchor="middle" fill="#8899aa" font-size="10" font-weight="bold" font-family="Arial, sans-serif">传统硅 Si</text>
+  <text x="360" y="254" text-anchor="middle" fill="#0090ff" font-size="10" font-weight="bold" font-family="Arial, sans-serif">氮化镓 GaN</text>
+  <text x="520" y="254" text-anchor="middle" fill="#f7931e" font-size="10" font-weight="bold" font-family="Arial, sans-serif">碳化硅 SiC</text>
+  
+  <!-- Row 1 -->
+  <line x1="70" y1="275" x2="610" y2="275" stroke="#1e2638" stroke-width="1"/>
+  <text x="100" y="288" text-anchor="middle" fill="#8899aa" font-size="10" font-family="Arial, sans-serif">开关速度</text>
+  <text x="220" y="288" text-anchor="middle" fill="#667788" font-size="10" font-family="Arial, sans-serif">50–100 kHz</text>
+  <text x="360" y="288" text-anchor="middle" fill="#00d4ff" font-size="10" font-weight="bold" font-family="Arial, sans-serif">1–3 MHz ⚡</text>
+  <text x="520" y="288" text-anchor="middle" fill="#ff8c5a" font-size="10" font-family="Arial, sans-serif">100–500 kHz</text>
+  
+  <!-- Row 2 -->
+  <line x1="70" y1="300" x2="610" y2="300" stroke="#1e2638" stroke-width="1"/>
+  <text x="100" y="313" text-anchor="middle" fill="#8899aa" font-size="10" font-family="Arial, sans-serif">导热率</text>
+  <text x="220" y="313" text-anchor="middle" fill="#667788" font-size="10" font-family="Arial, sans-serif">1.5 W/cm·K</text>
+  <text x="360" y="313" text-anchor="middle" fill="#667788" font-size="10" font-family="Arial, sans-serif">1.3 W/cm·K</text>
+  <text x="520" y="313" text-anchor="middle" fill="#00e676" font-size="10" font-weight="bold" font-family="Arial, sans-serif">4.9 W/cm·K 🔥</text>
+  
+  <!-- Row 3 -->
+  <line x1="70" y1="325" x2="610" y2="325" stroke="#1e2638" stroke-width="1"/>
+  <text x="100" y="338" text-anchor="middle" fill="#8899aa" font-size="10" font-family="Arial, sans-serif">工作温度</text>
+  <text x="220" y="338" text-anchor="middle" fill="#667788" font-size="10" font-family="Arial, sans-serif">Max 150°C</text>
+  <text x="360" y="338" text-anchor="middle" fill="#667788" font-size="10" font-family="Arial, sans-serif">Max 150°C</text>
+  <text x="520" y="338" text-anchor="middle" fill="#00e676" font-size="10" font-weight="bold" font-family="Arial, sans-serif">Max 200°C+ 🔥</text>
+  
+  <!-- Row 4 -->
+  <line x1="70" y1="350" x2="610" y2="350" stroke="#1e2638" stroke-width="1"/>
+  <text x="100" y="363" text-anchor="middle" fill="#8899aa" font-size="10" font-family="Arial, sans-serif">体积缩减</text>
+  <text x="220" y="363" text-anchor="middle" fill="#667788" font-size="10" font-family="Arial, sans-serif">基准</text>
+  <text x="360" y="363" text-anchor="middle" fill="#00e676" font-size="10" font-weight="bold" font-family="Arial, sans-serif">-50% 📦</text>
+  <text x="520" y="363" text-anchor="middle" fill="#ff8c5a" font-size="10" font-family="Arial, sans-serif">-30%</text>
+  
+  <!-- Row 5 -->
+  <line x1="70" y1="375" x2="610" y2="375" stroke="#1e2638" stroke-width="1"/>
+  <text x="100" y="388" text-anchor="middle" fill="#8899aa" font-size="10" font-family="Arial, sans-serif">驱动寿命</text>
+  <text x="220" y="388" text-anchor="middle" fill="#cc3333" font-size="10" font-family="Arial, sans-serif">3–5年 ⚠</text>
+  <text x="360" y="388" text-anchor="middle" fill="#00e676" font-size="10" font-family="Arial, sans-serif">5–8年</text>
+  <text x="520" y="388" text-anchor="middle" fill="#00e676" font-size="10" font-weight="bold" font-family="Arial, sans-serif">8–10年+ 🏆</text>
+  
+  <!-- Bottom takeaway -->
+  <text x="340" y="415" text-anchor="middle" fill="#445566" font-size="10" font-family="Arial, sans-serif">⚡ 闪电 = GaN最强项 ｜ 🔥 火焰 = SiC最强项 ｜ ⚠ 警告 = 硅的痛点 ｜ 数据来源：Wolfspeed / Infineon / Luminus 2026</text>
+</svg>
