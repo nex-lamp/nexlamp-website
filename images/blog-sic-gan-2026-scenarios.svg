@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Consolas, Monaco, monospace">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1b30"/>
+    </linearGradient>
+    <linearGradient id="sicG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffaa00" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="ganG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ccff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0066ff" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="mixG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#aa66ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00ccff" stop-opacity="0.8"/>
+    </linearGradient>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5a" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+
+  <text x="400" y="40" text-anchor="middle" fill="#5db8e8" font-size="20" font-weight="bold">三种照明场景 &#38; 推荐驱动方案</text>
+  <text x="400" y="60" text-anchor="middle" fill="#4a7a9a" font-size="11">大功率选SiC | 小功率选GaN | 中功率可混合</text>
+
+  <!-- 场景一：户外/工业 -->
+  <g transform="translate(40, 90)">
+    <rect x="0" y="0" width="220" height="370" rx="10" fill="#1a1520" stroke="url(#sicG)" stroke-width="2"/>
+    <rect x="0" y="0" width="220" height="50" rx="10" fill="url(#sicG)" opacity="0.2"/>
+    <text x="110" y="28" text-anchor="middle" fill="#ffaa00" font-size="15" font-weight="bold">户外 / 工业照明</text>
+    <text x="110" y="44" text-anchor="middle" fill="#ff8844" font-size="10">200W+ | 高温环境</text>
+
+    <!-- 图标区 -->
+    <circle cx="110" cy="100" r="35" fill="#1a2a1a" stroke="#ffaa00" stroke-width="2" opacity="0.8"/>
+    <text x="110" y="108" text-anchor="middle" fill="#ffaa00" font-size="28">&#128740;</text>
+
+    <!-- 特征列表 -->
+    <text x="20" y="160" fill="#8899aa" font-size="11">&#9679; 功率范围：200W - 1000W+</text>
+    <text x="20" y="180" fill="#8899aa" font-size="11">&#9679; 环境温度：-40&#176;C ~ 70&#176;C</text>
+    <text x="20" y="200" fill="#8899aa" font-size="11">&#9679; 连续运行：16h+/天</text>
+    <text x="20" y="220" fill="#8899aa" font-size="11">&#9679; 电压波动：大（雷击）</text>
+
+    <!-- 推荐 -->
+    <rect x="20" y="240" width="180" height="40" rx="6" fill="#2a1a10" stroke="#ffaa00" stroke-width="1.5"/>
+    <text x="110" y="265" text-anchor="middle" fill="#ffaa00" font-size="14" font-weight="bold" filter="url(#glow2)">&#8594; 推荐 SiC 驱动</text>
+
+    <text x="20" y="300" fill="#ffaa66" font-size="10" font-weight="bold">理由：</text>
+    <text x="20" y="316" fill="#cc9966" font-size="10">导热系数4.9，高温不掉效</text>
+    <text x="20" y="332" fill="#cc9966" font-size="10">耐压1700V，扛电压尖峰</text>
+    <text x="20" y="348" fill="#cc9966" font-size="10">200&#176;C工作温度，寿命长</text>
+  </g>
+
+  <!-- 场景二：家用 -->
+  <g transform="translate(290, 90)">
+    <rect x="0" y="0" width="220" height="370" rx="10" fill="#0d1a2a" stroke="url(#ganG)" stroke-width="2"/>
+    <rect x="0" y="0" width="220" height="50" rx="10" fill="url(#ganG)" opacity="0.2"/>
+    <text x="110" y="28" text-anchor="middle" fill="#00ccff" font-size="15" font-weight="bold">家用智能照明</text>
+    <text x="110" y="44" text-anchor="middle" fill="#0099ff" font-size="10">&lt;200W | 轻薄美观</text>
+
+    <circle cx="110" cy="100" r="35" fill="#0d1a2a" stroke="#00ccff" stroke-width="2" opacity="0.8"/>
+    <text x="110" y="108" text-anchor="middle" fill="#00ccff" font-size="28">&#128293;</text>
+
+    <text x="20" y="160" fill="#8899aa" font-size="11">&#9679; 功率范围：5W - 200W</text>
+    <text x="20" y="180" fill="#8899aa" font-size="11">&#9679; 环境温度：0&#176;C ~ 45&#176;C</text>
+    <text x="20" y="200" fill="#8899aa" font-size="11">&#9679; 连续运行：4-8h/天</text>
+    <text x="20" y="220" fill="#8899aa" font-size="11">&#9679; 外观要求：超薄/嵌入式</text>
+
+    <rect x="20" y="240" width="180" height="40" rx="6" fill="#0d1a2a" stroke="#00ccff" stroke-width="1.5"/>
+    <text x="110" y="265" text-anchor="middle" fill="#00ccff" font-size="14" font-weight="bold" filter="url(#glow2)">&#8594; 推荐 GaN 驱动</text>
+
+    <text x="20" y="300" fill="#66ddff" font-size="10" font-weight="bold">理由：</text>
+    <text x="20" y="316" fill="#4499cc" font-size="10">MHz开关频率，调光无频闪</text>
+    <text x="20" y="332" fill="#4499cc" font-size="10">体积小50%，塞进超薄灯具</text>
+    <text x="20" y="348" fill="#4499cc" font-size="10">效率94%+，省电发热少</text>
+  </g>
+
+  <!-- 场景三：商业/办公 -->
+  <g transform="translate(540, 90)">
+    <rect x="0" y="0" width="220" height="370" rx="10" fill="#15101a" stroke="url(#mixG)" stroke-width="2"/>
+    <rect x="0" y="0" width="220" height="50" rx="10" fill="url(#mixG)" opacity="0.15"/>
+    <text x="110" y="28" text-anchor="middle" fill="#aa88ff" font-size="15" font-weight="bold">商业 / 办公照明</text>
+    <text x="110" y="44" text-anchor="middle" fill="#8866cc" font-size="10">中功率 | 长时运行</text>
+
+    <circle cx="110" cy="100" r="35" fill="#1a1020" stroke="#aa88ff" stroke-width="2" opacity="0.8"/>
+    <text x="110" y="108" text-anchor="middle" fill="#aa88ff" font-size="28">&#127970;</text>
+
+    <text x="20" y="160" fill="#8899aa" font-size="11">&#9679; 功率范围：50W - 400W</text>
+    <text x="20" y="180" fill="#8899aa" font-size="11">&#9679; 环境温度：10&#176;C ~ 50&#176;C</text>
+    <text x="20" y="200" fill="#8899aa" font-size="11">&#9679; 连续运行：10-16h/天</text>
+    <text x="20" y="220" fill="#8899aa" font-size="11">&#9679; 调光需求：DALI/0-10V</text>
+
+    <rect x="20" y="240" width="180" height="40" rx="6" fill="#1a1020" stroke="#aa88ff" stroke-width="1.5"/>
+    <text x="110" y="265" text-anchor="middle" fill="#aa88ff" font-size="14" font-weight="bold" filter="url(#glow2)">&#8594; SiC + GaN 混合</text>
+
+    <text x="20" y="300" fill="#aa88ff" font-size="10" font-weight="bold">理由：</text>
+    <text x="20" y="316" fill="#8866cc" font-size="10">SiC做PFC级，热稳定可靠</text>
+    <text x="20" y="332" fill="#8866cc" font-size="10">GaN做DC-DC，调光响应快</text>
+    <text x="20" y="348" fill="#8866cc" font-size="10">2026年混合方案已上市</text>
+  </g>
+
+  <!-- 底部总结 -->
+  <text x="400" y="485" text-anchor="middle" fill="#4a7a9a" font-size="11">选型口诀：大功率高温选SiC，小功率轻薄选GaN，中功率长时用混合方案</text>
+</svg>
