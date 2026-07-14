@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Consolas, Monaco, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1b30"/>
+    </linearGradient>
+    <linearGradient id="sicGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffaa00" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="ganGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ccff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0066ff" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="siGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#666666" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#999999" stop-opacity="0.6"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5a" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <text x="400" y="40" text-anchor="middle" fill="#5db8e8" font-size="20" font-weight="bold">第三代半导体核心参数对比：SiC vs GaN vs Si</text>
+  <text x="400" y="60" text-anchor="middle" fill="#4a7a9a" font-size="11">数据来源：行业公开技术资料 | 制图：NEXLAMP</text>
+
+  <!-- 终端窗口风格框 -->
+  <rect x="30" y="80" width="740" height="390" rx="8" fill="#0d1f38" stroke="#1a3a5a" stroke-width="1"/>
+  <rect x="30" y="80" width="740" height="28" rx="8" fill="#102a48"/>
+  <circle cx="48" cy="94" r="5" fill="#ff5f56"/>
+  <circle cx="66" cy="94" r="5" fill="#ffbd2e"/>
+  <circle cx="84" cy="94" r="5" fill="#27c93f"/>
+  <text x="400" y="98" text-anchor="middle" fill="#4a7a9a" font-size="11">semiconductor_comparison --led-driver</text>
+
+  <!-- 三列对比 -->
+  <!-- SiC 列 -->
+  <g transform="translate(60, 130)">
+    <rect x="0" y="0" width="200" height="310" rx="8" fill="#1a1520" stroke="url(#sicGrad)" stroke-width="2" opacity="0.9"/>
+    <rect x="0" y="0" width="200" height="36" rx="8" fill="url(#sicGrad)" opacity="0.3"/>
+    <text x="100" y="24" text-anchor="middle" fill="#ffaa00" font-size="16" font-weight="bold">SiC 碳化硅</text>
+    <text x="100" y="42" text-anchor="middle" fill="#ff8844" font-size="10">耐热的大力士</text>
+
+    <text x="100" y="68" text-anchor="middle" fill="#8899aa" font-size="10">导热系数 (W/cm K)</text>
+    <text x="100" y="92" text-anchor="middle" fill="#ffaa00" font-size="28" font-weight="bold" filter="url(#glow1)">4.9</text>
+    <rect x="30" y="100" width="140" height="8" rx="4" fill="#1a2a3a"/>
+    <rect x="30" y="100" width="140" height="8" rx="4" fill="url(#sicGrad)"/>
+
+    <text x="100" y="128" text-anchor="middle" fill="#8899aa" font-size="10">耐压等级</text>
+    <text x="100" y="148" text-anchor="middle" fill="#ffcc66" font-size="14" font-weight="bold">650V - 1700V</text>
+
+    <text x="100" y="172" text-anchor="middle" fill="#8899aa" font-size="10">最高工作温度</text>
+    <text x="100" y="192" text-anchor="middle" fill="#ff6644" font-size="14" font-weight="bold">200&#176;C+</text>
+
+    <text x="100" y="216" text-anchor="middle" fill="#8899aa" font-size="10">效率天花板</text>
+    <text x="100" y="236" text-anchor="middle" fill="#00ff88" font-size="14" font-weight="bold">98%+</text>
+
+    <text x="100" y="262" text-anchor="middle" fill="#8899aa" font-size="10">最佳场景</text>
+    <text x="100" y="280" text-anchor="middle" fill="#ffaa66" font-size="11">户外路灯</text>
+    <text x="100" y="294" text-anchor="middle" fill="#ffaa66" font-size="11">工业照明</text>
+    <text x="100" y="308" text-anchor="middle" fill="#ffaa66" font-size="11">体育场馆</text>
+  </g>
+
+  <!-- GaN 列 -->
+  <g transform="translate(300, 130)">
+    <rect x="0" y="0" width="200" height="310" rx="8" fill="#0d1a2a" stroke="url(#ganGrad)" stroke-width="2" opacity="0.9"/>
+    <rect x="0" y="0" width="200" height="36" rx="8" fill="url(#ganGrad)" opacity="0.3"/>
+    <text x="100" y="24" text-anchor="middle" fill="#00ccff" font-size="16" font-weight="bold">GaN 氮化镓</text>
+    <text x="100" y="42" text-anchor="middle" fill="#0099ff" font-size="10">灵巧的短跑选手</text>
+
+    <text x="100" y="68" text-anchor="middle" fill="#8899aa" font-size="10">导热系数 (W/cm K)</text>
+    <text x="100" y="92" text-anchor="middle" fill="#00ccff" font-size="28" font-weight="bold" filter="url(#glow1)">1.3</text>
+    <rect x="30" y="100" width="140" height="8" rx="4" fill="#1a2a3a"/>
+    <rect x="30" y="100" width="37" height="8" rx="4" fill="url(#ganGrad)"/>
+
+    <text x="100" y="128" text-anchor="middle" fill="#8899aa" font-size="10">耐压等级</text>
+    <text x="100" y="148" text-anchor="middle" fill="#66ddff" font-size="14" font-weight="bold">100V - 650V</text>
+
+    <text x="100" y="172" text-anchor="middle" fill="#8899aa" font-size="10">最高工作温度</text>
+    <text x="100" y="192" text-anchor="middle" fill="#ff9944" font-size="14" font-weight="bold">150&#176;C</text>
+
+    <text x="100" y="216" text-anchor="middle" fill="#8899aa" font-size="10">效率天花板</text>
+    <text x="100" y="236" text-anchor="middle" fill="#00ff88" font-size="14" font-weight="bold">94-98%</text>
+
+    <text x="100" y="262" text-anchor="middle" fill="#8899aa" font-size="10">最佳场景</text>
+    <text x="100" y="280" text-anchor="middle" fill="#66ddff" font-size="11">家用筒灯</text>
+    <text x="100" y="294" text-anchor="middle" fill="#66ddff" font-size="11">智能吸顶灯</text>
+    <text x="100" y="308" text-anchor="middle" fill="#66ddff" font-size="11">超薄射灯</text>
+  </g>
+
+  <!-- Si 列 -->
+  <g transform="translate(540, 130)">
+    <rect x="0" y="0" width="200" height="310" rx="8" fill="#15151a" stroke="url(#siGrad)" stroke-width="2" opacity="0.7"/>
+    <rect x="0" y="0" width="200" height="36" rx="8" fill="url(#siGrad)" opacity="0.2"/>
+    <text x="100" y="24" text-anchor="middle" fill="#aaaaaa" font-size="16" font-weight="bold">Si 传统硅</text>
+    <text x="100" y="42" text-anchor="middle" fill="#888888" font-size="10">便宜的老黄牛</text>
+
+    <text x="100" y="68" text-anchor="middle" fill="#8899aa" font-size="10">导热系数 (W/cm K)</text>
+    <text x="100" y="92" text-anchor="middle" fill="#aaaaaa" font-size="28" font-weight="bold">1.5</text>
+    <rect x="30" y="100" width="140" height="8" rx="4" fill="#1a2a3a"/>
+    <rect x="30" y="100" width="43" height="8" rx="4" fill="url(#siGrad)"/>
+
+    <text x="100" y="128" text-anchor="middle" fill="#8899aa" font-size="10">耐压等级</text>
+    <text x="100" y="148" text-anchor="middle" fill="#cccccc" font-size="14" font-weight="bold">600V</text>
+
+    <text x="100" y="172" text-anchor="middle" fill="#8899aa" font-size="10">最高工作温度</text>
+    <text x="100" y="192" text-anchor="middle" fill="#ff9944" font-size="14" font-weight="bold">150&#176;C</text>
+
+    <text x="100" y="216" text-anchor="middle" fill="#8899aa" font-size="10">效率天花板</text>
+    <text x="100" y="236" text-anchor="middle" fill="#ffaa44" font-size="14" font-weight="bold">85-90%</text>
+
+    <text x="100" y="262" text-anchor="middle" fill="#8899aa" font-size="10">最佳场景</text>
+    <text x="100" y="280" text-anchor="middle" fill="#aaaaaa" font-size="11">通用照明</text>
+    <text x="100" y="294" text-anchor="middle" fill="#aaaaaa" font-size="11">低成本方案</text>
+    <text x="100" y="308" text-anchor="middle" fill="#aaaaaa" font-size="11">传统灯具</text>
+  </g>
+
+  <!-- 底部说明 -->
+  <text x="400" y="470" text-anchor="middle" fill="#4a7a9a" font-size="11">SiC = 高压高温场景首选 | GaN = 小型化高频场景首选 | Si = 成本敏感型通用场景</text>
+</svg>
