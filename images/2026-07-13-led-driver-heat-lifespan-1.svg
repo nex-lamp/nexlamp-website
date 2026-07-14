@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#141a2b"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="40%" stop-color="#facc15"/>
+      <stop offset="70%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="420" fill="url(#bg)" rx="12"/>
+
+  <!-- Grid lines -->
+  <g stroke="#1e2a3f" stroke-width="0.5" stroke-dasharray="4 4">
+    <line x1="120" y1="60" x2="120" y2="340"/>
+    <line x1="220" y1="60" x2="220" y2="340"/>
+    <line x1="320" y1="60" x2="320" y2="340"/>
+    <line x1="420" y1="60" x2="420" y2="340"/>
+    <line x1="520" y1="60" x2="520" y2="340"/>
+    <line x1="620" y1="60" x2="620" y2="340"/>
+    <line x1="120" y1="340" x2="640" y2="340"/>
+    <line x1="120" y1="290" x2="640" y2="290"/>
+    <line x1="120" y1="240" x2="640" y2="240"/>
+    <line x1="120" y1="190" x2="640" y2="190"/>
+    <line x1="120" y1="140" x2="640" y2="140"/>
+    <line x1="120" y1="90" x2="640" y2="90"/>
+  </g>
+
+  <!-- Title -->
+  <text x="340" y="40" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="18" font-weight="bold">电解电容温度-寿命曲线（阿伦尼乌斯定律）</text>
+
+  <!-- Y axis label -->
+  <text x="25" y="200" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12" transform="rotate(-90, 25, 200)">预期寿命（小时）</text>
+
+  <!-- X axis label -->
+  <text x="380" y="395" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">工作温度（°C）</text>
+
+  <!-- Y axis ticks -->
+  <g fill="#94a3b8" font-family="Arial, sans-serif" font-size="11" text-anchor="end">
+    <text x="110" y="344">0</text>
+    <text x="110" y="294">10k</text>
+    <text x="110" y="244">20k</text>
+    <text x="110" y="194">30k</text>
+    <text x="110" y="144">40k</text>
+    <text x="110" y="94">50k</text>
+  </g>
+
+  <!-- X axis ticks -->
+  <g fill="#94a3b8" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">
+    <text x="120" y="360">55</text>
+    <text x="220" y="360">65</text>
+    <text x="320" y="360">75</text>
+    <text x="420" y="360">85</text>
+    <text x="520" y="360">95</text>
+    <text x="620" y="360">105</text>
+  </g>
+
+  <!-- Curve: T vs lifespan (y = 50000 * 2^((65-T)/10)) -->
+  <!-- 55°C: 100k, 65°C: 50k, 75°C: 25k, 85°C: 12.5k, 95°C: 6.25k, 105°C: 3.125k -->
+  <!-- Scale: y_map = 340 - (hours/50000)*250 -->
+  <!-- 55°C→50000→y=90, 65°C→25000→y=215, 75°C→12500→y=277, 85°C→6250→y=309, 95°C→3125→y=324, 105°C→1562→y=332 -->
+  <polyline points="120,90 170,190 220,215 270,240 320,277 370,290 420,309 470,316 520,324 570,328 620,332"
+    fill="none" stroke="url(#lineGrad)" stroke-width="3" filter="url(#glow)"/>
+
+  <!-- Data points -->
+  <g>
+    <circle cx="220" cy="215" r="5" fill="#4ade80" filter="url(#glow)"/>
+    <text x="220" y="235" text-anchor="middle" fill="#4ade80" font-family="Arial, sans-serif" font-size="10">50,000h</text>
+
+    <circle cx="320" cy="277" r="5" fill="#facc15" filter="url(#glow)"/>
+    <text x="320" y="297" text-anchor="middle" fill="#facc15" font-family="Arial, sans-serif" font-size="10">25,000h</text>
+
+    <circle cx="420" cy="309" r="5" fill="#f97316" filter="url(#glow)"/>
+    <text x="420" y="329" text-anchor="middle" fill="#f97316" font-family="Arial, sans-serif" font-size="10">12,500h</text>
+
+    <circle cx="520" cy="324" r="5" fill="#ef4444" filter="url(#glow)"/>
+    <text x="520" y="344" text-anchor="middle" fill="#ef4444" font-family="Arial, sans-serif" font-size="10">6,250h</text>
+  </g>
+
+  <!-- Key insight box -->
+  <rect x="140" y="65" width="400" height="22" rx="4" fill="#ef4444" opacity="0.15"/>
+  <text x="340" y="80" text-anchor="middle" fill="#ef4444" font-family="Arial, sans-serif" font-size="11" font-weight="bold">每升高10°C，电容寿命减半！75°C→85°C 寿命从5.7年暴跌到1.4年</text>
+
+  <!-- Legend -->
+  <g transform="translate(140, 370)">
+    <line x1="0" y1="6" x2="20" y2="6" stroke="#4ade80" stroke-width="3"/>
+    <text x="25" y="10" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">安全区间</text>
+    <line x1="85" y1="6" x2="105" y2="6" stroke="#facc15" stroke-width="3"/>
+    <text x="110" y="10" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">注意区间</text>
+    <line x1="175" y1="6" x2="195" y2="6" stroke="#f97316" stroke-width="3"/>
+    <text x="200" y="10" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">危险区间</text>
+    <line x1="265" y1="6" x2="285" y2="6" stroke="#ef4444" stroke-width="3"/>
+    <text x="290" y="10" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">致命区间</text>
+  </g>
+</svg>
