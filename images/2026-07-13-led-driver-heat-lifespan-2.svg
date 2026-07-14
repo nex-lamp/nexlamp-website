@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#141a2b"/>
+    </linearGradient>
+    <linearGradient id="barGood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <linearGradient id="barBad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="420" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="340" y="40" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="18" font-weight="bold">驱动电源方案效率对比：线性恒流 vs 开关电源</text>
+
+  <!-- Subtitle -->
+  <text x="340" y="60" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="11">100W LED灯具的能量去向</text>
+
+  <!-- Left panel: Linear Constant Current -->
+  <rect x="40" y="80" width="280" height="290" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+
+  <text x="180" y="110" text-anchor="middle" fill="#ef4444" font-family="Arial, sans-serif" font-size="14" font-weight="bold">线性恒流方案</text>
+  <text x="180" y="128" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="10">效率 82%-86%（典型83%）</text>
+
+  <!-- Pie chart: 83% useful, 17% heat -->
+  <circle cx="180" cy="230" r="80" fill="none" stroke="#334155" stroke-width="1"/>
+  <!-- 17% = 61.2 degrees -->
+  <path d="M180,230 L180,150 A80,80 0 0,1 253,264 Z" fill="#ef4444" opacity="0.7"/>
+  <path d="M180,230 L253,264 A80,80 0 1,1 180,150 Z" fill="#4ade80" opacity="0.5"/>
+
+  <text x="180" y="220" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="22" font-weight="bold">83W</text>
+  <text x="180" y="238" text-anchor="middle" fill="#4ade80" font-family="Arial, sans-serif" font-size="10">有效光能</text>
+
+  <text x="240" y="265" text-anchor="start" fill="#ef4444" font-family="Arial, sans-serif" font-size="12">17W→热量</text>
+
+  <!-- Heat icon -->
+  <text x="180" y="300" text-anchor="middle" fill="#ef4444" font-family="Arial, sans-serif" font-size="22">🔥</text>
+  <text x="180" y="318" text-anchor="middle" fill="#f87171" font-family="Arial, sans-serif" font-size="10">14-18W白白变成热</text>
+  <text x="180" y="336" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="9">≈ 灯里塞了个小电热器</text>
+
+  <!-- Right panel: Switching Power Supply -->
+  <rect x="360" y="80" width="280" height="290" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+
+  <text x="500" y="110" text-anchor="middle" fill="#4ade80" font-family="Arial, sans-serif" font-size="14" font-weight="bold">开关电源方案</text>
+  <text x="500" y="128" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="10">效率 90%-94%（典型92%）</text>
+
+  <!-- Pie chart: 92% useful, 8% heat -->
+  <circle cx="500" cy="230" r="80" fill="none" stroke="#334155" stroke-width="1"/>
+  <!-- 8% = 28.8 degrees -->
+  <path d="M500,230 L500,150 A80,80 0 0,1 543,188 Z" fill="#ef4444" opacity="0.5"/>
+  <path d="M500,230 L543,188 A80,80 0 1,1 500,150 Z" fill="#4ade80" opacity="0.7"/>
+
+  <text x="500" y="220" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="22" font-weight="bold">92W</text>
+  <text x="500" y="238" text-anchor="middle" fill="#4ade80" font-family="Arial, sans-serif" font-size="10">有效光能</text>
+
+  <text x="500" y="188" text-anchor="middle" fill="#f87171" font-family="Arial, sans-serif" font-size="10">8W→热</text>
+
+  <!-- Cool icon -->
+  <text x="500" y="300" text-anchor="middle" fill="#4ade80" font-family="Arial, sans-serif" font-size="22">❄️</text>
+  <text x="500" y="318" text-anchor="middle" fill="#4ade80" font-family="Arial, sans-serif" font-size="10">发热不到线性方案一半</text>
+  <text x="500" y="336" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" font-size="9">= 驱动寿命延长 2-3 倍</text>
+
+  <!-- VS divider -->
+  <line x1="340" y1="110" x2="340" y2="350" stroke="#334155" stroke-width="1" stroke-dasharray="6 4"/>
+  <circle cx="340" cy="230" r="18" fill="#1e293b" stroke="#facc15" stroke-width="2"/>
+  <text x="340" y="235" text-anchor="middle" fill="#facc15" font-family="Arial, sans-serif" font-size="12" font-weight="bold">VS</text>
+
+  <!-- Bottom insight -->
+  <rect x="60" y="382" width="560" height="26" rx="4" fill="#4ade80" opacity="0.1"/>
+  <text x="340" y="399" text-anchor="middle" fill="#4ade80" font-family="Arial, sans-serif" font-size="11">结论：选择效率≥90%的开关电源方案，发热量减少一半以上，驱动寿命延长2-3倍</text>
+</svg>
