@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" style="background:#0a0e17">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#141b2d"/>
+    </linearGradient>
+    <linearGradient id="sicGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#f7931e"/>
+    </linearGradient>
+    <linearGradient id="ganGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0090ff"/>
+    </linearGradient>
+    <linearGradient id="barSiC" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#f7931e"/>
+    </linearGradient>
+    <linearGradient id="barGaN" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0090ff"/>
+    </linearGradient>
+    <linearGradient id="barSi" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#555"/>
+      <stop offset="100%" stop-color="#777"/>
+    </linearGradient>
+    <filter id="glowSiC">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGaN">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="420" fill="url(#bg1)"/>
+  
+  <!-- Title -->
+  <text x="340" y="38" text-anchor="middle" fill="#e0e8f0" font-size="20" font-weight="bold" font-family="Arial, sans-serif">第三代半导体 LED 驱动电源性能对比</text>
+  <line x1="120" y1="48" x2="560" y2="48" stroke="#2a3040" stroke-width="1"/>
+  
+  <!-- Left: SiC Card -->
+  <rect x="30" y="65" width="290" height="180" rx="10" fill="#141b2d" stroke="#ff6b3544" stroke-width="1.5"/>
+  <circle cx="72" cy="95" r="18" fill="url(#sicGrad)" filter="url(#glowSiC)"/>
+  <text x="72" y="101" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Arial, sans-serif">SiC</text>
+  <text x="100" y="98" fill="#ff8c5a" font-size="18" font-weight="bold" font-family="Arial, sans-serif">碳化硅</text>
+  <text x="100" y="115" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">Silicon Carbide</text>
+  
+  <text x="50" y="142" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">▸ 耐高温 200°C+  导热率 4.9 W/cm·K</text>
+  <text x="50" y="162" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">▸ 耐压 650V–1700V  效率可达 98%+</text>
+  <text x="50" y="182" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">▸ 适合大功率｜户外｜工业｜路灯</text>
+  <text x="50" y="202" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">▸ 体二极管恢复低  电路设计简单</text>
+  <text x="50" y="228" fill="#ff8c5a" font-size="13" font-weight="bold" font-family="Arial, sans-serif">核心定位：耐热的"大力士"</text>
+  
+  <!-- Right: GaN Card -->
+  <rect x="360" y="65" width="290" height="180" rx="10" fill="#141b2d" stroke="#00d4ff44" stroke-width="1.5"/>
+  <circle cx="402" cy="95" r="18" fill="url(#ganGrad)" filter="url(#glowGaN)"/>
+  <text x="402" y="101" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold" font-family="Arial, sans-serif">GaN</text>
+  <text x="430" y="98" fill="#00d4ff" font-size="18" font-weight="bold" font-family="Arial, sans-serif">氮化镓</text>
+  <text x="430" y="115" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">Gallium Nitride</text>
+  
+  <text x="380" y="142" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">▸ 开关频率 MHz 级  零反向恢复</text>
+  <text x="380" y="162" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">▸ 体积缩小 50%  效率 94–98%</text>
+  <text x="380" y="182" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">▸ 适合消费级｜超薄灯｜快充</text>
+  <text x="380" y="202" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">▸ 栅极敏感  需精心布局设计</text>
+  <text x="380" y="228" fill="#00d4ff" font-size="13" font-weight="bold" font-family="Arial, sans-serif">核心定位：灵巧的"短跑选手"</text>
+  
+  <!-- Bar Chart: 3 metrics comparison -->
+  <text x="340" y="270" text-anchor="middle" fill="#e0e8f0" font-size="15" font-weight="bold" font-family="Arial, sans-serif">关键性能对比 (越高越好)</text>
+  
+  <!-- 导热能力 -->
+  <text x="55" y="305" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">导热能力</text>
+  <rect x="165" y="296" width="340" height="8" rx="4" fill="#1a2030"/>
+  <rect x="165" y="296" width="340" height="8" rx="4" fill="url(#barSiC)" opacity="0.9"/>
+  <rect x="165" y="296" width="90" height="8" rx="4" fill="url(#barGaN)" opacity="0.9"/>
+  <rect x="165" y="296" width="104" height="8" rx="4" fill="url(#barSi)" opacity="0.6"/>
+  <circle cx="505" cy="300" r="3" fill="#ff6b35"/>
+  <text x="513" y="304" fill="#ff8c5a" font-size="10" font-family="Arial, sans-serif">SiC: 4.9</text>
+  
+  <!-- 开关速度 -->
+  <text x="55" y="330" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">开关速度</text>
+  <rect x="165" y="321" width="340" height="8" rx="4" fill="#1a2030"/>
+  <rect x="165" y="321" width="110" height="8" rx="4" fill="url(#barSiC)" opacity="0.9"/>
+  <rect x="165" y="321" width="340" height="8" rx="4" fill="url(#barGaN)" opacity="0.9"/>
+  <rect x="165" y="321" width="60" height="8" rx="4" fill="url(#barSi)" opacity="0.6"/>
+  <circle cx="505" cy="325" r="3" fill="#00d4ff"/>
+  <text x="513" y="329" fill="#00d4ff" font-size="10" font-family="Arial, sans-serif">GaN: 1MHz+</text>
+  
+  <!-- 耐压等级 -->
+  <text x="55" y="355" fill="#8899aa" font-size="11" font-family="Arial, sans-serif">耐压等级</text>
+  <rect x="165" y="346" width="340" height="8" rx="4" fill="#1a2030"/>
+  <rect x="165" y="346" width="340" height="8" rx="4" fill="url(#barSiC)" opacity="0.9"/>
+  <rect x="165" y="346" width="130" height="8" rx="4" fill="url(#barGaN)" opacity="0.9"/>
+  <rect x="165" y="346" width="120" height="8" rx="4" fill="url(#barSi)" opacity="0.6"/>
+  <circle cx="505" cy="350" r="3" fill="#ff6b35"/>
+  <text x="513" y="354" fill="#ff8c5a" font-size="10" font-family="Arial, sans-serif">SiC: 1700V</text>
+  
+  <!-- Legend -->
+  <rect x="165" y="375" width="12" height="12" rx="2" fill="url(#barSiC)"/>
+  <text x="182" y="386" fill="#8899aa" font-size="10" font-family="Arial, sans-serif">碳化硅 SiC</text>
+  <rect x="270" y="375" width="12" height="12" rx="2" fill="url(#barGaN)"/>
+  <text x="287" y="386" fill="#8899aa" font-size="10" font-family="Arial, sans-serif">氮化镓 GaN</text>
+  <rect x="375" y="375" width="12" height="12" rx="2" fill="url(#barSi)"/>
+  <text x="392" y="386" fill="#8899aa" font-size="10" font-family="Arial, sans-serif">传统硅 Si</text>
+  
+  <!-- Bottom note -->
+  <text x="340" y="412" text-anchor="middle" fill="#445566" font-size="10" font-family="Arial, sans-serif">数据来源：Wolfspeed / Infineon / Luminus 公开技术文档 ｜ 2026年7月</text>
+</svg>
