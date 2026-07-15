@@ -1,17 +1,26 @@
 [
   {
-    "title": "第三代半导体杀入LED驱动电源：SiC和GaN到底差别在哪？",
-    "slug": "sic-gan-led-driver-revolution",
-    "date": "2026-07-14",
+    "title": "DALI-2数字调光：LED驱动电源从'供电'到'智能中枢'的进化",
+    "slug": "dali2-digital-dimming-led-driver-evolution",
+    "date": "2026-07-15",
     "category": "技术前沿",
-    "description": "碳化硅(SiC)和氮化镓(GaN)正从电动汽车和快充领域杀入LED驱动电源市场。本文用大白话讲清楚两种材料的区别、适用场景，以及对你买灯选灯的实际影响。",
-    "cover": "images/blog-sic-gan-2026-cover.png",
-    "excerpt": "SiC和GaN正从快充领域杀入LED驱动电源市场。本文用大白话讲清两种材料的区别、适用场景和选购建议。"
+    "description": "2026光亚展最大风向标：LED驱动电源正在从单纯的供电模块进化为智能照明的'神经中枢'。DALI-2和D4i协议让驱动电源能精准调光、采集数据、远程诊断——这篇文章用大白话讲清楚背后的技术和选购逻辑。",
+    "cover": "images/blog-dali2-driver-2026-cover.png",
+    "excerpt": "2026光亚展最大风向标：驱动电源正从'供电模块'进化为'智能中枢'。DALI-2/D4i协议让调光精度达到0.1%，还能远程诊断故障——本文用大白话讲清技术原理和选购逻辑。"
+  },
+  {
+    "title": "LED驱动芯片暴涨30%+，智能灯要涨价了吗？2026年采购应对全攻略",
+    "slug": "led-driver-chip-price-surge-2026-guide",
+    "date": "2026-07-15",
+    "category": "LED驱动电源",
+    "description": "LED驱动芯片集体涨价30%+，银价涨170%、AI挤压晶圆产能。本文解析涨价传导链，提供智能照明采购的5条实操应对策略。",
+    "cover": "../../images/blog-2026-07-15-led-driver-chip-price-surge-cover.png",
+    "excerpt": "2026年5月，集创北方、富满微等6家头部企业集体宣布LED驱动芯片涨价30%+，银价暴涨170%、AI挤占晶圆产能是两大推手。智能灯会涨多少？现在该不该囤货？本文用真实数据和5条实操建议，帮你搞清楚。"
   },
   {
     "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
     "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-07-14",
+    "date": "2026-07-15",
     "category": "技术文章",
     "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
     "cover": "",
@@ -20,11 +29,29 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-14",
+    "date": "2026-07-15",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
     "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-15",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "第三代半导体杀入LED驱动电源：SiC和GaN到底差别在哪？",
+    "slug": "sic-gan-led-driver-revolution",
+    "date": "2026-07-14",
+    "category": "技术前沿",
+    "description": "碳化硅(SiC)和氮化镓(GaN)正从电动汽车和快充领域杀入LED驱动电源市场。本文用大白话讲清楚两种材料的区别、适用场景，以及对你买灯选灯的实际影响。",
+    "cover": "images/blog-sic-gan-2026-cover.png",
+    "excerpt": "SiC和GaN正从快充领域杀入LED驱动电源市场。本文用大白话讲清两种材料的区别、适用场景和选购建议。"
   },
   {
     "title": "SiC vs GaN: Why the LED Driver Revolution Matters for Your Next Light Fixture",
@@ -36,13 +63,13 @@
     "excerpt": "Silicon Carbide (SiC) and Gallium Nitride (GaN) are entering the LED driver market in 2026. Here is what they mean for efficiency, longevity, and your next lighting decision."
   },
   {
-    "title": "未命名文章",
-    "slug": "未命名文章",
+    "title": "SiC vs GaN in LED Drivers: The Third-Gen Semiconductor Revolution Hits Smart Lighting",
+    "slug": "sic-vs-gan-in-led-drivers-the-third-gen-semiconductor-revolution-hits-smart-ligh",
     "date": "2026-07-14",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
+    "category": "Technology",
+    "description": "Silicon Carbide and Gallium Nitride are crossing over from EV chargers into LED driver power supplies. Here's what each material does best and which to choose.",
     "cover": "",
-    "excerpt": "耐利普科技技术文章"
+    "excerpt": "Silicon Carbide and Gallium Nitride are crossing over from EV chargers into LED driver power supplies. Here's what each material does best and which to choose."
   },
   {
     "title": "智能灯突然全屋失灵？2026年6月美的云端故障给所有智能家居用户敲的警钟",
