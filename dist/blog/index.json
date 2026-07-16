@@ -1,5 +1,59 @@
 [
   {
+    "title": "智能灯真的需要AI吗？从语音控制到主动感知，2026年无感照明体验全解析",
+    "slug": "ai-smart-lighting-active-sensing-2026",
+    "date": "2026-07-16",
+    "category": "智能照明",
+    "description": "2026光亚展AI照明C位出道！从语音控制到主动感知，智能灯到底多了什么？毫米波雷达、场景自适应、无感照明——这些功能是智商税还是真刚需？本文从实测体验出发，解析AI照明选购避坑指南。",
+    "cover": "../../images/blog-ai-smart-lighting-cover-2026.png",
+    "excerpt": "2026年光亚展AI照明独立设馆，毫米波雷达传感器价格已跌破百元，主动感知照明从概念走向普及。本文从真实体验出发，解析AI照明与传统智能灯的区别、实际值不值、选购要点。\""
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-16",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-16",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-16",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-07-16",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-16",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
     "title": "DALI-2数字调光：LED驱动电源从'供电'到'智能中枢'的进化",
     "slug": "dali2-digital-dimming-led-driver-evolution",
     "date": "2026-07-15",
@@ -18,31 +72,13 @@
     "excerpt": "2026年5月，集创北方、富满微等6家头部企业集体宣布LED驱动芯片涨价30%+，银价暴涨170%、AI挤占晶圆产能是两大推手。智能灯会涨多少？现在该不该囤货？本文用真实数据和5条实操建议，帮你搞清楚。"
   },
   {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "title": "DALI-2 Digital Dimming: Why LED Drivers Are Evolving from Power Supply to Smart Hub",
+    "slug": "dali-2-digital-dimming-why-led-drivers-are-evolving-from-power-supply-to-smart-h",
     "date": "2026-07-15",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "category": "Technology",
+    "description": "The biggest takeaway from the 2026 Guangzhou Lighting Fair: LED drivers are evolving from simple power modules into the smart nerve center of lighting systems. DALI-2 and D4i protocols enable 0.1% dimming precision, real-time data collection, and remote diagnostics. Here's what you need to know.",
     "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-15",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-15",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
+    "excerpt": "The biggest takeaway from the 2026 Guangzhou Lighting Fair: LED drivers are evolving from simple power modules into the smart nerve center of lighting systems. DALI-2 and D4i protocols enable 0.1% dimming precision, real-time data collection, and remote diagnostics. Here's what you need to know."
   },
   {
     "title": "第三代半导体杀入LED驱动电源：SiC和GaN到底差别在哪？",
