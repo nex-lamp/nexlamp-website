@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <linearGradient id="morning" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9944"/>
+      <stop offset="100%" stop-color="#ffcc66"/>
+    </linearGradient>
+    <linearGradient id="noon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#66ccff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3344aa"/>
+      <stop offset="100%" stop-color="#663388"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="420" fill="url(#bg)"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+
+  <text x="340" y="36" text-anchor="middle" fill="#7ec8e3" font-size="16" font-weight="bold" font-family="sans-serif" filter="url(#glow)">AI无感照明 · 三大场景自适应流程</text>
+
+  <!-- Scene 1: Morning -->
+  <rect x="20" y="55" width="200" height="340" rx="8" fill="#1a1828" stroke="#ff9944" stroke-width="1" opacity="0.85"/>
+  <rect x="20" y="55" width="200" height="36" rx="8" fill="#ff9944" opacity="0.15"/>
+  <text x="120" y="78" text-anchor="middle" fill="#ff9944" font-size="14" font-weight="bold" font-family="sans-serif">🌅 早晨唤醒</text>
+
+  <!-- Clock -->
+  <rect x="65" y="105" width="110" height="28" rx="4" fill="#2a1a1a" stroke="#ff9944" stroke-width="0.5"/>
+  <text x="120" y="124" text-anchor="middle" fill="#ff9944" font-size="12" font-family="monospace">⏰ 07:00 AM</text>
+
+  <line x1="120" y1="143" x2="120" y2="155" stroke="#ff9944" stroke-width="1"/>
+
+  <rect x="40" y="158" width="160" height="45" rx="4" fill="#2a1a1a" stroke="#ff9944" stroke-width="0.5"/>
+  <text x="120" y="175" text-anchor="middle" fill="#ddbb88" font-size="10" font-family="sans-serif">模拟日出渐变</text>
+  <text x="120" y="192" text-anchor="middle" fill="#888866" font-size="9" font-family="monospace">2700K→5000K 1%→80%</text>
+
+  <line x1="120" y1="213" x2="120" y2="225" stroke="#ff9944" stroke-width="1"/>
+
+  <rect x="40" y="228" width="160" height="30" rx="4" fill="#2a1a1a" stroke="#ff9944" stroke-width="0.5"/>
+  <text x="120" y="248" text-anchor="middle" fill="#cc9944" font-size="10" font-family="sans-serif">白天模式激活</text>
+
+  <!-- Scene 2: Work -->
+  <rect x="240" y="55" width="200" height="340" rx="8" fill="#181828" stroke="#66ccff" stroke-width="1" opacity="0.85"/>
+  <rect x="240" y="55" width="200" height="36" rx="8" fill="#66ccff" opacity="0.1"/>
+  <text x="340" y="78" text-anchor="middle" fill="#66ccff" font-size="14" font-weight="bold" font-family="sans-serif">💼 专注办公</text>
+
+  <rect x="285" y="105" width="110" height="28" rx="4" fill="#1a1a2a" stroke="#66ccff" stroke-width="0.5"/>
+  <text x="340" y="124" text-anchor="middle" fill="#66ccff" font-size="12" font-family="monospace">🕑 14:00 PM</text>
+
+  <line x1="340" y1="143" x2="340" y2="155" stroke="#66ccff" stroke-width="1"/>
+
+  <rect x="260" y="158" width="160" height="45" rx="4" fill="#1a1a2a" stroke="#66ccff" stroke-width="0.5"/>
+  <text x="340" y="175" text-anchor="middle" fill="#88bbdd" font-size="10" font-family="sans-serif">恒定专业光环境</text>
+  <text x="340" y="192" text-anchor="middle" fill="#667a88" font-size="9" font-family="monospace">4000K · 300lux · 无频闪</text>
+
+  <line x1="340" y1="213" x2="340" y2="225" stroke="#66ccff" stroke-width="1"/>
+
+  <rect x="260" y="228" width="160" height="30" rx="4" fill="#1a1a2a" stroke="#66ccff" stroke-width="0.5"/>
+  <text x="340" y="248" text-anchor="middle" fill="#4ccccff" font-size="10" font-family="sans-serif">专注模式稳定</text>
+
+  <!-- Scene 3: Night -->
+  <rect x="460" y="55" width="200" height="340" rx="8" fill="#181828" stroke="#8866cc" stroke-width="1" opacity="0.85"/>
+  <rect x="460" y="55" width="200" height="36" rx="8" fill="#8866cc" opacity="0.12"/>
+  <text x="560" y="78" text-anchor="middle" fill="#8866cc" font-size="14" font-weight="bold" font-family="sans-serif">🌙 助眠模式</text>
+
+  <rect x="505" y="105" width="110" height="28" rx="4" fill="#1a1828" stroke="#8866cc" stroke-width="0.5"/>
+  <text x="560" y="124" text-anchor="middle" fill="#8866cc" font-size="12" font-family="monospace">🌃 22:00 PM</text>
+
+  <line x1="560" y1="143" x2="560" y2="155" stroke="#8866cc" stroke-width="1"/>
+
+  <rect x="480" y="158" width="160" height="45" rx="4" fill="#1a1828" stroke="#8866cc" stroke-width="0.5"/>
+  <text x="560" y="175" text-anchor="middle" fill="#aa88dd" font-size="10" font-family="sans-serif">暖色促眠光</text>
+  <text x="560" y="192" text-anchor="middle" fill="#776688" font-size="9" font-family="monospace">4000K→2700K 80%→20%</text>
+
+  <line x1="560" y1="213" x2="560" y2="225" stroke="#8866cc" stroke-width="1"/>
+
+  <rect x="480" y="228" width="160" height="30" rx="4" fill="#1a1828" stroke="#8866cc" stroke-width="0.5"/>
+  <text x="560" y="248" text-anchor="middle" fill="#8866cc" font-size="10" font-family="sans-serif">褪黑素分泌增强</text>
+
+  <!-- Bottom: Common result -->
+  <rect x="80" y="320" width="520" height="38" rx="6" fill="#0d2840" stroke="#00d4aa" stroke-width="1"/>
+  <text x="340" y="344" text-anchor="middle" fill="#00d4aa" font-size="12" font-family="sans-serif" filter="url(#glow)">🎯 共同目标：零操作 · 自然过渡 · 无需手动切换场景</text>
+
+  <!-- Sensor icons at bottom -->
+  <g transform="translate(110, 375)">
+    <rect width="100" height="24" rx="12" fill="#1a2a3a" stroke="#5a6a8a" stroke-width="0.5"/>
+    <text x="50" y="16" text-anchor="middle" fill="#7a8a9a" font-size="8" font-family="monospace">📡 毫米波雷达</text>
+  </g>
+  <g transform="translate(290, 375)">
+    <rect width="100" height="24" rx="12" fill="#1a2a3a" stroke="#5a6a8a" stroke-width="0.5"/>
+    <text x="50" y="16" text-anchor="middle" fill="#7a8a9a" font-size="8" font-family="monospace">🌡 光照传感器</text>
+  </g>
+  <g transform="translate(470, 375)">
+    <rect width="100" height="24" rx="12" fill="#1a2a3a" stroke="#5a6a8a" stroke-width="0.5"/>
+    <text x="50" y="16" text-anchor="middle" fill="#7a8a9a" font-size="8" font-family="monospace">🧠 本地AI引擎</text>
+  </g>
+</svg>

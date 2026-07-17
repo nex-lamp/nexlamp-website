@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <rect width="680" height="400" fill="url(#bg)"/>
+  <rect width="680" height="400" fill="url(#grid)"/>
+
+  <text x="340" y="36" text-anchor="middle" fill="#7ec8e3" font-size="16" font-weight="bold" font-family="sans-serif" filter="url(#glow)">毫米波雷达 vs PIR红外 · 传感技术对比</text>
+
+  <!-- Left: PIR -->
+  <rect x="20" y="55" width="305" height="330" rx="8" fill="#2a1520" stroke="#ff5555" stroke-width="1" opacity="0.8"/>
+  <text x="172" y="82" text-anchor="middle" fill="#ff5555" font-size="14" font-weight="bold" font-family="sans-serif" filter="url(#glow)">PIR 红外传感器</text>
+
+  <rect x="40" y="100" width="265" height="60" rx="6" fill="#3a1a25" stroke="#ff5555" stroke-width="0.5"/>
+  <text x="172" y="120" text-anchor="middle" fill="#ff8888" font-size="11" font-family="sans-serif">🔴 工作原理</text>
+  <text x="172" y="142" text-anchor="middle" fill="#aa6a6a" font-size="9" font-family="monospace">检测热源移动 → 温差触发信号</text>
+
+  <rect x="40" y="170" width="265" height="50" rx="6" fill="#3a1a25" stroke="#ff5555" stroke-width="0.5"/>
+  <text x="172" y="190" text-anchor="middle" fill="#ff8888" font-size="11" font-family="sans-serif">⚠ 致命缺陷</text>
+  <text x="172" y="210" text-anchor="middle" fill="#aa6a6a" font-size="9" font-family="monospace">人静止不动 → 15秒后灯自动熄灭</text>
+
+  <rect x="40" y="230" width="265" height="65" rx="6" fill="#3a1a25" stroke="#ff5555" stroke-width="0.5"/>
+  <text x="172" y="250" text-anchor="middle" fill="#ff8888" font-size="11" font-family="sans-serif">📊 性能参数</text>
+  <text x="60" y="268" fill="#aa6a6a" font-size="9" font-family="monospace">探测距离：5-8米</text>
+  <text x="60" y="284" fill="#aa6a6a" font-size="9" font-family="monospace">最小检测动作：大幅移动</text>
+
+  <rect x="40" y="305" width="265" height="30" rx="6" fill="#3a1a25" stroke="#ff5555" stroke-width="0.5"/>
+  <text x="172" y="325" text-anchor="middle" fill="#ff5555" font-size="10" font-family="monospace">💰 价格：10-30元</text>
+
+  <!-- Right: mmWave -->
+  <rect x="355" y="55" width="305" height="330" rx="8" fill="#152a20" stroke="#00d4aa" stroke-width="1" opacity="0.8"/>
+  <text x="507" y="82" text-anchor="middle" fill="#00d4aa" font-size="14" font-weight="bold" font-family="sans-serif" filter="url(#glow)">毫米波雷达 (60GHz)</text>
+
+  <rect x="375" y="100" width="265" height="60" rx="6" fill="#1a3525" stroke="#00d4aa" stroke-width="0.5"/>
+  <text x="507" y="120" text-anchor="middle" fill="#44ddaa" font-size="11" font-family="sans-serif">🟢 工作原理</text>
+  <text x="507" y="142" text-anchor="middle" fill="#5aaa7a" font-size="9" font-family="monospace">发射电磁波→接收反射→分析微动</text>
+
+  <rect x="375" y="170" width="265" height="50" rx="6" fill="#1a3525" stroke="#00d4aa" stroke-width="0.5"/>
+  <text x="507" y="190" text-anchor="middle" fill="#44ddaa" font-size="11" font-family="sans-serif">✅ 核心优势</text>
+  <text x="507" y="210" text-anchor="middle" fill="#5aaa7a" font-size="9" font-family="monospace">检测呼吸微动 → 静止也能感知存在</text>
+
+  <rect x="375" y="230" width="265" height="65" rx="6" fill="#1a3525" stroke="#00d4aa" stroke-width="0.5"/>
+  <text x="507" y="250" text-anchor="middle" fill="#44ddaa" font-size="11" font-family="sans-serif">📊 性能参数</text>
+  <text x="395" y="268" fill="#5aaa7a" font-size="9" font-family="monospace">探测距离：6-10米（可穿透玻璃/木板）</text>
+  <text x="395" y="284" fill="#5aaa7a" font-size="9" font-family="monospace">最小检测动作：0.1mm呼吸起伏</text>
+
+  <rect x="375" y="305" width="265" height="30" rx="6" fill="#1a3525" stroke="#00d4aa" stroke-width="0.5"/>
+  <text x="507" y="325" text-anchor="middle" fill="#00d4aa" font-size="10" font-family="monospace">💰 价格：80-150元（2026年）</text>
+
+  <!-- Bottom verdict -->
+  <rect x="80" y="365" width="520" height="28" rx="6" fill="#0d2840" stroke="#00d4aa" stroke-width="1"/>
+  <text x="340" y="384" text-anchor="middle" fill="#00d4aa" font-size="11" font-family="sans-serif" filter="url(#glow)">🏆 2026年选购建议：必须选毫米波雷达，PIR红外已淘汰 | 多花100元，体验天差地别</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="Microsoft YaHei, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg2)"/>
+  <!-- Grid background -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="100" x2="680" y2="100"/>
+    <line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="170" y1="0" x2="170" y2="400"/>
+    <line x1="340" y1="0" x2="340" y2="400"/>
+    <line x1="510" y1="0" x2="510" y2="400"/>
+  </g>
+  <!-- Title -->
+  <text x="340" y="30" text-anchor="middle" fill="#e8eef5" font-size="16" font-weight="bold">夏季驱动电源故障三大杀手</text>
+  <!-- Killer 1: High Temperature -->
+  <g filter="url(#glow2)">
+    <rect x="40" y="60" width="180" height="290" fill="#162238" stroke="#ff6b6b" stroke-width="2" rx="10"/>
+    <circle cx="130" cy="110" r="30" fill="#ff6b6b" opacity="0.2"/>
+    <text x="130" y="118" text-anchor="middle" fill="#ff6b6b" font-size="28" font-weight="bold">1</text>
+    <text x="130" y="165" text-anchor="middle" fill="#ff6b6b" font-size="15" font-weight="bold">高温</text>
+    <text x="130" y="190" text-anchor="middle" fill="#ffa94d" font-size="12">吊顶内55-65&#176;C</text>
+    <line x1="60" y1="205" x2="200" y2="205" stroke="#1a3050" stroke-width="1"/>
+    <text x="130" y="230" text-anchor="middle" fill="#8aa5c8" font-size="10">电容寿命直接腰斩</text>
+    <text x="55" y="255" fill="#5a7a9e" font-size="9">4000hr电容在</text>
+    <text x="55" y="270" fill="#5a7a9e" font-size="9">65&#176;C环境实际寿命</text>
+    <text x="55" y="285" fill="#ff6b6b" font-size="11" font-weight="bold">仅剩6个月~1年</text>
+    <text x="55" y="310" fill="#5a7a9e" font-size="9">保温棉覆盖后内部</text>
+    <text x="55" y="325" fill="#ff6b6b" font-size="11" font-weight="bold">可达80&#176;C以上</text>
+  </g>
+  <!-- Killer 2: High Humidity -->
+  <g filter="url(#glow2)">
+    <rect x="250" y="60" width="180" height="290" fill="#162238" stroke="#4dabf7" stroke-width="2" rx="10"/>
+    <circle cx="340" cy="110" r="30" fill="#4dabf7" opacity="0.2"/>
+    <text x="340" y="118" text-anchor="middle" fill="#4dabf7" font-size="28" font-weight="bold">2</text>
+    <text x="340" y="165" text-anchor="middle" fill="#4dabf7" font-size="15" font-weight="bold">高湿</text>
+    <text x="340" y="190" text-anchor="middle" fill="#69db7c" font-size="12">湿度75-95%</text>
+    <line x1="270" y1="205" x2="410" y2="205" stroke="#1a3050" stroke-width="1"/>
+    <text x="340" y="230" text-anchor="middle" fill="#8aa5c8" font-size="10">PCB慢性中毒</text>
+    <text x="265" y="255" fill="#ffd43b" font-size="9">第1周: 微弱频闪</text>
+    <text x="265" y="270" fill="#ffa94d" font-size="9">第1月: Zigbee掉线</text>
+    <text x="265" y="285" fill="#ff6b6b" font-size="9">第3月: 永久损坏</text>
+    <text x="265" y="310" fill="#5a7a9e" font-size="9">无三防漆PCB</text>
+    <text x="265" y="325" fill="#4dabf7" font-size="11" font-weight="bold">焊点腐蚀不可逆</text>
+  </g>
+  <!-- Killer 3: Voltage Fluctuation -->
+  <g filter="url(#glow2)">
+    <rect x="460" y="60" width="180" height="290" fill="#162238" stroke="#ffd43b" stroke-width="2" rx="10"/>
+    <circle cx="550" cy="110" r="30" fill="#ffd43b" opacity="0.2"/>
+    <text x="550" y="118" text-anchor="middle" fill="#ffd43b" font-size="28" font-weight="bold">3</text>
+    <text x="550" y="165" text-anchor="middle" fill="#ffd43b" font-size="15" font-weight="bold">电压波动</text>
+    <text x="550" y="190" text-anchor="middle" fill="#ffa94d" font-size="12">晚间200-210V</text>
+    <line x1="480" y1="205" x2="620" y2="205" stroke="#1a3050" stroke-width="1"/>
+    <text x="550" y="230" text-anchor="middle" fill="#8aa5c8" font-size="10">劣质驱动跳保护</text>
+    <text x="475" y="255" fill="#5a7a9e" font-size="9">7-11PM用电高峰</text>
+    <text x="475" y="270" fill="#5a7a9e" font-size="9">220V跌至200V</text>
+    <text x="475" y="285" fill="#ff6b6b" font-size="11" font-weight="bold">欠压保护触发闪烁</text>
+    <text x="475" y="310" fill="#5a7a9e" font-size="9">宽压驱动(90-265V)</text>
+    <text x="475" y="325" fill="#69db7c" font-size="11" font-weight="bold">不受影响</text>
+  </g>
+  <!-- Bottom note -->
+  <text x="340" y="380" text-anchor="middle" fill="#5a7a9e" font-size="10">6-9月LED故障率是冬季3倍+ | 高温+高湿+电压波动三重暴击</text>
+</svg>

@@ -1,5 +1,36 @@
 # Automation Memory
 
+## 2026-07-16: 节律照明——为什么你家的智能灯该学会"看时间"了
+- 选题: 多源搜索确认"节律照明/人因照明/Human-Centric Lighting"是2026年7月最热健康照明趋势（新国标强制纳入健康指标、全光谱普及、DALI-2 DT8大规模商用）
+- 文章: posts/2026-07-16-human-centric-lighting-rhythm.md (~1500字) + 3 SVG(节律曲线/双通道驱动/应用场景) + AI封面(去水印)
+- 英文版: posts/devto-2026-07-16-human-centric-lighting-rhythm.md
+- 网站: ✅ node build.js 93篇 + sitemap.xml(97 URLs)
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/human-centric-lighting-why-your-smart-lights-need-to-tell-time-361m (ID: 4154222)
+- LinkedIn: ⚠️ CDP Chrome未运行（127.0.0.1:9222 不通），跳过
+- 今日头条微头条: ✅ (action: published, 口语化200字内)
+- 踩坑: 无重大踩坑，流程顺畅。ImageGen封面图直接生成到标准命名路径。
+
+## 2026-07-14: 第三代半导体杀入LED驱动电源：SiC和GaN到底差别在哪？
+- 选题: 多源搜索确认"SiC/GaN进入LED驱动电源"是2026年7月最热技术话题（行业称"SiC进入LED电源的元年"；莱福德/卓闻/麦格米特等已量产）
+- 文章: posts/2026-07-14-sic-gan-led-driver-revolution.md (~1500字) + 3 SVG(对比/场景/效率) + AI封面(去水印)
+- 英文版: posts/devto-2026-07-14-sic-gan-led-driver-revolution.md
+- 网站: ✅ node build.js 86篇 + sitemap.xml(90 URLs)
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/sic-vs-gan-why-the-led-driver-revolution-matters-for-your-next-light-fixture-294e (ID: 4137991)
+- LinkedIn: ⚠️ CDP Chrome未运行（127.0.0.1:9222 不通），跳过
+- 今日头条微头条: ✅ (action: published, 200字内口语化)
+- 踩坑: Dev.to API创建默认是draft→需用PUT /api/articles/{id}再设published:true才拿到正式slug；AI生成图SiC芯片被错写为"SiCK"用表格强化标准写法；水印大区域覆盖法彻底去除
+
+## 2026-07-13: LED驱动电源发热与寿命——智能灯一年变暗的真相
+- 选题: 多源搜索确认"LED驱动电源散热/寿命/光衰"是2026年7月热门痛点（行业报告显示智能灯集成传感器后温升8-12°C、光衰从8%升至12%）
+- 文章: posts/2026-07-13-led-driver-heat-lifespan.md (~1300字) + 3 SVG + AI封面(去水印)
+- 英文版: posts/devto-2026-07-13-led-driver-heat-lifespan.md
+- 网站: ✅ node build.js 83篇 + sitemap.xml
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/why-your-smart-lights-get-dim-before-their-first-birthday-the-heat-vs-driver-lifespan-story-ob3
+- LinkedIn: ⚠️ CDP Chrome未运行（127.0.0.1:9222 不通），跳过
+- 今日头条微头条: ✅
+- 踩坑: PowerShell执行策略阻止npx→改用Git Bash成功；AI生成图自带右下角水印→用PIL从上方干净区域取样覆盖后去除
+
+
 ## 2026-07-01: 智能灯待机耗电实测——驱动电源的"偷电"设计
 - 选题: 多平台搜索确认"智能灯待机耗电/电费账单"是2026年6月底-7月初热门话题（今日头条/小红书热议）
 - 文章: posts/2026-07-01-smart-light-standby-power-truth.md (~1300字) + 3 SVG + AI封面(去水印)

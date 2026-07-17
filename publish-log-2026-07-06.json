@@ -1,0 +1,26 @@
+[
+  {
+    "time": "2026-07-06T12:05:07.835690",
+    "platform": "LinkedIn",
+    "status": "skipped",
+    "detail": "CDP Chrome not running at 127.0.0.1:9222 (URLError). Skipping LinkedIn."
+  },
+  {
+    "time": "2026-07-06T12:05:09.282843",
+    "platform": "Dev.to",
+    "status": "success",
+    "detail": "Published at https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/gb-30255-2026-how-chinas-new-energy-standard-reshapes-smart-lighting-and-led-drivers-g0k"
+  },
+  {
+    "time": "2026-07-06T12:05:09.412261",
+    "platform": "Toutiao",
+    "status": "failed",
+    "detail": "exit 1: C:\\Users\\yu\\.workbuddy\\binaries\\node\\workspace\\node_modules\\.bin\\toutiao-ops:2\nbasedir=$(dirname \"$(echo \"$0\" | sed -e 's,\\\\,/,g')\")\n          ^^^^^^^\n\nSyntaxError: missing ) after argument list\n    at wrapSafe (node:internal/modules/cjs/loader:1637:18)\n    at Module._compile (node:internal/modules/cjs/loader:1679:20)\n    at Object..js (node:internal/modules/cjs/loader:1838:10)\n    at Module.load (node:internal/modules/cjs/loader:1441:32)\n    at Function._load (node:internal/modules/cjs/loader:1 "
+  },
+  {
+    "time": "2026-07-06T12:06:36.190679",
+    "platform": "Toutiao",
+    "status": "success",
+    "detail": "Published via npx toutiao-ops. URL: https://mp.toutiao.com/profile_v4/weitoutiao"
+  }
+]
