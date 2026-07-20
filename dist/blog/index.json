@@ -2,7 +2,61 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-17",
+    "date": "2026-07-20",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "人静灯不灭——毫米波雷达如何终结智能照明最大尴尬",
+    "slug": "mmwave-radar-presence-detection-lighting",
+    "date": "2026-07-20",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-mmwave-radar-lighting-cover.png",
+    "excerpt": "坐在沙发上不动灯就灭了？蹲个厕所灯也灭了？传统PIR红外传感器的误关灯问题终于有了解法。毫米波雷达通过检测呼吸微动，让人静灯不灭。"
+  },
+  {
+    "title": "Zigbee vs Wi-Fi 智能灯终极对决：为什么专业全屋照明都抛弃了Wi-Fi？",
+    "slug": "zigbee-vs-wifi-smart-light-protocol-2026-q3",
+    "date": "2026-07-20",
+    "category": "智能照明",
+    "description": "2026年智能灯全屋方案核心选型：Zigbee vs Wi-Fi 智能灯深度对比，从路由器瓶颈、Mesh组网、3C认证驱动电源等角度分析为什么专业全屋照明都抛弃了Wi-Fi灯泡。",
+    "cover": "images/blog-2026-07-20-zigbee-vs-wifi-cover.png",
+    "excerpt": "同一个100平米的房子，装Wi-Fi智能灯掉线到怀疑人生，换成Zigbee后稳如老狗。背后真相是路由器的物理瓶颈。本文用3个真实家庭案例讲清楚：什么时候必须选Zigbee。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-20",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-20",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-07-20",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-20",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -27,44 +81,8 @@
     "excerpt": "80%的LED灯具故障不是灯珠坏了，而是驱动电源先挂。本文从电解电容寿命原理、散热设计、夏季高发故障三个维度，讲透驱动电源为什么总是先坏，以及怎么选才能用满5年。"
   },
   {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-07-17",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-17",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-07-17",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
     "title": "Why AI Smart Lights Often 'Connect but Don't Work' — The Hidden Brain Is the LED Driver",
     "slug": "why-ai-smart-lights-often-connect-but-dont-work-the-hidden-brain-is-the-led-driv",
-    "date": "2026-07-17",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
     "date": "2026-07-17",
     "category": "技术文章",
     "description": "耐利普科技技术文章",

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Microsoft YaHei, sans-serif">
+  <defs>
+    <linearGradient id="bg-cmp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <filter id="glow-cmp">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid-cmp" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="520" fill="url(#bg-cmp)"/>
+  <rect width="800" height="520" fill="url(#grid-cmp)"/>
+
+  <text x="400" y="40" text-anchor="middle" fill="#7ec27e" font-size="22" font-weight="bold" filter="url(#glow-cmp)">Zigbee vs Wi-Fi 关键参数对比</text>
+  <text x="400" y="65" text-anchor="middle" fill="#8aa8c0" font-size="13">家用全屋智能灯场景实测数据</text>
+
+  <!-- Comparison bars -->
+  <!-- Row 1: Device Capacity -->
+  <text x="40" y="115" fill="#8aa8c0" font-size="13" font-weight="bold">设备容量</text>
+  <text x="40" y="135" fill="#8aa8c0" font-size="10">同时在线数量</text>
+
+  <!-- Wi-Fi bar -->
+  <rect x="180" y="105" width="60" height="22" fill="#ff6b6b" opacity="0.85" rx="3"/>
+  <text x="210" y="121" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">≤5</text>
+  <text x="250" y="121" fill="#8aa8c0" font-size="11">个（家用路由器极限）</text>
+
+  <!-- Zigbee bar -->
+  <rect x="180" y="135" width="540" height="22" fill="#7ec27e" opacity="0.85" rx="3"/>
+  <text x="450" y="151" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">200+ 个（单 Mesh 网络）</text>
+
+  <!-- Row 2: Response latency -->
+  <text x="40" y="190" fill="#8aa8c0" font-size="13" font-weight="bold">响应延迟</text>
+  <text x="40" y="210" fill="#8aa8c0" font-size="10">开关指令响应</text>
+
+  <rect x="180" y="180" width="240" height="22" fill="#ff6b6b" opacity="0.85" rx="3"/>
+  <text x="300" y="196" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">2000-3000 ms</text>
+
+  <rect x="180" y="210" width="36" height="22" fill="#7ec27e" opacity="0.85" rx="3"/>
+  <text x="220" y="226" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">&lt;200 ms</text>
+
+  <!-- Row 3: Power consumption -->
+  <text x="40" y="265" fill="#8aa8c0" font-size="13" font-weight="bold">单设备功耗</text>
+  <text x="40" y="285" fill="#8aa8c0" font-size="10">灯泡常在线</text>
+
+  <rect x="180" y="255" width="360" height="22" fill="#ff6b6b" opacity="0.85" rx="3"/>
+  <text x="360" y="271" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">0.5-1W（持续耗电）</text>
+
+  <rect x="180" y="285" width="40" height="22" fill="#7ec27e" opacity="0.85" rx="3"/>
+  <text x="200" y="301" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">0.05W</text>
+  <text x="225" y="301" fill="#8aa8c0" font-size="11">（超低功耗休眠）</text>
+
+  <!-- Row 4: Network topology -->
+  <text x="40" y="340" fill="#8aa8c0" font-size="13" font-weight="bold">网络结构</text>
+  <text x="40" y="360" fill="#8aa8c0" font-size="10">自愈能力</text>
+
+  <text x="180" y="361" fill="#ff6b6b" font-size="12">❌ 星型（单点故障）</text>
+  <text x="180" y="386" fill="#7ec27e" font-size="12">✅ Mesh（自动绕路）</text>
+
+  <!-- Row 5: Penetration -->
+  <text x="40" y="425" fill="#8aa8c0" font-size="13" font-weight="bold">穿墙能力</text>
+  <text x="40" y="445" fill="#8aa8c0" font-size="10">复式/大户型</text>
+
+  <text x="180" y="441" fill="#ff6b6b" font-size="12">❌ 单路由器覆盖差</text>
+  <text x="180" y="466" fill="#7ec27e" font-size="12">✅ 信号多跳穿透承重墙</text>
+
+  <!-- Legend -->
+  <g transform="translate(40,485)">
+    <rect x="0" y="0" width="14" height="14" fill="#ff6b6b" opacity="0.85" rx="2"/>
+    <text x="22" y="11" fill="#ff6b6b" font-size="12">Wi-Fi 智能灯</text>
+    <rect x="150" y="0" width="14" height="14" fill="#7ec27e" opacity="0.85" rx="2"/>
+    <text x="172" y="11" fill="#7ec27e" font-size="12">Zigbee 智能灯</text>
+    <text x="320" y="11" fill="#8aa8c0" font-size="11">数据来源：涂鸦智能实验室 2026 实测</text>
+  </g>
+</svg>
