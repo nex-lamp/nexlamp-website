@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Microsoft YaHei, sans-serif">
+  <defs>
+    <linearGradient id="bg-mesh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <filter id="glow-mesh">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid-mesh" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="520" fill="url(#bg-mesh)"/>
+  <rect width="800" height="520" fill="url(#grid-mesh)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#7ec27e" font-size="22" font-weight="bold" filter="url(#glow-mesh)">网络拓扑对比：Wi-Fi 星型 vs Zigbee Mesh</text>
+  <text x="400" y="65" text-anchor="middle" fill="#8aa8c0" font-size="13">单点故障 vs 自愈网络</text>
+
+  <!-- Divider -->
+  <line x1="400" y1="90" x2="400" y2="490" stroke="#3a5a7c" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Left side: Wi-Fi Star -->
+  <text x="200" y="120" text-anchor="middle" fill="#ff6b6b" font-size="18" font-weight="bold">❌ Wi-Fi 星型拓扑</text>
+  <text x="200" y="145" text-anchor="middle" fill="#8aa8c0" font-size="12">所有设备挂在单一路由器</text>
+
+  <!-- Router (center) -->
+  <g transform="translate(200,250)">
+    <circle r="38" fill="#1a2a3a" stroke="#ff6b6b" stroke-width="2.5" filter="url(#glow-mesh)"/>
+    <text x="0" y="-2" text-anchor="middle" fill="#ff6b6b" font-size="13" font-weight="bold">路由器</text>
+    <text x="0" y="14" text-anchor="middle" fill="#8aa8c0" font-size="10">单点瓶颈</text>
+  </g>
+
+  <!-- 8 bulbs around router -->
+  <g fill="#2a4a6c" stroke="#ff6b6b" stroke-width="1.5" opacity="0.85">
+    <circle cx="100" cy="180" r="14"/>
+    <circle cx="200" cy="160" r="14"/>
+    <circle cx="300" cy="180" r="14"/>
+    <circle cx="120" cy="250" r="14"/>
+    <circle cx="280" cy="250" r="14"/>
+    <circle cx="100" cy="320" r="14"/>
+    <circle cx="200" cy="340" r="14"/>
+    <circle cx="300" cy="320" r="14"/>
+  </g>
+  <g fill="#ffb3b3" font-size="10" text-anchor="middle">
+    <text x="100" y="184">灯</text><text x="200" y="164">灯</text><text x="300" y="184">灯</text>
+    <text x="120" y="254">灯</text><text x="280" y="254">灯</text>
+    <text x="100" y="324">灯</text><text x="200" y="344">灯</text><text x="300" y="324">灯</text>
+  </g>
+
+  <!-- Connection lines (all to router) -->
+  <g stroke="#ff6b6b" stroke-width="1" opacity="0.4" stroke-dasharray="3,2">
+    <line x1="200" y1="250" x2="100" y2="180"/>
+    <line x1="200" y1="250" x2="200" y2="160"/>
+    <line x1="200" y1="250" x2="300" y2="180"/>
+    <line x1="200" y1="250" x2="120" y2="250"/>
+    <line x1="200" y1="250" x2="280" y2="250"/>
+    <line x1="200" y1="250" x2="100" y2="320"/>
+    <line x1="200" y1="250" x2="200" y2="340"/>
+    <line x1="200" y1="250" x2="300" y2="320"/>
+  </g>
+
+  <text x="200" y="400" text-anchor="middle" fill="#ff6b6b" font-size="12" font-weight="bold">⚠ 路由器一挂 = 全屋掉线</text>
+  <text x="200" y="425" text-anchor="middle" fill="#8aa8c0" font-size="11">2.4GHz 频段拥堵 · 设备数量 &gt; 5 个开始掉线</text>
+  <text x="200" y="450" text-anchor="middle" fill="#8aa8c0" font-size="11">调光指令延迟 2-3 秒 · 一家人同时连 Wi-Fi 就崩</text>
+
+  <rect x="60" y="475" width="280" height="30" fill="#1a2a3a" stroke="#ff6b6b" stroke-width="1" rx="3"/>
+  <text x="200" y="495" text-anchor="middle" fill="#ff6b6b" font-size="12">家用路由器极限：5 个 Wi-Fi 智能灯</text>
+
+  <!-- Right side: Zigbee Mesh -->
+  <text x="600" y="120" text-anchor="middle" fill="#7ec27e" font-size="18" font-weight="bold">✅ Zigbee Mesh 自组网</text>
+  <text x="600" y="145" text-anchor="middle" fill="#8aa8c0" font-size="12">每个节点都是中继器</text>
+
+  <!-- Gateway (center) -->
+  <g transform="translate(600,250)">
+    <circle r="38" fill="#1a2a3a" stroke="#7ec27e" stroke-width="2.5" filter="url(#glow-mesh)"/>
+    <text x="0" y="-2" text-anchor="middle" fill="#7ec27e" font-size="12" font-weight="bold">Zigbee</text>
+    <text x="0" y="14" text-anchor="middle" fill="#7ec27e" font-size="12" font-weight="bold">网关</text>
+  </g>
+
+  <!-- 8 bulbs around -->
+  <g fill="#2a4a6c" stroke="#7ec27e" stroke-width="1.5">
+    <circle cx="500" cy="180" r="14"/>
+    <circle cx="600" cy="160" r="14"/>
+    <circle cx="700" cy="180" r="14"/>
+    <circle cx="520" cy="250" r="14"/>
+    <circle cx="680" cy="250" r="14"/>
+    <circle cx="500" cy="320" r="14"/>
+    <circle cx="600" cy="340" r="14"/>
+    <circle cx="700" cy="320" r="14"/>
+  </g>
+  <g fill="#a8e0a8" font-size="10" text-anchor="middle">
+    <text x="500" y="184">灯</text><text x="600" y="164">灯</text><text x="700" y="184">灯</text>
+    <text x="520" y="254">灯</text><text x="680" y="254">灯</text>
+    <text x="500" y="324">灯</text><text x="600" y="344">灯</text><text x="700" y="324">灯</text>
+  </g>
+
+  <!-- Mesh connections (peer-to-peer) -->
+  <g stroke="#7ec27e" stroke-width="1.2" opacity="0.6">
+    <line x1="600" y1="250" x2="500" y2="180"/>
+    <line x1="600" y1="250" x2="600" y2="160"/>
+    <line x1="600" y1="250" x2="700" y2="180"/>
+    <line x1="600" y1="250" x2="520" y2="250"/>
+    <line x1="600" y1="250" x2="680" y2="250"/>
+    <line x1="600" y1="250" x2="500" y2="320"/>
+    <line x1="600" y1="250" x2="600" y2="340"/>
+    <line x1="600" y1="250" x2="700" y2="320"/>
+  </g>
+  <!-- Inter-bulb mesh links -->
+  <g stroke="#7ec27e" stroke-width="0.8" opacity="0.4" stroke-dasharray="2,2">
+    <line x1="500" y1="180" x2="600" y2="160"/>
+    <line x1="600" y1="160" x2="700" y2="180"/>
+    <line x1="500" y1="180" x2="520" y2="250"/>
+    <line x1="700" y1="180" x2="680" y2="250"/>
+    <line x1="520" y1="250" x2="500" y2="320"/>
+    <line x1="680" y1="250" x2="700" y2="320"/>
+    <line x1="500" y1="320" x2="600" y2="340"/>
+    <line x1="600" y1="340" x2="700" y2="320"/>
+  </g>
+
+  <text x="600" y="400" text-anchor="middle" fill="#7ec27e" font-size="12" font-weight="bold">✓ 单点故障 → 网络自动绕路</text>
+  <text x="600" y="425" text-anchor="middle" fill="#8aa8c0" font-size="11">节点越多网络越强 · 信号可绕道穿透承重墙</text>
+  <text x="600" y="450" text-anchor="middle" fill="#8aa8c0" font-size="11">调光延迟 &lt; 200ms · 支持 200+ 设备稳定运行</text>
+
+  <rect x="460" y="475" width="280" height="30" fill="#1a2a3a" stroke="#7ec27e" stroke-width="1" rx="3"/>
+  <text x="600" y="495" text-anchor="middle" fill="#7ec27e" font-size="12">Mesh 网络：100+ 设备稳如老狗</text>
+</svg>
