@@ -27,7 +27,49 @@
 
   <url>
     <loc>https://www.nexlamp.com/dist/blog/未命名文章.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexlamp.com/dist/blog/mmwave-radar-presence-detection-lighting.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexlamp.com/dist/blog/zigbee-vs-wifi-smart-light-protocol-2026-q3.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexlamp.com/dist/blog/why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexlamp.com/dist/blog/未命名文章.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexlamp.com/dist/blog/human-centric-lighting-why-your-smart-lights-need-to-tell-time.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexlamp.com/dist/blog/未命名文章.html</loc>
+    <lastmod>2026-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -47,35 +89,7 @@
   </url>
 
   <url>
-    <loc>https://www.nexlamp.com/dist/blog/why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.nexlamp.com/dist/blog/未命名文章.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.nexlamp.com/dist/blog/human-centric-lighting-why-your-smart-lights-need-to-tell-time.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://www.nexlamp.com/dist/blog/why-ai-smart-lights-often-connect-but-dont-work-the-hidden-brain-is-the-led-driv.html</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.nexlamp.com/dist/blog/未命名文章.html</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
