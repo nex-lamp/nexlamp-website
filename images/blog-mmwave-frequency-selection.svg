@@ -1,0 +1,175 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f3a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad2)"/>
+  
+  <!-- Grid -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="125" x2="800" y2="125"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#e0e8f0" font-size="20" font-family="monospace" font-weight="bold">24GHz vs 60GHz: Which Frequency for Your Space?</text>
+
+  <!-- 24GHz Section -->
+  <g transform="translate(60, 70)">
+    <!-- Header -->
+    <rect x="0" y="0" width="300" height="35" fill="#1a3a5a" rx="4" stroke="#00aa88" stroke-width="1"/>
+    <text x="150" y="23" text-anchor="middle" fill="#00d4aa" font-size="16" font-family="monospace" font-weight="bold">24GHz</text>
+    
+    <!-- Specs -->
+    <g transform="translate(10, 55)">
+      <text x="0" y="0" fill="#8ab" font-size="12" font-family="monospace">Detection Range:</text>
+      <text x="280" y="0" text-anchor="end" fill="#00d4aa" font-size="12" font-family="monospace">8-12m (motion)</text>
+      <text x="0" y="22" fill="#8ab" font-size="12" font-family="monospace">Presence Range:</text>
+      <text x="280" y="22" text-anchor="end" fill="#00d4aa" font-size="12" font-family="monospace">6-9m (still)</text>
+      <text x="0" y="44" fill="#8ab" font-size="12" font-family="monospace">Cost:</text>
+      <text x="280" y="44" text-anchor="end" fill="#4a9" font-size="12" font-family="monospace">~5 RMB (module)</text>
+      <text x="0" y="66" fill="#8ab" font-size="12" font-family="monospace">Maturity:</text>
+      <text x="280" y="66" text-anchor="end" fill="#4a9" font-size="12" font-family="monospace">High</text>
+    </g>
+
+    <!-- Scene icons -->
+    <g transform="translate(10, 150)">
+      <text x="0" y="0" fill="#00d4aa" font-size="11" font-family="monospace" font-weight="bold">BEST FOR:</text>
+      
+      <!-- Corridor icon -->
+      <g transform="translate(0, 15)">
+        <rect x="0" y="0" width="60" height="40" fill="none" stroke="#00d4aa" stroke-width="1" rx="2"/>
+        <line x1="30" y1="0" x2="30" y2="40" stroke="#00d4aa" stroke-width="0.5" stroke-dasharray="3,3"/>
+        <text x="30" y="55" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">Corridor</text>
+      </g>
+      
+      <!-- Bathroom icon -->
+      <g transform="translate(80, 15)">
+        <rect x="0" y="0" width="60" height="40" fill="none" stroke="#00d4aa" stroke-width="1" rx="2"/>
+        <circle cx="30" cy="20" r="8" fill="none" stroke="#00d4aa" stroke-width="0.5"/>
+        <text x="30" y="55" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">Bathroom</text>
+      </g>
+
+      <!-- Parking icon -->
+      <g transform="translate(160, 15)">
+        <rect x="0" y="0" width="60" height="40" fill="none" stroke="#00d4aa" stroke-width="1" rx="2"/>
+        <text x="30" y="25" text-anchor="middle" fill="#00d4aa" font-size="14" font-family="monospace">P</text>
+        <text x="30" y="55" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">Parking</text>
+      </g>
+
+      <!-- Living room icon -->
+      <g transform="translate(240, 15)">
+        <rect x="0" y="0" width="50" height="40" fill="none" stroke="#00d4aa" stroke-width="1" rx="2"/>
+        <rect x="10" y="15" width="30" height="20" fill="none" stroke="#00d4aa" stroke-width="0.5" rx="1"/>
+        <text x="25" y="55" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">Living Room</text>
+      </g>
+    </g>
+
+    <!-- Pros -->
+    <g transform="translate(10, 240)">
+      <text x="0" y="0" fill="#4a9" font-size="11" font-family="monospace">+ Mature, cheap, wide coverage</text>
+      <text x="0" y="18" fill="#4a9" font-size="11" font-family="monospace">+ Good for high-traffic areas</text>
+      <text x="0" y="38" fill="#ff9966" font-size="11" font-family="monospace">- Less precise micro-motion</text>
+      <text x="0" y="56" fill="#ff9966" font-size="11" font-family="monospace">- Not ideal for bedrooms</text>
+    </g>
+  </g>
+
+  <!-- 60GHz Section -->
+  <g transform="translate(440, 70)">
+    <!-- Header -->
+    <rect x="0" y="0" width="300" height="35" fill="#3a1a5a" rx="4" stroke="#aa66ff" stroke-width="1"/>
+    <text x="150" y="23" text-anchor="middle" fill="#cc99ff" font-size="16" font-family="monospace" font-weight="bold">60GHz</text>
+    
+    <!-- Specs -->
+    <g transform="translate(10, 55)">
+      <text x="0" y="0" fill="#8ab" font-size="12" font-family="monospace">Detection Range:</text>
+      <text x="280" y="0" text-anchor="end" fill="#cc99ff" font-size="12" font-family="monospace">6-8m (motion)</text>
+      <text x="0" y="22" fill="#8ab" font-size="12" font-family="monospace">Resolution:</text>
+      <text x="280" y="22" text-anchor="end" fill="#cc99ff" font-size="12" font-family="monospace">~cm level</text>
+      <text x="0" y="44" fill="#8ab" font-size="12" font-family="monospace">Cost:</text>
+      <text x="280" y="44" text-anchor="end" fill="#ffcc00" font-size="12" font-family="monospace">~200 RMB (product)</text>
+      <text x="0" y="66" fill="#8ab" font-size="12" font-family="monospace">Maturity:</text>
+      <text x="280" y="66" text-anchor="end" fill="#ffcc00" font-size="12" font-family="monospace">Growing fast</text>
+    </g>
+
+    <!-- Scene icons -->
+    <g transform="translate(10, 150)">
+      <text x="0" y="0" fill="#cc99ff" font-size="11" font-family="monospace" font-weight="bold">BEST FOR:</text>
+      
+      <!-- Bedroom icon -->
+      <g transform="translate(0, 15)">
+        <rect x="0" y="0" width="60" height="40" fill="none" stroke="#cc99ff" stroke-width="1" rx="2"/>
+        <rect x="10" y="18" width="40" height="15" fill="none" stroke="#cc99ff" stroke-width="0.5" rx="1"/>
+        <text x="30" y="55" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">Bedroom</text>
+      </g>
+      
+      <!-- Study icon -->
+      <g transform="translate(80, 15)">
+        <rect x="0" y="0" width="60" height="40" fill="none" stroke="#cc99ff" stroke-width="1" rx="2"/>
+        <rect x="15" y="15" width="30" height="20" fill="none" stroke="#cc99ff" stroke-width="0.5" rx="1"/>
+        <text x="30" y="55" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">Study</text>
+      </g>
+
+      <!-- Office icon -->
+      <g transform="translate(160, 15)">
+        <rect x="0" y="0" width="60" height="40" fill="none" stroke="#cc99ff" stroke-width="1" rx="2"/>
+        <rect x="10" y="10" width="15" height="20" fill="none" stroke="#cc99ff" stroke-width="0.5" rx="1"/>
+        <rect x="35" y="10" width="15" height="20" fill="none" stroke="#cc99ff" stroke-width="0.5" rx="1"/>
+        <text x="30" y="55" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">Office</text>
+      </g>
+
+      <!-- Elderly care icon -->
+      <g transform="translate(240, 15)">
+        <rect x="0" y="0" width="50" height="40" fill="none" stroke="#cc99ff" stroke-width="1" rx="2"/>
+        <circle cx="25" cy="20" r="6" fill="none" stroke="#cc99ff" stroke-width="0.5"/>
+        <text x="25" y="55" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">Elder Care</text>
+      </g>
+    </g>
+
+    <!-- Pros -->
+    <g transform="translate(10, 240)">
+      <text x="0" y="0" fill="#cc99ff" font-size="11" font-family="monospace">+ Detects breathing (0.1mm)</text>
+      <text x="0" y="18" fill="#cc99ff" font-size="11" font-family="monospace">+ Cm-level resolution</text>
+      <text x="0" y="38" fill="#ff9966" font-size="11" font-family="monospace">- Shorter range</text>
+      <text x="0" y="56" fill="#ff9966" font-size="11" font-family="monospace">- Higher cost</text>
+    </g>
+  </g>
+
+  <!-- Decision flow at bottom -->
+  <g transform="translate(150, 370)">
+    <rect x="0" y="0" width="200" height="30" fill="#1a2a4a" stroke="#00d4aa" stroke-width="1" rx="4"/>
+    <text x="100" y="20" text-anchor="middle" fill="#00d4aa" font-size="11" font-family="monospace">People always moving?</text>
+    
+    <line x1="200" y1="15" x2="260" y2="15" stroke="#5a7090" stroke-width="1"/>
+    <text x="215" y="10" fill="#4a9" font-size="10" font-family="monospace">YES</text>
+    <text x="215" y="30" fill="#ff9966" font-size="10" font-family="monospace">NO</text>
+    
+    <line x1="260" y1="5" x2="320" y2="5" stroke="#4a9" stroke-width="1"/>
+    <line x1="260" y1="25" x2="320" y2="25" stroke="#ff9966" stroke-width="1"/>
+    
+    <rect x="320" y="-10" width="130" height="20" fill="#0a2a2a" stroke="#00d4aa" stroke-width="1" rx="3"/>
+    <text x="385" y="5" text-anchor="middle" fill="#00d4aa" font-size="11" font-family="monospace">24GHz is enough</text>
+    
+    <rect x="320" y="15" width="130" height="20" fill="#2a0a3a" stroke="#cc99ff" stroke-width="1" rx="3"/>
+    <text x="385" y="30" text-anchor="middle" fill="#cc99ff" font-size="11" font-family="monospace">Go 60GHz</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="465" width="800" height="35" fill="#0d1f3a" opacity="0.8"/>
+  <text x="400" y="487" text-anchor="middle" fill="#5a7090" font-size="11" font-family="monospace">NEXLAMP | Frequency Selection Guide | 2026</text>
+</svg>

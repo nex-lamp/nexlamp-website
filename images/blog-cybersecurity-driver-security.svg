@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <linearGradient id="layerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a3050" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0d1f3a" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="glow2"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg2)"/>
+
+  <!-- Grid -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="125" x2="800" y2="125"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#e0e8f0" font-family="monospace" font-size="16" font-weight="bold">
+    LED DRIVER SECURITY ARCHITECTURE
+  </text>
+  <text x="400" y="55" text-anchor="middle" fill="#5a8ab0" font-family="monospace" font-size="10">
+    // 4-Layer Defense Model for Smart Lighting
+  </text>
+
+  <!-- Layer 1: Firmware Update (top) -->
+  <g transform="translate(50, 80)">
+    <rect width="700" height="80" rx="6" fill="url(#layerGrad)" stroke="#00ff88" stroke-width="1.5"/>
+    <!-- Layer icon -->
+    <circle cx="40" cy="40" r="22" fill="#00ff88" opacity="0.15" filter="url(#glow2)"/>
+    <circle cx="40" cy="40" r="18" fill="#0d1f3a" stroke="#00ff88" stroke-width="1.5"/>
+    <text x="40" y="46" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="16">&#8593;</text>
+    <!-- Content -->
+    <text x="80" y="25" fill="#00ff88" font-family="monospace" font-size="12" font-weight="bold">LAYER 1: SECURE FIRMWARE UPDATE</text>
+    <text x="80" y="42" fill="#a0b8d0" font-family="monospace" font-size="9">- Signed OTA updates (RSA-2048 + SHA-256)</text>
+    <text x="80" y="56" fill="#a0b8d0" font-family="monospace" font-size="9">- Rollback protection &#38; dual-bank boot partition</text>
+    <text x="80" y="70" fill="#6088a0" font-family="monospace" font-size="8">! Cheap drivers: no OTA &#8594; permanent vulnerability exposure</text>
+  </g>
+
+  <!-- Arrow between layers -->
+  <g stroke="#3a6090" stroke-width="1" stroke-dasharray="3,2" fill="none" opacity="0.5">
+    <line x1="400" y1="160" x2="400" y2="175"/>
+  </g>
+
+  <!-- Layer 2: Encryption Module -->
+  <g transform="translate(50, 175)">
+    <rect width="700" height="80" rx="6" fill="url(#layerGrad)" stroke="#ffcc00" stroke-width="1.5"/>
+    <circle cx="40" cy="40" r="22" fill="#ffcc00" opacity="0.15" filter="url(#glow2)"/>
+    <circle cx="40" cy="40" r="18" fill="#0d1f3a" stroke="#ffcc00" stroke-width="1.5"/>
+    <text x="40" y="46" text-anchor="middle" fill="#ffcc00" font-family="monospace" font-size="14">&#128274;</text>
+    <text x="80" y="25" fill="#ffcc00" font-family="monospace" font-size="12" font-weight="bold">LAYER 2: COMMUNICATION ENCRYPTION</text>
+    <text x="80" y="42" fill="#a0b8d0" font-family="monospace" font-size="9">- Zigbee AES-128-CCM &#38; TLS 1.3 for WiFi</text>
+    <text x="80" y="56" fill="#a0b8d0" font-family="monospace" font-size="9">- Random nonce generation &#38; session key rotation</text>
+    <text x="80" y="70" fill="#6088a0" font-family="monospace" font-size="8">! GB 30255-2026 standby &#60;0.3W vs. crypto power cost dilemma</text>
+  </g>
+
+  <g stroke="#3a6090" stroke-width="1" stroke-dasharray="3,2" fill="none" opacity="0.5">
+    <line x1="400" y1="255" x2="400" y2="270"/>
+  </g>
+
+  <!-- Layer 3: Authentication -->
+  <g transform="translate(50, 270)">
+    <rect width="700" height="80" rx="6" fill="url(#layerGrad)" stroke="#ff8800" stroke-width="1.5"/>
+    <circle cx="40" cy="40" r="22" fill="#ff8800" opacity="0.15" filter="url(#glow2)"/>
+    <circle cx="40" cy="40" r="18" fill="#0d1f3a" stroke="#ff8800" stroke-width="1.5"/>
+    <text x="40" y="46" text-anchor="middle" fill="#ff8800" font-family="monospace" font-size="14">&#9881;</text>
+    <text x="80" y="25" fill="#ff8800" font-family="monospace" font-size="12" font-weight="bold">LAYER 3: DEVICE AUTHENTICATION</text>
+    <text x="80" y="42" fill="#a0b8d0" font-family="monospace" font-size="9">- Mutual auth during pairing (SRP with dynamic nonce)</text>
+    <text x="80" y="56" fill="#a0b8d0" font-family="monospace" font-size="9">- Unique device cert &#38; factory default password forced change</text>
+    <text x="80" y="70" fill="#6088a0" font-family="monospace" font-size="8">! CVE-2026-3559: static nonce &#8594; Hue Bridge auth fully bypassed</text>
+  </g>
+
+  <g stroke="#3a6090" stroke-width="1" stroke-dasharray="3,2" fill="none" opacity="0.5">
+    <line x1="400" y1="350" x2="400" y2="365"/>
+  </g>
+
+  <!-- Layer 4: Local Control -->
+  <g transform="translate(50, 365)">
+    <rect width="700" height="80" rx="6" fill="url(#layerGrad)" stroke="#5a9aff" stroke-width="1.5"/>
+    <circle cx="40" cy="40" r="22" fill="#5a9aff" opacity="0.15" filter="url(#glow2)"/>
+    <circle cx="40" cy="40" r="18" fill="#0d1f3a" stroke="#5a9aff" stroke-width="1.5"/>
+    <text x="40" y="46" text-anchor="middle" fill="#5a9aff" font-family="monospace" font-size="14">&#8962;</text>
+    <text x="80" y="25" fill="#5a9aff" font-family="monospace" font-size="12" font-weight="bold">LAYER 4: LOCAL CONTROL FALLBACK</text>
+    <text x="80" y="42" fill="#a0b8d0" font-family="monospace" font-size="9">- Offline operation via local gateway (Home Assistant / Hub)</text>
+    <text x="80" y="56" fill="#a0b8d0" font-family="monospace" font-size="9">- Cloud-independent: no single point of failure</text>
+    <text x="80" y="70" fill="#6088a0" font-family="monospace" font-size="8">! Cloud-only brands: server shutdown = bricked lights (2026 cases)</text>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="400" y="475" text-anchor="middle" fill="#3a5070" font-family="monospace" font-size="8">
+    EACH LAYER MUST BE INDEPENDENTLY VERIFIED | NEXLAMP DRIVER SECURITY FRAMEWORK
+  </text>
+</svg>

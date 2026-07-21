@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" font-family="Microsoft YaHei, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="460" fill="url(#bg2)"/>
+
+  <!-- Grid -->
+  <g stroke="#1a2f4e" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="100" x2="680" y2="100"/>
+    <line x1="0" y1="180" x2="680" y2="180"/>
+    <line x1="0" y1="260" x2="680" y2="260"/>
+    <line x1="0" y1="340" x2="680" y2="340"/>
+    <line x1="120" y1="0" x2="120" y2="420"/>
+    <line x1="240" y1="0" x2="240" y2="420"/>
+    <line x1="360" y1="0" x2="360" y2="420"/>
+    <line x1="480" y1="0" x2="480" y2="420"/>
+    <line x1="600" y1="0" x2="600" y2="420"/>
+  </g>
+
+  <!-- Title -->
+  <text x="340" y="32" text-anchor="middle" fill="#e2e8f0" font-size="18" font-weight="bold">三年总拥有成本对比（50盏灯中型项目）</text>
+  <text x="340" y="52" text-anchor="middle" fill="#64748b" font-size="11">单位：元 · 含设备+网络+平台+维护</text>
+
+  <!-- Chart area -->
+  <!-- Y axis -->
+  <line x1="80" y1="80" x2="80" y2="380" stroke="#334155" stroke-width="1.5"/>
+  <line x1="80" y1="380" x2="640" y2="380" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Y axis labels -->
+  <g fill="#64748b" font-size="10" text-anchor="end">
+    <text x="72" y="384">0</text>
+    <text x="72" y="324">2万</text>
+    <text x="72" y="264">4万</text>
+    <text x="72" y="204">6万</text>
+    <text x="72" y="144">8万</text>
+    <text x="72" y="84">10万</text>
+  </g>
+
+  <!-- Y axis ticks -->
+  <g stroke="#334155" stroke-width="0.5">
+    <line x1="78" y1="320" x2="82" y2="320"/>
+    <line x1="78" y1="260" x2="82" y2="260"/>
+    <line x1="78" y1="200" x2="82" y2="200"/>
+    <line x1="78" y1="140" x2="82" y2="140"/>
+    <line x1="78" y1="80" x2="82" y2="80"/>
+  </g>
+
+  <!-- ===== Traditional bars (red) ===== -->
+  <!-- Year 1 -->
+  <rect x="120" y="110" width="60" height="270" fill="#ff4444" fill-opacity="0.8" rx="2" filter="url(#glow2)"/>
+  <text x="150" y="105" text-anchor="middle" fill="#ff9999" font-size="10" font-weight="bold">¥9000</text>
+  <text x="150" y="395" text-anchor="middle" fill="#94a3b8" font-size="10">第1年</text>
+
+  <!-- Year 2 -->
+  <rect x="190" y="170" width="60" height="210" fill="#ff6644" fill-opacity="0.75" rx="2"/>
+  <text x="220" y="165" text-anchor="middle" fill="#ff9999" font-size="10" font-weight="bold">¥7000</text>
+  <text x="220" y="395" text-anchor="middle" fill="#94a3b8" font-size="10">第2年</text>
+
+  <!-- Year 3 -->
+  <rect x="260" y="200" width="60" height="180" fill="#ff8866" fill-opacity="0.7" rx="2"/>
+  <text x="290" y="195" text-anchor="middle" fill="#ff9999" font-size="10" font-weight="bold">¥6000</text>
+  <text x="290" y="395" text-anchor="middle" fill="#94a3b8" font-size="10">第3年</text>
+
+  <!-- Traditional total -->
+  <line x1="120" y1="100" x2="320" y2="100" stroke="#ff4444" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="220" y="92" text-anchor="middle" fill="#ff6666" font-size="11" font-weight="bold">联网方案合计：¥22,000</text>
+
+  <!-- Divider -->
+  <line x1="370" y1="80" x2="370" y2="380" stroke="#1a2f4e" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- ===== Lightweight bars (green) ===== -->
+  <!-- Year 1 -->
+  <rect x="400" y="140" width="60" height="240" fill="#22c55e" fill-opacity="0.8" rx="2" filter="url(#glow2)"/>
+  <text x="430" y="135" text-anchor="middle" fill="#86efac" font-size="10" font-weight="bold">¥8000</text>
+  <text x="430" y="395" text-anchor="middle" fill="#94a3b8" font-size="10">第1年</text>
+
+  <!-- Year 2 -->
+  <rect x="470" y="280" width="60" height="100" fill="#4ade80" fill-opacity="0.75" rx="2"/>
+  <text x="500" y="275" text-anchor="middle" fill="#86efac" font-size="10" font-weight="bold">¥3300</text>
+  <text x="500" y="395" text-anchor="middle" fill="#94a3b8" font-size="10">第2年</text>
+
+  <!-- Year 3 -->
+  <rect x="540" y="295" width="60" height="85" fill="#6ee7b7" fill-opacity="0.7" rx="2"/>
+  <text x="570" y="290" text-anchor="middle" fill="#86efac" font-size="10" font-weight="bold">¥2800</text>
+  <text x="570" y="395" text-anchor="middle" fill="#94a3b8" font-size="10">第3年</text>
+
+  <!-- Lightweight total -->
+  <line x1="400" y1="130" x2="600" y2="130" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="500" y="122" text-anchor="middle" fill="#4ade80" font-size="11" font-weight="bold">轻智能方案合计：¥14,100</text>
+
+  <!-- Savings highlight -->
+  <g transform="translate(340, 410)">
+    <rect x="-90" y="0" width="180" height="28" fill="#0d1f3a" stroke="#22c55e" stroke-width="1" rx="6"/>
+    <text x="0" y="18" text-anchor="middle" fill="#4ade80" font-size="12" font-weight="bold">三年节省 ¥7,900（↓36%）</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(100, 60)">
+    <rect x="0" y="0" width="12" height="12" fill="#ff4444" fill-opacity="0.8" rx="2"/>
+    <text x="18" y="10" fill="#94a3b8" font-size="10">联网方案（含网关+云平台年费）</text>
+    <rect x="230" y="0" width="12" height="12" fill="#22c55e" fill-opacity="0.8" rx="2"/>
+    <text x="248" y="10" fill="#94a3b8" font-size="10">轻智能方案（仅灯具+语音模组）</text>
+  </g>
+
+  <!-- Cost breakdown labels -->
+  <text x="150" y="430" text-anchor="middle" fill="#64748b" font-size="8">灯具+网关+网络+年费</text>
+  <text x="430" y="430" text-anchor="middle" fill="#64748b" font-size="8">灯具+语音模组增量</text>
+
+  <!-- Source -->
+  <text x="340" y="452" text-anchor="middle" fill="#475569" font-size="8">※ 基于深圳写字楼50盏灯项目实测数据估算 · 实际成本因项目规模而异</text>
+</svg>

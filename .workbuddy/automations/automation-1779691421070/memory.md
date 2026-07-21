@@ -1,5 +1,15 @@
 # Automation Memory
 
+## 2026-07-20: 毫米波雷达+智能照明——人静灯不灭
+- 选题: 多源搜索确认"毫米波雷达人体存在感知"是2026年7月最新热门趋势（Yeelight RadarSense 269元众筹、Aqara FP2 <200元、Philips Hue推mmWave传感器）
+- 文章: posts/2026-07-20-mmwave-radar-presence-detection-lighting.md (~1500字) + 3 SVG(PIR对比/频段选型/驱动集成) + AI封面(去水印)
+- 英文版: posts/devto-2026-07-20-mmwave-radar-presence-detection-lighting.md
+- 网站: ✅ node build.js 99篇 + sitemap.xml(103 URLs)
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/lights-off-while-youre-still-in-the-room-mmwave-radar-ends-smart-lightings-biggest-pain-point-4mmm (ID: 4183624)
+- LinkedIn: ⚠️ CDP Chrome未运行（127.0.0.1:9222 不通），跳过
+- 今日头条微头条: ✅ (action: published, 口语化200字内)
+- 踩坑: Dev.to API published字段始终返回None（API特性），但URL可访问文章实际已发布；无其他重大踩坑
+
 ## 2026-07-16: 节律照明——为什么你家的智能灯该学会"看时间"了
 - 选题: 多源搜索确认"节律照明/人因照明/Human-Centric Lighting"是2026年7月最热健康照明趋势（新国标强制纳入健康指标、全光谱普及、DALI-2 DT8大规模商用）
 - 文章: posts/2026-07-16-human-centric-lighting-rhythm.md (~1500字) + 3 SVG(节律曲线/双通道驱动/应用场景) + AI封面(去水印)

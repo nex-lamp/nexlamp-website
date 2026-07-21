@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#12182e"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c3a5c"/>
+      <stop offset="100%" stop-color="#0f243d"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00d4ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <g stroke="#1e2a45" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#f0f4ff">驱动电源：智能照明的神经中枢</text>
+
+  <!-- Input nodes -->
+  <g>
+    <rect x="55" y="110" width="110" height="45" rx="8" fill="#162036" stroke="#4a6fa5" stroke-width="1.5"/>
+    <text x="110" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#9db3d9">手机 APP</text>
+
+    <rect x="55" y="185" width="110" height="45" rx="8" fill="#162036" stroke="#4a6fa5" stroke-width="1.5"/>
+    <text x="110" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#9db3d9">语音助手</text>
+
+    <rect x="55" y="260" width="110" height="45" rx="8" fill="#162036" stroke="#4a6fa5" stroke-width="1.5"/>
+    <text x="110" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#9db3d9">人体/环境传感器</text>
+  </g>
+
+  <!-- Protocol layer -->
+  <rect x="230" y="150" width="120" height="120" rx="10" fill="#162036" stroke="#6b7fd4" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="290" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#a6b8ff">协议层</text>
+  <text x="290" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f9bff">Matter</text>
+  <text x="290" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f9bff">DALI-2 / D4i</text>
+  <text x="290" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7f9bff">Zigbee / BLE Mesh</text>
+
+  <!-- Driver (central chip) -->
+  <g transform="translate(430, 165)">
+    <rect x="0" y="0" width="120" height="90" rx="6" fill="url(#chip)" stroke="#00d4ff" stroke-width="2"/>
+    <!-- chip pins -->
+    <g fill="#00d4ff">
+      <rect x="-8" y="12" width="8" height="4"/>
+      <rect x="-8" y="28" width="8" height="4"/>
+      <rect x="-8" y="44" width="8" height="4"/>
+      <rect x="-8" y="60" width="8" height="4"/>
+      <rect x="-8" y="76" width="8" height="4"/>
+      <rect x="120" y="12" width="8" height="4"/>
+      <rect x="120" y="28" width="8" height="4"/>
+      <rect x="120" y="44" width="8" height="4"/>
+      <rect x="120" y="60" width="8" height="4"/>
+      <rect x="120" y="76" width="8" height="4"/>
+    </g>
+    <text x="60" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00d4ff">LED DRIVER</text>
+    <text x="60" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8bc9ff">供电 · 调光 · 通信</text>
+  </g>
+
+  <!-- Output nodes -->
+  <g>
+    <rect x="615" y="110" width="110" height="45" rx="8" fill="#162036" stroke="#00d4ff" stroke-width="1.5"/>
+    <text x="670" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#9be7ff">稳定亮度</text>
+
+    <rect x="615" y="185" width="110" height="45" rx="8" fill="#162036" stroke="#00d4ff" stroke-width="1.5"/>
+    <text x="670" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#9be7ff">健康调光</text>
+
+    <rect x="615" y="260" width="110" height="45" rx="8" fill="#162036" stroke="#00d4ff" stroke-width="1.5"/>
+    <text x="670" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#9be7ff">能耗数据</text>
+  </g>
+
+  <!-- Connection arrows -->
+  <g stroke="#00d4ff" stroke-width="2" fill="none" stroke-linecap="round">
+    <line x1="165" y1="132" x2="225" y2="185"/>
+    <line x1="165" y1="207" x2="225" y2="210"/>
+    <line x1="165" y1="282" x2="225" y2="235"/>
+    <line x1="350" y1="210" x2="425" y2="210"/>
+    <line x1="550" y1="195" x2="610" y2="132"/>
+    <line x1="550" y1="210" x2="610" y2="207"/>
+    <line x1="550" y1="225" x2="610" y2="282"/>
+  </g>
+
+  <!-- Arrow heads -->
+  <g fill="#00d4ff">
+    <polygon points="220,181 225,185 220,189"/>
+    <polygon points="220,206 225,210 220,214"/>
+    <polygon points="220,231 225,235 220,239"/>
+    <polygon points="420,206 425,210 420,214"/>
+    <polygon points="605,128 610,132 605,136"/>
+    <polygon points="605,203 610,207 605,211"/>
+    <polygon points="605,278 610,282 605,286"/>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="400" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7fa3">驱动电源决定智能灯“聪不聪明”、稳不稳定、能用多久</text>
+</svg>

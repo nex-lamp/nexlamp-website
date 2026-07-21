@@ -1,0 +1,155 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f3a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad3)"/>
+  
+  <!-- Grid -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#e0e8f0" font-size="20" font-family="monospace" font-weight="bold">Radar Module + LED Driver: Integration Architecture</text>
+
+  <!-- Luminaire outer box -->
+  <rect x="80" y="60" width="640" height="300" fill="none" stroke="#3a5070" stroke-width="2" stroke-dasharray="6,3" rx="8"/>
+  <text x="90" y="55" fill="#5a7090" font-size="11" font-family="monospace">Smart Luminaire (Radar-Integrated)</text>
+
+  <!-- AC Input -->
+  <g transform="translate(20, 180)">
+    <text x="0" y="0" fill="#ff9966" font-size="12" font-family="monospace" font-weight="bold">AC</text>
+    <text x="0" y="15" fill="#ff9966" font-size="10" font-family="monospace">220V</text>
+    <line x1="40" y1="5" x2="80" y2="5" stroke="#ff9966" stroke-width="2"/>
+    <line x1="40" y1="20" x2="80" y2="20" stroke="#ff9966" stroke-width="2"/>
+  </g>
+
+  <!-- LED Driver box -->
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="280" height="240" fill="#0d1f3a" stroke="#00d4ff" stroke-width="2" rx="6"/>
+    <text x="140" y="25" text-anchor="middle" fill="#00d4ff" font-size="14" font-family="monospace" font-weight="bold">LED Driver Power Supply</text>
+    
+    <!-- Sub-blocks inside driver -->
+    <!-- Rectifier -->
+    <rect x="15" y="45" width="80" height="40" fill="#1a2a4a" stroke="#5a7090" stroke-width="1" rx="3"/>
+    <text x="55" y="62" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">Rectifier</text>
+    <text x="55" y="75" text-anchor="middle" fill="#5a7090" font-size="8" font-family="monospace">AC-DC</text>
+    
+    <!-- PFC -->
+    <rect x="105" y="45" width="80" height="40" fill="#1a2a4a" stroke="#5a7090" stroke-width="1" rx="3"/>
+    <text x="145" y="62" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">PFC</text>
+    <text x="145" y="75" text-anchor="middle" fill="#5a7090" font-size="8" font-family="monospace">power factor</text>
+    
+    <!-- LLC/DC-DC -->
+    <rect x="195" y="45" width="70" height="40" fill="#1a2a4a" stroke="#5a7090" stroke-width="1" rx="3"/>
+    <text x="230" y="62" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">LLC</text>
+    <text x="230" y="75" text-anchor="middle" fill="#5a7090" font-size="8" font-family="monospace">DC-DC</text>
+    
+    <!-- Main output -->
+    <rect x="15" y="105" width="120" height="35" fill="#0a2a1a" stroke="#4a9" stroke-width="1" rx="3"/>
+    <text x="75" y="122" text-anchor="middle" fill="#4a9" font-size="10" font-family="monospace">Main Output</text>
+    <text x="75" y="134" text-anchor="middle" fill="#4a9" font-size="8" font-family="monospace">Constant Current</text>
+    
+    <!-- Auxiliary output (always-on) -->
+    <rect x="150" y="105" width="115" height="35" fill="#2a1a0a" stroke="#ffcc00" stroke-width="1.5" rx="3"/>
+    <text x="207" y="122" text-anchor="middle" fill="#ffcc00" font-size="10" font-family="monospace">Aux Output</text>
+    <text x="207" y="134" text-anchor="middle" fill="#ffcc00" font-size="8" font-family="monospace">ALWAYS-ON 5V</text>
+    
+    <!-- Key specs -->
+    <g transform="translate(15, 160)">
+      <text x="0" y="0" fill="#5a7090" font-size="9" font-family="monospace">Standby: </text>
+      <text x="65" y="0" fill="#4a9" font-size="9" font-family="monospace">&lt;= 0.3W (GB 30255)</text>
+      <text x="0" y="15" fill="#5a7090" font-size="9" font-family="monospace">Topology: </text>
+      <text x="65" y="15" fill="#4a9" font-size="9" font-family="monospace">Isolated</text>
+      <text x="0" y="30" fill="#5a7090" font-size="9" font-family="monospace">Ripple: </text>
+      <text x="65" y="30" fill="#4a9" font-size="9" font-family="monospace">&lt;= +/-5%</text>
+      <text x="0" y="45" fill="#5a7090" font-size="9" font-family="monospace">EMC: </text>
+      <text x="65" y="45" fill="#4a9" font-size="9" font-family="monospace">EN 55015 / GB/T 17743</text>
+      <text x="0" y="60" fill="#ff9966" font-size="9" font-family="monospace">!</text>
+      <text x="10" y="60" fill="#ff9966" font-size="9" font-family="monospace">Ripple noise = radar ghost triggers</text>
+    </g>
+  </g>
+
+  <!-- Connection lines from aux to radar -->
+  <line x1="360" y1="225" x2="450" y2="225" stroke="#ffcc00" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="405" y="220" text-anchor="middle" fill="#ffcc00" font-size="9" font-family="monospace">5V DC</text>
+
+  <!-- Radar Module box -->
+  <g transform="translate(450, 100)">
+    <rect x="0" y="0" width="250" height="120" fill="#0d1f3a" stroke="#cc99ff" stroke-width="2" rx="6"/>
+    <text x="125" y="25" text-anchor="middle" fill="#cc99ff" font-size="14" font-family="monospace" font-weight="bold">mmWave Radar Module</text>
+    
+    <!-- Sub-blocks -->
+    <rect x="15" y="45" width="100" height="35" fill="#1a2a4a" stroke="#5a7090" stroke-width="1" rx="3"/>
+    <text x="65" y="62" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">FMCW IC</text>
+    <text x="65" y="74" text-anchor="middle" fill="#5a7090" font-size="8" font-family="monospace">24/60GHz</text>
+    
+    <rect x="130" y="45" width="105" height="35" fill="#1a2a4a" stroke="#5a7090" stroke-width="1" rx="3"/>
+    <text x="182" y="62" text-anchor="middle" fill="#8ab" font-size="10" font-family="monospace">MCU + AI</text>
+    <text x="182" y="74" text-anchor="middle" fill="#5a7090" font-size="8" font-family="monospace">breathing detect</text>
+    
+    <text x="125" y="100" text-anchor="middle" fill="#cc99ff" font-size="9" font-family="monospace">Power draw: 0.3-1W | Output: GPIO/UART</text>
+  </g>
+
+  <!-- Signal output to controller -->
+  <line x1="575" y1="220" x2="575" y2="260" stroke="#cc99ff" stroke-width="2"/>
+  <text x="640" y="245" fill="#cc99ff" font-size="9" font-family="monospace">Presence signal</text>
+
+  <!-- MCU Controller -->
+  <g transform="translate(450, 260)">
+    <rect x="0" y="0" width="250" height="60" fill="#0d1f3a" stroke="#00d4ff" stroke-width="2" rx="6"/>
+    <text x="125" y="22" text-anchor="middle" fill="#00d4ff" font-size="13" font-family="monospace" font-weight="bold">Light Controller MCU</text>
+    <text x="125" y="40" text-anchor="middle" fill="#5a7090" font-size="9" font-family="monospace">Dimming command -&gt; Main Output</text>
+    <text x="125" y="52" text-anchor="middle" fill="#5a7090" font-size="9" font-family="monospace">Zigbee/BLE/Matter -&gt; Gateway</text>
+  </g>
+
+  <!-- LED output -->
+  <line x1="80" y1="122" x2="40" y2="122" stroke="#4a9" stroke-width="2"/>
+  <line x1="40" y1="122" x2="40" y2="380" stroke="#4a9" stroke-width="2"/>
+  <line x1="40" y1="380" x2="160" y2="380" stroke="#4a9" stroke-width="2"/>
+
+  <!-- LED array -->
+  <g transform="translate(160, 365)">
+    <rect x="0" y="0" width="120" height="30" fill="#1a2a4a" stroke="#4a9" stroke-width="1" rx="3"/>
+    <circle cx="15" cy="15" r="5" fill="#4a9" opacity="0.8" filter="url(#glow3)"/>
+    <circle cx="35" cy="15" r="5" fill="#4a9" opacity="0.8" filter="url(#glow3)"/>
+    <circle cx="55" cy="15" r="5" fill="#4a9" opacity="0.8" filter="url(#glow3)"/>
+    <circle cx="75" cy="15" r="5" fill="#4a9" opacity="0.8" filter="url(#glow3)"/>
+    <circle cx="95" cy="15" r="5" fill="#4a9" opacity="0.8" filter="url(#glow3)"/>
+    <text x="60" y="48" text-anchor="middle" fill="#4a9" font-size="10" font-family="monospace">LED Array</text>
+  </g>
+
+  <!-- Key insight box -->
+  <g transform="translate(320, 380)">
+    <rect x="0" y="0" width="460" height="70" fill="#1a0a0a" stroke="#ff6666" stroke-width="1" rx="4" opacity="0.8"/>
+    <text x="10" y="20" fill="#ff6666" font-size="11" font-family="monospace" font-weight="bold">CRITICAL INSIGHT</text>
+    <text x="10" y="38" fill="#ccc" font-size="10" font-family="monospace">Driver ripple noise feeds into radar signal chain</text>
+    <text x="10" y="52" fill="#ccc" font-size="10" font-family="monospace">Bad driver = ghost triggers = "light turns on for no reason"</text>
+    <text x="10" y="64" fill="#ffcc00" font-size="10" font-family="monospace">Isolated driver + sufficient output filtering = clean radar signal</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="465" width="800" height="35" fill="#0d1f3a" opacity="0.8"/>
+  <text x="400" y="487" text-anchor="middle" fill="#5a7090" font-size="11" font-family="monospace">NEXLAMP | Driver + Radar Integration | www.nexlamp.com</text>
+</svg>

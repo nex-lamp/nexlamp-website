@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#12182e"/>
+    </linearGradient>
+    <linearGradient id="heat" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1a3b5c"/>
+      <stop offset="100%" stop-color="#ff5a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+
+  <!-- Grid -->
+  <g stroke="#1e2a45" stroke-width="1">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#f0f4ff">集成化智能灯的热压力与光衰</text>
+
+  <!-- Traditional lamp (left) -->
+  <g transform="translate(120, 120)">
+    <rect x="0" y="0" width="140" height="220" rx="12" fill="#162036" stroke="#4a6fa5" stroke-width="1.5"/>
+    <text x="70" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#9db3d9">传统独立灯具</text>
+    <rect x="35" y="60" width="70" height="40" rx="4" fill="#1c3a5c" stroke="#00d4ff" stroke-width="1"/>
+    <text x="70" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8bc9ff">光源</text>
+    <rect x="35" y="140" width="70" height="40" rx="4" fill="#1c3a5c" stroke="#4a6fa5" stroke-width="1"/>
+    <text x="70" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8bc9ff">驱动电源</text>
+    <text x="70" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#7fe2ff">温度稳定</text>
+    <text x="70" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#8ca3c9">光衰 ≈ 8%/年</text>
+  </g>
+
+  <!-- Smart integrated lamp (right) -->
+  <g transform="translate(540, 120)">
+    <rect x="0" y="0" width="140" height="220" rx="12" fill="#162036" stroke="#ff6b6b" stroke-width="2"/>
+    <text x="70" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#ffadad">集成智能灯</text>
+    <rect x="15" y="55" width="110" height="30" rx="4" fill="#2a1a2a" stroke="#ff6b6b" stroke-width="1"/>
+    <text x="70" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffadad">传感器+通信模块</text>
+    <rect x="35" y="105" width="70" height="35" rx="4" fill="#1c3a5c" stroke="#00d4ff" stroke-width="1"/>
+    <text x="70" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8bc9ff">光源</text>
+    <rect x="35" y="165" width="70" height="35" rx="4" fill="#3c1a1a" stroke="#ff6b6b" stroke-width="1.5"/>
+    <text x="70" y="187" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffadad">驱动</text>
+    <text x="70" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ff6b6b">温度升高 8~12°C</text>
+    <text x="70" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffadad">光衰可达 12%/年</text>
+  </g>
+
+  <!-- Central arrow / comparison -->
+  <g>
+    <text x="400" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ff6b6b">模块堆叠</text>
+    <text x="400" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ff6b6b">散热空间被压缩</text>
+    <path d="M 400 215 L 400 250" stroke="#ff6b6b" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+    <polygon points="395,245 400,250 405,245" fill="#ff6b6b"/>
+  </g>
+
+  <!-- Bottom stats -->
+  <g transform="translate(0, 320)">
+    <rect x="100" y="20" width="280" height="80" rx="10" fill="#162036" stroke="#4a6fa5" stroke-width="1"/>
+    <text x="240" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#9db3d9">独立灯具驱动故障率</text>
+    <text x="240" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#00d4ff">~0.8%</text>
+
+    <rect x="420" y="20" width="280" height="80" rx="10" fill="#162036" stroke="#ff6b6b" stroke-width="1.5"/>
+    <text x="560" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#ffadad">高温下集成驱动故障率</text>
+    <text x="560" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#ff6b6b">&gt;3%</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="400" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7fa3">散热设计没跟上，智能灯就容易“早衰”</text>
+</svg>

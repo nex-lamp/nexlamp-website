@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#12182e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)"/>
+
+  <!-- Grid -->
+  <g stroke="#1e2a45" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#f0f4ff">选智能灯时，驱动电源的四个硬指标</text>
+
+  <!-- Card 1: Protocol -->
+  <g transform="translate(60, 90)">
+    <rect x="0" y="0" width="155" height="120" rx="10" fill="#162036" stroke="#4a6fa5" stroke-width="1.5"/>
+    <circle cx="77" cy="35" r="18" fill="#1c3a5c" stroke="#00d4ff" stroke-width="1.5"/>
+    <text x="77" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00d4ff">1</text>
+    <text x="77" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#f0f4ff">协议认证</text>
+    <text x="77" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9db3d9">DALI-2 / D4i</text>
+    <text x="77" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9db3d9">Matter 认证</text>
+  </g>
+
+  <!-- Card 2: Thermal -->
+  <g transform="translate(235, 90)">
+    <rect x="0" y="0" width="155" height="120" rx="10" fill="#162036" stroke="#4a6fa5" stroke-width="1.5"/>
+    <circle cx="77" cy="35" r="18" fill="#1c3a5c" stroke="#00d4ff" stroke-width="1.5"/>
+    <text x="77" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00d4ff">2</text>
+    <text x="77" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#f0f4ff">散热与质保</text>
+    <text x="77" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9db3d9">独立驱动腔体</text>
+    <text x="77" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9db3d9">质保 ≥ 3~5 年</text>
+  </g>
+
+  <!-- Card 3: Flicker -->
+  <g transform="translate(410, 90)">
+    <rect x="0" y="0" width="155" height="120" rx="10" fill="#162036" stroke="#4a6fa5" stroke-width="1.5"/>
+    <circle cx="77" cy="35" r="18" fill="#1c3a5c" stroke="#00d4ff" stroke-width="1.5"/>
+    <text x="77" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00d4ff">3</text>
+    <text x="77" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#f0f4ff">调光与频闪</text>
+    <text x="77" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9db3d9">最低亮度可调</text>
+    <text x="77" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9db3d9">PSTLM / SVM 合规</text>
+  </g>
+
+  <!-- Card 4: Data -->
+  <g transform="translate(585, 90)">
+    <rect x="0" y="0" width="155" height="120" rx="10" fill="#162036" stroke="#4a6fa5" stroke-width="1.5"/>
+    <circle cx="77" cy="35" r="18" fill="#1c3a5c" stroke="#00d4ff" stroke-width="1.5"/>
+    <text x="77" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00d4ff">4</text>
+    <text x="77" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#f0f4ff">能耗与运维</text>
+    <text x="77" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9db3d9">能耗计量</text>
+    <text x="77" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9db3d9">故障预警上报</text>
+  </g>
+
+  <!-- Connection flow -->
+  <g stroke="#00d4ff" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M 155 150 L 235 150" stroke-dasharray="4,3"/>
+    <path d="M 330 150 L 410 150" stroke-dasharray="4,3"/>
+    <path d="M 505 150 L 585 150" stroke-dasharray="4,3"/>
+  </g>
+
+  <!-- Bottom large insight -->
+  <rect x="100" y="260" width="600" height="110" rx="12" fill="#1c3a5c" stroke="#00d4ff" stroke-width="1.5"/>
+  <text x="400" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#00d4ff">核心判断：别只看APP和价格</text>
+  <text x="400" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#c9ddff">真正决定智能灯体验的是驱动电源——它同时承担协议翻译、</text>
+  <text x="400" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#c9ddff">精准调光、热管理和数据反馈四大职能。</text>
+</svg>
