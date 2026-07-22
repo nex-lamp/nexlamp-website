@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage | 耐利普科技技术博客</title>
+    <meta name="description" content="Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.">
+    <meta name="keywords" content="智能照明,LED驱动电源">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage | 耐利普科技">
+    <meta property="og:description" content="Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out.html">
+    <meta property="og:image" content="https://www.nexlamp.com/images/blog-default.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-07-22">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="技术文章">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+      "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+      "datePublished": "2026-07-22",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+          "item": "https://www.nexlamp.com/dist/blog/why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年7月22日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 技术文章</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            
+                            <p>On June 29, 2026, Midea&#39;s cloud servers went down. For <strong>four days</strong>, over 100,000 smart home users across China lost control of their air conditioners, washing machines, refrigerators, and air purifiers. Parents couldn&#39;t cool their children&#39;s rooms. The official response: &quot;Please wait for our engineers.&quot;</p>
+<p>This wasn&#39;t a power outage. It wasn&#39;t a Wi-Fi issue. It was a <strong>cloud dependency failure</strong> — and if you own WiFi-based smart lights, you have the same vulnerability.</p>
+<h2>The Two Types of Smart Light Control Chains</h2>
+<p><strong>Type 1: Cloud-Dependent (Most WiFi Smart Lights)</strong></p>
+<blockquote>
+<p>Your phone → Internet → Manufacturer&#39;s cloud server → WiFi router → Light bulb</p>
+</blockquote>
+<p><strong>Type 2: Local Mesh (Zigbee, like Tuya-based systems)</strong></p>
+<blockquote>
+<p>Your phone/wireless switch → Zigbee gateway (local) → Zigbee bulb</p>
+</blockquote>
+<p>The difference matters. Here&#39;s a real story.</p>
+<h2>Real Customer Story: Mr. Zhou&#39;s WiFi Nightmare</h2>
+<p>Mr. Zhou, a programmer, bought 80 cheap WiFi smart bulbs for his new apartment in May 2026. On June 29, while reading a bedtime story to his child, all the lights died simultaneously. Wall switch: nothing. App: spinning. Voice assistant: silent.</p>
+<p>He rebooted the router. Nothing. He called his ISP. &quot;Your network is fine.&quot; It took him 2 hours of searching smart home forums to discover it was a brand-wide cloud outage.</p>
+<blockquote>
+<p>&quot;I spent tens of thousands on a &#39;smart&#39; home system, and I couldn&#39;t even turn on a light without waiting for someone else&#39;s engineer to fix it.&quot;</p>
+</blockquote>
+<p>That night, he read the bedtime story in the dark.</p>
+<h2>What Happened to Zigbee Customers on the Same Night</h2>
+<p>Meanwhile, Ms. Zhang, who installed a Tuya Zigbee system with 30+ lights and 4 wireless switches, experienced something different:</p>
+<ul>
+<li><strong>Wireless switches kept working</strong> — direct local control, no cloud needed</li>
+<li><strong>Local scenes executed normally</strong> — &quot;Movie Mode,&quot; &quot;Sleep Mode&quot; all stored on the local gateway</li>
+<li><strong>App control temporarily failed</strong> — because the app goes through the cloud</li>
+<li><strong>After 1 hour, cloud recovered</strong> — App control resumed, but daily use was never affected</li>
+</ul>
+<p>This is the core difference between local mesh and cloud dependency:</p>
+<blockquote>
+<p><strong>Is the cloud &quot;icing on the cake&quot; or &quot;the only way&quot;? That&#39;s the difference between smart and stupid.</strong></p>
+</blockquote>
+<h2>4-Step Self-Test: Can Your Smart Lights Work Offline?</h2>
+<h3>Step 1: Check the manual for &quot;local control&quot; keywords</h3>
+<ul>
+<li>✅ Present → offline-capable</li>
+<li>❌ Missing → highly cloud-dependent</li>
+</ul>
+<h3>Step 2: Unplug the WAN cable from your router (not just WiFi, physically unplug the internet cable)</h3>
+<ul>
+<li>Lights still turn on → local mesh</li>
+<li>All lights dead → cloud-dependent</li>
+</ul>
+<h3>Step 3: Test wireless switch independence</h3>
+<ul>
+<li>Switch controls lights directly without app setup → local mesh</li>
+<li>Switch needs app configuration first → half-dependent</li>
+</ul>
+<h3>Step 4: Test gateway power-off behavior</h3>
+<ul>
+<li>Lights still communicate with each other → strong local mesh</li>
+<li>Gateway off = everything off → fake local solution</li>
+</ul>
+<h2>Quick Comparison Table</h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>WiFi Smart Light (Cloud-Dependent)</th>
+<th>Zigbee Smart Light (Local Mesh)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Offline use</td>
+<td>✖ Completely fails</td>
+<td>✓ Switch/scenes work</td>
+</tr>
+<tr>
+<td>Cloud outage</td>
+<td>✖ Days of uselessness</td>
+<td>✓ Only App temporarily affected</td>
+</tr>
+<tr>
+<td>30+ device stability</td>
+<td>✖ Network crashes</td>
+<td>✓ Self-healing mesh</td>
+</tr>
+<tr>
+<td>Privacy &amp; control</td>
+<td>✖ Key is in the cloud</td>
+<td>✓ Key is in your gateway</td>
+</tr>
+</tbody></table>
+<h2>Why We Recommend Tuya Zigbee at NEXLAMP</h2>
+<p>At Nexlamp Technology (NEXLAMP), we&#39;ve been selling smart lighting for 10 years. The most common question from customers: &quot;Why are your Zigbee lights more expensive than WiFi ones?&quot;</p>
+<p>The answer is simple: <strong>You&#39;re not buying lights. You&#39;re buying the ability to not get strangled by someone else&#39;s cloud.</strong></p>
+<p>Tuya Zigbee solutions are &quot;expensive&quot; in three ways:</p>
+<ol>
+<li><strong>Each bulb is a Zigbee repeater</strong> — 30 bulbs form a self-healing mesh network; one failure doesn&#39;t affect others</li>
+<li><strong>The gateway stores all scenes locally</strong> — &quot;Home Mode,&quot; &quot;Sleep Mode&quot; all run on the gateway, not in the cloud</li>
+<li><strong>3C certification + 12 safety tests</strong> — Tuya&#39;s hard requirements for the ecosystem, much stricter than bare-board WiFi lights</li>
+</ol>
+<p>WiFi smart lights are &quot;cheap&quot; because:</p>
+<ul>
+<li>They use the cheapest ESP8266 chips</li>
+<li>No gateway hardware cost</li>
+<li>No local storage code needed</li>
+<li>When things break, blame &quot;network issues&quot;</li>
+</ul>
+<p><strong>The day your light depends on the cloud, the &quot;key&quot; to your switch is no longer in your hand.</strong></p>
+<h2>Conclusion: Local Capability Is a Baseline, Not a Feature</h2>
+<p>Midea&#39;s cloud outage is a warning to all smart home users: there will be a next time. It might be your brand, your ecosystem, or your cloud provider.</p>
+<p>Smart buyers don&#39;t bet on &quot;the cloud never fails.&quot; They ensure that <strong>when the cloud fails, the lights still work.</strong></p>
+<blockquote>
+<p><strong>Before looking at the price, ask one question: Can it work offline?</strong>
+If yes, then talk about smart features.
+If no, no matter how cheap, don&#39;t touch it.</p>
+</blockquote>
+<hr>
+<p><em>NEXLAMP — Tuya Zigbee smart lighting solutions. 3C certified. 100% burn-in tested at the factory. <a href="http://www.nexlamp.com">www.nexlamp.com</a></em></p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>

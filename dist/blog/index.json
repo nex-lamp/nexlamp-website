@@ -2,7 +2,61 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-21",
+    "date": "2026-07-22",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-22",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "无主灯射灯怎么选驱动？2026年装修最容易踩的5个坑",
+    "slug": "spotlight-driver-selection-pitfalls",
+    "date": "2026-07-22",
+    "category": "选购指南",
+    "description": "无主灯设计翻车案例里，90%问题不在灯具颜值，而在驱动电源匹配。本文从电流、协议、隔离、品牌统一、频闪五个维度，帮你避开射灯驱动选型的常见陷阱。",
+    "cover": "images/blog-spotlight-driver-2026-cover.png",
+    "excerpt": "无主灯射灯翻车，90%问题出在驱动电源。2026年装修选购射灯，这5个坑千万别踩。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-22",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-22",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-07-22",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-22",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -27,40 +81,13 @@
     "excerpt": "2026年Philips Hue Bridge和TP-Link Tapo智能灯泡接连曝出高危漏洞，CVSS最高9.8分。本文深度解析智能照明四大攻击路径，从驱动电源到通信协议层层拆解，给出5条可落地的选购与防护建议。"
   },
   {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "title": "Your Smart Bulb Is a Security Risk: 2026 Smart Lighting Vulnerabilities Explained",
+    "slug": "your-smart-bulb-is-a-security-risk-2026-smart-lighting-vulnerabilities-explained",
     "date": "2026-07-21",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-21",
-    "category": "技术文章",
+    "category": "Security",
     "description": "耐利普科技技术文章",
     "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-07-21",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-21",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
+    "excerpt": "Philips Hue Bridge CVSS 9.8, TP-Link Tapo CVSS 7.3 — smart lighting had a brutal 2026 for security. Here are the 4 attack paths, the driver-level defenses, and 5 practical steps to protect your home."
   },
   {
     "title": "人静灯不灭——毫米波雷达如何终结智能照明最大尴尬",

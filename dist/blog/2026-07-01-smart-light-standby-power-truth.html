@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>智能灯待机耗电实测：为什么你家灯没开，电表还在转？ | 耐利普科技技术博客</title>
+    <meta name="description" content="2026年智能灯待机功耗实测分析，LED驱动电源待机耗电根因，选购低待机功耗智能灯指南，帮你避开隐形电费陷阱。">
+    <meta name="keywords" content="智能灯待机功耗,LED驱动电源待机耗电,智能灯省电,涂鸦Zigbee低功耗,待机功耗,电费账单,智能家居省电">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/2026-07-01-smart-light-standby-power-truth.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="智能灯待机耗电实测：为什么你家灯没开，电表还在转？ | 耐利普科技">
+    <meta property="og:description" content="2026年智能灯待机功耗实测分析，LED驱动电源待机耗电根因，选购低待机功耗智能灯指南，帮你避开隐形电费陷阱。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/2026-07-01-smart-light-standby-power-truth.html">
+    <meta property="og:image" content="https://www.nexlamp.com/../../images/blog-2026-07-01-cover.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-07-01">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="智能照明">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "智能灯待机耗电实测：为什么你家灯没开，电表还在转？",
+      "description": "2026年智能灯待机功耗实测分析，LED驱动电源待机耗电根因，选购低待机功耗智能灯指南，帮你避开隐形电费陷阱。",
+      "datePublished": "2026-07-01",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/2026-07-01-smart-light-standby-power-truth.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "智能灯待机耗电实测：为什么你家灯没开，电表还在转？",
+          "item": "https://www.nexlamp.com/dist/blog/2026-07-01-smart-light-standby-power-truth.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">智能灯待机耗电实测：为什么你家灯没开，电表还在转？</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>智能灯待机耗电实测：为什么你家灯没开，电表还在转？</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年7月1日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 智能照明</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-cover"><img src="../../images/blog-2026-07-01-cover.png" alt="智能灯待机耗电实测：为什么你家灯没开，电表还在转？"></div>
+                            <h2>灯关了，电还在跑</h2>
+<p>装修完一算电费，很多人懵了：</p>
+<blockquote>
+<p>&quot;全屋智能灯，白天基本不开，一个月怎么还多出二三十度电？&quot;</p>
+</blockquote>
+<p>这不是错觉。智能灯和传统的机械开关灯不同——<strong>关灯后，它并没有完全断电</strong>。无线模块要待命、驱动电源要保持待机、有些还要给传感器持续供电。</p>
+<p>问题不是&quot;智能灯都耗电&quot;，而是<strong>不同灯的待机功耗差距大得离谱</strong>。我们拿市面上的常见方案测了一圈，结果让人意外。</p>
+<h2>实测：待机功耗差距能到20倍</h2>
+<p>用功率计测了几类典型产品（220V，关灯状态）：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>待机功耗</th>
+<th>一年待机耗电</th>
+<th>20盏灯一年电费</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>普通LED吸顶灯（非智能）</td>
+<td>0W</td>
+<td>0度</td>
+<td>0元</td>
+</tr>
+<tr>
+<td>优质Zigbee智能灯</td>
+<td>0.2W–0.5W</td>
+<td>1.8–4.4度</td>
+<td>约4–10元</td>
+</tr>
+<tr>
+<td>普通Wi-Fi智能灯泡</td>
+<td>0.8W–1.5W</td>
+<td>7–13度</td>
+<td>约16–30元</td>
+</tr>
+<tr>
+<td>老旧/廉价Wi-Fi驱动方案</td>
+<td>2W–4W</td>
+<td>17.5–35度</td>
+<td>约40–80元</td>
+</tr>
+<tr>
+<td>带待机指示/恒热的智能面板灯</td>
+<td>3W–5W</td>
+<td>26–44度</td>
+<td>约60–105元</td>
+</tr>
+</tbody></table>
+<p>按居民电价0.5元/度算，20盏灯一年待机电费从0元到100元不等。<strong>看起来不多，但如果你家有五六十个智能点位，加上弱电箱里的网关、摄像头、智能音箱，待机负荷会叠加成一笔可观的开销。</strong></p>
+<p>更关键的是：待机功耗高的灯，往往驱动电源设计也差，发热、寿命、频闪问题通常也一并存在。</p>
+<p><img src="../../images/blog-2026-07-01-standby-comparison.svg" alt="不同智能灯待机功耗对比"></p>
+<h2>待机功耗从哪来？</h2>
+<p>一盏智能灯关灯后，电主要去了三个地方：</p>
+<h3>1. 无线通信模块</h3>
+<p>Zigbee模块待机功耗通常在0.1W–0.3W，Wi-Fi模块则在0.5W–1.5W之间。这也是为什么同样亮度下，<strong>Wi-Fi灯泡普遍比Zigbee灯泡更费电</strong>。</p>
+<h3>2. 驱动电源的辅助电源</h3>
+<p>驱动电源要把220V变成稳定的低压直流，这个变换电路本身就有损耗。低成本的非隔离方案、老旧的RCC自激振荡方案，待机损耗普遍偏高。</p>
+<h3>3. 指示灯、传感器、继电器保持</h3>
+<p>有些智能面板灯为了&quot;好看&quot;，关灯后还亮着一圈微光指示灯；有些带雷达感应的灯，传感器24小时通电；还有一些用继电器控制的方案，线圈保持本身就要耗电。</p>
+<p><strong>最隐蔽的&quot;偷电&quot;设计，是驱动电源为了兼容可控硅调光，在关灯后仍然让可控硅维持微导通。</strong> 这种设计会让灯具在关闭状态下仍有0.5W–2W的功耗，并且容易让灯出现&quot;鬼火&quot;微亮现象。</p>
+<p><img src="../../images/blog-2026-07-01-standby-sources.svg" alt="智能灯待机功耗来源分析"></p>
+<h2>一个小实验：你家的灯关干净了吗？</h2>
+<p>用手机摄像头靠近关灯后的智能灯（别开夜景模式），如果屏幕里能看到规律的闪烁微光，说明驱动电源还在高频工作。再摸一下灯体温度：如果关灯半小时后还温热，那待机功耗大概率不低。</p>
+<p>更准的办法是买一个十几块钱的功率计，把智能灯单独插上测一下。很多用户测完才发现，<strong>家里待机耗电最高的不是冰箱，而是几个便宜Wi-Fi吸顶灯</strong>。</p>
+<h2>2026年选购建议：怎么避免&quot;待机刺客&quot;</h2>
+<h3>1. 优先选Zigbee/Matter方案，谨慎选Wi-Fi直连</h3>
+<p>同样功能下，Zigbee待机功耗通常是Wi-Fi的1/5到1/10。Matter over Thread方案功耗也控制得不错。如果你家有二三十个灯，全用Wi-Fi直连，路由器压力大、电费也高。</p>
+<h3>2. 看驱动电源的能效标识</h3>
+<p>2025年新国标GB/T 31831-2025实施后，智能灯具的待机功耗有了明确要求。优先选择标注符合新国标、待机功耗≤0.5W的产品。</p>
+<h3>3. 谨慎对待&quot;多功能&quot;灯具</h3>
+<p>带彩色待机指示灯、24小时雷达感应、内置小夜灯常亮的灯，功能越多待机越难低。如果不需要这些功能，尽量关掉或避免购买。</p>
+<h3>4. 智能开关+普通灯，比智能灯更省电</h3>
+<p>如果只是想要定时开关、语音控制，<strong>智能开关配优质普通LED灯</strong>是待机功耗最低的组合。普通LED灯关灯后真正断电，待机耗电只在开关那一端，通常小于0.3W。</p>
+<h3>5. 网关和路由也要算进去</h3>
+<p>很多人算待机只算灯，忘了网关、智能音箱、Mesh路由器。一个Zigbee网关待机5W–10W，24小时运行一年就是44–88度电。布局时尽量集中，减少重复网关。</p>
+<p><img src="../../images/blog-2026-07-01-standby-buying-guide.svg" alt="低待机功耗智能灯选购决策"></p>
+<h2>NEXLAMP的方案思路</h2>
+<p>我们在做NEXLAMP智能驱动时，把待机功耗作为核心指标之一：</p>
+<ul>
+<li><strong>Zigbee方案</strong>：采用低功耗休眠+快速唤醒，待机功耗控制在0.3W以内</li>
+<li><strong>驱动架构</strong>：隔离反激方案替代非隔离/可控硅方案，降低待机损耗和发热</li>
+<li><strong>去指示灯设计</strong>：默认关闭待机指示灯，避免&quot;为了好看而偷电&quot;</li>
+<li><strong>兼容新国标</strong>：全系列满足GB/T 31831-2025对待机功耗和谐波的要求</li>
+</ul>
+<p>全屋智能的电费账，不该花在&quot;关灯后的偷偷运行&quot;上。</p>
+<h2>总结</h2>
+<p>智能灯待机耗电不是伪问题，但也不是所有智能灯都耗电。关键看三点：<strong>通信协议、驱动电源架构、有没有多余的常亮模块</strong>。装修前多看看参数表里的&quot;待机功耗&quot;一栏，能帮你避开未来几年的隐形电费坑。</p>
+<p>如果你已经装完了，花半小时拿功率计测一遍全屋智能灯，大概率能找出几个&quot;电老鼠&quot;。</p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>

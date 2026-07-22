@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="100%">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke"
+        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Dark background -->
+  <rect x="0" y="0" width="680" height="420" fill="#1a1a2e" rx="0"/>
+
+  <!-- Title -->
+  <text x="340" y="36" text-anchor="middle" fill="#e0e0ff" font-family="sans-serif" font-size="16" font-weight="500">AI智能体三层记忆机制</text>
+
+  <!-- Top layer: Short-term -->
+  <rect x="80" y="60" width="520" height="80" rx="12" fill="#16213e" stroke="#4a9eff" stroke-width="1"/>
+  <text x="340" y="85" text-anchor="middle" fill="#4a9eff" font-family="sans-serif" font-size="14" font-weight="500">短期操作记忆</text>
+  <text x="340" y="108" text-anchor="middle" fill="#8899cc" font-family="sans-serif" font-size="12">实时传感器数据 · 当前人员位置 · 即时亮度调节</text>
+  <text x="340" y="128" text-anchor="middle" fill="#6677aa" font-family="sans-serif" font-size="11">更新频率: 毫秒级 | 保留时长: 数分钟</text>
+
+  <!-- Arrow down -->
+  <line x1="340" y1="140" x2="340" y2="165" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Middle layer: Medium-term -->
+  <rect x="80" y="175" width="520" height="80" rx="12" fill="#16213e" stroke="#00d4aa" stroke-width="1"/>
+  <text x="340" y="200" text-anchor="middle" fill="#00d4aa" font-family="sans-serif" font-size="14" font-weight="500">中期场景记忆</text>
+  <text x="340" y="223" text-anchor="middle" fill="#88ccbb" font-family="sans-serif" font-size="12">场景使用规律 · 时段能耗模式 · 用户偏好统计</text>
+  <text x="340" y="243" text-anchor="middle" fill="#66aa99" font-family="sans-serif" font-size="11">更新频率: 小时级 | 保留时长: 数周</text>
+
+  <!-- Arrow down -->
+  <line x1="340" y1="255" x2="340" y2="280" stroke="#00d4aa" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Bottom layer: Long-term -->
+  <rect x="80" y="290" width="520" height="80" rx="12" fill="#16213e" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="340" y="315" text-anchor="middle" fill="#ff6b6b" font-family="sans-serif" font-size="14" font-weight="500">长期策略记忆</text>
+  <text x="340" y="338" text-anchor="middle" fill="#cc9999" font-family="sans-serif" font-size="12">建筑结构模型 · 季节光照规律 · 安全约束规则 · 应急预案</text>
+  <text x="340" y="358" text-anchor="middle" fill="#aa7777" font-family="sans-serif" font-size="11">更新频率: 月度级 | 保留时长: 永久</text>
+
+  <!-- Side label -->
+  <text x="40" y="220" text-anchor="middle" fill="#5566aa" font-family="sans-serif" font-size="12" transform="rotate(-90 40 220)">记忆深度递增</text>
+
+  <!-- Bottom caption -->
+  <text x="340" y="400" text-anchor="middle" fill="#445566" font-family="sans-serif" font-size="11">基于OpenClaw框架的三层记忆机制 · 实现长期不遗忘、不漂移、可追溯</text>
+</svg>

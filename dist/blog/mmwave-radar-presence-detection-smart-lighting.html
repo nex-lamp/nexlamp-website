@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>Lights Off While You're Still in the Room? mmWave Radar Ends Smart Lighting's Biggest Pain Point | 耐利普科技技术博客</title>
+    <meta name="description" content="耐利普科技技术文章">
+    <meta name="keywords" content="智能照明,LED驱动电源">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/mmwave-radar-presence-detection-smart-lighting.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lights Off While You're Still in the Room? mmWave Radar Ends Smart Lighting's Biggest Pain Point | 耐利普科技">
+    <meta property="og:description" content="耐利普科技技术文章">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/mmwave-radar-presence-detection-smart-lighting.html">
+    <meta property="og:image" content="https://www.nexlamp.com/images/blog-mmwave-radar-lighting-cover.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-07-20">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="Smart Lighting">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Lights Off While You're Still in the Room? mmWave Radar Ends Smart Lighting's Biggest Pain Point",
+      "description": "耐利普科技技术文章",
+      "datePublished": "2026-07-20",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/mmwave-radar-presence-detection-smart-lighting.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Lights Off While You're Still in the Room? mmWave Radar Ends Smart Lighting's Biggest Pain Point",
+          "item": "https://www.nexlamp.com/dist/blog/mmwave-radar-presence-detection-smart-lighting.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">Lights Off While You're Still in the Room? mmWave Radar Ends Smart Lighting's Biggest Pain Point</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>Lights Off While You're Still in the Room? mmWave Radar Ends Smart Lighting's Biggest Pain Point</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年7月20日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; Smart Lighting</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-cover"><img src="../../images/blog-mmwave-radar-lighting-cover.png" alt="Lights Off While You&#39;re Still in the Room? mmWave Radar Ends Smart Lighting&#39;s Biggest Pain Point"></div>
+                            <p>You&#39;ve been there: sitting on the couch reading, perfectly still, and suddenly — click. The light goes out. You wave your arms, stomp your feet, just to get the light back on. Bathroom break? Light dies mid-scroll. Working at your desk? Gone.</p>
+<p>Your light isn&#39;t broken. Your sensor is just too dumb to know you&#39;re still there.</p>
+<h2>PIR&#39;s Fatal Flaw: It Only Sees Motion</h2>
+<p>Over 90% of smart sensor lights on the market use PIR (Passive Infrared) sensors. The principle is simple: detect changes in infrared heat as your body moves through the sensor&#39;s field of view. When you walk, your body creates a temperature differential — the sensor triggers, the light turns on.</p>
+<p>Here&#39;s the problem: <strong>PIR can only detect moving heat sources.</strong> Once you stop moving, there&#39;s no new spatial displacement for the sensor to see. It concludes &quot;nobody&#39;s here&quot; and shuts off the light.</p>
+<p>This is the &quot;false-off&quot; problem — the most complained-about issue in smart lighting, bar none.</p>
+<h2>mmWave Radar: A Sensor That Can &quot;See&quot; You Breathe</h2>
+<p>In 2026, a technology once reserved for military radar and autonomous vehicles is rapidly entering home lighting — <strong>millimeter-wave (mmWave) radar</strong>.</p>
+<p>The core principle is FMCW (Frequency Modulated Continuous Wave). The radar antenna continuously transmits a microwave signal whose frequency increases linearly over time. When the signal bounces off a human body and returns, the sensor analyzes the frequency difference and phase changes to determine not just &quot;is someone there&quot; but also detect extremely small movements.</p>
+<p>How small? <strong>Human breathing causes chest displacement of about 0.5–1.5 cm. A 60GHz mmWave radar can resolve movements as small as 0.1 mm.</strong></p>
+<p>This means: you can sit completely still for an hour, and as long as you&#39;re breathing, the radar knows you&#39;re there. The light stays on.</p>
+<p><img src="../../images/blog-mmwave-vs-pir-comparison.svg" alt="mmWave vs PIR Sensor Comparison"></p>
+<h2>24GHz vs 60GHz: Which Do You Need?</h2>
+<p>Two main frequencies dominate smart lighting:</p>
+<p><strong>24GHz</strong>: Mature technology, low cost. Motion detection range of 8–12 meters, presence detection (static) range of 6–9 meters. Great for living rooms, corridors, and meeting rooms. Modules like the HLK-LD2410D cost just a few RMB.</p>
+<p><strong>60GHz</strong>: Shorter wavelength (~5mm), more sensitive to micro-movements, centimeter-level resolution. Can detect breathing and even heart rate. Ideal for bedrooms, studies, and elderly care rooms where precise presence detection matters. Consumer products like the Aqara FP2 are now under 200 RMB.</p>
+<p><strong>Rule of thumb</strong>: For high-traffic areas where people are always moving, 24GHz is sufficient. For spaces where people stay still for long periods — desks, beds, offices — go with 60GHz.</p>
+<p><img src="../../images/blog-mmwave-frequency-selection.svg" alt="24GHz vs 60GHz Frequency Selection Guide"></p>
+<h2>The Hidden Link: Radar + LED Driver Power Supply</h2>
+<p>Here&#39;s what most articles won&#39;t tell you: mounting a radar module inside a light fixture creates a critical engineering challenge — <strong>where does the power come from?</strong></p>
+<p>The radar module needs continuous power to function (typically 0.3–1W). This means the LED driver can&#39;t simply shut down when the light is off. It needs an <strong>always-on auxiliary output</strong> that keeps the radar alive even when the LEDs are dark.</p>
+<p>This puts three new demands on the driver:</p>
+<ol>
+<li><p><strong>Ultra-low standby power</strong>: GB 30255-2026 requires standby power ≤0.3W. The radar itself consumes 0.3–1W, so the driver&#39;s own standby losses must be extremely low, or the total exceeds the limit.</p>
+</li>
+<li><p><strong>Output ripple control</strong>: Radar modules are sensitive to power quality. If the driver&#39;s output ripple is too high, the radar may interpret power noise as a human signal — causing &quot;ghost triggers.&quot; Isolated topology with proper output filtering is essential.</p>
+</li>
+<li><p><strong>EMC compatibility</strong>: While the driver&#39;s switching frequency (tens to hundreds of kHz) doesn&#39;t directly interfere with 24/60GHz radar bands, poor EMI filtering can cause harmonics that couple into the radar&#39;s signal chain, reducing detection accuracy.</p>
+</li>
+</ol>
+<p><img src="../../images/blog-mmwave-driver-integration.svg" alt="Radar Module and LED Driver Integration Architecture"></p>
+<p>Bottom line: <strong>A radar light&#39;s reliability is 50% radar algorithm, 50% driver power quality.</strong> Many users who complain about frequent false triggers are actually victims of a cheap driver with excessive ripple — not a bad radar.</p>
+<h2>2026 Market Reality: Going Mainstream</h2>
+<p>The good news: mmWave radar lighting is rapidly becoming affordable:</p>
+<ul>
+<li><strong>Yeelight RadarSense</strong>: Ceiling light with built-in mmWave radar, 269 RMB crowdfunding price, 160W constant-current driver, integrates with Mi Home</li>
+<li><strong>Aqara FP2</strong>: Standalone mmWave presence sensor with multi-zone detection, under 200 RMB</li>
+<li><strong>Philips Hue</strong>: mmWave presence sensor integrating with Hue Bridge v2</li>
+<li><strong>Shelly / ThirdReality</strong>: mmWave sensors in the $30–80 range</li>
+</ul>
+<p>The U.S. Department of Energy estimates occupancy-based lighting controls save 24–38% of commercial lighting energy on average. AI presence sensing pushes those savings higher by eliminating false vacancy events.</p>
+<h2>Buying Guide: Three Checks, One Test</h2>
+<p><strong>Check 1 — Frequency</strong>: Large spaces → 24GHz. Precise presence detection → 60GHz.</p>
+<p><strong>Check 2 — Sensitivity adjustment</strong>: A good radar light should let you independently adjust sensitivity to avoid false triggers from fans, curtains, and pets. If you can&#39;t adjust it, walk away.</p>
+<p><strong>Check 3 — Driver quality</strong>: Ask about standby power, isolation topology, and EMC certification. These three specs determine whether your radar light will &quot;act up.&quot;</p>
+<p><strong>The Test</strong>: Buy it, sit under it, and read for 30 minutes without moving. If the light stays on — it passes. If it goes off — return it.</p>
+<h2>The Bottom Line</h2>
+<p>From &quot;light on when someone walks in&quot; to &quot;light stays on while someone&#39;s breathing&quot; — mmWave radar is redefining what smart lighting perception means. But remember: the radar is just the eyes. The driver power supply is the heart. A quality driver is what makes a radar light actually work.</p>
+<p>At NEXLAMP, we design smart lighting LED drivers specifically engineered for mmWave radar integration — with standby power under 0.3W, isolated topology, and ripple specs that keep your radar signal clean.</p>
+<hr>
+<p><em>NEXLAMP — Smart Lighting Driver Power Supply Specialist</em><br><em><a href="http://www.nexlamp.com">www.nexlamp.com</a> | Mr. Liu +86 13825496855</em></p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>

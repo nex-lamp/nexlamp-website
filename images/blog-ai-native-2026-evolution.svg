@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" width="100%">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke"
+        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Dark background -->
+  <rect x="0" y="0" width="680" height="380" fill="#1a1a2e" rx="0"/>
+
+  <!-- Title -->
+  <text x="340" y="32" text-anchor="middle" fill="#e0e0ff" font-family="sans-serif" font-size="16" font-weight="500">从"调试即终结"到"7x24自主进化"</text>
+
+  <!-- Left side: Traditional -->
+  <rect x="40" y="55" width="260" height="280" rx="16" fill="#16213e" stroke="#556677" stroke-width="1"/>
+  <text x="170" y="82" text-anchor="middle" fill="#8899aa" font-family="sans-serif" font-size="14" font-weight="500">传统物联网照明</text>
+
+  <!-- Traditional items -->
+  <rect x="65" y="100" width="210" height="42" rx="8" fill="#0f1623" stroke="#445566" stroke-width="0.5"/>
+  <text x="170" y="115" text-anchor="middle" fill="#99aabb" font-family="sans-serif" font-size="12">传感器 → 固定阈值触发</text>
+  <text x="170" y="132" text-anchor="middle" fill="#667788" font-family="sans-serif" font-size="11">人过灯亮，人走灯灭</text>
+
+  <rect x="65" y="155" width="210" height="42" rx="8" fill="#0f1623" stroke="#445566" stroke-width="0.5"/>
+  <text x="170" y="170" text-anchor="middle" fill="#99aabb" font-family="sans-serif" font-size="12">预设场景逻辑</text>
+  <text x="170" y="187" text-anchor="middle" fill="#667788" font-family="sans-serif" font-size="11">会议室/走廊/休息区各一套</text>
+
+  <rect x="65" y="210" width="210" height="42" rx="8" fill="#0f1623" stroke="#445566" stroke-width="0.5"/>
+  <text x="170" y="225" text-anchor="middle" fill="#99aabb" font-family="sans-serif" font-size="12">人工运维调试</text>
+  <text x="170" y="242" text-anchor="middle" fill="#667788" font-family="sans-serif" font-size="11">季度巡检，现场调参</text>
+
+  <rect x="65" y="265" width="210" height="42" rx="8" fill="#0f1623" stroke="#445566" stroke-width="0.5"/>
+  <text x="170" y="280" text-anchor="middle" fill="#99aabb" font-family="sans-serif" font-size="12">静态能耗曲线</text>
+  <text x="170" y="297" text-anchor="middle" fill="#667788" font-family="sans-serif" font-size="11">安装时设定，运行后不变</text>
+
+  <!-- Arrow center -->
+  <line x1="320" y1="195" x2="360" y2="195" stroke="#4a9eff" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="340" y="185" text-anchor="middle" fill="#4a9eff" font-family="sans-serif" font-size="11">进化</text>
+
+  <!-- Right side: AI Native -->
+  <rect x="380" y="55" width="260" height="280" rx="16" fill="#16213e" stroke="#4a9eff" stroke-width="1.5"/>
+  <text x="510" y="82" text-anchor="middle" fill="#4a9eff" font-family="sans-serif" font-size="14" font-weight="500">AI原生照明</text>
+
+  <!-- AI items -->
+  <rect x="405" y="100" width="210" height="42" rx="8" fill="#0f1623" stroke="#4a9eff" stroke-width="0.5"/>
+  <text x="510" y="115" text-anchor="middle" fill="#aaccff" font-family="sans-serif" font-size="12">多模态感知 + 预测模型</text>
+  <text x="510" y="132" text-anchor="middle" fill="#7799cc" font-family="sans-serif" font-size="11">预判人员流动，提前调光</text>
+
+  <rect x="405" y="155" width="210" height="42" rx="8" fill="#0f1623" stroke="#4a9eff" stroke-width="0.5"/>
+  <text x="510" y="170" text-anchor="middle" fill="#aaccff" font-family="sans-serif" font-size="12">自适应场景引擎</text>
+  <text x="510" y="187" text-anchor="middle" fill="#7799cc" font-family="sans-serif" font-size="11">学习用户习惯，动态优化</text>
+
+  <rect x="405" y="210" width="210" height="42" rx="8" fill="#0f1623" stroke="#4a9eff" stroke-width="0.5"/>
+  <text x="510" y="225" text-anchor="middle" fill="#aaccff" font-family="sans-serif" font-size="12">智能体自主运维</text>
+  <text x="510" y="242" text-anchor="middle" fill="#7799cc" font-family="sans-serif" font-size="11">7x24监控，自动修复异常</text>
+
+  <rect x="405" y="265" width="210" height="42" rx="8" fill="#0f1623" stroke="#4a9eff" stroke-width="0.5"/>
+  <text x="510" y="280" text-anchor="middle" fill="#aaccff" font-family="sans-serif" font-size="12">持续优化的能耗策略</text>
+  <text x="510" y="297" text-anchor="middle" fill="#7799cc" font-family="sans-serif" font-size="11">月度复盘，自动调整参数</text>
+
+  <!-- Bottom note -->
+  <text x="340" y="355" text-anchor="middle" fill="#556677" font-family="sans-serif" font-size="11">核心差异：从"被动响应"到"主动预测" · 从"静态配置"到"持续进化"</text>
+</svg>

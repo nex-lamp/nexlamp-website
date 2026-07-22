@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Consolas, Monaco, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1b30"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ccff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0066ff" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="warnGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff3300" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="okGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00cc66" stop-opacity="0.5"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5a" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowOk" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00ff88"/>
+    </marker>
+    <marker id="arrowWarn" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ff6600"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="520" fill="url(#bg)"/>
+  <rect width="800" height="520" fill="url(#grid)"/>
+
+  <text x="400" y="40" text-anchor="middle" fill="#5db8e8" font-size="20" font-weight="bold">射灯调光协议不匹配 = 频闪/调不动</text>
+  <text x="400" y="62" text-anchor="middle" fill="#4a7a9a" font-size="11">数据来源：工程实测 | 制图：NEXLAMP</text>
+
+  <!-- 终端窗口 -->
+  <rect x="30" y="85" width="740" height="410" rx="8" fill="#0d1f38" stroke="#1a3a5a" stroke-width="1"/>
+  <rect x="30" y="85" width="740" height="28" rx="8" fill="#102a48"/>
+  <circle cx="48" cy="99" r="5" fill="#ff5f56"/>
+  <circle cx="66" cy="99" r="5" fill="#ffbd2e"/>
+  <circle cx="84" cy="99" r="5" fill="#27c93f"/>
+  <text x="400" y="103" text-anchor="middle" fill="#4a7a9a" font-size="11">dimming_protocol_match --spotlight-driver</text>
+
+  <!-- 控制器列 -->
+  <text x="120" y="145" text-anchor="middle" fill="#5db8e8" font-size="14" font-weight="bold">控制器 / 调光器</text>
+  
+  <g transform="translate(40, 165)">
+    <rect x="0" y="0" width="160" height="48" rx="6" fill="#1a1520" stroke="#ff6600" stroke-width="1.5"/>
+    <text x="80" y="20" text-anchor="middle" fill="#ffaa66" font-size="13" font-weight="bold">TRIAC 可控硅</text>
+    <text x="80" y="36" text-anchor="middle" fill="#8899aa" font-size="10">老式墙装调光器</text>
+  </g>
+  
+  <g transform="translate(40, 230)">
+    <rect x="0" y="0" width="160" height="48" rx="6" fill="#1a1520" stroke="#00ccff" stroke-width="1.5"/>
+    <text x="80" y="20" text-anchor="middle" fill="#00ccff" font-size="13" font-weight="bold">0-10V 调光面板</text>
+    <text x="80" y="36" text-anchor="middle" fill="#8899aa" font-size="10">商用/酒店常用</text>
+  </g>
+  
+  <g transform="translate(40, 295)">
+    <rect x="0" y="0" width="160" height="48" rx="6" fill="#1a1520" stroke="#00ff88" stroke-width="1.5"/>
+    <text x="80" y="20" text-anchor="middle" fill="#00ff88" font-size="13" font-weight="bold">Zigbee 网关</text>
+    <text x="80" y="36" text-anchor="middle" fill="#8899aa" font-size="10">全屋智能方案</text>
+  </g>
+  
+  <g transform="translate(40, 360)">
+    <rect x="0" y="0" width="160" height="48" rx="6" fill="#1a1520" stroke="#cc99ff" stroke-width="1.5"/>
+    <text x="80" y="20" text-anchor="middle" fill="#cc99ff" font-size="13" font-weight="bold">DALI-2 总线</text>
+    <text x="80" y="36" text-anchor="middle" fill="#8899aa" font-size="10">高端商业项目</text>
+  </g>
+
+  <!-- 错误连线 -->
+  <line x1="200" y1="189" x2="280" y2="254" stroke="#ff6600" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowWarn)"/>
+  <line x1="200" y1="254" x2="280" y2="319" stroke="#ff6600" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowWarn)"/>
+  <line x1="200" y1="319" x2="280" y2="189" stroke="#ff6600" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowWarn)"/>
+  <line x1="200" y1="384" x2="280" y2="254" stroke="#ff6600" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowWarn)"/>
+
+  <!-- 中间X -->
+  <circle cx="300" cy="287" r="28" fill="#1a1520" stroke="#ff3300" stroke-width="2"/>
+  <text x="300" y="296" text-anchor="middle" fill="#ff3300" font-size="28" font-weight="bold">&#10008;</text>
+  <text x="300" y="340" text-anchor="middle" fill="#ff8844" font-size="11">协议不匹配</text>
+
+  <!-- 正确连线 -->
+  <line x1="328" y1="287" x2="400" y2="287" stroke="#00ff88" stroke-width="2" marker-end="url(#arrowOk)"/>
+
+  <!-- 驱动列 -->
+  <text x="560" y="145" text-anchor="middle" fill="#5db8e8" font-size="14" font-weight="bold">射灯驱动必须匹配</text>
+  
+  <g transform="translate(420, 165)">
+    <rect x="0" y="0" width="160" height="48" rx="6" fill="#0d1a2a" stroke="#ff6600" stroke-width="1.5"/>
+    <text x="80" y="20" text-anchor="middle" fill="#ffaa66" font-size="13" font-weight="bold">TRIAC 驱动</text>
+    <text x="80" y="36" text-anchor="middle" fill="#8899aa" font-size="10">匹配可控硅调光器</text>
+  </g>
+  
+  <g transform="translate(420, 230)">
+    <rect x="0" y="0" width="160" height="48" rx="6" fill="#0d1a2a" stroke="#00ccff" stroke-width="1.5"/>
+    <text x="80" y="20" text-anchor="middle" fill="#00ccff" font-size="13" font-weight="bold">0-10V 驱动</text>
+    <text x="80" y="36" text-anchor="middle" fill="#8899aa" font-size="10">匹配0-10V面板</text>
+  </g>
+  
+  <g transform="translate(420, 295)">
+    <rect x="0" y="0" width="160" height="48" rx="6" fill="#0d1a2a" stroke="#00ff88" stroke-width="1.5"/>
+    <text x="80" y="20" text-anchor="middle" fill="#00ff88" font-size="13" font-weight="bold">Zigbee 智能驱动</text>
+    <text x="80" y="36" text-anchor="middle" fill="#8899aa" font-size="10">匹配Zigbee网关</text>
+  </g>
+  
+  <g transform="translate(420, 360)">
+    <rect x="0" y="0" width="160" height="48" rx="6" fill="#0d1a2a" stroke="#cc99ff" stroke-width="1.5"/>
+    <text x="80" y="20" text-anchor="middle" fill="#cc99ff" font-size="13" font-weight="bold">DALI-2 驱动</text>
+    <text x="80" y="36" text-anchor="middle" fill="#8899aa" font-size="10">匹配DALI总线</text>
+  </g>
+
+  <!-- 正确匹配箭头 -->
+  <line x1="580" y1="189" x2="630" y2="189" stroke="#00ff88" stroke-width="2" marker-end="url(#arrowOk)"/>
+  <line x1="580" y1="254" x2="630" y2="254" stroke="#00ff88" stroke-width="2" marker-end="url(#arrowOk)"/>
+  <line x1="580" y1="319" x2="630" y2="319" stroke="#00ff88" stroke-width="2" marker-end="url(#arrowOk)"/>
+  <line x1="580" y1="384" x2="630" y2="384" stroke="#00ff88" stroke-width="2" marker-end="url(#arrowOk)"/>
+
+  <!-- 结果 -->
+  <g transform="translate(640, 165)">
+    <rect x="0" y="0" width="110" height="48" rx="6" fill="#0d2a1a" stroke="#00cc66" stroke-width="1.5"/>
+    <text x="55" y="28" text-anchor="middle" fill="#00ff88" font-size="12" font-weight="bold">调光顺滑</text>
+  </g>
+  <g transform="translate(640, 230)">
+    <rect x="0" y="0" width="110" height="48" rx="6" fill="#0d2a1a" stroke="#00cc66" stroke-width="1.5"/>
+    <text x="55" y="28" text-anchor="middle" fill="#00ff88" font-size="12" font-weight="bold">调光顺滑</text>
+  </g>
+  <g transform="translate(640, 295)">
+    <rect x="0" y="0" width="110" height="48" rx="6" fill="#0d2a1a" stroke="#00cc66" stroke-width="1.5"/>
+    <text x="55" y="28" text-anchor="middle" fill="#00ff88" font-size="12" font-weight="bold">调光顺滑</text>
+  </g>
+  <g transform="translate(640, 360)">
+    <rect x="0" y="0" width="110" height="48" rx="6" fill="#0d2a1a" stroke="#00cc66" stroke-width="1.5"/>
+    <text x="55" y="28" text-anchor="middle" fill="#00ff88" font-size="12" font-weight="bold">调光顺滑</text>
+  </g>
+
+  <text x="400" y="480" text-anchor="middle" fill="#8899aa" font-size="12">核心原则：先定调光系统，再按协议选驱动。不同协议之间无法"自动兼容"。</text>
+</svg>
