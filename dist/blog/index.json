@@ -2,11 +2,110 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-20",
+    "date": "2026-07-23",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
     "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-23",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "智能灯越\"集成\"越不稳定？灯具电器一体化这3个暗坑你踩过吗",
+    "slug": "integrated-smart-lighting-pitfalls-guide-2026",
+    "date": "2026-07-23",
+    "category": "智能照明选型",
+    "description": "智能灯灯具电器一体化选购避坑指南：协议兼容、散热压缩、驱动芯片可靠性3大暗坑详解，附4条选型准则和Nexlamp隔离驱动集成方案。",
+    "cover": "images/2026-07-23-integrated-smart-lighting-pitfalls-cover.jpg",
+    "excerpt": "2026年智能照明全面走向\"光源+驱动+控制\"一体化，看起来省事，但协议适配率低、散热压缩寿命缩短、驱动芯片故障率翻4倍——这3个暗坑，90%的买家踩完才发现。"
+  },
+  {
+    "title": "Matter协议来了：2026年你家的智能灯终于能互相'说话'了",
+    "slug": "matter-smart-lighting-interoperability-2026",
+    "date": "2026-07-23",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-matter-smart-lighting-2026-cover.png",
+    "excerpt": "买了个飞利浦的灯，装了个小米的开关，发现根本不能联动？2026年Matter协议终于让不同品牌的智能灯'学会说话'了。这篇文章讲清楚Matter到底是什么、怎么选、怎么用。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-23",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-23",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-07-23",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-23",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "无主灯射灯怎么选驱动？2026年装修最容易踩的5个坑",
+    "slug": "spotlight-driver-selection-pitfalls",
+    "date": "2026-07-22",
+    "category": "选购指南",
+    "description": "无主灯设计翻车案例里，90%问题不在灯具颜值，而在驱动电源匹配。本文从电流、协议、隔离、品牌统一、频闪五个维度，帮你避开射灯驱动选型的常见陷阱。",
+    "cover": "images/blog-spotlight-driver-2026-cover.png",
+    "excerpt": "无主灯射灯翻车，90%问题出在驱动电源。2026年装修选购射灯，这5个坑千万别踩。"
+  },
+  {
+    "title": "不用APP不联网也能语音控灯？2026轻智能照明为什么突然爆发",
+    "slug": "lightweight-smart-lighting-2026-trend",
+    "date": "2026-07-21",
+    "category": "行业趋势",
+    "description": "2026年轻智能照明爆发：离线语音控制技术让智能灯不联网也能0.3秒响应，隐私不泄露，老人3分钟学会。技术原理、真实数据与选购指南全解析。",
+    "cover": "images/blog-lightweight-smart-lighting-2026-cover.png",
+    "excerpt": "2026年光亚展后，一个反直觉的趋势正在爆发：智能照明正在\"反向进化\"——不用APP、不连WiFi、不依赖云端，靠一颗离线语音芯片就能0.3秒响应。本文拆解轻智能照明的技术内核、真实数据和选购要点。"
+  },
+  {
+    "title": "智能灯泡变窃听器？2026年智能照明安全漏洞全解析与防护指南",
+    "slug": "智能灯泡变窃听器2026年智能照明安全漏洞全解析与防护指南",
+    "date": "2026-07-21",
+    "category": "系统设计",
+    "description": "智能照明网络安全漏洞频发，Philips Hue和TP-Link Tapo均曝高危CVE。本文分析攻击路径与防护方案。",
+    "cover": "images/blog-smart-lighting-cybersecurity-cover.png",
+    "excerpt": "2026年Philips Hue Bridge和TP-Link Tapo智能灯泡接连曝出高危漏洞，CVSS最高9.8分。本文深度解析智能照明四大攻击路径，从驱动电源到通信协议层层拆解，给出5条可落地的选购与防护建议。"
+  },
+  {
+    "title": "Your Smart Bulb Is a Security Risk: 2026 Smart Lighting Vulnerabilities Explained",
+    "slug": "your-smart-bulb-is-a-security-risk-2026-smart-lighting-vulnerabilities-explained",
+    "date": "2026-07-21",
+    "category": "Security",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "Philips Hue Bridge CVSS 9.8, TP-Link Tapo CVSS 7.3 — smart lighting had a brutal 2026 for security. Here are the 4 attack paths, the driver-level defenses, and 5 practical steps to protect your home."
   },
   {
     "title": "人静灯不灭——毫米波雷达如何终结智能照明最大尴尬",
@@ -27,40 +126,13 @@
     "excerpt": "同一个100平米的房子，装Wi-Fi智能灯掉线到怀疑人生，换成Zigbee后稳如老狗。背后真相是路由器的物理瓶颈。本文用3个真实家庭案例讲清楚：什么时候必须选Zigbee。"
   },
   {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "title": "Lights Off While You're Still in the Room? mmWave Radar Ends Smart Lighting's Biggest Pain Point",
+    "slug": "mmwave-radar-presence-detection-smart-lighting",
     "date": "2026-07-20",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-20",
-    "category": "技术文章",
+    "category": "Smart Lighting",
     "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-07-20",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-20",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
+    "cover": "images/blog-mmwave-radar-lighting-cover.png",
+    "excerpt": "Sitting still on the couch and the light goes out? mmWave radar detects your breathing to keep lights on when you're present. Here's how it works and why your LED driver matters more than you think."
   },
   {
     "title": "AI智能照明能接入却不好用？问题多半出在驱动电源",
