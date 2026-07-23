@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#1a2a4a"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="680" height="420" fill="url(#bgGrad2)"/>
+  
+  <!-- Grid -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="40" x2="680" y2="40"/><line x1="0" y1="80" x2="680" y2="80"/>
+    <line x1="0" y1="120" x2="680" y2="120"/><line x1="0" y1="160" x2="680" y2="160"/>
+    <line x1="0" y1="200" x2="680" y2="200"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="280" x2="680" y2="280"/><line x1="0" y1="320" x2="680" y2="320"/>
+    <line x1="0" y1="360" x2="680" y2="360"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="340" y="35" text-anchor="middle" fill="#e0e8ff" font-family="monospace" font-size="18" font-weight="bold" filter="url(#glow2)">有 Matter vs 没 Matter：智能照明体验对比</text>
+  
+  <!-- Left column: "没有Matter" -->
+  <text x="170" y="65" text-anchor="middle" fill="#ef5350" font-family="monospace" font-size="14" font-weight="bold">❌ 以前：没有 Matter</text>
+  
+  <!-- App chaos -->
+  <rect x="60" y="80" width="220" height="45" rx="6" fill="#1a0a0a" stroke="#ef5350" stroke-width="1"/>
+  <text x="80" y="100" fill="#ef5350" font-family="monospace" font-size="10">📱 飞利浦Hue App</text>
+  <text x="80" y="115" fill="#ef5350" font-family="monospace" font-size="9" opacity="0.7">只能控Hue品牌灯</text>
+  
+  <rect x="60" y="130" width="220" height="45" rx="6" fill="#1a0a0a" stroke="#ab47bc" stroke-width="1"/>
+  <text x="80" y="150" fill="#ab47bc" font-family="monospace" font-size="10">📱 米家 App</text>
+  <text x="80" y="165" fill="#ab47bc" font-family="monospace" font-size="9" opacity="0.7">只能控小米生态</text>
+  
+  <rect x="60" y="180" width="220" height="45" rx="6" fill="#1a0a0a" stroke="#ff7043" stroke-width="1"/>
+  <text x="80" y="200" fill="#ff7043" font-family="monospace" font-size="10">📱 宜家 App</text>
+  <text x="80" y="215" fill="#ff7043" font-family="monospace" font-size="9" opacity="0.7">只能控TRÅDFRI灯</text>
+  
+  <!-- Gateway chaos -->
+  <text x="170" y="240" text-anchor="middle" fill="#ef5350" font-family="monospace" font-size="12">网关堆成山：</text>
+  <g transform="translate(80,250)">
+    <rect width="60" height="35" rx="4" fill="#2a0a0a" stroke="#ef5350" stroke-width="0.8"/>
+    <text x="30" y="22" text-anchor="middle" fill="#ef5350" font-family="monospace" font-size="8">Hue Bridge</text>
+  </g>
+  <g transform="translate(150,250)">
+    <rect width="60" height="35" rx="4" fill="#2a0a0a" stroke="#ab47bc" stroke-width="0.8"/>
+    <text x="30" y="22" text-anchor="middle" fill="#ab47bc" font-family="monospace" font-size="8">米家网关</text>
+  </g>
+  <g transform="translate(220,250)">
+    <rect width="60" height="35" rx="4" fill="#2a0a0a" stroke="#ff7043" stroke-width="0.8"/>
+    <text x="30" y="22" text-anchor="middle" fill="#ff7043" font-family="monospace" font-size="8">DIRIGUER</text>
+  </g>
+  
+  <!-- Pain points -->
+  <text x="170" y="310" text-anchor="middle" fill="#ef5350" font-family="monospace" font-size="11">痛点：</text>
+  <text x="80" y="330" fill="#ef5350" font-family="monospace" font-size="9">• 跨品牌联动 = 不可能或需写代码</text>
+  <text x="80" y="348" fill="#ef5350" font-family="monospace" font-size="9">• 3个App + 3个网关 = 割裂体验</text>
+  <text x="80" y="366" fill="#ef5350" font-family="monospace" font-size="9">• IFTTT/HomeAssistant = 折腾</text>
+  
+  <!-- Divider -->
+  <line x1="340" y1="55" x2="340" y2="380" stroke="#4fc3f7" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Right column: "有Matter" -->
+  <text x="510" y="65" text-anchor="middle" fill="#66bb6a" font-family="monospace" font-size="14" font-weight="bold">✅ 现在：有了 Matter</text>
+  
+  <!-- One controller -->
+  <rect x="400" y="80" width="220" height="45" rx="6" fill="#0a1a2a" stroke="#4fc3f7" stroke-width="1.5" filter="url(#glow2)"/>
+  <text x="420" y="100" fill="#4fc3f7" font-family="monospace" font-size="10">📱 任选一个控制器 App</text>
+  <text x="420" y="115" fill="#80cbc4" font-family="monospace" font-size="9">Apple/Google/SmartThings/米家</text>
+  
+  <!-- One gateway -->
+  <rect x="400" y="130" width="220" height="45" rx="6" fill="#0a1a2a" stroke="#4fc3f7" stroke-width="1.5" filter="url(#glow2)"/>
+  <text x="420" y="150" fill="#4fc3f7" font-family="monospace" font-size="10">🌐 1个 Thread 边界路由器</text>
+  <text x="420" y="165" fill="#80cbc4" font-family="monospace" font-size="9">HomePod mini / Nest Hub / ST Station</text>
+  
+  <!-- All brands unified -->
+  <text x="510" y="200" text-anchor="middle" fill="#66bb6a" font-family="monospace" font-size="12">所有Matter灯统一管理：</text>
+  <g transform="translate(400,210)">
+    <rect width="70" height="30" rx="4" fill="#0a2a1a" stroke="#66bb6a" stroke-width="1"/>
+    <text x="35" y="20" text-anchor="middle" fill="#66bb6a" font-family="monospace" font-size="9">Hue 灯</text>
+  </g>
+  <g transform="translate(480,210)">
+    <rect width="70" height="30" rx="4" fill="#0a2a1a" stroke="#66bb6a" stroke-width="1"/>
+    <text x="35" y="20" text-anchor="middle" fill="#66bb6a" font-family="monospace" font-size="9">小米灯</text>
+  </g>
+  <g transform="translate(560,210)">
+    <rect width="70" height="30" rx="4" fill="#0a2a1a" stroke="#66bb6a" stroke-width="1"/>
+    <text x="35" y="20" text-anchor="middle" fill="#66bb6a" font-family="monospace" font-size="9">宜家灯</text>
+  </g>
+  
+  <!-- Scene ease -->
+  <rect x="400" y="250" width="220" height="45" rx="6" fill="#0a1a2a" stroke="#66bb6a" stroke-width="1.5" filter="url(#glow2)"/>
+  <text x="420" y="270" fill="#66bb6a" font-family="monospace" font-size="10">🏠 场景联动：点几下按钮</text>
+  <text x="420" y="285" fill="#a5d6a7" font-family="monospace" font-size="9">"回家开灯" 一键搞定全屋</text>
+  
+  <!-- Benefits -->
+  <text x="510" y="310" text-anchor="middle" fill="#66bb6a" font-family="monospace" font-size="11">优势：</text>
+  <text x="420" y="330" fill="#66bb6a" font-family="monospace" font-size="9">• 跨品牌天然联动，零折腾</text>
+  <text x="420" y="348" fill="#66bb6a" font-family="monospace" font-size="9">• 1个App + 1个网关 = 简洁</text>
+  <text x="420" y="366" fill="#66bb6a" font-family="monospace" font-size="9">• 切换生态成本 = 0</text>
+  
+  <!-- Bottom bar -->
+  <rect x="0" y="395" width="680" height="25" fill="#0a1020"/>
+  <text x="340" y="412" text-anchor="middle" fill="#546e7a" font-family="monospace" font-size="10">2026年买智能灯 → 认准 Matter 标志 → 一个控制器管全屋</text>
+</svg>

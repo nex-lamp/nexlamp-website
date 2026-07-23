@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-22",
+    "date": "2026-07-23",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,61 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-22",
+    "date": "2026-07-23",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "智能灯越\"集成\"越不稳定？灯具电器一体化这3个暗坑你踩过吗",
+    "slug": "integrated-smart-lighting-pitfalls-guide-2026",
+    "date": "2026-07-23",
+    "category": "智能照明选型",
+    "description": "智能灯灯具电器一体化选购避坑指南：协议兼容、散热压缩、驱动芯片可靠性3大暗坑详解，附4条选型准则和Nexlamp隔离驱动集成方案。",
+    "cover": "images/2026-07-23-integrated-smart-lighting-pitfalls-cover.jpg",
+    "excerpt": "2026年智能照明全面走向\"光源+驱动+控制\"一体化，看起来省事，但协议适配率低、散热压缩寿命缩短、驱动芯片故障率翻4倍——这3个暗坑，90%的买家踩完才发现。"
+  },
+  {
+    "title": "Matter协议来了：2026年你家的智能灯终于能互相'说话'了",
+    "slug": "matter-smart-lighting-interoperability-2026",
+    "date": "2026-07-23",
+    "category": "智能照明",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-matter-smart-lighting-2026-cover.png",
+    "excerpt": "买了个飞利浦的灯，装了个小米的开关，发现根本不能联动？2026年Matter协议终于让不同品牌的智能灯'学会说话'了。这篇文章讲清楚Matter到底是什么、怎么选、怎么用。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-23",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-23",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-07-23",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-23",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -25,42 +79,6 @@
     "description": "无主灯设计翻车案例里，90%问题不在灯具颜值，而在驱动电源匹配。本文从电流、协议、隔离、品牌统一、频闪五个维度，帮你避开射灯驱动选型的常见陷阱。",
     "cover": "images/blog-spotlight-driver-2026-cover.png",
     "excerpt": "无主灯射灯翻车，90%问题出在驱动电源。2026年装修选购射灯，这5个坑千万别踩。"
-  },
-  {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-07-22",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-22",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-07-22",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-22",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "不用APP不联网也能语音控灯？2026轻智能照明为什么突然爆发",
