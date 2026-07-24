@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-23",
+    "date": "2026-07-24",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,61 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-23",
+    "date": "2026-07-24",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "调光驱动选型终极指南：6种协议+灯驱一体化，2026年不再翻车",
+    "slug": "dimmer-driver-integration-selection-guide-2026",
+    "date": "2026-07-24",
+    "category": "LED驱动",
+    "description": "详解LED调光驱动6种协议优缺点对比，2026年灯驱一体化和多模态调光技术如何解决兼容性痛点，附选型决策流程和避坑指南。",
+    "cover": "images/blog-dimmer-driver-integration-2026-cover.png",
+    "excerpt": "可控硅调光闪、0-10V布线麻烦、DALI太贵、Zigbee掉线……调光驱动到底怎么选？2026年灯驱一体化+多协议驱动终于让选型变简单了。这篇文章讲透6种调光协议的优缺点和最新选型方案。"
+  },
+  {
+    "title": "欧盟EPBD 2026年5月新规落地：商业建筑强制自动照明，LED驱动/灯具企业怎么接招？",
+    "slug": "epbd-2026-commercial-lighting-compliance",
+    "date": "2026-07-24",
+    "category": "行业观察",
+    "description": "耐利普科技技术文章",
+    "cover": "../../images/blog-epbd-2026-cover.png",
+    "excerpt": "欧盟EPBD 5月起强制要求新建商业建筑安装自动照明控制系统，对做LED驱动/智能照明的工厂来说，是机会还是壁垒？本文用大白话拆解新规要点、列出可落地的产品调整清单。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-24",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-24",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-07-24",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-24",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -34,42 +88,6 @@
     "description": "耐利普科技技术文章",
     "cover": "images/blog-matter-smart-lighting-2026-cover.png",
     "excerpt": "买了个飞利浦的灯，装了个小米的开关，发现根本不能联动？2026年Matter协议终于让不同品牌的智能灯'学会说话'了。这篇文章讲清楚Matter到底是什么、怎么选、怎么用。"
-  },
-  {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-07-23",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-23",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-07-23",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-23",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "无主灯射灯怎么选驱动？2026年装修最容易踩的5个坑",

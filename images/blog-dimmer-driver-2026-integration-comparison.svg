@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#5a8ab5"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <!-- Grid -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="320" x2="800" y2="320"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#e0e8f0" font-family="Consolas, monospace" font-size="18" font-weight="bold">&#20256;&#32479;&#26041;&#26696; VS &#28783;&#39537;&#19968;&#20307;&#21270;</text>
+  <text x="400" y="55" text-anchor="middle" fill="#5a8ab5" font-family="Consolas, monospace" font-size="11">Traditional Split vs Integrated Driver-Dimmer</text>
+  <!-- Left side: Traditional -->
+  <text x="200" y="85" text-anchor="middle" fill="#ff6b6b" font-family="Consolas, monospace" font-size="14" font-weight="bold">&#9888; &#20256;&#32479;&#26041;&#26696; (&#20998;&#31163;)</text>
+  <!-- Traditional boxes -->
+  <rect x="60" y="105" width="120" height="40" rx="5" fill="#1a2a4a" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="120" y="130" text-anchor="middle" fill="#ff8a8a" font-family="Consolas, monospace" font-size="11">&#35843;&#20809;&#22120;</text>
+  <rect x="220" y="105" width="120" height="40" rx="5" fill="#1a2a4a" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="280" y="130" text-anchor="middle" fill="#ff8a8a" font-family="Consolas, monospace" font-size="11">&#39537;&#21160;&#30005;&#28304;</text>
+  <rect x="60" y="165" width="120" height="35" rx="5" fill="#1a2a4a" stroke="#555" stroke-width="1"/>
+  <text x="120" y="188" text-anchor="middle" fill="#888" font-family="Consolas, monospace" font-size="10">&#21697;&#29260;A</text>
+  <rect x="220" y="165" width="120" height="35" rx="5" fill="#1a2a4a" stroke="#555" stroke-width="1"/>
+  <text x="280" y="188" text-anchor="middle" fill="#888" font-family="Consolas, monospace" font-size="10">&#21697;&#29260;B</text>
+  <!-- Connection wire -->
+  <line x1="180" y1="125" x2="220" y2="125" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="200" y="118" text-anchor="middle" fill="#ff6b6b" font-family="Consolas, monospace" font-size="9">?&#20860;&#23481;?</text>
+  <!-- Pain points -->
+  <g fill="#ff8a8a" font-family="Consolas, monospace" font-size="10">
+    <text x="60" y="230">&#10060; &#25509;&#32447;&#28857;&#22810;&#65288;+40%&#65289;</text>
+    <text x="60" y="250">&#10060; &#20860;&#23481;&#24615;&#24046;&#8594;&#38378;&#28865;</text>
+    <text x="60" y="270">&#10060; &#25925;&#38556;&#25490;&#26597;&#38590;</text>
+    <text x="60" y="290">&#10060; SKU&#32929;&#25253;&#21587;&#22411;</text>
+  </g>
+  <!-- VS divider -->
+  <line x1="400" y1="100" x2="400" y2="400" stroke="#1a3050" stroke-width="2" stroke-dasharray="8,4"/>
+  <circle cx="400" cy="220" r="22" fill="#0a1628" stroke="#5a8ab5" stroke-width="2"/>
+  <text x="400" y="226" text-anchor="middle" fill="#5a8ab5" font-family="Consolas, monospace" font-size="13" font-weight="bold">VS</text>
+  <!-- Right side: Integrated -->
+  <text x="600" y="85" text-anchor="middle" fill="#4ecca3" font-family="Consolas, monospace" font-size="14" font-weight="bold">&#9989; &#28783;&#39537;&#19968;&#20307;&#21270;</text>
+  <!-- Integrated box -->
+  <rect x="510" y="105" width="180" height="60" rx="8" fill="#0d2a1a" stroke="#4ecca3" stroke-width="2" filter="url(#glow2)"/>
+  <text x="600" y="130" text-anchor="middle" fill="#6bcf7f" font-family="Consolas, monospace" font-size="13" font-weight="bold">&#35843;&#20809;+&#39537;&#21160;&#19968;&#20307;&#26426;</text>
+  <text x="600" y="150" text-anchor="middle" fill="#4ecca3" font-family="Consolas, monospace" font-size="10">Driver + Dimmer All-in-One</text>
+  <!-- Benefits -->
+  <g fill="#6bcf7f" font-family="Consolas, monospace" font-size="10">
+    <text x="500" y="230">&#10004; &#25509;&#32447;&#28857;&#20943;&#23569;40%+</text>
+    <text x="500" y="250">&#10004; &#20986;&#21378;&#21305;&#37197;100%</text>
+    <text x="500" y="270">&#10004; &#25925;&#38556;&#23450;&#20301;&#29575;</text>
+    <text x="500" y="290">&#10004; &#19968;&#20010;SKU&#25630;&#23450;</text>
+  </g>
+  <!-- Multi-protocol chip -->
+  <rect x="500" y="320" width="200" height="80" rx="8" fill="#0d1f3a" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="600" y="345" text-anchor="middle" fill="#a78bfa" font-family="Consolas, monospace" font-size="12" font-weight="bold">5&#21531;1 &#22810;&#21327;&#35758;&#39537;&#21160;</text>
+  <g fill="#c0d0e0" font-family="Consolas, monospace" font-size="9">
+    <text x="520" y="365">TRIAC</text>
+    <text x="590" y="365">0-10V</text>
+    <text x="650" y="365">PWM</text>
+    <text x="520" y="385">DALI</text>
+    <text x="590" y="385">Zigbee</text>
+  </g>
+  <text x="600" y="420" text-anchor="middle" fill="#5a8ab5" font-family="Consolas, monospace" font-size="9">&#25320;&#30721;&#20999;&#25442; / &#33258;&#21160;&#35782;&#21035;</text>
+  <!-- Cost comparison bar -->
+  <rect x="50" y="440" width="320" height="30" rx="4" fill="#1a2a4a"/>
+  <rect x="50" y="440" width="200" height="30" rx="4" fill="#ff6b6b" opacity="0.7"/>
+  <text x="210" y="460" text-anchor="middle" fill="#fff" font-family="Consolas, monospace" font-size="10">&#20256;&#32479;&#25104;&#26412; 100%</text>
+  <rect x="430" y="440" width="320" height="30" rx="4" fill="#1a2a4a"/>
+  <rect x="430" y="440" width="170" height="30" rx="4" fill="#4ecca3" opacity="0.7"/>
+  <text x="600" y="460" text-anchor="middle" fill="#fff" font-family="Consolas, monospace" font-size="10">&#19968;&#20307;&#21270; 85% (&#21518;&#32493;&#30465;&#24515;)</text>
+</svg>
