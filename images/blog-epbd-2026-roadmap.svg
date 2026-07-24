@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1e35"/>
+    </linearGradient>
+    <pattern id="grid3" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b9eff"/>
+      <stop offset="50%" stop-color="#5fc7ff"/>
+      <stop offset="100%" stop-color="#7fffaf"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="url(#bgGrad3)"/>
+  <rect width="1200" height="720" fill="url(#grid3)"/>
+
+  <!-- Title -->
+  <text x="60" y="70" font-family="Consolas, monospace" font-size="32" font-weight="bold" fill="url(#timelineGrad)" filter="url(#glow3)">EPBD 2026/5 — 出海企业应对路线图</text>
+  <text x="60" y="100" font-family="Consolas, monospace" font-size="14" fill="#7fb3d5" opacity="0.8">// 短期 / 中期 / 长期 三步走，把合规做成壁垒</text>
+
+  <!-- Horizontal timeline base -->
+  <line x1="80" y1="380" x2="1120" y2="380" stroke="url(#timelineGrad)" stroke-width="3" opacity="0.7"/>
+
+  <!-- Phase 1: 短期 (2026 Q3-Q4) -->
+  <g transform="translate(80, 380)">
+    <circle cx="0" cy="0" r="14" fill="#3b9eff" stroke="#ffffff" stroke-width="2" filter="url(#glow3)"/>
+    <circle cx="0" cy="0" r="6" fill="#ffffff"/>
+    <!-- Phase label above -->
+    <g transform="translate(-100, -240)">
+      <rect width="200" height="200" rx="8" fill="#0d2540" stroke="#3b9eff" stroke-width="1.5" opacity="0.95"/>
+      <rect width="200" height="35" rx="8" fill="#3b9eff" opacity="0.2"/>
+      <text x="100" y="22" font-family="Consolas, monospace" font-size="13" font-weight="bold" fill="#5fc7ff" text-anchor="middle">PHASE 01 · 短期</text>
+      <text x="100" y="60" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">2026 Q3-Q4</text>
+      <line x1="20" y1="75" x2="180" y2="75" stroke="#3b9eff" stroke-width="1" opacity="0.5"/>
+      <text x="100" y="100" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">产品清单梳理</text>
+      <text x="100" y="120" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">驱动加通信模块</text>
+      <text x="100" y="140" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">0-10V接收板</text>
+      <text x="100" y="160" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">走DALI-2认证</text>
+      <text x="100" y="180" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8" text-anchor="middle">（DiiA，3-6个月）</text>
+    </g>
+    <text x="0" y="60" font-family="Consolas, monospace" font-size="11" fill="#7fb3d5" text-anchor="middle">今天就动</text>
+  </g>
+
+  <!-- Phase 2: 中期 (2027) -->
+  <g transform="translate(600, 380)">
+    <circle cx="0" cy="0" r="14" fill="#5fc7ff" stroke="#ffffff" stroke-width="2" filter="url(#glow3)"/>
+    <circle cx="0" cy="0" r="6" fill="#ffffff"/>
+    <!-- Phase label above -->
+    <g transform="translate(-100, -240)">
+      <rect width="200" height="200" rx="8" fill="#0d2540" stroke="#5fc7ff" stroke-width="1.5" opacity="0.95"/>
+      <rect width="200" height="35" rx="8" fill="#5fc7ff" opacity="0.2"/>
+      <text x="100" y="22" font-family="Consolas, monospace" font-size="13" font-weight="bold" fill="#5fc7ff" text-anchor="middle">PHASE 02 · 中期</text>
+      <text x="100" y="60" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">2027</text>
+      <line x1="20" y1="75" x2="180" y2="75" stroke="#5fc7ff" stroke-width="1" opacity="0.5"/>
+      <text x="100" y="100" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">BMS对接接口</text>
+      <text x="100" y="120" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">BACnet / Modbus</text>
+      <text x="100" y="140" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">从卖单品→卖系统</text>
+      <text x="100" y="160" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">配套调试工具</text>
+      <text x="100" y="180" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8" text-anchor="middle">（场景模板）</text>
+    </g>
+    <text x="0" y="60" font-family="Consolas, monospace" font-size="11" fill="#7fb3d5" text-anchor="middle">系统级</text>
+  </g>
+
+  <!-- Phase 3: 长期 (2028+) -->
+  <g transform="translate(1120, 380)">
+    <circle cx="0" cy="0" r="14" fill="#7fffaf" stroke="#ffffff" stroke-width="2" filter="url(#glow3)"/>
+    <circle cx="0" cy="0" r="6" fill="#ffffff"/>
+    <!-- Phase label above -->
+    <g transform="translate(-100, -240)">
+      <rect width="200" height="200" rx="8" fill="#0d2540" stroke="#7fffaf" stroke-width="1.5" opacity="0.95"/>
+      <rect width="200" height="35" rx="8" fill="#7fffaf" opacity="0.2"/>
+      <text x="100" y="22" font-family="Consolas, monospace" font-size="13" font-weight="bold" fill="#7fffaf" text-anchor="middle">PHASE 03 · 长期</text>
+      <text x="100" y="60" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">2028+</text>
+      <line x1="20" y1="75" x2="180" y2="75" stroke="#7fffaf" stroke-width="1" opacity="0.5"/>
+      <text x="100" y="100" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">光+驱动+控制</text>
+      <text x="100" y="120" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">"光环境子站"</text>
+      <text x="100" y="140" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">对接EPC总包</text>
+      <text x="100" y="160" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">调色温/人因/占空</text>
+      <text x="100" y="180" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8" text-anchor="middle">（净零建筑）</text>
+    </g>
+    <text x="-200" y="60" font-family="Consolas, monospace" font-size="11" fill="#7fb3d5" text-anchor="middle">壁垒形成</text>
+  </g>
+
+  <!-- Bottom action checklist -->
+  <g transform="translate(60, 530)">
+    <text x="0" y="0" font-family="Consolas, monospace" font-size="18" font-weight="bold" fill="#5fc7ff">// 给老板的可落地清单（5件事）</text>
+  </g>
+  <g transform="translate(60, 560)">
+    <rect width="1080" height="130" rx="6" fill="#0d2540" stroke="#3b9eff" stroke-width="1" opacity="0.9"/>
+    <text x="30" y="35" font-family="Consolas, monospace" font-size="13" fill="#5fc7ff">[01] 把产品库里所有出口欧盟的LED驱动型号拉清单，逐一标"是否支持0-10V/DALI-2"</text>
+    <text x="30" y="60" font-family="Consolas, monospace" font-size="13" fill="#5fc7ff">[02] 抽样5个核心SKU送检DiiA（目标3-6个月拿证）</text>
+    <text x="30" y="85" font-family="Consolas, monospace" font-size="13" fill="#5fc7ff">[03] 让FAE给客户出一份"EPBD 2026/5合规选型指南"</text>
+    <text x="30" y="110" font-family="Consolas, monospace" font-size="13" fill="#5fc7ff">[04] 官网/选型手册首页加一句"EPBD 2026/5 Ready"  [05] 销售跟单流程加一问"项目所在国是否受EPBD管辖"</text>
+  </g>
+</svg>

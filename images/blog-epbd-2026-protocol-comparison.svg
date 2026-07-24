@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1e35"/>
+    </linearGradient>
+    <pattern id="grid2" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5fc7ff"/>
+      <stop offset="100%" stop-color="#7fffaf"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="url(#bgGrad2)"/>
+  <rect width="1200" height="720" fill="url(#grid2)"/>
+
+  <!-- Title -->
+  <text x="60" y="70" font-family="Consolas, monospace" font-size="30" font-weight="bold" fill="url(#headerGrad)" filter="url(#glow2)">EPBD 2026/5 协议选型 — 一张表看清楚</text>
+  <text x="60" y="100" font-family="Consolas, monospace" font-size="14" fill="#7fb3d5" opacity="0.8">// 哪种协议适合你的项目？DALI-2 / 0-10V / KNX / Matter 一文讲清</text>
+
+  <!-- Comparison table -->
+  <g transform="translate(60, 140)">
+    <!-- header row -->
+    <rect width="1080" height="50" rx="4" fill="#0d2540" stroke="#5fc7ff" stroke-width="1"/>
+    <text x="40" y="32" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#5fc7ff">协议</text>
+    <text x="200" y="32" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#5fc7ff">类型</text>
+    <text x="360" y="32" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#5fc7ff">布线</text>
+    <text x="500" y="32" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#5fc7ff">场景</text>
+    <text x="780" y="32" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#5fc7ff">EPBD契合度</text>
+    <text x="950" y="32" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#5fc7ff">成本</text>
+
+    <!-- Row 1: DALI-2 -->
+    <g transform="translate(0, 50)">
+      <rect width="1080" height="80" fill="#0d1f38" opacity="0.5"/>
+      <text x="40" y="48" font-family="Consolas, monospace" font-size="16" font-weight="bold" fill="#ffffff">DALI-2</text>
+      <text x="200" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">数字总线</text>
+      <text x="360" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">2芯总线</text>
+      <text x="500" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">商业建筑</text>
+      <text x="500" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">办公楼/医院</text>
+      <text x="780" y="48" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#7fffaf">★★★★★</text>
+      <text x="780" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">EPBD标杆方案</text>
+      <text x="950" y="48" font-family="Consolas, monospace" font-size="13" fill="#ffd966">中</text>
+      <text x="950" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">认证成熟</text>
+    </g>
+
+    <!-- Row 2: 0-10V -->
+    <g transform="translate(0, 130)">
+      <rect width="1080" height="80" fill="#0d1f38" opacity="0.3"/>
+      <text x="40" y="48" font-family="Consolas, monospace" font-size="16" font-weight="bold" fill="#ffffff">0-10V</text>
+      <text x="200" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">模拟信号</text>
+      <text x="360" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">2芯信号线</text>
+      <text x="500" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">小型商业/改造</text>
+      <text x="500" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">成本敏感项目</text>
+      <text x="780" y="48" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#a0d8ef">★★★☆☆</text>
+      <text x="780" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">基础合规</text>
+      <text x="950" y="48" font-family="Consolas, monospace" font-size="13" fill="#7fffaf">低</text>
+      <text x="950" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">最便宜</text>
+    </g>
+
+    <!-- Row 3: KNX -->
+    <g transform="translate(0, 210)">
+      <rect width="1080" height="80" fill="#0d1f38" opacity="0.5"/>
+      <text x="40" y="48" font-family="Consolas, monospace" font-size="16" font-weight="bold" fill="#ffffff">KNX</text>
+      <text x="200" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">楼宇总线</text>
+      <text x="360" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">KNX专用线</text>
+      <text x="500" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">高端商业</text>
+      <text x="500" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">酒店/机场</text>
+      <text x="780" y="48" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#7fffaf">★★★★★</text>
+      <text x="780" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">EPBD标杆方案</text>
+      <text x="950" y="48" font-family="Consolas, monospace" font-size="13" fill="#ff9999">高</text>
+      <text x="950" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">调试复杂</text>
+    </g>
+
+    <!-- Row 4: Matter / Zigbee -->
+    <g transform="translate(0, 290)">
+      <rect width="1080" height="80" fill="#0d1f38" opacity="0.3"/>
+      <text x="40" y="48" font-family="Consolas, monospace" font-size="16" font-weight="bold" fill="#ffffff">Matter</text>
+      <text x="200" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">无线IP</text>
+      <text x="360" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">无布线</text>
+      <text x="500" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">小型商用/家居</text>
+      <text x="500" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">连锁门店</text>
+      <text x="780" y="48" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#a0d8ef">★★★☆☆</text>
+      <text x="780" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">需网关/边界路由</text>
+      <text x="950" y="48" font-family="Consolas, monospace" font-size="13" fill="#a0d8ef">中</text>
+      <text x="950" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">生态碎片</text>
+    </g>
+
+    <!-- Row 5: Casambi -->
+    <g transform="translate(0, 370)">
+      <rect width="1080" height="80" fill="#0d1f38" opacity="0.5"/>
+      <text x="40" y="48" font-family="Consolas, monospace" font-size="16" font-weight="bold" fill="#ffffff">Casambi</text>
+      <text x="200" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">无线BLE</text>
+      <text x="360" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">无布线</text>
+      <text x="500" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">改造项目/精品店</text>
+      <text x="500" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">不加线即智能</text>
+      <text x="780" y="48" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#a0d8ef">★★★☆☆</text>
+      <text x="780" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">欧美精品店主流</text>
+      <text x="950" y="48" font-family="Consolas, monospace" font-size="13" fill="#ffd966">中</text>
+      <text x="950" y="68" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8">模块化</text>
+    </g>
+  </g>
+
+  <!-- Bottom recommendation -->
+  <g transform="translate(60, 620)">
+    <rect width="1080" height="70" rx="6" fill="#0d2540" stroke="#5fc7ff" stroke-width="1.5" opacity="0.95"/>
+    <text x="20" y="25" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#5fc7ff">★ 选型建议</text>
+    <text x="20" y="48" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">新建大型商业 → DALI-2 + KNX (双总线)  |  改造成本敏感 → 0-10V + Casambi  |  连锁零售 → Matter/Zigbee</text>
+    <text x="20" y="65" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#9ec5e8" opacity="0.8">EPBD 2026/5要求"可监控+可对接BMS"，协议至少能上报能耗与状态</text>
+  </g>
+</svg>

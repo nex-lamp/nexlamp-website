@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1e35"/>
+    </linearGradient>
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b9eff"/>
+      <stop offset="100%" stop-color="#5fc7ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="url(#bgGrad)"/>
+  <rect width="1200" height="720" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="60" y="70" font-family="Consolas, monospace" font-size="32" font-weight="bold" fill="url(#titleGrad)" filter="url(#glow)">EPBD 2026/5 — 商业建筑强制自动照明</text>
+  <text x="60" y="100" font-family="Consolas, monospace" font-size="14" fill="#7fb3d5" opacity="0.8">// 三个"必须"——欧盟建筑能效指令2026年5月生效</text>
+
+  <!-- Three big cards: 三个必须 -->
+  <!-- Card 1: 自动启停 -->
+  <g transform="translate(60, 140)">
+    <rect width="340" height="240" rx="8" fill="#0d2540" stroke="#3b9eff" stroke-width="1.5" opacity="0.95"/>
+    <rect x="0" y="0" width="340" height="40" rx="8" fill="#3b9eff" opacity="0.18"/>
+    <text x="20" y="26" font-family="Consolas, monospace" font-size="14" fill="#5fc7ff">MUST #01</text>
+    <text x="240" y="26" font-family="Consolas, monospace" font-size="12" fill="#9ec5e8">自动化等级 L3+</text>
+    <!-- icon: motion -->
+    <g transform="translate(140, 80)" stroke="#5fc7ff" stroke-width="2.5" fill="none" filter="url(#glow)">
+      <circle cx="30" cy="30" r="22"/>
+      <circle cx="30" cy="30" r="14" opacity="0.6"/>
+      <circle cx="30" cy="30" r="6" opacity="0.3"/>
+      <line x1="30" y1="8" x2="30" y2="14"/>
+      <line x1="30" y1="46" x2="30" y2="52"/>
+      <line x1="8" y1="30" x2="14" y2="30"/>
+      <line x1="46" y1="30" x2="52" y2="30"/>
+    </g>
+    <text x="170" y="180" font-family="Consolas, monospace" font-size="18" font-weight="bold" fill="#ffffff">自动启停</text>
+    <text x="170" y="210" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">按区域/时段/日光</text>
+    <text x="170" y="228" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">联动控制</text>
+  </g>
+
+  <!-- Card 2: 能耗监控 -->
+  <g transform="translate(430, 140)">
+    <rect width="340" height="240" rx="8" fill="#0d2540" stroke="#5fc7ff" stroke-width="1.5" opacity="0.95"/>
+    <rect x="0" y="0" width="340" height="40" rx="8" fill="#5fc7ff" opacity="0.18"/>
+    <text x="20" y="26" font-family="Consolas, monospace" font-size="14" fill="#5fc7ff">MUST #02</text>
+    <text x="230" y="26" font-family="Consolas, monospace" font-size="12" fill="#9ec5e8">BMS对接 BACnet/Modbus</text>
+    <!-- chart icon -->
+    <g transform="translate(130, 80)" stroke="#5fc7ff" stroke-width="2" fill="none" filter="url(#glow)">
+      <polyline points="0,80 20,60 40,65 60,40 80,50 100,25 120,30 140,10 140,80 0,80"/>
+      <line x1="0" y1="80" x2="140" y2="80"/>
+      <line x1="0" y1="0" x2="0" y2="80"/>
+      <circle cx="60" cy="40" r="3" fill="#5fc7ff"/>
+      <circle cx="100" cy="25" r="3" fill="#5fc7ff"/>
+      <circle cx="140" cy="10" r="3" fill="#5fc7ff"/>
+    </g>
+    <text x="170" y="180" font-family="Consolas, monospace" font-size="18" font-weight="bold" fill="#ffffff">能耗监控</text>
+    <text x="170" y="210" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">分时分区数据上报</text>
+    <text x="170" y="228" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">对接楼宇系统</text>
+  </g>
+
+  <!-- Card 3: 日光感应 -->
+  <g transform="translate(800, 140)">
+    <rect width="340" height="240" rx="8" fill="#0d2540" stroke="#7fc7ff" stroke-width="1.5" opacity="0.95"/>
+    <rect x="0" y="0" width="340" height="40" rx="8" fill="#7fc7ff" opacity="0.18"/>
+    <text x="20" y="26" font-family="Consolas, monospace" font-size="14" fill="#7fc7ff">MUST #03</text>
+    <text x="230" y="26" font-family="Consolas, monospace" font-size="12" fill="#9ec5e8">光感应联动</text>
+    <!-- sun + window icon -->
+    <g transform="translate(120, 70)" stroke="#ffd966" stroke-width="2" fill="none" filter="url(#glow)">
+      <circle cx="30" cy="30" r="14" fill="#ffd966" opacity="0.4"/>
+      <line x1="30" y1="6" x2="30" y2="14"/>
+      <line x1="30" y1="46" x2="30" y2="54"/>
+      <line x1="6" y1="30" x2="14" y2="30"/>
+      <line x1="46" y1="30" x2="54" y2="30"/>
+      <line x1="13" y1="13" x2="18" y2="18"/>
+      <line x1="42" y1="42" x2="47" y2="47"/>
+    </g>
+    <g transform="translate(195, 80)" stroke="#7fc7ff" stroke-width="2" fill="none">
+      <rect x="0" y="0" width="60" height="60" rx="2"/>
+      <line x1="30" y1="0" x2="30" y2="60"/>
+      <line x1="0" y1="30" x2="60" y2="30"/>
+    </g>
+    <text x="170" y="180" font-family="Consolas, monospace" font-size="18" font-weight="bold" fill="#ffffff">日光感应</text>
+    <text x="170" y="210" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">靠窗区域按自然光</text>
+    <text x="170" y="228" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#cfe4f5">自动调亮</text>
+  </g>
+
+  <!-- Bottom: 产品影响 -->
+  <g transform="translate(60, 420)">
+    <text x="0" y="0" font-family="Consolas, monospace" font-size="20" font-weight="bold" fill="#5fc7ff">对LED驱动/智能照明企业的真实冲击</text>
+    <line x1="0" y1="12" x2="1080" y2="12" stroke="#3b9eff" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- 5 impact boxes -->
+  <g transform="translate(60, 460)">
+    <rect width="200" height="110" rx="6" fill="#0d2540" stroke="#3b9eff" stroke-width="1" opacity="0.9"/>
+    <text x="100" y="35" font-family="Consolas, monospace" font-size="13" fill="#5fc7ff" text-anchor="middle">[01] 驱动=恒流+通信</text>
+    <text x="100" y="62" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">DALI-2 / 0-10V</text>
+    <text x="100" y="80" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">不再是单纯电源</text>
+  </g>
+  <g transform="translate(280, 460)">
+    <rect width="200" height="110" rx="6" fill="#0d2540" stroke="#3b9eff" stroke-width="1" opacity="0.9"/>
+    <text x="100" y="35" font-family="Consolas, monospace" font-size="13" fill="#5fc7ff" text-anchor="middle">[02] 传感器=标配</text>
+    <text x="100" y="62" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">光感/人体/占空</text>
+    <text x="100" y="80" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">至少一种</text>
+  </g>
+  <g transform="translate(500, 460)">
+    <rect width="200" height="110" rx="6" fill="#0d2540" stroke="#3b9eff" stroke-width="1" opacity="0.9"/>
+    <text x="100" y="35" font-family="Consolas, monospace" font-size="13" fill="#5fc7ff" text-anchor="middle">[03] 可调试/可升级</text>
+    <text x="100" y="62" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">支持OTA或现场</text>
+    <text x="100" y="80" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">二次调参</text>
+  </g>
+  <g transform="translate(720, 460)">
+    <rect width="200" height="110" rx="6" fill="#0d2540" stroke="#3b9eff" stroke-width="1" opacity="0.9"/>
+    <text x="100" y="35" font-family="Consolas, monospace" font-size="13" fill="#5fc7ff" text-anchor="middle">[04] 纹波≤10%</text>
+    <text x="100" y="62" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">EN 62384硬门槛</text>
+    <text x="100" y="80" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">否则频闪不达标</text>
+  </g>
+  <g transform="translate(940, 460)">
+    <rect width="200" height="110" rx="6" fill="#0d2540" stroke="#3b9eff" stroke-width="1" opacity="0.9"/>
+    <text x="100" y="35" font-family="Consolas, monospace" font-size="13" fill="#5fc7ff" text-anchor="middle">[05] EMC完整</text>
+    <text x="100" y="62" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">EN 55015</text>
+    <text x="100" y="80" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#cfe4f5" text-anchor="middle">EN 61547</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="680" font-family="Consolas, monospace" font-size="14" fill="#5fc7ff" text-anchor="middle" opacity="0.8">// 卖单品 → 卖"光+驱动+控制"系统</text>
+  <text x="600" y="700" font-family="Consolas, monospace" font-size="11" fill="#7fb3d5" text-anchor="middle" opacity="0.6">nexlamp.com — EPBD 2026/5 Ready · DALI-2 / 0-10V / Matter</text>
+</svg>
