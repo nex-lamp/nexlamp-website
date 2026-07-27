@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%">
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2d4a" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#00d4aa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="800" height="480" fill="#0a1628"/>
+  <rect width="800" height="480" fill="url(#grid3)"/>
+  
+  <!-- terminal window -->
+  <rect x="50" y="30" width="700" height="420" rx="8" fill="#0d1d33" stroke="#1e3a5f" stroke-width="1"/>
+  <rect x="50" y="30" width="700" height="32" rx="8" fill="#132945"/>
+  <circle cx="74" cy="46" r="6" fill="#ff5f57"/>
+  <circle cx="94" cy="46" r="6" fill="#febc2e"/>
+  <circle cx="114" cy="46" r="6" fill="#28c840"/>
+  <text x="400" y="50" font-family="monospace" font-size="13" fill="#8aa4c8" text-anchor="middle">SME_UPGRADE_ROADMAP_v2026.svg</text>
+  
+  <!-- title -->
+  <text x="400" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#e8f4ff" text-anchor="middle">中小企业最务实的三步升级路径</text>
+  <text x="400" y="122" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7a9bc4" text-anchor="middle">先解决能不能卖，再解决能不能连，最后才做深集成</text>
+  
+  <!-- step 1 -->
+  <g transform="translate(75, 160)">
+    <rect x="0" y="0" width="200" height="220" rx="8" fill="#0f2138" stroke="#00d4aa" stroke-width="1.5" filter="url(#glow3)"/>
+    <circle cx="30" cy="35" r="16" fill="#00d4aa"/>
+    <text x="30" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#0a1628" text-anchor="middle">1</text>
+    <text x="60" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#e8f4ff">换 D4i 驱动</text>
+    <text x="60" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#7a9bc4">硬件门槛 / 最快切入</text>
+    <line x1="20" y1="70" x2="180" y2="70" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="20" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· 采购已认证 D4i 驱动</text>
+    <text x="20" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· 满足独立安装要求</text>
+    <text x="20" y="156" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· 可插拔端子结构</text>
+    <text x="20" y="184" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· 不共 LED 散热路径</text>
+  </g>
+  
+  <!-- arrow -->
+  <line x1="290" y1="270" x2="340" y2="270" stroke="#00d4aa" stroke-width="2" marker-end="url(#arrow3)"/>
+  
+  <!-- step 2 -->
+  <g transform="translate(360, 160)">
+    <rect x="0" y="0" width="200" height="220" rx="8" fill="#0f2138" stroke="#2a4a73" stroke-width="1"/>
+    <circle cx="30" cy="35" r="16" fill="#1e3a5f" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="30" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#00d4aa" text-anchor="middle">2</text>
+    <text x="60" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#e8f4ff">加通信模组</text>
+    <text x="60" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#7a9bc4">软件层面 / 边际成本低</text>
+    <line x1="20" y1="70" x2="180" y2="70" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="20" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· Matter 模组</text>
+    <text x="20" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· Zigbee 模组</text>
+    <text x="20" y="156" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· SRI 兼容接口</text>
+    <text x="20" y="184" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· 外接标准化网关</text>
+  </g>
+  
+  <!-- arrow -->
+  <line x1="575" y1="270" x2="625" y2="270" stroke="#00d4aa" stroke-width="2" marker-end="url(#arrow3)"/>
+  
+  <!-- step 3 -->
+  <g transform="translate(645, 160)">
+    <rect x="0" y="0" width="200" height="220" rx="8" fill="#0f2138" stroke="#2a4a73" stroke-width="1"/>
+    <circle cx="30" cy="35" r="16" fill="#1e3a5f" stroke="#00d4aa" stroke-width="1.5"/>
+    <text x="30" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#00d4aa" text-anchor="middle">3</text>
+    <text x="60" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#e8f4ff">系统级适配</text>
+    <text x="60" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#7a9bc4">深度集成 / 建立壁垒</text>
+    <line x1="20" y1="70" x2="180" y2="70" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="20" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· BAS 平台对接</text>
+    <text x="20" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· 能耗数据分析</text>
+    <text x="20" y="156" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· 预测性维护</text>
+    <text x="20" y="184" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#b8d4f0">· 产品差异化</text>
+  </g>
+  
+  <!-- bottom note -->
+  <text x="400" y="425" font-family="monospace" font-size="12" fill="#6b8cb0" text-anchor="middle">核心原则：不要自研全套协议栈，优先换驱动 + 外接模组</text>
+</svg>
