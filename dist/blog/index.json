@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-24",
+    "date": "2026-07-27",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,61 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-24",
+    "date": "2026-07-27",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "欧盟EPBD新规下，D4i驱动电源为什么成了中国照明出口的'硬门槛'？",
+    "slug": "epbd-d4i-led-driver-eu-compliance-2026",
+    "date": "2026-07-27",
+    "category": "LED驱动",
+    "description": "解析欧盟EPBD新规对LED驱动电源的强制要求，D4i Gen 2认证的技术门槛，以及中国照明出口企业如何分阶段完成合规升级。",
+    "cover": "images/blog-epbd-d4i-driver-2026-cover.png",
+    "excerpt": "2026年5月起，欧盟EPBD新规全面实施。所有新建商业建筑必须配备自动照明控制系统，而驱动端必须符合D4i Gen 2标准。对中国照明出口企业来说，这不是简单的认证升级，而是产品逻辑从'卖硬件'到'卖可集成数据节点'的根本转变。"
+  },
+  {
+    "title": "智能灯带调光调色总翻车？2026年双色温驱动电源选型避坑指南",
+    "slug": "tunable-white-led-strip-driver-selection-2026",
+    "date": "2026-07-27",
+    "category": "LED驱动",
+    "description": "详解智能灯带双色温驱动电源选型要点，解析色温漂移、低亮频闪、通道不匹配等常见问题，附2026年CCT调光驱动采购清单和协议对比。",
+    "cover": "images/blog-tunable-white-driver-2026-cover.png",
+    "excerpt": "灯带接好了，APP上选了3000K，实际却偏蓝；亮度调到10%开始闪烁；RGBCW灯带只有RGB能调，白光通道根本没识别。这些问题90%不是灯带不行，而是双色温驱动电源没选对。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-27",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-27",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-07-27",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-27",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -34,42 +88,6 @@
     "description": "耐利普科技技术文章",
     "cover": "../../images/blog-epbd-2026-cover.png",
     "excerpt": "欧盟EPBD 5月起强制要求新建商业建筑安装自动照明控制系统，对做LED驱动/智能照明的工厂来说，是机会还是壁垒？本文用大白话拆解新规要点、列出可落地的产品调整清单。"
-  },
-  {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-07-24",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-24",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-07-24",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-24",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "智能灯越\"集成\"越不稳定？灯具电器一体化这3个暗坑你踩过吗",

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0d1f35"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="680" height="420" fill="url(#bgGrad)"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+
+  <!-- Terminal window chrome -->
+  <rect x="30" y="30" width="620" height="360" rx="12" fill="#0f2744" stroke="#1e4a75" stroke-width="1.5"/>
+  <rect x="30" y="30" width="620" height="44" rx="12" fill="#16365a"/>
+  <circle cx="58" cy="52" r="7" fill="#ff5f57"/>
+  <circle cx="82" cy="52" r="7" fill="#febc2e"/>
+  <circle cx="106" cy="52" r="7" fill="#28c840"/>
+  <text x="340" y="58" font-family="Consolas, monospace" font-size="14" fill="#8ab4c7" text-anchor="middle">tunable-white-driver-specs.json</text>
+
+  <!-- Title -->
+  <text x="340" y="110" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="bold" fill="#7ee787" text-anchor="middle" filter="url(#glow)">双色温驱动 6大硬指标</text>
+  <text x="340" y="138" font-family="Consolas, monospace" font-size="12" fill="#5b8c5a" text-anchor="middle">// 2026年选型必查清单</text>
+
+  <!-- Table header -->
+  <rect x="70" y="160" width="540" height="36" rx="4" fill="#1e4a75" opacity="0.6"/>
+  <text x="90" y="184" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#a8d5ff">指标</text>
+  <text x="300" y="184" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#a8d5ff">合格线</text>
+  <text x="470" y="184" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#a8d5ff">不达标的后果</text>
+
+  <!-- Row 1 -->
+  <rect x="70" y="198" width="540" height="32" fill="#0d1f35" opacity="0.5"/>
+  <text x="90" y="219" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#7ee787">输出电压精度</text>
+  <text x="300" y="219" font-family="Consolas, monospace" font-size="13" fill="#ffd700">24V ±0.5V</text>
+  <text x="470" y="219" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#c7d4e0">色温漂移、偏蓝偏黄</text>
+
+  <!-- Row 2 -->
+  <rect x="70" y="232" width="540" height="32" fill="#0f2744" opacity="0.5"/>
+  <text x="90" y="253" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#7ee787">输出纹波</text>
+  <text x="300" y="253" font-family="Consolas, monospace" font-size="13" fill="#ffd700">≤±5%</text>
+  <text x="470" y="253" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#c7d4e0">频闪、通信模块掉线</text>
+
+  <!-- Row 3 -->
+  <rect x="70" y="266" width="540" height="32" fill="#0d1f35" opacity="0.5"/>
+  <text x="90" y="287" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#7ee787">PWM调光深度</text>
+  <text x="300" y="287" font-family="Consolas, monospace" font-size="13" fill="#ffd700">0.1%-100%</text>
+  <text x="470" y="287" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#c7d4e0">低亮度闪烁、跳变</text>
+
+  <!-- Row 4 -->
+  <rect x="70" y="300" width="540" height="32" fill="#0f2744" opacity="0.5"/>
+  <text x="90" y="321" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#7ee787">PWM频率</text>
+  <text x="300" y="321" font-family="Consolas, monospace" font-size="13" fill="#ffd700">≥3kHz</text>
+  <text x="470" y="321" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#c7d4e0">手机可见条纹、视觉疲劳</text>
+
+  <!-- Row 5 -->
+  <rect x="70" y="334" width="540" height="32" fill="#0d1f35" opacity="0.5"/>
+  <text x="90" y="355" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#7ee787">通道数</text>
+  <text x="300" y="355" font-family="Consolas, monospace" font-size="13" fill="#ffd700">CCT=2路 / RGBCW=5路</text>
+  <text x="470" y="355" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#c7d4e0">白光不能调色温</text>
+
+  <!-- Row 6 -->
+  <rect x="70" y="368" width="540" height="32" fill="#0f2744" opacity="0.5"/>
+  <text x="90" y="389" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#7ee787">待机功耗</text>
+  <text x="300" y="389" font-family="Consolas, monospace" font-size="13" fill="#ffd700">≤0.5W</text>
+  <text x="470" y="389" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#c7d4e0">不符合新国标GB/T 31831</text>
+
+  <!-- NEXLAMP watermark -->
+  <text x="640" y="405" font-family="Arial, sans-serif" font-size="10" fill="#3a6a8a" text-anchor="end">NEXLAMP TECHNOLOGY</text>
+</svg>
