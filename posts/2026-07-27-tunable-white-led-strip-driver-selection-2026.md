@@ -59,6 +59,8 @@ slug: "tunable-white-led-strip-driver-selection-2026"
 
 **超过5米就要考虑分段供电**，而不是一味换更大功率的驱动。
 
+![灯带翻车诊断流程](images/blog-tunable-white-driver-2026-failures.svg)
+
 ## 选型先看这6个硬指标
 
 | 指标 | 合格线 | 为什么重要 |
