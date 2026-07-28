@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,70 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-27",
+    "date": "2026-07-28",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "AI自学习照明：你的灯正在学会\"预判\"你的下一步",
+    "slug": "2026-07-28-ai-self-learning-lighting-energy-saving",
+    "date": "2026-07-28",
+    "category": "智能照明",
+    "description": "传统感应灯只能\"人来灯亮\"，2026年AI自学习照明已能预测人车轨迹、自动优化节能策略，综合节能率高达80-95%。本文拆解去中心化自组网、深度学习调光算法、边缘计算三大核心技术，带你看懂AI如何让照明从\"被动响应\"进化到\"主动思考\"。",
+    "cover": "images/2026-07-28-ai-lighting-cover.png",
+    "excerpt": "传统感应灯只能\"人来灯亮\"，2026年AI自学习照明已能预测人车轨迹、自动优化节能策略，综合节能率高达80-95%。本文拆解去中心化自组网、深度学习调光算法、边缘计算三大核心技术，带你看懂AI如何让照明从\"被动响应\"进化到\"主动思考\"。"
+  },
+  {
+    "title": "情绪照明成新风口，智能筒射灯驱动怎么选？2026全彩光与人因光避坑指南",
+    "slug": "emotional-lighting-smart-downlight-driver-2026",
+    "date": "2026-07-28",
+    "category": "选型指南",
+    "description": "2026年情绪照明与全彩光成新趋势，解析智能筒射灯驱动如何支撑情绪光，附全彩光/淡彩光/人因光区别与驱动选型清单。",
+    "cover": "images/blog-emotional-lighting-2026-cover.png",
+    "excerpt": "2026年智能家居照明的关键词从'护眼'升级到'情绪'。但情绪照明不是RGB灯带的专利，筒射灯配合全彩光/双色温驱动同样能做出专业级情绪光。本文讲清全彩光与淡彩光的区别，以及驱动电源选购时必须盯住的4个硬指标。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-28",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-28",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-07-28",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "AI Self-Learning Lighting: How Your Lights Are Starting to Predict Your Next Move",
+    "slug": "ai-self-learning-lighting-2026-energy-saving",
+    "date": "2026-07-28",
+    "category": "Smart Lighting",
+    "description": "耐利普科技技术文章",
+    "cover": "images/2026-07-28-ai-lighting-cover.png",
+    "excerpt": "Traditional sensors only react. AI self-learning lighting predicts your path, saves 80-95% energy, and learns continuously. Here's how decentralized mesh + deep learning + edge AI is rewriting the rules of smart lighting in 2026."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-28",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -34,42 +97,6 @@
     "description": "详解智能灯带双色温驱动电源选型要点，解析色温漂移、低亮频闪、通道不匹配等常见问题，附2026年CCT调光驱动采购清单和协议对比。",
     "cover": "images/blog-tunable-white-driver-2026-cover.png",
     "excerpt": "灯带接好了，APP上选了3000K，实际却偏蓝；亮度调到10%开始闪烁；RGBCW灯带只有RGB能调，白光通道根本没识别。这些问题90%不是灯带不行，而是双色温驱动电源没选对。"
-  },
-  {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-07-27",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-27",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-07-27",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-27",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "调光驱动选型终极指南：6种协议+灯驱一体化，2026年不再翻车",

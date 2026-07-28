@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="100%">
+  <title>三类光对比</title>
+  <desc>对比全彩光、淡彩光、人因光三种照明概念的区别和应用</desc>
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2d4d" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="420" fill="#0a1628"/>
+  <rect width="680" height="420" fill="url(#grid3)"/>
+  <text x="340" y="44" text-anchor="middle" fill="#e8f4ff" font-size="20" font-family="Microsoft YaHei, sans-serif" font-weight="500">全彩光、淡彩光、人因光，别混为一谈</text>
+  <text x="340" y="74" text-anchor="middle" fill="#7a9cc6" font-size="13" font-family="Microsoft YaHei, sans-serif">三个概念各有侧重点，预算有限时优先保人因光</text>
+  <g transform="translate(60, 110)">
+    <rect x="0" y="0" width="180" height="240" rx="12" fill="#0d1c33" stroke="#2478C2" stroke-width="1.5" filter="url(#glow3)"/>
+    <text x="90" y="40" text-anchor="middle" fill="#e8f4ff" font-size="16" font-family="Microsoft YaHei, sans-serif" font-weight="500">全彩光</text>
+    <circle cx="90" cy="95" r="28" fill="#2478C2" opacity="0.3"/>
+    <circle cx="90" cy="95" r="18" fill="#2478C2"/>
+    <text x="90" y="150" text-anchor="middle" fill="#7a9cc6" font-size="12" font-family="Microsoft YaHei, sans-serif">多通道宽光谱</text>
+    <text x="90" y="172" text-anchor="middle" fill="#7a9cc6" font-size="12" font-family="Microsoft YaHei, sans-serif">高饱和度彩色</text>
+    <text x="90" y="194" text-anchor="middle" fill="#7a9cc6" font-size="12" font-family="Microsoft YaHei, sans-serif">适合氛围/娱乐</text>
+    <text x="90" y="226" text-anchor="middle" fill="#e89f27" font-size="11" font-family="Microsoft YaHei, sans-serif">亮点能力</text>
+  </g>
+  <g transform="translate(250, 110)">
+    <rect x="0" y="0" width="180" height="240" rx="12" fill="#0d1c33" stroke="#e89f27" stroke-width="1.5" filter="url(#glow3)"/>
+    <text x="90" y="40" text-anchor="middle" fill="#e8f4ff" font-size="16" font-family="Microsoft YaHei, sans-serif" font-weight="500">淡彩光</text>
+    <circle cx="90" cy="95" r="28" fill="#e89f27" opacity="0.2"/>
+    <circle cx="90" cy="95" r="18" fill="#e89f27" opacity="0.6"/>
+    <text x="90" y="150" text-anchor="middle" fill="#7a9cc6" font-size="12" font-family="Microsoft YaHei, sans-serif">白光轻微偏色</text>
+    <text x="90" y="172" text-anchor="middle" fill="#7a9cc6" font-size="12" font-family="Microsoft YaHei, sans-serif">饱和度低</text>
+    <text x="90" y="194" text-anchor="middle" fill="#7a9cc6" font-size="12" font-family="Microsoft YaHei, sans-serif">只能做简单点缀</text>
+    <text x="90" y="226" text-anchor="middle" fill="#e89f27" font-size="11" font-family="Microsoft YaHei, sans-serif">补充能力</text>
+  </g>
+  <g transform="translate(440, 110)">
+    <rect x="0" y="0" width="180" height="240" rx="12" fill="#0d1c33" stroke="#7ec27e" stroke-width="1.5" filter="url(#glow3)"/>
+    <text x="90" y="40" text-anchor="middle" fill="#e8f4ff" font-size="16" font-family="Microsoft YaHei, sans-serif" font-weight="500">人因光</text>
+    <circle cx="90" cy="95" r="28" fill="#7ec27e" opacity="0.3"/>
+    <circle cx="90" cy="95" r="18" fill="#7ec27e"/>
+    <text x="90" y="150" text-anchor="middle" fill="#7a9cc6" font-size="12" font-family="Microsoft YaHei, sans-serif">随昼夜节律调光</text>
+    <text x="90" y="172" text-anchor="middle" fill="#7a9cc6" font-size="12" font-family="Microsoft YaHei, sans-serif">自动切换色温亮度</text>
+    <text x="90" y="194" text-anchor="middle" fill="#7a9cc6" font-size="12" font-family="Microsoft YaHei, sans-serif">服务健康与专注</text>
+    <text x="90" y="226" text-anchor="middle" fill="#e89f27" font-size="11" font-family="Microsoft YaHei, sans-serif">刚需能力</text>
+  </g>
+  <g transform="translate(60, 370)">
+    <rect x="0" y="0" width="560" height="38" rx="8" fill="#0d1c33" stroke="#1a3a5c" stroke-width="0.5"/>
+    <text x="280" y="24" text-anchor="middle" fill="#7a9cc6" font-size="12" font-family="Microsoft YaHei, sans-serif">家居优先级：人因光 &gt; 全彩光 &gt; 淡彩光</text>
+  </g>
+</svg>
