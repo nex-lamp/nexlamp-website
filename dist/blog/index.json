@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-28",
+    "date": "2026-07-29",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,61 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-28",
+    "date": "2026-07-29",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "从亮到懂：情绪照明/全彩光才是智能灯光的下一站",
+    "slug": "2026-07-29-emotional-lighting-rgbwaf-future",
+    "date": "2026-07-29",
+    "category": "智能照明",
+    "description": "家里的灯已经能调亮度、调色温了，为什么看大片还是不够爽？打游戏还是没感觉？因为你用的还是淡彩光。2026年7月广州建博会，榜威科技明确提出智能照明进入情绪照明新周期，全彩光才是真正解。本文拆解全彩光 vs 淡彩光的技术差异，看懂RGBWAF/全光谱/多通道驱动怎么让灯光学会懂你。",
+    "cover": "images/2026-07-29-emotional-lighting-cover.png",
+    "excerpt": "家里的灯已经能调亮度、调色温了，为什么看大片还是不够爽？打游戏还是没感觉？因为你用的还是淡彩光。2026年7月广州建博会，榜威科技明确提出智能照明进入情绪照明新周期，全彩光才是真正解。本文拆解全彩光 vs 淡彩光的技术差异，看懂RGBWAF/全光谱/多通道驱动怎么让灯光学会懂你。"
+  },
+  {
+    "title": "7月连爆两起大事：网售灯具强制CCC+熊猫馆LED起火，驱动电源怎么选才不踩雷？",
+    "slug": "led-driver-safety-ccc-compliance-2026",
+    "date": "2026-07-29",
+    "category": "行业观察",
+    "description": "解析7月无锡熊猫馆LED起火与网售灯具CCC强制认证新规，从驱动电源安全角度给出选型指南，附5个避坑硬指标。",
+    "cover": "images/blog-led-driver-safety-2026-cover.png",
+    "excerpt": "2026年7月，无锡动物园熊猫馆LED因驱动故障起火，市场监管总局发布网售灯具CCC强制认证新规。两起事件都指向同一个幕后主角——LED驱动电源。本文从起火原因拆解到CCC新规解读，给出驱动电源选型的5个安全硬指标。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-29",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-29",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-07-29",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-29",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -36,33 +90,6 @@
     "excerpt": "2026年智能家居照明的关键词从'护眼'升级到'情绪'。但情绪照明不是RGB灯带的专利，筒射灯配合全彩光/双色温驱动同样能做出专业级情绪光。本文讲清全彩光与淡彩光的区别，以及驱动电源选购时必须盯住的4个硬指标。"
   },
   {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-07-28",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-28",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-07-28",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
     "title": "AI Self-Learning Lighting: How Your Lights Are Starting to Predict Your Next Move",
     "slug": "ai-self-learning-lighting-2026-energy-saving",
     "date": "2026-07-28",
@@ -70,15 +97,6 @@
     "description": "耐利普科技技术文章",
     "cover": "images/2026-07-28-ai-lighting-cover.png",
     "excerpt": "Traditional sensors only react. AI self-learning lighting predicts your path, saves 80-95% energy, and learns continuously. Here's how decentralized mesh + deep learning + edge AI is rewriting the rules of smart lighting in 2026."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-28",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "欧盟EPBD新规下，D4i驱动电源为什么成了中国照明出口的'硬门槛'？",
