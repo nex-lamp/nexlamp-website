@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="100%">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0L0 0L0 20" fill="none" stroke="#1a2d4d" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="420" fill="#0a1628"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+
+  <!-- Title bar -->
+  <rect x="30" y="20" width="620" height="36" rx="6" fill="#111d33" stroke="#1e3a5f" stroke-width="1"/>
+  <circle cx="50" cy="38" r="5" fill="#ff5f56"/>
+  <circle cx="68" cy="38" r="5" fill="#ffbd2e"/>
+  <circle cx="86" cy="38" r="5" fill="#27c93f"/>
+  <text x="340" y="43" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="14" font-weight="500">智能筒灯驱动电源选型要点</text>
+
+  <!-- Driver box -->
+  <g transform="translate(60, 85)">
+    <rect x="0" y="0" width="240" height="130" rx="10" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="1.5"/>
+    <text x="120" y="28" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="13" font-weight="500">LED 驱动电源</text>
+    <rect x="20" y="45" width="200" height="70" rx="6" fill="#111d33" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="35" y="68" fill="#5ab4e6" font-family="monospace" font-size="11">220V AC 输入</text>
+    <text x="35" y="90" fill="#e6a845" font-family="monospace" font-size="11">恒流 DC 输出</text>
+    <text x="35" y="112" fill="#7ec27e" font-family="monospace" font-size="11">3.3V 辅助供电</text>
+    <line x1="180" y1="60" x2="200" y2="60" stroke="#5ab4e6" stroke-width="2"/>
+    <line x1="180" y1="82" x2="200" y2="82" stroke="#e6a845" stroke-width="2"/>
+    <line x1="180" y1="104" x2="200" y2="104" stroke="#7ec27e" stroke-width="2"/>
+  </g>
+
+  <!-- Communication module -->
+  <g transform="translate(380, 85)">
+    <rect x="0" y="0" width="240" height="130" rx="10" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="1.5"/>
+    <text x="120" y="28" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="13" font-weight="500">通信模块</text>
+    <rect x="20" y="45" width="200" height="70" rx="6" fill="#111d33" stroke="#1e3a5f" stroke-width="1"/>
+    <text x="35" y="68" fill="#c8ddf0" font-family="monospace" font-size="11">Zigbee / 蓝牙Mesh</text>
+    <text x="35" y="90" fill="#c8ddf0" font-family="monospace" font-size="11">3.3V / 几十mA</text>
+    <text x="35" y="112" fill="#e85d5d" font-family="monospace" font-size="11">电压不稳 = 掉线</text>
+  </g>
+
+  <!-- Connection arrow -->
+  <line x1="310" y1="150" x2="370" y2="150" stroke="#7ec27e" stroke-width="2" stroke-dasharray="6,4" opacity="0.7"/>
+  <polygon points="370,145 380,150 370,155" fill="#7ec27e" opacity="0.7"/>
+  <text x="340" y="140" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="10" filter="url(#glow)">辅助供电</text>
+
+  <!-- Checklist -->
+  <g transform="translate(60, 245)">
+    <rect x="0" y="0" width="560" height="145" rx="10" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="1.5"/>
+    <text x="20" y="28" fill="#7ec27e" font-family="monospace" font-size="13" font-weight="500">驱动选型三指标</text>
+
+    <!-- Item 1 -->
+    <circle cx="35" cy="55" r="8" fill="none" stroke="#5ab4e6" stroke-width="1.5"/>
+    <path d="M30 55L33 58L40 51" fill="none" stroke="#5ab4e6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="55" y="59" fill="#c8ddf0" font-family="monospace" font-size="12">隔离方案：输入输出变压器隔离，纹波更低、抗干扰更强</text>
+
+    <!-- Item 2 -->
+    <circle cx="35" cy="90" r="8" fill="none" stroke="#e6a845" stroke-width="1.5"/>
+    <path d="M30 90L33 93L40 86" fill="none" stroke="#e6a845" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="55" y="94" fill="#c8ddf0" font-family="monospace" font-size="12">输出纹波：≤ ±5%，通信模块稳定不重启</text>
+
+    <!-- Item 3 -->
+    <circle cx="35" cy="125" r="8" fill="none" stroke="#7ec27e" stroke-width="1.5"/>
+    <path d="M30 125L33 128L40 121" fill="none" stroke="#7ec27e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="55" y="129" fill="#c8ddf0" font-family="monospace" font-size="12">认证齐全：CCC + EMC（EN 55015），安全且不干扰其他设备</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="340" y="405" text-anchor="middle" fill="#5a7090" font-family="monospace" font-size="10">NEXLAMP | 耐利普科技 | 稳定智能照明从驱动开始</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="100%">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0L0 0L0 20" fill="none" stroke="#1a2d4d" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="420" fill="#0a1628"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+
+  <!-- Title bar -->
+  <rect x="30" y="20" width="620" height="36" rx="6" fill="#111d33" stroke="#1e3a5f" stroke-width="1"/>
+  <circle cx="50" cy="38" r="5" fill="#ff5f56"/>
+  <circle cx="68" cy="38" r="5" fill="#ffbd2e"/>
+  <circle cx="86" cy="38" r="5" fill="#27c93f"/>
+  <text x="340" y="43" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="14" font-weight="500">智能筒灯光健康三要素</text>
+
+  <!-- Center triangle connecting the three elements -->
+  <polygon points="340,95 540,330 140,330" fill="none" stroke="#1e4d6b" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="340" cy="95" r="4" fill="#7ec27e" filter="url(#glow)"/>
+  <circle cx="140" cy="330" r="4" fill="#5ab4e6" filter="url(#glow)"/>
+  <circle cx="540" cy="330" r="4" fill="#e6a845" filter="url(#glow)"/>
+
+  <!-- Element 1: Ra -->
+  <g transform="translate(240, 75)">
+    <rect x="0" y="0" width="200" height="95" rx="10" fill="#0d1f3a" stroke="#7ec27e" stroke-width="1.5"/>
+    <text x="100" y="28" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="14" font-weight="500">显色指数 Ra</text>
+    <text x="100" y="52" text-anchor="middle" fill="#c8ddf0" font-family="monospace" font-size="11">家用 ≥90  阅读区 ≥95</text>
+    <rect x="20" y="65" width="160" height="8" rx="4" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="0.5"/>
+    <rect x="20" y="65" width="145" height="8" rx="4" fill="#7ec27e" opacity="0.8"/>
+    <text x="100" y="85" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="10">颜色还原真实</text>
+  </g>
+
+  <!-- Element 2: Blue Light -->
+  <g transform="translate(40, 290)">
+    <rect x="0" y="0" width="200" height="95" rx="10" fill="#0d1f3a" stroke="#5ab4e6" stroke-width="1.5"/>
+    <text x="100" y="28" text-anchor="middle" fill="#5ab4e6" font-family="monospace" font-size="14" font-weight="500">蓝光危害等级</text>
+    <text x="100" y="52" text-anchor="middle" fill="#c8ddf0" font-family="monospace" font-size="11">RG0 豁免级</text>
+    <rect x="20" y="65" width="160" height="8" rx="4" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="0.5"/>
+    <rect x="20" y="65" width="152" height="8" rx="4" fill="#5ab4e6" opacity="0.8"/>
+    <text x="100" y="85" text-anchor="middle" fill="#5ab4e6" font-family="monospace" font-size="10">长期用眼安全</text>
+  </g>
+
+  <!-- Element 3: Flicker -->
+  <g transform="translate(440, 290)">
+    <rect x="0" y="0" width="200" height="95" rx="10" fill="#0d1f3a" stroke="#e6a845" stroke-width="1.5"/>
+    <text x="100" y="28" text-anchor="middle" fill="#e6a845" font-family="monospace" font-size="14" font-weight="500">频闪百分比</text>
+    <text x="100" y="52" text-anchor="middle" fill="#c8ddf0" font-family="monospace" font-size="11">≤ 3% 为优</text>
+    <rect x="20" y="65" width="160" height="8" rx="4" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="0.5"/>
+    <rect x="20" y="65" width="138" height="8" rx="4" fill="#e6a845" opacity="0.8"/>
+    <text x="100" y="85" text-anchor="middle" fill="#e6a845" font-family="monospace" font-size="10">减少视觉疲劳</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="340" y="405" text-anchor="middle" fill="#5a7090" font-family="monospace" font-size="10">NEXLAMP | 耐利普科技 | 健康照明从光品质开始</text>
+</svg>

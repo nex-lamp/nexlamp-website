@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-29",
+    "date": "2026-07-31",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,11 +11,92 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-29",
+    "date": "2026-07-31",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
     "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "全光谱LED智能灯选购指南：Ra95以上就够了吗？2026年健康照明真正该看的4个指标",
+    "slug": "full-spectrum-healthy-smart-lighting-guide-2026",
+    "date": "2026-07-31",
+    "category": "健康照明",
+    "description": "2026年健康照明全面落地，全光谱LED灯具选购不能只看Ra值。从频闪PST LM、蓝光RG0、光谱R9/R12到照度均匀度，一文讲透4个真正影响用眼健康的核心指标。",
+    "cover": "../../images/blog-full-spectrum-healthy-lighting-2026-cover.png",
+    "excerpt": "全光谱LED灯具成为2026年健康照明主流，但「显色指数Ra≥95」只是入门门槛。本文拆解新国标下真正影响用眼健康的4个核心指标：频闪（PST LM/SVM）、蓝光危害等级（RG0）、光谱连续性（R9/R12）、照度均匀度，帮你避开「参数漂亮、实际伤眼」的坑。"
+  },
+  {
+    "title": "当灯变成路由器：Li-Fi光通信如何把LED驱动变成10Gbps接入点",
+    "slug": "2026-07-31-lifi-led-driver-opportunity",
+    "date": "2026-07-31",
+    "category": "智能照明",
+    "description": "家里的Wi-Fi又卡了?5G信号穿墙衰减?2026年4月pureLiFi联合Askey推出全球首款Li-Fi 5G FWA穿窗桥接设备,MWC 2026展示了10Gbps光速互联网,商用时间表已出。LED驱动电源厂商站在风口——你家的灯,正在悄悄变成宽带接入点。",
+    "cover": "images/2026-07-31-lifi-led-driver-opportunity-cover.png",
+    "excerpt": "家里的Wi-Fi又卡了?5G信号穿墙衰减?2026年4月pureLiFi联合Askey推出全球首款Li-Fi 5G FWA穿窗桥接设备,MWC 2026展示了10Gbps光速互联网,商用时间表已出。LED驱动电源厂商站在风口——你家的灯,正在悄悄变成宽带接入点。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-07-31",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-31",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-07-31",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
+    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
+    "date": "2026-07-31",
+    "category": "技术文章",
+    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
+    "cover": "",
+    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-07-31",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "工业照明进入'智能增效'时代：2026年工厂LED驱动电源选型6指标",
+    "slug": "industrial-lighting-driver-selection-guide-2026",
+    "date": "2026-07-30",
+    "category": "行业观察",
+    "description": "2026年工厂LED驱动电源选型指南：宽温域、高防护、高效率、智能调光、预测性维护、认证质保6大硬指标，帮工程采购避开'能亮但不耐久'的坑。",
+    "cover": "images/blog-industrial-lighting-driver-2026-cover.png",
+    "excerpt": "2026年工业照明成为LED行业核心增长引擎，但传统工厂照明'空转损耗'占总能耗40%-60%。本文从AI数据中心、智能工厂等真实场景出发，给出工厂LED驱动电源选型的6个硬指标。"
+  },
+  {
+    "title": "无主灯设计火了，但智能筒灯你真的会选吗？2026年Q3避坑指南",
+    "slug": "smart-downlight-selection-guide-q3-2026",
+    "date": "2026-07-30",
+    "category": "选购指南",
+    "description": "2026年Q3全屋智能筒灯选购避坑指南，解析健康照明、调光协议、开孔尺寸、驱动电源等核心要点。",
+    "cover": "images/blog-smart-downlight-q3-2026-cover.png",
+    "excerpt": "2026年Q3，全屋智能筒灯从'能亮'转向'光环境服务'。本文从健康照明、调光协议、安装开孔、驱动电源四个维度，帮你避开无主灯设计中最常见的坑。"
   },
   {
     "title": "从亮到懂：情绪照明/全彩光才是智能灯光的下一站",
@@ -34,42 +115,6 @@
     "description": "解析7月无锡熊猫馆LED起火与网售灯具CCC强制认证新规，从驱动电源安全角度给出选型指南，附5个避坑硬指标。",
     "cover": "images/blog-led-driver-safety-2026-cover.png",
     "excerpt": "2026年7月，无锡动物园熊猫馆LED因驱动故障起火，市场监管总局发布网售灯具CCC强制认证新规。两起事件都指向同一个幕后主角——LED驱动电源。本文从起火原因拆解到CCC新规解读，给出驱动电源选型的5个安全硬指标。"
-  },
-  {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-07-29",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-29",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-07-29",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-29",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "AI自学习照明：你的灯正在学会\"预判\"你的下一步",

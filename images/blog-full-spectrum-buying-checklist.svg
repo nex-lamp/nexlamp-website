@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f2040"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgGrad3)"/>
+
+  <!-- Grid -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+  </g>
+
+  <text x="400" y="35" text-anchor="middle" fill="#5bcefa" font-size="16" font-family="Consolas,monospace" filter="url(#glow3)">2026 健康照明选购决策清单 | 4项核心指标</text>
+
+  <!-- Step 1: Ra -->
+  <rect x="30" y="60" width="230" height="80" rx="6" fill="#0f2840" stroke="#2a5a8a" stroke-width="1"/>
+  <circle cx="55" cy="100" r="14" fill="#7ec27e" opacity="0.8"/>
+  <text x="55" y="105" text-anchor="middle" fill="#0a1628" font-size="13" font-family="Consolas,monospace" font-weight="bold">1</text>
+  <text x="80" y="90" fill="#5bcefa" font-size="12" font-family="Consolas,monospace" filter="url(#glow3)">显色指数 Ra</text>
+  <text x="80" y="110" fill="#bcd4e8" font-size="10" font-family="Consolas,monospace">≥95 入门 · ≥97 优秀</text>
+  <text x="80" y="130" fill="#5a7a9a" font-size="9" font-family="Consolas,monospace">看包装标注即可</text>
+
+  <!-- Arrow -->
+  <text x="265" y="105" fill="#2a5a8a" font-size="18" font-family="Consolas,monospace" text-anchor="middle">→</text>
+
+  <!-- Step 2: R9 -->
+  <rect x="285" y="60" width="230" height="80" rx="6" fill="#0f2840" stroke="#2a5a8a" stroke-width="1"/>
+  <circle cx="310" cy="100" r="14" fill="#7ec27e" opacity="0.8"/>
+  <text x="310" y="105" text-anchor="middle" fill="#0a1628" font-size="13" font-family="Consolas,monospace" font-weight="bold">2</text>
+  <text x="335" y="90" fill="#5bcefa" font-size="12" font-family="Consolas,monospace" filter="url(#glow3)">饱和红色 R9</text>
+  <text x="335" y="110" fill="#bcd4e8" font-size="10" font-family="Consolas,monospace">≥50 及格 · ≥80 优秀</text>
+  <text x="335" y="130" fill="#5a7a9a" font-size="9" font-family="Consolas,monospace">问客服要检测报告</text>
+
+  <!-- Arrow -->
+  <text x="520" y="105" fill="#2a5a8a" font-size="18" font-family="Consolas,monospace" text-anchor="middle">→</text>
+
+  <!-- Step 3: Flicker -->
+  <rect x="540" y="60" width="230" height="80" rx="6" fill="#0f2840" stroke="#2a5a8a" stroke-width="1"/>
+  <circle cx="565" cy="100" r="14" fill="#ffaa33" opacity="0.8"/>
+  <text x="565" y="105" text-anchor="middle" fill="#0a1628" font-size="13" font-family="Consolas,monospace" font-weight="bold">3</text>
+  <text x="590" y="90" fill="#5bcefa" font-size="12" font-family="Consolas,monospace" filter="url(#glow3)">频闪 PST LM/SVM</text>
+  <text x="590" y="110" fill="#ffaa33" font-size="10" font-family="Consolas,monospace">≤1.0 合格 · ≤0.5/0.4 优</text>
+  <text x="590" y="130" fill="#5a7a9a" font-size="9" font-family="Consolas,monospace">手机相机可粗筛</text>
+
+  <!-- Arrow down -->
+  <text x="145" y="165" fill="#2a5a8a" font-size="14" font-family="Consolas,monospace" text-anchor="middle">↓</text>
+  <text x="400" y="165" fill="#2a5a8a" font-size="14" font-family="Consolas,monospace" text-anchor="middle">↓</text>
+  <text x="655" y="165" fill="#2a5a8a" font-size="14" font-family="Consolas,monospace" text-anchor="middle">↓</text>
+
+  <!-- Step 4: Blue Light -->
+  <rect x="30" y="180" width="230" height="80" rx="6" fill="#0f2840" stroke="#2a5a8a" stroke-width="1"/>
+  <circle cx="55" cy="220" r="14" fill="#ff6b6b" opacity="0.8"/>
+  <text x="55" y="225" text-anchor="middle" fill="#0a1628" font-size="13" font-family="Consolas,monospace" font-weight="bold">4</text>
+  <text x="80" y="210" fill="#5bcefa" font-size="12" font-family="Consolas,monospace" filter="url(#glow3)">蓝光危害等级</text>
+  <text x="80" y="230" fill="#ff6b6b" font-size="10" font-family="Consolas,monospace">家用必须 RG0</text>
+  <text x="80" y="250" fill="#5a7a9a" font-size="9" font-family="Consolas,monospace">安全底线, 非加分项</text>
+
+  <!-- Arrow -->
+  <text x="265" y="225" fill="#2a5a8a" font-size="18" font-family="Consolas,monospace" text-anchor="middle">→</text>
+
+  <!-- Step 5: Uniformity -->
+  <rect x="285" y="180" width="230" height="80" rx="6" fill="#0f2840" stroke="#2a5a8a" stroke-width="1"/>
+  <circle cx="310" cy="220" r="14" fill="#7ec27e" opacity="0.8"/>
+  <text x="310" y="225" text-anchor="middle" fill="#0a1628" font-size="13" font-family="Consolas,monospace" font-weight="bold">5</text>
+  <text x="335" y="210" fill="#5bcefa" font-size="12" font-family="Consolas,monospace" filter="url(#glow3)">照度均匀度</text>
+  <text x="335" y="230" fill="#bcd4e8" font-size="10" font-family="Consolas,monospace">≥0.7 合格 · ≥0.8 优秀</text>
+  <text x="335" y="250" fill="#5a7a9a" font-size="9" font-family="Consolas,monospace">布灯方案比瓦数重要</text>
+
+  <!-- Arrow -->
+  <text x="520" y="225" fill="#2a5a8a" font-size="18" font-family="Consolas,monospace" text-anchor="middle">→</text>
+
+  <!-- Step 6: Tunable -->
+  <rect x="540" y="180" width="230" height="80" rx="6" fill="#0f2840" stroke="#2a5a8a" stroke-width="1"/>
+  <circle cx="565" cy="220" r="14" fill="#7ec27e" opacity="0.8"/>
+  <text x="565" y="225" text-anchor="middle" fill="#0a1628" font-size="13" font-family="Consolas,monospace" font-weight="bold">6</text>
+  <text x="590" y="210" fill="#5bcefa" font-size="12" font-family="Consolas,monospace" filter="url(#glow3)">色温可调范围</text>
+  <text x="590" y="230" fill="#bcd4e8" font-size="10" font-family="Consolas,monospace">2700K-5000K 标配</text>
+  <text x="590" y="250" fill="#5a7a9a" font-size="9" font-family="Consolas,monospace">昼夜节律自动切换更佳</text>
+
+  <!-- Summary box -->
+  <rect x="30" y="290" width="740" height="70" rx="6" fill="#0f2840" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="400" y="320" text-anchor="middle" fill="#7ec27e" font-size="13" font-family="Consolas,monospace" font-weight="bold" filter="url(#glow3)">智能调光 + 全光谱 = 真正的健康照明</text>
+  <text x="400" y="345" text-anchor="middle" fill="#bcd4e8" font-size="10" font-family="Consolas,monospace">Ra95 只是入场券 · R9 ≥ 50 · PST LM/SVM ≤ 1.0 · RG0 · 均匀度 ≥ 0.7 · 色温 2700-5000K 可调</text>
+
+  <!-- Bottom: Warning -->
+  <rect x="30" y="380" width="740" height="45" rx="6" fill="#1a1020" stroke="#ff6b6b" stroke-width="1"/>
+  <text x="400" y="400" text-anchor="middle" fill="#ff6b6b" font-size="11" font-family="Consolas,monospace">⚠ 别只盯着Ra — 6项指标缺一不可, 看参数、要报告、实测体验</text>
+  <text x="400" y="418" text-anchor="middle" fill="#5a7a9a" font-size="9" font-family="Consolas,monospace">Nexlamp 耐利普 | 涂鸦Zigbee智能健康照明 | www.nexlamp.com</text>
+</svg>
