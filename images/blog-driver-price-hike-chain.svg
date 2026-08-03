@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="monospace">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <filter id="glow2"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg2)"/>
+  <!-- grid -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.2">
+    <line x1="0" y1="100" x2="680" y2="100"/><line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="136" y1="0" x2="136" y2="400"/><line x1="272" y1="0" x2="272" y2="400"/>
+    <line x1="408" y1="0" x2="408" y2="400"/><line x1="544" y1="0" x2="544" y2="400"/>
+  </g>
+  <!-- title -->
+  <text x="340" y="28" text-anchor="middle" fill="#4fc3f7" font-size="15" font-weight="bold">成本传导路径：从矿山到灯具</text>
+  <line x1="220" y1="36" x2="460" y2="36" stroke="#4fc3f7" stroke-width="1" opacity="0.4"/>
+
+  <!-- 5 stages chain -->
+  <!-- stage 1: raw materials -->
+  <rect x="15" y="80" width="115" height="80" rx="6" fill="#1a1520" stroke="#ff5252" stroke-width="1.5"/>
+  <text x="72" y="105" text-anchor="middle" fill="#ff5252" font-size="11" font-weight="bold">原材料</text>
+  <text x="72" y="125" text-anchor="middle" fill="#ff8a80" font-size="9">银 +170%</text>
+  <text x="72" y="140" text-anchor="middle" fill="#ff8a80" font-size="9">铜 +35%</text>
+  <text x="72" y="155" text-anchor="middle" fill="#ff8a80" font-size="9">金 +70%</text>
+
+  <!-- arrow 1 -->
+  <line x1="135" y1="120" x2="150" y2="120" stroke="#4fc3f7" stroke-width="2" marker-end="url(#arrow1)"/>
+  <polygon points="148,116 156,120 148,124" fill="#4fc3f7"/>
+
+  <!-- stage 2: packaging -->
+  <rect x="155" y="80" width="115" height="80" rx="6" fill="#1a2018" stroke="#ffb74d" stroke-width="1.5"/>
+  <text x="212" y="105" text-anchor="middle" fill="#ffb74d" font-size="11" font-weight="bold">封装/IC</text>
+  <text x="212" y="125" text-anchor="middle" fill="#ffd54f" font-size="9">晶圆代工</text>
+  <text x="212" y="140" text-anchor="middle" fill="#ffd54f" font-size="9">+15-25%</text>
+  <text x="212" y="155" text-anchor="middle" fill="#ffe0b2" font-size="9">封测 +30%</text>
+
+  <!-- arrow 2 -->
+  <polygon points="275,116 283,120 275,124" fill="#4fc3f7"/>
+
+  <!-- stage 3: driver IC -->
+  <rect x="285" y="80" width="115" height="80" rx="6" fill="#1a1a2e" stroke="#7c4dff" stroke-width="1.5"/>
+  <text x="342" y="105" text-anchor="middle" fill="#7c4dff" font-size="11" font-weight="bold">驱动IC</text>
+  <text x="342" y="125" text-anchor="middle" fill="#b388ff" font-size="9">6家头部企业</text>
+  <text x="342" y="140" text-anchor="middle" fill="#b388ff" font-size="9">全员涨价</text>
+  <text x="342" y="155" text-anchor="middle" fill="#d1c4e9" font-size="9">+10-30%</text>
+
+  <!-- arrow 3 -->
+  <polygon points="405,116 413,120 405,124" fill="#4fc3f7"/>
+
+  <!-- stage 4: driver power -->
+  <rect x="415" y="80" width="115" height="80" rx="6" fill="#1a2a20" stroke="#66bb6a" stroke-width="1.5"/>
+  <text x="472" y="105" text-anchor="middle" fill="#66bb6a" font-size="11" font-weight="bold">驱动电源</text>
+  <text x="472" y="125" text-anchor="middle" fill="#81c784" font-size="9">成品涨价</text>
+  <text x="472" y="140" text-anchor="middle" fill="#81c784" font-size="9">+5-18%</text>
+  <text x="472" y="155" text-anchor="middle" fill="#c8e6c9" font-size="9">户外款 +20%+</text>
+
+  <!-- arrow 4 -->
+  <polygon points="535,116 543,120 535,124" fill="#4fc3f7"/>
+
+  <!-- stage 5: lamp -->
+  <rect x="545" y="80" width="115" height="80" rx="6" fill="#2a1a1a" stroke="#ff7043" stroke-width="1.5" filter="url(#glow2)"/>
+  <text x="602" y="105" text-anchor="middle" fill="#ff7043" font-size="11" font-weight="bold">灯具成品</text>
+  <text x="602" y="125" text-anchor="middle" fill="#ffab91" font-size="9">驱动占成本</text>
+  <text x="602" y="140" text-anchor="middle" fill="#ffab91" font-size="9">10-25%</text>
+  <text x="602" y="155" text-anchor="middle" fill="#ffccbc" font-size="9">灯具涨 3-15%</text>
+
+  <!-- timeline -->
+  <line x1="20" y1="220" x2="660" y2="220" stroke="#37474f" stroke-width="1"/>
+  <text x="20" y="210" fill="#546e7a" font-size="10">时间线</text>
+
+  <!-- timeline events -->
+  <circle cx="80" cy="220" r="4" fill="#ff5252"/>
+  <text x="80" y="245" text-anchor="middle" fill="#ff8a80" font-size="9">1月19日</text>
+  <text x="80" y="258" text-anchor="middle" fill="#78909c" font-size="8">富满微首发</text>
+
+  <circle cx="200" cy="220" r="4" fill="#ffb74d"/>
+  <text x="200" y="245" text-anchor="middle" fill="#ffd54f" font-size="9">2-3月</text>
+  <text x="200" y="258" text-anchor="middle" fill="#78909c" font-size="8">6家全员跟进</text>
+
+  <circle cx="340" cy="220" r="4" fill="#7c4dff"/>
+  <text x="340" y="245" text-anchor="middle" fill="#b388ff" font-size="9">4月1日</text>
+  <text x="340" y="258" text-anchor="middle" fill="#78909c" font-size="8">台系6家涨价</text>
+
+  <circle cx="460" cy="220" r="4" fill="#66bb6a"/>
+  <text x="460" y="245" text-anchor="middle" fill="#81c784" font-size="9">5月6日</text>
+  <text x="460" y="258" text-anchor="middle" fill="#78909c" font-size="8">第二轮 +30%</text>
+
+  <circle cx="580" cy="220" r="4" fill="#ff7043"/>
+  <text x="580" y="245" text-anchor="middle" fill="#ffab91" font-size="9">7月1日</text>
+  <text x="580" y="258" text-anchor="middle" fill="#78909c" font-size="8">昕诺飞第五轮</text>
+
+  <!-- bottom summary -->
+  <rect x="30" y="290" width="620" height="90" rx="8" fill="#0d1f3a" stroke="#1a3050" stroke-width="1"/>
+  <text x="50" y="315" fill="#4fc3f7" font-size="11" font-weight="bold">关键数据</text>
+  <text x="50" y="335" fill="#81d4fa" font-size="10">50+ 企业发布调价函 | 驱动IC累计涨 15-30% | 成品电源涨 5-18%</text>
+  <text x="50" y="352" fill="#81d4fa" font-size="10">LED驱动芯片产能占比: 30% → 15% | AI订单毛利 = LED驱动 3-5倍</text>
+  <text x="50" y="370" fill="#78909c" font-size="9">Source: TrendForce / 中国电子报 / 摩根士丹利 / 各企业调价函</text>
+</svg>

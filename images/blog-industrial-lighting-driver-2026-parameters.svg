@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" width="100%">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0L0 0L0 20" fill="none" stroke="#1a2d4d" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="520" fill="#0a1628"/>
+  <rect width="680" height="520" fill="url(#grid)"/>
+
+  <!-- Title bar -->
+  <rect x="30" y="20" width="620" height="36" rx="6" fill="#111d33" stroke="#1e3a5f" stroke-width="1"/>
+  <circle cx="50" cy="38" r="5" fill="#ff5f56"/>
+  <circle cx="68" cy="38" r="5" fill="#ffbd2e"/>
+  <circle cx="86" cy="38" r="5" fill="#27c93f"/>
+  <text x="340" y="43" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="14" font-weight="500">工厂LED驱动电源选型 · 六大硬指标</text>
+
+  <!-- Cards 2x3 -->
+  <g transform="translate(30, 75)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="195" height="130" rx="8" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="1"/>
+    <rect x="10" y="10" width="175" height="24" rx="4" fill="#1e4d6b" opacity="0.3"/>
+    <text x="97" y="26" text-anchor="middle" fill="#5ab4e6" font-family="monospace" font-size="11" font-weight="500">01 宽温域工作</text>
+    <text x="15" y="55" fill="#a0c4e8" font-family="monospace" font-size="10">工作温度 -40℃~+70℃</text>
+    <text x="15" y="75" fill="#a0c4e8" font-family="monospace" font-size="10">满载温升 ≤45K</text>
+    <text x="15" y="105" fill="#7ec27e" font-family="monospace" font-size="10" filter="url(#glow)">高温厂房 / 冷链仓库</text>
+
+    <!-- Card 2 -->
+    <rect x="212" y="0" width="195" height="130" rx="8" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="1"/>
+    <rect x="222" y="10" width="175" height="24" rx="4" fill="#1e4d6b" opacity="0.3"/>
+    <text x="309" y="26" text-anchor="middle" fill="#e6a845" font-family="monospace" font-size="11" font-weight="500">02 高防护等级</text>
+    <text x="227" y="55" fill="#a0c4e8" font-family="monospace" font-size="10">IP65 / IP67 防尘防水</text>
+    <text x="227" y="75" fill="#a0c4e8" font-family="monospace" font-size="10">C3~C5 防腐等级</text>
+    <text x="227" y="105" fill="#7ec27e" font-family="monospace" font-size="10" filter="url(#glow)">粉尘 / 盐雾 / 化工</text>
+
+    <!-- Card 3 -->
+    <rect x="424" y="0" width="195" height="130" rx="8" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="1"/>
+    <rect x="434" y="10" width="175" height="24" rx="4" fill="#1e4d6b" opacity="0.3"/>
+    <text x="521" y="26" text-anchor="middle" fill="#9b7ed8" font-family="monospace" font-size="11" font-weight="500">03 宽负载高效率</text>
+    <text x="439" y="55" fill="#a0c4e8" font-family="monospace" font-size="10">满载效率 &gt;92%</text>
+    <text x="439" y="75" fill="#a0c4e8" font-family="monospace" font-size="10">5%-100%负载 &gt;85%</text>
+    <text x="439" y="105" fill="#7ec27e" font-family="monospace" font-size="10" filter="url(#glow)">PF&gt;0.95 · THD&lt;15%</text>
+
+    <!-- Card 4 -->
+    <rect x="0" y="150" width="195" height="130" rx="8" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="1"/>
+    <rect x="10" y="160" width="175" height="24" rx="4" fill="#1e4d6b" opacity="0.3"/>
+    <text x="97" y="176" text-anchor="middle" fill="#5ab4e6" font-family="monospace" font-size="11" font-weight="500">04 智能调光通信</text>
+    <text x="15" y="205" fill="#a0c4e8" font-family="monospace" font-size="10">DALI-2 双向通信</text>
+    <text x="15" y="225" fill="#a0c4e8" font-family="monospace" font-size="10">0-10V / PWM 调光</text>
+    <text x="15" y="255" fill="#7ec27e" font-family="monospace" font-size="10" filter="url(#glow)">接入BMS能效平台</text>
+
+    <!-- Card 5 -->
+    <rect x="212" y="150" width="195" height="130" rx="8" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="1"/>
+    <rect x="222" y="160" width="175" height="24" rx="4" fill="#1e4d6b" opacity="0.3"/>
+    <text x="309" y="176" text-anchor="middle" fill="#e6a845" font-family="monospace" font-size="11" font-weight="500">05 多重保护功能</text>
+    <text x="227" y="205" fill="#a0c4e8" font-family="monospace" font-size="10">OVP / OCP / OTP / SCP</text>
+    <text x="227" y="225" fill="#a0c4e8" font-family="monospace" font-size="10">雷击浪涌 ≥6kV</text>
+    <text x="227" y="255" fill="#7ec27e" font-family="monospace" font-size="10" filter="url(#glow)">工业电网波动生存底线</text>
+
+    <!-- Card 6 -->
+    <rect x="424" y="150" width="195" height="130" rx="8" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="1"/>
+    <rect x="434" y="160" width="175" height="24" rx="4" fill="#1e4d6b" opacity="0.3"/>
+    <text x="521" y="176" text-anchor="middle" fill="#9b7ed8" font-family="monospace" font-size="11" font-weight="500">06 认证与长供货</text>
+    <text x="439" y="205" fill="#a0c4e8" font-family="monospace" font-size="10">CCC / CE / UL / UKCA</text>
+    <text x="439" y="225" fill="#a0c4e8" font-family="monospace" font-size="10">5年质保 + 稳定产能</text>
+    <text x="439" y="255" fill="#7ec27e" font-family="monospace" font-size="10" filter="url(#glow)">全生命周期成本可控</text>
+  </g>
+
+  <!-- Bottom summary -->
+  <rect x="30" y="430" width="620" height="70" rx="8" fill="#0d1f3a" stroke="#1e4d6b" stroke-width="1"/>
+  <text x="340" y="460" text-anchor="middle" fill="#c8ddf0" font-family="monospace" font-size="12">工业驱动不是普通消费品，是全天候运行的电力设备</text>
+  <text x="340" y="485" text-anchor="middle" fill="#7ec27e" font-family="monospace" font-size="11" filter="url(#glow)">选型核心：能在高温粉尘里稳定跑十年，还能接入智能系统</text>
+</svg>

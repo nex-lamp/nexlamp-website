@@ -1,5 +1,41 @@
 # Automation Memory
 
+## 2026-07-31: 当灯变成"路由器"——Li-Fi光通信如何把LED驱动变成10Gbps接入点
+- 选题: 多源搜索确认"Li-Fi光通信商用化"是2026年7月底最热差异化话题（pureLiFi+Askey 4月28日发布全球首款Li-Fi 5G FWA穿窗桥接设备Bridge XC Flex；MWC 2026展示10Gbps Light Antenna架构；演示和测试设备2026上半年向全球电信运营商提供；某知名手机厂旗舰机已嵌入Light Antenna One做内测）
+- 之前12篇博客均未覆盖Li-Fi话题，是真正的差异化选题
+- 文章: posts/2026-07-31-lifi-led-driver-opportunity.md (~2200字) + 3 SVG(Li-Fi原理调制/Li-Fi vs Wi-Fi频谱对比/LED驱动三层架构演进) + AI封面(裁剪法去水印)
+- 英文版: posts/devto-2026-07-31-when-light-bulbs-become-routers-lifi.md (via publish_devto_lifi_2026-07-31.py)
+- 网站: ✅ node build.js 119篇 + sitemap.xml (123 URLs)
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/when-light-bulbs-become-routers-how-li-fi-turns-led-drivers-into-10-gbps-access-points-42f6 (ID: 4276869)
+  - 流程: POST创建后得到temp-slug → PUT /api/articles/{id} 设为published:true → 获得正式slug-42f6
+  - 注意: published字段仍返回None（Dev.to API特性），但URL已是正式slug说明实际已发布
+- LinkedIn: ⚠️ CDP Chrome未运行（127.0.0.1:9222 Connection refused），跳过
+- 今日头条微头条: ✅ success=true, action=published, url=https://mp.toutiao.com/profile_v4/weitoutiao
+  - 文本: 约240字口语化（朋友家Wi-Fi信号差→4月28日Li-Fi新闻→MWC 2026 10Gbps→驱动升级需求→耐利普在评估方案）
+- 踩坑: 无重大踩坑，流程顺畅。ImageGen 1216x832 → 裁剪底部70px → resize 1200x750（裁剪法仍然稳定）
+- Dev.to POST 后获得 temp-slug 是新现象：之前文章都是POST直接拿正式slug。这次的 title 包含 10 Gbps 和 路由器 等复杂词，可能触发了 temp-slug 流程。解决：PUT /api/articles/{id} published:true 即可。
+
+## 2026-07-29: 情绪照明/全彩光——智能灯光的下一站
+- 选题: 多源搜索确认"情绪照明/全彩光"是2026年7月8日广州建博会最新提出（榜威科技张军君"行业三大跃迁：功能→健康→情绪"）
+- 之前12篇博客均未覆盖此话题，是真正的差异化选题
+- 文章: posts/2026-07-29-emotional-lighting-rgbwaf-future.md (~1700字) + 3 SVG(色域对比/6通道驱动架构/4大场景) + AI封面(去水印)
+- 网站: ✅ node build.js 115篇 + sitemap.xml(119 URLs)
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/from-light-to-understanding-why-emotional-lighting-full-spectrum-rgbwaf-is-the-next-station-for-3k1p (ID: 4258607)
+- LinkedIn: ⚠️ CDP Chrome未运行（127.0.0.1:9222 Connection refused），跳过
+- 今日头条微头条: ✅ (action: published, 口语化220字内，朋友家参观场景+多通道懵圈+情绪照明新周期+耐利普在做这个事)
+- 踩坑: 无重大踩坑，流程顺畅。ImageGen 1216x832 → 裁剪70px → resize 1200x750（裁剪法稳定）
+
+## 2026-07-28: AI自学习照明——灯正在学会"预判"你的下一步
+- 选题: 多源搜索确认"AI自适应/自学习照明"是2026年7月底最热趋势（启福光万达13家广场案例6年省1672万、综合节能率80-95%；多篇行业分析报道）
+- 之前11篇博客均未覆盖此主题，是真正的差异化选题
+- 文章: posts/2026-07-28-ai-self-learning-lighting-energy-saving.md (~1400字) + 3 SVG(传统vs AI对比/去中心化自组网/AI学习循环) + AI封面(去水印)
+- 英文版: posts/devto-2026-07-28-ai-self-learning-lighting-energy-saving.md
+- 网站: ✅ node build.js 112篇 + sitemap.xml(116 URLs)
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/ai-self-learning-lighting-how-your-lights-are-starting-to-predict-your-next-move-2c20 (ID: 4249858)
+- LinkedIn: ⚠️ CDP Chrome未运行（127.0.0.1:9222 不通），跳过
+- 今日头条微头条: ✅ (action: published, 口语化200字内，万达案例+鬼影接驾+技术三件事)
+- 踩坑: ImageGen水印在底部70px范围内且有部分在楼层反射中"半隐"——直接用裁剪法比paste法更干净利落
+
 ## 2026-07-20: 毫米波雷达+智能照明——人静灯不灭
 - 选题: 多源搜索确认"毫米波雷达人体存在感知"是2026年7月最新热门趋势（Yeelight RadarSense 269元众筹、Aqara FP2 <200元、Philips Hue推mmWave传感器）
 - 文章: posts/2026-07-20-mmwave-radar-presence-detection-lighting.md (~1500字) + 3 SVG(PIR对比/频段选型/驱动集成) + AI封面(去水印)

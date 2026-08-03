@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#141830"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ff3d00"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#00997a"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="neon">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#8892b0" font-size="13" font-family="sans-serif">传统感应照明 vs AI��学习照明 — 节能率对比</text>
+
+  <!-- Left Panel: Traditional -->
+  <rect x="30" y="55" width="355" height="410" rx="10" fill="#1a1f3a" stroke="#2a3050" stroke-width="1" filter="url(#shadow)"/>
+  <text x="207" y="85" text-anchor="middle" fill="#ff6b35" font-size="16" font-weight="bold" font-family="sans-serif">🕹 传统感应照明</text>
+  <line x1="60" y1="95" x2="355" y2="95" stroke="#2a3050" stroke-width="1"/>
+
+  <!-- Traditional flow -->
+  <rect x="60" y="115" width="130" height="50" rx="6" fill="#ff6b3522" stroke="#ff6b35" stroke-width="1"/>
+  <text x="125" y="136" text-anchor="middle" fill="#ff8c66" font-size="12" font-family="sans-serif">红外/雷达</text>
+  <text x="125" y="153" text-anchor="middle" fill="#ff8c66" font-size="12" font-family="sans-serif">检测移动</text>
+
+  <text x="205" y="145" fill="#4a5568" font-size="20" font-family="sans-serif">→</text>
+
+  <rect x="220" y="115" width="130" height="50" rx="6" fill="#ff6b3522" stroke="#ff6b35" stroke-width="1"/>
+  <text x="285" y="136" text-anchor="middle" fill="#ff8c66" font-size="12" font-family="sans-serif">IF-THEN</text>
+  <text x="285" y="153" text-anchor="middle" fill="#ff8c66" font-size="12" font-family="sans-serif">规则开关</text>
+
+  <!-- Traditional results -->
+  <rect x="60" y="200" width="290" height="28" rx="4" fill="#2a2040"/>
+  <text x="205" y="219" text-anchor="middle" fill="#8892b0" font-size="13" font-family="sans-serif">⚠ 人未到灯不亮 · 无效照明 · 盲区遗漏</text>
+
+  <!-- Traditional stats -->
+  <g transform="translate(60, 255)">
+    <text x="0" y="12" fill="#8892b0" font-size="12" font-family="sans-serif">节能率</text>
+    <rect x="65" y="2" width="210" height="16" rx="3" fill="#141830" stroke="#2a3050" stroke-width="0.5"/>
+    <rect x="65" y="2" width="105" height="16" rx="3" fill="url(#glow1)" opacity="0.7"/>
+    <text x="290" y="14" text-anchor="end" fill="#ff6b35" font-size="13" font-weight="bold" font-family="sans-serif">~50%</text>
+  </g>
+
+  <g transform="translate(60, 295)">
+    <text x="0" y="12" fill="#8892b0" font-size="12" font-family="sans-serif">响应延迟</text>
+    <rect x="65" y="2" width="210" height="16" rx="3" fill="#141830" stroke="#2a3050" stroke-width="0.5"/>
+    <rect x="65" y="2" width="168" height="16" rx="3" fill="url(#glow1)" opacity="0.6"/>
+    <text x="290" y="14" text-anchor="end" fill="#ff6b35" font-size="13" font-weight="bold" font-family="sans-serif">500-2000ms</text>
+  </g>
+
+  <g transform="translate(60, 335)">
+    <text x="0" y="12" fill="#8892b0" font-size="12" font-family="sans-serif">部署难度</text>
+    <rect x="65" y="2" width="210" height="16" rx="3" fill="#141830" stroke="#2a3050" stroke-width="0.5"/>
+    <rect x="65" y="2" width="189" height="16" rx="3" fill="url(#glow1)" opacity="0.5"/>
+    <text x="290" y="14" text-anchor="end" fill="#ff6b35" font-size="13" font-weight="bold" font-family="sans-serif">需布线/编程</text>
+  </g>
+
+  <text x="207" y="395" text-anchor="middle" fill="#4a5568" font-size="13" font-family="sans-serif">决策逻辑：简单规则</text>
+  <text x="207" y="420" text-anchor="middle" fill="#4a5568" font-size="12" font-family="sans-serif">无预测 · 无学习 · 无优化</text>
+
+  <!-- VS Divider -->
+  <rect x="390" y="180" width="20" height="20" rx="10" fill="#2a3050"/>
+  <text x="400" y="194" text-anchor="middle" fill="#ffd700" font-size="10" font-weight="bold" font-family="sans-serif">VS</text>
+
+  <!-- Right Panel: AI -->
+  <rect x="415" y="55" width="355" height="410" rx="10" fill="#1a1f3a" stroke="#2a3050" stroke-width="1" filter="url(#shadow)"/>
+  <text x="592" y="85" text-anchor="middle" fill="#00d4aa" font-size="16" font-weight="bold" font-family="sans-serif">🧠 AI自学习照明</text>
+  <line x1="445" y1="95" x2="740" y2="95" stroke="#2a3050" stroke-width="1"/>
+
+  <!-- AI flow -->
+  <rect x="445" y="115" width="130" height="50" rx="6" fill="#00d4aa22" stroke="#00d4aa" stroke-width="1"/>
+  <text x="510" y="136" text-anchor="middle" fill="#33e6c0" font-size="12" font-family="sans-serif">多传感器</text>
+  <text x="510" y="153" text-anchor="middle" fill="#33e6c0" font-size="12" font-family="sans-serif">融合感知</text>
+
+  <text x="590" y="145" fill="#4a5568" font-size="20" font-family="sans-serif">→</text>
+
+  <rect x="605" y="115" width="130" height="50" rx="6" fill="#00d4aa22" stroke="#00d4aa" stroke-width="1"/>
+  <text x="670" y="136" text-anchor="middle" fill="#33e6c0" font-size="12" font-family="sans-serif">深度学习</text>
+  <text x="670" y="153" text-anchor="middle" fill="#33e6c0" font-size="12" font-family="sans-serif">预测决策</text>
+
+  <!-- AI results -->
+  <rect x="445" y="200" width="290" height="28" rx="4" fill="#203a2a"/>
+  <text x="590" y="219" text-anchor="middle" fill="#33e6c0" font-size="13" font-family="sans-serif">✓ 预判轨迹 · 提前亮灯 · 按需照明 · 持续优化</text>
+
+  <!-- AI stats -->
+  <g transform="translate(445, 255)">
+    <text x="0" y="12" fill="#8892b0" font-size="12" font-family="sans-serif">节能率</text>
+    <rect x="65" y="2" width="210" height="16" rx="3" fill="#141830" stroke="#2a3050" stroke-width="0.5"/>
+    <rect x="65" y="2" width="178" height="16" rx="3" fill="url(#glow2)" opacity="0.7"/>
+    <text x="290" y="14" text-anchor="end" fill="#00d4aa" font-size="14" font-weight="bold" font-family="sans-serif">80-95%</text>
+  </g>
+
+  <g transform="translate(445, 295)">
+    <text x="0" y="12" fill="#8892b0" font-size="12" font-family="sans-serif">响应延迟</text>
+    <rect x="65" y="2" width="210" height="16" rx="3" fill="#141830" stroke="#2a3050" stroke-width="0.5"/>
+    <rect x="65" y="2" width="42" height="16" rx="3" fill="url(#glow2)" opacity="0.6"/>
+    <text x="290" y="14" text-anchor="end" fill="#00d4aa" font-size="13" font-weight="bold" font-family="sans-serif">&lt;200ms</text>
+  </g>
+
+  <g transform="translate(445, 335)">
+    <text x="0" y="12" fill="#8892b0" font-size="12" font-family="sans-serif">部署难度</text>
+    <rect x="65" y="2" width="210" height="16" rx="3" fill="#141830" stroke="#2a3050" stroke-width="0.5"/>
+    <rect x="65" y="2" width="63" height="16" rx="3" fill="url(#glow2)" opacity="0.5"/>
+    <text x="290" y="14" text-anchor="end" fill="#00d4aa" font-size="13" font-weight="bold" font-family="sans-serif">即装即用</text>
+  </g>
+
+  <text x="592" y="395" text-anchor="middle" fill="#00d4aa" font-size="13" font-family="sans-serif">决策逻辑：持续学习</text>
+  <text x="592" y="420" text-anchor="middle" fill="#4a5568" font-size="12" font-family="sans-serif">时序预测 · 自优化 · OTA升级</text>
+
+  <!-- Bottom highlight -->
+  <rect x="100" y="478" width="600" height="2" rx="1" fill="#00d4aa" opacity="0.3"/>
+</svg>

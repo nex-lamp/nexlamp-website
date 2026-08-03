@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="oldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#666"/>
+      <stop offset="100%" stop-color="#444"/>
+    </linearGradient>
+    <linearGradient id="newGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ff4444"/>
+    </linearGradient>
+    <linearGradient id="fiberGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#00a8ff"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg)"/>
+  <rect width="680" height="400" fill="url(#grid)"/>
+  <text x="340" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#ffffff">LED驱动电源升级路径:从恒流源到光通信模组</text>
+  <text x="340" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#7fa8d4">三层架构演进 · 协议栈集成 · 高速调制</text>
+
+  <!-- 三层架构演进 -->
+  <g transform="translate(50,95)">
+    <!-- 阶段1: 传统LED驱动 -->
+    <g>
+      <rect x="0" y="0" width="170" height="270" rx="6" fill="#0d1f3c" stroke="#555" stroke-width="1.5" opacity="0.85"/>
+      <text x="85" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#888">阶段1: 传统驱动</text>
+      <text x="85" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#aaa">仅恒流输出</text>
+
+      <rect x="20" y="55" width="130" height="40" rx="3" fill="url(#oldGrad)"/>
+      <text x="85" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">恒流源</text>
+      <text x="85" y="93" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#aaa">PWM 1-4 kHz</text>
+
+      <text x="85" y="125" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#888">↓ 加 ↓</text>
+
+      <rect x="20" y="140" width="130" height="40" rx="3" fill="url(#oldGrad)"/>
+      <text x="85" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">调光模块</text>
+      <text x="85" y="178" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#aaa">0-10V/DALI</text>
+
+      <text x="85" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#888">↓ 加 ↓</text>
+
+      <rect x="20" y="225" width="130" height="40" rx="3" fill="url(#oldGrad)"/>
+      <text x="85" y="248" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">LED灯具</text>
+      <text x="85" y="263" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#aaa">仅照明</text>
+    </g>
+
+    <!-- 箭头1 -->
+    <g transform="translate(190,135)">
+      <path d="M0,0 L40,0" stroke="#ffd700" stroke-width="2"/>
+      <polygon points="40,-5 50,0 40,5" fill="#ffd700"/>
+    </g>
+
+    <!-- 阶段2: 智能LED驱动 -->
+    <g transform="translate(255,0)">
+      <rect x="0" y="0" width="170" height="270" rx="6" fill="#0d1f3c" stroke="#ff8c00" stroke-width="1.5" opacity="0.9"/>
+      <text x="85" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ff8c00">阶段2: 智能驱动</text>
+      <text x="85" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#aaa">IoT + 协议</text>
+
+      <rect x="20" y="55" width="130" height="40" rx="3" fill="#1a2a4a" stroke="#ff8c00" stroke-width="1"/>
+      <text x="85" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">恒流源</text>
+      <text x="85" y="93" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#aaa">+ 无线模组</text>
+
+      <text x="85" y="125" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#888">↓ 加 ↓</text>
+
+      <rect x="20" y="140" width="130" height="40" rx="3" fill="#1a2a4a" stroke="#ff8c00" stroke-width="1"/>
+      <text x="85" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">Zigbee/Matter</text>
+      <text x="85" y="178" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#aaa">Wi-Fi控制</text>
+
+      <text x="85" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#888">↓ 加 ↓</text>
+
+      <rect x="20" y="225" width="130" height="40" rx="3" fill="url(#newGrad)" filter="url(#glow)"/>
+      <text x="85" y="248" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">智能灯具</text>
+      <text x="85" y="263" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffd700">照+控</text>
+    </g>
+
+    <!-- 箭头2 -->
+    <g transform="translate(445,135)">
+      <path d="M0,0 L40,0" stroke="#00d4aa" stroke-width="2"/>
+      <polygon points="40,-5 50,0 40,5" fill="#00d4aa"/>
+    </g>
+
+    <!-- 阶段3: Li-Fi光通信驱动 -->
+    <g transform="translate(510,0)">
+      <rect x="0" y="0" width="170" height="270" rx="6" fill="#0d1f3c" stroke="#00d4aa" stroke-width="1.5" opacity="0.9"/>
+      <text x="85" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#00d4aa">阶段3: Li-Fi驱动</text>
+      <text x="85" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#aaa">光通信模组</text>
+
+      <rect x="20" y="55" width="130" height="40" rx="3" fill="#1a2a4a" stroke="#00d4aa" stroke-width="1"/>
+      <text x="85" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">恒流源</text>
+      <text x="85" y="93" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#aaa">+ 高速调制</text>
+
+      <text x="85" y="125" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#888">↓ 集成 ↓</text>
+
+      <rect x="20" y="140" width="130" height="40" rx="3" fill="#1a2a4a" stroke="#00d4aa" stroke-width="1"/>
+      <text x="85" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">802.11bb</text>
+      <text x="85" y="178" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#aaa">OFDM协议栈</text>
+
+      <text x="85" y="210" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#888">↓ 必备 ↓</text>
+
+      <rect x="20" y="225" width="130" height="40" rx="3" fill="url(#fiberGrad)" filter="url(#glow)"/>
+      <text x="85" y="248" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">光通信节点</text>
+      <text x="85" y="263" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#00d4aa">照+控+通</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg)"/>
+  <!-- grid lines -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="80" x2="680" y2="80"/><line x1="0" y1="160" x2="680" y2="160"/>
+    <line x1="0" y1="240" x2="680" y2="240"/><line x1="0" y1="320" x2="680" y2="320"/>
+    <line x1="100" y1="0" x2="100" y2="400"/><line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/><line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="500" y1="0" x2="500" y2="400"/><line x1="600" y1="0" x2="600" y2="400"/>
+  </g>
+  <!-- title -->
+  <text x="340" y="32" text-anchor="middle" fill="#4fc3f7" font-size="16" font-weight="bold">LED 驱动涨价：三把刀同时砍下</text>
+  <line x1="200" y1="42" x2="480" y2="42" stroke="#4fc3f7" stroke-width="1" opacity="0.5"/>
+
+  <!-- center node -->
+  <rect x="270" y="170" width="140" height="60" rx="8" fill="#1a3050" stroke="#4fc3f7" stroke-width="2" filter="url(#glow)"/>
+  <text x="340" y="195" text-anchor="middle" fill="#4fc3f7" font-size="13" font-weight="bold">LED 驱动电源</text>
+  <text x="340" y="215" text-anchor="middle" fill="#81d4fa" font-size="11">累计涨幅 15-30%</text>
+
+  <!-- force 1: silver -->
+  <line x1="140" y1="100" x2="270" y2="180" stroke="#ff5252" stroke-width="2" stroke-dasharray="5,3" opacity="0.7"/>
+  <rect x="40" y="70" width="200" height="70" rx="6" fill="#1a1520" stroke="#ff5252" stroke-width="1.5" opacity="0.9"/>
+  <text x="140" y="95" text-anchor="middle" fill="#ff5252" font-size="13" font-weight="bold">贵金属暴涨</text>
+  <text x="140" y="115" text-anchor="middle" fill="#ff8a80" font-size="10">银 +170% | 金 +70%</text>
+  <text x="140" y="130" text-anchor="middle" fill="#ffab91" font-size="9">银浆占封装成本 &gt;30%</text>
+
+  <!-- force 2: copper -->
+  <line x1="540" y1="100" x2="410" y2="180" stroke="#ffb74d" stroke-width="2" stroke-dasharray="5,3" opacity="0.7"/>
+  <rect x="440" y="70" width="200" height="70" rx="6" fill="#1a2018" stroke="#ffb74d" stroke-width="1.5" opacity="0.9"/>
+  <text x="540" y="95" text-anchor="middle" fill="#ffb74d" font-size="13" font-weight="bold">铜价冲天</text>
+  <text x="540" y="115" text-anchor="middle" fill="#ffd54f" font-size="10">10.16万元/吨 (+35%)</text>
+  <text x="540" y="130" text-anchor="middle" fill="#ffe0b2" font-size="9">铜占变压器成本 &gt;65%</text>
+
+  <!-- force 3: AI -->
+  <line x1="340" y1="310" x2="340" y2="232" stroke="#7c4dff" stroke-width="2" stroke-dasharray="5,3" opacity="0.7"/>
+  <rect x="200" y="310" width="280" height="70" rx="6" fill="#151a2e" stroke="#7c4dff" stroke-width="1.5" opacity="0.9"/>
+  <text x="340" y="335" text-anchor="middle" fill="#7c4dff" font-size="13" font-weight="bold">AI 挤占晶圆产能</text>
+  <text x="340" y="355" text-anchor="middle" fill="#b388ff" font-size="10">LED驱动芯片产能: 30% → 15%</text>
+  <text x="340" y="370" text-anchor="middle" fill="#d1c4e9" font-size="9">AI订单毛利是LED驱动的 3-5 倍</text>
+
+  <!-- arrows -->
+  <polygon points="275,178 282,185 268,185" fill="#ff5252" opacity="0.8"/>
+  <polygon points="405,178 412,185 398,185" fill="#ffb74d" opacity="0.8"/>
+  <polygon points="337,234 343,234 340,228" fill="#7c4dff" opacity="0.8"/>
+
+  <!-- bottom labels -->
+  <text x="20" y="390" fill="#37474f" font-size="9">Source: TrendForce / 中国电子报 / Morgan Stanley</text>
+</svg>

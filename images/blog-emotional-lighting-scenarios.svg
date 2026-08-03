@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" style="font-family: 'Segoe UI', sans-serif;">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#050b15"/>
+    </linearGradient>
+    <linearGradient id="scene1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a3a"/>
+      <stop offset="50%" style="stop-color:#2a1a4a"/>
+      <stop offset="100%" style="stop-color:#1a2a4a"/>
+    </linearGradient>
+    <linearGradient id="scene2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a0a0a"/>
+      <stop offset="100%" style="stop-color:#2a0a2a"/>
+    </linearGradient>
+    <linearGradient id="scene3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a2a3a"/>
+      <stop offset="50%" style="stop-color:#1a3a4a"/>
+      <stop offset="100%" style="stop-color:#3a1a4a"/>
+    </linearGradient>
+    <linearGradient id="scene4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a0a0a"/>
+      <stop offset="100%" style="stop-color:#3a1a0a"/>
+    </linearGradient>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2942" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg3)"/>
+  <rect width="1200" height="750" fill="url(#grid3)"/>
+
+  <!-- 标题 -->
+  <text x="600" y="55" text-anchor="middle" fill="#7ec27e" font-size="26" font-weight="bold" letter-spacing="2">EMOTIONAL LIGHTING SCENARIOS</text>
+  <text x="600" y="85" text-anchor="middle" fill="#9ab0c9" font-size="14" letter-spacing="3">4大情绪场景 / 全彩光动态光配方 / 联动音画与生理</text>
+
+  <!-- 场景 1: 影院 -->
+  <g transform="translate(80, 140)">
+    <rect x="0" y="0" width="500" height="240" rx="10" fill="url(#scene1)" stroke="#9933ff" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#bb66ff" font-size="11" letter-spacing="2">SCENE 01</text>
+    <text x="20" y="58" fill="#ffffff" font-size="22" font-weight="bold">🎬 影院沉浸</text>
+    <text x="20" y="82" fill="#9ab0c9" font-size="12">MOVIE / 同步画面主色温</text>
+
+    <!-- 灯光示意：屏幕两边紫色边缘光 -->
+    <rect x="20" y="100" width="460" height="60" rx="6" fill="#0a0a1a" stroke="#3a3a5a" stroke-width="1"/>
+    <rect x="20" y="100" width="30" height="60" fill="#9933ff" opacity="0.6" filter="url(#glow3)"/>
+    <rect x="450" y="100" width="30" height="60" fill="#3366ff" opacity="0.6" filter="url(#glow3)"/>
+    <text x="250" y="135" text-anchor="middle" fill="#5a7090" font-size="11">SCREEN</text>
+
+    <!-- 光配方参数 -->
+    <g transform="translate(20, 175)">
+      <rect x="0" y="0" width="460" height="55" rx="6" fill="#0a1628" opacity="0.7"/>
+      <text x="15" y="20" fill="#9ab0c9" font-size="10">色温 / 主色</text>
+      <text x="110" y="20" fill="#bb66ff" font-size="13" font-weight="bold">2700K / 紫蓝渐变</text>
+      <text x="15" y="42" fill="#9ab0c9" font-size="10">亮度 / 联动</text>
+      <text x="110" y="42" fill="#7ec27e" font-size="13" font-weight="bold">10% / 画面主色 200ms</text>
+    </g>
+  </g>
+
+  <!-- 场景 2: 电竞 -->
+  <g transform="translate(620, 140)">
+    <rect x="0" y="0" width="500" height="240" rx="10" fill="url(#scene2)" stroke="#ff3366" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#ff7799" font-size="11" letter-spacing="2">SCENE 02</text>
+    <text x="20" y="58" fill="#ffffff" font-size="22" font-weight="bold">🎮 电竞对战</text>
+    <text x="20" y="82" fill="#9ab0c9" font-size="12">GAMING / 跟随血量与技能CD</text>
+
+    <!-- 灯光示意：血条+技能 -->
+    <rect x="20" y="100" width="460" height="60" rx="6" fill="#0a0a1a" stroke="#3a3a5a" stroke-width="1"/>
+    <rect x="20" y="100" width="350" height="20" fill="#ff3366" opacity="0.7" filter="url(#glow3)"/>
+    <text x="195" y="115" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">HP 75%</text>
+    <rect x="20" y="125" width="180" height="15" fill="#3366ff" opacity="0.7"/>
+    <text x="115" y="136" text-anchor="middle" fill="#ffffff" font-size="10">ULT 80%</text>
+    <rect x="220" y="125" width="180" height="15" fill="#ccff33" opacity="0.7"/>
+    <text x="315" y="136" text-anchor="middle" fill="#0a1628" font-size="10">Q SKILL</text>
+    <rect x="420" y="125" width="60" height="15" fill="#9933ff" opacity="0.7"/>
+    <text x="450" y="136" text-anchor="middle" fill="#ffffff" font-size="10">CD</text>
+
+    <!-- 光配方参数 -->
+    <g transform="translate(20, 175)">
+      <rect x="0" y="0" width="460" height="55" rx="6" fill="#0a1628" opacity="0.7"/>
+      <text x="15" y="20" fill="#9ab0c9" font-size="10">色温 / 主色</text>
+      <text x="110" y="20" fill="#ff7799" font-size="13" font-weight="bold">4500K / 血红-紫</text>
+      <text x="15" y="42" fill="#9ab0c9" font-size="10">亮度 / 联动</text>
+      <text x="110" y="42" fill="#7ec27e" font-size="13" font-weight="bold">60% / 游戏事件 50ms</text>
+    </g>
+  </g>
+
+  <!-- 场景 3: 派对 -->
+  <g transform="translate(80, 410)">
+    <rect x="0" y="0" width="500" height="240" rx="10" fill="url(#scene3)" stroke="#33ccff" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#66ddff" font-size="11" letter-spacing="2">SCENE 03</text>
+    <text x="20" y="58" fill="#ffffff" font-size="22" font-weight="bold">🎉 派对律动</text>
+    <text x="20" y="82" fill="#9ab0c9" font-size="12">PARTY / 跟随BPM与低频</text>
+
+    <!-- 灯光示意：声波 -->
+    <rect x="20" y="100" width="460" height="60" rx="6" fill="#0a0a1a" stroke="#3a3a5a" stroke-width="1"/>
+    <g transform="translate(20, 100)" fill="none" stroke-width="2">
+      <path d="M 10 30 L 30 30" stroke="#ff3366" opacity="0.8"/>
+      <path d="M 35 25 L 50 25" stroke="#ffaa00" opacity="0.8"/>
+      <path d="M 55 35 L 75 35" stroke="#33ccff" opacity="0.8"/>
+      <path d="M 80 20 L 95 20" stroke="#9933ff" opacity="0.8"/>
+      <path d="M 100 30 L 125 30" stroke="#66ff99" opacity="0.8"/>
+      <path d="M 130 25 L 150 25" stroke="#ff3366" opacity="0.8"/>
+      <path d="M 155 32 L 175 32" stroke="#ffaa00" opacity="0.8"/>
+      <path d="M 180 18 L 200 18" stroke="#33ccff" opacity="0.8"/>
+      <path d="M 205 30 L 225 30" stroke="#9933ff" opacity="0.8"/>
+      <path d="M 230 25 L 255 25" stroke="#66ff99" opacity="0.8"/>
+      <path d="M 260 32 L 280 32" stroke="#ff3366" opacity="0.8"/>
+      <path d="M 285 20 L 305 20" stroke="#ffaa00" opacity="0.8"/>
+      <path d="M 310 30 L 335 30" stroke="#33ccff" opacity="0.8"/>
+      <path d="M 340 25 L 360 25" stroke="#9933ff" opacity="0.8"/>
+      <path d="M 365 35 L 385 35" stroke="#66ff99" opacity="0.8"/>
+      <path d="M 390 22 L 415 22" stroke="#ff3366" opacity="0.8"/>
+      <path d="M 420 30 L 440 30" stroke="#ffaa00" opacity="0.8"/>
+    </g>
+    <text x="250" y="155" text-anchor="middle" fill="#5a7090" font-size="10">128 BPM / LOW-FREQ SYNC</text>
+
+    <!-- 光配方参数 -->
+    <g transform="translate(20, 175)">
+      <rect x="0" y="0" width="460" height="55" rx="6" fill="#0a1628" opacity="0.7"/>
+      <text x="15" y="20" fill="#9ab0c9" font-size="10">色温 / 主色</text>
+      <text x="110" y="20" fill="#66ddff" font-size="13" font-weight="bold">全色域循环</text>
+      <text x="15" y="42" fill="#9ab0c9" font-size="10">亮度 / 联动</text>
+      <text x="110" y="42" fill="#7ec27e" font-size="13" font-weight="bold">100% / BPM 30ms</text>
+    </g>
+  </g>
+
+  <!-- 场景 4: 睡前 -->
+  <g transform="translate(620, 410)">
+    <rect x="0" y="0" width="500" height="240" rx="10" fill="url(#scene4)" stroke="#ffaa00" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#ffcc44" font-size="11" letter-spacing="2">SCENE 04</text>
+    <text x="20" y="58" fill="#ffffff" font-size="22" font-weight="bold">🌙 入睡渐暗</text>
+    <text x="20" y="82" fill="#9ab0c9" font-size="12">SLEEP / 跟随心率与褪黑素</text>
+
+    <!-- 灯光示意：渐暗曲线 -->
+    <rect x="20" y="100" width="460" height="60" rx="6" fill="#0a0a1a" stroke="#3a3a5a" stroke-width="1"/>
+    <path d="M 30 105 Q 100 105 150 110 Q 200 115 250 125 Q 320 140 460 155 L 460 158 L 30 158 Z"
+          fill="url(#scene4)" opacity="0.8"/>
+    <text x="30" y="125" fill="#ffaa00" font-size="10">20:00</text>
+    <text x="200" y="125" fill="#ffaa00" font-size="10">22:00</text>
+    <text x="430" y="125" fill="#ffaa00" font-size="10">23:30</text>
+    <text x="250" y="155" text-anchor="middle" fill="#ffcc44" font-size="10">100% → 5% 暖琥珀 渐变</text>
+
+    <!-- 光配方参数 -->
+    <g transform="translate(20, 175)">
+      <rect x="0" y="0" width="460" height="55" rx="6" fill="#0a1628" opacity="0.7"/>
+      <text x="15" y="20" fill="#9ab0c9" font-size="10">色温 / 主色</text>
+      <text x="110" y="20" fill="#ffcc44" font-size="13" font-weight="bold">2200K / 暖琥珀</text>
+      <text x="15" y="42" fill="#9ab0c9" font-size="10">亮度 / 联动</text>
+      <text x="110" y="42" fill="#7ec27e" font-size="13" font-weight="bold">5% / 心率 5min</text>
+    </g>
+  </g>
+
+  <!-- 底部总结 -->
+  <g transform="translate(600, 685)">
+    <rect x="-460" y="0" width="920" height="40" rx="6" fill="#0e1d33" stroke="#7ec27e" stroke-width="1"/>
+    <text x="0" y="25" text-anchor="middle" fill="#7ec27e" font-size="13" font-weight="bold">情绪照明 = 音画联动 + 生理感知 + 全彩光谱 + 毫秒响应</text>
+  </g>
+
+  <!-- 角标 -->
+  <text x="30" y="730" fill="#5a7090" font-size="10" letter-spacing="1">NEXLAMP / Smart Lighting Tech / 2026.07</text>
+  <text x="1170" y="730" text-anchor="end" fill="#5a7090" font-size="10" letter-spacing="1">FIG.03 / 3</text>
+</svg>

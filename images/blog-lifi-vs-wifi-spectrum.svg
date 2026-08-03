@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="wifiGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ff4444"/>
+    </linearGradient>
+    <linearGradient id="lifiGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#00a8ff"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a4a" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg)"/>
+  <rect width="680" height="400" fill="url(#grid)"/>
+  <text x="340" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#ffffff">Li-Fi vs Wi-Fi:互补而非替代</text>
+  <text x="340" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#7fa8d4">射频 vs 光波 · 频谱 · 场景适配</text>
+
+  <!-- 频谱条 -->
+  <g transform="translate(60,95)">
+    <text x="0" y="-5" font-family="Arial,sans-serif" font-size="11" fill="#7fa8d4">频谱资源对比</text>
+    <!-- Wi-Fi频段 -->
+    <rect x="0" y="0" width="220" height="20" fill="#1a2a4a" stroke="#3a5a8a" stroke-width="1"/>
+    <rect x="20" y="0" width="14" height="20" fill="url(#wifiGrad)" opacity="0.8"/>
+    <rect x="45" y="0" width="14" height="20" fill="url(#wifiGrad)" opacity="0.8"/>
+    <rect x="80" y="0" width="14" height="20" fill="url(#wifiGrad)" opacity="0.8"/>
+    <rect x="130" y="0" width="14" height="20" fill="url(#wifiGrad)" opacity="0.8"/>
+    <rect x="170" y="0" width="14" height="20" fill="url(#wifiGrad)" opacity="0.8"/>
+    <text x="240" y="14" font-family="Arial,sans-serif" font-size="11" fill="#ff6b35">Wi-Fi (2.4/5/6 GHz) 拥挤</text>
+
+    <!-- Li-Fi频段 -->
+    <rect x="0" y="40" width="220" height="20" fill="#1a2a4a" stroke="#3a5a8a" stroke-width="1"/>
+    <rect x="0" y="40" width="220" height="20" fill="url(#lifiGrad)" opacity="0.9" filter="url(#glow)"/>
+    <text x="240" y="54" font-family="Arial,sans-serif" font-size="11" fill="#00d4aa">Li-Fi (200-800 THz) 真空</text>
+
+    <text x="110" y="92" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#7fa8d4">频谱宽度对比: Li-Fi ≈ Wi-Fi × 1000</text>
+  </g>
+
+  <!-- 场景对比 -->
+  <g transform="translate(60,210)">
+    <text x="0" y="-5" font-family="Arial,sans-serif" font-size="11" fill="#7fa8d4">场景适配</text>
+
+    <!-- Wi-Fi 强场景 -->
+    <g transform="translate(0,5)">
+      <rect x="0" y="0" width="270" height="130" rx="6" fill="#0d1f3c" stroke="#ff6b35" stroke-width="1.5" opacity="0.85"/>
+      <text x="135" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ff6b35">Wi-Fi 优势场景</text>
+      <text x="20" y="48" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">· 移动设备多房间漫游</text>
+      <text x="20" y="68" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">· 远距离覆盖(50m+)</text>
+      <text x="20" y="88" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">· 移动中不中断(穿墙)</text>
+      <text x="20" y="108" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">· 家庭/咖啡馆公共覆盖</text>
+    </g>
+
+    <!-- Li-Fi 强场景 -->
+    <g transform="translate(290,5)">
+      <rect x="0" y="0" width="270" height="130" rx="6" fill="#0d1f3c" stroke="#00d4aa" stroke-width="1.5" opacity="0.85"/>
+      <text x="135" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#00d4aa">Li-Fi 优势场景</text>
+      <text x="20" y="48" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">· 医院MRI/手术室零电磁</text>
+      <text x="20" y="68" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">· 工业防爆区(无射频火花)</text>
+      <text x="20" y="88" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">· 高保密会议室(不穿墙)</text>
+      <text x="20" y="108" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">· 5G FWA穿窗桥接入</text>
+    </g>
+  </g>
+</svg>

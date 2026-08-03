@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="monospace">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <filter id="glow3"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg3)"/>
+  <!-- grid -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.2">
+    <line x1="0" y1="100" x2="680" y2="100"/><line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="170" y1="0" x2="170" y2="400"/><line x1="340" y1="0" x2="340" y2="400"/>
+    <line x1="510" y1="0" x2="510" y2="400"/>
+  </g>
+  <!-- title -->
+  <text x="340" y="30" text-anchor="middle" fill="#4fc3f7" font-size="15" font-weight="bold">应对策略：四条路怎么选</text>
+  <line x1="240" y1="38" x2="440" y2="38" stroke="#4fc3f7" stroke-width="1" opacity="0.4"/>
+
+  <!-- strategy 1: lock price -->
+  <rect x="20" y="60" width="150" height="130" rx="8" fill="#0d1f3a" stroke="#66bb6a" stroke-width="1.5" filter="url(#glow3)"/>
+  <circle cx="95" cy="85" r="14" fill="#66bb6a" opacity="0.2"/>
+  <text x="95" y="90" text-anchor="middle" fill="#66bb6a" font-size="14" font-weight="bold">1</text>
+  <text x="95" y="115" text-anchor="middle" fill="#81c784" font-size="11" font-weight="bold">锁价长协</text>
+  <text x="95" y="135" text-anchor="middle" fill="#a5d6a7" font-size="9">签年度框架订单</text>
+  <text x="95" y="150" text-anchor="middle" fill="#a5d6a7" font-size="9">锁定基础采购价</text>
+  <text x="95" y="170" text-anchor="middle" fill="#c8e6c9" font-size="8">适用: 用量稳定的</text>
+  <text x="95" y="182" text-anchor="middle" fill="#c8e6c9" font-size="8">成品厂</text>
+
+  <!-- strategy 2: circuit optimize -->
+  <rect x="185" y="60" width="150" height="130" rx="8" fill="#0d1f3a" stroke="#4fc3f7" stroke-width="1.5" filter="url(#glow3)"/>
+  <circle cx="260" cy="85" r="14" fill="#4fc3f7" opacity="0.2"/>
+  <text x="260" y="90" text-anchor="middle" fill="#4fc3f7" font-size="14" font-weight="bold">2</text>
+  <text x="260" y="115" text-anchor="middle" fill="#81d4fa" font-size="11" font-weight="bold">电路优化</text>
+  <text x="260" y="135" text-anchor="middle" fill="#90caf9" font-size="9">调整驱动匹配</text>
+  <text x="260" y="150" text-anchor="middle" fill="#90caf9" font-size="9">不降核心指标</text>
+  <text x="260" y="170" text-anchor="middle" fill="#bbdefb" font-size="8">适用: 有研发能力</text>
+  <text x="260" y="182" text-anchor="middle" fill="#bbdefb" font-size="8">的厂商</text>
+
+  <!-- strategy 3: diversify -->
+  <rect x="350" y="60" width="150" height="130" rx="8" fill="#0d1f3a" stroke="#ffb74d" stroke-width="1.5" filter="url(#glow3)"/>
+  <circle cx="425" cy="85" r="14" fill="#ffb74d" opacity="0.2"/>
+  <text x="425" y="90" text-anchor="middle" fill="#ffb74d" font-size="14" font-weight="bold">3</text>
+  <text x="425" y="115" text-anchor="middle" fill="#ffd54f" font-size="11" font-weight="bold">去单一化</text>
+  <text x="425" y="135" text-anchor="middle" fill="#ffe0b2" font-size="9">多供应商分散</text>
+  <text x="425" y="150" text-anchor="middle" fill="#ffe0b2" font-size="9">避免独家断供</text>
+  <text x="425" y="170" text-anchor="middle" fill="#fff3e0" font-size="8">适用: 所有</text>
+  <text x="425" y="182" text-anchor="middle" fill="#fff3e0" font-size="8">采购方</text>
+
+  <!-- strategy 4: go high-end -->
+  <rect x="515" y="60" width="150" height="130" rx="8" fill="#0d1f3a" stroke="#7c4dff" stroke-width="1.5" filter="url(#glow3)"/>
+  <circle cx="590" cy="85" r="14" fill="#7c4dff" opacity="0.2"/>
+  <text x="590" y="90" text-anchor="middle" fill="#7c4dff" font-size="14" font-weight="bold">4</text>
+  <text x="590" y="115" text-anchor="middle" fill="#b388ff" font-size="11" font-weight="bold">高端化转型</text>
+  <text x="590" y="135" text-anchor="middle" fill="#d1c4e9" font-size="9">智能照明赛道</text>
+  <text x="590" y="150" text-anchor="middle" fill="#d1c4e9" font-size="9">拉高附加值</text>
+  <text x="590" y="170" text-anchor="middle" fill="#ede7f6" font-size="8">适用: 有品牌能力</text>
+  <text x="590" y="182" text-anchor="middle" fill="#ede7f6" font-size="8">的厂商</text>
+
+  <!-- risk warning -->
+  <rect x="20" y="215" width="645" height="65" rx="8" fill="#1a1520" stroke="#ff5252" stroke-width="1" opacity="0.9"/>
+  <text x="40" y="240" fill="#ff5252" font-size="12" font-weight="bold">最大风险</text>
+  <text x="40" y="260" fill="#ff8a80" font-size="10">为压成本换上劣质驱动 → 严重光衰、短路、防水损坏 → 售后返工成本远超省下的差价</text>
+  <text x="40" y="273" fill="#ffab91" font-size="9">低价劣质驱动正在涌入市场，这是比涨价更危险的陷阱</text>
+
+  <!-- bottom insight -->
+  <rect x="20" y="300" width="645" height="80" rx="8" fill="#0d1f3a" stroke="#4fc3f7" stroke-width="1" opacity="0.6"/>
+  <text x="40" y="325" fill="#4fc3f7" font-size="11" font-weight="bold">行业趋势</text>
+  <text x="40" y="345" fill="#81d4fa" font-size="10">10年降价通道正式终结 | 中小厂商加速出清 | 市场资源向头部集中</text>
+  <text x="40" y="360" fill="#81d4fa" font-size="10">从"价格战"转向"价值战" | 技术能力 + 方案能力 = 新竞争力</text>
+  <text x="40" y="375" fill="#78909c" font-size="9">Source: 中国电子报 / TrendForce / 各企业调价函</text>
+</svg>

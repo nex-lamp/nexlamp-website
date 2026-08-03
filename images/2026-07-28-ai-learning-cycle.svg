@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#141830"/>
+    </linearGradient>
+    <linearGradient id="phase1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00bfff"/>
+      <stop offset="100%" stop-color="#0066cc"/>
+    </linearGradient>
+    <linearGradient id="phase2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#008866"/>
+    </linearGradient>
+    <linearGradient id="phase3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#cc8800"/>
+    </linearGradient>
+    <linearGradient id="phase4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6b9d"/>
+      <stop offset="100%" stop-color="#cc3366"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#00d4aa33"/>
+      <stop offset="100%" stop-color="#0a0e2700"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#8892b0" font-size="14" font-family="sans-serif">AI自学习循环 — 从感知到优化的闭环</text>
+
+  <!-- Center -->
+  <circle cx="400" cy="260" r="60" fill="url(#centerGlow)" stroke="#00d4aa" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.5"/>
+  <text x="400" y="252" text-anchor="middle" fill="#00d4aa" font-size="16" font-weight="bold" font-family="sans-serif">边缘 AI</text>
+  <text x="400" y="272" text-anchor="middle" fill="#00d4aa" font-size="11" font-family="sans-serif">本地推理 · 毫秒决策</text>
+
+  <!-- Phase 1: Sense - Top -->
+  <rect x="310" y="60" width="180" height="90" rx="12" fill="#00bfff18" stroke="#00bfff" stroke-width="1.5"/>
+  <text x="400" y="90" text-anchor="middle" fill="#00bfff" font-size="16" font-weight="bold" font-family="sans-serif">🔍 感知层</text>
+  <text x="400" y="112" text-anchor="middle" fill="#8892b0" font-size="11" font-family="sans-serif">毫米波雷达 · PIR · 环境光</text>
+  <text x="400" y="130" text-anchor="middle" fill="#8892b0" font-size="11" font-family="sans-serif">温湿度 · 时间戳 · 天气</text>
+
+  <!-- Arrow 1 -->
+  <path d="M 480 130 Q 540 150 540 200 Q 540 250 490 260" fill="none" stroke="#00bfff" stroke-width="1.5" marker-end="url(#arrow1)" opacity="0.6" stroke-dasharray="5,3"/>
+  <defs><marker id="arrow1" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#00bfff"/></marker></defs>
+
+  <!-- Phase 2: Analyze - Right -->
+  <rect x="560" y="210" width="180" height="100" rx="12" fill="#00d4aa18" stroke="#00d4aa" stroke-width="1.5"/>
+  <text x="650" y="242" text-anchor="middle" fill="#00d4aa" font-size="16" font-weight="bold" font-family="sans-serif">🧬 分析层</text>
+  <text x="650" y="264" text-anchor="middle" fill="#8892b0" font-size="11" font-family="sans-serif">时序预测 · 轨迹建模</text>
+  <text x="650" y="282" text-anchor="middle" fill="#8892b0" font-size="11" font-family="sans-serif">人流密度 · 历史模式</text>
+  <text x="650" y="300" text-anchor="middle" fill="#4a5568" font-size="10" font-family="sans-serif">模型推理 &lt;50ms</text>
+
+  <!-- Phase 3: Execute - Bottom -->
+  <rect x="310" y="360" width="180" height="90" rx="12" fill="#ffd70018" stroke="#ffd700" stroke-width="1.5"/>
+  <text x="400" y="390" text-anchor="middle" fill="#ffd700" font-size="16" font-weight="bold" font-family="sans-serif">⚡ 执行层</text>
+  <text x="400" y="412" text-anchor="middle" fill="#8892b0" font-size="11" font-family="sans-serif">PWM调光 · 无级亮度</text>
+  <text x="400" y="430" text-anchor="middle" fill="#8892b0" font-size="11" font-family="sans-serif">色温调节 · 预亮前方</text>
+
+  <!-- Phase 4: Learn - Left -->
+  <rect x="60" y="210" width="180" height="100" rx="12" fill="#ff6b9d18" stroke="#ff6b9d" stroke-width="1.5"/>
+  <text x="150" y="242" text-anchor="middle" fill="#ff6b9d" font-size="16" font-weight="bold" font-family="sans-serif">📈 学习层</text>
+  <text x="150" y="264" text-anchor="middle" fill="#8892b0" font-size="11" font-family="sans-serif">反馈收集 · 策略优化</text>
+  <text x="150" y="282" text-anchor="middle" fill="#8892b0" font-size="11" font-family="sans-serif">能耗报告 · OTA更新</text>
+  <text x="150" y="300" text-anchor="middle" fill="#4a5568" font-size="10" font-family="sans-serif">数据不出灯 · 隐私安全</text>
+
+  <!-- Circular arrows connecting phases -->
+  <path d="M 240 260 Q 290 180 310 130" fill="none" stroke="#ff6b9d" stroke-width="1.5" opacity="0.5" stroke-dasharray="5,3"/>
+  <path d="M 490 150 Q 550 180 560 210" fill="none" stroke="#00bfff" stroke-width="1.5" opacity="0.5" stroke-dasharray="5,3"/>
+  <path d="M 560 310 Q 510 360 490 390" fill="none" stroke="#00d4aa" stroke-width="1.5" opacity="0.5" stroke-dasharray="5,3"/>
+  <path d="M 310 390 Q 250 360 240 310" fill="none" stroke="#ffd700" stroke-width="1.5" opacity="0.5" stroke-dasharray="5,3"/>
+
+  <!-- Key metrics bar -->
+  <rect x="100" y="468" width="600" height="1" fill="#2a3050"/>
+  <text x="150" y="492" text-anchor="middle" fill="#00bfff" font-size="10" font-family="sans-serif">感知延迟 &lt;50ms</text>
+  <text x="350" y="492" text-anchor="middle" fill="#00d4aa" font-size="10" font-family="sans-serif">决策延迟 &lt;200ms</text>
+  <text x="550" y="492" text-anchor="middle" fill="#ffd700" font-size="10" font-family="sans-serif">调光步进 0.1%</text>
+  <text x="700" y="492" text-anchor="middle" fill="#ff6b9d" font-size="10" font-family="sans-serif">OTA静默升级</text>
+</svg>
