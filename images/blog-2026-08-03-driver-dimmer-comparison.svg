@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="'Microsoft YaHei','Segoe UI',sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1b2f"/>
+    </linearGradient>
+    <linearGradient id="tradGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e2a3f"/>
+      <stop offset="100%" stop-color="#14202f"/>
+    </linearGradient>
+    <linearGradient id="integGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b4d3e"/>
+      <stop offset="100%" stop-color="#0f3a2a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bgGrad)"/>
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="50" x2="680" y2="50"/>
+    <line x1="0" y1="100" x2="680" y2="100"/>
+    <line x1="0" y1="150" x2="680" y2="150"/>
+    <line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="250" x2="680" y2="250"/>
+    <line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="0" y1="350" x2="680" y2="350"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="500" y1="0" x2="500" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+  </g>
+
+  <text x="340" y="35" text-anchor="middle" fill="#5eead4" font-size="20" font-weight="bold" filter="url(#glow)">Driver-Dimmer 一体化 vs 传统方案</text>
+  <text x="340" y="55" text-anchor="middle" fill="#94a3b8" font-size="11">2026光亚展核心趋势① | 减少50%工时 &amp; 消除协议不兼容</text>
+
+  <g transform="translate(30, 90)">
+    <text x="140" y="0" text-anchor="middle" fill="#fb923c" font-size="14" font-weight="bold">传统方案：驱动器 + 调光器 分离</text>
+    <rect x="0" y="15" width="280" height="220" fill="url(#tradGrad)" stroke="#fb923c" stroke-width="1.5" rx="6"/>
+    <text x="140" y="38" text-anchor="middle" fill="#fbbf24" font-size="11" font-weight="bold">吊顶里：驱动器</text>
+    <rect x="40" y="50" width="200" height="60" fill="#1e2a3f" stroke="#475569" rx="4"/>
+    <text x="140" y="75" text-anchor="middle" fill="#cbd5e1" font-size="11">LED Driver (220V→36V)</text>
+    <text x="140" y="93" text-anchor="middle" fill="#64748b" font-size="9">藏在吊顶里，故障难排查</text>
+    <line x1="140" y1="110" x2="140" y2="135" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="170" y="125" fill="#94a3b8" font-size="9">信号线</text>
+    <text x="140" y="160" text-anchor="middle" fill="#fbbf24" font-size="11" font-weight="bold">墙上：调光器</text>
+    <rect x="60" y="170" width="120" height="50" fill="#1e2a3f" stroke="#475569" rx="4"/>
+    <text x="120" y="195" text-anchor="middle" fill="#cbd5e1" font-size="11">TRIAC Dimmer</text>
+    <text x="120" y="210" text-anchor="middle" fill="#64748b" font-size="9">独立设备</text>
+  </g>
+
+  <g transform="translate(370, 105)">
+    <text x="22" y="0" fill="#ef4444" font-size="28" font-weight="bold">✕</text>
+    <text x="22" y="-5" text-anchor="middle" fill="#ef4444" font-size="11">2设备</text>
+    <text x="22" y="100" text-anchor="middle" fill="#ef4444" font-size="11">2协议</text>
+    <text x="22" y="200" text-anchor="middle" fill="#ef4444" font-size="11">2故障点</text>
+  </g>
+
+  <g transform="translate(370, 90)">
+    <text x="140" y="0" text-anchor="middle" fill="#4ade80" font-size="14" font-weight="bold">一体化：86盒内集成</text>
+    <rect x="0" y="15" width="280" height="220" fill="url(#integGrad)" stroke="#4ade80" stroke-width="1.5" rx="6"/>
+    <text x="140" y="38" text-anchor="middle" fill="#86efac" font-size="11" font-weight="bold">86盒尺寸：单台一体机</text>
+    <rect x="30" y="50" width="220" height="120" fill="#0a1628" stroke="#4ade80" stroke-width="1" rx="6"/>
+    <rect x="50" y="65" width="180" height="35" fill="#1b4d3e" stroke="#4ade80" stroke-width="0.5" rx="3"/>
+    <text x="140" y="83" text-anchor="middle" fill="#5eead4" font-size="11" font-weight="bold">Driver芯片</text>
+    <text x="140" y="95" text-anchor="middle" fill="#86efac" font-size="9">220V→36V恒流输出</text>
+    <rect x="50" y="110" width="180" height="35" fill="#1b4d3e" stroke="#4ade80" stroke-width="0.5" rx="3"/>
+    <text x="140" y="128" text-anchor="middle" fill="#5eead4" font-size="11" font-weight="bold">Dimmer芯片</text>
+    <text x="140" y="140" text-anchor="middle" fill="#86efac" font-size="9">0.1%-100%调光曲线</text>
+    <text x="140" y="195" text-anchor="middle" fill="#86efac" font-size="10">✅ 出厂对齐</text>
+    <text x="140" y="212" text-anchor="middle" fill="#86efac" font-size="10">✅ 安装工时 -50%</text>
+    <text x="140" y="228" text-anchor="middle" fill="#86efac" font-size="10">✅ 售后排查 -50%</text>
+  </g>
+
+  <g transform="translate(30, 330)">
+    <rect x="0" y="0" width="620" height="50" fill="#14202f" stroke="#5eead4" stroke-width="1" rx="4"/>
+    <text x="20" y="22" fill="#5eead4" font-size="12" font-weight="bold">💡 NEXLAMP建议</text>
+    <text x="20" y="40" fill="#cbd5e1" font-size="10">家用/小型商业首选一体机；工业/大型项目保留分布式方案（单点故障隔离）</text>
+  </g>
+</svg>

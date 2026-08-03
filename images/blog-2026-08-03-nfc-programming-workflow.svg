@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="'Microsoft YaHei','Segoe UI',sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1b2f"/>
+    </linearGradient>
+    <linearGradient id="nfcGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f1f5f"/>
+    </linearGradient>
+    <linearGradient id="barG" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#5eead4"/>
+    </linearGradient>
+    <linearGradient id="barR" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg2)"/>
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="50" x2="680" y2="50"/>
+    <line x1="0" y1="100" x2="680" y2="100"/>
+    <line x1="0" y1="150" x2="680" y2="150"/>
+    <line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="250" x2="680" y2="250"/>
+    <line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="0" y1="350" x2="680" y2="350"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="500" y1="0" x2="500" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+  </g>
+
+  <text x="340" y="35" text-anchor="middle" fill="#5eead4" font-size="20" font-weight="bold" filter="url(#glow2)">NFC编程 vs 传统调试：500盏路灯效率对比</text>
+  <text x="340" y="55" text-anchor="middle" fill="#94a3b8" font-size="11">2026光亚展核心趋势③ | 人工成本节省90%，调试效率提升10倍</text>
+
+  <g transform="translate(60, 100)">
+    <text x="0" y="0" fill="#fb923c" font-size="13" font-weight="bold">传统调试流程</text>
+    <rect x="0" y="15" width="250" height="35" fill="#1e2a3f" stroke="#475569" rx="3"/>
+    <text x="125" y="38" text-anchor="middle" fill="#cbd5e1" font-size="11">1. 拆吊顶/打开接线盒</text>
+    <rect x="0" y="55" width="250" height="35" fill="#1e2a3f" stroke="#475569" rx="3"/>
+    <text x="125" y="78" text-anchor="middle" fill="#cbd5e1" font-size="11">2. 接调光器 + 反复设置</text>
+    <rect x="0" y="95" width="250" height="35" fill="#1e2a3f" stroke="#475569" rx="3"/>
+    <text x="125" y="118" text-anchor="middle" fill="#cbd5e1" font-size="11">3. 装回去 + 测试</text>
+    <rect x="0" y="135" width="250" height="35" fill="#7f1d1d" stroke="#ef4444" rx="3"/>
+    <text x="125" y="158" text-anchor="middle" fill="#fca5a5" font-size="11">4. 发现问题 → 再拆</text>
+    <text x="125" y="195" text-anchor="middle" fill="#ef4444" font-size="14" font-weight="bold">3人 × 5天 = 15人天</text>
+  </g>
+
+  <g transform="translate(370, 100)">
+    <text x="0" y="0" fill="#4ade80" font-size="13" font-weight="bold">NFC编程流程</text>
+    <rect x="0" y="15" width="250" height="55" fill="url(#nfcGrad)" stroke="#4ade80" stroke-width="1.5" rx="3"/>
+    <text x="125" y="38" text-anchor="middle" fill="#5eead4" font-size="11" font-weight="bold">📱 手机靠近驱动</text>
+    <text x="125" y="58" text-anchor="middle" fill="#86efac" font-size="10">"嘀"一下，参数写入</text>
+    <rect x="0" y="80" width="250" height="55" fill="url(#nfcGrad)" stroke="#4ade80" stroke-width="1.5" rx="3"/>
+    <text x="125" y="103" text-anchor="middle" fill="#5eead4" font-size="11" font-weight="bold">📋 批量克隆参数</text>
+    <text x="125" y="123" text-anchor="middle" fill="#86efac" font-size="10">先调好1台，复制给499台</text>
+    <rect x="0" y="145" width="250" height="35" fill="url(#nfcGrad)" stroke="#4ade80" stroke-width="1.5" rx="3"/>
+    <text x="125" y="168" text-anchor="middle" fill="#86efac" font-size="11">一致性 ±0%（参数完全相同）</text>
+    <text x="125" y="205" text-anchor="middle" fill="#4ade80" font-size="14" font-weight="bold">1人 × 1.5天 = 1.5人天</text>
+  </g>
+
+  <g transform="translate(60, 240)">
+    <text x="0" y="0" fill="#5eead4" font-size="13" font-weight="bold">效率对比柱状图</text>
+    <line x1="0" y1="120" x2="560" y2="120" stroke="#475569" stroke-width="1"/>
+    <line x1="0" y1="100" x2="560" y2="100" stroke="#475569" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>
+    <line x1="0" y1="60" x2="560" y2="60" stroke="#475569" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>
+    <line x1="0" y1="20" x2="560" y2="20" stroke="#475569" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>
+
+    <rect x="80" y="20" width="100" height="100" fill="url(#barR)" rx="3"/>
+    <text x="130" y="50" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">15</text>
+    <text x="130" y="68" text-anchor="middle" fill="#fff" font-size="10">人天</text>
+    <text x="130" y="138" text-anchor="middle" fill="#fb923c" font-size="11" font-weight="bold">传统调试</text>
+
+    <rect x="320" y="108" width="100" height="12" fill="url(#barG)" rx="3"/>
+    <text x="370" y="103" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">1.5</text>
+    <text x="370" y="123" text-anchor="middle" fill="#86efac" font-size="10">人天</text>
+    <text x="370" y="138" text-anchor="middle" fill="#4ade80" font-size="11" font-weight="bold">NFC编程</text>
+
+    <text x="510" y="65" text-anchor="middle" fill="#4ade80" font-size="12" font-weight="bold">↓ 90%</text>
+    <text x="510" y="80" text-anchor="middle" fill="#4ade80" font-size="10">人工成本</text>
+  </g>
+
+  <g transform="translate(30, 370)">
+    <text x="0" y="0" fill="#64748b" font-size="10">数据来源：茂硕X6N/X8D系列、Suretron DALI-2 D4i系列项目实测 | NEXLAMP整理</text>
+  </g>
+</svg>

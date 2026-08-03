@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="'Microsoft YaHei','Segoe UI',sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1b2f"/>
+    </linearGradient>
+    <linearGradient id="chStad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7f1d1d"/>
+      <stop offset="100%" stop-color="#5b1414"/>
+    </linearGradient>
+    <linearGradient id="chNew" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#0a4f5c"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg3)"/>
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="50" x2="680" y2="50"/>
+    <line x1="0" y1="100" x2="680" y2="100"/>
+    <line x1="0" y1="150" x2="680" y2="150"/>
+    <line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="250" x2="680" y2="250"/>
+    <line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="0" y1="350" x2="680" y2="350"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="500" y1="0" x2="500" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+  </g>
+
+  <text x="340" y="35" text-anchor="middle" fill="#5eead4" font-size="20" font-weight="bold" filter="url(#glow3)">大功率多路输出驱动：场景应用架构</text>
+  <text x="340" y="55" text-anchor="middle" fill="#94a3b8" font-size="11">2026光亚展核心趋势⑤ | 单台电源替代多台，设备数量减少60%</text>
+
+  <g transform="translate(40, 100)">
+    <rect x="0" y="0" width="280" height="50" fill="url(#chStad)" stroke="#ef4444" stroke-width="1.5" rx="4"/>
+    <text x="140" y="20" text-anchor="middle" fill="#fca5a5" font-size="12" font-weight="bold">传统方案：4台独立电源</text>
+    <text x="140" y="38" text-anchor="middle" fill="#fecaca" font-size="9">每台电源独立控制1路输出</text>
+
+    <rect x="20" y="60" width="60" height="50" fill="#1e2a3f" stroke="#475569" rx="3"/>
+    <text x="50" y="80" text-anchor="middle" fill="#94a3b8" font-size="10">电源1</text>
+    <text x="50" y="95" text-anchor="middle" fill="#64748b" font-size="8">R路</text>
+
+    <rect x="110" y="60" width="60" height="50" fill="#1e2a3f" stroke="#475569" rx="3"/>
+    <text x="140" y="80" text-anchor="middle" fill="#94a3b8" font-size="10">电源2</text>
+    <text x="140" y="95" text-anchor="middle" fill="#64748b" font-size="8">G路</text>
+
+    <rect x="200" y="60" width="60" height="50" fill="#1e2a3f" stroke="#475569" rx="3"/>
+    <text x="230" y="80" text-anchor="middle" fill="#94a3b8" font-size="10">电源3</text>
+    <text x="230" y="95" text-anchor="middle" fill="#64748b" font-size="8">B路</text>
+
+    <text x="140" y="130" text-anchor="middle" fill="#ef4444" font-size="10">+ 电源4 (W路)</text>
+    <text x="140" y="148" text-anchor="middle" fill="#64748b" font-size="9">⚠ 设备多、布线复杂</text>
+    <text x="140" y="162" text-anchor="middle" fill="#64748b" font-size="9">⚠ 4个故障点</text>
+    <text x="140" y="176" text-anchor="middle" fill="#64748b" font-size="9">⚠ 4个SKU要备货</text>
+  </g>
+
+  <g transform="translate(360, 100)">
+    <rect x="0" y="0" width="280" height="50" fill="url(#chNew)" stroke="#5eead4" stroke-width="1.5" rx="4"/>
+    <text x="140" y="20" text-anchor="middle" fill="#5eead4" font-size="12" font-weight="bold">多路方案：1台博兰得多路驱动</text>
+    <text x="140" y="38" text-anchor="middle" fill="#86efac" font-size="9">4路独立可控输出，单台设备</text>
+
+    <rect x="60" y="60" width="160" height="100" fill="url(#chNew)" stroke="#5eead4" stroke-width="1.5" rx="6"/>
+    <text x="140" y="85" text-anchor="middle" fill="#5eead4" font-size="13" font-weight="bold">Multi-Channel Driver</text>
+    <text x="140" y="103" text-anchor="middle" fill="#86efac" font-size="9">200W+ | 4路独立</text>
+
+    <rect x="80" y="115" width="30" height="20" fill="#7f1d1d" rx="2"/>
+    <text x="95" y="129" text-anchor="middle" fill="#fff" font-size="9">R</text>
+    <rect x="115" y="115" width="30" height="20" fill="#15803d" rx="2"/>
+    <text x="130" y="129" text-anchor="middle" fill="#fff" font-size="9">G</text>
+    <rect x="150" y="115" width="30" height="20" fill="#1e3a8a" rx="2"/>
+    <text x="165" y="129" text-anchor="middle" fill="#fff" font-size="9">B</text>
+    <rect x="185" y="115" width="30" height="20" fill="#fbbf24" rx="2"/>
+    <text x="200" y="129" text-anchor="middle" fill="#000" font-size="9">W</text>
+
+    <text x="140" y="180" text-anchor="middle" fill="#4ade80" font-size="10">✅ 设备 -75%</text>
+    <text x="140" y="194" text-anchor="middle" fill="#4ade80" font-size="10">✅ 故障率 -40%</text>
+  </g>
+
+  <g transform="translate(40, 290)">
+    <rect x="0" y="0" width="600" height="95" fill="#14202f" stroke="#5eead4" stroke-width="1" rx="4"/>
+    <text x="20" y="22" fill="#5eead4" font-size="13" font-weight="bold">🎯 三大典型应用场景</text>
+
+    <g transform="translate(20, 38)">
+      <circle cx="8" cy="8" r="6" fill="#fb923c"/>
+      <text x="20" y="11" fill="#cbd5e1" font-size="11" font-weight="bold">球场照明</text>
+      <text x="20" y="26" fill="#94a3b8" font-size="9">RGBW四色动态切换，比赛/氛围模式一键</text>
+    </g>
+
+    <g transform="translate(220, 38)">
+      <circle cx="8" cy="8" r="6" fill="#4ade80"/>
+      <text x="20" y="11" fill="#cbd5e1" font-size="11" font-weight="bold">植物照明</text>
+      <text x="20" y="26" fill="#94a3b8" font-size="9">育苗/生长/开花/结果光谱全覆盖</text>
+    </g>
+
+    <g transform="translate(420, 38)">
+      <circle cx="8" cy="8" r="6" fill="#5eead4"/>
+      <text x="20" y="11" fill="#cbd5e1" font-size="11" font-weight="bold">景观亮化</text>
+      <text x="20" y="26" fill="#94a3b8" font-size="9">动态色彩变幻，无需DMX控制器</text>
+    </g>
+  </g>
+</svg>

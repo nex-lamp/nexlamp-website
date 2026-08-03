@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-31",
+    "date": "2026-08-03",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,79 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-07-31",
+    "date": "2026-08-03",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "2026光亚展复盘：LED驱动电源\"消失\"了？不，它变成了系统级智能节点",
+    "slug": "2026-guangya-led-driver-evolution-smart-node",
+    "date": "2026-08-03",
+    "category": "行业观察",
+    "description": "2026广州光亚展深度复盘：LED驱动电源从单一供电部件到系统级智能节点的5大趋势，包括Driver-Dimmer一体化、D4i数据采集、NFC离线编程、多协议5合1、大功率多路输出，对工程商和设计师的选型启发。",
+    "cover": "images/blog-2026-08-03-guangya-driver-evolution-cover.png",
+    "excerpt": "2026光亚展释放强烈信号：驱动电源不再是藏在吊顶里的\"黑盒\"，而是变成了能上报数据、能被远程编程、能多协议自适应、还自带调光器的\"系统级智能节点\"。看完这5大趋势，2026下半年选型不再纠结。"
+  },
+  {
+    "title": "LED驱动电源涨价潮：50+企业连续5轮调价，10年降价周期终结",
+    "slug": "led-driver-price-hike-2026",
+    "date": "2026-08-03",
+    "category": "行业观察",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-led-driver-price-hike-cover.png",
+    "excerpt": "银价暴涨170%，铜价冲破10万，AI挤占晶圆产能——LED驱动电源行业正经历十年来最猛烈的成本风暴。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-08-03",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-08-03",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-08-03",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
+    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
+    "date": "2026-08-03",
+    "category": "技术文章",
+    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
+    "cover": "",
+    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
+  },
+  {
+    "title": "LED Driver Price Storm: 50+ Companies, 5 Rounds of Hikes, and the End of a 10-Year Price Decline",
+    "slug": "led-driver-price-storm-2026",
+    "date": "2026-08-03",
+    "category": "Industry Watch",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-led-driver-price-hike-cover.png",
+    "excerpt": "Silver +170%, copper +35%, AI eating wafer capacity — the LED driver industry is going through its most violent cost storm in a decade."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-08-03",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -34,51 +106,6 @@
     "description": "家里的Wi-Fi又卡了?5G信号穿墙衰减?2026年4月pureLiFi联合Askey推出全球首款Li-Fi 5G FWA穿窗桥接设备,MWC 2026展示了10Gbps光速互联网,商用时间表已出。LED驱动电源厂商站在风口——你家的灯,正在悄悄变成宽带接入点。",
     "cover": "images/2026-07-31-lifi-led-driver-opportunity-cover.png",
     "excerpt": "家里的Wi-Fi又卡了?5G信号穿墙衰减?2026年4月pureLiFi联合Askey推出全球首款Li-Fi 5G FWA穿窗桥接设备,MWC 2026展示了10Gbps光速互联网,商用时间表已出。LED驱动电源厂商站在风口——你家的灯,正在悄悄变成宽带接入点。"
-  },
-  {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-07-31",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-31",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-07-31",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
-    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
-    "date": "2026-07-31",
-    "category": "技术文章",
-    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
-    "cover": "",
-    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-07-31",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "工业照明进入'智能增效'时代：2026年工厂LED驱动电源选型6指标",
