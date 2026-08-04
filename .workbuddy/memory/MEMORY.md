@@ -24,5 +24,12 @@
   - Dev.to POST 后获得 temp-slug 是新现象：之前文章都是POST直接拿正式slug。title 包含 "10 Gbps" / "Routers" 等复杂词可能触发。解决：PUT /api/articles/{id} published:true 即可（published字段仍返回None，是API特性）
   - Li-Fi是真正"刚起步"话题——2026年4月才发布商用产品，比情绪照明（7月8日喊话）更早期
   - 选题切入角度：避开纯技术科普，从LED驱动厂商视角看"Li-Fi对驱动电源的升级需求"——恒流源→高速调制+802.11bb+GaN器件
+- **关键经验（2026-08-03）**：
+  - **toutiao-ops 必须加 --headless 参数**：之前不需要，当前环境非headless模式浏览器启动失败（page.goto: Target closed）。命令：`npx toutiao-ops publish weitoutiao --headless --images "<图片路径>" --content "<内容>"`
+  - **toutiao-ops 支持 --images 参数**：可为微头条添加配图，逗号分隔多张
+  - **ImageGen 限流处理**：达到150任务上限时用PIL合成封面图替代（系统Python有PIL，managed Python没有）
+  - Dev.to 本次POST直接拿到正式slug（非temp-slug），说明temp-slug不是必然现象
+  - 选题策略：供应链/涨价类话题是8月最热方向，之前13篇未覆盖
 - **配图规则**：今日头条微头条、LinkedIn、Dev.to 三个平台发文都必须带配图（封面图或文章配图）
 - 所有SVG中 & 必须转义为 &amp;
+- 选题策略：调光/DALI类话题已覆盖9篇，避免重复；供应链/涨价是2026年8月最新差异化方向

@@ -1,5 +1,23 @@
 # Automation Memory
 
+## 2026-08-03: LED驱动电源涨价潮——50+企业连续5轮调价，10年降价周期终结
+- 选题: 多源搜索确认"LED驱动电源涨价潮"是2026年8月最热行业话题（1月19日富满微首发调价→6家头部全员跟进→5月第二轮涨30%+→7月昕诺飞第五轮调价→累计50+企业参与；银+170%/铜+35%/金+70%；AI挤占晶圆产能从30%降至15%；10年降价通道正式终结）
+- 之前13篇博客均未覆盖供应链/涨价话题，是真正的差异化选题
+- 文章: posts/2026-08-03-led-driver-price-hike-2026.md (~1500字) + 3 SVG(三方夹击图/成本传导路径图/应对策略对比图) + PIL合成封面(ImageGen达到150任务上限，用PIL替代)
+- 英文版: posts/devto-2026-08-03-led-driver-price-storm.md
+- 网站: ✅ node build.js 123篇 + sitemap.xml (127 URLs) + git push成功
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/led-driver-price-storm-50-companies-5-rounds-of-hikes-and-the-end-of-a-10-year-price-decline-ij9 (ID: 4297317)
+  - 本次POST直接拿到正式slug（非temp-slug），published字段仍返回None（API特性）
+- LinkedIn: ⚠️ CDP Chrome未运行（127.0.0.1:9222 不通），跳过
+- 今日头条微头条: ✅ success=true, action=published, url=https://mp.toutiao.com/profile_v4/weitoutiao
+  - 文本: ~200字口语化（朋友圈被涨价通知刷屏→50+企业5轮调价→三个原因银铜AI→做灯具朋友最头疼→锁长协价不换劣质驱动）
+  - 带封面图: --images 参数指定 blog-led-driver-price-hike-cover.png
+- 踩坑:
+  - **重大发现: toutiao-ops 需要加 --headless 参数才能在当前环境运行**（之前不需要，可能是环境变化导致非headless模式浏览器无法启动）
+  - ImageGen 达到150任务上限（RequestLimitExceeded.JobNumExceed），用PIL合成封面图替代（与6月5日相同处理）
+  - toutiao-ops 支持 --images 参数添加微头条配图（新发现，之前只用--content）
+  - PIL需要用系统Python（C:\Users\yu\AppData\Local\Programs\Python\Python313\python.exe），managed Python未安装PIL
+
 ## 2026-07-31: 当灯变成"路由器"——Li-Fi光通信如何把LED驱动变成10Gbps接入点
 - 选题: 多源搜索确认"Li-Fi光通信商用化"是2026年7月底最热差异化话题（pureLiFi+Askey 4月28日发布全球首款Li-Fi 5G FWA穿窗桥接设备Bridge XC Flex；MWC 2026展示10Gbps Light Antenna架构；演示和测试设备2026上半年向全球电信运营商提供；某知名手机厂旗舰机已嵌入Light Antenna One做内测）
 - 之前12篇博客均未覆盖Li-Fi话题，是真正的差异化选题
