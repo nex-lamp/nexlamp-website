@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-03",
+    "date": "2026-08-04",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,70 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-03",
+    "date": "2026-08-04",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Matter over Thread LED驱动：2026年智能照明的'通用语言'",
+    "slug": "matter-thread-led-driver-2026",
+    "date": "2026-08-04",
+    "category": "行业洞察",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-matter-thread-led-driver-cover.png",
+    "excerpt": "IKEA新推出的Dubbelkisel驱动器让Matter over Thread从概念变成可量产的方案。对LED驱动厂商来说，这不仅是协议升级，更是产品定义和商业模式的重构。"
+  },
+  {
+    "title": "Zigbee要过时了？2026年Zigbee 4.0用三个大招告诉你：它不仅没死，反而更强了",
+    "slug": "zigbee-4-0-not-dead-stronger-smart-lighting-2026",
+    "date": "2026-08-04",
+    "category": "智能照明",
+    "description": "Matter和Thread是未来，但Zigbee 4.0用子GHz远距离、蓝牙直连配对和完全向下兼容三大革新，证明了它不会轻易被取代。本文带你读懂Zigbee 4.0为何不但没有过时，反而更强了。",
+    "cover": "../../images/blog-zigbee-4-0-cover.png",
+    "excerpt": "Matter和Thread是未来，但Zigbee 4.0用子GHz远距离、蓝牙直连配对和完全向下兼容，证明了它不会轻易被取代。本文解读Zigbee 4.0三大革新，帮你理清协议选型思路。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-08-04",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-08-04",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-08-04",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
+    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
+    "date": "2026-08-04",
+    "category": "技术文章",
+    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
+    "cover": "",
+    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-08-04",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -36,42 +99,6 @@
     "excerpt": "银价暴涨170%，铜价冲破10万，AI挤占晶圆产能——LED驱动电源行业正经历十年来最猛烈的成本风暴。"
   },
   {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-08-03",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-03",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-08-03",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
-    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
-    "date": "2026-08-03",
-    "category": "技术文章",
-    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
-    "cover": "",
-    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
-  },
-  {
     "title": "LED Driver Price Storm: 50+ Companies, 5 Rounds of Hikes, and the End of a 10-Year Price Decline",
     "slug": "led-driver-price-storm-2026",
     "date": "2026-08-03",
@@ -79,15 +106,6 @@
     "description": "耐利普科技技术文章",
     "cover": "images/blog-led-driver-price-hike-cover.png",
     "excerpt": "Silver +170%, copper +35%, AI eating wafer capacity — the LED driver industry is going through its most violent cost storm in a decade."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-03",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "全光谱LED智能灯选购指南：Ra95以上就够了吗？2026年健康照明真正该看的4个指标",

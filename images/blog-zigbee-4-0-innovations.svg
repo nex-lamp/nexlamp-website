@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d4aa" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00d4aa" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4da6ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4da6ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glow3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0a050" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f0a050" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Grid -->
+  <g stroke="#1a2d4a" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="50" x2="800" y2="50"/><line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="22" font-weight="bold" filter="url(#glow)">Zigbee 4.0 三大革新（2025.11发布）</text>
+  <line x1="200" y1="58" x2="600" y2="58" stroke="#00d4aa" stroke-width="1" opacity="0.5"/>
+
+  <!-- Card 1: SUZI -->
+  <rect x="30" y="80" width="233" height="180" rx="8" fill="#0d1f3c" stroke="#00d4aa" stroke-width="1" opacity="0.9"/>
+  <rect x="30" y="80" width="233" height="36" rx="8" fill="url(#glow1)"/>
+  <text x="146" y="104" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="15" font-weight="bold">SUZI · 子GHz远距离</text>
+  <text x="50" y="138" fill="#8899bb" font-family="monospace" font-size="12">频段：800MHz（欧洲）</text>
+  <text x="50" y="158" fill="#aabbcc" font-family="monospace" font-size="12">距离：室内250m+</text>
+  <text x="50" y="178" fill="#aabbcc" font-family="monospace" font-size="12">穿墙：3-4堵墙稳定</text>
+  <text x="50" y="198" fill="#aabbcc" font-family="monospace" font-size="12">优势：避开2.4GHz拥堵</text>
+  <text x="50" y="218" fill="#8899bb" font-family="monospace" font-size="12">对飙Z-Wave长距离</text>
+  <text x="50" y="243" fill="#00d4aa" font-family="monospace" font-size="11">别墅/大平层/跨层部署</text>
+
+  <!-- Card 2: Zigbee Direct -->
+  <rect x="283" y="80" width="233" height="180" rx="8" fill="#0d1f3c" stroke="#4da6ff" stroke-width="1" opacity="0.9"/>
+  <rect x="283" y="80" width="233" height="36" rx="8" fill="url(#glow2)"/>
+  <text x="400" y="104" text-anchor="middle" fill="#4da6ff" font-family="monospace" font-size="15" font-weight="bold">Direct · 蓝牙直连配网</text>
+  <text x="303" y="138" fill="#8899bb" font-family="monospace" font-size="12">方式：BLE扫描→发现→接入</text>
+  <text x="303" y="158" fill="#aabbcc" font-family="monospace" font-size="12">绑定：手机靠近日光灯即连</text>
+  <text x="303" y="178" fill="#aabbcc" font-family="monospace" font-size="12">芯片：Zigbee+BLE双模</text>
+  <text x="303" y="198" fill="#aabbcc" font-family="monospace" font-size="12">芯片成本仅增加几块钱</text>
+  <text x="303" y="218" fill="#8899bb" font-family="monospace" font-size="12">强制标准：所有4.0设备标配</text>
+  <text x="303" y="243" fill="#4da6ff" font-family="monospace" font-size="11">告别开关狂按30秒配网噩梦</text>
+
+  <!-- Card 3: Backward Compat -->
+  <rect x="536" y="80" width="233" height="180" rx="8" fill="#0d1f3c" stroke="#f0a050" stroke-width="1" opacity="0.9"/>
+  <rect x="536" y="80" width="233" height="36" rx="8" fill="url(#glow3)"/>
+  <text x="652" y="104" text-anchor="middle" fill="#f0a050" font-family="monospace" font-size="15" font-weight="bold">向下兼容 · 硬件零替换</text>
+  <text x="556" y="138" fill="#8899bb" font-family="monospace" font-size="12">Zigbee 3.0设备无缝接入</text>
+  <text x="556" y="158" fill="#aabbcc" font-family="monospace" font-size="12">仅需固件升级 无需换硬件</text>
+  <text x="556" y="178" fill="#aabbcc" font-family="monospace" font-size="12">老网关可管理新设备</text>
+  <text x="556" y="198" fill="#aabbcc" font-family="monospace" font-size="12">对比Matter：需桥接才能互通</text>
+  <text x="556" y="218" fill="#8899bb" font-family="monospace" font-size="12">投资保护：3年前设备仍可用</text>
+  <text x="556" y="243" fill="#f0a050" font-family="monospace" font-size="11">不是让你扔掉旧的，是让旧的焕新</text>
+
+  <!-- Bottom comparison -->
+  <rect x="30" y="280" width="739" height="175" rx="6" fill="#0d1f3c" stroke="#2a3d5a" stroke-width="0.5"/>
+  <text x="400" y="308" text-anchor="middle" fill="#8899bb" font-family="monospace" font-size="13">Zigbee 3.0 vs 4.0 能力对比</text>
+  <line x1="100" y1="320" x2="700" y2="320" stroke="#2a3d5a" stroke-width="0.5"/>
+
+  <!-- Comparison rows -->
+  <text x="80" y="345" fill="#aabbcc" font-family="monospace" font-size="12">通信距离</text>
+  <text x="280" y="345" fill="#667788" font-family="monospace" font-size="12">75m（室内）</text>
+  <text x="500" y="345" fill="#00d4aa" font-family="monospace" font-size="12">250m+</text>
+
+  <text x="80" y="370" fill="#aabbcc" font-family="monospace" font-size="12">穿墙能力</text>
+  <text x="280" y="370" fill="#667788" font-family="monospace" font-size="12">2堵墙</text>
+  <text x="500" y="370" fill="#00d4aa" font-family="monospace" font-size="12">3-4堵墙</text>
+
+  <text x="80" y="395" fill="#aabbcc" font-family="monospace" font-size="12">配网方式</text>
+  <text x="280" y="395" fill="#667788" font-family="monospace" font-size="12">按键组合+App搜索</text>
+  <text x="500" y="395" fill="#4da6ff" font-family="monospace" font-size="12">蓝牙一键靠近配网</text>
+
+  <text x="80" y="420" fill="#aabbcc" font-family="monospace" font-size="12">干扰环境</text>
+  <text x="280" y="420" fill="#667788" font-family="monospace" font-size="12">2.4GHz拥挤（WiFi共存）</text>
+  <text x="500" y="420" fill="#00d4aa" font-family="monospace" font-size="12">独立800MHz，零干扰</text>
+
+  <text x="80" y="445" fill="#aabbcc" font-family="monospace" font-size="12">兼容性</text>
+  <text x="280" y="445" fill="#667788" font-family="monospace" font-size="12">—</text>
+  <text x="500" y="445" fill="#f0a050" font-family="monospace" font-size="12">完全兼容3.0，固件升级即可</text>
+</svg>

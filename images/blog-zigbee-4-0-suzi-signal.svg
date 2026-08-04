@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g stroke="#152040" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="30" x2="800" y2="30"/><line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="0" y1="90" x2="800" y2="90"/><line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="210" x2="800" y2="210"/><line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="270" x2="800" y2="270"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="330" x2="800" y2="330"/><line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="390" x2="800" y2="390"/><line x1="0" y1="420" x2="800" y2="420"/>
+  </g>
+
+  <text x="400" y="38" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="18" font-weight="bold" filter="url(#glow)">SUZI 子GHz vs 2.4GHz 频段信号穿透对比</text>
+
+  <!-- Frequency bar -->
+  <rect x="80" y="70" width="640" height="28" rx="4" fill="#0d1f3c" stroke="#2a3d5a" stroke-width="0.5"/>
+  <text x="100" y="89" fill="#8899bb" font-family="monospace" font-size="11">800 MHz</text>
+  <rect x="200" y="78" width="120" height="12" rx="2" fill="#00d4aa" opacity="0.7"/>
+  <text x="280" y="89" fill="#667788" font-family="monospace" font-size="10">WiFi 2.4G</text>
+  <rect x="380" y="78" width="80" height="12" rx="2" fill="#4da6ff" opacity="0.5"/>
+  <text x="450" y="89" fill="#667788" font-family="monospace" font-size="10">BLE 2.4G</text>
+  <rect x="520" y="78" width="80" height="12" rx="2" fill="#f0a050" opacity="0.5"/>
+  <text x="590" y="89" fill="#667788" font-family="monospace" font-size="10">Zigbee 2.4G</text>
+  <text x="680" y="89" fill="#00d4aa" font-family="monospace" font-size="10">SUZI 800M</text>
+
+  <!-- Wall test -->
+  <rect x="80" y="120" width="640" height="300" rx="8" fill="#0d1f3c" stroke="#1a2d4a" stroke-width="0.5"/>
+
+  <text x="120" y="148" fill="#8899bb" font-family="monospace" font-size="13">信号穿透实测（模拟3堵砖墙衰减）</text>
+
+  <!-- 2.4GHz path -->
+  <text x="120" y="180" fill="#4da6ff" font-family="monospace" font-size="12">2.4GHz Zigbee 3.0</text>
+  <rect x="280" y="170" width="380" height="18" rx="3" fill="#4da6ff" opacity="0.3"/>
+  <text x="330" y="183" fill="#8899bb" font-family="monospace" font-size="9">墙1: -8dB → 墙2: -16dB → 墙3: -24dB</text>
+  <text x="620" y="183" fill="#ff5555" font-family="monospace" font-size="10">信号微弱</text>
+
+  <!-- 800MHz path -->
+  <text x="120" y="215" fill="#00d4aa" font-family="monospace" font-size="12">800MHz SUZI（Zigbee 4.0）</text>
+  <rect x="280" y="205" width="380" height="18" rx="3" fill="#00d4aa" opacity="0.3"/>
+  <text x="330" y="218" fill="#8899bb" font-family="monospace" font-size="9">墙1: -3dB → 墙2: -6dB → 墙3: -9dB</text>
+  <text x="620" y="218" fill="#00d4aa" font-family="monospace" font-size="10">信号正常</text>
+
+  <!-- Visualization: house cross-section -->
+  <rect x="140" y="260" width="160" height="60" rx="4" fill="none" stroke="#4da6ff" stroke-width="1" opacity="0.6"/>
+  <text x="220" y="288" text-anchor="middle" fill="#667788" font-family="monospace" font-size="10">客厅 · 网关</text>
+  <text x="220" y="310" text-anchor="middle" fill="#4da6ff" font-family="monospace" font-size="10">☀</text>
+
+  <line x1="300" y1="290" x2="370" y2="290" stroke="#667788" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="370" y="260" width="120" height="60" rx="4" fill="none" stroke="#667788" stroke-width="1"/>
+  <text x="430" y="288" text-anchor="middle" fill="#667788" font-family="monospace" font-size="10">卧室1</text>
+  <text x="430" y="310" text-anchor="middle" fill="#4da6ff" font-family="monospace" font-size="10">⬤ 2.4GHz OK</text>
+
+  <line x1="490" y1="290" x2="560" y2="290" stroke="#667788" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="560" y="260" width="120" height="60" rx="4" fill="none" stroke="#667788" stroke-width="1"/>
+  <text x="620" y="288" text-anchor="middle" fill="#667788" font-family="monospace" font-size="10">卧室2</text>
+  <text x="620" y="310" text-anchor="middle" fill="#ff5555" font-family="monospace" font-size="10">⬤ 2.4GHz弱</text>
+
+  <line x1="140" y1="320" x2="370" y2="350" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="300" y1="320" x2="560" y2="350" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="370" y1="320" x2="620" y2="350" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <rect x="140" y="345" width="160" height="50" rx="4" fill="none" stroke="#00d4aa" stroke-width="1"/>
+  <text x="220" y="368" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="10">SUZI 0 dead zone</text>
+  <text x="220" y="385" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="10">⬤ 全覆盖</text>
+
+  <rect x="370" y="345" width="120" height="50" rx="4" fill="none" stroke="#00d4aa" stroke-width="1"/>
+  <text x="430" y="368" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="10">SUZI 信号正常</text>
+  <text x="430" y="385" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="10">⬤ 稳定</text>
+
+  <rect x="560" y="345" width="120" height="50" rx="4" fill="none" stroke="#00d4aa" stroke-width="1"/>
+  <text x="620" y="368" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="10">SUZI 信号仍强</text>
+  <text x="620" y="385" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="10">⬤ 流畅</text>
+
+  <!-- Legend -->
+  <rect x="80" y="420" width="260" height="20" rx="3" fill="#0d1f3c"/>
+  <text x="95" y="435" fill="#8899bb" font-family="monospace" font-size="9">低频(800M)波长长穿透力强 | 高频(2.4G)波长短衰减快</text>
+</svg>
