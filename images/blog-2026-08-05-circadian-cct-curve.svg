@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f1f3a"/>
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="50%" stop-color="#ffc857"/>
+      <stop offset="100%" stop-color="#7ec27e"/>
+    </linearGradient>
+    <linearGradient id="coolGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="50%" stop-color="#7ec8e3"/>
+      <stop offset="100%" stop-color="#ffc857"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Grid lines -->
+  <g stroke="#1a2d4a" stroke-width="0.5" opacity="0.5">
+    <line x1="80" y1="50" x2="80" y2="420"/>
+    <line x1="80" y1="420" x2="760" y2="420"/>
+    <line x1="180" y1="60" x2="180" y2="420"/>
+    <line x1="280" y1="60" x2="280" y2="420"/>
+    <line x1="380" y1="60" x2="380" y2="420"/>
+    <line x1="480" y1="60" x2="480" y2="420"/>
+    <line x1="580" y1="60" x2="580" y2="420"/>
+    <line x1="680" y1="60" x2="680" y2="420"/>
+    <line x1="80" y1="350" x2="760" y2="350"/>
+    <line x1="80" y1="280" x2="760" y2="280"/>
+    <line x1="80" y1="210" x2="760" y2="210"/>
+    <line x1="80" y1="140" x2="760" y2="140"/>
+    <line x1="80" y1="70" x2="760" y2="70"/>
+  </g>
+
+  <!-- Time labels -->
+  <g fill="#4a90d9" font-family="Consolas, monospace" font-size="11" text-anchor="middle">
+    <text x="130" y="445">06:00</text>
+    <text x="230" y="445">09:00</text>
+    <text x="330" y="445">12:00</text>
+    <text x="430" y="445">15:00</text>
+    <text x="530" y="445">18:00</text>
+    <text x="630" y="445">21:00</text>
+    <text x="730" y="445">00:00</text>
+  </g>
+
+  <!-- Y-axis labels -->
+  <g fill="#5a8a9a" font-family="Consolas, monospace" font-size="10" text-anchor="end">
+    <text x="72" y="423">1800K</text>
+    <text x="72" y="353">2700K</text>
+    <text x="72" y="283">3500K</text>
+    <text x="72" y="213">4500K</text>
+    <text x="72" y="143">5500K</text>
+    <text x="72" y="73">6500K</text>
+  </g>
+
+  <!-- CCT Curve Area -->
+  <defs>
+    <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.15"/>
+      <stop offset="30%" stop-color="#ffc857" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#4a90d9" stop-opacity="0.1"/>
+      <stop offset="70%" stop-color="#ffc857" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ff6b35" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Curve area fill -->
+  <path d="M80,410 Q130,400 180,310 Q230,200 280,120 Q330,80 380,90 Q430,110 480,160 Q530,220 580,280 Q630,340 680,370 Q730,400 760,420 L760,420 L80,420 Z"
+        fill="url(#areaGrad)"/>
+
+  <!-- CCT Curve line with glow -->
+  <path d="M80,410 Q130,400 180,310 Q230,200 280,120 Q330,80 380,90 Q430,110 480,160 Q530,220 580,280 Q630,340 680,370 Q730,400 760,420"
+        fill="none" stroke="#ffc857" stroke-width="3" filter="url(#glow)" opacity="0.9"/>
+
+  <!-- Segment labels -->
+  <g font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#7ec8e3">
+    <text x="180" y="94" text-anchor="middle" font-weight="bold">唤醒期</text>
+    <text x="180" y="108" text-anchor="middle" font-size="10" fill="#5a8a9a">5000-6500K</text>
+  </g>
+  <g font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#7ec27e">
+    <text x="380" y="72" text-anchor="middle" font-weight="bold">日间专注</text>
+    <text x="380" y="86" text-anchor="middle" font-size="10" fill="#5a8a9a">4000-5000K</text>
+  </g>
+  <g font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffc857">
+    <text x="560" y="212" text-anchor="middle" font-weight="bold">午后过渡</text>
+    <text x="560" y="226" text-anchor="middle" font-size="10" fill="#5a8a9a">3000-4000K</text>
+  </g>
+  <g font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ff6b35">
+    <text x="680" y="388" text-anchor="middle" font-weight="bold">助眠暖光</text>
+    <text x="680" y="402" text-anchor="middle" font-size="10" fill="#5a8a9a">1800-2700K</text>
+  </g>
+
+  <!-- Hormone indicators -->
+  <g font-family="Microsoft YaHei, sans-serif" font-size="11">
+    <text x="280" y="465" fill="#4a90d9">↑ 皮质醇 Cortisol</text>
+    <text x="580" y="465" fill="#ff6b35">↑ 褪黑素 Melatonin</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="32" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#7ec8e3" text-anchor="middle" font-weight="bold">人体昼夜节律 — 色温曲线 &amp; 激素分泌周期</text>
+</svg>

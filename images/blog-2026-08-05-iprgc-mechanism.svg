@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f1f3a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowBlue">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="35" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#7ec8e3" text-anchor="middle" font-weight="bold">光 → 眼睛 → 大脑：ipRGC 感光通路如何控制你的睡眠</text>
+
+  <!-- ===== Left: Light Source ===== -->
+  <rect x="30" y="70" width="140" height="180" rx="8" fill="#111d33" stroke="#1a3050" stroke-width="1"/>
+  <text x="100" y="98" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#7ec27e" text-anchor="middle" font-weight="bold">自然光 / 人工光</text>
+
+  <!-- Light icon -->
+  <circle cx="100" cy="150" r="25" fill="none" stroke="#ffc857" stroke-width="1.5"/>
+  <circle cx="100" cy="150" r="12" fill="#ffc857" opacity="0.6"/>
+  <line x1="100" y1="120" x2="100" y2="110" stroke="#ffc857" stroke-width="1.5"/>
+  <line x1="100" y1="180" x2="100" y2="190" stroke="#ffc857" stroke-width="1.5"/>
+  <line x1="70" y1="150" x2="60" y2="150" stroke="#ffc857" stroke-width="1.5"/>
+  <line x1="130" y1="150" x2="140" y2="150" stroke="#ffc857" stroke-width="1.5"/>
+  <line x1="79" y1="129" x2="72" y2="122" stroke="#ffc857" stroke-width="1.5"/>
+  <line x1="121" y1="129" x2="128" y2="122" stroke="#ffc857" stroke-width="1.5"/>
+  <line x1="79" y1="171" x2="72" y2="178" stroke="#ffc857" stroke-width="1.5"/>
+  <line x1="121" y1="171" x2="128" y2="178" stroke="#ffc857" stroke-width="1.5"/>
+
+  <!-- Key point -->
+  <text x="100" y="200" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#ff6b35" text-anchor="middle">关键波长: ~480nm 蓝光</text>
+  <text x="100" y="218" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#5a8a9a" text-anchor="middle">（正是5000K+冷白LED</text>
+  <text x="100" y="234" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#5a8a9a" text-anchor="middle">富含的波段）</text>
+
+  <!-- Arrow from light to eye -->
+  <line x1="175" y1="155" x2="265" y2="140" stroke="#ffc857" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.7"/>
+  <polygon points="265,140 257,133 259,143" fill="#ffc857"/>
+
+  <!-- ===== Center: Eye / ipRGC ===== -->
+  <rect x="270" y="70" width="200" height="200" rx="10" fill="#111d33" stroke="#2478C2" stroke-width="1.5"/>
+
+  <!-- Eye shape -->
+  <ellipse cx="370" cy="130" rx="55" ry="30" fill="none" stroke="#4a90d9" stroke-width="1.5"/>
+  <circle cx="370" cy="130" r="10" fill="#4a90d9" opacity="0.3"/>
+  <circle cx="370" cy="130" r="5" fill="#4a90d9"/>
+  <!-- ipRGC cells -->
+  <circle cx="330" cy="120" r="3" fill="#7ec27e"/>
+  <circle cx="350" cy="115" r="3" fill="#7ec27e"/>
+  <circle cx="390" cy="118" r="3" fill="#7ec27e"/>
+  <circle cx="410" cy="125" r="3" fill="#7ec27e"/>
+  <circle cx="340" cy="135" r="3" fill="#7ec27e"/>
+  <circle cx="395" cy="138" r="3" fill="#7ec27e"/>
+
+  <text x="370" y="178" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#7ec27e" text-anchor="middle" font-weight="bold">ipRGC 感光细胞</text>
+  <text x="370" y="198" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#5a8a9a" text-anchor="middle">（2002年发现 | 第三类感光细胞）</text>
+  <text x="370" y="218" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#5a8a9a" text-anchor="middle">不参与成像 · 只传递光信号</text>
+  <text x="370" y="250" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#4a90d9" text-anchor="middle">★ 与杆细胞/锥细胞完全不同</text>
+
+  <!-- Arrow from eye to brain -->
+  <line x1="475" y1="155" x2="555" y2="155" stroke="#4a90d9" stroke-width="2" opacity="0.8"/>
+  <polygon points="555,155 547,148 549,158" fill="#4a90d9"/>
+
+  <!-- ===== Right: Brain / SCN ===== -->
+  <rect x="560" y="60" width="220" height="230" rx="10" fill="#111d33" stroke="#7ec27e" stroke-width="1.5"/>
+
+  <!-- Brain icon -->
+  <ellipse cx="670" cy="120" rx="45" ry="35" fill="none" stroke="#7ec27e" stroke-width="1"/>
+  <path d="M625,120 Q640,105 670,108 Q700,105 715,120" fill="none" stroke="#7ec27e" stroke-width="1"/>
+  <!-- SCN dot -->
+  <circle cx="670" cy="108" r="8" fill="none" stroke="#ffc857" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="670" cy="108" r="3" fill="#ffc857"/>
+
+  <text x="670" y="170" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffc857" text-anchor="middle" font-weight="bold">SCN 视交叉上核</text>
+  <text x="670" y="190" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#5a8a9a" text-anchor="middle">人体的「生物钟中枢」</text>
+
+  <!-- Output arrows -->
+  <line x1="585" y1="220" x2="585" y2="270" stroke="#4a90d9" stroke-width="1.5"/>
+  <line x1="755" y1="220" x2="755" y2="270" stroke="#ff6b35" stroke-width="1.5"/>
+
+  <!-- Hormone boxes -->
+  <rect x="525" y="270" width="120" height="50" rx="6" fill="#112233" stroke="#4a90d9" stroke-width="1"/>
+  <text x="585" y="292" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#4a90d9" text-anchor="middle" font-weight="bold">↑ 皮质醇</text>
+  <text x="585" y="310" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#5a8a9a" text-anchor="middle">清醒 · 精力充沛</text>
+
+  <rect x="695" y="270" width="120" height="50" rx="6" fill="#112233" stroke="#ff6b35" stroke-width="1"/>
+  <text x="755" y="292" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#ff6b35" text-anchor="middle" font-weight="bold">↓ 褪黑素</text>
+  <text x="755" y="310" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#5a8a9a" text-anchor="middle">入睡 · 深度睡眠</text>
+
+  <!-- Bottom: Summary -->
+  <rect x="30" y="340" width="740" height="65" rx="8" fill="#0d1a2d" stroke="#1a3050" stroke-width="1"/>
+  <text x="400" y="366" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ffc857" text-anchor="middle" font-weight="bold">核心结论</text>
+  <text x="400" y="388" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#7ec8e3" text-anchor="middle">蓝光(480nm) → ipRGC → SCN → 抑制褪黑素 → 你的大脑认为「现在是白天」</text>
+
+  <!-- Bottom note -->
+  <text x="400" y="445" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#ff6b35" text-anchor="middle">⚠ 晚上10点开5000K冷白灯 = 对大脑说「别睡，起来嗨」</text>
+  <text x="400" y="470" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#5a8a9a" text-anchor="middle">这就是为什么你躺在床上2小时也睡不着——不是失眠，是光的信号错了</text>
+</svg>
