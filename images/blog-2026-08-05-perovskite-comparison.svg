@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#141a3a"/>
+    </linearGradient>
+    <linearGradient id="perovskite" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0068a5"/>
+    </linearGradient>
+    <linearGradient id="traditional" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#c4451a"/>
+    </linearGradient>
+    <linearGradient id="ceramic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00e676"/>
+      <stop offset="100%" stop-color="#00873a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="bold" font-family="Arial,sans-serif">钙钛矿LED × 透明荧光陶瓷LED — 材料革命关键参数对比</text>
+  <line x1="150" y1="55" x2="650" y2="55" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+
+  <!-- Column Headers -->
+  <text x="60" y="100" fill="#8899aa" font-size="12" font-family="Arial,sans-serif">参数</text>
+  <text x="210" y="100" text-anchor="middle" fill="#00d4ff" font-size="14" font-weight="bold" font-family="Arial,sans-serif">钙钛矿LED (PeLED)</text>
+  <text x="480" y="100" text-anchor="middle" fill="#ff6b35" font-size="14" font-weight="bold" font-family="Arial,sans-serif">传统LED</text>
+  <text x="690" y="100" text-anchor="middle" fill="#00e676" font-size="12" font-weight="bold" font-family="Arial,sans-serif">透明荧光陶瓷LED</text>
+
+  <!-- Rows -->
+  <!-- Row 1: 亮度 -->
+  <rect x="20" y="115" width="760" height="35" rx="4" fill="#ffffff" opacity="0.04"/>
+  <text x="60" y="138" fill="#ccddee" font-size="12" font-family="Arial,sans-serif">极限亮度</text>
+  <text x="210" y="138" text-anchor="middle" fill="#00d4ff" font-size="16" font-weight="bold" font-family="Arial,sans-serif" filter="url(#glow)">116万 nit</text>
+  <text x="480" y="138" text-anchor="middle" fill="#ff6b35" font-size="13" font-family="Arial,sans-serif">~5,000 nit</text>
+  <text x="690" y="138" text-anchor="middle" fill="#00e676" font-size="13" font-family="Arial,sans-serif">kW级大功率</text>
+
+  <!-- Row 2: 寿命 -->
+  <rect x="20" y="155" width="760" height="35" rx="4" fill="#ffffff" opacity="0.02"/>
+  <text x="60" y="178" fill="#ccddee" font-size="12" font-family="Arial,sans-serif">使用寿命</text>
+  <text x="210" y="178" text-anchor="middle" fill="#00d4ff" font-size="16" font-weight="bold" font-family="Arial,sans-serif" filter="url(#glow)">18万 小时</text>
+  <text x="480" y="178" text-anchor="middle" fill="#ff6b35" font-size="13" font-family="Arial,sans-serif">3-5万 小时</text>
+  <text x="690" y="178" text-anchor="middle" fill="#00e676" font-size="16" font-weight="bold" font-family="Arial,sans-serif">5万小时无光衰</text>
+
+  <!-- Row 3: 发光效率 -->
+  <rect x="20" y="195" width="760" height="35" rx="4" fill="#ffffff" opacity="0.04"/>
+  <text x="60" y="218" fill="#ccddee" font-size="12" font-family="Arial,sans-serif">发光效率</text>
+  <text x="210" y="218" text-anchor="middle" fill="#00d4ff" font-size="16" font-weight="bold" font-family="Arial,sans-serif" filter="url(#glow)">EQE 22-45%</text>
+  <text x="480" y="218" text-anchor="middle" fill="#ff6b35" font-size="13" font-family="Arial,sans-serif">EQE 15-20%</text>
+  <text x="690" y="218" text-anchor="middle" fill="#00e676" font-size="13" font-family="Arial,sans-serif">光效持续稳定</text>
+
+  <!-- Row 4: 成本 -->
+  <rect x="20" y="235" width="760" height="35" rx="4" fill="#ffffff" opacity="0.02"/>
+  <text x="60" y="258" fill="#ccddee" font-size="12" font-family="Arial,sans-serif">制造成本</text>
+  <text x="210" y="258" text-anchor="middle" fill="#00d4ff" font-size="16" font-weight="bold" font-family="Arial,sans-serif" filter="url(#glow)">传统LED的 1/10</text>
+  <text x="480" y="258" text-anchor="middle" fill="#ff6b35" font-size="13" font-family="Arial,sans-serif">基准</text>
+  <text x="690" y="258" text-anchor="middle" fill="#00e676" font-size="16" font-weight="bold" font-family="Arial,sans-serif">比金卤灯低 50%</text>
+
+  <!-- Row 5: 量产状态 -->
+  <rect x="20" y="275" width="760" height="35" rx="4" fill="#ffffff" opacity="0.04"/>
+  <text x="60" y="298" fill="#ccddee" font-size="12" font-family="Arial,sans-serif">量产状态</text>
+  <text x="210" y="298" text-anchor="middle" fill="#ffaa00" font-size="13" font-weight="bold" font-family="Arial,sans-serif">2027-2028 消费电子</text>
+  <text x="480" y="298" text-anchor="middle" fill="#ff6b35" font-size="12" font-family="Arial,sans-serif">已成熟量产</text>
+  <text x="690" y="298" text-anchor="middle" fill="#00e676" font-size="13" font-weight="bold" font-family="Arial,sans-serif">工程试点中</text>
+
+  <!-- Divider -->
+  <rect x="20" y="330" width="760" height="1" fill="#ffffff" opacity="0.1"/>
+
+  <!-- Bottom: Driver Impact Summary -->
+  <text x="400" y="365" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="Arial,sans-serif">→ 对驱动电源的核心影响</text>
+
+  <rect x="50" y="385" width="200" height="85" rx="8" fill="#00d4ff" opacity="0.1" stroke="#00d4ff" stroke-width="1"/>
+  <text x="150" y="412" text-anchor="middle" fill="#00d4ff" font-size="14" font-weight="bold" font-family="Arial,sans-serif">钙钛矿LED</text>
+  <text x="150" y="432" text-anchor="middle" fill="#aabbcc" font-size="11" font-family="Arial,sans-serif">±1%精密恒流</text>
+  <text x="150" y="452" text-anchor="middle" fill="#aabbcc" font-size="11" font-family="Arial,sans-serif">软启动 + 超低纹波</text>
+
+  <rect x="300" y="385" width="200" height="85" rx="8" fill="#00e676" opacity="0.1" stroke="#00e676" stroke-width="1"/>
+  <text x="400" y="412" text-anchor="middle" fill="#00e676" font-size="14" font-weight="bold" font-family="Arial,sans-serif">透明荧光陶瓷LED</text>
+  <text x="400" y="432" text-anchor="middle" fill="#aabbcc" font-size="11" font-family="Arial,sans-serif">kW级恒流拓扑</text>
+  <text x="400" y="452" text-anchor="middle" fill="#aabbcc" font-size="11" font-family="Arial,sans-serif">主动散热 + D4i管理</text>
+
+  <rect x="550" y="385" width="200" height="85" rx="8" fill="#ffaa00" opacity="0.1" stroke="#ffaa00" stroke-width="1"/>
+  <text x="650" y="412" text-anchor="middle" fill="#ffaa00" font-size="14" font-weight="bold" font-family="Arial,sans-serif">共同需求</text>
+  <text x="650" y="432" text-anchor="middle" fill="#aabbcc" font-size="11" font-family="Arial,sans-serif">传感器集成</text>
+  <text x="650" y="452" text-anchor="middle" fill="#aabbcc" font-size="11" font-family="Arial,sans-serif">智能保护 + 故障预警</text>
+
+  <!-- Source -->
+  <text x="400" y="492" text-anchor="middle" fill="#556688" font-size="10" font-family="Arial,sans-serif">数据来源: Nature (2026.6) / 前瞻产业研究院 / 中国之光网</text>
+</svg>
