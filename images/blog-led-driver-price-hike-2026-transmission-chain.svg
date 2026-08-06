@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f35;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7ec27e"/>
+    </marker>
+  </defs>
+  
+  <rect width="900" height="420" fill="url(#bgGrad2)"/>
+  <rect width="900" height="420" fill="url(#grid2)"/>
+  
+  <!-- Terminal window -->
+  <rect x="30" y="25" width="840" height="370" rx="8" fill="#0c1d2e" stroke="#2478c2" stroke-width="1.5" opacity="0.9"/>
+  <rect x="30" y="25" width="840" height="36" rx="8" fill="#142a42" stroke="#2478c2" stroke-width="1.5"/>
+  <circle cx="56" cy="43" r="6" fill="#ff5f56"/>
+  <circle cx="78" cy="43" r="6" fill="#ffbd2e"/>
+  <circle cx="100" cy="43" r="6" fill="#27c93f"/>
+  <text x="450" y="49" font-family="Consolas, monospace" font-size="14" fill="#7ec27e" text-anchor="middle" font-weight="bold">root@nexlamp:~# price_transmission_chain --visualize</text>
+  
+  <!-- Title -->
+  <text x="450" y="95" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold" filter="url(#glow2)">涨价成本传导链：从矿山到你的灯</text>
+  
+  <!-- Chain nodes -->
+  <g transform="translate(0, 130)">
+    <!-- Node 1 -->
+    <rect x="70" y="0" width="130" height="90" rx="8" fill="#142a42" stroke="#f4a261" stroke-width="2" filter="url(#glow2)"/>
+    <text x="135" y="30" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#f4a261" text-anchor="middle" font-weight="bold">贵金属</text>
+    <text x="135" y="52" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">银 +150%</text>
+    <text x="135" y="70" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">铜 +35% 金 +70%</text>
+    
+    <line x1="200" y1="45" x2="240" y2="45" stroke="#7ec27e" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Node 2 -->
+    <rect x="240" y="0" width="130" height="90" rx="8" fill="#142a42" stroke="#7ec27e" stroke-width="2" filter="url(#glow2)"/>
+    <text x="305" y="30" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#7ec27e" text-anchor="middle" font-weight="bold">LED封装</text>
+    <text x="305" y="52" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">银浆成本飙升</text>
+    <text x="305" y="70" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">封装成本上涨</text>
+    
+    <line x1="370" y1="45" x2="410" y2="45" stroke="#7ec27e" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Node 3 -->
+    <rect x="410" y="0" width="130" height="90" rx="8" fill="#142a42" stroke="#64b5f6" stroke-width="2" filter="url(#glow2)"/>
+    <text x="475" y="30" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#64b5f6" text-anchor="middle" font-weight="bold">驱动IC</text>
+    <text x="475" y="52" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">晶圆代工+15%~25%</text>
+    <text x="475" y="70" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">封测+30%</text>
+    
+    <line x1="540" y1="45" x2="580" y2="45" stroke="#7ec27e" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Node 4 -->
+    <rect x="580" y="0" width="130" height="90" rx="8" fill="#142a42" stroke="#a78bfa" stroke-width="2" filter="url(#glow2)"/>
+    <text x="645" y="30" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#a78bfa" text-anchor="middle" font-weight="bold">驱动电源成品</text>
+    <text x="645" y="52" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">涨价 +5%~18%</text>
+    <text x="645" y="70" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">大功率>20%</text>
+    
+    <line x1="710" y1="45" x2="750" y2="45" stroke="#7ec27e" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Node 5 -->
+    <rect x="750" y="0" width="130" height="90" rx="8" fill="#142a42" stroke="#ff6b6b" stroke-width="2" filter="url(#glow2)"/>
+    <text x="815" y="30" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#ff6b6b" text-anchor="middle" font-weight="bold">灯具产品</text>
+    <text x="815" y="52" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">涨价 +3%~15%</text>
+    <text x="815" y="70" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">项目成本上升</text>
+  </g>
+  
+  <!-- Bottom impact box -->
+  <rect x="150" y="275" width="600" height="85" rx="8" fill="#1a3a5c" stroke="#2478c2" stroke-width="1"/>
+  <text x="450" y="305" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">关键影响</text>
+  <text x="450" y="330" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#e0e0e0" text-anchor="middle">驱动电源占灯具物料成本 10%~25%，商照筒射灯占比更高</text>
+  <text x="450" y="350" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#ff6b6b" text-anchor="middle">更危险的是"有价无货"——下半年可能有钱也买不到料</text>
+  
+  <!-- Nexlamp watermark -->
+  <text x="840" y="370" font-family="Consolas, monospace" font-size="11" fill="#4a6fa5" text-anchor="end">NEXLAMP © 2026</text>
+</svg>

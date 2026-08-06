@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f35;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  
+  <!-- Terminal window -->
+  <rect x="40" y="30" width="720" height="440" rx="8" fill="#0c1d2e" stroke="#2478c2" stroke-width="1.5" opacity="0.9"/>
+  <rect x="40" y="30" width="720" height="36" rx="8" fill="#142a42" stroke="#2478c2" stroke-width="1.5"/>
+  <circle cx="66" cy="48" r="6" fill="#ff5f56"/>
+  <circle cx="88" cy="48" r="6" fill="#ffbd2e"/>
+  <circle cx="110" cy="48" r="6" fill="#27c93f"/>
+  <text x="380" y="54" font-family="Consolas, monospace" font-size="14" fill="#7ec27e" text-anchor="middle" font-weight="bold">root@nexlamp:~# 2026_led_driver_price_analysis</text>
+  
+  <!-- Title -->
+  <text x="400" y="105" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold" filter="url(#glow)">2026年驱动电源涨价的三座大山</text>
+  
+  <!-- Force 1 -->
+  <rect x="80" y="140" width="200" height="220" rx="10" fill="#142a42" stroke="#f4a261" stroke-width="2" filter="url(#glow)"/>
+  <text x="180" y="175" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#f4a261" text-anchor="middle" font-weight="bold">贵金属暴涨</text>
+  <text x="180" y="205" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#e0e0e0" text-anchor="middle">银价 +150%</text>
+  <text x="180" y="230" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#e0e0e0" text-anchor="middle">铜价 +35%</text>
+  <text x="180" y="255" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#e0e0e0" text-anchor="middle">金价 +70%</text>
+  <text x="180" y="300" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#9db8d3" text-anchor="middle">银浆占封装成本30%+</text>
+  <text x="180" y="320" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#9db8d3" text-anchor="middle">铜占变压器65%+</text>
+  
+  <!-- Force 2 -->
+  <rect x="300" y="140" width="200" height="220" rx="10" fill="#142a42" stroke="#7ec27e" stroke-width="2" filter="url(#glow)"/>
+  <text x="400" y="175" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#7ec27e" text-anchor="middle" font-weight="bold">AI抢晶圆产能</text>
+  <text x="400" y="205" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#e0e0e0" text-anchor="middle">8英寸产能被AI芯片抢占</text>
+  <text x="400" y="230" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#e0e0e0" text-anchor="middle">驱动IC占比 30%→15%</text>
+  <text x="400" y="255" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#e0e0e0" text-anchor="middle">代工+15%~25%</text>
+  <text x="400" y="300" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#9db8d3" text-anchor="middle">AI订单毛利是驱动IC的</text>
+  <text x="400" y="320" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#9db8d3" text-anchor="middle">3~5倍，晶圆厂优先排产</text>
+  
+  <!-- Force 3 -->
+  <rect x="520" y="140" width="200" height="220" rx="10" fill="#142a42" stroke="#64b5f6" stroke-width="2" filter="url(#glow)"/>
+  <text x="620" y="175" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64b5f6" text-anchor="middle" font-weight="bold">十年价格战触底</text>
+  <text x="620" y="205" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#e0e0e0" text-anchor="middle">2022-2025价格跌30%~40%</text>
+  <text x="620" y="230" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#e0e0e0" text-anchor="middle">行业毛利率腰斩</text>
+  <text x="620" y="255" font-family="Microsoft YaHei, sans-serif" font-size="13" fill="#e0e0e0" text-anchor="middle">多家电源企业2025亏损</text>
+  <text x="620" y="300" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#9db8d3" text-anchor="middle">利润修复成必然需求</text>
+  <text x="620" y="320" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#9db8d3" text-anchor="middle">低价周期正式终结</text>
+  
+  <!-- Bottom summary -->
+  <rect x="120" y="385" width="560" height="55" rx="6" fill="#1a3a5c" stroke="#2478c2" stroke-width="1"/>
+  <text x="400" y="418" font-family="Microsoft YaHei, sans-serif" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">三座大山叠加 = 涨价从"可选动作"变成"生存动作"</text>
+  
+  <!-- Nexlamp watermark -->
+  <text x="760" y="475" font-family="Consolas, monospace" font-size="11" fill="#4a6fa5" text-anchor="end">NEXLAMP © 2026</text>
+</svg>
