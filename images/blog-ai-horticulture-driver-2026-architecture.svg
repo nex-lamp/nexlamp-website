@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'Segoe UI',sans-serif">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0a1628"/>
+  <!-- Grid -->
+  <g stroke="#1a2a3e" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#e0e0e0" font-size="20" font-weight="bold">LED驱动架构对比：传统单路 vs 多通道"1+N"</text>
+
+  <!-- Left side: Traditional -->
+  <text x="200" y="75" text-anchor="middle" fill="#ff6b6b" font-size="14" font-weight="bold">传统方案：一灯一电源</text>
+  <!-- Traditional power supply boxes -->
+  <rect x="60" y="95" width="100" height="50" rx="5" fill="none" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="110" y="118" text-anchor="middle" fill="#ff6b6b" font-size="11">驱动1 (蓝光)</text>
+  <text x="110" y="135" text-anchor="middle" fill="#888" font-size="9">400W</text>
+
+  <rect x="170" y="95" width="100" height="50" rx="5" fill="none" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="220" y="118" text-anchor="middle" fill="#ff6b6b" font-size="11">驱动2 (红光)</text>
+  <text x="220" y="135" text-anchor="middle" fill="#888" font-size="9">400W</text>
+
+  <rect x="60" y="160" width="100" height="50" rx="5" fill="none" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="110" y="183" text-anchor="middle" fill="#ff6b6b" font-size="11">驱动3 (白光)</text>
+  <text x="110" y="200" text-anchor="middle" fill="#888" font-size="9">400W</text>
+
+  <rect x="170" y="160" width="100" height="50" rx="5" fill="none" stroke="#ff6b6b" stroke-width="1.5"/>
+  <text x="220" y="183" text-anchor="middle" fill="#ff6b6b" font-size="11">驱动4 (远红)</text>
+  <text x="220" y="200" text-anchor="middle" fill="#888" font-size="9">400W</text>
+
+  <!-- Wiring mess -->
+  <path d="M110,145 Q140,165 200,95 M220,145 Q190,165 110,160 M110,210 Q150,230 220,210 M220,210 Q190,230 110,230" stroke="#ff6b6b" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M110,145 Q140,165 200,95 M220,145 Q190,165 110,160 M110,210 Q150,230 220,210 M220,210 Q190,230 110,230" stroke="#ff6b6b" stroke-width="1" fill="none" opacity="0.4"/>
+  <!-- Tangled lines -->
+  <path d="M110,145 C130,160 160,140 200,160 C170,180 130,200 220,210 C180,220 120,230 160,210" stroke="#ff6b6b" stroke-width="0.8" fill="none" opacity="0.3"/>
+
+  <!-- Stats -->
+  <text x="200" y="270" text-anchor="middle" fill="#ff9999" font-size="12">4台设备 | 6+故障点 | 布线复杂</text>
+  <text x="200" y="290" text-anchor="middle" fill="#ff9999" font-size="12">整体效率 ~75%</text>
+  <text x="200" y="310" text-anchor="middle" fill="#666" font-size="10">改光即改线，维护成本高</text>
+
+  <!-- Arrow -->
+  <text x="400" y="180" text-anchor="middle" fill="#4ecca3" font-size="24" font-weight="bold">→</text>
+  <text x="400" y="200" text-anchor="middle" fill="#4ecca3" font-size="11">进化</text>
+
+  <!-- Right side: Multi-channel -->
+  <text x="600" y="75" text-anchor="middle" fill="#4ecca3" font-size="14" font-weight="bold">多通道方案：1+N架构</text>
+
+  <!-- Single driver box -->
+  <rect x="480" y="95" width="240" height="160" rx="8" fill="#0d2137" stroke="#4ecca3" stroke-width="2"/>
+  <text x="600" y="118" text-anchor="middle" fill="#4ecca3" font-size="14" font-weight="bold">多通道驱动电源</text>
+  <text x="600" y="135" text-anchor="middle" fill="#888" font-size="10">1600W | IP67 | 96%效率</text>
+
+  <!-- Channel outputs inside -->
+  <rect x="500" y="150" width="80" height="28" rx="4" fill="#1a3a2e" stroke="#4ecca3" stroke-width="1"/>
+  <text x="540" y="168" text-anchor="middle" fill="#4ecca3" font-size="10">主路 CH1</text>
+
+  <rect x="590" y="150" width="55" height="28" rx="4" fill="#1a3a2e" stroke="#4ecca3" stroke-width="1"/>
+  <text x="617" y="168" text-anchor="middle" fill="#4ecca3" font-size="9">CH2</text>
+
+  <rect x="655" y="150" width="55" height="28" rx="4" fill="#1a3a2e" stroke="#4ecca3" stroke-width="1"/>
+  <text x="682" y="168" text-anchor="middle" fill="#4ecca3" font-size="9">CH3</text>
+
+  <rect x="500" y="188" width="55" height="28" rx="4" fill="#1a3a2e" stroke="#4ecca3" stroke-width="1"/>
+  <text x="527" y="206" text-anchor="middle" fill="#4ecca3" font-size="9">CH4</text>
+
+  <rect x="565" y="188" width="55" height="28" rx="4" fill="#1a3a2e" stroke="#4ecca3" stroke-width="1"/>
+  <text x="592" y="206" text-anchor="middle" fill="#4ecca3" font-size="9">CH5</text>
+
+  <rect x="630" y="188" width="55" height="28" rx="4" fill="#1a3a2e" stroke="#4ecca3" stroke-width="1"/>
+  <text x="657" y="206" text-anchor="middle" fill="#4ecca3" font-size="9">CH6</text>
+
+  <!-- Clean lines to LEDs -->
+  <line x1="540" y1="178" x2="540" y2="270" stroke="#4ecca3" stroke-width="1"/>
+  <line x1="617" y1="178" x2="617" y2="270" stroke="#4ecca3" stroke-width="1"/>
+  <line x1="682" y1="178" x2="682" y2="270" stroke="#4ecca3" stroke-width="1"/>
+  <line x1="527" y1="216" x2="527" y2="270" stroke="#4ecca3" stroke-width="1"/>
+  <line x1="592" y1="216" x2="592" y2="270" stroke="#4ecca3" stroke-width="1"/>
+  <line x1="657" y1="216" x2="657" y2="270" stroke="#4ecca3" stroke-width="1"/>
+
+  <!-- LED icons -->
+  <circle cx="540" cy="285" r="8" fill="#4a90d9" opacity="0.8"/>
+  <circle cx="617" cy="285" r="8" fill="#e74c3c" opacity="0.8"/>
+  <circle cx="682" cy="285" r="8" fill="#ffffff" opacity="0.6"/>
+  <circle cx="527" cy="300" r="8" fill="#8e44ad" opacity="0.8"/>
+  <circle cx="592" cy="300" r="8" fill="#2ecc71" opacity="0.8"/>
+  <circle cx="657" cy="300" r="8" fill="#f39c12" opacity="0.8"/>
+
+  <text x="540" y="320" text-anchor="middle" fill="#4ecca3" font-size="8">450nm</text>
+  <text x="617" y="320" text-anchor="middle" fill="#4ecca3" font-size="8">660nm</text>
+  <text x="682" y="320" text-anchor="middle" fill="#4ecca3" font-size="8">全白</text>
+  <text x="527" y="320" text-anchor="middle" fill="#4ecca3" font-size="8">730nm</text>
+  <text x="592" y="320" text-anchor="middle" fill="#4ecca3" font-size="8">525nm</text>
+  <text x="657" y="320" text-anchor="middle" fill="#4ecca3" font-size="8">590nm</text>
+
+  <!-- Stats -->
+  <text x="600" y="360" text-anchor="middle" fill="#4ecca3" font-size="12">1台设备 | 减60%设备 | 减40%故障点</text>
+  <text x="600" y="380" text-anchor="middle" fill="#4ecca3" font-size="12">整体效率 94%+（Power Transfer）</text>
+  <text x="600" y="400" text-anchor="middle" fill="#666" font-size="10">软件调光谱，零布线改动</text>
+
+  <!-- AI badge -->
+  <rect x="510" y="420" width="180" height="30" rx="6" fill="#1a3a2e" stroke="#4ecca3" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="600" y="440" text-anchor="middle" fill="#4ecca3" font-size="11">🤖 AI光配方自适应调度</text>
+
+  <!-- Footer -->
+  <text x="400" y="480" text-anchor="middle" fill="#555" font-size="9">NEXLAMP | 2026 植物照明多通道驱动架构</text>
+</svg>

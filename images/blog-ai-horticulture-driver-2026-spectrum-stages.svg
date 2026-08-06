@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'Segoe UI',sans-serif">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0a1628"/>
+  <!-- Grid -->
+  <g stroke="#1a2a3e" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#e0e0e0" font-size="18" font-weight="bold">植物生长四阶段光谱需求 &amp; 驱动通道映射</text>
+
+  <!-- Stage labels -->
+  <text x="125" y="65" text-anchor="middle" fill="#4a90d9" font-size="13" font-weight="bold">苗期</text>
+  <text x="325" y="65" text-anchor="middle" fill="#e74c3c" font-size="13" font-weight="bold">营养生长</text>
+  <text x="525" y="65" text-anchor="middle" fill="#8e44ad" font-size="13" font-weight="bold">开花期</text>
+  <text x="725" y="65" text-anchor="middle" fill="#f39c12" font-size="13" font-weight="bold">结果期</text>
+
+  <!-- Spectrum bars for each stage -->
+  <!-- Stage 1: Seedling - Blue dominant -->
+  <rect x="60" y="80" width="130" height="25" rx="3" fill="#1a2a3e" stroke="#333" stroke-width="0.5"/>
+  <rect x="65" y="85" width="40" height="15" rx="2" fill="#4a90d9" opacity="0.9"/>
+  <rect x="110" y="85" width="25" height="15" rx="2" fill="#2ecc71" opacity="0.5"/>
+  <rect x="140" y="85" width="20" height="15" rx="2" fill="#e74c3c" opacity="0.3"/>
+  <rect x="165" y="85" width="20" height="15" rx="2" fill="#8e44ad" opacity="0.2"/>
+  <text x="125" y="120" text-anchor="middle" fill="#4a90d9" font-size="9">450nm蓝光 65%</text>
+  <text x="125" y="133" text-anchor="middle" fill="#888" font-size="8">促紧凑壮苗</text>
+
+  <!-- Stage 2: Vegetative - Red dominant -->
+  <rect x="260" y="80" width="130" height="25" rx="3" fill="#1a2a3e" stroke="#333" stroke-width="0.5"/>
+  <rect x="265" y="85" width="25" height="15" rx="2" fill="#4a90d9" opacity="0.4"/>
+  <rect x="295" y="85" width="20" height="15" rx="2" fill="#2ecc71" opacity="0.3"/>
+  <rect x="320" y="85" width="55" height="15" rx="2" fill="#e74c3c" opacity="0.9"/>
+  <rect x="380" y="85" width="5" height="15" rx="2" fill="#8e44ad" opacity="0.1"/>
+  <text x="325" y="120" text-anchor="middle" fill="#e74c3c" font-size="9">660nm红光 70%</text>
+  <text x="325" y="133" text-anchor="middle" fill="#888" font-size="8">加速茎叶扩展</text>
+
+  <!-- Stage 3: Flowering - Far-red -->
+  <rect x="460" y="80" width="130" height="25" rx="3" fill="#1a2a3e" stroke="#333" stroke-width="0.5"/>
+  <rect x="465" y="85" width="15" height="15" rx="2" fill="#4a90d9" opacity="0.2"/>
+  <rect x="485" y="85" width="15" height="15" rx="2" fill="#2ecc71" opacity="0.2"/>
+  <rect x="505" y="85" width="35" height="15" rx="2" fill="#e74c3c" opacity="0.6"/>
+  <rect x="545" y="85" width="40" height="15" rx="2" fill="#8e44ad" opacity="0.9"/>
+  <text x="525" y="120" text-anchor="middle" fill="#8e44ad" font-size="9">730nm远红光 50%</text>
+  <text x="525" y="133" text-anchor="middle" fill="#888" font-size="8">调控开花时间</text>
+
+  <!-- Stage 4: Fruiting - Balanced -->
+  <rect x="660" y="80" width="130" height="25" rx="3" fill="#1a2a3e" stroke="#333" stroke-width="0.5"/>
+  <rect x="665" y="85" width="20" height="15" rx="2" fill="#4a90d9" opacity="0.6"/>
+  <rect x="690" y="85" width="15" height="15" rx="2" fill="#2ecc71" opacity="0.4"/>
+  <rect x="710" y="85" width="45" height="15" rx="2" fill="#e74c3c" opacity="0.7"/>
+  <rect x="760" y="85" width="25" height="15" rx="2" fill="#8e44ad" opacity="0.3"/>
+  <text x="725" y="120" text-anchor="middle" fill="#f39c12" font-size="9">红蓝平衡+白光</text>
+  <text x="725" y="133" text-anchor="middle" fill="#888" font-size="8">提升果实品质</text>
+
+  <!-- Wavelength axis -->
+  <line x1="60" y1="155" x2="790" y2="155" stroke="#555" stroke-width="1"/>
+  <text x="75" y="170" fill="#4a90d9" font-size="9">380nm</text>
+  <text x="250" y="170" fill="#2ecc71" font-size="9">500nm</text>
+  <text x="400" y="170" fill="#e74c3c" font-size="9">660nm</text>
+  <text x="600" y="170" fill="#8e44ad" font-size="9">730nm</text>
+  <text x="745" y="170" fill="#aaa" font-size="9">800nm</text>
+
+  <!-- PAR range -->
+  <rect x="60" y="150" width="730" height="3" fill="none" stroke="#4ecca3" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="400" y="145" text-anchor="middle" fill="#4ecca3" font-size="8">PAR 光合有效辐射区间</text>
+
+  <!-- Driver channel mapping -->
+  <text x="400" y="205" text-anchor="middle" fill="#e0e0e0" font-size="14" font-weight="bold">多通道驱动如何映射到生长阶段</text>
+
+  <!-- Channel boxes -->
+  <rect x="80" y="225" width="640" height="160" rx="8" fill="#0d2137" stroke="#1a3a5e" stroke-width="1"/>
+
+  <!-- CH1 -->
+  <rect x="100" y="240" width="120" height="30" rx="4" fill="#1a2a1e" stroke="#4a90d9" stroke-width="1"/>
+  <text x="160" y="259" text-anchor="middle" fill="#4a90d9" font-size="10">CH1: 450nm 蓝光</text>
+  <text x="160" y="285" text-anchor="middle" fill="#4a90d9" font-size="9">苗期 65% → 营养期 20% → 开花期 10% → 结果期 25%</text>
+  <rect x="100" y="295" width="120" height="6" rx="2" fill="#1a2a3e"/>
+  <rect x="100" y="295" width="78" height="6" rx="2" fill="#4a90d9" opacity="0.9"/>
+  <text x="185" y="290" fill="#555" font-size="7">↑苗期功率</text>
+
+  <!-- CH2 -->
+  <rect x="240" y="240" width="120" height="30" rx="4" fill="#1a2a1e" stroke="#e74c3c" stroke-width="1"/>
+  <text x="300" y="259" text-anchor="middle" fill="#e74c3c" font-size="10">CH2: 660nm 红光</text>
+  <text x="300" y="285" text-anchor="middle" fill="#e74c3c" font-size="9">苗期 20% → 营养期 70% → 开花期 25% → 结果期 40%</text>
+  <rect x="240" y="295" width="120" height="6" rx="2" fill="#1a2a3e"/>
+  <rect x="240" y="295" width="84" height="6" rx="2" fill="#e74c3c" opacity="0.9"/>
+  <text x="325" y="290" fill="#555" font-size="7">↑营养期功率</text>
+
+  <!-- CH3 -->
+  <rect x="380" y="240" width="120" height="30" rx="4" fill="#1a2a1e" stroke="#8e44ad" stroke-width="1"/>
+  <text x="440" y="259" text-anchor="middle" fill="#8e44ad" font-size="10">CH3: 730nm 远红光</text>
+  <text x="440" y="285" text-anchor="middle" fill="#8e44ad" font-size="9">苗期 5% → 营养期 5% → 开花期 50% → 结果期 15%</text>
+  <rect x="380" y="295" width="120" height="6" rx="2" fill="#1a2a3e"/>
+  <rect x="380" y="295" width="60" height="6" rx="2" fill="#8e44ad" opacity="0.9"/>
+  <text x="465" y="290" fill="#555" font-size="7">↑开花期功率</text>
+
+  <!-- CH4 -->
+  <rect x="520" y="240" width="120" height="30" rx="4" fill="#1a2a1e" stroke="#f39c12" stroke-width="1"/>
+  <text x="580" y="259" text-anchor="middle" fill="#f39c12" font-size="10">CH4: 全光谱白光</text>
+  <text x="580" y="285" text-anchor="middle" fill="#f39c12" font-size="9">苗期 10% → 营养期 5% → 开花期 15% → 结果期 20%</text>
+  <rect x="520" y="295" width="120" height="6" rx="2" fill="#1a2a3e"/>
+  <rect x="520" y="295" width="24" height="6" rx="2" fill="#f39c12" opacity="0.9"/>
+  <text x="605" y="290" fill="#555" font-size="7">↑结果期功率</text>
+
+  <!-- AI badge -->
+  <rect x="660" y="240" width="55" height="130" rx="4" fill="#1a3a2e" stroke="#4ecca3" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="687" y="260" text-anchor="middle" fill="#4ecca3" font-size="9" font-weight="bold">AI</text>
+  <text x="687" y="275" text-anchor="middle" fill="#4ecca3" font-size="7">自动</text>
+  <text x="687" y="287" text-anchor="middle" fill="#4ecca3" font-size="7">调度</text>
+  <text x="687" y="299" text-anchor="middle" fill="#4ecca3" font-size="7">各通道</text>
+  <text x="687" y="311" text-anchor="middle" fill="#4ecca3" font-size="7">功率</text>
+  <text x="687" y="323" text-anchor="middle" fill="#4ecca3" font-size="7">比例</text>
+  <text x="687" y="345" text-anchor="middle" fill="#4ecca3" font-size="16">🤖</text>
+
+  <!-- Timeline arrow -->
+  <line x1="100" y1="320" x2="640" y2="320" stroke="#555" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="160" y="335" text-anchor="middle" fill="#4a90d9" font-size="8">← 苗期</text>
+  <text x="300" y="335" text-anchor="middle" fill="#e74c3c" font-size="8">营养期 →</text>
+  <text x="440" y="335" text-anchor="middle" fill="#8e44ad" font-size="8">开花期 →</text>
+  <text x="580" y="335" text-anchor="middle" fill="#f39c12" font-size="8">结果期 →</text>
+
+  <!-- Power transfer note -->
+  <text x="400" y="370" text-anchor="middle" fill="#4ecca3" font-size="9" font-style="italic">各通道功率随阶段变化 → Power Transfer技术确保关闭通道的功率不浪费</text>
+
+  <!-- Footer -->
+  <text x="400" y="430" text-anchor="middle" fill="#555" font-size="9">NEXLAMP | 380-800nm PAR全光谱 · 多通道驱动光配方映射</text>
+</svg>

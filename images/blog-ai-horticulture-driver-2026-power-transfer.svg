@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'Segoe UI',sans-serif">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0a1628"/>
+  <!-- Grid -->
+  <g stroke="#1a2a3e" stroke-width="0.5">
+    <line x1="0" y1="50" x2="800" y2="50"/>
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#e0e0e0" font-size="18" font-weight="bold">Power Transfer 技术：冗余功率不浪费</text>
+  <text x="400" y="50" text-anchor="middle" fill="#888" font-size="11">当辅路通道关闭/低载时，功率自动转移到主路</text>
+
+  <!-- Driver box -->
+  <rect x="250" y="70" width="300" height="120" rx="8" fill="#0d2137" stroke="#4ecca3" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" fill="#4ecca3" font-size="13" font-weight="bold">1000W 多通道驱动电源</text>
+
+  <!-- Input power bar -->
+  <rect x="270" y="105" width="260" height="14" rx="3" fill="#1a3a2e" stroke="#4ecca3" stroke-width="0.5"/>
+  <text x="400" y="116" text-anchor="middle" fill="#4ecca3" font-size="9">总输入 1000W</text>
+
+  <!-- Scenario A: Without Power Transfer -->
+  <text x="150" y="155" text-anchor="middle" fill="#ff6b6b" font-size="12" font-weight="bold">无 Power Transfer</text>
+
+  <!-- CH1 active -->
+  <rect x="270" y="165" width="120" height="18" rx="3" fill="#1a2a1e" stroke="#4ecca3" stroke-width="1"/>
+  <text x="330" y="178" text-anchor="middle" fill="#4ecca3" font-size="9">CH1 主路: 500W</text>
+
+  <!-- CH2 idle -->
+  <rect x="400" y="165" width="55" height="18" rx="3" fill="#2a1a1a" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="427" y="178" text-anchor="middle" fill="#ff6b6b" font-size="8">CH2:关</text>
+
+  <!-- CH3 idle -->
+  <rect x="465" y="165" width="55" height="18" rx="3" fill="#2a1a1a" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="492" y="178" text-anchor="middle" fill="#ff6b6b" font-size="8">CH3:关</text>
+
+  <!-- Waste indicator -->
+  <rect x="270" y="195" width="250" height="20" rx="3" fill="none" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="395" y="209" text-anchor="middle" fill="#ff6b6b" font-size="10">⚠ 500W 闲置浪费 | 整体效率 ~75%</text>
+
+  <!-- Arrow down -->
+  <text x="400" y="245" text-anchor="middle" fill="#4ecca3" font-size="20">↓</text>
+
+  <!-- Scenario B: With Power Transfer -->
+  <text x="650" y="155" text-anchor="middle" fill="#4ecca3" font-size="12" font-weight="bold">有 Power Transfer</text>
+
+  <!-- CH1 boosted -->
+  <rect x="270" y="265" width="200" height="18" rx="3" fill="#1a2a1e" stroke="#4ecca3" stroke-width="1.5"/>
+  <text x="370" y="278" text-anchor="middle" fill="#4ecca3" font-size="9">CH1 主路: 750W ↑</text>
+
+  <!-- CH2 idle -->
+  <rect x="480" y="265" width="40" height="18" rx="3" fill="#2a1a1a" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="500" y="278" text-anchor="middle" fill="#555" font-size="8">CH2</text>
+
+  <!-- CH3 idle -->
+  <rect x="530" y="265" width="40" height="18" rx="3" fill="#2a1a1a" stroke="#555" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="550" y="278" text-anchor="middle" fill="#555" font-size="8">CH3</text>
+
+  <!-- Transfer arrow -->
+  <path d="M500,265 Q480,250 370,265" stroke="#4ecca3" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="430" y="248" text-anchor="middle" fill="#4ecca3" font-size="9">+250W 转移</text>
+
+  <!-- Efficiency indicator -->
+  <rect x="270" y="295" width="250" height="20" rx="3" fill="none" stroke="#4ecca3" stroke-width="1"/>
+  <text x="395" y="309" text-anchor="middle" fill="#4ecca3" font-size="10">✓ 零功率浪费 | 整体效率 94%+</text>
+
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4ecca3"/>
+    </marker>
+  </defs>
+
+  <!-- Key benefits -->
+  <rect x="100" y="340" width="600" height="80" rx="8" fill="#0d2137" stroke="#1a3a5e" stroke-width="1"/>
+  <text x="400" y="360" text-anchor="middle" fill="#e0e0e0" font-size="12" font-weight="bold">为什么这在植物照明里是刚需？</text>
+  <text x="120" y="378" fill="#aaa" font-size="10">▸ 植物不同生长阶段并非所有通道同时满载</text>
+  <text x="120" y="393" fill="#aaa" font-size="10">▸ 苗期只开蓝光通道，营养期只开红光通道——传统方案白白浪费关闭通道的功率</text>
+  <text x="120" y="408" fill="#aaa" font-size="10">▸ Power Transfer让每瓦电都用在光合作用上，7×24运行下年省电费可观</text>
+
+  <!-- Footer -->
+  <text x="400" y="440" text-anchor="middle" fill="#555" font-size="9">NEXLAMP | uPowerTek &amp; 华浩德 Power Transfer 技术原理</text>
+</svg>
