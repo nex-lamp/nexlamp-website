@@ -3,7 +3,11 @@
 ## 内容发布工作流
 - 已启用并更新 `nexlamp-publisher` skill（位于 `C:/Users/yu/.workbuddy/skills/nexlamp-publisher`）
 - 该 skill 负责：话题研究 → 中文技术文章 → SVG 配图 + AI 封面 → 网站构建 → Dev.to / LinkedIn / 今日头条分发
-- 2026-07-28 完成一次完整发布：
+- 2026-08-06 完成发布：AI+植物照明多通道LED驱动——"一电多谱"（ID: 4328861）
+  - 选题依据: 崧盛股份8月4日宣布探索AI+LED驱动+植物照明融合；工信部7月31日500零碳工厂；华浩德H1-V六通道获神灯奖；uPowerTek Power Transfer
+  - 切入角度: 从LED驱动厂商视角看植物照明多通道架构变革（1+N独立输出/Power Transfer/380-800nm全光谱/AI光配方）
+  - 之前16+篇均未覆盖植物照明/园艺照明，全新差异化方向
+- 2026-08-05 完成发布：钙钛矿LED量产倒计时——材料革命对LED驱动电源的影响（ID: 4317829）
   - 主题：AI自学习照明——灯正在学会"预判"你的下一步
   - Dev.to 英文版发布成功（ID: 4249858）
   - LinkedIn 因 CDP Chrome 未运行跳过
@@ -24,6 +28,10 @@
   - Dev.to POST 后获得 temp-slug 是新现象：之前文章都是POST直接拿正式slug。title 包含 "10 Gbps" / "Routers" 等复杂词可能触发。解决：PUT /api/articles/{id} published:true 即可（published字段仍返回None，是API特性）
   - Li-Fi是真正"刚起步"话题——2026年4月才发布商用产品，比情绪照明（7月8日喊话）更早期
   - 选题切入角度：避开纯技术科普，从LED驱动厂商视角看"Li-Fi对驱动电源的升级需求"——恒流源→高速调制+802.11bb+GaN器件
+- 2026-08-05 完成发布：钙钛矿LED量产倒计时——材料革命对LED驱动电源的影响（ID: 4317829）
+  - 选题依据: 中科大Nature论文(6.11)钙钛矿LED突破18万小时寿命+116万尼特；中科院全钙钛矿叠层LED EQE45%世界纪录；透明荧光陶瓷LED 5万小时无光衰
+  - 切入角度: 从LED驱动厂商视角看新材料对驱动电源的升级需求（±1%精密恒流/kW级大功率/传感器集成）
+  - 之前14篇均未覆盖LED芯片/材料层面技术革命，全新差异化方向
 - **关键经验（2026-08-03）**：
   - **toutiao-ops 必须加 --headless 参数**：之前不需要，当前环境非headless模式浏览器启动失败（page.goto: Target closed）。命令：`npx toutiao-ops publish weitoutiao --headless --images "<图片路径>" --content "<内容>"`
   - **toutiao-ops 支持 --images 参数**：可为微头条添加配图，逗号分隔多张

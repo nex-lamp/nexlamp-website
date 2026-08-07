@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <!-- Background -->
+  <rect width="680" height="420" fill="#0a1628"/>
+  <!-- Grid -->
+  <g stroke="#1a2a40" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="70" x2="680" y2="70"/>
+    <line x1="0" y1="140" x2="680" y2="140"/>
+    <line x1="0" y1="210" x2="680" y2="210"/>
+    <line x1="0" y1="280" x2="680" y2="280"/>
+    <line x1="0" y1="350" x2="680" y2="350"/>
+    <line x1="170" y1="0" x2="170" y2="420"/>
+    <line x1="340" y1="0" x2="340" y2="420"/>
+    <line x1="510" y1="0" x2="510" y2="420"/>
+  </g>
+
+  <!-- Title -->
+  <text x="340" y="32" text-anchor="middle" fill="#7ec27e" font-family="Consolas, monospace" font-size="16" font-weight="bold">LED驱动适老选型4大硬指标</text>
+  <text x="340" y="50" text-anchor="middle" fill="#4a6a5a" font-family="Consolas, monospace" font-size="10">Non-Negotiable Driver Specs for Age-Friendly Lighting</text>
+
+  <!-- Indicator 1: Dimming Depth -->
+  <rect x="20" y="75" width="310" height="155" rx="6" fill="#0d2137" stroke="#2478C2" stroke-width="1.5"/>
+  <circle cx="50" cy="105" r="14" fill="#2478C2" opacity="0.3"/>
+  <text x="50" y="110" text-anchor="middle" fill="#2478C2" font-family="Consolas, monospace" font-size="14" font-weight="bold">1</text>
+  <text x="75" y="103" fill="#8ab4f8" font-family="Consolas, monospace" font-size="13" font-weight="bold">调光深度 &#8804; 5%</text>
+  <text x="75" y="120" fill="#4a7aaa" font-family="Consolas, monospace" font-size="10">Dimming Depth &#8804; 5%</text>
+  <line x1="35" y1="135" x2="315" y2="135" stroke="#1a3a5a"/>
+  <text x="35" y="155" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">夜起只需5%-10%亮度</text>
+  <text x="35" y="175" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">低亮度无频闪（SVM&lt;5%）</text>
+  <text x="35" y="195" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">0.1%-100%无极调光</text>
+  <rect x="35" y="205" width="260" height="16" rx="3" fill="#1a2a3a"/>
+  <rect x="35" y="205" width="13" height="16" rx="3" fill="#2478C2"/>
+  <text x="55" y="217" fill="#5a7a8a" font-family="Consolas, monospace" font-size="9">&#8592; 5%最低亮度 &#8594;100%</text>
+
+  <!-- Indicator 2: Standby Power -->
+  <rect x="350" y="75" width="310" height="155" rx="6" fill="#0d2137" stroke="#7ec27e" stroke-width="1.5"/>
+  <circle cx="380" cy="105" r="14" fill="#7ec27e" opacity="0.3"/>
+  <text x="380" y="110" text-anchor="middle" fill="#7ec27e" font-family="Consolas, monospace" font-size="14" font-weight="bold">2</text>
+  <text x="405" y="103" fill="#8af8aa" font-family="Consolas, monospace" font-size="13" font-weight="bold">待机功耗 &#8804; 0.5W</text>
+  <text x="405" y="120" fill="#5a8a5a" font-family="Consolas, monospace" font-size="10">Standby Power &#8804; 0.5W</text>
+  <line x1="365" y1="135" x2="645" y2="135" stroke="#1a3a2a"/>
+  <text x="365" y="155" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">GB 30255-2026新国标要求</text>
+  <text x="365" y="175" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">Zigbee模组深度睡眠&#956;A级</text>
+  <text x="365" y="195" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">隔离式驱动+低功耗LDO</text>
+  <rect x="365" y="205" width="260" height="16" rx="3" fill="#1a2a1a"/>
+  <rect x="365" y="205" width="39" height="16" rx="3" fill="#7ec27e"/>
+  <text x="410" y="217" fill="#5a7a5a" font-family="Consolas, monospace" font-size="9">0.5W &#8594; 传统1-2W &#8594;</text>
+
+  <!-- Indicator 3: Radar Integrated -->
+  <rect x="20" y="245" width="310" height="155" rx="6" fill="#0d2137" stroke="#c2a247" stroke-width="1.5"/>
+  <circle cx="50" cy="275" r="14" fill="#c2a247" opacity="0.3"/>
+  <text x="50" y="280" text-anchor="middle" fill="#c2a247" font-family="Consolas, monospace" font-size="14" font-weight="bold">3</text>
+  <text x="75" y="273" fill="#f8d48a" font-family="Consolas, monospace" font-size="13" font-weight="bold">雷达感应驱动一体化</text>
+  <text x="75" y="290" fill="#8a7a3a" font-family="Consolas, monospace" font-size="10">Radar + Driver Integrated</text>
+  <line x1="35" y1="305" x2="315" y2="305" stroke="#3a2a1a"/>
+  <text x="35" y="325" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">毫米波雷达 vs 红外PIR：</text>
+  <text x="35" y="345" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">&#8226; 不受温度影响</text>
+  <text x="35" y="365" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">&#8226; 衣物遮挡可穿透检测</text>
+  <text x="35" y="385" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">&#8226; 灵敏度高，脚步轻也能触发</text>
+
+  <!-- Indicator 4: Lifespan + 3C -->
+  <rect x="350" y="245" width="310" height="155" rx="6" fill="#0d2137" stroke="#c27e7e" stroke-width="1.5"/>
+  <circle cx="380" cy="275" r="14" fill="#c27e7e" opacity="0.3"/>
+  <text x="380" y="280" text-anchor="middle" fill="#c27e7e" font-family="Consolas, monospace" font-size="14" font-weight="bold">4</text>
+  <text x="405" y="273" fill="#f8aa8a" font-family="Consolas, monospace" font-size="13" font-weight="bold">寿命&#8805;50,000h + 3C认证</text>
+  <text x="405" y="290" fill="#8a5a5a" font-family="Consolas, monospace" font-size="10">50,000h Lifespan + 3C Certified</text>
+  <line x1="365" y1="305" x2="645" y2="305" stroke="#3a1a1a"/>
+  <text x="365" y="325" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">每天6h &#8594; 约23年免维护</text>
+  <text x="365" y="345" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">3C认证 = 耐压+绝缘+温升</text>
+  <text x="365" y="365" fill="#aabbcc" font-family="Consolas, monospace" font-size="11">老人独居不用等子女换灯</text>
+  <rect x="365" y="378" width="120" height="14" rx="3" fill="#c27e7e" opacity="0.3"/>
+  <text x="425" y="389" text-anchor="middle" fill="#c27e7e" font-family="Consolas, monospace" font-size="9">3C Certified &#10003;</text>
+
+  <!-- Bottom -->
+  <text x="340" y="415" text-anchor="middle" fill="#2a3a4a" font-family="Consolas, monospace" font-size="9">// &#36866;&#32769;&#22330;&#26223;&#39537;&#21160;&#36873;&#22411;&#65306;&#22312;&#26368;&#35813;&#30465;&#24515;&#30340;&#22320;&#26041;&#19981;&#35201;&#30465;&#37027;10&#22395;&#38065;</text>
+</svg>

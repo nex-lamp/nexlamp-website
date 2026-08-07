@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <!-- Background -->
+  <rect width="680" height="420" fill="#0a1628"/>
+  <!-- Grid -->
+  <g stroke="#1a2a40" stroke-width="1" opacity="0.3">
+    <line x1="0" y1="60" x2="680" y2="60"/>
+    <line x1="0" y1="140" x2="680" y2="140"/>
+    <line x1="0" y1="220" x2="680" y2="220"/>
+    <line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="0" y1="380" x2="680" y2="380"/>
+    <line x1="85" y1="0" x2="85" y2="420"/>
+    <line x1="170" y1="0" x2="170" y2="420"/>
+    <line x1="255" y1="0" x2="255" y2="420"/>
+    <line x1="340" y1="0" x2="340" y2="420"/>
+    <line x1="425" y1="0" x2="425" y2="420"/>
+    <line x1="510" y1="0" x2="510" y2="420"/>
+    <line x1="595" y1="0" x2="595" y2="420"/>
+  </g>
+
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" fill="#7ec27e" font-family="Consolas, monospace" font-size="15" font-weight="bold">60&#19817;&#;&amp;#32;老旧小区两居室适老照明方案</text>
+  <text x="340" y="45" text-anchor="middle" fill="#4a6a5a" font-family="Consolas, monospace" font-size="10">Elderly-Friendly Lighting Layout for 60m&#178; Apartment</text>
+
+  <!-- Apartment floor plan outline -->
+  <rect x="40" y="65" width="600" height="310" rx="4" fill="none" stroke="#3a5a7a" stroke-width="2"/>
+
+  <!-- Room dividers -->
+  <line x1="280" y1="65" x2="280" y2="220" stroke="#2a4a6a" stroke-width="1.5"/>
+  <line x1="40" y1="220" x2="640" y2="220" stroke="#2a4a6a" stroke-width="1.5"/>
+  <line x1="420" y1="220" x2="420" y2="375" stroke="#2a4a6a" stroke-width="1.5"/>
+  <line x1="280" y1="65" x2="280" y2="375" stroke="#2a4a6a" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- Room labels -->
+  <text x="160" y="85" text-anchor="middle" fill="#4a6a8a" font-family="Consolas, monospace" font-size="11">客厅 Living Room</text>
+  <text x="460" y="85" text-anchor="middle" fill="#4a6a8a" font-family="Consolas, monospace" font-size="11">卧室 Bedroom</text>
+  <text x="160" y="240" text-anchor="middle" fill="#4a6a8a" font-family="Consolas, monospace" font-size="11">走廊+卫生间 Hall+Bath</text>
+  <text x="530" y="240" text-anchor="middle" fill="#4a6a8a" font-family="Consolas, monospace" font-size="11">阳台 Balcony</text>
+
+  <!-- Living Room: 4 downlights + Zigbee -->
+  <circle cx="100" cy="130" r="10" fill="#2478C2" opacity="0.6"/>
+  <circle cx="100" cy="130" r="6" fill="#8ab4f8"/>
+  <text x="100" y="155" text-anchor="middle" fill="#5a7a9a" font-family="Consolas, monospace" font-size="8">筒灯1</text>
+
+  <circle cx="160" cy="130" r="10" fill="#2478C2" opacity="0.6"/>
+  <circle cx="160" cy="130" r="6" fill="#8ab4f8"/>
+  <text x="160" y="155" text-anchor="middle" fill="#5a7a9a" font-family="Consolas, monospace" font-size="8">筒灯2</text>
+
+  <circle cx="220" cy="130" r="10" fill="#2478C2" opacity="0.6"/>
+  <circle cx="220" cy="130" r="6" fill="#8ab4f8"/>
+  <text x="220" y="155" text-anchor="middle" fill="#5a7a9a" font-family="Consolas, monospace" font-size="8">筒灯3</text>
+
+  <circle cx="160" cy="190" r="10" fill="#2478C2" opacity="0.6"/>
+  <circle cx="160" cy="190" r="6" fill="#8ab4f8"/>
+  <text x="160" y="210" text-anchor="middle" fill="#5a7a9a" font-family="Consolas, monospace" font-size="8">筒灯4</text>
+
+  <rect x="240" y="195" width="30" height="18" rx="3" fill="#2478C2" opacity="0.3"/>
+  <text x="255" y="208" text-anchor="middle" fill="#2478C2" font-family="Consolas, monospace" font-size="8">开关</text>
+
+  <!-- Bedroom: 2 downlights + sensor night light -->
+  <circle cx="330" cy="130" r="10" fill="#2478C2" opacity="0.6"/>
+  <circle cx="330" cy="130" r="6" fill="#8ab4f8"/>
+  <text x="330" y="155" text-anchor="middle" fill="#5a7a9a" font-family="Consolas, monospace" font-size="8">筒灯1</text>
+
+  <circle cx="390" cy="130" r="10" fill="#2478C2" opacity="0.6"/>
+  <circle cx="390" cy="130" r="6" fill="#8ab4f8"/>
+  <text x="390" y="155" text-anchor="middle" fill="#5a7a9a" font-family="Consolas, monospace" font-size="8">筒灯2</text>
+
+  <!-- Night light with radar -->
+  <polygon points="360,180 375,175 390,180 390,195 360,195" fill="#7ec27e" opacity="0.4"/>
+  <circle cx="375" cy="187" r="5" fill="#8af8aa"/>
+  <text x="375" y="210" text-anchor="middle" fill="#5a8a5a" font-family="Consolas, monospace" font-size="8">雷达夜灯</text>
+
+  <rect x="420" y="195" width="30" height="18" rx="3" fill="#2478C2" opacity="0.3"/>
+  <text x="435" y="208" text-anchor="middle" fill="#2478C2" font-family="Consolas, monospace" font-size="8">床头</text>
+
+  <!-- Hall: radar sensor lights -->
+  <circle cx="80" cy="280" r="10" fill="#c2a247" opacity="0.5"/>
+  <circle cx="80" cy="280" r="6" fill="#f8d48a"/>
+  <text x="80" y="305" text-anchor="middle" fill="#8a7a3a" font-family="Consolas, monospace" font-size="8">雷达筒灯</text>
+
+  <circle cx="140" cy="280" r="10" fill="#c2a247" opacity="0.5"/>
+  <circle cx="140" cy="280" r="6" fill="#f8d48a"/>
+  <text x="140" y="305" text-anchor="middle" fill="#8a7a3a" font-family="Consolas, monospace" font-size="8">雷达筒灯</text>
+
+  <text x="110" y="335" text-anchor="middle" fill="#8a6a3a" font-family="Consolas, monospace" font-size="9">// 人来灯亮 人走灯灭</text>
+  <text x="110" y="350" text-anchor="middle" fill="#8a6a3a" font-family="Consolas, monospace" font-size="9">// 无需开关 全自动</text>
+
+  <!-- Bathroom -->
+  <circle cx="220" cy="280" r="10" fill="#2478C2" opacity="0.6"/>
+  <circle cx="220" cy="280" r="6" fill="#8ab4f8"/>
+  <text x="220" y="305" text-anchor="middle" fill="#5a7a9a" font-family="Consolas, monospace" font-size="8">防雾筒灯1</text>
+
+  <circle cx="250" cy="330" r="10" fill="#2478C2" opacity="0.6"/>
+  <circle cx="250" cy="330" r="6" fill="#8ab4f8"/>
+  <text x="250" y="355" text-anchor="middle" fill="#5a7a9a" font-family="Consolas, monospace" font-size="8">防雾筒灯2</text>
+
+  <rect x="185" y="350" width="30" height="18" rx="3" fill="#2478C2" opacity="0.3"/>
+  <text x="200" y="363" text-anchor="middle" fill="#2478C2" font-family="Consolas, monospace" font-size="8">开关</text>
+
+  <!-- Balcony -->
+  <circle cx="530" cy="300" r="14" fill="#5a6a7a" opacity="0.5"/>
+  <circle cx="530" cy="300" r="10" fill="#aabbcc"/>
+  <text x="530" y="330" text-anchor="middle" fill="#7a8a9a" font-family="Consolas, monospace" font-size="8">吸顶灯18W</text>
+  <rect x="565" y="340" width="30" height="18" rx="3" fill="#5a6a7a" opacity="0.3"/>
+  <text x="580" y="353" text-anchor="middle" fill="#7a8a9a" font-family="Consolas, monospace" font-size="8">开关</text>
+
+  <!-- Legend -->
+  <rect x="40" y="388" width="600" height="25" rx="3" fill="#0d2137"/>
+  <circle cx="65" cy="400" r="5" fill="#8ab4f8"/>
+  <text x="78" y="404" fill="#8ab4f8" font-family="Consolas, monospace" font-size="9">Zigbee筒灯</text>
+  <circle cx="170" cy="400" r="5" fill="#8af8aa"/>
+  <text x="183" y="404" fill="#8af8aa" font-family="Consolas, monospace" font-size="9">雷达夜灯</text>
+  <circle cx="265" cy="400" r="5" fill="#f8d48a"/>
+  <text x="278" y="404" fill="#f8d48a" font-family="Consolas, monospace" font-size="9">雷达感应灯</text>
+  <circle cx="375" cy="400" r="5" fill="#aabbcc"/>
+  <text x="388" y="404" fill="#aabbcc" font-family="Consolas, monospace" font-size="9">普通吸顶灯</text>
+  <rect x="475" y="395" width="20" height="10" rx="2" fill="#2478C2" opacity="0.3"/>
+  <text x="502" y="404" fill="#2478C2" font-family="Consolas, monospace" font-size="9">物理开关</text>
+  <text x="570" y="404" fill="#3a4a5a" font-family="Consolas, monospace" font-size="9">| Nexlamp</text>
+</svg>

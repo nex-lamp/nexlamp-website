@@ -1,5 +1,24 @@
 # Automation Memory
 
+## 2026-08-05: 钙钛矿LED量产倒计时——材料革命对LED驱动电源的影响
+- 选题: 多源搜索确认钙钛矿LED/透明荧光陶瓷LED材料突破是8月初最新热点（中科大Nature论文6.11 + 前瞻产业研究院8.4报告）
+- 之前14篇均未覆盖LED芯片/材料层面的技术革命，是全新差异化方向
+- 文章: posts/2026-08-05-perovskite-led-driver-opportunity.md (~1500字) + 3 SVG(参数对比/驱动升级路线/需求全景图) + AI封面(裁剪法去水印)
+- 网站: ✅ git commit 6a4daf9 push成功
+- Dev.to: ✅ ID: 4317829, https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/perovskite-led-mass-production-countdown-what-led-driver-manufacturers-must-prepare-for-the-1kk4
+- LinkedIn: ⚠️ CDP Chrome未运行，跳过
+- 今日头条微头条: ✅ published，带封面图
+- 踩坑: git add dist/ 被.gitignore阻止，用 git reset HEAD dist/ 后重新commit；toutiao-ops超时自动转入后台60s后完成
+
+## 2026-08-04: Matter over Thread LED驱动——2026年智能照明的"通用语言"
+- 选题: 多源搜索确认"Matter over Thread LED驱动"是8月最热差异化方向（IKEA Dubbelkisel无hub驱动/芯科SixG301/雷特Matter生态/2026 Matter放量年）
+- 文章: posts/2026-08-04-matter-thread-led-driver-2026.md (~1500字) + 3 SVG + AI封面
+- 网站: ✅ build.js 125篇 + sitemap.xml 129 URLs + git push (d704ac9)
+- Dev.to: ✅ https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/matter-over-thread-led-drivers-the-2e7d (ID: 4308454)
+- LinkedIn: ⚠️ CDP Chrome未运行，跳过
+- 今日头条微头条: ✅ 发布成功，带封面图
+- 踩坑: Dev.to API返回title截断显示但不影响实际文章完整发布
+
 ## 2026-08-03: LED驱动电源涨价潮——50+企业连续5轮调价，10年降价周期终结
 - 选题: 多源搜索确认"LED驱动电源涨价潮"是2026年8月最热行业话题（1月19日富满微首发调价→6家头部全员跟进→5月第二轮涨30%+→7月昕诺飞第五轮调价→累计50+企业参与；银+170%/铜+35%/金+70%；AI挤占晶圆产能从30%降至15%；10年降价通道正式终结）
 - 之前13篇博客均未覆盖供应链/涨价话题，是真正的差异化选题
