@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 440">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f39c12"/>
+      <stop offset="100%" stop-color="#d68910"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7ec27e"/>
+      <stop offset="100%" stop-color="#5b8c5a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="440" fill="url(#bgGrad)"/>
+  <rect width="680" height="440" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="340" y="40" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="bold" fill="#e8f4f8" filter="url(#glow)">
+    实战节能账：20盏筒灯 × 10小时/天 × 365天
+  </text>
+  <text x="340" y="62" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="12" fill="#7ec27e">
+    传统驱动 vs 智能调光驱动 vs 涂鸦Zigbee 8档调光驱动
+  </text>
+
+  <!-- Chart Area -->
+  <rect x="60" y="90" width="560" height="280" rx="8" fill="#0d2137" stroke="#1a4a6e" stroke-width="1"/>
+
+  <!-- Y-axis labels -->
+  <text x="75" y="110" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">3.5度</text>
+  <text x="75" y="155" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">3.0度</text>
+  <text x="75" y="200" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">2.5度</text>
+  <text x="75" y="245" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">2.0度</text>
+  <text x="75" y="290" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">1.5度</text>
+  <text x="75" y="335" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">1.0度</text>
+  <text x="75" y="355" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">0.5度</text>
+
+  <!-- Grid lines -->
+  <line x1="110" y1="110" x2="600" y2="110" stroke="#1a3a5c" stroke-width="0.5"/>
+  <line x1="110" y1="155" x2="600" y2="155" stroke="#1a3a5c" stroke-width="0.5"/>
+  <line x1="110" y1="200" x2="600" y2="200" stroke="#1a3a5c" stroke-width="0.5"/>
+  <line x1="110" y1="245" x2="600" y2="245" stroke="#1a3a5c" stroke-width="0.5"/>
+  <line x1="110" y1="290" x2="600" y2="290" stroke="#1a3a5c" stroke-width="0.5"/>
+  <line x1="110" y1="335" x2="600" y2="335" stroke="#1a3a5c" stroke-width="0.5"/>
+
+  <!-- Bar 1: Traditional (3.0度) -->
+  <rect x="140" y="110" width="100" height="245" rx="4" fill="url(#bar1)" opacity="0.8"/>
+  <text x="190" y="365" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#e8f4f8">传统非调光</text>
+  <text x="190" y="380" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" fill="#e74c3c">3.00度/天</text>
+  <text x="190" y="395" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">年: 1095度</text>
+  <text x="190" y="100" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="bold" fill="#e74c3c">¥1314/年</text>
+
+  <!-- Bar 2: Smart but bad driver (2.5度) -->
+  <rect x="290" y="155" width="100" height="200" rx="4" fill="url(#bar2)" opacity="0.8"/>
+  <text x="340" y="365" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#e8f4f8">智能+劣质驱动</text>
+  <text x="340" y="380" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" fill="#f39c12">2.50度/天</text>
+  <text x="340" y="395" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">年: 913度</text>
+  <text x="340" y="145" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="bold" fill="#f39c12">¥1095/年</text>
+
+  <!-- Bar 3: Zigbee 8档 (1.75度) -->
+  <rect x="440" y="245" width="100" height="110" rx="4" fill="url(#bar3)" opacity="0.8"/>
+  <text x="490" y="365" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#e8f4f8">涂鸦8档调光</text>
+  <text x="490" y="380" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" fill="#7ec27e">1.75度/天</text>
+  <text x="490" y="395" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">年: 639度</text>
+  <text x="490" y="235" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" font-weight="bold" fill="#7ec27e">¥767/年</text>
+
+  <!-- Arrows & Savings -->
+  <line x1="240" y1="130" x2="290" y2="130" stroke="#7f8c8d" stroke-width="1" stroke-dasharray="4"/>
+  <text x="265" y="125" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">省17%</text>
+
+  <line x1="390" y1="180" x2="440" y2="180" stroke="#7f8c8d" stroke-width="1" stroke-dasharray="4"/>
+  <text x="415" y="175" text-anchor="middle" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">省30%</text>
+
+  <line x1="240" y1="130" x2="440" y2="200" stroke="#7ec27e" stroke-width="1.5" stroke-dasharray="6"/>
+  <text x="350" y="150" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" font-weight="bold" fill="#7ec27e">总省42%</text>
+
+  <!-- Bottom Summary -->
+  <rect x="60" y="390" width="560" height="40" rx="6" fill="#0f2d4a" stroke="#7ec27e" stroke-width="1"/>
+  <text x="340" y="405" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" fill="#e8f4f8">
+    20盏 × 12W × 10h/天 | 商业电价 ¥1.2/度
+  </text>
+  <text x="340" y="422" text-anchor="middle" font-family="'Consolas', monospace" font-size="12" font-weight="bold" fill="#7ec27e">
+    年省 ¥547 | 驱动差价约¥400 | 不到一年回本
+  </text>
+</svg>

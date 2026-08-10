@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="barGood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7ec27e"/>
+      <stop offset="100%" stop-color="#5b8c5a"/>
+    </linearGradient>
+    <linearGradient id="barBad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="420" fill="url(#bgGrad)"/>
+  <rect width="680" height="420" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="340" y="45" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="bold" fill="#e8f4f8" filter="url(#glow)">
+    驱动效率对比：每一度电的归属
+  </text>
+  <text x="340" y="68" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="12" fill="#7ec27e">
+    80% 效率 vs 92% 效率 —— 100盏筒灯 × 10小时/天 × 365天
+  </text>
+
+  <!-- Terminal Window Frame -->
+  <rect x="60" y="90" width="280" height="280" rx="8" fill="#0d2137" stroke="#1a4a6e" stroke-width="1.5"/>
+  <rect x="60" y="90" width="280" height="28" rx="8" fill="#1a3a5c"/>
+  <rect x="60" y="110" width="280" height="8" fill="#1a3a5c"/>
+  <circle cx="78" cy="104" r="5" fill="#e74c3c"/>
+  <circle cx="95" cy="104" r="5" fill="#f39c12"/>
+  <circle cx="112" cy="104" r="5" fill="#27ae60"/>
+  <text x="72" y="126" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#7ec27e">80% 效率驱动</text>
+
+  <!-- Bad Driver Content -->
+  <text x="72" y="150" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#e8f4f8">输入: 100W</text>
+  <text x="72" y="170" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#e8f4f8">有用输出: 80W (光)</text>
+  <text x="72" y="190" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#e74c3c">热损耗: 20W (浪费)</text>
+  <text x="72" y="210" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#e8f4f8">年耗电: 18,250 度</text>
+  <text x="72" y="230" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#e74c3c">年电费: ¥21,900</text>
+
+  <!-- Bad Bar -->
+  <rect x="72" y="250" width="200" height="20" rx="4" fill="url(#barBad)" opacity="0.8"/>
+  <text x="82" y="264" font-family="'Consolas', monospace" font-size="10" fill="#fff">80% ████████░░</text>
+
+  <text x="72" y="300" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">问题: 20W持续发热</text>
+  <text x="72" y="316" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">驱动寿命缩短，光衰加速</text>
+  <text x="72" y="332" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">额外空调负担</text>
+
+  <!-- Good Terminal -->
+  <rect x="340" y="90" width="280" height="280" rx="8" fill="#0d2137" stroke="#1a4a6e" stroke-width="1.5"/>
+  <rect x="340" y="90" width="280" height="28" rx="8" fill="#1a3a5c"/>
+  <rect x="340" y="110" width="280" height="8" fill="#1a3a5c"/>
+  <circle cx="358" cy="104" r="5" fill="#e74c3c"/>
+  <circle cx="375" cy="104" r="5" fill="#f39c12"/>
+  <circle cx="392" cy="104" r="5" fill="#27ae60"/>
+  <text x="352" y="126" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#7ec27e">92% 效率驱动</text>
+
+  <!-- Good Driver Content -->
+  <text x="352" y="150" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#e8f4f8">输入: 100W</text>
+  <text x="352" y="170" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#e8f4f8">有用输出: 92W (光)</text>
+  <text x="352" y="190" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#7ec27e">热损耗: 8W (极少浪费)</text>
+  <text x="352" y="210" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#e8f4f8">年耗电: 15,860 度</text>
+  <text x="352" y="230" font-family="'Consolas', 'Courier New', monospace" font-size="10" fill="#7ec27e">年电费: ¥19,032</text>
+
+  <!-- Good Bar -->
+  <rect x="352" y="250" width="230" height="20" rx="4" fill="url(#barGood)" opacity="0.8"/>
+  <text x="362" y="264" font-family="'Consolas', monospace" font-size="10" fill="#fff">92% ██████████░</text>
+
+  <text x="352" y="300" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">优势: 仅8W发热</text>
+  <text x="352" y="316" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">驱动寿命延长30%+</text>
+  <text x="352" y="332" font-family="'Consolas', monospace" font-size="9" fill="#7f8c8d">年省 ¥2,868</text>
+
+  <!-- Bottom Summary -->
+  <rect x="60" y="385" width="560" height="28" rx="6" fill="#0f2d4a" stroke="#7ec27e" stroke-width="1"/>
+  <text x="340" y="403" text-anchor="middle" font-family="'Consolas', monospace" font-size="11" fill="#7ec27e">
+    年节省: 2,390度电 | ¥2,868 | 碳减排约 2.4 吨CO₂
+  </text>
+</svg>

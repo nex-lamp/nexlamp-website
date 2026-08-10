@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a3a5c" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="rowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f2d4a"/>
+      <stop offset="100%" stop-color="#0d2137"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="520" fill="url(#bgGrad)"/>
+  <rect width="680" height="520" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="340" y="40" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="bold" fill="#e8f4f8" filter="url(#glow)">
+    2026年节能驱动电源选型 — 5个硬指标
+  </text>
+  <text x="340" y="62" text-anchor="middle" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="12" fill="#7ec27e">
+    达标 = 及格，优秀 = 真正省钱
+  </text>
+
+  <!-- Table Header -->
+  <rect x="40" y="85" width="600" height="36" rx="6" fill="#1a4a6e"/>
+  <text x="75" y="108" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="bold" fill="#e8f4f8">指标</text>
+  <text x="220" y="108" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="bold" fill="#e8f4f8">合格线</text>
+  <text x="340" y="108" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="bold" fill="#e8f4f8">优秀线</text>
+  <text x="480" y="108" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="bold" fill="#e8f4f8">为什么重要</text>
+
+  <!-- Row 1: 转换效率 -->
+  <rect x="40" y="125" width="600" height="68" rx="4" fill="url(#rowGrad)" stroke="#1a3a5c" stroke-width="0.5"/>
+  <text x="55" y="148" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold" fill="#e8f4f8">⚡ 转换效率</text>
+  <text x="55" y="168" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#95a5a6">电能→光能的转化率</text>
+  <text x="220" y="155" font-family="'Consolas', monospace" font-size="12" fill="#f39c12">≥85%</text>
+  <text x="340" y="155" font-family="'Consolas', monospace" font-size="12" fill="#7ec27e">≥92%</text>
+  <text x="480" y="148" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#bdc3c7">直接决定每度电</text>
+  <text x="480" y="163" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#bdc3c7">变成多少光</text>
+  <text x="480" y="178" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#7ec27e">差7% = 年差¥3000+</text>
+
+  <!-- Row 2: 待机功耗 -->
+  <rect x="40" y="197" width="600" height="68" rx="4" fill="url(#rowGrad)" stroke="#1a3a5c" stroke-width="0.5"/>
+  <text x="55" y="220" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold" fill="#e8f4f8">🌙 待机功耗</text>
+  <text x="55" y="240" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#95a5a6">关灯后维持在线的功耗</text>
+  <text x="220" y="227" font-family="'Consolas', monospace" font-size="12" fill="#f39c12">≤0.5W</text>
+  <text x="340" y="227" font-family="'Consolas', monospace" font-size="12" fill="#7ec27e">≤0.2W</text>
+  <text x="480" y="220" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#bdc3c7">24小时在线的</text>
+  <text x="480" y="235" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#bdc3c7">隐形消耗</text>
+  <text x="480" y="250" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#7ec27e">50盏灯差263度/年</text>
+
+  <!-- Row 3: 功率因数PF -->
+  <rect x="40" y="269" width="600" height="68" rx="4" fill="url(#rowGrad)" stroke="#1a3a5c" stroke-width="0.5"/>
+  <text x="55" y="292" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold" fill="#e8f4f8">📊 功率因数PF</text>
+  <text x="55" y="312" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#95a5a6">电网电能利用效率</text>
+  <text x="220" y="299" font-family="'Consolas', monospace" font-size="12" fill="#f39c12">≥0.9</text>
+  <text x="340" y="299" font-family="'Consolas', monospace" font-size="12" fill="#7ec27e">≥0.95</text>
+  <text x="480" y="292" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#bdc3c7">电网传输效率+</text>
+  <text x="480" y="307" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#bdc3c7">避免无功电费罚款</text>
+  <text x="480" y="322" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#7ec27e">PF&lt;0.9可能罚款</text>
+
+  <!-- Row 4: 调光精度 -->
+  <rect x="40" y="341" width="600" height="68" rx="4" fill="url(#rowGrad)" stroke="#1a3a5c" stroke-width="0.5"/>
+  <text x="55" y="364" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold" fill="#e8f4f8">🎚️ 调光精度</text>
+  <text x="55" y="384" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#95a5a6">亮度与功耗的对应精度</text>
+  <text x="220" y="371" font-family="'Consolas', monospace" font-size="12" fill="#f39c12">8档</text>
+  <text x="340" y="371" font-family="'Consolas', monospace" font-size="12" fill="#7ec27e">1%-100%无级</text>
+  <text x="480" y="364" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#bdc3c7">按需供光不浪费</text>
+  <text x="480" y="379" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#bdc3c7">50%指令≠50%功耗</text>
+  <text x="480" y="394" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#7ec27e">PWM/DALI优先</text>
+
+  <!-- Row 5: 协议兼容性 -->
+  <rect x="40" y="413" width="600" height="68" rx="4" fill="url(#rowGrad)" stroke="#1a3a5c" stroke-width="0.5"/>
+  <text x="55" y="436" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold" fill="#e8f4f8">🔗 协议兼容性</text>
+  <text x="55" y="456" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#95a5a6">支持的智能控制协议</text>
+  <text x="220" y="443" font-family="'Consolas', monospace" font-size="12" fill="#f39c12">单一协议</text>
+  <text x="340" y="443" font-family="'Consolas', monospace" font-size="12" fill="#7ec27e">Zigbee+Matter+DALI</text>
+  <text x="480" y="436" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#bdc3c7">避免重复投资</text>
+  <text x="480" y="451" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#bdc3c7">保护未来升级</text>
+  <text x="480" y="466" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" fill="#7ec27e">Matter 2026年普及</text>
+
+  <!-- Bottom CTA -->
+  <rect x="40" y="490" width="600" height="22" rx="4" fill="#0f2d4a" stroke="#7ec27e" stroke-width="1"/>
+  <text x="340" y="506" text-anchor="middle" font-family="'Consolas', monospace" font-size="10" fill="#7ec27e">
+    Nexlamp 涂鸦Zigbee 8档调光驱动 | 92%效率 | 0.2W待机 | 0.95PF | 1%无级调光
+  </text>
+</svg>
