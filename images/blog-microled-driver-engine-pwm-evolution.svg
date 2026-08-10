@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#061634"/>
+    </linearGradient>
+    <linearGradient id="barGrad1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#ff8c00"/>
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#00ffff"/>
+      <stop offset="100%" stop-color="#0099ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+
+  <!-- 网格 -->
+  <g stroke="#1a2547" stroke-width="0.5" opacity="0.4">
+    <line x1="100" y1="180" x2="1100" y2="180"/>
+    <line x1="100" y1="280" x2="1100" y2="280"/>
+    <line x1="100" y1="380" x2="1100" y2="380"/>
+    <line x1="100" y1="480" x2="1100" y2="480"/>
+    <line x1="100" y1="580" x2="1100" y2="580"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="600" y="60" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#ffffff">PWM 频率 从"看不见"到"扫得动"</text>
+  <text x="600" y="95" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" fill="#7ec8e3">MicroLED 让调光从 kHz 时代进入 100 kHz+ 时代</text>
+
+  <!-- 时间轴 -->
+  <line x1="100" y1="630" x2="1100" y2="630" stroke="#7ec8e3" stroke-width="1.5"/>
+  <polygon points="1100,630 1090,625 1090,635" fill="#7ec8e3"/>
+
+  <!-- Y轴标签 -->
+  <text x="80" y="250" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="14" fill="#7ec8e3" transform="rotate(-90 80 250)">频率 (log Hz)</text>
+
+  <!-- 5个柱子 -->
+  <g>
+    <!-- 1. 200Hz -->
+    <g transform="translate(180,0)">
+      <rect x="-40" y="490" width="80" height="140" fill="url(#barGrad1)" filter="url(#glow)" rx="4"/>
+      <text x="0" y="475" text-anchor="middle" font-family="'Courier New',monospace" font-size="20" font-weight="700" fill="#ffd700">200 Hz</text>
+      <text x="0" y="660" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="14" fill="#a9b3c9">家用白炽灯</text>
+      <text x="0" y="678" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="11" fill="#7ec8e3">视觉可感</text>
+    </g>
+
+    <!-- 2. 1kHz -->
+    <g transform="translate(360,0)">
+      <rect x="-40" y="380" width="80" height="250" fill="url(#barGrad1)" filter="url(#glow)" rx="4"/>
+      <text x="0" y="365" text-anchor="middle" font-family="'Courier New',monospace" font-size="20" font-weight="700" fill="#ffd700">1 kHz</text>
+      <text x="0" y="660" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="14" fill="#a9b3c9">传统LED调光</text>
+      <text x="0" y="678" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="11" fill="#7ec8e3">入门级智能灯</text>
+    </g>
+
+    <!-- 3. 4kHz -->
+    <g transform="translate(540,0)">
+      <rect x="-40" y="280" width="80" height="350" fill="url(#barGrad1)" filter="url(#glow)" rx="4"/>
+      <text x="0" y="265" text-anchor="middle" font-family="'Courier New',monospace" font-size="20" font-weight="700" fill="#ffd700">4 kHz</text>
+      <text x="0" y="660" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="14" fill="#a9b3c9">高频调光</text>
+      <text x="0" y="678" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="11" fill="#7ec8e3">频闪深度-40%</text>
+    </g>
+
+    <!-- 4. 48kHz (音视频) -->
+    <g transform="translate(720,0)">
+      <rect x="-40" y="190" width="80" height="440" fill="url(#barGrad2)" filter="url(#glow)" rx="4"/>
+      <text x="0" y="175" text-anchor="middle" font-family="'Courier New',monospace" font-size="20" font-weight="700" fill="#00ffff">48 kHz</text>
+      <text x="0" y="660" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="14" fill="#a9b3c9">音视频LED</text>
+      <text x="0" y="678" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="11" fill="#7ec8e3">节律调光</text>
+    </g>
+
+    <!-- 5. 7680Hz -->
+    <g transform="translate(900,0)">
+      <rect x="-40" y="120" width="80" height="510" fill="url(#barGrad2)" filter="url(#glow)" rx="4"/>
+      <text x="0" y="105" text-anchor="middle" font-family="'Courier New',monospace" font-size="20" font-weight="700" fill="#00ffff">7680 Hz</text>
+      <text x="0" y="660" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="14" fill="#a9b3c9">MicroLED 扫描</text>
+      <text x="0" y="678" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="11" fill="#7ec8e3">横店影棚实测</text>
+    </g>
+  </g>
+
+  <!-- 分隔线 -->
+  <g transform="translate(450,0)">
+    <line x1="0" y1="160" x2="0" y2="630" stroke="#7ec8e3" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+    <rect x="-70" y="130" width="140" height="26" rx="13" fill="#061634" stroke="#7ec8e3" stroke-width="1"/>
+    <text x="0" y="148" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" font-weight="700" fill="#7ec8e3">微秒级拐点</text>
+  </g>
+
+  <!-- 关键洞察 -->
+  <g transform="translate(0,690)">
+    <rect x="100" y="0" width="1000" height="48" rx="8" fill="#0a1530" stroke="#1a2547" stroke-width="1"/>
+    <text x="600" y="22" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="14" font-weight="700" fill="#ffffff">PWM 提升 100 倍意味着什么？</text>
+    <text x="600" y="42" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" fill="#a9b3c9">电流上升时间从 5μs 缩短到 50ns  ·  死区控制 100ns  ·  LED 视觉响应实现"像素级灰阶"</text>
+  </g>
+</svg>

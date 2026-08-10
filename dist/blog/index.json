@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -20,7 +20,70 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "MicroLED量产拐点——当灯珠小到10微米，LED驱动电源该学“纳秒级切通道”了",
+    "slug": "microled-driver-engine-evolution",
+    "date": "2026-08-10",
+    "category": "技术解析",
+    "description": "8月4日华灿光电披露MicroLED梯度化量产，觉远创智5亿布局光引擎。MicroLED量产拐点，正在重写LED驱动电源的技术规范——从8通道走到4800通道、从1kHz走到7680Hz、从±3%精度走到±0.5%。",
+    "cover": "images/blog-microled-driver-engine-cover.png",
+    "excerpt": "8月初华灿光电答投资者问披露MicroLED梯度化量产——这不是面板行业的事，而是LED驱动电源行业的下一个技术拐点。"
+  },
+  {
+    "title": "2026年智能照明节能真相：驱动电源选对了，电费能省30%吗？",
+    "slug": "smart-lighting-energy-saving-driver-selection-guide-2026",
+    "date": "2026-08-10",
+    "category": "技术指南",
+    "description": "2026年智能照明节能驱动电源选型指南，从调光精度、待机功耗、PF值、转换效率、协议支持5个维度，教你选对驱动电源实现30%电费节省。",
+    "cover": "images/blog-smart-lighting-energy-saving-2026-cover.png",
+    "excerpt": "装了智能灯，电费反而涨了？真相是：智能≠自动省电。驱动电源才是决定节能天花板的核心。本文从5个硬指标拆解，告诉你怎么选驱动才能真的省30%电费。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-08-10",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-08-10",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-08-10",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
+    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
+    "date": "2026-08-10",
+    "category": "技术文章",
+    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
+    "cover": "",
+    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-08-10",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -43,51 +106,6 @@
     "description": "解析2026年太阳能LED照明与离网照明市场趋势，提供太阳能LED驱动电源选型指南，包括MPPT匹配、恒流精度、防雷防水等关键指标。",
     "cover": "images/blog-solar-led-driver-off-grid-2026-cover.png",
     "excerpt": "2026年全球太阳能照明系统市场规模突破136亿美元，离网场景占比近七成。本文从太阳能LED系统的'光储驱控'四大模块出发，讲清楚驱动电源在离网场景里的特殊要求、选型5指标和3个常见翻车点。"
-  },
-  {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-08-07",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-07",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-08-07",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
-    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
-    "date": "2026-08-07",
-    "category": "技术文章",
-    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
-    "cover": "",
-    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-07",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "一电多谱：AI+植物照明为什么在逼LED驱动电源进化成\\\"多通道光谱引擎\\\"",

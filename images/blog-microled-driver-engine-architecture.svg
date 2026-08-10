@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#061634"/>
+    </linearGradient>
+    <linearGradient id="tradGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3a4a6a" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#3a4a6a" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="newGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ffff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0099ff" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+
+  <!-- 网格 -->
+  <g stroke="#1a2547" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="160" x2="1200" y2="160"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="440" x2="1200" y2="440"/>
+    <line x1="0" y1="580" x2="1200" y2="580"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="600" y="60" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#ffffff">从分布式电源到"光引擎"模组</text>
+  <text x="600" y="95" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" fill="#7ec8e3">MicroLED 时代 LED 驱动的物理形态重构</text>
+
+  <!-- 左侧：传统架构 -->
+  <g transform="translate(80,160)">
+    <rect x="0" y="0" width="500" height="450" rx="12" fill="#0a1530" stroke="#3a4a6a" stroke-width="2"/>
+    <text x="250" y="40" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#ffd700">传统 LED 灯具架构</text>
+    <text x="250" y="62" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="13" fill="#a9b3c9">分布多部件  ·  板上供电  ·  8 通道</text>
+
+    <!-- 220V交流输入 -->
+    <rect x="20" y="100" width="100" height="40" rx="4" fill="url(#tradGrad)" stroke="#7ec8e3" stroke-width="1"/>
+    <text x="70" y="125" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="#ffffff">220V AC</text>
+
+    <line x1="120" y1="120" x2="200" y2="120" stroke="#7ec8e3" stroke-width="2" marker-end="url(#arrowT)"/>
+    <defs>
+      <marker id="arrowT" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+        <polygon points="0 0, 6 3, 0 6" fill="#7ec8e3"/>
+      </marker>
+    </defs>
+
+    <!-- LED驱动电源 -->
+    <rect x="200" y="95" width="120" height="50" rx="4" fill="url(#tradGrad)" stroke="#7ec8e3" stroke-width="1"/>
+    <text x="260" y="115" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff">LED 驱动电源</text>
+    <text x="260" y="132" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#a9b3c9">PFC+反激 · ±3%</text>
+
+    <line x1="320" y1="120" x2="400" y2="120" stroke="#7ec8e3" stroke-width="2" marker-end="url(#arrowT)"/>
+
+    <!-- 多颗LED -->
+    <rect x="400" y="95" width="80" height="50" rx="4" fill="url(#tradGrad)" stroke="#7ec8e3" stroke-width="1"/>
+    <text x="440" y="115" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="13" fill="#ffffff">多颗LED</text>
+    <text x="440" y="132" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#a9b3c9">0.2-1 mm</text>
+
+    <!-- 控制器 -->
+    <rect x="20" y="220" width="120" height="50" rx="4" fill="url(#tradGrad)" stroke="#7ec8e3" stroke-width="1"/>
+    <text x="80" y="240" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="13" fill="#ffffff">控制器</text>
+    <text x="80" y="257" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#a9b3c9">1-10V / DALI</text>
+
+    <!-- 调光器 -->
+    <rect x="200" y="220" width="120" height="50" rx="4" fill="url(#tradGrad)" stroke="#7ec8e3" stroke-width="1"/>
+    <text x="260" y="240" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="13" fill="#ffffff">调光器</text>
+    <text x="260" y="257" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#a9b3c9">PWM ≤ 1kHz</text>
+
+    <!-- 传感器 -->
+    <rect x="380" y="220" width="100" height="50" rx="4" fill="url(#tradGrad)" stroke="#7ec8e3" stroke-width="1"/>
+    <text x="430" y="240" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="13" fill="#ffffff">传感器</text>
+    <text x="430" y="257" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#a9b3c9">光感+人体</text>
+
+    <!-- 痛点标签 -->
+    <g transform="translate(20,310)">
+      <text x="0" y="0" font-family="'PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#ff6666">5 大痛点</text>
+      <text x="0" y="22" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">· 4-5 个分离器件  · 接线繁  · 体积大</text>
+      <text x="0" y="40" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">· 协议分散  · 调试复杂</text>
+      <text x="0" y="58" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">· 电流精度 ±3% 难达标</text>
+      <text x="0" y="76" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">· PWM 上限 1kHz 频闪</text>
+      <text x="0" y="94" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">· 不支持像素级</text>
+    </g>
+  </g>
+
+  <!-- 中间箭头 -->
+  <g transform="translate(605,375)">
+    <line x1="0" y1="0" x2="-30" y2="0" stroke="#00ffff" stroke-width="3"/>
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#00ffff" stroke-width="3"/>
+    <polygon points="30,0 22,-5 22,5" fill="#00ffff"/>
+    <polygon points="0,0 -8,-5 -8,5" fill="#00ffff"/>
+    <text x="0" y="-15" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="14" font-weight="700" fill="#00ffff">重构</text>
+    <text x="0" y="30" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">觉远创智 5 亿布局</text>
+  </g>
+
+  <!-- 右侧：MicroLED光引擎 -->
+  <g transform="translate(620,160)">
+    <rect x="0" y="0" width="500" height="450" rx="12" fill="#0a1530" stroke="#00ffff" stroke-width="2" filter="url(#glow)"/>
+    <text x="250" y="40" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#00ffff">MicroLED 光引擎模组</text>
+    <text x="250" y="62" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="13" fill="#a9b3c9">集成化  ·  芯片级  ·  4800 通道</text>
+
+    <!-- 单个光引擎模组 -->
+    <rect x="100" y="95" width="300" height="180" rx="10" fill="#001a3a" stroke="#00ffff" stroke-width="2"/>
+
+    <!-- MicroLED矩阵 -->
+    <g transform="translate(120,115)">
+      <rect x="0" y="0" width="260" height="50" rx="3" fill="#000a1a"/>
+      <g fill="#00ffff">
+        <rect x="6" y="6" width="3" height="3"/>
+        <rect x="12" y="6" width="3" height="3"/>
+        <rect x="18" y="6" width="3" height="3"/>
+        <rect x="24" y="6" width="3" height="3"/>
+        <rect x="30" y="6" width="3" height="3"/>
+        <rect x="36" y="6" width="3" height="3"/>
+        <rect x="42" y="6" width="3" height="3"/>
+        <rect x="48" y="6" width="3" height="3"/>
+        <rect x="54" y="6" width="3" height="3"/>
+        <rect x="60" y="6" width="3" height="3"/>
+        <rect x="66" y="6" width="3" height="3"/>
+        <rect x="72" y="6" width="3" height="3"/>
+        <rect x="78" y="6" width="3" height="3"/>
+        <rect x="84" y="6" width="3" height="3"/>
+        <rect x="90" y="6" width="3" height="3"/>
+        <rect x="96" y="6" width="3" height="3"/>
+        <rect x="102" y="6" width="3" height="3"/>
+        <rect x="108" y="6" width="3" height="3"/>
+        <rect x="114" y="6" width="3" height="3"/>
+        <rect x="120" y="6" width="3" height="3"/>
+        <rect x="126" y="6" width="3" height="3"/>
+        <rect x="132" y="6" width="3" height="3"/>
+        <rect x="138" y="6" width="3" height="3"/>
+        <rect x="144" y="6" width="3" height="3"/>
+        <rect x="150" y="6" width="3" height="3"/>
+        <rect x="156" y="6" width="3" height="3"/>
+        <rect x="162" y="6" width="3" height="3"/>
+        <rect x="168" y="6" width="3" height="3"/>
+        <rect x="174" y="6" width="3" height="3"/>
+        <rect x="180" y="6" width="3" height="3"/>
+        <rect x="186" y="6" width="3" height="3"/>
+        <rect x="192" y="6" width="3" height="3"/>
+        <rect x="198" y="6" width="3" height="3"/>
+        <rect x="204" y="6" width="3" height="3"/>
+        <rect x="210" y="6" width="3" height="3"/>
+        <rect x="216" y="6" width="3" height="3"/>
+        <rect x="222" y="6" width="3" height="3"/>
+        <rect x="228" y="6" width="3" height="3"/>
+        <rect x="234" y="6" width="3" height="3"/>
+        <rect x="240" y="6" width="3" height="3"/>
+        <rect x="246" y="6" width="3" height="3"/>
+        <rect x="252" y="6" width="3" height="3"/>
+      </g>
+      <g fill="#ff3366" opacity="0.7">
+        <rect x="14" y="14" width="3" height="3"/>
+        <rect x="32" y="14" width="3" height="3"/>
+        <rect x="50" y="14" width="3" height="3"/>
+        <rect x="68" y="14" width="3" height="3"/>
+        <rect x="86" y="14" width="3" height="3"/>
+      </g>
+      <g fill="#33ff66" opacity="0.7">
+        <rect x="22" y="22" width="3" height="3"/>
+        <rect x="58" y="22" width="3" height="3"/>
+        <rect x="76" y="22" width="3" height="3"/>
+        <rect x="94" y="22" width="3" height="3"/>
+      </g>
+      <text x="0" y="62" font-family="'Courier New',monospace" font-size="9" fill="#7ec8e3">MicroLED matrix · 10μm pixel</text>
+    </g>
+
+    <!-- 驱动IC -->
+    <rect x="135" y="200" width="100" height="40" rx="3" fill="#00ffff" opacity="0.3"/>
+    <text x="185" y="217" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" font-weight="700" fill="#00ffff">专用驱动IC</text>
+    <text x="185" y="232" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#ffffff">48 ch · ±0.5%</text>
+
+    <!-- 控制IC -->
+    <rect x="265" y="200" width="100" height="40" rx="3" fill="#00ffff" opacity="0.3"/>
+    <text x="315" y="217" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" font-weight="700" fill="#00ffff">控制IC</text>
+    <text x="315" y="232" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#ffffff">PWM 7680Hz</text>
+
+    <!-- 优势标签 -->
+    <g transform="translate(20,310)">
+      <text x="0" y="0" font-family="'PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#00ffff">4 大升级</text>
+      <text x="0" y="22" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">· 驱动+控制+光学 集于一颗模组</text>
+      <text x="0" y="40" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">· 板级布线简化 80%</text>
+      <text x="0" y="58" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">· 电流精度跃至 ±0.5%</text>
+      <text x="0" y="76" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">· 支持像素级灰阶</text>
+      <text x="0" y="94" font-family="'PingFang SC',sans-serif" font-size="11" fill="#a9b3c9">· 月产 10 万套 可量产</text>
+    </g>
+  </g>
+
+  <!-- 底部 -->
+  <g transform="translate(0,650)">
+    <rect x="100" y="0" width="1000" height="60" rx="10" fill="#0a1530" stroke="#00ffff" stroke-width="1"/>
+    <text x="600" y="24" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#ffffff">MicroLED 让"驱动电源"这个老品类</text>
+    <text x="600" y="46" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="14" fill="#7ec8e3">有了一个新名字：光引擎（Light Engine）—— 它不再是独立部件，而是芯片级集成</text>
+  </g>
+</svg>
