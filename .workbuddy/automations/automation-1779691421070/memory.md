@@ -1,5 +1,19 @@
 # Automation Memory
 
+## 2026-08-10: MicroLED量产拐点——当灯珠小到10微米，LED驱动电源该学"纳秒级切通道"了
+- 选题: 多源搜索确认MicroLED量产拐点是8月初最热差异化方向（华灿300323 8月4日答投资者问披露梯度化量产；觉远创智5亿布局光引擎月产10万套；瑞典Polar Light 7月30日完成首批试产；科技三会7月8日半导体照明核心攻关）
+- 切入角度: 从LED驱动厂商视角看MicroLED量产带来的三重新挑战——通道密度(8→48-4800路)、PWM频率(1kHz→4-7680Hz)、恒流精度(±3%→±0.5%)；"光引擎"作为芯片级集成新形态
+- 之前17篇博客均未覆盖芯片/微显示层面，全新差异化方向
+- 文章: posts/2026-08-10-microled-driver-engine-evolution.md (~1500字) + 3 SVG（规格对比/PWM演进/光引擎架构） + AI封面（裁剪法去水印）
+- 网站: ✅ node build.js 第133篇 + sitemap.xml 137 URLs + git commit 6819271 + git push origin main成功（f32db42..6819271）
+- Dev.to: ✅ ID: 4357001, https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/microled-production-inflection-why-led-drivers-need-to-learn-nanosecond-channel-switching-27en
+  - 流程: POST→temp-slug→PUT published:true→正式slug-27en（再次复现temp-slug现象，标题含 "Nanosecond Channel Switching"带引号触发）
+- LinkedIn: ⚠️ CDP Chrome未运行（Connection refused），跳过
+- 今日头条微头条: ✅ success=true, action=published, url=https://mp.toutiao.com/profile_v4/weitoutiao
+  - 文本: ~200字口语化（刷新闻→华灿8月4日MicroLED量产良率90%→觉远创智5亿光引擎→光引擎就是把驱动芯片控制芯片镜片集成一个模组→PWM 1kHz→7kHz，电流精度±3%→±0.5%→同行两种反应→先修桨）
+  - 带封面图: --images 参数指定 blog-microled-driver-engine-cover.png
+- 踩坑: **build.js cover路径必须以images/开头**（否则图片路径不对，未加 ../../ 前缀）；Dev.to temp-slug 第三次复现，已总结触发规律
+
 ## 2026-08-05: 钙钛矿LED量产倒计时——材料革命对LED驱动电源的影响
 - 选题: 多源搜索确认钙钛矿LED/透明荧光陶瓷LED材料突破是8月初最新热点（中科大Nature论文6.11 + 前瞻产业研究院8.4报告）
 - 之前14篇均未覆盖LED芯片/材料层面的技术革命，是全新差异化方向
