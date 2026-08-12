@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g stroke="#1a2a45" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="60" x2="800" y2="60"/>
+    <line x1="80" y1="60" x2="80" y2="480"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#4AA3E8" font-family="Arial" font-size="20" font-weight="bold" filter="url(#glow)">从"没人管"到"有红线" — GB 30255-2026 新国标时间线</text>
+
+  <!-- Timeline line -->
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#4AA3E8" stroke-width="3" opacity="0.5"/>
+
+  <!-- Node 1: 2019 -->
+  <circle cx="200" cy="200" r="14" fill="#1a2a45" stroke="#F39C12" stroke-width="2.5"/>
+  <circle cx="200" cy="200" r="6" fill="#F39C12"/>
+  <line x1="200" y1="200" x2="200" y2="120" stroke="#F39C12" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <g filter="url(#shadow)">
+    <rect x="90" y="55" width="220" height="65" rx="8" fill="#1a2a45" stroke="#F39C12" stroke-width="1.5"/>
+    <text x="200" y="78" text-anchor="middle" fill="#F39C12" font-family="Arial" font-size="14" font-weight="bold">2019 旧版国标</text>
+    <text x="200" y="98" text-anchor="middle" fill="#ccddff" font-family="Arial" font-size="11">只管普通LED灯能效</text>
+    <text x="200" y="113" text-anchor="middle" fill="#889999" font-family="Arial" font-size="10">智能灯待机？没人管</text>
+  </g>
+
+  <!-- Node 2: 2026.02 -->
+  <circle cx="400" cy="200" r="14" fill="#1a2a45" stroke="#2478C2" stroke-width="2.5"/>
+  <circle cx="400" cy="200" r="6" fill="#2478C2"/>
+  <line x1="400" y1="200" x2="400" y2="120" stroke="#2478C2" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <g filter="url(#shadow)">
+    <rect x="290" y="55" width="220" height="65" rx="8" fill="#1a2a45" stroke="#2478C2" stroke-width="1.5"/>
+    <text x="400" y="78" text-anchor="middle" fill="#4AA3E8" font-family="Arial" font-size="14" font-weight="bold">2026.02.27 新国标发布</text>
+    <text x="400" y="98" text-anchor="middle" fill="#ccddff" font-family="Arial" font-size="11">首次设待机功耗红线</text>
+    <text x="400" y="113" text-anchor="middle" fill="#889999" font-family="Arial" font-size="10">≤ 1.5W · 智能灯全覆盖</text>
+  </g>
+
+  <!-- Node 3: 2026 NOW -->
+  <circle cx="530" cy="200" r="10" fill="#2ECC71" opacity="0.8"/>
+  <text x="530" y="240" text-anchor="middle" fill="#2ECC71" font-family="Arial" font-size="11">现在</text>
+  <text x="530" y="255" text-anchor="middle" fill="#889999" font-family="Arial" font-size="10">过渡期</text>
+
+  <!-- Node 4: 2027.09 -->
+  <circle cx="680" cy="200" r="14" fill="#1a2a45" stroke="#E74C3C" stroke-width="2.5"/>
+  <circle cx="680" cy="200" r="6" fill="#E74C3C"/>
+  <line x1="680" y1="200" x2="680" y2="120" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <g filter="url(#shadow)">
+    <rect x="570" y="55" width="220" height="65" rx="8" fill="#1a2a45" stroke="#E74C3C" stroke-width="1.5"/>
+    <text x="680" y="78" text-anchor="middle" fill="#E74C3C" font-family="Arial" font-size="14" font-weight="bold">2027.09.01 强制执行</text>
+    <text x="680" y="98" text-anchor="middle" fill="#ccddff" font-family="Arial" font-size="11">不符标准产品强制淘汰</text>
+    <text x="680" y="113" text-anchor="middle" fill="#889999" font-family="Arial" font-size="10">射灯/灯管/筒灯全覆盖</text>
+  </g>
+
+  <!-- Bottom: Key Changes Table -->
+  <g transform="translate(60, 300)">
+    <!-- Table header -->
+    <rect x="0" y="0" width="680" height="38" rx="6" fill="#1a2a45" stroke="#2478C2" stroke-width="1"/>
+    <text x="120" y="25" text-anchor="middle" fill="#4AA3E8" font-family="Arial" font-size="13" font-weight="bold">变化项</text>
+    <text x="340" y="25" text-anchor="middle" fill="#4AA3E8" font-family="Arial" font-size="13" font-weight="bold">旧标准 (2019)</text>
+    <text x="560" y="25" text-anchor="middle" fill="#4AA3E8" font-family="Arial" font-size="13" font-weight="bold">新标准 (2026)</text>
+
+    <!-- Row 1 -->
+    <rect x="0" y="38" width="680" height="38" rx="0" fill="#0d1f3c" opacity="0.7"/>
+    <text x="120" y="63" text-anchor="middle" fill="#ccddff" font-family="Arial" font-size="12">适用范围</text>
+    <text x="340" y="63" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="11">仅普通LED灯泡</text>
+    <text x="560" y="63" text-anchor="middle" fill="#2ECC71" font-family="Arial" font-size="11">智能灯+射灯+灯管全部纳入</text>
+
+    <!-- Row 2 -->
+    <rect x="0" y="76" width="680" height="38" rx="0" fill="#0a1628" opacity="0.7"/>
+    <text x="120" y="101" text-anchor="middle" fill="#ccddff" font-family="Arial" font-size="12">待机功耗</text>
+    <text x="340" y="101" text-anchor="middle" fill="#E74C3C" font-family="Arial" font-size="11">无限制</text>
+    <text x="560" y="101" text-anchor="middle" fill="#2ECC71" font-family="Arial" font-size="11">≤ 1.5W (首次强制)</text>
+
+    <!-- Row 3 -->
+    <rect x="0" y="114" width="680" height="38" rx="0" fill="#0d1f3c" opacity="0.7"/>
+    <text x="120" y="139" text-anchor="middle" fill="#ccddff" font-family="Arial" font-size="12">能效评价</text>
+    <text x="340" y="139" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="11">仅点亮工况能效</text>
+    <text x="560" y="139" text-anchor="middle" fill="#2ECC71" font-family="Arial" font-size="11">全生命周期综合能效</text>
+
+    <!-- Row 4 -->
+    <rect x="0" y="152" width="680" height="38" rx="6" fill="#0a1628" opacity="0.7"/>
+    <text x="120" y="177" text-anchor="middle" fill="#ccddff" font-family="Arial" font-size="12">违规后果</text>
+    <text x="340" y="177" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="11">-</text>
+    <text x="560" y="177" text-anchor="middle" fill="#F39C12" font-family="Arial" font-size="11">禁止生产/销售/进口</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="780" y="490" text-anchor="end" fill="#445566" font-family="Arial" font-size="10">来源: GB 30255-2026 · 国家标准化管理委员会</text>
+</svg>
