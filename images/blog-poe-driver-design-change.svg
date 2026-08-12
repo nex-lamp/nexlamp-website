@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0088cc"/>
+    </linearGradient>
+    <linearGradient id="warn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#cc4400"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2a44" stroke-width="0.5" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <text x="400" y="38" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="18" font-weight="bold" filter="url(#glow)">LED Driver Design: AC-DC vs PoE DC-DC</text>
+
+  <!-- Traditional AC-DC -->
+  <rect x="25" y="60" width="365" height="420" rx="8" fill="#0d1a2d" stroke="#ff6b35" stroke-width="1"/>
+  <text x="207" y="88" text-anchor="middle" fill="#ff6b35" font-family="monospace" font-size="14" font-weight="bold" filter="url(#glow)">Traditional AC-DC LED Driver</text>
+
+  <!-- AC-DC blocks -->
+  <rect x="55" y="105" width="305" height="42" rx="4" fill="#1a2a44" stroke="#ff6b35" stroke-width="0.8"/>
+  <text x="207" y="122" text-anchor="middle" fill="#ffaa66" font-family="monospace" font-size="12">&#x26A1; EMI Filter</text>
+  <text x="207" y="138" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">Common-mode choke, X/Y caps</text>
+
+  <text x="207" y="158" text-anchor="middle" fill="#667788" font-family="monospace" font-size="18">&#x2193;</text>
+
+  <rect x="55" y="168" width="305" height="42" rx="4" fill="#1a2a44" stroke="#ff6b35" stroke-width="0.8"/>
+  <text x="207" y="185" text-anchor="middle" fill="#ffaa66" font-family="monospace" font-size="12">&#x26A1; Bridge Rectifier</text>
+  <text x="207" y="201" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">AC to pulsating DC, 4 diodes</text>
+
+  <text x="207" y="221" text-anchor="middle" fill="#667788" font-family="monospace" font-size="18">&#x2193;</text>
+
+  <rect x="55" y="231" width="305" height="42" rx="4" fill="#1a2a44" stroke="#ff6b35" stroke-width="0.8"/>
+  <text x="207" y="248" text-anchor="middle" fill="#ffaa66" font-family="monospace" font-size="12">&#x26A1; PFC Boost</text>
+  <text x="207" y="264" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">400V bus, big inductor &amp; electrolytic cap</text>
+
+  <text x="207" y="284" text-anchor="middle" fill="#667788" font-family="monospace" font-size="18">&#x2193;</text>
+
+  <rect x="55" y="294" width="305" height="42" rx="4" fill="#1a2a44" stroke="#ff6b35" stroke-width="0.8"/>
+  <text x="207" y="311" text-anchor="middle" fill="#ffaa66" font-family="monospace" font-size="12">&#x26A1; DC-DC Constant Current</text>
+  <text x="207" y="327" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">Flyback/LLC, opto-coupler feedback</text>
+
+  <text x="207" y="347" text-anchor="middle" fill="#667788" font-family="monospace" font-size="18">&#x2193;</text>
+
+  <rect x="55" y="357" width="305" height="40" rx="4" fill="#1a2a44" stroke="#ff6b35" stroke-width="0.8"/>
+  <text x="207" y="374" text-anchor="middle" fill="#ffaa66" font-family="monospace" font-size="12">&#x1F4A1; LED Load</text>
+  <text x="207" y="390" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">Constant current output</text>
+
+  <!-- AC-DC stats -->
+  <rect x="55" y="410" width="305" height="55" rx="4" fill="#1a1520"/>
+  <text x="207" y="428" text-anchor="middle" fill="#ff6b35" font-family="monospace" font-size="10">&#x26A0; Key Components</text>
+  <text x="207" y="445" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">400V electrolytics, PFC inductor, transformer, opto-coupler</text>
+  <text x="207" y="460" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">Input: 220V AC &amp;#124; PF &gt; 0.9 &amp;#124; 4 stages</text>
+
+  <!-- Divider -->
+  <line x1="400" y1="60" x2="400" y2="460" stroke="#1a2a44" stroke-width="2"/>
+
+  <!-- PoE DC-DC -->
+  <rect x="410" y="60" width="365" height="420" rx="8" fill="#0d2a1d" stroke="#00d4ff" stroke-width="1"/>
+  <text x="592" y="88" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="14" font-weight="bold" filter="url(#glow)">PoE DC-DC Smart Driver</text>
+
+  <!-- PoE blocks -->
+  <rect x="440" y="105" width="305" height="42" rx="4" fill="#1a2a44" stroke="#00d4ff" stroke-width="0.8"/>
+  <text x="592" y="122" text-anchor="middle" fill="#66ccff" font-family="monospace" font-size="12">&#x1F4E1; PoE PD Controller</text>
+  <text x="592" y="138" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">802.3bt handshake, 48V DC input</text>
+
+  <text x="592" y="158" text-anchor="middle" fill="#445566" font-family="monospace" font-size="18">&#x2193;</text>
+
+  <rect x="440" y="168" width="305" height="42" rx="4" fill="#1a2a44" stroke="#00d4ff" stroke-width="0.8"/>
+  <text x="592" y="185" text-anchor="middle" fill="#66ccff" font-family="monospace" font-size="12">&#x26A1; DC-DC Converter</text>
+  <text x="592" y="201" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">48V to LED Vf, 500kHz-1MHz, GaN FET</text>
+
+  <text x="592" y="221" text-anchor="middle" fill="#445566" font-family="monospace" font-size="18">&#x2193;</text>
+
+  <!-- Parallel blocks -->
+  <line x1="592" y1="231" x2="592" y2="240" stroke="#445566" stroke-width="1"/>
+  <line x1="592" y1="240" x2="500" y2="240" stroke="#445566" stroke-width="1"/>
+  <line x1="592" y1="240" x2="684" y2="240" stroke="#445566" stroke-width="1"/>
+
+  <rect x="440" y="248" width="140" height="50" rx="4" fill="#1a2a44" stroke="#00ff88" stroke-width="0.8"/>
+  <text x="510" y="267" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="11">&#x1F4E1; Ethernet PHY</text>
+  <text x="510" y="284" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">10/100M, TCP/IP stack</text>
+
+  <rect x="600" y="248" width="145" height="50" rx="4" fill="#1a2a44" stroke="#00ff88" stroke-width="0.8"/>
+  <text x="672" y="267" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="11">&#x1F4E1; MCU + Sensors</text>
+  <text x="672" y="284" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">Cortex-M4, lux/temp/PIR</text>
+
+  <text x="592" y="318" text-anchor="middle" fill="#445566" font-family="monospace" font-size="18">&#x2193;</text>
+
+  <rect x="440" y="328" width="305" height="40" rx="4" fill="#1a2a44" stroke="#00d4ff" stroke-width="0.8"/>
+  <text x="592" y="345" text-anchor="middle" fill="#66ccff" font-family="monospace" font-size="12">&#x1F4A1; LED Load</text>
+  <text x="592" y="361" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">Constant current output, per-fixture IP address</text>
+
+  <!-- PoE stats -->
+  <rect x="440" y="380" width="305" height="86" rx="4" fill="#0d2a1d"/>
+  <text x="592" y="398" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="10">&#x2705; Key Advantages</text>
+  <text x="592" y="416" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">Only 2 stages (PD + DC-DC) vs 4 stages traditional</text>
+  <text x="592" y="432" text-anchor="middle" fill="#8899aa" font-family="monospace" font-size="9">No 400V caps, no PFC, no opto-coupler needed</text>
+  <text x="592" y="448" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="9">Input: 48V DC low-voltage safe &amp;#124; Built-in networking</text>
+  <text x="592" y="462" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="9">BOM cost &amp;#8595;20-30%, but R&amp;D requires network engineers</text>
+
+</svg>
