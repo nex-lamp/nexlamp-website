@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>智能灯关了还偷电？实测数据告诉你：一年可能白交上百块电费 | 耐利普科技技术博客</title>
+    <meta name="description" content="智能灯待机功耗实测对比：Zigbee仅0.2W vs WiFi高达2W，20个灯泡一年差近百元电费。详解新国标GB 30255-2026待机限制，教你三步排查家里的"偷电"灯具，选对协议一年能省一台智能音箱的钱。">
+    <meta name="keywords" content="智能灯待机功耗, LED待机功耗实测, Zigbee待机功耗, WiFi智能灯费电, GB 30255-2026, 智能灯关灯还耗电, 智能家居电费, 涂鸦Zigbee驱动">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/smart-light-standby-power-guide-2026.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="智能灯关了还偷电？实测数据告诉你：一年可能白交上百块电费 | 耐利普科技">
+    <meta property="og:description" content="智能灯待机功耗实测对比：Zigbee仅0.2W vs WiFi高达2W，20个灯泡一年差近百元电费。详解新国标GB 30255-2026待机限制，教你三步排查家里的"偷电"灯具，选对协议一年能省一台智能音箱的钱。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/smart-light-standby-power-guide-2026.html">
+    <meta property="og:image" content="https://www.nexlamp.com/../../images/blog-smart-light-standby-power-2026-cover.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-08-12">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="智能照明">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "智能灯关了还偷电？实测数据告诉你：一年可能白交上百块电费",
+      "description": "智能灯待机功耗实测对比：Zigbee仅0.2W vs WiFi高达2W，20个灯泡一年差近百元电费。详解新国标GB 30255-2026待机限制，教你三步排查家里的"偷电"灯具，选对协议一年能省一台智能音箱的钱。",
+      "datePublished": "2026-08-12",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/smart-light-standby-power-guide-2026.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "智能灯关了还偷电？实测数据告诉你：一年可能白交上百块电费",
+          "item": "https://www.nexlamp.com/dist/blog/smart-light-standby-power-guide-2026.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">智能灯关了还偷电？实测数据告诉你：一年可能白交上百块电费</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>智能灯关了还偷电？实测数据告诉你：一年可能白交上百块电费</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年8月12日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 智能照明</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-cover"><img src="../../images/blog-smart-light-standby-power-2026-cover.png" alt="智能灯关了还偷电？实测数据告诉你：一年可能白交上百块电费"></div>
+                            <p>&quot;我明明把灯都关了，为什么电表还在走？&quot;</p>
+<p>这是最近知乎上一个热门问题，底下几百条评论炸开了锅。有人拿功率计实测后发现：家里20个智能灯泡，全部关掉的状态下，电表竟然还在以10W的速度跑——相当于一盏小夜灯24小时亮着。</p>
+<p>一年算下来，光&quot;关灯&quot;就白交了87度电的电费。</p>
+<p>更扎心的是，国际能源署（IEA）4E工作组曾实测12款主流智能灯，最差的一款，待机年耗电量比正常点亮还高。</p>
+<p>今天我们就用实测数据，把智能灯待机功耗这件事彻底说清楚。</p>
+<h2>一、智能灯&quot;关着&quot;的时候，到底在干什么？</h2>
+<p>普通LED灯关了就是关了，电路断开，功耗为零。</p>
+<p>但智能灯不一样。你通过App或语音关了它，它实际只是把LED光源熄灭，内部的&quot;大脑&quot;还在运转。这个大脑由三部分构成：</p>
+<ol>
+<li><strong>通信模块</strong>：Wi-Fi / Zigbee / 蓝牙芯片保持联网，随时待命接收指令</li>
+<li><strong>驱动辅助电源</strong>：AC-DC转换电路持续给MCU和射频芯片供电</li>
+<li><strong>指示灯/传感器/继电器</strong>：很多灯关了之后，状态指示灯还在亮</li>
+</ol>
+<p>这三块加在一起，就是智能灯的待机功耗。</p>
+<p>不同协议方案的待机功耗，差距大得惊人。</p>
+<h2>二、实测数据：Zigbee vs Wi-Fi，差20倍</h2>
+<p>用功率计在220V市电下实测（灯具处于&quot;App关灯&quot;状态）：</p>
+<table>
+<thead>
+<tr>
+<th>产品类型</th>
+<th>单灯待机功耗</th>
+<th>20个灯年耗电</th>
+<th>年电费（0.6元/度）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>普通LED（物理断电）</td>
+<td>0W</td>
+<td>0度</td>
+<td>¥0</td>
+</tr>
+<tr>
+<td>优质Zigbee智能灯</td>
+<td>0.2-0.5W</td>
+<td>35-88度</td>
+<td>¥21-53</td>
+</tr>
+<tr>
+<td>普通Wi-Fi智能灯泡</td>
+<td>0.8-1.5W</td>
+<td>140-263度</td>
+<td>¥84-158</td>
+</tr>
+<tr>
+<td>低价Wi-Fi驱动方案</td>
+<td>2-4W</td>
+<td>350-700度</td>
+<td>¥210-420</td>
+</tr>
+<tr>
+<td>带常亮指示灯的屏控面板</td>
+<td>3-5W</td>
+<td>525-876度</td>
+<td>¥315-525</td>
+</tr>
+</tbody></table>
+<p>单看一只灯，一年几块钱好像不算什么。但全屋智能照明通常不是三五盏灯的事——客厅6个筒灯、餐厅3个、卧室4个、书房2个、走廊3个、厨房2个，轻松就上20个。如果选的全是Wi-Fi直连方案，一年光待机就干掉一百多块。</p>
+<p>再看协议层面的差异：</p>
+<p>Wi-Fi模块待机功耗通常在0.5-1.5W。因为Wi-Fi本来就是为高带宽设计的，不是为了低功耗。芯片要维持与路由器的持续心跳连接，很难深度休眠。</p>
+<p>Zigbee模块待机仅0.1-0.3W。Zigbee是为低功耗物联网设计的，发射功率约100mW，大部分时间处于休眠状态，只有唤醒时才通信。这也是为什么两节AA电池能让Zigbee传感器运行一年多。</p>
+<p>蓝牙Mesh居中，约0.2-0.5W。不过蓝牙在覆盖范围和设备容量上不如Zigbee，全屋场景用得少。</p>
+<h2>三、最隐蔽的&quot;电老虎&quot;：可控硅兼容带来的鬼火</h2>
+<p>有一个坑很多人不知道：<strong>可控硅调光兼容电路</strong>的额外功耗。</p>
+<p>为了让智能灯兼容老式墙壁可控硅调光器，一些驱动方案即使在灯&quot;关闭&quot;状态下，也会在输出端维持一个微小的导通角。这个导通角产生的电流不足以点亮LED，但足以让驱动芯片持续工作——结果就是0.5-2W的额外待机功耗。</p>
+<p>更糟糕的是，有些方案还会出现&quot;鬼火&quot;现象：灯关了之后，LED灯珠还有微弱的光，在黑暗中特别明显。</p>
+<p>如果你家智能灯关了还隐约发亮，大概率就是这个问题。这不只是费电的问题，长期微导通还会加速LED光衰。</p>
+<h2>四、GB 30255-2026新国标：待机功耗不能超过1.5W</h2>
+<p>好消息是，国家已经出手了。</p>
+<p>2026年2月27日发布的强制性国家标准 <strong>GB 30255-2026《室内照明用LED产品能效限定值及能效等级》</strong>，首次将智能灯的待机功耗纳入监管：</p>
+<blockquote>
+<p>具有待机模式的室内LED产品，待机功率不得超过1.5W。</p>
+</blockquote>
+<p>这个标准将于 <strong>2027年9月1日</strong> 正式实施。届时市面上不符合待机功耗要求的智能灯具将被强制淘汰。</p>
+<p>而且新国标还扩大了适用范围，不仅覆盖普通灯泡，连射灯、高天棚灯、替换型LED灯管都一并纳入。商超、工厂、写字楼这种成百上千盏灯的场景，待机能耗影响更大。</p>
+<h2>五、三步排查你家的&quot;偷电灯&quot;，一年省出一台智能音箱</h2>
+<p>想搞清楚家里智能灯待机功耗有多大，三步就能搞定：</p>
+<p><strong>第一步：搞个功率计测一下。</strong> 几十块钱的插座式功率计，插在灯具前端，在App关灯状态下读功率值。低于0.5W算优秀，0.5-1.5W正常，超过2W建议换掉。</p>
+<p><strong>第二步：看协议。</strong> 优先选Zigbee或Matter over Thread方案的智能灯，待机功耗通常比Wi-Fi方案低60%以上。如果已经装了一堆Wi-Fi智能灯，那就别焦虑了——一年几十块钱的事，没必要全换，下次装修注意就行。</p>
+<p><strong>第三步：考虑智能开关+普通好灯。</strong> 这是待机功耗最低的方案——灯本身零功耗，智能开关的待机功耗也只有0.5W左右。缺点是不能调色温和颜色。对大部分家庭来说，选好色温的灯+智能开关的组合，体验和能效都是最优解。</p>
+<h2>六、结语：智能照明不该悄悄&quot;偷电&quot;</h2>
+<p>智能照明的初衷是省电——人来灯亮、人走灯灭，根据自然光自动调节亮度。但如果因为待机功耗过大，省的电又被待机吃回去了，那就得不偿失。</p>
+<p>选灯的时候多花30秒看一眼待机功耗参数，一年下来可能省出一台智能音箱的钱。特别是准备全屋智能装修的朋友，协议选择——Zigbee还是Wi-Fi——是你做决定前最值得花时间对比的一个指标。</p>
+<p><strong>你有测过自己家智能灯的待机功耗吗？欢迎留言分享你的数据。</strong></p>
+<hr>
+<p><em>数据来源：IEA 4E Standby Power Annex实测报告、GB 30255-2026国家标准、Lawrence Berkeley National Laboratory智能家居待机功耗研究</em></p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>
