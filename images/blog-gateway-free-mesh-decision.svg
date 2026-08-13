@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f38"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg3)"/>
+  <!-- grid -->
+  <g opacity="0.08" stroke="#3b82f6" stroke-width="0.5">
+    <line x1="0" y1="50" x2="680" y2="50"/><line x1="0" y1="100" x2="680" y2="100"/>
+    <line x1="0" y1="150" x2="680" y2="150"/><line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="250" x2="680" y2="250"/><line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="0" y1="350" x2="680" y2="350"/>
+  </g>
+  <!-- Title -->
+  <text x="340" y="30" text-anchor="middle" fill="#e2e8f0" font-family="monospace" font-size="16" font-weight="bold">无网关智能灯选购决策流程</text>
+  <!-- Start node -->
+  <rect x="250" y="50" width="180" height="36" rx="18" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2" filter="url(#glow3)"/>
+  <text x="340" y="73" text-anchor="middle" fill="#93c5fd" font-family="monospace" font-size="12" font-weight="bold">开始选购智能灯</text>
+  <!-- Arrow down -->
+  <line x1="340" y1="86" x2="340" y2="105" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="335,105 345,105 340,112" fill="#3b82f6"/>
+  <!-- Decision 1 -->
+  <polygon points="340,115 450,155 340,195 230,155" fill="#0d2541" stroke="#f59e0b" stroke-width="2"/>
+  <text x="340" y="150" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="11">设备数量</text>
+  <text x="340" y="165" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="11">超过8个？</text>
+  <!-- Left: No -->
+  <line x1="230" y1="155" x2="130" y2="155" stroke="#22c55e" stroke-width="2"/>
+  <text x="180" y="148" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="10">否</text>
+  <rect x="40" y="135" width="90" height="40" rx="6" fill="#0d3320" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="85" y="153" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="10">WiFi 方案</text>
+  <text x="85" y="167" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="9">可用但注意</text>
+  <text x="85" y="190" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">待机功耗偏高</text>
+  <!-- Right: Yes -->
+  <line x1="450" y1="155" x2="550" y2="155" stroke="#3b82f6" stroke-width="2"/>
+  <text x="500" y="148" text-anchor="middle" fill="#3b82f6" font-family="monospace" font-size="10">是</text>
+  <!-- Decision 2 -->
+  <polygon points="610,200 660,230 610,260 560,230" fill="#0d2541" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="610" y="225" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="9">有</text>
+  <text x="610" y="237" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="9">Border</text>
+  <text x="610" y="249" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="9">Router?</text>
+  <!-- Arrow from Yes to Decision 2 -->
+  <line x1="550" y1="155" x2="610" y2="200" stroke="#3b82f6" stroke-width="2"/>
+  <!-- Left from Decision 2: No -->
+  <line x1="560" y1="230" x2="460" y2="230" stroke="#a855f7" stroke-width="2"/>
+  <text x="510" y="223" text-anchor="middle" fill="#a855f7" font-family="monospace" font-size="10">否</text>
+  <!-- Decision 3 -->
+  <polygon points="400,230 460,260 400,290 340,260" fill="#0d2541" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="255" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="9">户型</text>
+  <text x="400" y="267" text-anchor="middle" fill="#fbbf24" font-family="monospace" font-size="9">面积?</text>
+  <!-- Arrow to Zigbee -->
+  <line x1="340" y1="260" x2="260" y2="260" stroke="#3b82f6" stroke-width="2"/>
+  <text x="300" y="253" text-anchor="middle" fill="#3b82f6" font-family="monospace" font-size="10">大户型</text>
+  <rect x="80" y="240" width="180" height="40" rx="6" fill="#0d2541" stroke="#3b82f6" stroke-width="2" filter="url(#glow3)"/>
+  <text x="170" y="258" text-anchor="middle" fill="#93c5fd" font-family="monospace" font-size="11" font-weight="bold">Zigbee Mesh</text>
+  <text x="170" y="272" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">涂鸦 / Nexlamp 推荐</text>
+  <!-- Arrow to BLE -->
+  <line x1="400" y1="290" x2="400" y2="310" stroke="#a855f7" stroke-width="2"/>
+  <text x="415" y="302" fill="#a855f7" font-family="monospace" font-size="10">小户型</text>
+  <rect x="310" y="310" width="180" height="40" rx="6" fill="#1a0d2e" stroke="#a855f7" stroke-width="2" filter="url(#glow3)"/>
+  <text x="400" y="328" text-anchor="middle" fill="#d8b4fe" font-family="monospace" font-size="11" font-weight="bold">蓝牙 Mesh</text>
+  <text x="400" y="342" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">Casambi / 涂鸦BLE</text>
+  <!-- Right from Decision 2: Yes -->
+  <line x1="610" y1="260" x2="610" y2="310" stroke="#22c55e" stroke-width="2"/>
+  <text x="625" y="285" fill="#22c55e" font-family="monospace" font-size="10">是</text>
+  <rect x="520" y="310" width="180" height="40" rx="6" fill="#0d3320" stroke="#22c55e" stroke-width="2" filter="url(#glow3)"/>
+  <text x="610" y="328" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="11" font-weight="bold">Matter / Thread</text>
+  <text x="610" y="342" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">跨平台未来布局</text>
+  <!-- Bottom checklist -->
+  <line x1="40" y1="365" x2="640" y2="365" stroke="#334155" stroke-width="0.5"/>
+  <text x="340" y="383" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">验证清单: 任意设备可当协调器 | 断网场景联动可用 | 蓝牙直连 | 待机&lt;1W</text>
+</svg>

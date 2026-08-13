@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f38"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="400" fill="url(#bg)"/>
+  <!-- grid -->
+  <g opacity="0.08" stroke="#3b82f6" stroke-width="0.5">
+    <line x1="0" y1="50" x2="680" y2="50"/><line x1="0" y1="100" x2="680" y2="100"/>
+    <line x1="0" y1="150" x2="680" y2="150"/><line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="250" x2="680" y2="250"/><line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="0" y1="350" x2="680" y2="350"/>
+    <line x1="68" y1="0" x2="68" y2="400"/><line x1="136" y1="0" x2="136" y2="400"/>
+    <line x1="204" y1="0" x2="204" y2="400"/><line x1="272" y1="0" x2="272" y2="400"/>
+    <line x1="340" y1="0" x2="340" y2="400"/><line x1="408" y1="0" x2="408" y2="400"/>
+    <line x1="476" y1="0" x2="476" y2="400"/><line x1="544" y1="0" x2="544" y2="400"/>
+    <line x1="612" y1="0" x2="612" y2="400"/>
+  </g>
+  <!-- Title -->
+  <text x="340" y="35" text-anchor="middle" fill="#e2e8f0" font-family="monospace" font-size="16" font-weight="bold">WiFi 星型拓扑 vs Mesh 网状拓扑</text>
+  <!-- Left: WiFi Star -->
+  <text x="170" y="70" text-anchor="middle" fill="#ef4444" font-family="monospace" font-size="13" font-weight="bold">WiFi 星型 (依赖路由器)</text>
+  <!-- Router center -->
+  <circle cx="170" cy="200" r="28" fill="#1e3a5f" stroke="#ef4444" stroke-width="2" filter="url(#glow)"/>
+  <text x="170" y="205" text-anchor="middle" fill="#ef4444" font-family="monospace" font-size="10">Router</text>
+  <!-- WiFi bulbs around router -->
+  <g>
+    <circle cx="90" cy="120" r="18" fill="#1e3a5f" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="90" y="124" text-anchor="middle" fill="#fca5a5" font-family="monospace" font-size="8">灯1</text>
+    <line x1="100" y1="134" x2="150" y2="180" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+  <g>
+    <circle cx="250" cy="120" r="18" fill="#1e3a5f" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="250" y="124" text-anchor="middle" fill="#fca5a5" font-family="monospace" font-size="8">灯2</text>
+    <line x1="240" y1="134" x2="190" y2="180" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+  <g>
+    <circle cx="90" cy="280" r="18" fill="#1e3a5f" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="90" y="284" text-anchor="middle" fill="#fca5a5" font-family="monospace" font-size="8">灯3</text>
+    <line x1="100" y1="266" x2="150" y2="220" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+  <g>
+    <circle cx="250" cy="280" r="18" fill="#1e3a5f" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="250" y="284" text-anchor="middle" fill="#fca5a5" font-family="monospace" font-size="8">灯4</text>
+    <line x1="240" y1="266" x2="190" y2="220" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+  <!-- X mark on router -->
+  <text x="170" y="340" text-anchor="middle" fill="#ef4444" font-family="monospace" font-size="11">断网 = 全部失联</text>
+  <!-- Divider -->
+  <line x1="340" y1="60" x2="340" y2="360" stroke="#334155" stroke-width="1" stroke-dasharray="5,5"/>
+  <!-- Right: Mesh -->
+  <text x="510" y="70" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="13" font-weight="bold">Mesh 网状 (自组网)</text>
+  <!-- Mesh nodes -->
+  <circle cx="430" cy="130" r="18" fill="#0d3320" stroke="#22c55e" stroke-width="2" filter="url(#glow)"/>
+  <text x="430" y="134" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="8">灯A</text>
+  <circle cx="510" cy="100" r="18" fill="#0d3320" stroke="#22c55e" stroke-width="2"/>
+  <text x="510" y="104" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="8">灯B</text>
+  <circle cx="590" cy="130" r="18" fill="#0d3320" stroke="#22c55e" stroke-width="2"/>
+  <text x="590" y="134" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="8">灯C</text>
+  <circle cx="430" cy="270" r="18" fill="#0d3320" stroke="#22c55e" stroke-width="2"/>
+  <text x="430" y="274" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="8">灯D</text>
+  <circle cx="510" cy="300" r="18" fill="#0d3320" stroke="#22c55e" stroke-width="2" filter="url(#glow)"/>
+  <text x="510" y="304" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="8">灯E</text>
+  <circle cx="590" cy="270" r="18" fill="#0d3320" stroke="#22c55e" stroke-width="2"/>
+  <text x="590" y="274" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="8">灯F</text>
+  <!-- Mesh connections -->
+  <line x1="448" y1="130" x2="492" y2="108" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="528" y1="108" x2="572" y2="130" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="430" y1="148" x2="430" y2="252" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="510" y1="118" x2="510" y2="282" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="590" y1="148" x2="590" y2="252" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="448" y1="270" x2="492" y2="292" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="528" y1="292" x2="572" y2="270" stroke="#22c55e" stroke-width="1.5"/>
+  <line x1="448" y1="135" x2="572" y2="265" stroke="#22c55e" stroke-width="0.8" opacity="0.4"/>
+  <line x1="572" y1="135" x2="448" y2="265" stroke="#22c55e" stroke-width="0.8" opacity="0.4"/>
+  <text x="510" y="340" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="11">断网 = 自动改道，照常工作</text>
+</svg>

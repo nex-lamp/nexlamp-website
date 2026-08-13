@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -20,7 +20,61 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-12",
+    "date": "2026-08-13",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "智能灯断网变智障？2026年无网关自组网技术让全屋照明告别网络依赖",
+    "slug": "gateway-free-mesh-smart-lighting-2026",
+    "date": "2026-08-13",
+    "category": "智能照明",
+    "description": "智能灯断网就失灵是2026年最大痛点。无网关自组网技术如何解决？Zigbee Mesh vs WiFi深度对比，附选购避坑指南。",
+    "cover": "images/blog-gateway-free-mesh-cover.png",
+    "excerpt": "路由器死机，全屋灯变摆设？2026年无网关自组网技术正在终结这个噩梦。本文从技术原理到选购指南，说透为什么你的智能灯不该依赖云端。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-08-13",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-08-13",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-08-13",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
+    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
+    "date": "2026-08-13",
+    "category": "技术文章",
+    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
+    "cover": "",
+    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-08-13",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -45,49 +99,13 @@
     "excerpt": "你家的智能灯关了还在跑电表吗？不同协议待机功耗差20倍，Wi-Fi灯泡一年白交几十块电费。本文用实测数据拆解待机功耗的来源、对比Zigbee/Wi-Fi/蓝牙真实差异，并结合GB 30255-2026新国标教你如何选灯不踩坑。"
   },
   {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "title": "PoE Lighting: Why LED Drivers Are Becoming IT Devices When Ethernet Cables Replace Power Wires",
+    "slug": "poe-lighting-driver-it-revolution",
     "date": "2026-08-12",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-12",
-    "category": "技术文章",
+    "category": "Smart Lighting",
     "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-08-12",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
-    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
-    "date": "2026-08-12",
-    "category": "技术文章",
-    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
-    "cover": "",
-    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-12",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
+    "cover": "images/blog-poe-lighting-driver-cover.png",
+    "excerpt": "PoE lighting market hit $2.1B in 2026 with 12.6% CAGR. IEEE 802.3bt pushes single-port output to 90W. When Ethernet carries both power and data, LED drivers transform from power converters into networked nodes."
   },
   {
     "title": "MicroLED量产拐点——当灯珠小到10微米，LED驱动电源该学“纳秒级切通道”了",
