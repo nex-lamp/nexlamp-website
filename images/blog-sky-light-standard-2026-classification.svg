@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="100%">
+  <rect width="680" height="400" fill="#0a1628" rx="12"/>
+
+  <g stroke="#1a2d4a" stroke-width="0.5">
+    <line x1="40" y1="70" x2="640" y2="70"/>
+    <line x1="40" y1="120" x2="640" y2="120"/>
+    <line x1="40" y1="170" x2="640" y2="170"/>
+    <line x1="40" y1="220" x2="640" y2="220"/>
+    <line x1="40" y1="270" x2="640" y2="270"/>
+    <line x1="40" y1="320" x2="640" y2="320"/>
+    <line x1="140" y1="60" x2="140" y2="360"/>
+    <line x1="240" y1="60" x2="240" y2="360"/>
+    <line x1="340" y1="60" x2="340" y2="360"/>
+    <line x1="440" y1="60" x2="440" y2="360"/>
+    <line x1="540" y1="60" x2="540" y2="360"/>
+  </g>
+
+  <text x="340" y="34" fill="#e8f0f8" font-size="15" font-family="monospace" font-weight="600" text-anchor="middle">T/CALI 0403-2026 天空灯分级要求</text>
+
+  <rect x="50" y="62" width="180" height="290" fill="#0f1f35" stroke="#3a6a9a" stroke-width="1.5" rx="10"/>
+  <rect x="60" y="76" width="160" height="34" fill="#14304f" rx="6"/>
+  <text x="140" y="93" fill="#7ab8ff" font-size="14" font-family="monospace" font-weight="600" text-anchor="middle" dominant-baseline="central">A 类</text>
+  <circle cx="140" cy="150" r="30" fill="#1a4a8a"/>
+  <circle cx="140" cy="150" r="20" fill="#2a6ac0"/>
+  <circle cx="152" cy="140" r="7" fill="#ffe9a8"/>
+  <text x="140" y="200" fill="#c8d8e8" font-size="11" font-family="monospace" text-anchor="middle">天空光模块须呈现</text>
+  <text x="140" y="218" fill="#c8d8e8" font-size="11" font-family="monospace" text-anchor="middle">深邃天空蓝</text>
+  <text x="140" y="252" fill="#7a9aba" font-size="10" font-family="monospace" text-anchor="middle">色品坐标须达标</text>
+  <text x="140" y="270" fill="#7a9aba" font-size="10" font-family="monospace" text-anchor="middle">双模块独立规定</text>
+  <rect x="66" y="292" width="148" height="46" fill="#0d1b2e" stroke="#2a4a6a" stroke-width="0.5" rx="6"/>
+  <text x="140" y="309" fill="#8ab4cc" font-size="10" font-family="monospace" text-anchor="middle">典型场景</text>
+  <text x="140" y="326" fill="#a8c4dc" font-size="11" font-family="monospace" text-anchor="middle">高端住宅 / 样板间</text>
+
+  <rect x="250" y="62" width="180" height="290" fill="#0f1f35" stroke="#3a9a8a" stroke-width="1.5" rx="10"/>
+  <rect x="260" y="76" width="160" height="34" fill="#14403a" rx="6"/>
+  <text x="340" y="93" fill="#6bd8c0" font-size="14" font-family="monospace" font-weight="600" text-anchor="middle" dominant-baseline="central">B 类</text>
+  <circle cx="340" cy="150" r="30" fill="#1a4a7a"/>
+  <circle cx="340" cy="150" r="20" fill="#2a6aa8"/>
+  <circle cx="352" cy="140" r="7" fill="#ffe9a8"/>
+  <text x="340" y="200" fill="#c8d8e8" font-size="11" font-family="monospace" text-anchor="middle">天空光模块须呈现</text>
+  <text x="340" y="218" fill="#c8d8e8" font-size="11" font-family="monospace" text-anchor="middle">深邃天空蓝</text>
+  <text x="340" y="252" fill="#7a9aba" font-size="10" font-family="monospace" text-anchor="middle">色品坐标须达标</text>
+  <text x="340" y="270" fill="#7a9aba" font-size="10" font-family="monospace" text-anchor="middle">双模块独立规定</text>
+  <rect x="266" y="292" width="148" height="46" fill="#0d1b2e" stroke="#2a4a6a" stroke-width="0.5" rx="6"/>
+  <text x="340" y="309" fill="#8ab4cc" font-size="10" font-family="monospace" text-anchor="middle">典型场景</text>
+  <text x="340" y="326" fill="#a8c4dc" font-size="11" font-family="monospace" text-anchor="middle">商业空间 / 办公</text>
+
+  <rect x="450" y="62" width="180" height="290" fill="#0f1f35" stroke="#daa520" stroke-width="2" rx="10"/>
+  <rect x="460" y="76" width="160" height="34" fill="#3a2f0a" rx="6"/>
+  <text x="540" y="93" fill="#ffd76b" font-size="14" font-family="monospace" font-weight="600" text-anchor="middle" dominant-baseline="central">C 类</text>
+  <rect x="480" y="128" width="120" height="14" rx="7" fill="#8a3a1a"/>
+  <rect x="480" y="128" width="80" height="14" rx="7" fill="#c07030"/>
+  <rect x="480" y="128" width="40" height="14" rx="7" fill="#e8c060"/>
+  <rect x="480" y="150" width="120" height="14" rx="7" fill="#1a3a8a"/>
+  <rect x="480" y="150" width="80" height="14" rx="7" fill="#2a5ac0"/>
+  <rect x="480" y="150" width="40" height="14" rx="7" fill="#60a0e8"/>
+  <text x="490" y="182" fill="#ffb86b" font-size="11" font-family="monospace">1800K</text>
+  <text x="600" y="182" fill="#6bb8ff" font-size="11" font-family="monospace" text-anchor="end">12000K</text>
+  <text x="540" y="212" fill="#ffd76b" font-size="12" font-family="monospace" font-weight="600" text-anchor="middle">连续可调</text>
+  <text x="540" y="252" fill="#7a9aba" font-size="10" font-family="monospace" text-anchor="middle">跨度 10200K</text>
+  <text x="540" y="270" fill="#7a9aba" font-size="10" font-family="monospace" text-anchor="middle">须多通道混光</text>
+  <rect x="466" y="292" width="148" height="46" fill="#0d1b2e" stroke="#2a4a6a" stroke-width="0.5" rx="6"/>
+  <text x="540" y="309" fill="#8ab4cc" font-size="10" font-family="monospace" text-anchor="middle">典型场景</text>
+  <text x="540" y="326" fill="#a8c4dc" font-size="11" font-family="monospace" text-anchor="middle">全场景 / AI控制</text>
+
+  <text x="340" y="378" fill="#5a7a9a" font-size="11" font-family="monospace" text-anchor="middle">控制方式另分三档：普通遥控型 · 固定场景控制型 · AI自定义场景控制型</text>
+</svg>

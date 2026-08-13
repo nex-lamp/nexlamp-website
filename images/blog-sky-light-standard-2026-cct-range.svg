@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" width="100%">
+  <rect width="680" height="340" fill="#0a1628" rx="12"/>
+
+  <g stroke="#1a2d4a" stroke-width="0.5">
+    <line x1="60" y1="70" x2="640" y2="70"/>
+    <line x1="60" y1="110" x2="640" y2="110"/>
+    <line x1="60" y1="150" x2="640" y2="150"/>
+    <line x1="60" y1="190" x2="640" y2="190"/>
+    <line x1="60" y1="230" x2="640" y2="230"/>
+    <line x1="60" y1="270" x2="640" y2="270"/>
+    <line x1="150" y1="60" x2="150" y2="280"/>
+    <line x1="250" y1="60" x2="250" y2="280"/>
+    <line x1="350" y1="60" x2="350" y2="280"/>
+    <line x1="450" y1="60" x2="450" y2="280"/>
+    <line x1="550" y1="60" x2="550" y2="280"/>
+  </g>
+
+  <text x="340" y="34" fill="#e8f0f8" font-size="15" font-family="monospace" font-weight="600" text-anchor="middle">色温跨度对比：天空灯C类 vs 常规灯具</text>
+
+  <text x="52" y="100" fill="#8ab4cc" font-size="11" font-family="monospace" text-anchor="end" dominant-baseline="central">单色温</text>
+  <rect x="292" y="90" width="26" height="20" rx="4" fill="#c08040"/>
+  <text x="330" y="100" fill="#7a9aba" font-size="10" font-family="monospace" dominant-baseline="central">3000K 固定</text>
+
+  <text x="52" y="150" fill="#8ab4cc" font-size="11" font-family="monospace" text-anchor="end" dominant-baseline="central">双色温</text>
+  <rect x="256" y="140" width="140" height="20" rx="4" fill="#8a5a30"/>
+  <rect x="256" y="140" width="70" height="20" rx="4" fill="#d8a860"/>
+  <text x="256" y="176" fill="#c8a870" font-size="10" font-family="monospace">2700K</text>
+  <text x="396" y="176" fill="#88b8e8" font-size="10" font-family="monospace" text-anchor="end">6500K</text>
+  <text x="410" y="150" fill="#7a9aba" font-size="10" font-family="monospace" dominant-baseline="central">跨度 3800K</text>
+
+  <text x="52" y="220" fill="#ffd76b" font-size="11" font-family="monospace" text-anchor="end" dominant-baseline="central">天空灯C类</text>
+  <rect x="100" y="208" width="480" height="26" rx="6" fill="#1a2a4a"/>
+  <rect x="100" y="208" width="60" height="26" rx="6" fill="#c04020"/>
+  <rect x="160" y="208" width="70" height="26" fill="#d87030"/>
+  <rect x="230" y="208" width="70" height="26" fill="#e8b050"/>
+  <rect x="300" y="208" width="70" height="26" fill="#f0e0c0"/>
+  <rect x="370" y="208" width="70" height="26" fill="#c8dcf0"/>
+  <rect x="440" y="208" width="70" height="26" fill="#78a8e0"/>
+  <rect x="510" y="208" width="70" height="26" rx="6" fill="#3060c0"/>
+  <text x="100" y="252" fill="#ff9060" font-size="11" font-family="monospace" font-weight="600">1800K</text>
+  <text x="580" y="252" fill="#6ba0ff" font-size="11" font-family="monospace" font-weight="600" text-anchor="end">12000K</text>
+  <text x="340" y="196" fill="#ffd76b" font-size="12" font-family="monospace" font-weight="600" text-anchor="middle">跨度 10200K ≈ 双色温的 2.7 倍</text>
+
+  <rect x="60" y="286" width="560" height="42" fill="#0f1f35" stroke="#2a4a6a" stroke-width="0.5" rx="8"/>
+  <text x="78" y="302" fill="#ff8a6b" font-size="11" font-family="monospace">结论：双色温混光无法覆盖 → 必须多通道（深红+琥珀+绿+蓝+皇家蓝+暖白+冷白）</text>
+  <text x="78" y="320" fill="#8ab4cc" font-size="11" font-family="monospace">1800K 端需大量红光成分，12000K 端需极强短波蓝光，两端光谱需求完全不重叠</text>
+</svg>

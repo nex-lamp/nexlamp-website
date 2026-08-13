@@ -36,6 +36,15 @@
     "excerpt": "路由器死机，全屋灯变摆设？2026年无网关自组网技术正在终结这个噩梦。本文从技术原理到选购指南，说透为什么你的智能灯不该依赖云端。"
   },
   {
+    "title": "LED天空灯有了国标：T/CALI 0403-2026新标准下，驱动电源要过哪几道关？",
+    "slug": "led-sky-light-standard-t-cali-0403-2026-driver-requirements",
+    "date": "2026-08-13",
+    "category": "技术解读",
+    "description": "LED天空灯首部团体标准T/CALI 0403-2026正式发布，A/B/C三类分级+9大核心指标。从驱动电源视角解读1800K-12000K超宽色温、瑞利散射双模块、AI场景控制的技术要求与选型方法。",
+    "cover": "images/blog-sky-light-standard-2026-cover.png",
+    "excerpt": "8月6日，中国照明电器协会发布首部LED天空灯团体标准T/CALI 0403-2026，C类灯具要求1800K-12000K连续可调。这个数字对驱动电源意味着什么？本文拆解新标准背后的三道技术门槛。"
+  },
+  {
     "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
     "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
     "date": "2026-08-13",
