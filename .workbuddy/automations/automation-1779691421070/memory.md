@@ -1,5 +1,23 @@
 # Automation Memory
 
+## 2026-08-13（第二次执行）: LED天空灯有了国标——T/CALI 0403-2026新标准下驱动电源要过哪几道关
+- ⚠️ 本日 12:00 定时任务已跑过一次（发「无网关自组网」，commit 70a6322），本次为手动再次触发，必须先查 posts/ 避免选题撞车
+- 初版选题「全光谱人因照明」写完 md + 3 SVG + 封面后发现与 6/24、7/31、8/5 三篇高度重复，全部删除重做（教训：**选题前必须 ls posts/ 做关键词去重**）
+- 最终选题: LED天空灯首部团体标准 T/CALI 0403-2026（中照协 8月6日发布，佛山照明牵头），`ls posts/ | grep -iE "sky|天空"` 确认零覆盖
+- 切入角度: 从驱动电源视角拆三道门槛——1800K-12000K超宽色温(跨度10200K/须5-7通道混光)、瑞利散射双模块并行(共用PFC+后级独立/色坐标偏差<0.003/同步误差≤10ms)、AI场景控制(DALI DT8插值+参数持久化)
+- 文章: posts/2026-08-13-led-sky-light-standard-t-cali-0403-2026.md (~1500字) + 3 SVG(A/B/C分级/色温跨度对比/双模块架构) + PIL合成封面
+- 网站: ✅ node build.js 第138篇 + git commit 1873b3f + push origin main（70a6322..1873b3f，前3次网络不通，第4次成功）
+- Dev.to: ✅ ID 4384075, https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/china-just-standardized-led-sky-lights-what-tcali-0403-2026-demands-from-your-led-driver-2n53
+  - POST 直接拿正式 slug（无 temp-slug）；published 字段返回 None 但页面 HTTP 200，确认已发布
+- LinkedIn: ⏭️ CDP Chrome 未运行（HTTP 000），跳过
+- 今日头条微头条: ✅ success=true action=published，带封面图（地下咖啡馆天空灯发灰→问题在驱动通道少/恒流精度→8月6号团体标准A/B/C分级）
+- 踩坑:
+  - **ImageGen 429 额度耗尽**（不是任务数上限，是配额用尽）→ 改用系统 Python PIL 程序化合成封面（天空渐变+太阳光晕+云带+深色科技面板+指标chip），顺带省掉去水印步骤
+  - **claude-vision 百炼 API key 已失效**（401 Incorrect API key），图片视觉校验无法用，需老刘更新 key
+  - 当前模型 custom-local:ark-code-latest 不支持直接读图
+  - SVG 手写易漏 `</text>` 闭合，写完建议 grep 校验
+  - git push 前 3 次 Connection reset / 21s 超时，第 4 次自动恢复，遇到别急着走 GitHub API 回退
+
 ## 2026-08-10: MicroLED量产拐点——当灯珠小到10微米，LED驱动电源该学"纳秒级切通道"了
 - 选题: 多源搜索确认MicroLED量产拐点是8月初最热差异化方向（华灿300323 8月4日答投资者问披露梯度化量产；觉远创智5亿布局光引擎月产10万套；瑞典Polar Light 7月30日完成首批试产；科技三会7月8日半导体照明核心攻关）
 - 切入角度: 从LED驱动厂商视角看MicroLED量产带来的三重新挑战——通道密度(8→48-4800路)、PWM频率(1kHz→4-7680Hz)、恒流精度(±3%→±0.5%)；"光引擎"作为芯片级集成新形态
