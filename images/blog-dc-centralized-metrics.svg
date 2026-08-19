@@ -1,0 +1,155 @@
+<svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f3a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0078d4;stop-opacity:0.4" />
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ed573;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#16a085;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="420" fill="url(#bgGrad2)"/>
+
+  <!-- Grid -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.25">
+    <line x1="0" y1="80" x2="680" y2="80"/>
+    <line x1="0" y1="140" x2="680" y2="140"/>
+    <line x1="0" y1="200" x2="680" y2="200"/>
+    <line x1="0" y1="260" x2="680" y2="260"/>
+    <line x1="0" y1="320" x2="680" y2="320"/>
+  </g>
+
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" font-family="monospace" font-size="16" fill="#00d4ff" font-weight="bold">三个落地案例：直流集中供电实测数据</text>
+
+  <!-- Case 1: Tunnel -->
+  <g transform="translate(20, 50)">
+    <rect x="0" y="0" width="200" height="330" rx="8" fill="#0a1a2e" stroke="#1a3050" stroke-width="1"/>
+    <rect x="0" y="0" width="200" height="28" rx="8" fill="#0d2845"/>
+    <text x="100" y="19" text-anchor="middle" font-family="monospace" font-size="11" fill="#00d4ff" font-weight="bold">G7611隧道（四川）</text>
+
+    <text x="100" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#8899aa">1.8km单洞改造</text>
+
+    <!-- Energy savings bar -->
+    <text x="15" y="72" font-family="monospace" font-size="9" fill="#aaa">月电费</text>
+    <rect x="15" y="78" width="60" height="18" rx="2" fill="#3a1a1a" stroke="#ff4757" stroke-width="0.5"/>
+    <text x="45" y="91" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff6b6b">3.96万</text>
+    <text x="80" y="91" text-anchor="middle" font-family="monospace" font-size="10" fill="#00d4ff">→</text>
+    <rect x="90" y="78" width="45" height="18" rx="2" fill="url(#barGrad2)"/>
+    <text x="112" y="91" text-anchor="middle" font-family="monospace" font-size="8" fill="#2ed573">1.78万</text>
+
+    <!-- Key metrics -->
+    <text x="15" y="115" font-family="monospace" font-size="9" fill="#2ed573">节能率</text>
+    <text x="185" y="115" text-anchor="end" font-family="monospace" font-size="14" fill="#2ed573" font-weight="bold">55%</text>
+
+    <text x="15" y="138" font-family="monospace" font-size="9" fill="#2ed573">故障率下降</text>
+    <text x="185" y="138" text-anchor="end" font-family="monospace" font-size="14" fill="#2ed573" font-weight="bold">70%</text>
+
+    <text x="15" y="161" font-family="monospace" font-size="9" fill="#2ed573">DC段效率提升</text>
+    <text x="185" y="161" text-anchor="end" font-family="monospace" font-size="14" fill="#2ed573" font-weight="bold">+12%</text>
+
+    <text x="15" y="184" font-family="monospace" font-size="9" fill="#2ed573">巡检工作量</text>
+    <text x="185" y="184" text-anchor="end" font-family="monospace" font-size="14" fill="#2ed573" font-weight="bold">减半</text>
+
+    <text x="15" y="207" font-family="monospace" font-size="9" fill="#00d4ff">投资回报周期</text>
+    <text x="185" y="207" text-anchor="end" font-family="monospace" font-size="14" fill="#00d4ff" font-weight="bold">2.3年</text>
+
+    <text x="15" y="230" font-family="monospace" font-size="9" fill="#8899aa">架构: 48V DC</text>
+    <text x="15" y="245" font-family="monospace" font-size="9" fill="#8899aa">布线量减少: 40%</text>
+    <text x="15" y="260" font-family="monospace" font-size="9" fill="#8899aa">后备电池: 无缝续供</text>
+    <text x="15" y="275" font-family="monospace" font-size="9" fill="#8899aa">PLC链路可用率: 99.9%</text>
+
+    <text x="15" y="300" font-family="monospace" font-size="8" fill="#16a085">年省电费: 26.4万元</text>
+    <text x="15" y="315" font-family="monospace" font-size="8" fill="#16a085">预测2030复制1000条隧道</text>
+  </g>
+
+  <!-- Case 2: Ming Jiuzhou -->
+  <g transform="translate(235, 50)">
+    <rect x="0" y="0" width="200" height="330" rx="8" fill="#0a1a2e" stroke="#1a3050" stroke-width="1"/>
+    <rect x="0" y="0" width="200" height="28" rx="8" fill="#0d2845"/>
+    <text x="100" y="19" text-anchor="middle" font-family="monospace" font-size="11" fill="#00d4ff" font-weight="bold">明九州 DCICD</text>
+
+    <text x="100" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#8899aa">2026神灯奖</text>
+
+    <text x="15" y="75" font-family="monospace" font-size="9" fill="#aaa">灯具寿命对比</text>
+
+    <!-- Life bar comparison -->
+    <text x="15" y="95" font-family="monospace" font-size="8" fill="#ff6b6b">传统</text>
+    <rect x="55" y="86" width="50" height="14" rx="2" fill="#3a1a1a" stroke="#ff4757" stroke-width="0.5"/>
+    <text x="115" y="97" font-family="monospace" font-size="9" fill="#ff6b6b">2万h</text>
+
+    <text x="15" y="113" font-family="monospace" font-size="8" fill="#2ed573">DCICD</text>
+    <rect x="55" y="104" width="140" height="14" rx="2" fill="url(#barGrad2)"/>
+    <text x="200" y="115" text-anchor="end" font-family="monospace" font-size="9" fill="#2ed573">6-8万h</text>
+
+    <text x="15" y="140" font-family="monospace" font-size="9" fill="#2ed573">免维护周期</text>
+    <text x="185" y="140" text-anchor="end" font-family="monospace" font-size="14" fill="#2ed573" font-weight="bold">10年</text>
+
+    <text x="15" y="163" font-family="monospace" font-size="9" fill="#2ed573">驱动器故障点</text>
+    <text x="185" y="163" text-anchor="end" font-family="monospace" font-size="14" fill="#2ed573" font-weight="bold">消除</text>
+
+    <text x="15" y="186" font-family="monospace" font-size="9" fill="#2ed573">触电风险</text>
+    <text x="185" y="186" text-anchor="end" font-family="monospace" font-size="14" fill="#2ed573" font-weight="bold">根除</text>
+
+    <text x="15" y="209" font-family="monospace" font-size="9" fill="#00d4ff">5G灯杆兼容</text>
+    <text x="185" y="209" text-anchor="end" font-family="monospace" font-size="11" fill="#00d4ff" font-weight="bold">✓ 24h供电</text>
+
+    <text x="15" y="232" font-family="monospace" font-size="9" fill="#8899aa">架构: 集中式DC</text>
+    <text x="15" y="247" font-family="monospace" font-size="9" fill="#8899aa">灯具端: 仅灯珠模组</text>
+    <text x="15" y="262" font-family="monospace" font-size="9" fill="#8899aa">DC浮地: 物理隔离大地</text>
+    <text x="15" y="277" font-family="monospace" font-size="9" fill="#8899aa">5G基站/监控/气象: 共用</text>
+
+    <text x="15" y="300" font-family="monospace" font-size="8" fill="#16a085">双控: 100%开关+连续供电</text>
+    <text x="15" y="315" font-family="monospace" font-size="8" fill="#16a085">DC线缆比AC省约30%</text>
+  </g>
+
+  <!-- Case 3: NLight -->
+  <g transform="translate(450, 50)">
+    <rect x="0" y="0" width="210" height="330" rx="8" fill="#0a1a2e" stroke="#1a3050" stroke-width="1"/>
+    <rect x="0" y="0" width="210" height="28" rx="8" fill="#0d2845"/>
+    <text x="105" y="19" text-anchor="middle" font-family="monospace" font-size="11" fill="#00d4ff" font-weight="bold">NLight 温室（荷兰）</text>
+
+    <text x="105" y="48" text-anchor="middle" font-family="monospace" font-size="9" fill="#8899aa">GreenTech Amsterdam 发布</text>
+
+    <text x="15" y="75" font-family="monospace" font-size="9" fill="#aaa">项目资本支出</text>
+
+    <!-- Capex savings bar -->
+    <text x="15" y="95" font-family="monospace" font-size="8" fill="#ff6b6b">传统</text>
+    <rect x="55" y="86" width="140" height="14" rx="2" fill="#3a1a1a" stroke="#ff4757" stroke-width="0.5"/>
+    <text x="195" y="97" text-anchor="end" font-family="monospace" font-size="8" fill="#ff6b6b">100%</text>
+
+    <text x="15" y="113" font-family="monospace" font-size="8" fill="#2ed573">NLight</text>
+    <rect x="55" y="104" width="119" height="14" rx="2" fill="url(#barGrad2)"/>
+    <text x="175" y="115" text-anchor="end" font-family="monospace" font-size="9" fill="#2ed573">80-90%</text>
+
+    <text x="15" y="140" font-family="monospace" font-size="9" fill="#2ed573">Capex降低</text>
+    <text x="195" y="140" text-anchor="end" font-family="monospace" font-size="14" fill="#2ed573" font-weight="bold">10-20%</text>
+
+    <text x="15" y="163" font-family="monospace" font-size="9" fill="#2ed573">集中模块功率</text>
+    <text x="195" y="163" text-anchor="end" font-family="monospace" font-size="14" fill="#2ed573" font-weight="bold">40kW</text>
+
+    <text x="15" y="186" font-family="monospace" font-size="9" fill="#2ed573">湿区AC连接点</text>
+    <text x="195" y="186" text-anchor="end" font-family="monospace" font-size="11" fill="#2ed573" font-weight="bold">→1个机房</text>
+
+    <text x="15" y="209" font-family="monospace" font-size="9" fill="#00d4ff">维护方式</text>
+    <text x="195" y="209" text-anchor="end" font-family="monospace" font-size="11" fill="#00d4ff">不进作物区</text>
+
+    <text x="15" y="232" font-family="monospace" font-size="9" fill="#8899aa">架构: 40kW集中机柜</text>
+    <text x="15" y="247" font-family="monospace" font-size="9" fill="#8899aa">灯具: RV系列（无驱动）</text>
+    <text x="15" y="262" font-family="monospace" font-size="9" fill="#8899aa">适用: 育种/制药温室</text>
+    <text x="15" y="277" font-family="monospace" font-size="9" fill="#8899aa">状态: 已量产</text>
+
+    <text x="15" y="300" font-family="monospace" font-size="8" fill="#16a085">灯具更小更轻更简单</text>
+    <text x="15" y="315" font-family="monospace" font-size="8" fill="#16a085">备件池大幅缩减</text>
+  </g>
+
+  <!-- Bottom summary bar -->
+  <rect x="20" y="395" width="640" height="20" rx="4" fill="#0a1220" stroke="#1a3050" stroke-width="1"/>
+  <text x="340" y="409" text-anchor="middle" font-family="monospace" font-size="9" fill="#00d4ff">数据来源: G7611隧道项目报告 / 明九州2026神灯奖申报 / NLight GreenTech Amsterdam 发布</text>
+</svg>

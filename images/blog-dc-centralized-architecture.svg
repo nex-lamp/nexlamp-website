@@ -1,0 +1,158 @@
+<svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1f3a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:0.7" />
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ed573;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#16a085;stop-opacity:0.7" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="420" fill="url(#bgGrad)"/>
+
+  <!-- Grid lines -->
+  <g stroke="#1a3050" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="60" x2="680" y2="60"/>
+    <line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/>
+    <line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/>
+    <line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="100" y1="0" x2="100" y2="420"/>
+    <line x1="200" y1="0" x2="200" y2="420"/>
+    <line x1="300" y1="0" x2="300" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="420"/>
+    <line x1="500" y1="0" x2="500" y2="420"/>
+    <line x1="600" y1="0" x2="600" y2="420"/>
+  </g>
+
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" font-family="monospace" font-size="16" fill="#00d4ff" font-weight="bold">供电架构对比：传统单灯驱动 vs 直流集中供电</text>
+
+  <!-- LEFT SIDE: Traditional -->
+  <text x="170" y="55" text-anchor="middle" font-family="monospace" font-size="12" fill="#ff6b6b" font-weight="bold">传统架构（AC per lamp）</text>
+
+  <!-- AC source -->
+  <rect x="30" y="75" width="80" height="35" rx="4" fill="#1a2a4a" stroke="#ff4757" stroke-width="1.5"/>
+  <text x="70" y="97" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff6b6b">380V AC</text>
+
+  <!-- AC line to lamp 1 -->
+  <line x1="110" y1="92" x2="160" y2="92" stroke="#ff4757" stroke-width="2"/>
+  <text x="135" y="85" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff6b6b">AC 15-20%损耗</text>
+
+  <!-- Lamp 1 with AC-DC driver -->
+  <rect x="160" y="70" width="50" height="55" rx="4" fill="#1a2a4a" stroke="#ff4757" stroke-width="1.5"/>
+  <text x="185" y="85" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff6b6b">AC-DC</text>
+  <text x="185" y="98" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff6b6b">驱动器</text>
+  <text x="185" y="112" text-anchor="middle" font-family="monospace" font-size="8" fill="#666">×1000</text>
+
+  <!-- Arrow to LED -->
+  <line x1="210" y1="97" x2="240" y2="97" stroke="#ff4757" stroke-width="1.5"/>
+  <rect x="240" y="82" width="35" height="30" rx="3" fill="#2a1a1a" stroke="#ff4757" stroke-width="1"/>
+  <text x="257" y="100" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff6b6b">LED</text>
+
+  <!-- Lamp 2 -->
+  <line x1="110" y1="155" x2="160" y2="155" stroke="#ff4757" stroke-width="1.5"/>
+  <rect x="160" y="133" width="50" height="55" rx="4" fill="#1a2a4a" stroke="#ff4757" stroke-width="1.5"/>
+  <text x="185" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff6b6b">AC-DC</text>
+  <text x="185" y="161" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff6b6b">驱动器</text>
+  <text x="185" y="175" text-anchor="middle" font-family="monospace" font-size="8" fill="#666">×1000</text>
+  <line x1="210" y1="160" x2="240" y2="160" stroke="#ff4757" stroke-width="1.5"/>
+  <rect x="240" y="145" width="35" height="30" rx="3" fill="#2a1a1a" stroke="#ff4757" stroke-width="1"/>
+  <text x="257" y="163" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff6b6b">LED</text>
+
+  <!-- Lamp 3 -->
+  <line x1="110" y1="218" x2="160" y2="218" stroke="#ff4757" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="160" y="196" width="50" height="55" rx="4" fill="#1a2a4a" stroke="#ff4757" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="185" y="220" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff6b6b">...</text>
+  <text x="185" y="234" text-anchor="middle" font-family="monospace" font-size="8" fill="#666">每灯一个驱动器</text>
+
+  <!-- Problem callouts -->
+  <text x="20" y="280" font-family="monospace" font-size="9" fill="#ff6b6b">⚠ 60%故障来自驱动电源</text>
+  <text x="20" y="295" font-family="monospace" font-size="9" fill="#ff6b6b">⚠ 电解电容寿命减半/超温10°C</text>
+  <text x="20" y="310" font-family="monospace" font-size="9" fill="#ff6b6b">⚠ 暴雨漏电安全隐患</text>
+  <text x="20" y="325" font-family="monospace" font-size="9" fill="#ff6b6b">⚠ 灯具寿命仅2万小时</text>
+
+  <!-- Divider -->
+  <line x1="340" y1="50" x2="340" y2="380" stroke="#2a4060" stroke-width="1" stroke-dasharray="5,5"/>
+
+  <!-- RIGHT SIDE: DC Centralized -->
+  <text x="510" y="55" text-anchor="middle" font-family="monospace" font-size="12" fill="#2ed573" font-weight="bold">直流集中架构（DC Centralized）</text>
+
+  <!-- AC source -->
+  <rect x="360" y="75" width="70" height="35" rx="4" fill="#1a2a4a" stroke="#2ed573" stroke-width="1.5"/>
+  <text x="395" y="97" text-anchor="middle" font-family="monospace" font-size="10" fill="#2ed573">380V AC</text>
+
+  <!-- Central cabinet -->
+  <line x1="430" y1="92" x2="460" y2="92" stroke="#2ed573" stroke-width="2"/>
+  <rect x="460" y="65" width="80" height="55" rx="4" fill="#0d2a1a" stroke="#2ed573" stroke-width="2" filter="url(#glow)"/>
+  <text x="500" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#2ed573" font-weight="bold">集中配电柜</text>
+  <text x="500" y="96" text-anchor="middle" font-family="monospace" font-size="8" fill="#2ed573">AC→DC整流</text>
+  <text x="500" y="108" text-anchor="middle" font-family="monospace" font-size="8" fill="#2ed573">40-50kW</text>
+
+  <!-- DC Bus -->
+  <line x1="540" y1="92" x2="580" y2="92" stroke="#2ed573" stroke-width="3"/>
+  <text x="560" y="85" text-anchor="middle" font-family="monospace" font-size="8" fill="#2ed573">270V DC总线</text>
+  <text x="560" y="105" text-anchor="middle" font-family="monospace" font-size="7" fill="#16a085">损耗&lt;5%</text>
+
+  <!-- DC bus vertical distribution -->
+  <line x1="580" y1="92" x2="580" y2="250" stroke="#2ed573" stroke-width="2.5"/>
+
+  <!-- DC-DC lamp 1 -->
+  <line x1="580" y1="130" x2="610" y2="130" stroke="#2ed573" stroke-width="1.5"/>
+  <rect x="610" y="115" width="45" height="35" rx="3" fill="#0d2a1a" stroke="#2ed573" stroke-width="1"/>
+  <text x="632" y="130" text-anchor="middle" font-family="monospace" font-size="8" fill="#2ed573">DC-DC</text>
+  <text x="632" y="142" text-anchor="middle" font-family="monospace" font-size="7" fill="#16a085">&gt;94%</text>
+  <line x1="655" y1="132" x2="670" y2="132" stroke="#2ed573" stroke-width="1"/>
+  <rect x="665" y="120" width="15" height="25" rx="2" fill="#1a2a1a" stroke="#2ed573" stroke-width="1"/>
+
+  <!-- DC-DC lamp 2 -->
+  <line x1="580" y1="180" x2="610" y2="180" stroke="#2ed573" stroke-width="1.5"/>
+  <rect x="610" y="165" width="45" height="35" rx="3" fill="#0d2a1a" stroke="#2ed573" stroke-width="1"/>
+  <text x="632" y="180" text-anchor="middle" font-family="monospace" font-size="8" fill="#2ed573">DC-DC</text>
+  <text x="632" y="192" text-anchor="middle" font-family="monospace" font-size="7" fill="#16a085">&gt;94%</text>
+  <line x1="655" y1="182" x2="670" y2="182" stroke="#2ed573" stroke-width="1"/>
+  <rect x="665" y="170" width="15" height="25" rx="2" fill="#1a2a1a" stroke="#2ed573" stroke-width="1"/>
+
+  <!-- DC-DC lamp N -->
+  <line x1="580" y1="230" x2="610" y2="230" stroke="#2ed573" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="610" y="215" width="45" height="35" rx="3" fill="#0d2a1a" stroke="#2ed573" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="632" y="237" text-anchor="middle" font-family="monospace" font-size="8" fill="#2ed573">...</text>
+
+  <!-- Advantage callouts -->
+  <text x="365" y="280" font-family="monospace" font-size="9" fill="#2ed573">✓ 驱动器在机房内：恒温恒湿</text>
+  <text x="365" y="295" font-family="monospace" font-size="9" fill="#2ed573">✓ DC浮地隔离：无触电风险</text>
+  <text x="365" y="310" font-family="monospace" font-size="9" fill="#2ed573">✓ 灯具寿命6-8万小时</text>
+  <text x="365" y="325" font-family="monospace" font-size="9" fill="#2ed573">✓ 10年免维护</text>
+
+  <!-- Bottom comparison bar -->
+  <rect x="30" y="345" width="620" height="40" rx="6" fill="#0a1220" stroke="#1a3050" stroke-width="1"/>
+  <text x="100" y="362" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff6b6b">故障率 60%</text>
+  <text x="100" y="377" text-anchor="middle" font-family="monospace" font-size="8" fill="#666">来自驱动器</text>
+
+  <text x="260" y="362" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff6b6b">损耗 15-20%</text>
+  <text x="260" y="377" text-anchor="middle" font-family="monospace" font-size="8" fill="#666">AC传输</text>
+
+  <text x="420" y="362" text-anchor="middle" font-family="monospace" font-size="10" fill="#2ed573">故障率 下降70%</text>
+  <text x="420" y="377" text-anchor="middle" font-family="monospace" font-size="8" fill="#16a085">DC集中方案</text>
+
+  <text x="570" y="362" text-anchor="middle" font-family="monospace" font-size="10" fill="#2ed573">损耗 &lt;5%</text>
+  <text x="570" y="377" text-anchor="middle" font-family="monospace" font-size="8" fill="#16a085">DC传输</text>
+
+  <!-- Arrow -->
+  <text x="340" y="370" text-anchor="middle" font-family="monospace" font-size="14" fill="#00d4ff">→</text>
+</svg>
