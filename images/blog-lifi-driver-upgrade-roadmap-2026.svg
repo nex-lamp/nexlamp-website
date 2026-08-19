@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2942" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="ledGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#4FC3F7" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#4FC3F7" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect width="800" height="500" fill="url(#grid3)"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="800" height="40" fill="#0d1e35"/>
+  <text x="20" y="26" fill="#5b8c5a" font-family="Consolas, monospace" font-size="14">LED驱动电源升级路线图: 从照明到通信</text>
+  <circle cx="770" cy="20" r="5" fill="#f44336"/>
+  <circle cx="755" cy="20" r="5" fill="#FFA726"/>
+  <circle cx="740" cy="20" r="5" fill="#4CAF50"/>
+
+  <!-- Stage 1: Traditional -->
+  <rect x="30" y="70" width="220" height="180" rx="10" fill="#0d1e35" stroke="#666" stroke-width="1" opacity="0.7"/>
+  <rect x="30" y="70" width="220" height="32" rx="10" fill="#162338"/>
+  <rect x="30" y="87" width="220" height="15" fill="#162338"/>
+  <text x="140" y="92" text-anchor="middle" fill="#888" font-family="Arial" font-size="14" font-weight="bold">Stage 1: 传统恒流驱动</text>
+  <!-- LED bar static -->
+  <rect x="60" y="120" width="160" height="10" rx="5" fill="#555" opacity="0.5"/>
+  <text x="140" y="145" text-anchor="middle" fill="#666" font-family="Consolas, monospace" font-size="11">DC恒流输出</text>
+  <text x="140" y="170" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- 纯照明功能</text>
+  <text x="140" y="188" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- 纹波 &gt; 5%</text>
+  <text x="140" y="206" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- 无调制能力</text>
+  <text x="140" y="224" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- 成本最低</text>
+  <text x="140" y="242" text-anchor="middle" fill="#666" font-family="Arial" font-size="10" font-weight="bold">2020-2024 主流</text>
+
+  <!-- Arrow 1 -->
+  <path d="M 260 160 L 290 160" stroke="#5b8c5a" stroke-width="2" fill="none"/>
+  <path d="M 285 155 L 295 160 L 285 165" stroke="#5b8c5a" stroke-width="2" fill="none"/>
+
+  <!-- Stage 2: Smart dimmable -->
+  <rect x="300" y="70" width="220" height="180" rx="10" fill="#0d1e35" stroke="#5b8c5a" stroke-width="1" opacity="0.8"/>
+  <rect x="300" y="70" width="220" height="32" rx="10" fill="#162338"/>
+  <rect x="300" y="87" width="220" height="15" fill="#162338"/>
+  <text x="410" y="92" text-anchor="middle" fill="#5b8c5a" font-family="Arial" font-size="14" font-weight="bold">Stage 2: 智能调光驱动</text>
+  <!-- LED bar with dimming -->
+  <rect x="330" y="120" width="160" height="10" rx="5" fill="url(#ledGrad)" opacity="0.6"/>
+  <text x="410" y="145" text-anchor="middle" fill="#5b8c5a" font-family="Consolas, monospace" font-size="11">PWM/0-10V/DALI</text>
+  <text x="410" y="170" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- 照明 + 调光控制</text>
+  <text x="410" y="188" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- 纹波 &lt; 3%</text>
+  <text x="410" y="206" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- 低频调制 (kHz)</text>
+  <text x="410" y="224" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- Zigbee/Matter集成</text>
+  <text x="410" y="242" text-anchor="middle" fill="#5b8c5a" font-family="Arial" font-size="10" font-weight="bold">2025-2026 主流 (NEXLAMP在售)</text>
+
+  <!-- Arrow 2 -->
+  <path d="M 530 160 L 560 160" stroke="#4FC3F7" stroke-width="2" fill="none"/>
+  <path d="M 555 155 L 565 160 L 555 165" stroke="#4FC3F7" stroke-width="2" fill="none"/>
+
+  <!-- Stage 3: Li-Fi ready -->
+  <rect x="570" y="70" width="200" height="180" rx="10" fill="#0d1e35" stroke="#4FC3F7" stroke-width="1.5" opacity="0.9"/>
+  <rect x="570" y="70" width="200" height="32" rx="10" fill="#162338"/>
+  <rect x="570" y="87" width="200" height="15" fill="#162338"/>
+  <text x="670" y="92" text-anchor="middle" fill="#4FC3F7" font-family="Arial" font-size="14" font-weight="bold">Stage 3: Li-Fi通信驱动</text>
+  <!-- LED bar with high-freq modulation -->
+  <rect x="595" y="120" width="150" height="10" rx="5" fill="#4FC3F7" filter="url(#glow3)" opacity="0.8"/>
+  <text x="670" y="145" text-anchor="middle" fill="#4FC3F7" font-family="Consolas, monospace" font-size="11">MHz级高频调制</text>
+  <text x="670" y="170" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- 照明 + 数据传输</text>
+  <text x="670" y="188" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- 纹波 &lt; 0.5%</text>
+  <text x="670" y="206" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- MHz级开关响应</text>
+  <text x="670" y="224" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">- VLC SDK集成</text>
+  <text x="670" y="242" text-anchor="middle" fill="#4FC3F7" font-family="Arial" font-size="10" font-weight="bold">2028+ 预商用</text>
+
+  <!-- Bottom: 3 opportunity areas -->
+  <rect x="30" y="280" width="740" height="195" rx="10" fill="#0d1e35" stroke="#5b8c5a" stroke-width="0.5" opacity="0.7"/>
+  <text x="400" y="308" text-anchor="middle" fill="#5b8c5a" font-family="Arial" font-size="16" font-weight="bold">照明厂商的三大机会</text>
+
+  <!-- Opportunity 1 -->
+  <rect x="50" y="325" width="225" height="130" rx="8" fill="#162338" stroke="#4FC3F7" stroke-width="0.5"/>
+  <text x="162" y="350" text-anchor="middle" fill="#4FC3F7" font-family="Arial" font-size="13" font-weight="bold">1. 驱动电源升级</text>
+  <text x="60" y="375" fill="#8899aa" font-family="Arial" font-size="10">- 高频调制驱动 (MHz级)</text>
+  <text x="60" y="392" fill="#8899aa" font-family="Arial" font-size="10">- 超低纹波 &lt; 0.5%</text>
+  <text x="60" y="409" fill="#8899aa" font-family="Arial" font-size="10">- 涂鸦VLC SDK兼容</text>
+  <text x="60" y="430" fill="#5b8c5a" font-family="Arial" font-size="10" font-weight="bold">增值: +200-300元/套</text>
+
+  <!-- Opportunity 2 -->
+  <rect x="290" y="325" width="225" height="130" rx="8" fill="#162338" stroke="#81C784" stroke-width="0.5"/>
+  <text x="402" y="350" text-anchor="middle" fill="#81C784" font-family="Arial" font-size="13" font-weight="bold">2. 路灯+通信一体化</text>
+  <text x="300" y="375" fill="#8899aa" font-family="Arial" font-size="10">- 10万盏路灯 = 10万基站</text>
+  <text x="300" y="392" fill="#8899aa" font-family="Arial" font-size="10">- 智慧城市天然载体</text>
+  <text x="300" y="409" fill="#8899aa" font-family="Arial" font-size="10">- 有电/有灯/有高度</text>
+  <text x="300" y="430" fill="#81C784" font-family="Arial" font-size="10" font-weight="bold">市场: 市政级G端</text>
+
+  <!-- Opportunity 3 -->
+  <rect x="530" y="325" width="225" height="130" rx="8" fill="#162338" stroke="#CE93D8" stroke-width="0.5"/>
+  <text x="642" y="350" text-anchor="middle" fill="#CE93D8" font-family="Arial" font-size="13" font-weight="bold">3. 照明即服务 LaaS</text>
+  <text x="540" y="375" fill="#8899aa" font-family="Arial" font-size="10">- 按光输出量付费</text>
+  <text x="540" y="392" fill="#8899aa" font-family="Arial" font-size="10">- 300+商业地产已采用</text>
+  <text x="540" y="409" fill="#8899aa" font-family="Arial" font-size="10">- 数据传输增值服务</text>
+  <text x="540" y="430" fill="#CE93D8" font-family="Arial" font-size="10" font-weight="bold">模式: 硬件 &#8594; 订阅</text>
+</svg>
