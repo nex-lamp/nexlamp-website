@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2942" stroke-width="0.5"/>
+    </pattern>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="beam1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4FC3F7" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="#0a1628"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="800" height="40" fill="#0d1e35"/>
+  <text x="20" y="26" fill="#5b8c5a" font-family="Consolas, monospace" font-size="14">Li-Fi 2026 商用场景全景</text>
+  <circle cx="770" cy="20" r="5" fill="#f44336"/>
+  <circle cx="755" cy="20" r="5" fill="#FFA726"/>
+  <circle cx="740" cy="20" r="5" fill="#4CAF50"/>
+
+  <!-- Scenario 1: Hospital -->
+  <rect x="25" y="60" width="230" height="195" rx="10" fill="#0d1e35" stroke="#4FC3F7" stroke-width="1" opacity="0.9"/>
+  <rect x="25" y="60" width="230" height="30" rx="10" fill="#162338"/>
+  <rect x="25" y="75" width="230" height="15" fill="#162338"/>
+  <text x="140" y="80" text-anchor="middle" fill="#4FC3F7" font-family="Arial" font-size="14" font-weight="bold">🏥 医院手术室</text>
+
+  <!-- Surgical light -->
+  <ellipse cx="140" cy="115" rx="50" ry="10" fill="#4FC3F7" filter="url(#glow2)" opacity="0.8"/>
+  <polygon points="110,120 170,120 180,180 100,180" fill="url(#beam1)"/>
+  <text x="140" y="150" text-anchor="middle" fill="#4FC3F7" font-family="Consolas, monospace" font-size="11" opacity="0.7">零EMI传输</text>
+  <text x="140" y="200" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">无影灯 → 监护数据</text>
+  <text x="140" y="218" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">瑞金医院等三甲试点</text>
+  <text x="140" y="238" text-anchor="middle" fill="#5b8c5a" font-family="Arial" font-size="10" font-weight="bold">✓ 商用验证</text>
+
+  <!-- Scenario 2: Mine -->
+  <rect x="285" y="60" width="230" height="195" rx="10" fill="#0d1e35" stroke="#FFA726" stroke-width="1" opacity="0.9"/>
+  <rect x="285" y="60" width="230" height="30" rx="10" fill="#162338"/>
+  <rect x="285" y="75" width="230" height="15" fill="#162338"/>
+  <text x="400" y="80" text-anchor="middle" fill="#FFA726" font-family="Arial" font-size="14" font-weight="bold">⛏ 矿井与防爆区</text>
+
+  <!-- Mine lamp -->
+  <rect x="375" y="100" width="50" height="14" rx="7" fill="#FFA726" filter="url(#glow2)" opacity="0.8"/>
+  <polygon points="380,114 420,114 425,175 375,175" fill="url(#beam1)"/>
+  <text x="400" y="150" text-anchor="middle" fill="#FFA726" font-family="Consolas, monospace" font-size="11" opacity="0.7">天然防爆</text>
+  <text x="400" y="200" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">矿灯 → 人员定位</text>
+  <text x="400" y="218" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">3个大型煤矿试点</text>
+  <text x="400" y="238" text-anchor="middle" fill="#5b8c5a" font-family="Arial" font-size="10" font-weight="bold">✓ 精度 ±0.3m</text>
+
+  <!-- Scenario 3: Indoor positioning -->
+  <rect x="545" y="60" width="230" height="195" rx="10" fill="#0d1e35" stroke="#81C784" stroke-width="1" opacity="0.9"/>
+  <rect x="545" y="60" width="230" height="30" rx="10" fill="#162338"/>
+  <rect x="545" y="75" width="230" height="15" fill="#162338"/>
+  <text x="660" y="80" text-anchor="middle" fill="#81C784" font-family="Arial" font-size="14" font-weight="bold">📍 室内精准定位</text>
+
+  <!-- Positioning lights -->
+  <rect x="590" y="100" width="30" height="10" rx="5" fill="#81C784" filter="url(#glow2)" opacity="0.7"/>
+  <rect x="695" y="100" width="30" height="10" rx="5" fill="#81C784" filter="url(#glow2)" opacity="0.7"/>
+  <line x1="605" y1="110" x2="605" y2="170" stroke="#81C784" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <line x1="710" y1="110" x2="710" y2="170" stroke="#81C784" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <circle cx="660" cy="150" r="8" fill="#81C784" opacity="0.5"/>
+  <text x="660" y="154" text-anchor="middle" fill="#0a1628" font-family="Arial" font-size="9" font-weight="bold">YOU</text>
+  <text x="660" y="200" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">商场/机场/博物馆</text>
+  <text x="660" y="218" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">厘米级, 比蓝牙准10x</text>
+  <text x="660" y="238" text-anchor="middle" fill="#5b8c5a" font-family="Arial" font-size="10" font-weight="bold">✓ 无需基站</text>
+
+  <!-- Bottom: Market data -->
+  <rect x="25" y="280" width="750" height="195" rx="10" fill="#0d1e35" stroke="#5b8c5a" stroke-width="1" opacity="0.8"/>
+  <text x="400" y="310" text-anchor="middle" fill="#5b8c5a" font-family="Arial" font-size="16" font-weight="bold">2026 Li-Fi 市场数据全景</text>
+
+  <!-- Stats boxes -->
+  <rect x="55" y="325" width="150" height="55" rx="8" fill="#162338" stroke="#4FC3F7" stroke-width="0.5"/>
+  <text x="130" y="350" text-anchor="middle" fill="#4FC3F7" font-family="Arial" font-size="22" font-weight="bold">$48.7B</text>
+  <text x="130" y="370" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">全球市场规模</text>
+
+  <rect x="230" y="325" width="150" height="55" rx="8" fill="#162338" stroke="#81C784" stroke-width="0.5"/>
+  <text x="305" y="350" text-anchor="middle" fill="#81C784" font-family="Arial" font-size="22" font-weight="bold">+56%</text>
+  <text x="305" y="370" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">同比增长</text>
+
+  <rect x="405" y="325" width="150" height="55" rx="8" fill="#162338" stroke="#FFA726" stroke-width="0.5"/>
+  <text x="480" y="350" text-anchor="middle" fill="#FFA726" font-family="Arial" font-size="22" font-weight="bold">2x</text>
+  <text x="480" y="370" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">试点项目翻番</text>
+
+  <rect x="580" y="325" width="170" height="55" rx="8" fill="#162338" stroke="#CE93D8" stroke-width="0.5"/>
+  <text x="665" y="350" text-anchor="middle" fill="#CE93D8" font-family="Arial" font-size="22" font-weight="bold">+63.8%</text>
+  <text x="665" y="370" text-anchor="middle" fill="#8899aa" font-family="Arial" font-size="10">芯片出货增速</text>
+
+  <!-- Timeline -->
+  <text x="55" y="410" fill="#8899aa" font-family="Arial" font-size="11">2025: 欧盟发布 ETSI EN 303 913 标准 &#8594; 中国工信部纳入新型信息基础设施 &#8594; 2026: 医疗/矿井商用验证 &#8594; 2028: 规模化放量</text>
+  <text x="55" y="435" fill="#5b8c5a" font-family="Consolas, monospace" font-size="11" opacity="0.8">Li-Fi芯片功耗: 0.8W以下 | 亚太市场: 39.6%份额, CAGR 22.4%</text>
+  <text x="55" y="460" fill="#4FC3F7" font-family="Arial" font-size="11" opacity="0.6">数据来源: Grand View Research, ETSI, 工信部, 柒一全球网(PT71) 2026报告</text>
+</svg>
