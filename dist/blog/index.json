@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-13",
+    "date": "2026-08-19",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-13",
+    "date": "2026-08-19",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -20,7 +20,70 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-13",
+    "date": "2026-08-19",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "直流集中供电照明——当LED驱动电源从「每灯一个」变成「一柜供全区」",
+    "slug": "dc-centralized-lighting-driver-revolution",
+    "date": "2026-08-19",
+    "category": "驱动电源技术",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-dc-centralized-lighting-cover.png",
+    "excerpt": "户外照明60%的故障来自驱动电源。2026年，从明九州神灯奖DCICD系统到台达270V直流集中供电，从隧道55%节能到温室20%降本——直流集中供电正在重写LED驱动电源的产品形态。"
+  },
+  {
+    "title": "灯泡能上网？Li-Fi可见光通信2026年爆发：用光传输数据，比Wi-Fi快10倍",
+    "slug": "lifi-visible-light-communication-smart-lighting-2026",
+    "date": "2026-08-19",
+    "category": "智能照明",
+    "description": "Li-Fi可见光通信2026年市场规模48.7亿美元，LED灯光传输数据速率达10Gbps。详解VLC技术原理、医疗矿井商用案例、与Wi-Fi的6大差异，以及智能照明厂商如何抓住这波技术红利。",
+    "cover": "../../images/blog-lifi-visible-light-communication-2026-cover.png",
+    "excerpt": "灯泡除了照明还能上网？2026年Li-Fi可见光通信市场规模达48.7亿美元，同比增长56%。用LED灯光传输数据，速率可达10Gbps，无电磁干扰，医院矿井都能用。本文深度解析VLC技术原理、商用进展与Wi-Fi对比。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-08-19",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-08-19",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-08-19",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
+    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
+    "date": "2026-08-19",
+    "category": "技术文章",
+    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
+    "cover": "",
+    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-08-19",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -43,51 +106,6 @@
     "description": "LED天空灯首部团体标准T/CALI 0403-2026正式发布，A/B/C三类分级+9大核心指标。从驱动电源视角解读1800K-12000K超宽色温、瑞利散射双模块、AI场景控制的技术要求与选型方法。",
     "cover": "images/blog-sky-light-standard-2026-cover.png",
     "excerpt": "8月6日，中国照明电器协会发布首部LED天空灯团体标准T/CALI 0403-2026，C类灯具要求1800K-12000K连续可调。这个数字对驱动电源意味着什么？本文拆解新标准背后的三道技术门槛。"
-  },
-  {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-08-13",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-13",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-08-13",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
-    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
-    "date": "2026-08-13",
-    "category": "技术文章",
-    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
-    "cover": "",
-    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-13",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "PoE照明——当网线取代电线，LED驱动电源迎来\"IT化\"革命",
