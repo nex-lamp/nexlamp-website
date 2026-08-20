@@ -4,8 +4,9 @@
 - 选题: `ls posts/ | grep -iE "uvc|uv|steri|杀菌|消毒"` 零命中，143篇全新方向。依据: TrendForce 8/14报告点名"多通道调光+UVC杀菌模块导入中高阶产品"；265nm效率突破7.5%(约2倍)/L70 1万→2.5万h；2027水俣公约禁汞令；市场18亿→111亿美元(CAGR 22.4%)；MDPI 2026论文电流降额20-40%寿命翻4倍；工研院8/4发14段AC驱动效率95.18%
 - 切入角度: 驱动电源视角拆5道关——效率(WPE 3-10%/驱动自身须≥95%)、电流(±1%恒流/降额20%→L70 x4/DC优于PWM)、热(结温红线50°C/AlN基板4-8K·W⁻¹/NTC必选)、安全(IEC 62471 RG3/人体互锁/剂量监测/认证8-14月)、智能(IoT 18%/剂量上云/多通道共存)
 - 文章: posts/2026-08-20-uvc-led-sterilization-driver-5-challenges.md (~1600字) + 英文版 devto-2026-08-20-uvc-led-sterilization-driver.md (9998字符) + 3 SVG(参数对比/降额寿命曲线/5道关架构) + ImageGen封面(裁剪法去水印)
-- 网站: ✅ node build.js 143篇 + sitemap.xml 147 URLs + git commit 完成
-- git push: ⚠️ 网络不通，4次全失败（Empty reply / Failed to connect after 21s），第4次转后台8分钟未完成，**本地commit已在，下次执行需先补push**
+- 网站: ✅ node build.js 144篇 + sitemap.xml 148 URLs + commit 05de9df
+- git push: ✅ 最终成功（b64c2cc..05de9df）。前7次网络不通（Empty reply / Failed to connect after 21s / timeout EXIT=124），期间并行推进 Dev.to 发布，收尾重试一次即通。**结论：push 失败不要死磕，先跑完其他平台再回来重试，不必上 GitHub API 兜底**
+- rebase 冲突: 远端有新提交导致 `[rejected] fetch first` → `git pull --rebase` 报 unstaged changes（memory.md 未提交）→ 先 commit → rebase 遇 dist/ add/add 冲突 → `git checkout --theirs` + **`git add -f`**（dist/ 在 .gitignore 里，普通 add 会被忽略）→ `GIT_EDITOR=true git rebase --continue` → 重跑 build.js 覆盖
 - Dev.to: ✅ ID 4440241, https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/uv-c-led-sterilization-hits-its-commercial-inflection-point-5-gates-your-led-driver-must-pass-1if9
   - POST 直接拿正式 slug（无 temp-slug），HTTP 200 验证已上线
 - LinkedIn: ⏭️ CDP Chrome 未运行（curl EXIT=7），跳过
