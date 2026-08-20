@@ -7,6 +7,7 @@
 - 网站: ✅ node build.js 144篇 + sitemap.xml 148 URLs + commit 05de9df
 - git push: ✅ 最终成功（b64c2cc..05de9df）。前7次网络不通（Empty reply / Failed to connect after 21s / timeout EXIT=124），期间并行推进 Dev.to 发布，收尾重试一次即通。**结论：push 失败不要死磕，先跑完其他平台再回来重试，不必上 GitHub API 兜底**
 - rebase 冲突: 远端有新提交导致 `[rejected] fetch first` → `git pull --rebase` 报 unstaged changes（memory.md 未提交）→ 先 commit → rebase 遇 dist/ add/add 冲突 → `git checkout --theirs` + **`git add -f`**（dist/ 在 .gitignore 里，普通 add 会被忽略）→ `GIT_EDITOR=true git rebase --continue` → 重跑 build.js 覆盖
+- ⚠️ **不要把 git push 挂后台**: 本次后台 push 跑了 24分55秒才返回，且带的是 rebase 前的旧 ref，回来时报 `! [rejected] non-fast-forward`（虚假告警，前台已推成功，最终 local=remote=5eabd5d）。后台 push 无超时上限 + ref 会过期，push 一律前台跑 `timeout 90 git push`，失败就先做别的事再重试
 - Dev.to: ✅ ID 4440241, https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/uv-c-led-sterilization-hits-its-commercial-inflection-point-5-gates-your-led-driver-must-pass-1if9
   - POST 直接拿正式 slug（无 temp-slug），HTTP 200 验证已上线
 - LinkedIn: ⏭️ CDP Chrome 未运行（curl EXIT=7），跳过
