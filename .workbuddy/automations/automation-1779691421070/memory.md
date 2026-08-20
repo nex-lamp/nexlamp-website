@@ -1,5 +1,20 @@
 # Automation Memory
 
+## 2026-08-20: UV-C LED杀菌灯商用化拐点——LED驱动电源要过的5道关
+- 选题: `ls posts/ | grep -iE "uvc|uv|steri|杀菌|消毒"` 零命中，143篇全新方向。依据: TrendForce 8/14报告点名"多通道调光+UVC杀菌模块导入中高阶产品"；265nm效率突破7.5%(约2倍)/L70 1万→2.5万h；2027水俣公约禁汞令；市场18亿→111亿美元(CAGR 22.4%)；MDPI 2026论文电流降额20-40%寿命翻4倍；工研院8/4发14段AC驱动效率95.18%
+- 切入角度: 驱动电源视角拆5道关——效率(WPE 3-10%/驱动自身须≥95%)、电流(±1%恒流/降额20%→L70 x4/DC优于PWM)、热(结温红线50°C/AlN基板4-8K·W⁻¹/NTC必选)、安全(IEC 62471 RG3/人体互锁/剂量监测/认证8-14月)、智能(IoT 18%/剂量上云/多通道共存)
+- 文章: posts/2026-08-20-uvc-led-sterilization-driver-5-challenges.md (~1600字) + 英文版 devto-2026-08-20-uvc-led-sterilization-driver.md (9998字符) + 3 SVG(参数对比/降额寿命曲线/5道关架构) + ImageGen封面(裁剪法去水印)
+- 网站: ✅ node build.js 143篇 + sitemap.xml 147 URLs + git commit 完成
+- git push: ⚠️ 网络不通，4次全失败（Empty reply / Failed to connect after 21s），第4次转后台8分钟未完成，**本地commit已在，下次执行需先补push**
+- Dev.to: ✅ ID 4440241, https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/uv-c-led-sterilization-hits-its-commercial-inflection-point-5-gates-your-led-driver-must-pass-1if9
+  - POST 直接拿正式 slug（无 temp-slug），HTTP 200 验证已上线
+- LinkedIn: ⏭️ CDP Chrome 未运行（curl EXIT=7），跳过
+- 今日头条: ❌ **登录态过期，需老刘扫码重登**（auth check → logged_in: false）。微头条文案已备好（食品加工客户8个月光衰→结温50度红线→电流降20%寿命翻4倍→禁汞令）
+- 踩坑:
+  - **bash heredoc 写长 Markdown 会被内容引号打断**（unexpected EOF looking for matching '），改用 Python io.open(mode='a') 追加
+  - **Write 工具单次内容过大导致参数丢失**（file_path/content 变 undefined），超长文章必须分块写
+  - **toutiao-ops 报 page.waitForSelector Timeout ≠ 页面问题**，先 `auth check` 查登录态，能省大量排查时间
+
 ## 2026-08-13（第二次执行）: LED天空灯有了国标——T/CALI 0403-2026新标准下驱动电源要过哪几道关
 - ⚠️ 本日 12:00 定时任务已跑过一次（发「无网关自组网」，commit 70a6322），本次为手动再次触发，必须先查 posts/ 避免选题撞车
 - 初版选题「全光谱人因照明」写完 md + 3 SVG + 封面后发现与 6/24、7/31、8/5 三篇高度重复，全部删除重做（教训：**选题前必须 ls posts/ 做关键词去重**）
