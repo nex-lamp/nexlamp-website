@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" width="880" height="540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#06121f"/>
+    </linearGradient>
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2940" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="880" height="540" fill="url(#bg)"/>
+  <rect width="880" height="540" fill="url(#grid)"/>
+
+  <!-- 标题 -->
+  <text x="440" y="40" font-family="Consolas, monospace" font-size="22" font-weight="bold" fill="#7ec27e" text-anchor="middle">📊 实测对比：3款驱动电源亮度衰减曲线（18个月跟踪）</text>
+  <text x="440" y="65" font-family="Consolas, monospace" font-size="13" fill="#88aabb" text-anchor="middle">环境温度45°C模拟封闭灯具工况 / 满载12W灯珠</text>
+
+  <!-- 坐标轴 -->
+  <line x1="100" y1="450" x2="820" y2="450" stroke="#3a5068" stroke-width="2"/>
+  <line x1="100" y1="100" x2="100" y2="450" stroke="#3a5068" stroke-width="2"/>
+
+  <!-- X轴 月份 -->
+  <text x="460" y="490" font-family="Consolas, monospace" font-size="14" fill="#aac8dd" text-anchor="middle">老化时间 (月)</text>
+  <g font-family="Consolas, monospace" font-size="12" fill="#88aabb" text-anchor="middle">
+    <line x1="170" y1="450" x2="170" y2="455" stroke="#aac8dd"/><text x="170" y="470">0</text>
+    <line x1="280" y1="450" x2="280" y2="455" stroke="#aac8dd"/><text x="280" y="470">6</text>
+    <line x1="390" y1="450" x2="390" y2="455" stroke="#aac8dd"/><text x="390" y="470">12</text>
+    <line x1="500" y1="450" x2="500" y2="455" stroke="#aac8dd"/><text x="500" y="470">18</text>
+    <line x1="610" y1="450" x2="610" y2="455" stroke="#aac8dd"/><text x="610" y="470">24</text>
+    <line x1="720" y1="450" x2="720" y2="455" stroke="#aac8dd"/><text x="720" y="470">30</text>
+  </g>
+
+  <!-- Y轴 亮度% -->
+  <text x="60" y="275" font-family="Consolas, monospace" font-size="14" fill="#aac8dd" text-anchor="middle" transform="rotate(-90 60 275)">亮度保持率 (%)</text>
+  <g font-family="Consolas, monospace" font-size="11" fill="#88aabb" text-anchor="end">
+    <line x1="95" y1="120" x2="100" y2="120" stroke="#aac8dd"/><text x="90" y="125">100%</text>
+    <line x1="95" y1="190" x2="100" y2="190" stroke="#aac8dd"/><text x="90" y="195">90%</text>
+    <line x1="95" y1="260" x2="100" y2="260" stroke="#aac8dd"/><text x="90" y="265">80%</text>
+    <line x1="95" y1="330" x2="100" y2="330" stroke="#aac8dd"/><text x="90" y="335">70%</text>
+    <line x1="95" y1="400" x2="100" y2="400" stroke="#aac8dd"/><text x="90" y="405">60%</text>
+  </g>
+
+  <!-- 85%临界线 -->
+  <line x1="100" y1="225" x2="820" y2="225" stroke="#ff6b35" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.7"/>
+  <text x="815" y="220" font-family="Consolas, monospace" font-size="11" fill="#ff6b35" text-anchor="end">85%临界线 - 肉眼可感知变暗</text>
+
+  <!-- 品牌A 曲线（普通电解 - 最差） -->
+  <path d="M 170 120 L 280 152 L 390 218 L 500 320 L 610 392" stroke="#ff4444" stroke-width="3" fill="none"/>
+  <g fill="#ff4444">
+    <circle cx="170" cy="120" r="5"/><circle cx="280" cy="152" r="5"/>
+    <circle cx="390" cy="218" r="5"/><circle cx="500" cy="320" r="5"/>
+    <circle cx="610" cy="392" r="6" stroke="#fff" stroke-width="2"/>
+  </g>
+  <text x="615" y="395" font-family="Consolas, monospace" font-size="12" fill="#ff4444" font-weight="bold">品牌A: 47%</text>
+  <text x="540" y="365" font-family="Consolas, monospace" font-size="10" fill="#ff8888">普通电解85°C</text>
+
+  <!-- 品牌B 曲线（长寿命电解 - 中等） -->
+  <path d="M 170 120 L 280 140 L 390 175 L 500 233 L 610 295 L 720 345" stroke="#ffaa44" stroke-width="3" fill="none"/>
+  <g fill="#ffaa44">
+    <circle cx="170" cy="120" r="5"/><circle cx="280" cy="140" r="5"/>
+    <circle cx="390" cy="175" r="5"/><circle cx="500" cy="233" r="5"/>
+    <circle cx="610" cy="295" r="5"/><circle cx="720" cy="345" r="6" stroke="#fff" stroke-width="2"/>
+  </g>
+  <text x="725" y="348" font-family="Consolas, monospace" font-size="12" fill="#ffaa44" font-weight="bold">品牌B: 68%</text>
+  <text x="640" y="280" font-family="Consolas, monospace" font-size="10" fill="#ffcc88">长寿命105°C</text>
+
+  <!-- 品牌C 曲线（耐利普 - 最佳） -->
+  <path d="M 170 120 L 280 125 L 390 132 L 500 138 L 610 150 L 720 165" stroke="#7ec27e" stroke-width="3" fill="none"/>
+  <g fill="#7ec27e">
+    <circle cx="170" cy="120" r="5"/><circle cx="280" cy="125" r="5"/>
+    <circle cx="390" cy="132" r="5"/><circle cx="500" cy="138" r="5"/>
+    <circle cx="610" cy="150" r="5"/><circle cx="720" cy="165" r="6" stroke="#fff" stroke-width="2"/>
+  </g>
+  <text x="725" y="168" font-family="Consolas, monospace" font-size="12" fill="#7ec27e" font-weight="bold">耐利普: 92%</text>
+  <text x="640" y="142" font-family="Consolas, monospace" font-size="10" fill="#7ec27e">105°C+1.5倍裕量</text>
+
+  <!-- 图例 -->
+  <rect x="100" y="100" width="200" height="90" rx="6" fill="#1a2940" opacity="0.8"/>
+  <g font-family="Consolas, monospace" font-size="11" fill="#aac8dd">
+    <line x1="115" y1="120" x2="135" y2="120" stroke="#ff4444" stroke-width="3"/>
+    <text x="145" y="124">品牌A - 普通电解</text>
+    <line x1="115" y1="142" x2="135" y2="142" stroke="#ffaa44" stroke-width="3"/>
+    <text x="145" y="146">品牌B - 长寿命105°C</text>
+    <line x1="115" y1="164" x2="135" y2="164" stroke="#7ec27e" stroke-width="3"/>
+    <text x="145" y="168">品牌C - NEXLAMP (105°C+)</text>
+    <text x="115" y="186" fill="#ff6b35" font-size="10">临界: 85%以下肉眼可感知变暗</text>
+  </g>
+
+</svg>
