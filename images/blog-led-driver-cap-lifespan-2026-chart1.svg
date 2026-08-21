@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" width="880" height="540">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#06121f"/>
+    </linearGradient>
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2940" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="880" height="540" fill="url(#bg)"/>
+  <rect width="880" height="540" fill="url(#grid)"/>
+
+  <!-- 标题 -->
+  <text x="440" y="40" font-family="Consolas, monospace" font-size="22" font-weight="bold" fill="#7ec27e" text-anchor="middle">⚡ 阿伦尼乌斯公式：电解电容寿命 vs 工作温度</text>
+  <text x="440" y="65" font-family="Consolas, monospace" font-size="13" fill="#88aabb" text-anchor="middle">工作温度每升高10°C，寿命减半 / LED筒灯射灯实际工况85-95°C</text>
+
+  <!-- 坐标轴 -->
+  <line x1="100" y1="450" x2="820" y2="450" stroke="#3a5068" stroke-width="2"/>
+  <line x1="100" y1="100" x2="100" y2="450" stroke="#3a5068" stroke-width="2"/>
+
+  <!-- X轴 -->
+  <text x="460" y="490" font-family="Consolas, monospace" font-size="14" fill="#aac8dd" text-anchor="middle">工作温度 (°C)</text>
+  <g font-family="Consolas, monospace" font-size="12" fill="#88aabb" text-anchor="middle">
+    <line x1="180" y1="450" x2="180" y2="455" stroke="#aac8dd"/>
+    <text x="180" y="470">55</text>
+    <line x1="285" y1="450" x2="285" y2="455" stroke="#aac8dd"/>
+    <text x="285" y="470">65</text>
+    <line x1="390" y1="450" x2="390" y2="455" stroke="#aac8dd"/>
+    <text x="390" y="470">75</text>
+    <line x1="495" y1="450" x2="495" y2="455" stroke="#aac8dd"/>
+    <text x="495" y="470">85</text>
+    <line x1="600" y1="450" x2="600" y2="455" stroke="#aac8dd"/>
+    <text x="600" y="470">95</text>
+    <line x1="705" y1="450" x2="705" y2="455" stroke="#aac8dd"/>
+    <text x="705" y="470">105</text>
+  </g>
+
+  <!-- Y轴 -->
+  <text x="60" y="280" font-family="Consolas, monospace" font-size="14" fill="#aac8dd" text-anchor="middle" transform="rotate(-90 60 280)">寿命 (小时, log)</text>
+  <g font-family="Consolas, monospace" font-size="11" fill="#88aabb" text-anchor="end">
+    <line x1="95" y1="120" x2="100" y2="120" stroke="#aac8dd"/>
+    <text x="90" y="125">100,000</text>
+    <line x1="95" y1="200" x2="100" y2="200" stroke="#aac8dd"/>
+    <text x="90" y="205">10,000</text>
+    <line x1="95" y1="300" x2="100" y2="300" stroke="#aac8dd"/>
+    <text x="90" y="305">1,000</text>
+    <line x1="95" y1="400" x2="100" y2="400" stroke="#aac8dd"/>
+    <text x="90" y="405">100</text>
+  </g>
+
+  <!-- 曲线 -->
+  <path d="M 180 110 L 285 160 L 390 220 L 495 290 L 600 360 L 705 430" stroke="#ff6b35" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- 数据点 -->
+  <g>
+    <circle cx="180" cy="110" r="6" fill="#ff6b35"/>
+    <text x="180" y="100" font-family="Consolas, monospace" font-size="11" fill="#ff6b35" text-anchor="middle">200,000h (50年)</text>
+    <circle cx="285" cy="160" r="6" fill="#ff6b35"/>
+    <text x="285" y="148" font-family="Consolas, monospace" font-size="11" fill="#ff6b35" text-anchor="middle">100,000h</text>
+    <circle cx="390" cy="220" r="6" fill="#ff6b35"/>
+    <text x="390" y="208" font-family="Consolas, monospace" font-size="11" fill="#ff6b35" text-anchor="middle">20,000h (5.5年)</text>
+    <circle cx="495" cy="290" r="7" fill="#7ec27e" stroke="#fff" stroke-width="2"/>
+    <text x="495" y="278" font-family="Consolas, monospace" font-size="12" fill="#7ec27e" text-anchor="middle" font-weight="bold">10,000h (2.7年)</text>
+    <text x="495" y="312" font-family="Consolas, monospace" font-size="10" fill="#aac8dd" text-anchor="middle">▲封闭筒灯射灯</text>
+    <circle cx="600" cy="360" r="6" fill="#ff6b35"/>
+    <text x="600" y="350" font-family="Consolas, monospace" font-size="11" fill="#ff6b35" text-anchor="middle">5,000h</text>
+    <circle cx="705" cy="430" r="6" fill="#ff6b35"/>
+    <text x="705" y="448" font-family="Consolas, monospace" font-size="11" fill="#ff6b35" text-anchor="middle">2,500h</text>
+  </g>
+
+  <!-- 关键信息框 -->
+  <rect x="120" y="350" width="180" height="80" rx="8" fill="#1a2940" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="210" y="378" font-family="Consolas, monospace" font-size="13" fill="#7ec27e" text-anchor="middle" font-weight="bold">家用封闭灯具</text>
+  <text x="210" y="398" font-family="Consolas, monospace" font-size="12" fill="#ff6b35" text-anchor="middle">实际工作温度 85-95°C</text>
+  <text x="210" y="416" font-family="Consolas, monospace" font-size="11" fill="#aac8dd" text-anchor="middle">寿命仅 5000-10000小时</text>
+
+  <!-- 行业基准线 -->
+  <line x1="100" y1="290" x2="820" y2="290" stroke="#7ec27e" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+  <text x="815" y="285" font-family="Consolas, monospace" font-size="10" fill="#7ec27e" text-anchor="end">10000小时行业基准线 ≈ 2.7年</text>
+
+</svg>
