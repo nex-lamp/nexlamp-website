@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2238"/>
+    </linearGradient>
+    <linearGradient id="cons" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="auto" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+  <text x="40" y="50" font-size="26" font-weight="700" fill="#7eb6ff">消费MicroLED vs 车载MicroLED · 驱动电源要求对比</text>
+  <text x="40" y="78" font-size="14" fill="#94a3b8">2026 · 车载MicroLED上车第一关 — 不是亮度·是规矩</text>
+  <rect x="40" y="100" width="120" height="40" rx="4" fill="url(#cons)"/>
+  <text x="100" y="126" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">消费类</text>
+  <rect x="500" y="100" width="120" height="40" rx="4" fill="url(#auto)"/>
+  <text x="560" y="126" font-size="16" font-weight="600" fill="#ffffff" text-anchor="middle">车规级</text>
+
+  <g transform="translate(40,170)">
+    <text x="0" y="0" font-size="15" fill="#cbd5e1" font-weight="600">① 工作温度</text>
+    <rect x="180" y="-20" width="240" height="40" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <text x="300" y="6" font-size="14" fill="#7eb6ff" text-anchor="middle">-20℃ ~ +70℃</text>
+    <g transform="translate(500,-20)">
+      <rect width="660" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="330" y="6" font-size="14" fill="#fbbf24" text-anchor="middle">-40℃ ~ +125℃（温差165℃ vs 90℃，高出83%）</text>
+    </g>
+  </g>
+
+  <g transform="translate(40,240)">
+    <text x="0" y="0" font-size="15" fill="#cbd5e1" font-weight="600">② 设计寿命</text>
+    <rect x="180" y="-20" width="240" height="40" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <text x="300" y="6" font-size="14" fill="#7eb6ff" text-anchor="middle">5年</text>
+    <g transform="translate(500,-20)">
+      <rect width="660" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="330" y="6" font-size="14" fill="#fbbf24" text-anchor="middle">15年 或 24万公里（先到为准 · 跨二手车生命周期）</text>
+    </g>
+  </g>
+
+  <g transform="translate(40,310)">
+    <text x="0" y="0" font-size="15" fill="#cbd5e1" font-weight="600">③ 认证体系</text>
+    <rect x="180" y="-20" width="240" height="40" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <text x="300" y="6" font-size="14" fill="#7eb6ff" text-anchor="middle">3C / CE 基础认证</text>
+    <g transform="translate(500,-20)">
+      <rect width="660" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="330" y="6" font-size="14" fill="#fbbf24" text-anchor="middle">AEC-Q100 / Q104 / Q200 + IATF 16949体系审核</text>
+    </g>
+  </g>
+
+  <g transform="translate(40,380)">
+    <text x="0" y="0" font-size="15" fill="#cbd5e1" font-weight="600">④ 通信协议</text>
+    <rect x="180" y="-20" width="240" height="40" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <text x="300" y="6" font-size="14" fill="#7eb6ff" text-anchor="middle">I2C / SPI / DALI</text>
+    <g transform="translate(500,-20)">
+      <rect width="660" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="330" y="6" font-size="14" fill="#fbbf24" text-anchor="middle">CAN-FD / 车载以太网100/1000BASE-T1 + SecOC</text>
+    </g>
+  </g>
+
+  <g transform="translate(40,450)">
+    <text x="0" y="0" font-size="15" fill="#cbd5e1" font-weight="600">⑤ 抗扰等级</text>
+    <rect x="180" y="-20" width="240" height="40" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <text x="300" y="6" font-size="14" fill="#7eb6ff" text-anchor="middle">EN 55015（民用宽松）</text>
+    <g transform="translate(500,-20)">
+      <rect width="660" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="330" y="6" font-size="14" fill="#fbbf24" text-anchor="middle">CISPR 25 Class 5（车载FM/AM不能有干扰）</text>
+    </g>
+  </g>
+
+  <g transform="translate(40,520)">
+    <text x="0" y="0" font-size="15" fill="#cbd5e1" font-weight="600">⑥ 峰值亮度</text>
+    <rect x="180" y="-20" width="240" height="40" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <text x="300" y="6" font-size="14" fill="#7eb6ff" text-anchor="middle">1000~2000 cd/m²（电视HDR）</text>
+    <g transform="translate(500,-20)">
+      <rect width="660" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="330" y="6" font-size="14" fill="#fbbf24" text-anchor="middle">HUD要10000-15000 cd/m² · 前大灯15万 nits · 1ms跳变</text>
+    </g>
+  </g>
+
+  <g transform="translate(40,590)">
+    <text x="0" y="0" font-size="15" fill="#cbd5e1" font-weight="600">⑦ 功能安全</text>
+    <rect x="180" y="-20" width="240" height="40" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <text x="300" y="6" font-size="14" fill="#7eb6ff" text-anchor="middle">无强制 / 一般电气安全</text>
+    <g transform="translate(500,-20)">
+      <rect width="660" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="330" y="6" font-size="14" fill="#fbbf24" text-anchor="middle">ISO 26262 ASIL-B/C/D + 双通道冗余 + DTTI &lt; 100ms</text>
+    </g>
+  </g>
+
+  <text x="40" y="675" font-size="12" fill="#64748b">数据：拓琦光电2026-08-12 · Diodes AL8866Q · CISPR 25标准 · ISO 26262</text>
+</svg>

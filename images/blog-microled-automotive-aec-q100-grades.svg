@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2238"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.4">
+    <line x1="100" y1="120" x2="100" y2="620"/>
+    <line x1="100" y1="620" x2="1180" y2="620"/>
+  </g>
+  <g stroke="#1e3a5f" stroke-width="0.3" opacity="0.6">
+    <line x1="100" y1="200" x2="1180" y2="200"/>
+    <line x1="100" y1="280" x2="1180" y2="280"/>
+    <line x1="100" y1="360" x2="1180" y2="360"/>
+    <line x1="100" y1="440" x2="1180" y2="440"/>
+    <line x1="100" y1="520" x2="1180" y2="520"/>
+    <line x1="100" y1="600" x2="1180" y2="600"/>
+  </g>
+  <text x="600" y="55" font-size="26" font-weight="700" fill="#7eb6ff" text-anchor="middle">AEC-Q100 车规IC温度等级 · 5个Grade的工作温区</text>
+  <text x="600" y="85" font-size="14" fill="#94a3b8" text-anchor="middle">结温红线 · 哪一档决定了你能装在车内哪个位置</text>
+
+  <g transform="translate(100,200)">
+    <rect width="216" height="420" fill="url(#bar)" rx="4"/>
+    <text x="108" y="395" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">Grade 4</text>
+    <text x="108" y="420" font-size="13" fill="#dbeafe" text-anchor="middle">0℃ ~ +70℃</text>
+  </g>
+  <g transform="translate(340,170)">
+    <rect width="216" height="450" fill="url(#bar)" rx="4"/>
+    <text x="108" y="425" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">Grade 3</text>
+    <text x="108" y="450" font-size="13" fill="#dbeafe" text-anchor="middle">-40℃ ~ +85℃</text>
+  </g>
+  <g transform="translate(580,140)">
+    <rect width="216" height="480" fill="url(#bar)" rx="4"/>
+    <text x="108" y="455" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">Grade 2</text>
+    <text x="108" y="480" font-size="13" fill="#dbeafe" text-anchor="middle">-40℃ ~ +105℃</text>
+  </g>
+  <g transform="translate(820,100)">
+    <rect width="216" height="520" fill="url(#hot)" rx="4"/>
+    <text x="108" y="495" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">Grade 1 ⭐</text>
+    <text x="108" y="520" font-size="13" fill="#fef3c7" text-anchor="middle">-40℃ ~ +125℃</text>
+  </g>
+  <g transform="translate(820,100)">
+    <rect x="-360" y="-50" width="216" height="100" fill="url(#hot)" rx="4" opacity="0"/>
+  </g>
+
+  <g transform="translate(1020,40)">
+    <rect width="108" height="120" fill="url(#hot)" rx="4"/>
+    <text x="54" y="50" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Grade 0</text>
+    <text x="54" y="74" font-size="12" fill="#fef3c7" text-anchor="middle">-40℃</text>
+    <text x="54" y="92" font-size="13" fill="#fef3c7" text-anchor="middle">~+150℃</text>
+  </g>
+
+  <g transform="translate(40,140)">
+    <text x="0" y="0" font-size="12" fill="#94a3b8">+150</text>
+    <text x="0" y="220" font-size="12" fill="#94a3b8">+100</text>
+    <text x="0" y="320" font-size="12" fill="#94a3b8">+50</text>
+    <text x="0" y="460" font-size="12" fill="#94a3b8">0</text>
+    <text x="0" y="480" font-size="12" fill="#94a3b8" transform="translate(0,160)">-40℃</text>
+  </g>
+
+  <g transform="translate(180,650)">
+    <rect width="200" height="34" rx="4" fill="#1e293b" stroke="#3b82f6"/>
+    <text x="100" y="22" font-size="12" fill="#7eb6ff" text-anchor="middle">消费类3C</text>
+  </g>
+  <g transform="translate(420,650)">
+    <rect width="200" height="34" rx="4" fill="#1e293b" stroke="#3b82f6"/>
+    <text x="100" y="22" font-size="12" fill="#7eb6ff" text-anchor="middle">车内饰灯</text>
+  </g>
+  <g transform="translate(660,650)">
+    <rect width="200" height="34" rx="4" fill="#1e293b" stroke="#3b82f6"/>
+    <text x="100" y="22" font-size="12" fill="#7eb6ff" text-anchor="middle">仪表台附近</text>
+  </g>
+  <g transform="translate(900,650)">
+    <rect width="200" height="34" rx="4" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="100" y="22" font-size="12" fill="#fbbf24" text-anchor="middle" font-weight="700">HUD/前大灯</text>
+  </g>
+</svg>
