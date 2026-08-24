@@ -252,7 +252,7 @@
 - Dev.to: ✅ ID 4473253, https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/street-light-led-drivers-are-becoming-edge-nodes-why-sosen-moso-and-inventronics-pivoted-to-57l2
   - POST 直接拿正式 slug（-57l2，无temp-slug）；HTTP 201 + 页面 HTTP 200 验证已上线；published 字段仍返回 None（API特性）
 - LinkedIn: ⏭️ CDP Chrome 未运行（curl 127.0.0.1:9222 EXIT=7），跳过
-- 今日头条: ❌ **登录态过期**（auth check --headless → logged_in: false；headless发布报 editor selector Timeout = 被重定向到登录页）。微头条文案已备好(推广版本/2026-08-24-ota-edge-smart-driver-toutiao-weitoutiao.txt)，需老刘 `npx toutiao-ops auth login` 扫码重登后补发
+- 今日头条: ✅ **已补发成功**（老刘 16:35 扫码重登后 `auth login` → logged_in:true/账号"60岁老人家"；`publish weitoutiao --headless` → success:true, action:published, url=https://mp.toutiao.com/profile_v4/weitoutiao）。微头条文案见 推广版本/2026-08-24-ota-edge-smart-driver-toutiao-weitoutiao.txt（口语化/朋友分享口吻/无营销词）
 - 踩坑:
   - **toutiao-ops 非headless模式浏览器启动即崩**（Target page/context/browser closed）→ 必须用 --headless；auth login 命令偶报 logged_in:true 但实际 publish 仍被登录页拦截，以 auth check --headless 的 logged_in:false 为准
   - 16:30 出现平台侧 500/-32603 错误报告（Error Code 10000），疑似被kill的toutiao后台进程或MCP瞬时抖动，不影响已上线交付物（Dev.to/网站/git 均验证正常）
