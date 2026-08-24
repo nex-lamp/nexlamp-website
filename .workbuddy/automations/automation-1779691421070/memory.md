@@ -242,3 +242,18 @@
 - 掘金: ⚠️ Cookie过期(403)，需重新登录
 - LinkedIn: ⚠️ CDP Chrome未运行，跳过
 - 经验: Dev.to API max 4 tags; 掘金Cookie易过期需定期刷新
+
+## 2026-08-24: 一体化OTA智能驱动——路灯LED电源从"配件"变"边缘节点"
+- 选题: 多源搜索确认"OTA一体化智能驱动"是2026年8月最热差异化方向（shine.lighting 8/3专题；崧盛VH-E D4i/茂硕X8 X6E-G/英飞特EUM同期发布集成式智能驱动）。`ls posts/ | grep -iE "ota|edge|street|路灯"` 零命中，全新角度
+- 切入角度: 从LED驱动厂商视角拆——分体架构痛点(温升+8~12°C/故障定位40min/双SKU)、一体化四件事(合·算·存·传/失效率↓40%)、OTA远程升级(4万盏45min vs 两周)、三道转型关(定价280vs80/认证翻倍8-12月/组织7:3→4:6)
+- 文章: posts/2026-08-24-ota-edge-smart-street-lighting-driver-2026.md (~1500字) + 英文版 devto-2026-08-24-ota-edge-smart-street-lighting-driver.md + 3 SVG(分体vs一体/OTA四阶段/三道关) + PIL合成封面(路灯阵列+集成模块+OTA信号)
+- 网站: ✅ node build.js 149篇 + sitemap.xml 154 URLs + commit 0b50dab/c52506c + push origin main 成功（先 rebase 解决远端8个重复commit导致的 add/add 冲突 → checkout --theirs + git add -f → push 一次通）
+- git push: ✅ 本次分支 diverge（local 4 / remote 8 重复commit），pull --rebase 遇 dist/ add/add 冲突 → checkout --theirs + git add -f 解决 → push 成功（0b50dab..c52506c）
+- Dev.to: ✅ ID 4473253, https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/street-light-led-drivers-are-becoming-edge-nodes-why-sosen-moso-and-inventronics-pivoted-to-57l2
+  - POST 直接拿正式 slug（-57l2，无temp-slug）；HTTP 201 + 页面 HTTP 200 验证已上线；published 字段仍返回 None（API特性）
+- LinkedIn: ⏭️ CDP Chrome 未运行（curl 127.0.0.1:9222 EXIT=7），跳过
+- 今日头条: ❌ **登录态过期**（auth check --headless → logged_in: false；headless发布报 editor selector Timeout = 被重定向到登录页）。微头条文案已备好(推广版本/2026-08-24-ota-edge-smart-driver-toutiao-weitoutiao.txt)，需老刘 `npx toutiao-ops auth login` 扫码重登后补发
+- 踩坑:
+  - **toutiao-ops 非headless模式浏览器启动即崩**（Target page/context/browser closed）→ 必须用 --headless；auth login 命令偶报 logged_in:true 但实际 publish 仍被登录页拦截，以 auth check --headless 的 logged_in:false 为准
+  - 16:30 出现平台侧 500/-32603 错误报告（Error Code 10000），疑似被kill的toutiao后台进程或MCP瞬时抖动，不影响已上线交付物（Dev.to/网站/git 均验证正常）
+  - PIL 封面图参数风格已稳定（深色科技风直接用 PIL 合成，免ImageGen额度/去水印）
