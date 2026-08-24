@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <linearGradient id="warmBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2c1f" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="coolBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a3a4a" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#0a2a3a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff6b6b"/>
+      <stop offset="1" stop-color="#cc3344"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7df4a0"/>
+      <stop offset="1" stop-color="#4caf72"/>
+    </linearGradient>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e3a5f" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgGrad1)"/>
+  <rect width="800" height="500" fill="url(#grid1)"/>
+
+  <!-- 标题 -->
+  <text x="400" y="38" text-anchor="middle" fill="#e8f4ff" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">分体式 vs 一体化：智能路灯架构十年之变</text>
+  <text x="400" y="60" text-anchor="middle" fill="#7e9bb8" font-family="Microsoft YaHei, sans-serif" font-size="12">从'一台驱动+一台控制器'到'一体化边缘节点'</text>
+
+  <!-- 左侧：分体架构 -->
+  <g transform="translate(60,100)">
+    <rect width="280" height="330" rx="14" fill="url(#warmBox)" stroke="#cc3344" stroke-width="1.5"/>
+    <text x="140" y="30" text-anchor="middle" fill="#ff9999" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold">分体式架构（2010-2025）</text>
+
+    <!-- LED驱动 -->
+    <g transform="translate(50,55)">
+      <rect width="180" height="60" rx="6" fill="#1a1a1a" stroke="#ffd166" stroke-width="1.5"/>
+      <text x="90" y="25" text-anchor="middle" fill="#ffd166" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">LED 驱动电源</text>
+      <text x="90" y="45" text-anchor="middle" fill="#a8a8a8" font-family="Courier New" font-size="10">AC-DC Constant Current</text>
+    </g>
+
+    <!-- 控制器 -->
+    <g transform="translate(50,140)">
+      <rect width="180" height="60" rx="6" fill="#1a1a1a" stroke="#4d9aff" stroke-width="1.5"/>
+      <text x="90" y="25" text-anchor="middle" fill="#88ccff" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">外挂控制器 SL-Controller</text>
+      <text x="90" y="45" text-anchor="middle" fill="#a8a8a8" font-family="Courier New" font-size="10">Zigbee / LoRa / NB-IoT</text>
+    </g>
+
+    <!-- 连接线（脆弱）-->
+    <g stroke="#cc3344" stroke-width="1.6" fill="none" stroke-dasharray="4,3">
+      <path d="M 140 115 L 140 140"/>
+      <circle cx="140" cy="128" r="3" fill="#ff6b6b"/>
+      <text x="152" y="132" fill="#ff6b6b" font-family="Microsoft YaHei, sans-serif" font-size="10">连接器×3</text>
+    </g>
+
+    <!-- 两个发热 -->
+    <g fill="#ff9966">
+      <circle cx="180" cy="65" r="3"/>
+      <circle cx="180" cy="170" r="3"/>
+      <text x="195" y="70" fill="#ffaa66" font-family="Microsoft YaHei, sans-serif" font-size="9">发热</text>
+      <text x="195" y="175" fill="#ffaa66" font-family="Microsoft YaHei, sans-serif" font-size="9">发热</text>
+    </g>
+
+    <!-- 痛点列表 -->
+    <g transform="translate(20,220)">
+      <text x="0" y="0" fill="#ff6b6b" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="bold">三大痛点：</text>
+      <text x="0" y="22" fill="#ffcccc" font-family="Microsoft YaHei, sans-serif" font-size="11">• 温升 +8~12°C（双发热体）</text>
+      <text x="0" y="42" fill="#ffcccc" font-family="Microsoft YaHei, sans-serif" font-size="11">• 现场故障定位 40min/盏</text>
+      <text x="0" y="62" fill="#ffcccc" font-family="Microsoft YaHei, sans-serif" font-size="11">• 两个SKU、两套供应链</text>
+      <text x="0" y="82" fill="#ffcccc" font-family="Microsoft YaHei, sans-serif" font-size="11">• 升级需登高车现场刷机</text>
+    </g>
+  </g>
+
+  <!-- 中间：vs 标签 -->
+  <g transform="translate(370,250)">
+    <circle r="34" fill="#0d2238" stroke="#4d9aff" stroke-width="2"/>
+    <text y="6" text-anchor="middle" fill="#88ccff" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">VS</text>
+  </g>
+
+  <!-- 右侧：一体化架构 -->
+  <g transform="translate(460,100)">
+    <rect width="280" height="330" rx="14" fill="url(#coolBox)" stroke="#4caf72" stroke-width="1.5"/>
+    <text x="140" y="30" text-anchor="middle" fill="#7df4a0" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold">一体化架构（2026起）</text>
+
+    <!-- 主框 -->
+    <g transform="translate(20,55)">
+      <rect width="240" height="120" rx="10" fill="#0d2238" stroke="#4d9aff" stroke-width="1.8"/>
+      <text x="120" y="22" text-anchor="middle" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">一体化智能驱动电源</text>
+
+      <!-- 4小模块 -->
+      <rect x="15" y="40" width="50" height="32" rx="4" fill="#1a2842" stroke="#88ccff" stroke-width="1"/>
+      <text x="40" y="53" text-anchor="middle" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="9">驱动</text>
+      <text x="40" y="65" text-anchor="middle" fill="#7e9bb8" font-family="Microsoft YaHei, sans-serif" font-size="8">AC-DC</text>
+
+      <rect x="73" y="40" width="50" height="32" rx="4" fill="#1a2842" stroke="#88ccff" stroke-width="1"/>
+      <text x="98" y="53" text-anchor="middle" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="9">边缘MCU</text>
+      <text x="98" y="65" text-anchor="middle" fill="#7e9bb8" font-family="Microsoft YaHei, sans-serif" font-size="8">本地决策</text>
+
+      <rect x="131" y="40" width="50" height="32" rx="4" fill="#1a2842" stroke="#88ccff" stroke-width="1"/>
+      <text x="156" y="53" text-anchor="middle" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="9">通讯</text>
+      <text x="156" y="65" text-anchor="middle" fill="#7e9bb8" font-family="Microsoft YaHei, sans-serif" font-size="8">NB/LoRa</text>
+
+      <rect x="189" y="40" width="38" height="32" rx="4" fill="#1a2842" stroke="#88ccff" stroke-width="1"/>
+      <text x="208" y="53" text-anchor="middle" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="9">计量</text>
+      <text x="208" y="65" text-anchor="middle" fill="#7e9bb8" font-family="Microsoft YaHei, sans-serif" font-size="8">D4i</text>
+
+      <line x1="65" y1="56" x2="73" y2="56" stroke="#88ccff" stroke-width="0.8"/>
+      <line x1="123" y1="56" x2="131" y2="56" stroke="#88ccff" stroke-width="0.8"/>
+      <line x1="181" y1="56" x2="189" y2="56" stroke="#88ccff" stroke-width="0.8"/>
+
+      <!-- 副标题 -->
+      <text x="120" y="95" text-anchor="middle" fill="#4caf72" font-family="Microsoft YaHei, sans-serif" font-size="10">合·算·存·传 一体集成</text>
+    </g>
+
+    <!-- 单壳散热 -->
+    <g transform="translate(20,195)">
+      <rect width="240" height="40" rx="6" fill="#1a1a1a" stroke="#4caf72" stroke-width="1.4"/>
+      <text x="120" y="18" text-anchor="middle" fill="#7df4a0" font-family="Microsoft YaHei, sans-serif" font-size="12">单壳散热路径 · 温升 -6~10°C</text>
+      <text x="120" y="33" text-anchor="middle" fill="#7e9bb8" font-family="Microsoft YaHei, sans-serif" font-size="9">IP67 / 10kV共模浪涌</text>
+    </g>
+
+    <!-- 优势列表 -->
+    <g transform="translate(20,250)">
+      <text x="0" y="0" fill="#7df4a0" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="bold">四个关键：</text>
+      <text x="0" y="22" fill="#bdf5d0" font-family="Microsoft YaHei, sans-serif" font-size="11">• 整体失效率 ↓ 约 40%</text>
+      <text x="0" y="42" fill="#bdf5d0" font-family="Microsoft YaHei, sans-serif" font-size="11">• OTA 远程一键升级</text>
+      <text x="0" y="62" fill="#bdf5d0" font-family="Microsoft YaHei, sans-serif" font-size="11">• 一个SKU 一条供应链</text>
+      <text x="0" y="82" fill="#bdf5d0" font-family="Microsoft YaHei, sans-serif" font-size="11">• 4万盏 升级 45min</text>
+    </g>
+  </g>
+
+  <!-- 底部脚注 -->
+  <text x="400" y="465" text-anchor="middle" fill="#5e7e9e" font-family="Microsoft YaHei, sans-serif" font-size="10">来源：崧盛VH-E D4i/茂硕X8 X6E-G/英飞特EUM系列产品手册（2026.08）</text>
+  <text x="400" y="482" text-anchor="middle" fill="#5e7e9e" font-family="Microsoft YaHei, sans-serif" font-size="10">图1：传统架构 vs 一体化智能驱动架构对比</text>
+</svg>

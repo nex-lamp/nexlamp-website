@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3a"/>
+    </linearGradient>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e3a5f" stroke-width="0.6"/>
+    </pattern>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4d9aff"/>
+      <stop offset="1" stop-color="#2c5c91"/>
+    </linearGradient>
+    <linearGradient id="redBarGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff6b6b"/>
+      <stop offset="1" stop-color="#991a1a"/>
+    </linearGradient>
+    <linearGradient id="greenBarGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7df4a0"/>
+      <stop offset="1" stop-color="#3a7e4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgGrad3)"/>
+  <rect width="800" height="500" fill="url(#grid3)"/>
+
+  <!-- 标题 -->
+  <text x="400" y="38" text-anchor="middle" fill="#e8f4ff" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">LED驱动厂商转型阵痛：从'卖电源'到'卖边缘节点'</text>
+  <text x="400" y="60" text-anchor="middle" fill="#7e9bb8" font-family="Microsoft YaHei, sans-serif" font-size="12">定价/认证/组织三道关卡正在筛掉80%的中小厂商</text>
+
+  <!-- 三道关卡分组 -->
+  <g transform="translate(60,100)">
+    <!-- 关卡1：定价 -->
+    <g>
+      <rect width="220" height="250" rx="10" fill="#0d2238" stroke="#ff6b6b" stroke-width="1.5"/>
+      <circle cx="30" cy="32" r="18" fill="#ff6b6b"/>
+      <text x="30" y="38" text-anchor="middle" fill="#0a1628" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">1</text>
+      <text x="60" y="34" fill="#ffcccc" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">定价关</text>
+
+      <!-- 老价格 -->
+      <g transform="translate(20,75)">
+        <rect width="180" height="22" rx="3" fill="#1a1a1a"/>
+        <text x="10" y="16" fill="#ffd166" font-family="Microsoft YaHei, sans-serif" font-size="11">传统驱动 60W</text>
+        <text x="170" y="16" text-anchor="end" fill="#ffd166" font-family="Courier New" font-size="12" font-weight="bold">¥80</text>
+      </g>
+      <text x="20" y="112" fill="#a8a8a8" font-family="Microsoft YaHei, sans-serif" font-size="9">毛利约 10%</text>
+
+      <!-- 新价格 -->
+      <g transform="translate(20,128)">
+        <rect width="180" height="22" rx="3" fill="#1a1a1a"/>
+        <text x="10" y="16" fill="#7df4a0" font-family="Microsoft YaHei, sans-serif" font-size="11">一体化智能驱动</text>
+        <text x="170" y="16" text-anchor="end" fill="#7df4a0" font-family="Courier New" font-size="12" font-weight="bold">¥280</text>
+      </g>
+      <text x="20" y="166" fill="#a8a8a8" font-family="Microsoft YaHei, sans-serif" font-size="9">客户愿付 280？</text>
+
+      <!-- 难点 -->
+      <g transform="translate(20,185)">
+        <text x="0" y="0" fill="#ffcccc" font-family="Microsoft YaHei, sans-serif" font-size="10">• 终端议价难</text>
+        <text x="0" y="18" fill="#ffcccc" font-family="Microsoft YaHei, sans-serif" font-size="10">• 价格跨度 3.5x</text>
+        <text x="0" y="36" fill="#ffcccc" font-family="Microsoft YaHei, sans-serif" font-size="10">• 工程商老价比</text>
+        <text x="0" y="54" fill="#ffcccc" font-family="Microsoft YaHei, sans-serif" font-size="10">• 已铺项目难调价</text>
+      </g>
+    </g>
+
+    <!-- 关卡2：认证 -->
+    <g transform="translate(240,0)">
+      <rect width="220" height="250" rx="10" fill="#0d2238" stroke="#ffd166" stroke-width="1.5"/>
+      <circle cx="30" cy="32" r="18" fill="#ffd166"/>
+      <text x="30" y="38" text-anchor="middle" fill="#0a1628" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">2</text>
+      <text x="60" y="34" fill="#fff1cc" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">认证关</text>
+
+      <g transform="translate(20,68)">
+        <rect width="180" height="170" rx="6" fill="#1a1a1a" stroke="#3a4a5a" stroke-width="0.8"/>
+        <text x="14" y="22" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">新增强制认证：</text>
+        <text x="14" y="44" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">• CCC（强制）</text>
+        <text x="14" y="62" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">• CQC 节能认证</text>
+        <text x="14" y="80" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">• EMC（电磁兼容）</text>
+        <text x="14" y="98" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">• SRRC（无线电型号）</text>
+        <text x="14" y="116" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">• D4i / Zhaga 接口</text>
+        <text x="14" y="138" fill="#ffd166" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">测试项 翻倍 → 8~12月</text>
+        <text x="14" y="156" fill="#ffd166" font-family="Microsoft YaHei, sans-serif" font-size="10">研发周期拉长 1倍</text>
+      </g>
+    </g>
+
+    <!-- 关卡3：组织 -->
+    <g transform="translate(480,0)">
+      <rect width="220" height="250" rx="10" fill="#0d2238" stroke="#4d9aff" stroke-width="1.5"/>
+      <circle cx="30" cy="32" r="18" fill="#4d9aff"/>
+      <text x="30" y="38" text-anchor="middle" fill="#0a1628" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">3</text>
+      <text x="60" y="34" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold">组织关</text>
+
+      <!-- 饼图 -->
+      <g transform="translate(110,150)">
+        <circle r="55" fill="#1a2842"/>
+        <path d="M 0 -55 A 55 55 0 0 1 47.6 27.5 L 0 0 Z" fill="#ffd166"/>
+        <path d="M 47.6 27.5 A 55 55 0 0 1 -53.3 14.3 L 0 0 Z" fill="#7df4a0"/>
+        <circle r="20" fill="#0d2238"/>
+        <text y="-3" text-anchor="middle" fill="#e8f4ff" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">2019</text>
+        <text y="11" text-anchor="middle" fill="#7e9bb8" font-family="Microsoft YaHei, sans-serif" font-size="9">7:3</text>
+      </g>
+
+      <!-- 箭头 -->
+      <g transform="translate(110,150)" fill="#4d9aff" stroke="#4d9aff">
+        <line x1="-58" x2="-72" y1="0" y2="0" stroke-width="2"/>
+        <polygon points="-72,-5 -82,0 -72,5"/>
+      </g>
+
+      <!-- 标注 -->
+      <g transform="translate(20,68)">
+        <text x="0" y="14" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">硬件vs软件人员比</text>
+        <text x="0" y="38" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">崧盛：硬件 / 软件</text>
+        <text x="0" y="58" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">2019 → 2026：7:3 → 4:6</text>
+        <text x="0" y="78" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">需嵌入式MCU+Linux团队</text>
+      </g>
+
+      <!-- 标签 -->
+      <g transform="translate(15,135)" font-family="Microsoft YaHei, sans-serif" font-size="9">
+        <rect width="14" height="14" rx="2" fill="#ffd166"/>
+        <text x="20" y="11" fill="#cce6ff">硬件</text>
+        <rect x="60" width="14" height="14" rx="2" fill="#7df4a0"/>
+        <text x="80" y="11" fill="#cce6ff">软件</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 底部：建议（采购方） -->
+  <g transform="translate(60,370)">
+    <rect width="640" height="105" rx="10" fill="#0d2238" stroke="#7df4a0" stroke-width="1.5"/>
+    <text x="20" y="28" fill="#7df4a0" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold">采购方选型的三个核心指标：</text>
+
+    <g transform="translate(20,42)">
+      <circle cx="8" cy="8" r="8" fill="#4d9aff"/>
+      <text x="8" y="12" text-anchor="middle" fill="#0a1628" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">1</text>
+      <text x="24" y="12" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">OTA必须支持版本回滚</text>
+      <text x="24" y="28" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">不能回滚的 OTA = 假 OTA</text>
+    </g>
+
+    <g transform="translate(220,42)">
+      <circle cx="8" cy="8" r="8" fill="#4d9aff"/>
+      <text x="8" y="12" text-anchor="middle" fill="#0a1628" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">2</text>
+      <text x="24" y="12" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">电力计量 ≥ 0.5%（D4i 标准）</text>
+      <text x="24" y="28" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">越门槛才能做能耗分摊</text>
+    </g>
+
+    <g transform="translate(420,42)">
+      <circle cx="8" cy="8" r="8" fill="#4d9aff"/>
+      <text x="8" y="12" text-anchor="middle" fill="#0a1628" font-family="Microsoft YaHei, sans-serif" font-size="10" font-weight="bold">3</text>
+      <text x="24" y="12" fill="#cce6ff" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="bold">通讯兼容 LoRa + NB-IoT</text>
+      <text x="24" y="28" fill="#a8c5e8" font-family="Microsoft YaHei, sans-serif" font-size="10">避免锁死单一运营商</text>
+    </g>
+  </g>
+
+  <text x="400" y="488" text-anchor="middle" fill="#5e7e9e" font-family="Microsoft YaHei, sans-serif" font-size="10">图3：驱动厂商转型阵痛 &amp; 采购方选型指标</text>
+</svg>
