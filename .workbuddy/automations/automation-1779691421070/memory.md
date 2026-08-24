@@ -1,5 +1,20 @@
 # Automation Memory
 
+## 2026-08-21: MicroLED上车——车载HUD/座舱/前大灯，驱动电源要过的5道车规关
+- 选题: `ls posts/ | grep -iE "microled|hud|车|automotive"` 仅命中 2026-08-10-microled-driver-engine-evolution.md（消费类MicroLED"切通道"），车载MicroLED全新角度。依据: 拓琦光电8/12行业日报点名"MicroLED车载赛道热度攀升，多家企业推进车规级产线，瞄准座舱/AR-HUD"；Diodes 8月发AL8866Q 85V车规驱动IC(buck/boost/buck-boost/SEPIC)+1月48通道车规驱动；2026车载MicroLED市场1.2亿→2030年48亿美元(CAGR 110%+)
+- 切入角度: 从LED驱动厂商视角拆5道车规关——AEC-Q100(44类100+项测试/HTOL 125℃×1000h/TMCL 1000次循环/认证12-18个月/第三方测试$5-15万)、HDR亮度(HUD 10000-15000cd/m²/1ms跳变/ADB前大灯100万像素菊花链/暗电流nA级)、协议栈(CAN-FD 5Mbps/CAN-XL 20Mbps/1000BASE-T1/SecOC防注入/AutoSAR CP-AP)、功能安全(ISO 26262 ASIL-B/C/D/双通道冗余/DTTI<100ms/诊断覆盖率>90%)、长寿命(15年或24万公里/结温150℃红线/AlN基板/RoHS3+REACH+PFAS/PPAP 18要素/Cpk≥1.67)
+- 文章: posts/2026-08-21-microled-automotive-hud-driver-aec-q100.md (~2000字) + 3 SVG(消费vs车载规格对比/AEC-Q100 5个Grade温度带/5道关全景+市场预测) + PIL合成封面(汽车剪影+HUD投影+5关卡面板+像素方阵，1200x750)
+- 网站: ✅ node build.js 146篇 + sitemap.xml 150 URLs + git commit(中文版+英文版)
+- git push: ❌ 前后共7次均失败（Failed to connect / Empty reply），本地待推2个commit（05de9df之后），下次运行先 `git push` 重试，不行再上 GitHub API 兜底
+- Dev.to: ✅ ID 4449441, https://dev.to/lamp_nex_8cbfdfb5b5aa6b50/microled-goes-automotive-5-vehicle-grade-gates-your-led-driver-must-pass-for-hud-cockpit-adb-4b58
+  - POST 直接拿正式slug（-4b58，无temp-slug）；PUT published:true 后 slug 不变；Published 字段仍返回 None（API特性）
+- LinkedIn: ⏭️ CDP Chrome 未运行（curl exit=7），跳过
+- 今日头条: ❌ **登录态仍过期**（auth check → logged_in: false，发布报"未登录头条号"）。微头条文案已备好（拓琦8/12日报→MicroLED上车→AEC-Q100 125℃烧1000h→ISO 26262 100ms黑屏红线→15年/24万公里→Diodes AL8866Q→市场1.2亿→48亿美元CAGR 110%），需老刘扫码重登后可补发
+- 踩坑:
+  - **PIL rounded_rectangle 传参必须是元组 (x0,y0,x1,y1)，不是列表 [(...)]**；ImageDraw 对象没有 filter 方法，要先建 Image.new('RGBA') 再 filter 后 paste
+  - git push 失败先跑其他平台，回来再重试（本次7次仍不通，网络持续不稳定）
+  - 头条 auth check 是判断登录态的快捷方式，能省大量排查时间
+
 ## 2026-08-20: UV-C LED杀菌灯商用化拐点——LED驱动电源要过的5道关
 - 选题: `ls posts/ | grep -iE "uvc|uv|steri|杀菌|消毒"` 零命中，143篇全新方向。依据: TrendForce 8/14报告点名"多通道调光+UVC杀菌模块导入中高阶产品"；265nm效率突破7.5%(约2倍)/L70 1万→2.5万h；2027水俣公约禁汞令；市场18亿→111亿美元(CAGR 22.4%)；MDPI 2026论文电流降额20-40%寿命翻4倍；工研院8/4发14段AC驱动效率95.18%
 - 切入角度: 驱动电源视角拆5道关——效率(WPE 3-10%/驱动自身须≥95%)、电流(±1%恒流/降额20%→L70 x4/DC优于PWM)、热(结温红线50°C/AlN基板4-8K·W⁻¹/NTC必选)、安全(IEC 62471 RG3/人体互锁/剂量监测/认证8-14月)、智能(IoT 18%/剂量上云/多通道共存)
