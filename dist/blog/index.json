@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-24",
+    "date": "2026-09-02",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-24",
+    "date": "2026-09-02",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -20,11 +20,119 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-08-24",
+    "date": "2026-09-02",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
     "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "智能灯断网就变'傻灯'？拆穿4种'断网'真相，一文看懂本地控制",
+    "slug": "smart-lighting-offline-local-control-guide-2026",
+    "date": "2026-09-02",
+    "category": "智能照明",
+    "description": "拆解智能灯断网的4种情况与各自的能力边界，对比云端控制与本地控制链路原理，给出Zigbee本地网关选购与验收的实操清单",
+    "cover": "images/blog-offline-local-control-cover.png",
+    "excerpt": "断网后智能灯全变'板砖'？其实断网分四种：外网断、路由器挂、网关掉线、全屋停电，每一种的结果完全不同。看懂本地控制原理，再也不怕'断网变砖'。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-09-02",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-09-02",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-09-02",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
+    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
+    "date": "2026-09-02",
+    "category": "技术文章",
+    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
+    "cover": "",
+    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-09-02",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-09-02",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Matter over Thread Bulbs in 2026: 5 Tested from $8 IKEA to $500 Nanoleaf Skylight",
+    "slug": "matter-over-thread-bulbs-in-2026-5-tested-from-8-ikea-to-500-nanoleaf-skylight",
+    "date": "2026-09-02",
+    "category": "技术文章",
+    "description": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims.",
+    "cover": "",
+    "excerpt": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims."
+  },
+  {
+    "title": "GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass?",
+    "slug": "gbt-33721-2026-gbt-32481-2026-take-effect-november-1-will-your-led-driver-pass",
+    "date": "2026-09-02",
+    "category": "技术文章",
+    "description": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window.",
+    "cover": "",
+    "excerpt": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-09-02",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "11月1日两项LED国标同步升级——你的驱动电源扛得住吗？",
+    "slug": "gbt-33721-32481-reliability-2026-upgrade",
+    "date": "2026-08-26",
+    "category": "标准法规",
+    "description": "耐利普科技技术文章",
+    "cover": "images/blog-gbt-33721-32481-reliability-cover.png",
+    "excerpt": "GB/T 33721-2026《LED灯具可靠性试验方法》和GB/T 32481-2026《隧道照明用LED灯具性能规范》2026年4月30日发布、11月1日实施。从驱动电源视角拆这两项国标对LED驱动厂商的5项关键冲击。"
+  },
+  {
+    "title": "为什么那么多人说'智能灯后悔了'？5个真实翻车场景+避坑方案",
+    "slug": "smart-light-regret-5-real-failures-solutions-2026",
+    "date": "2026-08-26",
+    "category": "智能照明",
+    "description": "从5个真实翻车场景拆解智能灯后悔的根源：APP复杂、生态绑架、断网变砖、伪智能、频闪延迟，给出涂鸦Zigbee等可落地的避坑方案",
+    "cover": "images/blog-smart-light-regret-cover.png",
+    "excerpt": "花了小两万装的全屋智能灯，手机没电就全灭、老人不会开、半夜莫名自亮……网上'智能灯后悔'的吐槽铺天盖地。问题到底出在哪？怎么选才不踩坑？"
   },
   {
     "title": "Matter over Thread灯泡到底比Wi-Fi快多少？2026年8月5款80元到500元横评实测",
@@ -45,76 +153,13 @@
     "excerpt": "2026年8月崧盛、茂硕、英飞特同时把通讯模组、电力线载波、电能计量塞进同一个电源壳子里——这次不是产品迭代，而是LED驱动电源从'配件'转向'边缘节点'的架构革命。本文拆解一体化集成的四个关键、OTA远程升级如何重塑维护模式、对驱动厂商的产品定位冲击。"
   },
   {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "title": "Street Light LED Drivers Are Becoming Edge Nodes — Why SOSEN, MOSO, and Inventronics Pivoted to All-in-One OTA Smart Drivers",
+    "slug": "ota-edge-smart-street-lighting-driver-2026",
     "date": "2026-08-24",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "category": "Smart Lighting",
+    "description": "In August 2026, three top Chinese LED driver manufacturers launched integrated smart driver platforms that bundle NB-IoT, HPLC, LoRa, power metering, and edge MCUs into one enclosure. From an LED-driver manufacturer's perspective, this is not a product refresh — it is a ten-year architecture shift from power-supplier to edge-node provider.",
     "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-24",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-08-24",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
-    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
-    "date": "2026-08-24",
-    "category": "技术文章",
-    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
-    "cover": "",
-    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-24",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-24",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Matter over Thread Bulbs in 2026: 5 Tested from $8 IKEA to $500 Nanoleaf Skylight",
-    "slug": "matter-over-thread-bulbs-in-2026-5-tested-from-8-ikea-to-500-nanoleaf-skylight",
-    "date": "2026-08-24",
-    "category": "技术文章",
-    "description": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims.",
-    "cover": "",
-    "excerpt": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-08-24",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
+    "excerpt": "All-in-one OTA-enabled LED drivers are not a product refresh — they are the architectural shift from power supply to edge node."
   },
   {
     "title": "LED筒灯射灯用两年就变暗？驱动电源电解电容寿命衰减真相揭秘——2026家用与商业照明延寿实战指南",

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass? | 耐利普科技技术博客</title>
+    <meta name="description" content="Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window.">
+    <meta name="keywords" content="智能照明,LED驱动电源">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/gbt-33721-2026-gbt-32481-2026-take-effect-november-1-will-your-led-driver-pass.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass? | 耐利普科技">
+    <meta property="og:description" content="Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/gbt-33721-2026-gbt-32481-2026-take-effect-november-1-will-your-led-driver-pass.html">
+    <meta property="og:image" content="https://www.nexlamp.com/images/blog-default.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-09-02">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="技术文章">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass?",
+      "description": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window.",
+      "datePublished": "2026-09-02",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/gbt-33721-2026-gbt-32481-2026-take-effect-november-1-will-your-led-driver-pass.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass?",
+          "item": "https://www.nexlamp.com/dist/blog/gbt-33721-2026-gbt-32481-2026-take-effect-november-1-will-your-led-driver-pass.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass?</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass?</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年9月2日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 技术文章</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            
+                            <h2>The Setup: Two Standards, Same Day</h2>
+<p>On April 30, 2026, China&#39;s State Administration for Market Regulation (SAMR) simultaneously published two LED national standards:</p>
+<ul>
+<li><strong>GB/T 33721-2026, &quot;Reliability test methods for LED luminaries&quot;</strong> — replaces the 2017 version, 36 pages, 50,000 characters</li>
+<li><strong>GB/T 32481-2026, &quot;Performance specifications of LED luminaires for tunnel lighting&quot;</strong> — replaces the 2016 version, 28 pages, 40,000 characters</li>
+</ul>
+<p>Both standards take effect on <strong>November 1, 2026</strong> — roughly 60 days from now.</p>
+<p>What makes 2026 different from a routine version bump? The new GB/T 33721 is the first time that &quot;LED luminaire reliability&quot; has been written as a complete, systematized body of test methods. The 2017 version listed a few environment test factors but did not connect them into a workflow. The 2026 version defines <strong>18 explicit test procedures</strong> spanning thermal cycling, power switching, accelerated working life, thermal shock, constant damp heat, high-temperature operation, low-temperature startup, extreme temperature storage, vibration, lumen-maintenance life, corrosion, dust, low air pressure, and component environmental adaptability.</p>
+<p>And here is what matters for everyone who builds LED driver power supplies: <strong>the luminaire-level reliability tests inevitably push stress down to the driver</strong>. The driver is the part that absorbs power switching surges, that runs hottest at 70°C, that sees the temperature cycling shock, and that fails first when vibration shakes the magnetic core loose.</p>
+<h2>The 5 Tests That Hit Driver Hardest</h2>
+<h3>1. Power Switching — 10,000 Cycles</h3>
+<p>The new version requires the luminaire to perform 10,000 cold-hot switching cycles at 1 Hz. Every transition injects roughly 10× inrush current into the driver. The X2 safety capacitor and surge suppression resistor at the bridge output are the parts that take the cumulative hit. The baseline MOV/GDT combination historically rated at 6kV/3kA is now inadequate. Drivers must upgrade to 10kV/5kA surge capability — that is the first BOM cost bump under the new standard.</p>
+<h3>2. Accelerated Working Life — 70°C × 6,000h</h3>
+<p>This is the first time this clause has been written into GB/T 33721 as a standalone section. The required conditions: ambient temperature 70°C, continuous operation for 6,000 hours, equivalent to roughly 10 years of real-world use by the 10°C-halving rule. Plug the math into the electrolytic-cap life formula <code>L = L0 × 2^((T0-T)/10)</code>: a 105°C/10,000h capacitor used at 70°C loses 3.5 halving cycles and drops to roughly 1,000 effective hours. Conclusion: traditional 105°C long-life capacitors are no longer sufficient. Drivers must move to 125°C/15,000h electrolytics, or switch to film capacitor topologies entirely.</p>
+<h3>3. Thermal Cycling — -20°C ↔ +60°C</h3>
+<p>Five cycles of 2 hours each, with 30 minutes of dwell at each extreme. At -20°C, electrolytic ESR rises by more than 3×, and the inrush at startup is 40% higher than at room temperature. Drivers must explicitly specify <strong>&quot;wide-temperature -40°C to +125°C electrolytic capacitors&quot;</strong> in the BOM — no more silent substitutions from industrial-grade parts.</p>
+<h3>4. Vibration — IEC 60068-2-6</h3>
+<p>10-500Hz sweep at 2g peak acceleration, 2 hours per axis, all three axes. This clause is especially aggressive for tunnel luminaires mounted at 5-8m elevation where traffic vibration is constant. The two most common driver-side failures under this test: magnetic core loosening, and electrolytic lead solder joint cracking. The mandatory factory fixes are: AB-glue potting on transformer cores, and additional dot-glue reinforcement on through-hole capacitor leads after wave soldering.</p>
+<h3>5. Damp Heat + Salt Spray — 96h + 96h</h3>
+<p>40°C/93%RH for 96 hours, followed by 5% NaCl for 96 hours. The effective IP rating moves from IP54 to IP65. PCB coating upgrades: three-proof paint (Humiseal UV40 or equivalent) coverage from 80% to 100%, encapsulation from standard epoxy to polyurethane. Cost impact is roughly 0.4-0.6 RMB per driver — recovered in a single avoided field repair.</p>
+<h2>GB/T 32481-2026: Tunnel Lighting Tightens</h2>
+<p>The 2026 tunnel standard introduces the <strong>A/B type classification</strong>:</p>
+<ul>
+<li><strong>Type A</strong>: luminaires using LED modules that are marked compliant with GB/T 24823-2024 (i.e., the module carries its own lumen-maintenance and lifetime ratings)</li>
+<li><strong>Type B</strong>: luminaires using LED modules without such marking</li>
+</ul>
+<p>The new version also introduces &quot;lumen-maintenance lifetime + luminaire lifetime&quot; dual-curve reporting. In a tunnel application that runs 7×24 with 10-95% humidity swings, the effective 24/7 operation makes any B-type product nearly impossible to qualify under engineering acceptance. The recommended path is straight to Type A and to leave <strong>at least 30% power derating</strong> in the driver selection.</p>
+<p>Critical dependency: the tunnel standard <strong>directly references GB/T 33721-2026</strong>. Going for tunnel certification automatically means you must pass the 18 reliability tests above. The two standards are now effectively bundled.</p>
+<h2>The Factory Compliance Checklist (60 Days Out)</h2>
+<ol>
+<li><strong>BOM upgrade</strong>: electrolytics from 105°C to 125°C long-life; X2 safety caps from 6kV/3kA to 10kV/5kA; MOV + GDT surge upgrade; transformer core AB-glue potting; solder joint reinforcement</li>
+<li><strong>Reliability test archive</strong>: collect real 6,000h accelerated life data per driver model; LM-80 L70 lumen-maintenance reports covering the dominant LED modules; attach both as bid response attachments</li>
+<li><strong>Equipment on line</strong>: constant temperature/humidity chamber (GB/T 2423.3); vibration table (GB/T 2423.10); salt spray chamber (GB/T 2423.17) — total CapEx roughly 300k-800k RMB per site, or use third-party labs as a stopgap</li>
+<li><strong>Failure mode library (FMEA)</strong>: classify the last three years of after-sales failures by mode, use them as the response evidence for the new test clauses</li>
+<li><strong>Type A tunnel path</strong>: verify your LED module supplier has GB/T 24823-2024 markings; if not, this is the moment to switch</li>
+</ol>
+<h2>Closing</h2>
+<p>60 days. This is the hardest regulatory deadline for LED driver manufacturers in the second half of 2026.</p>
+<p>The past decade was won on price wars and traffic wars. The new GB/T 33721-2026 redefines the contest: not whether your lamp lights up, but whether it can still light up in five years.</p>
+<p>The answer is not in the datasheet. It is in the accelerated-life chamber.</p>
+<hr>
+<blockquote>
+<p>Standards referenced: GB/T 33721-2026, GB/T 32481-2026, GB/T 24823-2024, GB/T 24827-2026, GB/T 2423.3, GB/T 2423.10, GB/T 2423.17, IEC 60068-2-6. Full text available at the National Public Service Platform for Standards Information (std.samr.gov.cn).</p>
+</blockquote>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>

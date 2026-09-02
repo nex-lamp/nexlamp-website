@@ -1,0 +1,103 @@
+<svg viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgG2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f38"/>
+    </linearGradient>
+    <filter id="glowG2">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="gridG2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2f4e" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="680" height="430" fill="url(#bgG2)"/>
+  <rect width="680" height="430" fill="url(#gridG2)"/>
+
+  <!-- Terminal window header -->
+  <rect x="20" y="15" width="640" height="30" rx="5" fill="#162844" stroke="#2a4a6b" stroke-width="1"/>
+  <circle cx="38" cy="30" r="5" fill="#e74c3c"/>
+  <circle cx="54" cy="30" r="5" fill="#f39c12"/>
+  <circle cx="70" cy="30" r="5" fill="#2ecc71"/>
+  <text x="340" y="34" font-family="Consolas, monospace" font-size="12" fill="#5a8ab5" text-anchor="middle">$ matrix --outage 4-layers</text>
+
+  <!-- Title -->
+  <text x="340" y="72" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold" fill="#e8e8e8" text-anchor="middle">断网不是一种故障：四种"断法"能力矩阵</text>
+
+  <!-- Table header -->
+  <rect x="30" y="92" width="170" height="36" rx="6" fill="#1a2a44" stroke="#3a5570" stroke-width="1.2"/>
+  <text x="115" y="114" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#8ab8e8" text-anchor="middle">断法 / 能力</text>
+
+  <rect x="210" y="92" width="145" height="36" rx="6" fill="#2a1420" stroke="#5a2a3a" stroke-width="1.2"/>
+  <text x="282" y="114" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#f090a0" text-anchor="middle">云端控制</text>
+
+  <rect x="365" y="92" width="145" height="36" rx="6" fill="#0d2a1a" stroke="#2a5a3a" stroke-width="1.2"/>
+  <text x="437" y="114" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#90e0a0" text-anchor="middle">本地场景</text>
+
+  <rect x="520" y="92" width="130" height="36" rx="6" fill="#1a2440" stroke="#3a5570" stroke-width="1.2"/>
+  <text x="585" y="114" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#90c8f0" text-anchor="middle">物理开关</text>
+
+  <!-- Row 1: 外网中断 -->
+  <rect x="30" y="138" width="170" height="60" rx="6" fill="#162844" stroke="#2a4a6b" stroke-width="1"/>
+  <text x="115" y="162" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#e8e8e8" text-anchor="middle">① 外网中断</text>
+  <text x="115" y="182" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#7090b0" text-anchor="middle">光猫/运营商线路</text>
+
+  <rect x="210" y="138" width="145" height="60" rx="6" fill="#2a1420" stroke="#5a2a3a" stroke-width="1"/>
+  <text x="282" y="170" font-family="Consolas, monospace" font-size="15" fill="#e74c3c" text-anchor="middle" filter="url(#glowG2)">✗ 失效</text>
+
+  <rect x="365" y="138" width="145" height="60" rx="6" fill="#0d2a1a" stroke="#2a5a3a" stroke-width="1"/>
+  <text x="437" y="170" font-family="Consolas, monospace" font-size="15" fill="#2ecc71" text-anchor="middle" filter="url(#glowG2)">✓ 可用</text>
+
+  <rect x="520" y="138" width="130" height="60" rx="6" fill="#1a2440" stroke="#3a5570" stroke-width="1"/>
+  <text x="585" y="170" font-family="Consolas, monospace" font-size="15" fill="#2ecc71" text-anchor="middle">✓ 可用</text>
+
+  <!-- Row 2: 路由器挂掉 -->
+  <rect x="30" y="208" width="170" height="60" rx="6" fill="#162844" stroke="#2a4a6b" stroke-width="1"/>
+  <text x="115" y="232" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#e8e8e8" text-anchor="middle">② 路由器挂掉</text>
+  <text x="115" y="252" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#7090b0" text-anchor="middle">Wi-Fi 全断</text>
+
+  <rect x="210" y="208" width="145" height="60" rx="6" fill="#2a1420" stroke="#5a2a3a" stroke-width="1"/>
+  <text x="282" y="240" font-family="Consolas, monospace" font-size="15" fill="#e74c3c" text-anchor="middle">✗ 失效</text>
+
+  <rect x="365" y="208" width="145" height="60" rx="6" fill="#2a2418" stroke="#5a4a20" stroke-width="1"/>
+  <text x="437" y="240" font-family="Consolas, monospace" font-size="15" fill="#f39c12" text-anchor="middle">⚠ 看架构</text>
+
+  <rect x="520" y="208" width="130" height="60" rx="6" fill="#1a2440" stroke="#3a5570" stroke-width="1"/>
+  <text x="585" y="240" font-family="Consolas, monospace" font-size="15" fill="#2ecc71" text-anchor="middle">✓ 可用</text>
+
+  <!-- Row 3: 网关掉线 -->
+  <rect x="30" y="278" width="170" height="60" rx="6" fill="#162844" stroke="#2a4a6b" stroke-width="1"/>
+  <text x="115" y="302" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#e8e8e8" text-anchor="middle">③ 网关掉线</text>
+  <text x="115" y="322" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#7090b0" text-anchor="middle">中枢/网关停机</text>
+
+  <rect x="210" y="278" width="145" height="60" rx="6" fill="#2a1420" stroke="#5a2a3a" stroke-width="1"/>
+  <text x="282" y="310" font-family="Consolas, monospace" font-size="15" fill="#e74c3c" text-anchor="middle">✗ 失效</text>
+
+  <rect x="365" y="278" width="145" height="60" rx="6" fill="#2a1420" stroke="#5a2a3a" stroke-width="1"/>
+  <text x="437" y="310" font-family="Consolas, monospace" font-size="15" fill="#e74c3c" text-anchor="middle">✗ 失效</text>
+
+  <rect x="520" y="278" width="130" height="60" rx="6" fill="#1a2440" stroke="#3a5570" stroke-width="1"/>
+  <text x="585" y="310" font-family="Consolas, monospace" font-size="15" fill="#2ecc71" text-anchor="middle">✓ 可用</text>
+
+  <!-- Row 4: 全屋停电 -->
+  <rect x="30" y="348" width="170" height="60" rx="6" fill="#1a1420" stroke="#4a3a50" stroke-width="1"/>
+  <text x="115" y="372" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="bold" fill="#c0b0c8" text-anchor="middle">④ 全屋停电</text>
+  <text x="115" y="392" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#806880" text-anchor="middle">彻底没电</text>
+
+  <rect x="210" y="348" width="145" height="60" rx="6" fill="#1a1420" stroke="#4a3a50" stroke-width="1"/>
+  <text x="282" y="380" font-family="Consolas, monospace" font-size="14" fill="#806880" text-anchor="middle">—</text>
+
+  <rect x="365" y="348" width="145" height="60" rx="6" fill="#1a1420" stroke="#4a3a50" stroke-width="1"/>
+  <text x="437" y="380" font-family="Consolas, monospace" font-size="14" fill="#806880" text-anchor="middle">—</text>
+
+  <rect x="520" y="348" width="130" height="60" rx="6" fill="#1a1420" stroke="#4a3a50" stroke-width="1"/>
+  <text x="585" y="380" font-family="Consolas, monospace" font-size="14" fill="#806880" text-anchor="middle">—</text>
+
+  <!-- Bottom note -->
+  <text x="340" y="423" font-family="Microsoft YaHei, sans-serif" font-size="11" fill="#5a8ab5" text-anchor="middle">结论：断外网 ≠ 全屋瘫痪 · 真正让灯全灭的是网关挂掉与全屋停电</text>
+</svg>

@@ -1,0 +1,120 @@
+<svg viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgG1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f38"/>
+    </linearGradient>
+    <linearGradient id="colBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#162844"/>
+      <stop offset="100%" stop-color="#101d33"/>
+    </linearGradient>
+    <linearGradient id="colGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d2a1a"/>
+      <stop offset="100%" stop-color="#0a1f15"/>
+    </linearGradient>
+    <linearGradient id="colRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1420"/>
+      <stop offset="100%" stop-color="#1f0f16"/>
+    </linearGradient>
+    <filter id="glowG1">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="gridG1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2f4e" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e74c3c"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2ecc71"/>
+    </marker>
+  </defs>
+
+  <rect width="680" height="430" fill="url(#bgG1)"/>
+  <rect width="680" height="430" fill="url(#gridG1)"/>
+
+  <!-- Terminal window header -->
+  <rect x="20" y="15" width="640" height="30" rx="5" fill="#162844" stroke="#2a4a6b" stroke-width="1"/>
+  <circle cx="38" cy="30" r="5" fill="#e74c3c"/>
+  <circle cx="54" cy="30" r="5" fill="#f39c12"/>
+  <circle cx="70" cy="30" r="5" fill="#2ecc71"/>
+  <text x="340" y="34" font-family="Consolas, monospace" font-size="12" fill="#5a8ab5" text-anchor="middle">$ trace --path cloud-vs-local</text>
+
+  <!-- Title -->
+  <text x="340" y="72" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold" fill="#e8e8e8" text-anchor="middle">一条指令的三条路：云端 vs 本地 vs 实体</text>
+
+  <!-- ============ TOP: CLOUD PATH (red) ============ -->
+  <rect x="30" y="95" width="620" height="95" rx="8" fill="url(#colRed)" stroke="#5a2a3a" stroke-width="1.2"/>
+  <text x="45" y="118" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#f0a0b0">① 云端控制路线</text>
+  <text x="590" y="118" font-family="Consolas, monospace" font-size="11" fill="#e07890" text-anchor="end">外网断 → 全失效</text>
+
+  <!-- nodes: phone → router → internet(cloud) → device -->
+  <rect x="45" y="130" width="95" height="42" rx="6" fill="#1d2c44" stroke="#e74c3c" stroke-width="1.2"/>
+  <text x="92" y="156" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#e8e8e8" text-anchor="middle">手机APP</text>
+
+  <rect x="175" y="130" width="95" height="42" rx="6" fill="#1d2c44" stroke="#e74c3c" stroke-width="1.2"/>
+  <text x="222" y="156" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#e8e8e8" text-anchor="middle">路由器</text>
+
+  <rect x="305" y="130" width="95" height="42" rx="6" fill="#3a1a24" stroke="#e74c3c" stroke-width="1.5" filter="url(#glowG1)"/>
+  <text x="352" y="149" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#ff8fa0" text-anchor="middle">厂商服务器</text>
+  <text x="352" y="164" font-family="Consolas, monospace" font-size="10" fill="#e07890" text-anchor="middle">(云端)</text>
+
+  <rect x="435" y="130" width="95" height="42" rx="6" fill="#1d2c44" stroke="#e74c3c" stroke-width="1.2"/>
+  <text x="482" y="156" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#e8e8e8" text-anchor="middle">智能灯</text>
+
+  <rect x="565" y="130" width="70" height="42" rx="6" fill="#1d2c44" stroke="#e74c3c" stroke-width="1.2"/>
+  <text x="600" y="156" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#e8e8e8" text-anchor="middle">灯具</text>
+
+  <line x1="140" y1="151" x2="173" y2="151" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  <line x1="270" y1="151" x2="303" y2="151" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  <line x1="400" y1="151" x2="433" y2="151" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  <line x1="530" y1="151" x2="563" y2="151" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+
+  <!-- cloud break marker -->
+  <text x="352" y="180" font-family="Consolas, monospace" font-size="10" fill="#e07890" text-anchor="middle">✗ 任一环节故障即失联（链路绕行千里）</text>
+
+  <!-- ============ MIDDLE: LOCAL PATH (green) ============ -->
+  <rect x="30" y="205" width="620" height="95" rx="8" fill="url(#colGreen)" stroke="#2a5a3a" stroke-width="1.2"/>
+  <text x="45" y="228" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#a0f0b0">② 本地控制路线</text>
+  <text x="590" y="228" font-family="Consolas, monospace" font-size="11" fill="#70e090" text-anchor="end">外网断 → 照常运行</text>
+
+  <rect x="45" y="240" width="95" height="42" rx="6" fill="#1d2c44" stroke="#2ecc71" stroke-width="1.2"/>
+  <text x="92" y="266" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#e8e8e8" text-anchor="middle">面板/传感器</text>
+
+  <rect x="240" y="240" width="120" height="42" rx="6" fill="#0d3a20" stroke="#2ecc71" stroke-width="1.5" filter="url(#glowG1)"/>
+  <text x="300" y="259" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#7dff9e" text-anchor="middle">本地网关</text>
+  <text x="300" y="274" font-family="Consolas, monospace" font-size="10" fill="#70e090" text-anchor="middle">(场景存本地)</text>
+
+  <rect x="440" y="240" width="95" height="42" rx="6" fill="#1d2c44" stroke="#2ecc71" stroke-width="1.2"/>
+  <text x="487" y="266" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#e8e8e8" text-anchor="middle">智能灯</text>
+
+  <rect x="565" y="240" width="70" height="42" rx="6" fill="#1d2c44" stroke="#2ecc71" stroke-width="1.2"/>
+  <text x="600" y="266" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#e8e8e8" text-anchor="middle">灯具</text>
+
+  <line x1="140" y1="261" x2="238" y2="261" stroke="#2ecc71" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="360" y1="261" x2="438" y2="261" stroke="#2ecc71" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="535" y1="261" x2="563" y2="261" stroke="#2ecc71" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <text x="300" y="290" font-family="Consolas, monospace" font-size="10" fill="#70e090" text-anchor="middle">✓ 全程不上云，局域网内完成，0延迟执行</text>
+
+  <!-- ============ BOTTOM: PHYSICAL PATH (blue) ============ -->
+  <rect x="30" y="315" width="620" height="90" rx="8" fill="url(#colBlue)" stroke="#2a4a6b" stroke-width="1.2"/>
+  <text x="45" y="338" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="bold" fill="#90c8f0">③ 实体直控路线</text>
+  <text x="590" y="338" font-family="Consolas, monospace" font-size="11" fill="#70a8d8" text-anchor="end">什么都不依赖</text>
+
+  <rect x="45" y="350" width="110" height="40" rx="6" fill="#1d2c44" stroke="#4a90c8" stroke-width="1.2"/>
+  <text x="100" y="375" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#e8e8e8" text-anchor="middle">手指按墙面</text>
+
+  <rect x="250" y="350" width="120" height="40" rx="6" fill="#1d2c44" stroke="#4a90c8" stroke-width="1.2"/>
+  <text x="310" y="375" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#e8e8e8" text-anchor="middle">继电器闭合</text>
+
+  <rect x="465" y="350" width="170" height="40" rx="6" fill="#1d2c44" stroke="#4a90c8" stroke-width="1.2"/>
+  <text x="550" y="375" font-family="Microsoft YaHei, sans-serif" font-size="12" fill="#e8e8e8" text-anchor="middle">灯具点亮（最短路径）</text>
+
+  <line x1="155" y1="370" x2="248" y2="370" stroke="#4a90c8" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  <line x1="370" y1="370" x2="463" y2="370" stroke="#4a90c8" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+</svg>
