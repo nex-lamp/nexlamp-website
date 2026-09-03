@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" font-family="'Segoe UI','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1b30"/>
+      <stop offset="1" stop-color="#0a1628"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#3a5a80"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <!-- grid -->
+  <g stroke="#1b2f4e" stroke-width="1" opacity="0.5">
+    <path d="M0 60H960M0 120H960M0 180H960M0 240H960M0 300H960M0 360H960M0 420H960M0 480H960"/>
+    <path d="M80 0V540M160 0V540M240 0V540M320 0V540M400 0V540M480 0V540M560 0V540M640 0V540M720 0V540M800 0V540M880 0V540"/>
+  </g>
+
+  <text x="480" y="46" text-anchor="middle" fill="#e2f3ff" font-size="26" font-weight="700" letter-spacing="2">灯不好用，先查"驱动"：三大症状的根因链路</text>
+
+  <!-- ===== LED driver hub ===== -->
+  <rect x="330" y="80" width="300" height="64" rx="14" fill="#0f2a4a" stroke="#22d3ee" stroke-width="2"/>
+  <text x="480" y="107" text-anchor="middle" fill="#22d3ee" font-size="19" font-weight="700">LED 驱动电源</text>
+  <text x="480" y="130" text-anchor="middle" fill="#7ea6c8" font-size="13">纹波 / 恒流精度 / 电容寿命</text>
+
+  <!-- arrows from hub -->
+  <g stroke="#3a5a80" stroke-width="2">
+    <path d="M410 144 L210 195" fill="none" marker-end="url(#a)"/>
+    <path d="M480 144 L480 196" fill="none" marker-end="url(#a)"/>
+    <path d="M550 144 L750 195" fill="none" marker-end="url(#a)"/>
+  </g>
+
+  <!-- ===== symptom 1: flicker ===== -->
+  <rect x="40" y="200" width="280" height="120" rx="12" fill="#1a1226" stroke="#ff4757" stroke-opacity="0.6"/>
+  <text x="60" y="228" fill="#ff6b81" font-size="17" font-weight="700">症状①  频闪</text>
+  <text x="60" y="252" fill="#c9d8ea" font-size="13">电流纹波压不住，光随电流抖</text>
+  <text x="60" y="272" fill="#c9d8ea" font-size="13">调光低亮度档纹波放大数倍</text>
+  <rect x="60" y="286" width="240" height="24" rx="5" fill="#241530"/>
+  <text x="70" y="303" fill="#ffa502" font-size="12.5">根源 → 输出电容老化 · PWM 频率低</text>
+
+  <!-- ===== symptom 2: color ===== -->
+  <rect x="340" y="200" width="280" height="120" rx="12" fill="#0f2233" stroke="#ffa502" stroke-opacity="0.6"/>
+  <text x="360" y="228" fill="#ffc048" font-size="17" font-weight="700">症状②  显色失真</text>
+  <text x="360" y="252" fill="#c9d8ea" font-size="13">Ra 平均分高，但 R9 红色发灰</text>
+  <text x="360" y="272" fill="#c9d8ea" font-size="13">灯珠偏离额定电流 → 光谱被拉偏</text>
+  <rect x="360" y="286" width="240" height="24" rx="5" fill="#152c3d"/>
+  <text x="370" y="303" fill="#ffa502" font-size="12.5">根源 → 恒流精度差 · 电流飘移</text>
+
+  <!-- ===== symptom 3: dimming ===== -->
+  <rect x="640" y="200" width="280" height="120" rx="12" fill="#0f2a22" stroke="#2ed573" stroke-opacity="0.6"/>
+  <text x="660" y="228" fill="#7bed9f" font-size="17" font-weight="700">症状③  越用越暗</text>
+  <text x="660" y="252" fill="#c9d8ea" font-size="13">电解电容先于灯珠"退休"</text>
+  <text x="660" y="272" fill="#c9d8ea" font-size="13">外壳温度每降 10℃ 寿命约翻倍</text>
+  <rect x="660" y="286" width="240" height="24" rx="5" fill="#133025"/>
+  <text x="670" y="303" fill="#ffa502" font-size="12.5">根源 → 电容耐温低 · 发热大</text>
+
+  <!-- ===== check params row ===== -->
+  <text x="480" y="368" text-anchor="middle" fill="#7ea6c8" font-size="14">买灯时对应问三个参数</text>
+
+  <g font-family="Consolas,monospace">
+    <rect x="40" y="390" width="280" height="90" rx="10" fill="#0c1c30" stroke="#ff6b81" stroke-width="1.2"/>
+    <text x="60" y="418" fill="#22d3ee" font-size="13">$ check driver --flicker</text>
+    <text x="60" y="442" fill="#e2f3ff" font-size="15" font-weight="700">波动深度 ≤ 5%</text>
+    <text x="60" y="466" fill="#7ea6c8" font-size="12.5">调光低端 ≤ 15% (IEEE 1789)</text>
+
+    <rect x="340" y="390" width="280" height="90" rx="10" fill="#0c1c30" stroke="#ffa502" stroke-width="1.2"/>
+    <text x="360" y="418" fill="#22d3ee" font-size="13">$ check driver --accuracy</text>
+    <text x="360" y="442" fill="#e2f3ff" font-size="15" font-weight="700">恒流精度 ≤ ±3%</text>
+    <text x="360" y="466" fill="#7ea6c8" font-size="12.5">优秀驱动做到 ±1%</text>
+
+    <rect x="640" y="390" width="280" height="90" rx="10" fill="#0c1c30" stroke="#2ed573" stroke-width="1.2"/>
+    <text x="660" y="418" fill="#22d3ee" font-size="13">$ check driver --cap</text>
+    <text x="660" y="442" fill="#e2f3ff" font-size="15" font-weight="700">电容 ≥105℃ · 寿命 ≥3万h</text>
+    <text x="660" y="466" fill="#7ea6c8" font-size="12.5">答不上来的直接 pass</text>
+  </g>
+
+  <text x="480" y="524" text-anchor="middle" fill="#4d7aa6" font-size="13">智能决定好不好玩 · 驱动底子决定好不好用</text>
+</svg>
