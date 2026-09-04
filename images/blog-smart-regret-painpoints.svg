@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI','Microsoft YaHei',sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12305a" stroke-width="0.6" opacity="0.5"/>
+    </pattern>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" fill="#0a1628"/>
+  <rect width="900" height="620" fill="url(#grid)"/>
+  <rect x="0" y="0" width="900" height="90" fill="url(#glow)"/>
+  <!-- terminal window -->
+  <rect x="60" y="55" width="780" height="510" rx="12" fill="#0d1f3c" stroke="#1e4a8a" stroke-width="1.5"/>
+  <rect x="60" y="55" width="780" height="44" rx="12" fill="#12305a"/>
+  <circle cx="90" cy="77" r="7" fill="#ff5f57"/>
+  <circle cx="115" cy="77" r="7" fill="#febc2e"/>
+  <circle cx="140" cy="77" r="7" fill="#28c840"/>
+  <text x="450" y="83" text-anchor="middle" fill="#7fb8ff" font-size="17" font-weight="bold">user_complaints.log — 2026.09</text>
+  <!-- title -->
+  <text x="450" y="145" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="bold">"装了智能灯又想拆掉？"</text>
+  <text x="450" y="175" text-anchor="middle" fill="#5a8fd0" font-size="15">四大真实痛点 · 全网吐槽数据整理</text>
+  <!-- pain point cards -->
+  <g>
+    <rect x="95" y="205" width="345" height="100" rx="8" fill="#0f2647" stroke="#00e5ff" stroke-width="1.2" opacity="0.9"/>
+    <text x="115" y="238" fill="#00e5ff" font-size="20" font-weight="bold">01 延迟</text>
+    <text x="115" y="265" fill="#c8dcf5" font-size="14">按了开关灯慢半拍，指令绕云端</text>
+    <text x="115" y="288" fill="#5a8fd0" font-size="13">root_cause: cloud_roundtrip</text>
+  </g>
+  <g>
+    <rect x="460" y="205" width="345" height="100" rx="8" fill="#0f2647" stroke="#ffb84d" stroke-width="1.2" opacity="0.9"/>
+    <text x="480" y="238" fill="#ffb84d" font-size="20" font-weight="bold">02 老人不会用</text>
+    <text x="480" y="265" fill="#c8dcf5" font-size="14">轻触/长按/双击，爸妈当成考试</text>
+    <text x="480" y="288" fill="#5a8fd0" font-size="13">root_cause: no_fallback_switch</text>
+  </g>
+  <g>
+    <rect x="95" y="325" width="345" height="100" rx="8" fill="#0f2647" stroke="#7c6cff" stroke-width="1.2" opacity="0.9"/>
+    <text x="115" y="358" fill="#a89bff" font-size="20" font-weight="bold">03 生态绑架</text>
+    <text x="115" y="385" fill="#c8dcf5" font-size="14">换牌子=全屋重来，联动凑不齐</text>
+    <text x="115" y="408" fill="#5a8fd0" font-size="13">root_cause: closed_protocol</text>
+  </g>
+  <g>
+    <rect x="460" y="325" width="345" height="100" rx="8" fill="#0f2647" stroke="#ff6b81" stroke-width="1.2" opacity="0.9"/>
+    <text x="480" y="358" fill="#ff8fa0" font-size="20" font-weight="bold">04 莫名自亮/频闪</text>
+    <text x="480" y="385" fill="#c8dcf5" font-size="14">半夜自亮查无因，深调光眼发胀</text>
+    <text x="480" y="408" fill="#5a8fd0" font-size="13">root_cause: cheap_driver</text>
+  </g>
+  <!-- bottom conclusion bar -->
+  <rect x="95" y="455" width="710" height="76" rx="8" fill="#00e5ff" opacity="0.08"/>
+  <rect x="95" y="455" width="710" height="76" rx="8" fill="none" stroke="#00e5ff" stroke-width="1.4"/>
+  <text x="450" y="487" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="bold">结论：锅不在"智能"本身，而在方案选错了</text>
+  <text x="450" y="514" text-anchor="middle" fill="#00e5ff" font-size="14">本地执行 + 物理兜底 + 开放协议 + 优质驱动 = 不后悔</text>
+  <text x="450" y="595" text-anchor="middle" fill="#3a6ea8" font-size="12">NEXLAMP · 涂鸦Zigbee智能照明 · nexlamp.com</text>
+</svg>

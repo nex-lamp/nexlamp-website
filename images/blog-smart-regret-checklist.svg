@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="'Consolas','Microsoft YaHei',monospace">
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12305a" stroke-width="0.6" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="640" fill="#0a1628"/>
+  <rect width="900" height="640" fill="url(#grid3)"/>
+  <!-- terminal window -->
+  <rect x="60" y="50" width="780" height="540" rx="12" fill="#0d1f3c" stroke="#1e4a8a" stroke-width="1.5"/>
+  <rect x="60" y="50" width="780" height="44" rx="12" fill="#12305a"/>
+  <circle cx="90" cy="72" r="7" fill="#ff5f57"/>
+  <circle cx="115" cy="72" r="7" fill="#febc2e"/>
+  <circle cx="140" cy="72" r="7" fill="#28c840"/>
+  <text x="450" y="78" text-anchor="middle" fill="#7fb8ff" font-size="16" font-weight="bold">smart_lighting_checklist.sh — 选购五问</text>
+
+  <text x="95" y="135" fill="#28c840" font-size="15">$ ./verify_before_buy.sh</text>
+
+  <g>
+    <text x="95" y="180" fill="#00e5ff" font-size="16" font-weight="bold">[1] 协议开放性</text>
+    <text x="115" y="206" fill="#c8dcf5" font-size="14">灯具选 Zigbee 3.0 开放协议，网关选双模（支持 Matter Bridge）</text>
+    <text x="115" y="228" fill="#5a8fd0" font-size="13">→ 今天的灯，明天照样进新生态，不存在"两年就废"</text>
+  </g>
+  <g>
+    <text x="95" y="272" fill="#00e5ff" font-size="16" font-weight="bold">[2] 断网测试</text>
+    <text x="115" y="298" fill="#c8dcf5" font-size="14">拔掉外网：墙壁开关和本地场景还能秒开吗？</text>
+    <text x="115" y="320" fill="#5a8fd0" font-size="13">→ 答案必须是"能"，指令闭环要在网关本地完成</text>
+  </g>
+  <g>
+    <text x="95" y="364" fill="#00e5ff" font-size="16" font-weight="bold">[3] 驱动三认证</text>
+    <text x="115" y="390" fill="#c8dcf5" font-size="14">3C认证 ✓ 深调光无频闪（&lt;1%）✓ 待机低功耗 ✓</text>
+    <text x="115" y="412" fill="#5a8fd0" font-size="13">→ 驱动是智能灯的心脏，协议再花哨驱动不行照样翻车</text>
+  </g>
+  <g>
+    <text x="95" y="456" fill="#00e5ff" font-size="16" font-weight="bold">[4] 物理兜底</text>
+    <text x="115" y="482" fill="#c8dcf5" font-size="14">每个房间保留物理开关；爸妈房/客房不做复杂场景</text>
+    <text x="115" y="504" fill="#5a8fd0" font-size="13">→ 老人一键开关是底线，语音和APP只是加分项</text>
+  </g>
+  <g>
+    <text x="95" y="548" fill="#00e5ff" font-size="16" font-weight="bold">[5] 成本结构</text>
+    <text x="115" y="574" fill="#c8dcf5" font-size="14">驱动和光源成本占比 ≥ 30% 才是体验下限</text>
+    <text x="115" y="596" fill="#5a8fd0" font-size="13">→ 省在看不见的地方，必在深夜还回来</text>
+  </g>
+</svg>
