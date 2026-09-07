@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="'Consolas','Microsoft YaHei',monospace">
+  <defs>
+    <pattern id="g3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12305a" stroke-width="0.6" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="640" fill="#0a1628"/>
+  <rect width="900" height="640" fill="url(#g3)"/>
+  <!-- terminal window -->
+  <rect x="60" y="40" width="780" height="560" rx="12" fill="#0d1f3c" stroke="#1e4a8a" stroke-width="1.5"/>
+  <rect x="60" y="40" width="780" height="44" rx="12" fill="#12305a"/>
+  <circle cx="90" cy="62" r="7" fill="#ff5f57"/>
+  <circle cx="115" cy="62" r="7" fill="#febc2e"/>
+  <circle cx="140" cy="62" r="7" fill="#28c840"/>
+  <text x="450" y="68" text-anchor="middle" fill="#7fb8ff" font-size="16" font-weight="bold">circadian_buying_checklist.sh — 真节律灯的三道关</text>
+
+  <text x="95" y="118" fill="#28c840" font-size="15">$ verify_real_circadian_light.sh --home</text>
+
+  <g>
+    <rect x="95" y="140" width="710" height="92" rx="8" fill="#0a1628" stroke="#1e4a8a"/>
+    <text x="115" y="172" fill="#00e5ff" font-size="16" font-weight="bold">[1] 色温跨度与光谱</text>
+    <text x="115" y="198" fill="#c8dcf5" font-size="14">跨度 ≥2700K–6500K（中高端 1800K–12000K）；护眼认准"全光谱/紫光激发"</text>
+    <text x="115" y="220" fill="#5a8fd0" font-size="13">→ 让商家直接发光谱图，别只看一个 Ra 数字</text>
+    <text x="775" y="198" text-anchor="end" fill="#28c840" font-size="15" font-weight="bold">PASS</text>
+  </g>
+
+  <g>
+    <rect x="95" y="252" width="710" height="92" rx="8" fill="#0a1628" stroke="#1e4a8a"/>
+    <text x="115" y="284" fill="#00e5ff" font-size="16" font-weight="bold">[2] 频闪与蓝光</text>
+    <text x="115" y="310" fill="#c8dcf5" font-size="14">闪变指数 PstLM 达标、蓝光危害 RG0 豁免级（无频闪是底线）</text>
+    <text x="115" y="332" fill="#5a8fd0" font-size="13">→ 土办法：手机相机对灯拍，出现滚动条纹 = 频闪严重</text>
+    <text x="775" y="310" text-anchor="end" fill="#28c840" font-size="15" font-weight="bold">PASS</text>
+  </g>
+
+  <g>
+    <rect x="95" y="364" width="710" height="92" rx="8" fill="#0a1628" stroke="#1e4a8a"/>
+    <text x="115" y="396" fill="#00e5ff" font-size="16" font-weight="bold">[3] 会不会"自己变"</text>
+    <text x="115" y="422" fill="#c8dcf5" font-size="14">内置时钟/场景引擎，按时间·天气·状态自动调度色温亮度</text>
+    <text x="115" y="444" fill="#5a8fd0" font-size="13">→ 只给一个手动"夜间模式"按钮的，都是伪健康光</text>
+    <text x="775" y="422" text-anchor="end" fill="#28c840" font-size="15" font-weight="bold">PASS</text>
+  </g>
+
+  <rect x="95" y="480" width="710" height="56" rx="8" fill="#10301f" stroke="#2a7a4a"/>
+  <text x="115" y="515" fill="#9be8b2" font-size="15" font-weight="bold">✔ 三关全过 = 真节律灯</text>
+  <text x="400" y="515" fill="#c8dcf5" font-size="14">伪健康光：只有预设场景名，没有任何自动调度逻辑</text>
+</svg>

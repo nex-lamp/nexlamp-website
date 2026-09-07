@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="'Consolas','Microsoft YaHei',monospace">
+  <defs>
+    <pattern id="g2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12305a" stroke-width="0.6" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="640" fill="#0a1628"/>
+  <rect width="900" height="640" fill="url(#g2)"/>
+  <!-- terminal window -->
+  <rect x="40" y="40" width="820" height="560" rx="12" fill="#0d1f3c" stroke="#1e4a8a" stroke-width="1.5"/>
+  <rect x="40" y="40" width="820" height="44" rx="12" fill="#12305a"/>
+  <circle cx="70" cy="62" r="7" fill="#ff5f57"/>
+  <circle cx="95" cy="62" r="7" fill="#febc2e"/>
+  <circle cx="120" cy="62" r="7" fill="#28c840"/>
+  <text x="450" y="68" text-anchor="middle" fill="#7fb8ff" font-size="16" font-weight="bold">light_body_clock.sh — 光如何影响你的生物钟</text>
+
+  <!-- left: vertical pathway -->
+  <rect x="80" y="105" width="320" height="66" rx="8" fill="#12305a" stroke="#1e4a8a"/>
+  <text x="100" y="132" fill="#00e5ff" font-size="15" font-weight="bold">① 眼睛接收</text>
+  <text x="100" y="156" fill="#c8dcf5" font-size="13">视网膜 ipRGC 感光细胞感知蓝光浓度</text>
+
+  <line x1="240" y1="171" x2="240" y2="195" stroke="#3f7fd0" stroke-width="2"/>
+  <polygon points="234,194 240,204 246,194" fill="#3f7fd0"/>
+
+  <rect x="80" y="206" width="320" height="66" rx="8" fill="#12305a" stroke="#1e4a8a"/>
+  <text x="100" y="233" fill="#00e5ff" font-size="15" font-weight="bold">② 信号上报</text>
+  <text x="100" y="257" fill="#c8dcf5" font-size="13">视交叉上核 SCN — 人体的"生物钟中枢"</text>
+
+  <line x1="240" y1="272" x2="240" y2="296" stroke="#3f7fd0" stroke-width="2"/>
+  <polygon points="234,295 240,305 246,295" fill="#3f7fd0"/>
+
+  <rect x="80" y="307" width="320" height="66" rx="8" fill="#12305a" stroke="#1e4a8a"/>
+  <text x="100" y="334" fill="#00e5ff" font-size="15" font-weight="bold">③ 指令下达</text>
+  <text x="100" y="358" fill="#c8dcf5" font-size="13">松果体：控制褪黑素（睡眠激素）分泌</text>
+
+  <line x1="240" y1="373" x2="240" y2="397" stroke="#3f7fd0" stroke-width="2"/>
+  <polygon points="234,396 240,406 246,396" fill="#3f7fd0"/>
+
+  <rect x="80" y="408" width="320" height="66" rx="8" fill="#12305a" stroke="#1e4a8a"/>
+  <text x="100" y="435" fill="#00e5ff" font-size="15" font-weight="bold">④ 身体响应</text>
+  <text x="100" y="459" fill="#c8dcf5" font-size="13">清醒 / 困意 / 专注 / 情绪</text>
+
+  <!-- right: output panel -->
+  <rect x="450" y="105" width="380" height="240" rx="10" fill="#0a1628" stroke="#1e4a8a"/>
+  <text x="470" y="132" fill="#7fb8ff" font-size="14" font-weight="bold"># 真实影响 output</text>
+  <text x="470" y="166" fill="#c8dcf5" font-size="13">✔ 白天高色温+充足蓝光 → 抑制褪黑素</text>
+  <text x="482" y="188" fill="#5a8fd0" font-size="12">→ 保持清醒、提升专注</text>
+  <text x="470" y="220" fill="#c8dcf5" font-size="13">✔ 夜间低蓝光暖光 → 褪黑素上升</text>
+  <text x="482" y="242" fill="#5a8fd0" font-size="12">→ 睡意来临、睡眠更深</text>
+  <text x="470" y="274" fill="#ff9d7a" font-size="13">✘ 夜晚仍被冷白光/屏幕照射</text>
+  <text x="482" y="296" fill="#5a8fd0" font-size="12">→ 生物钟紊乱：失眠、晨起疲惫</text>
+  <text x="470" y="328" fill="#c8dcf5" font-size="13">✘ 全天恒定一个色温</text>
+  <text x="482" y="348" fill="#5a8fd0" font-size="12">→ 身体失去"时间参照"，节律无从谈起</text>
+
+  <!-- bottom: standard indicator strip -->
+  <rect x="80" y="505" width="750" height="66" rx="10" fill="#10304f" stroke="#1e4a8a"/>
+  <text x="100" y="528" fill="#7fb8ff" font-size="14" font-weight="bold">T/SILA 027—2026 动态人工光硬指标</text>
+  <text x="100" y="556" fill="#c8dcf5" font-size="13">色温 1800–12000K · Ra B级+ · 效能比 0.4–0.8 · RG0 蓝光豁免 · 天空光场景 ≥6 种</text>
+</svg>
