@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d2038"/>
+    </linearGradient>
+    <linearGradient id="glow5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00d4aa"/>
+      <stop offset="1" stop-color="#0099ff"/>
+    </linearGradient>
+    <filter id="f5" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="lightcone" cx="0.5" cy="0" r="1">
+      <stop offset="0" stop-color="#ffe9b0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="540" fill="url(#bg5)"/>
+  <g stroke="#1a3a5c" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="90" x2="800" y2="90"/><line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/><line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="100" y1="0" x2="100" y2="540"/><line x1="200" y1="0" x2="200" y2="540"/>
+    <line x1="300" y1="0" x2="300" y2="540"/><line x1="400" y1="0" x2="400" y2="540"/>
+    <line x1="500" y1="0" x2="500" y2="540"/><line x1="600" y1="0" x2="600" y2="540"/>
+    <line x1="700" y1="0" x2="700" y2="540"/>
+  </g>
+  <rect x="0" y="0" width="800" height="60" fill="#071020" opacity="0.9"/>
+  <circle cx="36" cy="30" r="6" fill="#ff5f57"/><circle cx="56" cy="30" r="6" fill="#febc2e"/><circle cx="76" cy="30" r="6" fill="#28c840"/>
+  <text x="400" y="38" text-anchor="middle" fill="#e8f4ff" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">满吊无主灯 vs 混合照明：2026 新趋势</text>
+  <line x1="170" y1="50" x2="630" y2="50" stroke="url(#glow5)" stroke-width="2" filter="url(#f5)"/>
+
+  <!-- LEFT: full ceiling -->
+  <rect x="40" y="86" width="350" height="30" rx="6" fill="#1a2a3a" stroke="#4a6a8a"/>
+  <text x="215" y="107" text-anchor="middle" fill="#ff9f9f" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold">满吊无主灯（层高≤2.6m 高危）</text>
+  <!-- ceiling line -->
+  <rect x="55" y="130" width="320" height="12" rx="3" fill="#2a4a6a"/>
+  <!-- recessed downlights row -->
+  <g>
+    <circle cx="90" cy="136" r="6" fill="#0a1628" stroke="#5a7fa0"/><circle cx="140" cy="136" r="6" fill="#0a1628" stroke="#5a7fa0"/>
+    <circle cx="190" cy="136" r="6" fill="#0a1628" stroke="#5a7fa0"/><circle cx="240" cy="136" r="6" fill="#0a1628" stroke="#5a7fa0"/>
+    <circle cx="290" cy="136" r="6" fill="#0a1628" stroke="#5a7fa0"/><circle cx="340" cy="136" r="6" fill="#0a1628" stroke="#5a7fa0"/>
+  </g>
+  <!-- narrow beams -->
+  <polygon points="90,142 74,300 106,300" fill="url(#lightcone)"/>
+  <polygon points="190,142 174,300 206,300" fill="url(#lightcone)"/>
+  <polygon points="290,142 274,300 306,300" fill="url(#lightcone)"/>
+  <!-- dark floor -->
+  <rect x="55" y="300" width="320" height="10" fill="#122438"/>
+  <rect x="55" y="300" width="320" height="10" fill="none"/>
+  <!-- dark zones labels -->
+  <text x="120" y="330" text-anchor="middle" fill="#ff7b7b" font-family="Microsoft YaHei, sans-serif" font-size="13">暗区</text>
+  <text x="215" y="330" text-anchor="middle" fill="#ff7b7b" font-family="Microsoft YaHei, sans-serif" font-size="13">暗区</text>
+  <text x="310" y="330" text-anchor="middle" fill="#ff7b7b" font-family="Microsoft YaHei, sans-serif" font-size="13">暗区</text>
+  <g font-family="Microsoft YaHei, sans-serif" font-size="13.5" fill="#8ab4d8">
+    <text x="60" y="372">✕ 吊顶下压10cm → 净高2.6m</text>
+    <text x="60" y="398">✕ 光斑零散 · 明一块暗一块</text>
+    <text x="60" y="424">✕ 六成业主后期补灯 · 预算超支</text>
+    <text x="60" y="450">✕ 积灰检修要拆吊顶</text>
+  </g>
+
+  <!-- divider -->
+  <line x1="400" y1="90" x2="400" y2="460" stroke="#2a4a6a" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <!-- RIGHT: hybrid -->
+  <rect x="410" y="86" width="350" height="30" rx="6" fill="#0f2d3f" stroke="#00d4aa"/>
+  <text x="585" y="107" text-anchor="middle" fill="#7dffd4" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold">混合照明（2026 推荐方案）</text>
+  <!-- ceiling line -->
+  <rect x="425" y="130" width="320" height="12" rx="3" fill="#2a4a6a"/>
+  <!-- slim ceiling light center -->
+  <rect x="530" y="128" width="110" height="10" rx="5" fill="#ffe9b0" filter="url(#f5)"/>
+  <!-- wide soft light -->
+  <polygon points="530,138 445,300 725,300" fill="url(#lightcone)"/>
+  <!-- two spotlights at table -->
+  <circle cx="480" cy="134" r="5" fill="#0a1628" stroke="#00d4aa" stroke-width="1.5"/>
+  <circle cx="690" cy="134" r="5" fill="#0a1628" stroke="#00d4aa" stroke-width="1.5"/>
+  <polygon points="480,140 462,260 498,260" fill="url(#lightcone)"/>
+  <polygon points="690,140 672,260 708,260" fill="url(#lightcone)"/>
+  <!-- table -->
+  <rect x="540" y="268" width="90" height="8" rx="3" fill="#3a5a7a"/>
+  <!-- floor -->
+  <rect x="425" y="300" width="320" height="10" fill="#16304a"/>
+  <text x="585" y="330" text-anchor="middle" fill="#7dffd4" font-family="Microsoft YaHei, sans-serif" font-size="13">基础亮度均匀 · 重点照明精准</text>
+  <g font-family="Microsoft YaHei, sans-serif" font-size="13.5" fill="#8ab4d8">
+    <text x="430" y="372">✓ 超薄吸顶灯不占层高 · 净高保留</text>
+    <text x="430" y="398">✓ 餐桌/茶几上方精准布2-4个射灯</text>
+    <text x="430" y="424">✓ 或直接明装筒灯 · 免吊顶省2~3万</text>
+    <text x="430" y="450">✓ 层次感不少 · 老人小孩都会开灯</text>
+  </g>
+
+  <!-- bottom -->
+  <g filter="url(#f5)">
+    <rect x="160" y="480" width="480" height="44" rx="10" fill="#0f2d3f" stroke="#ffd166" stroke-width="1.5"/>
+  </g>
+  <text x="400" y="508" text-anchor="middle" fill="#ffd166" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="bold">高级感 = 该亮的地方亮 + 该暗的地方暗，不是天花板上的灯孔数量</text>
+</svg>

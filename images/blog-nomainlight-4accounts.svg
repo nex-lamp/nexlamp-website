@@ -1,0 +1,73 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d2038"/>
+    </linearGradient>
+    <linearGradient id="glow4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00d4aa"/>
+      <stop offset="1" stop-color="#0099ff"/>
+    </linearGradient>
+    <filter id="f4" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg4)"/>
+  <g stroke="#1a3a5c" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="86" x2="800" y2="86"/><line x1="0" y1="172" x2="800" y2="172"/>
+    <line x1="0" y1="258" x2="800" y2="258"/><line x1="0" y1="344" x2="800" y2="344"/>
+    <line x1="0" y1="430" x2="800" y2="430"/>
+    <line x1="133" y1="0" x2="133" y2="520"/><line x1="266" y1="0" x2="266" y2="520"/>
+    <line x1="400" y1="0" x2="400" y2="520"/><line x1="533" y1="0" x2="533" y2="520"/>
+    <line x1="666" y1="0" x2="666" y2="520"/>
+  </g>
+  <rect x="0" y="0" width="800" height="64" fill="#071020" opacity="0.9"/>
+  <circle cx="36" cy="32" r="6" fill="#ff5f57"/><circle cx="56" cy="32" r="6" fill="#febc2e"/><circle cx="76" cy="32" r="6" fill="#28c840"/>
+  <text x="400" y="40" text-anchor="middle" fill="#e8f4ff" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="bold">无主灯翻车复盘：4笔账没算清，翻车是必然</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="url(#glow4)" stroke-width="2" filter="url(#f4)"/>
+
+  <!-- Account 1 -->
+  <g filter="url(#f4)">
+    <rect x="50" y="92" width="345" height="128" rx="10" fill="#0f2740" stroke="#ff7b7b" stroke-width="1.5"/>
+  </g>
+  <text x="72" y="122" fill="#ff7b7b" font-family="Consolas, monospace" font-size="14" font-weight="bold">ACCOUNT 01 // 翻车率最高</text>
+  <text x="72" y="150" fill="#e8f4ff" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">亮度账：按总功率算，不按灯数算</text>
+  <text x="72" y="178" fill="#8ab4d8" font-family="Microsoft YaHei, sans-serif" font-size="14">LED总功率 ≈ 每平米 3-5W × 面积</text>
+  <text x="72" y="202" fill="#8ab4d8" font-family="Microsoft YaHei, sans-serif" font-size="13">洗墙/灯带光损耗大 → 无主灯要往高取</text>
+
+  <!-- Account 2 -->
+  <g filter="url(#f4)">
+    <rect x="415" y="92" width="345" height="128" rx="10" fill="#0f2740" stroke="#ffd166" stroke-width="1.5"/>
+  </g>
+  <text x="437" y="122" fill="#ffd166" font-family="Consolas, monospace" font-size="14" font-weight="bold">ACCOUNT 02 // 展厅效应</text>
+  <text x="437" y="150" fill="#e8f4ff" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">色温账：色温和照度是绑定的</text>
+  <text x="437" y="178" fill="#8ab4d8" font-family="Microsoft YaHei, sans-serif" font-size="14">展厅高照度显通透 → 家里照度低就显黄</text>
+  <text x="437" y="202" fill="#8ab4d8" font-family="Microsoft YaHei, sans-serif" font-size="13">客厅3000-4000K · 卧室2700-3000K</text>
+
+  <!-- Account 3 -->
+  <g filter="url(#f4)">
+    <rect x="50" y="240" width="345" height="128" rx="10" fill="#0f2740" stroke="#00d4aa" stroke-width="1.5"/>
+  </g>
+  <text x="72" y="270" fill="#00d4aa" font-family="Consolas, monospace" font-size="14" font-weight="bold">ACCOUNT 03 // 装了不敢开</text>
+  <text x="72" y="298" fill="#e8f4ff" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">眩光账：光束角 + 深杯防眩</text>
+  <text x="72" y="326" fill="#8ab4d8" font-family="Microsoft YaHei, sans-serif" font-size="14">桌面24° · 过道36°+ · 洗墙38°</text>
+  <text x="72" y="350" fill="#8ab4d8" font-family="Microsoft YaHei, sans-serif" font-size="13">射灯占比过半 = 注定晃眼 · CRI≥90</text>
+
+  <!-- Account 4 -->
+  <g filter="url(#f4)">
+    <rect x="415" y="240" width="345" height="128" rx="10" fill="#0f2740" stroke="#4db8ff" stroke-width="1.5"/>
+  </g>
+  <text x="437" y="270" fill="#4db8ff" font-family="Consolas, monospace" font-size="14" font-weight="bold">ACCOUNT 04 // 隐藏成本</text>
+  <text x="437" y="298" fill="#e8f4ff" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">层高与预算账：2.6米以下别满吊</text>
+  <text x="437" y="326" fill="#8ab4d8" font-family="Microsoft YaHei, sans-serif" font-size="14">吊顶+2~3万 · 积灰检修难 · 六成业主补灯</text>
+  <text x="437" y="350" fill="#8ab4d8" font-family="Microsoft YaHei, sans-serif" font-size="13">层高不够 → 明装筒灯 + 局部射灯混合照明</text>
+
+  <!-- Bottom -->
+  <g filter="url(#f4)">
+    <rect x="140" y="398" width="520" height="60" rx="10" fill="#0f2d3f" stroke="#00d4aa" stroke-width="1.5"/>
+  </g>
+  <text x="400" y="424" text-anchor="middle" fill="#e8f4ff" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">翻车的本质不是审美问题，是几笔账没算清</text>
+  <text x="400" y="447" text-anchor="middle" fill="#8ab4d8" font-family="Microsoft YaHei, sans-serif" font-size="13">下单前：灯数×瓦数÷面积 ≥ 3W/㎡（客厅5W） · 否则先别付钱</text>
+  <text x="400" y="497" text-anchor="middle" fill="#5a7fa0" font-family="Microsoft YaHei, sans-serif" font-size="12">金九银十 · 装修季自查 · NEXLAMP</text>
+</svg>
