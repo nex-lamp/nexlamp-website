@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="1"/>
+    </pattern>
+    <filter id="soft3" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="560" fill="#0a1628"/>
+  <rect width="900" height="560" fill="url(#grid3)"/>
+  <rect x="30" y="24" width="840" height="510" rx="12" fill="#0d1d33" stroke="#1e3a5f" stroke-width="1.5"/>
+  <circle cx="58" cy="50" r="6" fill="#ff5f56"/><circle cx="78" cy="50" r="6" fill="#ffbd2e"/><circle cx="98" cy="50" r="6" fill="#27c93f"/>
+  <text x="450" y="56" text-anchor="middle" fill="#7fa8d9" font-size="14">WHO_SHOULD_BUY_WHAT.sh — 三种家庭，三种选法</text>
+
+  <!-- case 1 -->
+  <rect x="70" y="90" width="240" height="330" rx="12" fill="#101f36" stroke="#00e5a0" stroke-width="2" filter="url(#soft3)"/>
+  <rect x="70" y="90" width="240" height="52" rx="12" fill="#0e2b22"/>
+  <rect x="70" y="126" width="240" height="16" fill="#0e2b22"/>
+  <text x="190" y="122" text-anchor="middle" fill="#a8ffd9" font-size="15" font-weight="bold">情况一 · 已有 Zigbee 生态</text>
+  <text x="190" y="168" text-anchor="middle" fill="#6fbf9f" font-size="12.5">涂鸦 / 米家 / Aqara 网关在用</text>
+  <text x="190" y="210" text-anchor="middle" fill="#e2f2ff" font-size="22" font-weight="bold">继续买 Zigbee</text>
+  <text x="190" y="256" text-anchor="middle" fill="#9fc3e8" font-size="12.5">别折腾，存量生态最稳</text>
+  <text x="190" y="286" text-anchor="middle" fill="#9fc3e8" font-size="12.5">想体验 Matter？</text>
+  <text x="190" y="312" text-anchor="middle" fill="#00e5a0" font-size="12.5">网关升级 Matter Bridge 即可</text>
+  <text x="190" y="356" text-anchor="middle" fill="#4f8f78" font-size="12">成本：≈ 0</text>
+  <text x="190" y="392" text-anchor="middle" fill="#4f8f78" font-size="12">折腾度：★</text>
+
+  <!-- case 2 -->
+  <rect x="330" y="90" width="240" height="330" rx="12" fill="#101f36" stroke="#38bdf8" stroke-width="2" filter="url(#soft3)"/>
+  <rect x="330" y="90" width="240" height="52" rx="12" fill="#0e2337"/>
+  <rect x="330" y="126" width="240" height="16" fill="#0e2337"/>
+  <text x="450" y="122" text-anchor="middle" fill="#bfe6ff" font-size="15" font-weight="bold">情况二 · 苹果家庭 + 正装修</text>
+  <text x="450" y="168" text-anchor="middle" fill="#6db3e0" font-size="12.5">HomePod 本身就是边界路由器</text>
+  <text x="450" y="210" text-anchor="middle" fill="#e2f2ff" font-size="22" font-weight="bold">等双协议 / 买 Matter</text>
+  <text x="450" y="256" text-anchor="middle" fill="#9fc3e8" font-size="12.5">Thread 链路零门槛</text>
+  <text x="450" y="286" text-anchor="middle" fill="#9fc3e8" font-size="12.5">Aqara 新灯未公布价格</text>
+  <text x="450" y="312" text-anchor="middle" fill="#38bdf8" font-size="12.5">不急可等，急用选现成 Matter 灯</text>
+  <text x="450" y="356" text-anchor="middle" fill="#4f8f78" font-size="12">成本：中</text>
+  <text x="450" y="392" text-anchor="middle" fill="#4f8f78" font-size="12">折腾度：★★</text>
+
+  <!-- case 3 -->
+  <rect x="590" y="90" width="240" height="330" rx="12" fill="#101f36" stroke="#c792ea" stroke-width="2" filter="url(#soft3)"/>
+  <rect x="590" y="90" width="240" height="52" rx="12" fill="#221833"/>
+  <rect x="590" y="126" width="240" height="16" fill="#221833"/>
+  <text x="710" y="122" text-anchor="middle" fill="#e2c9f5" font-size="15" font-weight="bold">情况三 · Home Assistant 玩家</text>
+  <text x="710" y="168" text-anchor="middle" fill="#b58fd9" font-size="12.5">HA 同时跑 Zigbee 协调器 + Thread 边界</text>
+  <text x="710" y="210" text-anchor="middle" fill="#e2f2ff" font-size="22" font-weight="bold">闭眼双协议</text>
+  <text x="710" y="256" text-anchor="middle" fill="#9fc3e8" font-size="12.5">两个网都是你的</text>
+  <text x="710" y="286" text-anchor="middle" fill="#9fc3e8" font-size="12.5">Zigbee 设备 + Thread 设备混搭</text>
+  <text x="710" y="312" text-anchor="middle" fill="#c792ea" font-size="12.5">这是双协议灯最舒服的用法</text>
+  <text x="710" y="356" text-anchor="middle" fill="#4f8f78" font-size="12">成本：已有 HA ≈ 0</text>
+  <text x="710" y="392" text-anchor="middle" fill="#4f8f78" font-size="12">折腾度：★★★（但快乐）</text>
+
+  <!-- bottom -->
+  <rect x="120" y="446" width="660" height="60" rx="10" fill="#101f36" stroke="#2a4a75" stroke-width="1.5"/>
+  <text x="450" y="471" text-anchor="middle" fill="#e2f2ff" font-size="13.5" font-weight="bold">买灯前先盘两问：家里有几个 HomePod / Echo / 小爱？网关支持 Matter Bridge 吗？</text>
+  <text x="450" y="493" text-anchor="middle" fill="#7fa8d9" font-size="12">想清楚这两问，选灯就是五分钟的事</text>
+</svg>

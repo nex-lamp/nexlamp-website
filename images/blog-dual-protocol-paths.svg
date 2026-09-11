@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="glowZ" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00e5a0" stop-opacity="0"/>
+      <stop offset="1" stop-color="#00e5a0" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="520" fill="#0a1628"/>
+  <rect width="900" height="520" fill="url(#grid)"/>
+  <!-- terminal header -->
+  <rect x="30" y="24" width="840" height="470" rx="12" fill="#0d1d33" stroke="#1e3a5f" stroke-width="1.5"/>
+  <circle cx="58" cy="50" r="6" fill="#ff5f56"/><circle cx="78" cy="50" r="6" fill="#ffbd2e"/><circle cx="98" cy="50" r="6" fill="#27c93f"/>
+  <text x="450" y="56" text-anchor="middle" fill="#7fa8d9" font-size="14">DUAL-PROTOCOL_LIGHT.link — 同一颗灯，两条路</text>
+  <!-- lamp node -->
+  <rect x="370" y="96" width="160" height="70" rx="10" fill="#12335c" stroke="#38bdf8" stroke-width="2" filter="url(#soft)"/>
+  <text x="450" y="126" text-anchor="middle" fill="#e2f2ff" font-size="17" font-weight="bold">双协议智能灯</text>
+  <text x="450" y="150" text-anchor="middle" fill="#8fc7f2" font-size="12">Zigbee radio + Thread radio</text>
+  <!-- left path: zigbee -->
+  <path d="M 370 131 L 240 131" stroke="#00e5a0" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <polygon points="240,131 252,125 252,137" fill="#00e5a0"/>
+  <rect x="60" y="98" width="180" height="66" rx="10" fill="#0e2b22" stroke="#00e5a0" stroke-width="2"/>
+  <text x="150" y="126" text-anchor="middle" fill="#a8ffd9" font-size="15" font-weight="bold">Zigbee 网关</text>
+  <text x="150" y="148" text-anchor="middle" fill="#5fcaa0" font-size="12">品牌生态 · 深度联动</text>
+  <path d="M 150 164 L 150 210" stroke="#00e5a0" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <polygon points="150,210 144,198 156,198" fill="#00e5a0"/>
+  <rect x="60" y="212" width="180" height="150" rx="10" fill="#0d1d33" stroke="#1e5c48" stroke-width="1.5"/>
+  <text x="150" y="242" text-anchor="middle" fill="#a8ffd9" font-size="14" font-weight="bold">品牌 App</text>
+  <text x="150" y="270" text-anchor="middle" fill="#6fbf9f" font-size="12.5">涂鸦 / 米家 / Aqara Home</text>
+  <text x="150" y="296" text-anchor="middle" fill="#4f8f78" font-size="12">✔ 传感器联动 · 渐变动效</text>
+  <text x="150" y="320" text-anchor="middle" fill="#4f8f78" font-size="12">✔ 断网本地场景</text>
+  <text x="150" y="344" text-anchor="middle" fill="#c07a5f" font-size="12">✘ 绑定网关 跨生态难</text>
+  <!-- right path: thread -->
+  <path d="M 530 131 L 660 131" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <polygon points="660,131 648,125 648,137" fill="#38bdf8"/>
+  <rect x="660" y="98" width="180" height="66" rx="10" fill="#0e2337" stroke="#38bdf8" stroke-width="2"/>
+  <text x="750" y="126" text-anchor="middle" fill="#bfe6ff" font-size="15" font-weight="bold">Thread 边界路由器</text>
+  <text x="750" y="148" text-anchor="middle" fill="#6db3e0" font-size="12">HomePod / Apple TV / Echo</text>
+  <path d="M 750 164 L 750 210" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <polygon points="750,210 744,198 756,198" fill="#38bdf8"/>
+  <rect x="640" y="212" width="220" height="150" rx="10" fill="#0d1d33" stroke="#1e3a5f" stroke-width="1.5"/>
+  <text x="750" y="242" text-anchor="middle" fill="#bfe6ff" font-size="14" font-weight="bold">Matter → 全平台直连</text>
+  <text x="750" y="270" text-anchor="middle" fill="#6db3e0" font-size="12.5">苹果家庭 · Alexa · Google</text>
+  <text x="750" y="294" text-anchor="middle" fill="#6db3e0" font-size="12.5">SmartThings · Home Assistant</text>
+  <text x="750" y="322" text-anchor="middle" fill="#4f8f78" font-size="12">✔ 不经品牌网关 本地控制</text>
+  <text x="750" y="346" text-anchor="middle" fill="#c07a5f" font-size="12">✘ 进阶灯效可能打折</text>
+  <!-- bottom note -->
+  <rect x="120" y="396" width="660" height="62" rx="10" fill="#101f36" stroke="#2a4a75" stroke-width="1.5"/>
+  <text x="450" y="422" text-anchor="middle" fill="#e2f2ff" font-size="14" font-weight="bold">本质：一个灯，两条路，爱走哪条走哪条</text>
+  <text x="450" y="445" text-anchor="middle" fill="#7fa8d9" font-size="12">Zigbee 保住深度生态 · Thread 换来跨平台自由</text>
+</svg>

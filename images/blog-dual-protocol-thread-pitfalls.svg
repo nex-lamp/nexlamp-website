@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="1"/>
+    </pattern>
+    <filter id="soft2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="520" fill="#0a1628"/>
+  <rect width="900" height="520" fill="url(#grid2)"/>
+  <rect x="30" y="24" width="840" height="470" rx="12" fill="#0d1d33" stroke="#1e3a5f" stroke-width="1.5"/>
+  <circle cx="58" cy="50" r="6" fill="#ff5f56"/><circle cx="78" cy="50" r="6" fill="#ffbd2e"/><circle cx="98" cy="50" r="6" fill="#27c93f"/>
+  <text x="450" y="56" text-anchor="middle" fill="#7fa8d9" font-size="14">THREAD_PITFALLS.log — 走 Thread 这条路之前，先看三个坑</text>
+
+  <!-- pitfall 1 -->
+  <rect x="70" y="86" width="760" height="112" rx="10" fill="#101f36" stroke="#e8a13a" stroke-width="1.8" filter="url(#soft2)"/>
+  <rect x="70" y="86" width="8" height="112" rx="4" fill="#e8a13a"/>
+  <text x="104" y="118" fill="#ffd48a" font-size="16" font-weight="bold">坑一：边界路由器不是人人都有的</text>
+  <text x="104" y="146" fill="#9fc3e8" font-size="13">Thread 灯必须挂在边界路由器下：HomePod mini / Apple TV 4K / 新版 Echo / Nest Hub</text>
+  <text x="104" y="172" fill="#c07a5f" font-size="13">家里一个都没有？先花几百块补一个，否则灯就是块砖</text>
+
+  <!-- pitfall 2 -->
+  <rect x="70" y="218" width="760" height="112" rx="10" fill="#101f36" stroke="#e8a13a" stroke-width="1.8" filter="url(#soft2)"/>
+  <rect x="70" y="218" width="8" height="112" rx="4" fill="#e8a13a"/>
+  <text x="104" y="250" fill="#ffd48a" font-size="16" font-weight="bold">坑二：谁的边界路由器接入，凭据跟谁走</text>
+  <text x="104" y="278" fill="#9fc3e8" font-size="13">灯挂在 HomePod 下配网，Google Home 也能添加，但换生态时偶发需重新入网</text>
+  <text x="104" y="304" fill="#c07a5f" font-size="13">多管理(Multi-Admin)好用，但别指望丝滑搬家</text>
+
+  <!-- pitfall 3 -->
+  <rect x="70" y="350" width="760" height="112" rx="10" fill="#101f36" stroke="#e8a13a" stroke-width="1.8" filter="url(#soft2)"/>
+  <rect x="70" y="350" width="8" height="112" rx="4" fill="#e8a13a"/>
+  <text x="104" y="382" fill="#ffd48a" font-size="16" font-weight="bold">坑三：进阶功能在标准通道里会打折</text>
+  <text x="104" y="410" fill="#9fc3e8" font-size="13">Matter 标准只覆盖开关 / 亮度 / 色温 / 场景，呼吸渐变、分区动画多为厂商私货</text>
+  <text x="104" y="436" fill="#c07a5f" font-size="13">想用全部灯效，大概率还是要装品牌 App</text>
+
+  <text x="450" y="486" text-anchor="middle" fill="#7fa8d9" font-size="12.5">结论：Thread 是自由之路，不是完美之路 — 认清三个坑再上车</text>
+</svg>
