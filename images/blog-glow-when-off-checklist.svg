@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="520" fill="#0a1628"/>
+  <rect width="900" height="520" fill="url(#grid)"/>
+  <rect x="30" y="24" width="840" height="470" rx="12" fill="#0d1d33" stroke="#1e3a5f" stroke-width="1.5"/>
+  <circle cx="58" cy="50" r="6" fill="#ff5f56"/><circle cx="78" cy="50" r="6" fill="#ffbd2e"/><circle cx="98" cy="50" r="6" fill="#27c93f"/>
+  <text x="450" y="56" text-anchor="middle" fill="#7fa8d9" font-size="15" letter-spacing="3">SELF-CHECK FLOW / 关灯微亮 4 步自查</text>
+  <line x1="30" y1="76" x2="870" y2="76" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- Step 1 -->
+  <rect x="70" y="104" width="760" height="72" rx="10" fill="#12233f" stroke="#3d6fa8" stroke-width="1.5"/>
+  <circle cx="112" cy="140" r="20" fill="#3d6fa8"/>
+  <text x="112" y="146" text-anchor="middle" fill="#0a1628" font-size="16" font-weight="bold">1</text>
+  <text x="152" y="134" fill="#e8f1ff" font-size="15" font-weight="bold">验电笔测灯座火线端</text>
+  <text x="152" y="158" fill="#7fa8d9" font-size="12">关掉开关仍带电 → 零火接反，找电工整改（切勿自行拆改）</text>
+
+  <!-- Step 2 -->
+  <rect x="70" y="188" width="760" height="72" rx="10" fill="#12233f" stroke="#ffbd2e" stroke-width="1.5"/>
+  <circle cx="112" cy="224" r="20" fill="#ffbd2e"/>
+  <text x="112" y="230" text-anchor="middle" fill="#0a1628" font-size="16" font-weight="bold">2</text>
+  <text x="152" y="218" fill="#e8f1ff" font-size="15" font-weight="bold">换普通机械开关试一晚</text>
+  <text x="152" y="242" fill="#ffbd2e" font-size="12">微光消失 → 元凶是单火线智能开关，换带零线或支持 LED 负载的型号</text>
+
+  <!-- Step 3 -->
+  <rect x="70" y="272" width="760" height="72" rx="10" fill="#12233f" stroke="#8b7cf6" stroke-width="1.5"/>
+  <circle cx="112" cy="308" r="20" fill="#8b7cf6"/>
+  <text x="112" y="314" text-anchor="middle" fill="#0a1628" font-size="16" font-weight="bold">3</text>
+  <text x="152" y="302" fill="#e8f1ff" font-size="15" font-weight="bold">对比长/短管线的灯</text>
+  <text x="152" y="326" fill="#a99cf8" font-size="12">只有长管线区域亮 → 感应电压，加金属软管接地或 X2 安规电容滤杂波</text>
+
+  <!-- Step 4 -->
+  <rect x="70" y="356" width="760" height="72" rx="10" fill="#12233f" stroke="#00e5a0" stroke-width="1.5"/>
+  <circle cx="112" cy="392" r="20" fill="#00e5a0"/>
+  <text x="112" y="398" text-anchor="middle" fill="#0a1628" font-size="16" font-weight="bold">4</text>
+  <text x="152" y="386" fill="#e8f1ff" font-size="15" font-weight="bold">以上排除后仍亮</text>
+  <text x="152" y="410" fill="#00e5a0" font-size="12">驱动泄放不足 → 换主动 PFC、带泄放设计的恒流驱动（应急可并联 100kΩ/1W 电阻）</text>
+
+  <text x="450" y="470" text-anchor="middle" fill="#5f7fa8" font-size="12">按顺序排查，多数情况不用换灯</text>
+</svg>

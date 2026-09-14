@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="520" fill="#0a1628"/>
+  <rect width="900" height="520" fill="url(#grid)"/>
+  <rect x="30" y="24" width="840" height="470" rx="12" fill="#0d1d33" stroke="#1e3a5f" stroke-width="1.5"/>
+  <circle cx="58" cy="50" r="6" fill="#ff5f56"/><circle cx="78" cy="50" r="6" fill="#ffbd2e"/><circle cx="98" cy="50" r="6" fill="#27c93f"/>
+  <text x="450" y="56" text-anchor="middle" fill="#7fa8d9" font-size="15" letter-spacing="3">DRIVER TOPOLOGY MATTERS / 同一回路，换驱动结果不同</text>
+  <line x1="30" y1="76" x2="870" y2="76" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- LEFT: bad driver -->
+  <rect x="70" y="105" width="330" height="330" rx="12" fill="#15161f" stroke="#ff5f56" stroke-width="1.5"/>
+  <text x="235" y="140" text-anchor="middle" fill="#ff8a80" font-size="16" font-weight="bold">廉价驱动 · 容性降压</text>
+  <line x1="100" y1="156" x2="370" y2="156" stroke="#3a2b35" stroke-width="1"/>
+  <text x="100" y="188" fill="#c9d4e3" font-size="13">功率因数 PF</text>
+  <text x="370" y="188" text-anchor="end" fill="#ff8a80" font-size="14" font-weight="bold">≈ 0.5</text>
+  <text x="100" y="222" fill="#c9d4e3" font-size="13">泄放电阻</text>
+  <text x="370" y="222" text-anchor="end" fill="#ff8a80" font-size="14" font-weight="bold">无</text>
+  <text x="100" y="256" fill="#c9d4e3" font-size="13">漏电流处理</text>
+  <text x="370" y="256" text-anchor="end" fill="#ff8a80" font-size="14" font-weight="bold">在电容积累</text>
+
+  <!-- lamp glow representation -->
+  <rect x="185" y="290" width="100" height="56" rx="8" fill="#1b1a24" stroke="#ff8a80" stroke-width="1.5"/>
+  <line x1="203" y1="312" x2="267" y2="312" stroke="#ffd479" stroke-width="3" filter="url(#soft)"/>
+  <line x1="203" y1="324" x2="267" y2="324" stroke="#ffd479" stroke-width="3" filter="url(#soft)"/>
+  <text x="235" y="376" text-anchor="middle" fill="#ffd479" font-size="14" font-weight="bold" filter="url(#soft)">关灯后 · 微亮 / 周期闪</text>
+  <text x="235" y="404" text-anchor="middle" fill="#8a97a8" font-size="12">电压顶到 LED 阈值就亮</text>
+
+  <!-- RIGHT: good driver -->
+  <rect x="500" y="105" width="330" height="330" rx="12" fill="#0f1b2e" stroke="#00e5a0" stroke-width="1.5"/>
+  <text x="665" y="140" text-anchor="middle" fill="#5ce0b4" font-size="16" font-weight="bold">优质驱动 · 主动 PFC</text>
+  <line x1="530" y1="156" x2="800" y2="156" stroke="#1d4a3c" stroke-width="1"/>
+  <text x="530" y="188" fill="#c9d4e3" font-size="13">功率因数 PF</text>
+  <text x="800" y="188" text-anchor="end" fill="#5ce0b4" font-size="14" font-weight="bold">&gt; 0.9</text>
+  <text x="530" y="222" fill="#c9d4e3" font-size="13">泄放电阻</text>
+  <text x="800" y="222" text-anchor="end" fill="#5ce0b4" font-size="14" font-weight="bold">内置</text>
+  <text x="530" y="256" fill="#c9d4e3" font-size="13">漏电流处理</text>
+  <text x="800" y="256" text-anchor="end" fill="#5ce0b4" font-size="14" font-weight="bold">转为热量耗散</text>
+
+  <rect x="615" y="290" width="100" height="56" rx="8" fill="#0f1b2e" stroke="#1d4a3c" stroke-width="1.5"/>
+  <line x1="633" y1="312" x2="697" y2="312" stroke="#2c4a44" stroke-width="3"/>
+  <line x1="633" y1="324" x2="697" y2="324" stroke="#2c4a44" stroke-width="3"/>
+  <text x="665" y="376" text-anchor="middle" fill="#5ce0b4" font-size="14" font-weight="bold">关灯即全灭 · 无微光</text>
+  <text x="665" y="404" text-anchor="middle" fill="#8a97a8" font-size="12">微电流安全泄放，不激发灯珠</text>
+
+  <!-- arrow between -->
+  <text x="450" y="280" text-anchor="middle" fill="#5f7fa8" font-size="22">→</text>
+
+  <text x="450" y="468" text-anchor="middle" fill="#5f7fa8" font-size="12">选购要点：认准 PF ≥ 0.9 / 主动 PFC / 带泄放设计</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd479" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffd479" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="520" fill="#0a1628"/>
+  <rect width="900" height="520" fill="url(#grid)"/>
+  <rect x="30" y="24" width="840" height="470" rx="12" fill="#0d1d33" stroke="#1e3a5f" stroke-width="1.5"/>
+  <circle cx="58" cy="50" r="6" fill="#ff5f56"/><circle cx="78" cy="50" r="6" fill="#ffbd2e"/><circle cx="98" cy="50" r="6" fill="#27c93f"/>
+  <text x="450" y="56" text-anchor="middle" fill="#7fa8d9" font-size="15" letter-spacing="3">WHY LED GLOWS WHEN OFF / 关灯微亮的漏电通路</text>
+  <line x1="30" y1="76" x2="870" y2="76" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- center: lamp with faint glow -->
+  <circle cx="450" cy="300" r="120" fill="url(#halo)"/>
+  <rect x="410" y="250" width="80" height="60" rx="8" fill="#14243d" stroke="#3d6fa8" stroke-width="2"/>
+  <line x1="450" y1="230" x2="450" y2="250" stroke="#3d6fa8" stroke-width="2"/>
+  <line x1="426" y1="312" x2="474" y2="312" stroke="#ffd479" stroke-width="3" filter="url(#soft)"/>
+  <line x1="426" y1="322" x2="474" y2="322" stroke="#ffd479" stroke-width="3" filter="url(#soft)"/>
+  <line x1="426" y1="332" x2="474" y2="332" stroke="#ffd479" stroke-width="3" filter="url(#soft)"/>
+  <text x="450" y="378" text-anchor="middle" fill="#ffd479" font-size="14">LED 灯珠（0.5mA 即发光）</text>
+
+  <!-- Path 1: switch controls N line -->
+  <rect x="70" y="140" width="180" height="70" rx="10" fill="#12233f" stroke="#3d6fa8" stroke-width="1.5"/>
+  <text x="160" y="172" text-anchor="middle" fill="#e8f1ff" font-size="15" font-weight="bold">① 开关切了零线</text>
+  <text x="160" y="194" text-anchor="middle" fill="#7fa8d9" font-size="12">火线直连驱动器</text>
+  <line x1="250" y1="175" x2="410" y2="270" stroke="#3d6fa8" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- Path 2: single-live smart switch -->
+  <rect x="70" y="240" width="180" height="70" rx="10" fill="#12233f" stroke="#ffbd2e" stroke-width="1.5"/>
+  <text x="160" y="272" text-anchor="middle" fill="#e8f1ff" font-size="15" font-weight="bold">② 单火线智能开关</text>
+  <text x="160" y="294" text-anchor="middle" fill="#ffbd2e" font-size="12">待机取电 0.3–1mA</text>
+  <line x1="250" y1="275" x2="410" y2="295" stroke="#ffbd2e" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- Path 3: induced voltage -->
+  <rect x="70" y="340" width="180" height="70" rx="10" fill="#12233f" stroke="#8b7cf6" stroke-width="1.5"/>
+  <text x="160" y="372" text-anchor="middle" fill="#e8f1ff" font-size="15" font-weight="bold">③ 长距离平行布线</text>
+  <text x="160" y="394" text-anchor="middle" fill="#a99cf8" font-size="12">感应电压 10–40V</text>
+  <line x1="250" y1="375" x2="410" y2="320" stroke="#8b7cf6" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- Path 4: driver bleed -->
+  <rect x="650" y="190" width="180" height="70" rx="10" fill="#12233f" stroke="#00e5a0" stroke-width="1.5"/>
+  <text x="740" y="222" text-anchor="middle" fill="#e8f1ff" font-size="15" font-weight="bold">④ 驱动无泄放</text>
+  <text x="740" y="244" text-anchor="middle" fill="#00e5a0" font-size="12">漏电流在电容积累</text>
+  <line x1="650" y1="225" x2="490" y2="265" stroke="#00e5a0" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <text x="450" y="468" text-anchor="middle" fill="#5f7fa8" font-size="12">结论：问题多在回路与驱动，不在灯珠本身</text>
+</svg>
