@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="'Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a3a5c" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg3)"/>
+  <rect width="1200" height="675" fill="url(#grid3)"/>
+  <text x="60" y="72" fill="#4dd0e1" font-size="40" font-weight="bold">动手前：决策流程 + 避坑清单</text>
+  <text x="60" y="108" fill="#5a7a9a" font-size="20">四步决策、三条红线，照着做一次成功</text>
+
+  <!-- 左：决策流程 -->
+  <g filter="url(#glow3)">
+    <rect x="55" y="150" width="560" height="440" rx="14" fill="#0f2340" stroke="#1e4976" stroke-width="2"/>
+    <rect x="55" y="150" width="560" height="52" rx="14" fill="#12294a"/>
+    <text x="79" y="184" fill="#8ab4d8" font-size="22" font-weight="bold">决策流程</text>
+  </g>
+  <!-- step 1 -->
+  <rect x="90" y="228" width="490" height="70" rx="10" fill="#132c4e" stroke="#2e6da4" stroke-width="2"/>
+  <text x="115" y="258" fill="#4dd0e1" font-size="17" font-weight="bold">① 断电 + 验电</text>
+  <text x="115" y="284" fill="#7fb3d5" font-size="15">关总闸，验电笔逐根确认，给每根线贴标签</text>
+  <path d="M335 298 V322" stroke="#4dd0e1" stroke-width="2"/>
+  <path d="M327 314 L335 326 L343 314" stroke="#4dd0e1" stroke-width="2" fill="none"/>
+  <!-- step 2 -->
+  <rect x="90" y="326" width="490" height="70" rx="10" fill="#132c4e" stroke="#2e6da4" stroke-width="2"/>
+  <text x="115" y="356" fill="#4dd0e1" font-size="17" font-weight="bold">② 查底盒有没有零线</text>
+  <text x="115" y="382" fill="#7fb3d5" font-size="15">有零线 → 方案C直替 | 没零线 → 进第③步</text>
+  <path d="M335 396 V420" stroke="#4dd0e1" stroke-width="2"/>
+  <path d="M327 412 L335 424 L343 412" stroke="#4dd0e1" stroke-width="2" fill="none"/>
+  <!-- step 3 -->
+  <rect x="90" y="424" width="490" height="70" rx="10" fill="#132c4e" stroke="#2e6da4" stroke-width="2"/>
+  <text x="115" y="454" fill="#4dd0e1" font-size="17" font-weight="bold">③ 看床头底盒有无第二组灯线</text>
+  <text x="115" y="480" fill="#7fb3d5" font-size="15">有 → 方案B借电（最稳）| 没有 → 方案A无线开关</text>
+  <path d="M335 494 V518" stroke="#4dd0e1" stroke-width="2"/>
+  <path d="M327 510 L335 522 L343 510" stroke="#4dd0e1" stroke-width="2" fill="none"/>
+  <!-- step 4 -->
+  <rect x="90" y="522" width="490" height="52" rx="10" fill="#123c38" stroke="#26a69a" stroke-width="2"/>
+  <text x="115" y="554" fill="#66bb6a" font-size="17" font-weight="bold">④ APP 设联动：触发=单击，动作=开/关交替</text>
+
+  <!-- 右：避坑清单（终端风） -->
+  <g filter="url(#glow3)">
+    <rect x="655" y="150" width="490" height="440" rx="14" fill="#0f2340" stroke="#1e4976" stroke-width="2"/>
+    <rect x="655" y="150" width="490" height="52" rx="14" fill="#12294a"/>
+    <circle cx="686" cy="176" r="7" fill="#ef5350"/>
+    <circle cx="710" cy="176" r="7" fill="#f9a825"/>
+    <circle cx="734" cy="176" r="7" fill="#66bb6a"/>
+    <text x="760" y="184" fill="#8ab4d8" font-size="20" font-weight="bold">三条血泪避坑</text>
+  </g>
+  <text x="685" y="244" fill="#ef9a9a" font-size="18" font-weight="bold">[1] 必须断电操作</text>
+  <text x="685" y="272" fill="#7fb3d5" font-size="15">强电不是闹着玩的，拿不准就请电工</text>
+  <line x1="685" y1="292" x2="1115" y2="292" stroke="#1e4976" stroke-width="1"/>
+  <text x="685" y="330" fill="#ef9a9a" font-size="18" font-weight="bold">[2] 认线靠验电笔，别靠颜色</text>
+  <text x="685" y="358" fill="#7fb3d5" font-size="15">不同师傅布线习惯不同，「蓝色=零线」不一定成立</text>
+  <line x1="685" y1="378" x2="1115" y2="378" stroke="#1e4976" stroke-width="1"/>
+  <text x="685" y="416" fill="#ef9a9a" font-size="18" font-weight="bold">[3] 联动动作选「开/关」交替</text>
+  <text x="685" y="444" fill="#7fb3d5" font-size="15">设成「开」= 床头按了没反应（灯本来就开着）</text>
+  <line x1="685" y1="464" x2="1115" y2="464" stroke="#1e4976" stroke-width="1"/>
+  <rect x="685" y="488" width="410" height="76" rx="8" fill="#0d2036" stroke="#26a69a" stroke-width="1"/>
+  <text x="890" y="518" fill="#66bb6a" font-size="16" text-anchor="middle" font-weight="bold">楼梯三控扩展：主控 1 个智能开关</text>
+  <text x="890" y="546" fill="#8ab4d8" font-size="15" text-anchor="middle">其余全改无线/借电开关，指向同一盏灯</text>
+</svg>

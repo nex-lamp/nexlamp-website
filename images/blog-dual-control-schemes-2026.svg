@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="'Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a3a5c" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg2)"/>
+  <rect width="1200" height="675" fill="url(#grid2)"/>
+  <text x="60" y="72" fill="#4dd0e1" font-size="40" font-weight="bold">双控改智能：三种方案横向对比</text>
+  <text x="60" y="108" fill="#5a7a9a" font-size="20">成本 / 稳定性 / 适用场景，对着自家底盒选</text>
+
+  <!-- 方案A -->
+  <g filter="url(#glow2)">
+    <rect x="55" y="150" width="350" height="440" rx="14" fill="#0f2340" stroke="#1e4976" stroke-width="2"/>
+    <rect x="55" y="150" width="350" height="56" rx="14" fill="#12294a"/>
+    <text x="79" y="187" fill="#ffd54f" font-size="24" font-weight="bold">方案 A · 最省事</text>
+  </g>
+  <text x="230" y="248" fill="#e3f2fd" font-size="21" text-anchor="middle" font-weight="bold">单火开关 + 无线开关</text>
+  <text x="230" y="280" fill="#5a7a9a" font-size="15" text-anchor="middle">门口换单火智能开关</text>
+  <text x="230" y="306" fill="#5a7a9a" font-size="15" text-anchor="middle">床头贴 Zigbee 无线开关</text>
+  <text x="230" y="332" fill="#5a7a9a" font-size="15" text-anchor="middle">APP 设联动 = 双控</text>
+  <line x1="95" y1="360" x2="365" y2="360" stroke="#1e4976" stroke-width="1"/>
+  <text x="95" y="396" fill="#7fb3d5" font-size="17">成本</text>
+  <text x="365" y="396" fill="#66bb6a" font-size="17" text-anchor="end" font-weight="bold">约 ¥150</text>
+  <text x="95" y="432" fill="#7fb3d5" font-size="17">稳定性</text>
+  <text x="365" y="432" fill="#f9a825" font-size="17" text-anchor="end" font-weight="bold">★★★ 偶有毫秒延迟</text>
+  <text x="95" y="468" fill="#7fb3d5" font-size="17">换电池</text>
+  <text x="365" y="468" fill="#ef9a9a" font-size="17" text-anchor="end" font-weight="bold">数年一换</text>
+  <rect x="95" y="496" width="270" height="64" rx="8" fill="#0d2036" stroke="#2e6da4" stroke-width="1"/>
+  <text x="230" y="522" fill="#8ab4d8" font-size="14" text-anchor="middle">适合：底盒线少 / 出租屋</text>
+  <text x="230" y="546" fill="#8ab4d8" font-size="14" text-anchor="middle">不想折腾、预算有限</text>
+
+  <!-- 方案B -->
+  <g filter="url(#glow2)">
+    <rect x="425" y="150" width="350" height="440" rx="14" fill="#0f2340" stroke="#26a69a" stroke-width="2"/>
+    <rect x="425" y="150" width="350" height="56" rx="14" fill="#123c38"/>
+    <text x="449" y="187" fill="#4dd0e1" font-size="24" font-weight="bold">方案 B · 最稳定 ★推荐</text>
+  </g>
+  <text x="600" y="248" fill="#e3f2fd" font-size="21" text-anchor="middle" font-weight="bold">单火开关 + 借电开关</text>
+  <text x="600" y="280" fill="#5a7a9a" font-size="15" text-anchor="middle">门口换单火智能开关</text>
+  <text x="600" y="306" fill="#5a7a9a" font-size="15" text-anchor="middle">床头开关接阅读灯回路「借电」</text>
+  <text x="600" y="332" fill="#5a7a9a" font-size="15" text-anchor="middle">按键转为无线模式控制主灯</text>
+  <line x1="465" y1="360" x2="735" y2="360" stroke="#1e4976" stroke-width="1"/>
+  <text x="465" y="396" fill="#7fb3d5" font-size="17">成本</text>
+  <text x="735" y="396" fill="#f9a825" font-size="17" text-anchor="end" font-weight="bold">约 ¥250</text>
+  <text x="465" y="432" fill="#7fb3d5" font-size="17">稳定性</text>
+  <text x="735" y="432" fill="#66bb6a" font-size="17" text-anchor="end" font-weight="bold">★★★★★ 永不掉电</text>
+  <text x="465" y="468" fill="#7fb3d5" font-size="17">换电池</text>
+  <text x="735" y="468" fill="#66bb6a" font-size="17" text-anchor="end" font-weight="bold">不用！市电直供</text>
+  <rect x="465" y="496" width="270" height="64" rx="8" fill="#0d2036" stroke="#26a69a" stroke-width="1"/>
+  <text x="600" y="522" fill="#8ab4d8" font-size="14" text-anchor="middle">适合：床头底盒有另一组灯线</text>
+  <text x="600" y="546" fill="#8ab4d8" font-size="14" text-anchor="middle">怕麻烦、追求秒回的老玩家</text>
+
+  <!-- 方案C -->
+  <g filter="url(#glow2)">
+    <rect x="795" y="150" width="350" height="440" rx="14" fill="#0f2340" stroke="#1e4976" stroke-width="2"/>
+    <rect x="795" y="150" width="350" height="56" rx="14" fill="#12294a"/>
+    <text x="819" y="187" fill="#66bb6a" font-size="24" font-weight="bold">方案 C · 一劳永逸</text>
+  </g>
+  <text x="970" y="248" fill="#e3f2fd" font-size="21" text-anchor="middle" font-weight="bold">双零火智能开关直替</text>
+  <text x="970" y="280" fill="#5a7a9a" font-size="15" text-anchor="middle">底盒有零线（新房/已补线）</text>
+  <text x="970" y="306" fill="#5a7a9a" font-size="15" text-anchor="middle">两边都换零火智能开关</text>
+  <text x="970" y="332" fill="#5a7a9a" font-size="15" text-anchor="middle">APP 设双控联动</text>
+  <line x1="835" y1="360" x2="1105" y2="360" stroke="#1e4976" stroke-width="1"/>
+  <text x="835" y="396" fill="#7fb3d5" font-size="17">成本</text>
+  <text x="1105" y="396" fill="#ef9a9a" font-size="17" text-anchor="end" font-weight="bold">较高（老房需补线）</text>
+  <text x="835" y="432" fill="#7fb3d5" font-size="17">稳定性</text>
+  <text x="1105" y="432" fill="#66bb6a" font-size="17" text-anchor="end" font-weight="bold">★★★★★</text>
+  <text x="835" y="468" fill="#7fb3d5" font-size="17">附加价值</text>
+  <text x="1105" y="468" fill="#66bb6a" font-size="17" text-anchor="end" font-weight="bold">可做网络中继</text>
+  <rect x="835" y="496" width="270" height="64" rx="8" fill="#0d2036" stroke="#2e6da4" stroke-width="1"/>
+  <text x="970" y="522" fill="#8ab4d8" font-size="14" text-anchor="middle">适合：新房装修 / 已补零线</text>
+  <text x="970" y="546" fill="#8ab4d8" font-size="14" text-anchor="middle">正在水电阶段的直接预留</text>
+
+  <text x="600" y="640" fill="#5a7a9a" font-size="17" text-anchor="middle">核心原则：废弃物理双控来回线，把「物理双控」变成「逻辑双控」</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="'Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a3a5c" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg1)"/>
+  <rect width="1200" height="675" fill="url(#grid1)"/>
+  <text x="60" y="72" fill="#4dd0e1" font-size="40" font-weight="bold">传统双控 vs 智能双控</text>
+  <text x="60" y="108" fill="#5a7a9a" font-size="20">从「一根线的物理关系」到「一张网的逻辑关系」</text>
+
+  <!-- 左：传统物理双控 -->
+  <g filter="url(#glow1)">
+    <rect x="60" y="150" width="500" height="440" rx="14" fill="#0f2340" stroke="#1e4976" stroke-width="2"/>
+    <rect x="60" y="150" width="500" height="52" rx="14" fill="#12294a"/>
+    <text x="84" y="184" fill="#8ab4d8" font-size="22" font-weight="bold">物理双控（旧）</text>
+    <circle cx="516" cy="176" r="6" fill="#ef5350"/>
+  </g>
+  <!-- 门口开关 -->
+  <rect x="110" y="260" width="150" height="110" rx="10" fill="#132c4e" stroke="#2e6da4" stroke-width="2"/>
+  <text x="185" y="300" fill="#e3f2fd" font-size="20" text-anchor="middle" font-weight="bold">门口开关</text>
+  <text x="185" y="330" fill="#7fb3d5" font-size="15" text-anchor="middle">COM · L1 · L2</text>
+  <!-- 床头开关 -->
+  <rect x="360" y="260" width="150" height="110" rx="10" fill="#132c4e" stroke="#2e6da4" stroke-width="2"/>
+  <text x="435" y="300" fill="#e3f2fd" font-size="20" text-anchor="middle" font-weight="bold">床头开关</text>
+  <text x="435" y="330" fill="#7fb3d5" font-size="15" text-anchor="middle">COM · L1 · L2</text>
+  <!-- 来回线 -->
+  <path d="M260 295 H360" stroke="#f9a825" stroke-width="3" fill="none"/>
+  <path d="M260 340 H360" stroke="#f9a825" stroke-width="3" fill="none"/>
+  <text x="310" y="282" fill="#f9a825" font-size="15" text-anchor="middle">来回线 ×2</text>
+  <text x="310" y="365" fill="#f9a825" font-size="15" text-anchor="middle">物理导通</text>
+  <!-- 灯 -->
+  <circle cx="310" cy="480" r="36" fill="none" stroke="#ffd54f" stroke-width="3"/>
+  <circle cx="310" cy="480" r="20" fill="#ffd54f" opacity="0.85"/>
+  <path d="M296 508 L324 508 M300 518 L320 518" stroke="#ffd54f" stroke-width="3"/>
+  <path d="M185 370 V480 H272" stroke="#f9a825" stroke-width="3" fill="none"/>
+  <path d="M435 370 V480 H350" stroke="#f9a825" stroke-width="3" fill="none"/>
+  <text x="310" y="570" fill="#5a7a9a" font-size="16" text-anchor="middle">两个开关靠两根线「硬连」，智能开关接上就短路</text>
+
+  <!-- 中间箭头 -->
+  <path d="M590 370 H690" stroke="#4dd0e1" stroke-width="4" fill="none" marker-end="none"/>
+  <path d="M676 356 L694 370 L676 384" stroke="#4dd0e1" stroke-width="4" fill="none"/>
+  <text x="640" y="348" fill="#4dd0e1" font-size="18" text-anchor="middle" font-weight="bold">升级</text>
+
+  <!-- 右：智能逻辑双控 -->
+  <g filter="url(#glow1)">
+    <rect x="720" y="150" width="420" height="440" rx="14" fill="#0f2340" stroke="#1e4976" stroke-width="2"/>
+    <rect x="720" y="150" width="420" height="52" rx="14" fill="#12294a"/>
+    <text x="744" y="184" fill="#8ab4d8" font-size="22" font-weight="bold">智能逻辑双控（新）</text>
+    <circle cx="1104" cy="176" r="6" fill="#66bb6a"/>
+  </g>
+  <!-- 开关A -->
+  <rect x="770" y="240" width="140" height="96" rx="10" fill="#132c4e" stroke="#26a69a" stroke-width="2"/>
+  <text x="840" y="280" fill="#e0f2f1" font-size="19" text-anchor="middle" font-weight="bold">智能开关</text>
+  <text x="840" y="308" fill="#80cbc4" font-size="14" text-anchor="middle">门口 · 主控</text>
+  <!-- 开关B -->
+  <rect x="950" y="240" width="140" height="96" rx="10" fill="#132c4e" stroke="#26a69a" stroke-width="2"/>
+  <text x="1020" y="280" fill="#e0f2f1" font-size="19" text-anchor="middle" font-weight="bold">无线开关</text>
+  <text x="1020" y="308" fill="#80cbc4" font-size="14" text-anchor="middle">床头 · 随贴</text>
+  <!-- 网关云 -->
+  <rect x="860" y="380" width="140" height="76" rx="10" fill="#0d2036" stroke="#4dd0e1" stroke-width="2"/>
+  <text x="930" y="412" fill="#4dd0e1" font-size="18" text-anchor="middle" font-weight="bold">Zigbee 网关</text>
+  <text x="930" y="438" fill="#5a8aa8" font-size="13" text-anchor="middle">本地联动 · 断网可用</text>
+  <!-- 信号线 -->
+  <path d="M840 336 Q860 378 878 386" stroke="#4dd0e1" stroke-width="2" fill="none" stroke-dasharray="5 5"/>
+  <path d="M1020 336 Q1000 378 982 386" stroke="#4dd0e1" stroke-width="2" fill="none" stroke-dasharray="5 5"/>
+  <path d="M930 456 V500" stroke="#4dd0e1" stroke-width="2" fill="none" stroke-dasharray="5 5"/>
+  <!-- 灯 -->
+  <circle cx="930" cy="532" r="28" fill="none" stroke="#ffd54f" stroke-width="3"/>
+  <circle cx="930" cy="532" r="15" fill="#ffd54f" opacity="0.85"/>
+  <text x="930" y="595" fill="#5a7a9a" font-size="16" text-anchor="middle">按键 = 触发条件，灯 = 执行动作</text>
+  <text x="930" y="622" fill="#66bb6a" font-size="16" text-anchor="middle" font-weight="bold">想几个控就加几个，布线不再受限</text>
+</svg>
