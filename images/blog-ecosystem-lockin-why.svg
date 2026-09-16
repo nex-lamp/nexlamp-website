@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Microsoft YaHei, PingFang SC, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#071018"/>
+    </linearGradient>
+    <linearGradient id="glowA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glowB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid1b" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#173252" stroke-width="1" opacity="0.55"/>
+    </pattern>
+    <filter id="soft1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg1)"/>
+  <rect width="1200" height="675" fill="url(#grid1b)"/>
+  <ellipse cx="220" cy="120" rx="240" ry="130" fill="url(#glowA)" filter="url(#soft1)"/>
+  <ellipse cx="980" cy="560" rx="260" ry="140" fill="url(#glowB)" filter="url(#soft1)"/>
+
+  <text x="64" y="92" fill="#e6f2ff" font-size="40" font-weight="700" letter-spacing="1">为什么"灯"是被生态绑架得最狠的品类</text>
+  <text x="64" y="134" fill="#7ea6c9" font-size="21">换冰箱只是重新配网，换灯却是拆一次天花板</text>
+  <rect x="64" y="156" width="86" height="4" rx="2" fill="#38bdf8"/>
+
+  <rect x="64" y="206" width="500" height="278" rx="18" fill="#0d2136" stroke="#1e4a6e" stroke-width="2"/>
+  <rect x="64" y="206" width="500" height="62" rx="18" fill="#123a5c"/>
+  <rect x="64" y="240" width="500" height="28" fill="#123a5c"/>
+  <text x="96" y="248" fill="#8ee3ff" font-size="24" font-weight="700">冰箱 / 空调 / 洗衣机</text>
+  <circle cx="104" cy="302" r="6" fill="#22d3ee"/>
+  <text x="122" y="310" fill="#cfe6fa" font-size="21">换品牌成本：低</text>
+  <text x="96" y="368" fill="#9fc4e0" font-size="19">· 机身不动，位置不用改</text>
+  <text x="96" y="404" fill="#9fc4e0" font-size="19">· 重新配个网、加个 APP 就行</text>
+  <text x="96" y="440" fill="#9fc4e0" font-size="19">· 一天碰两次，忍得下去</text>
+
+  <rect x="636" y="206" width="500" height="278" rx="18" fill="#2a1220" stroke="#7a2f4f" stroke-width="2"/>
+  <rect x="636" y="206" width="500" height="62" rx="18" fill="#5c1f3a"/>
+  <rect x="636" y="240" width="500" height="28" fill="#5c1f3a"/>
+  <text x="668" y="248" fill="#ffb3d1" font-size="24" font-weight="700">灯具 + 预埋线路</text>
+  <circle cx="676" cy="302" r="6" fill="#f472b6"/>
+  <text x="694" y="310" fill="#ffd9e8" font-size="21">换品牌成本：高</text>
+  <text x="668" y="368" fill="#e8b9cd" font-size="19">· 灯装在天花板、吊顶、墙里</text>
+  <text x="668" y="404" fill="#e8b9cd" font-size="19">· 换牌子 = 重新接线、重新开孔</text>
+  <text x="668" y="440" fill="#e8b9cd" font-size="19">· 一天开关十几次，忍不了</text>
+
+  <rect x="64" y="524" width="1072" height="94" rx="16" fill="#0e2b45" stroke="#2a6c96" stroke-width="1.5"/>
+  <text x="100" y="566" fill="#7dd3fc" font-size="20" font-weight="700">结果</text>
+  <text x="100" y="602" fill="#e6f2ff" font-size="23">客厅一个 APP、卧室一个 APP、阳台又一个 —— 三个生态，一个也删不掉</text>
+
+  <text x="1140" y="654" fill="#3f6f96" font-size="16" text-anchor="end">NEXLAMP · 智能照明技术笔记</text>
+</svg>

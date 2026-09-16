@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="Microsoft YaHei, PingFang SC, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#071018"/>
+    </linearGradient>
+    <linearGradient id="line2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="warnG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a2210"/>
+      <stop offset="100%" stop-color="#2a1808"/>
+    </linearGradient>
+    <pattern id="grid2b" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#173252" stroke-width="1" opacity="0.55"/>
+    </pattern>
+    <filter id="soft2" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg2)"/>
+  <rect width="1200" height="675" fill="url(#grid2b)"/>
+  <ellipse cx="600" cy="180" rx="360" ry="120" fill="#22d3ee" opacity="0.10" filter="url(#soft2)"/>
+
+  <text x="64" y="88" fill="#e6f2ff" font-size="38" font-weight="700">两年时间，厂商排队给 Home Assistant 开门</text>
+  <text x="64" y="128" fill="#7ea6c9" font-size="20">曾经把设备锁死在自家 App 里的品牌，正在陆续开放官方接入</text>
+  <rect x="64" y="148" width="86" height="4" rx="2" fill="#22d3ee"/>
+
+  <!-- timeline -->
+  <line x1="118" y1="300" x2="1082" y2="300" stroke="url(#line2)" stroke-width="4" stroke-linecap="round"/>
+
+  <g>
+    <circle cx="140" cy="300" r="13" fill="#0a1628" stroke="#22d3ee" stroke-width="4"/>
+    <text x="140" y="248" fill="#8ee3ff" font-size="20" font-weight="700" text-anchor="middle">2024.12</text>
+    <text x="140" y="352" fill="#cfe6fa" font-size="19" text-anchor="middle">小米</text>
+    <text x="140" y="380" fill="#7ea6c9" font-size="16" text-anchor="middle">官方集成</text>
+    <text x="140" y="402" fill="#7ea6c9" font-size="16" text-anchor="middle">两天破 7K★</text>
+  </g>
+  <g>
+    <circle cx="375" cy="300" r="13" fill="#0a1628" stroke="#38bdf8" stroke-width="4"/>
+    <text x="375" y="248" fill="#8ee3ff" font-size="20" font-weight="700" text-anchor="middle">2025.05</text>
+    <text x="375" y="352" fill="#cfe6fa" font-size="19" text-anchor="middle">UIOT</text>
+    <text x="375" y="380" fill="#7ea6c9" font-size="16" text-anchor="middle">官方组件</text>
+    <text x="375" y="402" fill="#7ea6c9" font-size="16" text-anchor="middle">本地化控制</text>
+  </g>
+  <g>
+    <circle cx="610" cy="300" r="13" fill="#0a1628" stroke="#7dd3fc" stroke-width="4"/>
+    <text x="610" y="248" fill="#8ee3ff" font-size="20" font-weight="700" text-anchor="middle">2026.04</text>
+    <text x="610" y="352" fill="#cfe6fa" font-size="19" text-anchor="middle">涂鸦</text>
+    <text x="610" y="380" fill="#7ea6c9" font-size="16" text-anchor="middle">官方桥接</text>
+    <text x="610" y="402" fill="#7ea6c9" font-size="16" text-anchor="middle">双向同步</text>
+  </g>
+  <g>
+    <circle cx="845" cy="300" r="13" fill="#0a1628" stroke="#a78bfa" stroke-width="4"/>
+    <text x="845" y="248" fill="#c9b6ff" font-size="20" font-weight="700" text-anchor="middle">2026.07</text>
+    <text x="845" y="352" fill="#cfe6fa" font-size="19" text-anchor="middle">海尔</text>
+    <text x="845" y="380" fill="#7ea6c9" font-size="16" text-anchor="middle">建博会官宣</text>
+    <text x="845" y="402" fill="#7ea6c9" font-size="16" text-anchor="middle">型号全覆盖</text>
+  </g>
+  <g>
+    <circle cx="1060" cy="300" r="13" fill="#0a1628" stroke="#c4b5fd" stroke-width="4"/>
+    <text x="1060" y="248" fill="#c9b6ff" font-size="20" font-weight="700" text-anchor="middle">2026.08</text>
+    <text x="1060" y="352" fill="#cfe6fa" font-size="19" text-anchor="middle">美的</text>
+    <text x="1060" y="380" fill="#7ea6c9" font-size="16" text-anchor="middle">HA 原生内置</text>
+    <text x="1060" y="402" fill="#7ea6c9" font-size="16" text-anchor="middle">专人维护</text>
+  </g>
+
+  <!-- reality warning -->
+  <rect x="64" y="460" width="1072" height="160" rx="18" fill="url(#warnG)" stroke="#a3611c" stroke-width="2"/>
+  <text x="100" y="506" fill="#ffb454" font-size="26" font-weight="700">反常识：官方 不等于 本地</text>
+  <text x="100" y="548" fill="#f3ddc0" font-size="20">涂鸦官方桥接全程走云端 MQTT —— 网一断，控制链路就断</text>
+  <text x="100" y="582" fill="#f3ddc0" font-size="20">小米官方集成默认走云；要局域网本地控制，家里得有一台中枢网关（固件 ≥ 3.3.0）</text>
+
+  <text x="1140" y="654" fill="#3f6f96" font-size="16" text-anchor="end">NEXLAMP · 智能照明技术笔记</text>
+</svg>
