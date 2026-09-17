@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="'Segoe UI','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f38"/>
+    </linearGradient>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a3350" stroke-width="1"/>
+    </pattern>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg3)"/>
+  <rect width="1200" height="700" fill="url(#grid3)"/>
+  <text x="600" y="55" text-anchor="middle" fill="#e8f1fa" font-size="27" font-weight="bold" filter="url(#glow3)">设备数量决策树：WiFi版 · 网关版 · 专网分流</text>
+
+  <!-- 起点 -->
+  <rect x="460" y="85" width="280" height="56" rx="28" fill="#122741" stroke="#4dc3ff" stroke-width="2" filter="url(#glow3)"/>
+  <text x="600" y="120" text-anchor="middle" fill="#8ad8ff" font-size="19" font-weight="bold">家里要装多少智能设备？</text>
+
+  <!-- 分支线 -->
+  <path d="M460 113 C 350 113, 300 140, 285 175" fill="none" stroke="#4df08a" stroke-width="2.5"/>
+  <path d="M600 141 L 600 175" fill="none" stroke="#ffb84d" stroke-width="2.5"/>
+  <path d="M740 113 C 850 113, 900 140, 915 175" fill="none" stroke="#ff6b6b" stroke-width="2.5"/>
+
+  <!-- 左：1-2台 -->
+  <rect x="120" y="180" width="330" height="200" rx="12" fill="#0c1a2e" stroke="#4df08a" stroke-width="2"/>
+  <text x="285" y="218" text-anchor="middle" fill="#8affb8" font-size="19" font-weight="bold">1~2 盏</text>
+  <text x="285" y="252" text-anchor="middle" fill="#e8f1fa" font-size="18" font-weight="bold">→ WiFi版灯</text>
+  <text x="285" y="286" text-anchor="middle" fill="#8fb3d9" font-size="15">不用买网关，省钱省事</text>
+  <text x="285" y="316" text-anchor="middle" fill="#8fb3d9" font-size="15">连2.4G专有SSID即可</text>
+  <text x="285" y="352" text-anchor="middle" fill="#4df08a" font-size="15">✔ 成本最低方案</text>
+
+  <!-- 中：3-25台 -->
+  <rect x="435" y="180" width="330" height="200" rx="12" fill="#0c1a2e" stroke="#ffb84d" stroke-width="2"/>
+  <text x="600" y="218" text-anchor="middle" fill="#ffd08a" font-size="19" font-weight="bold">3 ~ 25 台</text>
+  <text x="600" y="252" text-anchor="middle" fill="#e8f1fa" font-size="18" font-weight="bold">→ 网关版（Zigbee/Mesh）</text>
+  <text x="600" y="286" text-anchor="middle" fill="#8fb3d9" font-size="15">不占WiFi带宽，响应更稳</text>
+  <text x="600" y="316" text-anchor="middle" fill="#8fb3d9" font-size="15">断网本地联动照常跑</text>
+  <text x="600" y="352" text-anchor="middle" fill="#ffb84d" font-size="15">⚠ 网关居中摆放，别塞弱电箱</text>
+
+  <!-- 右：25台+ -->
+  <rect x="750" y="180" width="330" height="200" rx="12" fill="#0c1a2e" stroke="#ff6b6b" stroke-width="2"/>
+  <text x="915" y="218" text-anchor="middle" fill="#ff8a8a" font-size="19" font-weight="bold">25 台以上 / 大平层</text>
+  <text x="915" y="252" text-anchor="middle" fill="#e8f1fa" font-size="18" font-weight="bold">→ 专网分流 + 分区网关</text>
+  <text x="915" y="286" text-anchor="middle" fill="#8fb3d9" font-size="15">旧路由挂LAN口单发IoT专网</text>
+  <text x="915" y="316" text-anchor="middle" fill="#8fb3d9" font-size="15">网关楼上/楼下分区各带30台</text>
+  <text x="915" y="352" text-anchor="middle" fill="#ff6b6b" font-size="15">⚠ Zigbee信道避开WiFi信道</text>
+
+  <!-- 网关摆位示意 -->
+  <rect x="120" y="420" width="960" height="220" rx="12" fill="#0c1a2e" stroke="#2a5a8a" stroke-width="2"/>
+  <text x="600" y="456" text-anchor="middle" fill="#e8f1fa" font-size="19" font-weight="bold">网关摆位示意：几何中心 + 一墙原则</text>
+  <!-- 户型 -->
+  <rect x="200" y="480" width="480" height="130" rx="6" fill="#122741" stroke="#2a4a6e" stroke-width="1.5"/>
+  <line x1="360" y1="480" x2="360" y2="610" stroke="#2a4a6e" stroke-width="1.5"/>
+  <line x1="360" y1="545" x2="680" y2="545" stroke="#2a4a6e" stroke-width="1.5"/>
+  <text x="280" y="530" text-anchor="middle" fill="#8fb3d9" font-size="14">卧室</text>
+  <text x="280" y="585" text-anchor="middle" fill="#8fb3d9" font-size="14">书房</text>
+  <text x="520" y="510" text-anchor="middle" fill="#8fb3d9" font-size="14">客厅</text>
+  <text x="520" y="590" text-anchor="middle" fill="#8fb3d9" font-size="14">餐厅</text>
+  <!-- 网关居中 -->
+  <circle cx="440" cy="540" r="14" fill="#4df08a" filter="url(#glow3)"/>
+  <text x="440" y="546" text-anchor="middle" fill="#0a1628" font-size="13" font-weight="bold">G</text>
+  <!-- 信号圈 -->
+  <circle cx="440" cy="540" r="38" fill="none" stroke="#4df08a" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.6"/>
+  <circle cx="440" cy="540" r="62" fill="none" stroke="#4df08a" stroke-width="1" stroke-dasharray="5 4" opacity="0.35"/>
+  <text x="440" y="630" text-anchor="middle" fill="#4df08a" font-size="14" font-weight="bold">✓ 开放置物架 · 居中 · 到各房间≤1堵非承重墙</text>
+  <!-- 错误摆位 -->
+  <rect x="740" y="480" width="300" height="130" rx="8" fill="#2a1420" stroke="#ff6b6b" stroke-width="2"/>
+  <rect x="840" y="510" width="90" height="80" rx="6" fill="#1a0f16" stroke="#ff6b6b" stroke-width="1.5"/>
+  <circle cx="885" cy="550" r="12" fill="#ff6b6b"/>
+  <text x="885" y="556" text-anchor="middle" fill="#0a1628" font-size="13" font-weight="bold">G</text>
+  <text x="885" y="540" text-anchor="middle" fill="#0a1628" font-size="0"> </text>
+  <text x="885" y="620" text-anchor="middle" fill="#ff8a8a" font-size="14" font-weight="bold">✕ 弱电箱 / 金属柜 = 给信号盖罩子</text>
+
+  <text x="600" y="678" text-anchor="middle" fill="#7ea8d8" font-size="15">口诀：先减法（分频/专网/错信道），再加硬件（Mesh/WiFi 6 OFDMA），灯其实一直是好的</text>
+</svg>
