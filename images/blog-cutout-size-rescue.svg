@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow3" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#16304f" stroke-width="1"/>
+    </pattern>
+    <marker id="arrW" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#8fd3ff"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg3)"/>
+  <rect width="1200" height="675" fill="url(#grid3)"/>
+  <text x="600" y="62" text-anchor="middle" font-size="32" font-weight="bold" fill="#e8f0ff">孔开错了怎么补救？按误差分流</text>
+
+  <!-- root node -->
+  <g filter="url(#glow3)">
+    <rect x="440" y="105" width="320" height="76" rx="12" fill="#122743" stroke="#8fd3ff" stroke-width="2.5"/>
+  </g>
+  <text x="600" y="138" text-anchor="middle" font-size="20" font-weight="bold" fill="#8fd3ff">孔已开好，灯具未装</text>
+  <text x="600" y="164" text-anchor="middle" font-size="15" fill="#9fb6d4">先量实际孔径，再对照参数表</text>
+
+  <line x1="600" y1="181" x2="600" y2="222" stroke="#8fd3ff" stroke-width="2"/>
+  <!-- split bar -->
+  <path d="M600 222 L170 258 M600 222 L410 258 M600 222 L790 258 M600 222 L1030 258" fill="none" stroke="#8fd3ff" stroke-width="2" marker-end="url(#arrW)"/>
+
+  <!-- 4 outcomes -->
+  <g filter="url(#glow3)">
+    <rect x="45" y="262" width="255" height="120" rx="12" fill="#122743" stroke="#34d399" stroke-width="2"/>
+    <rect x="340" y="262" width="255" height="120" rx="12" fill="#122743" stroke="#fbbf24" stroke-width="2"/>
+    <rect x="635" y="262" width="255" height="120" rx="12" fill="#122743" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="930" y="262" width="255" height="120" rx="12" fill="#1a1226" stroke="#f87171" stroke-width="2"/>
+  </g>
+
+  <g text-anchor="middle">
+    <text x="172" y="296" font-size="19" font-weight="bold" fill="#34d399">孔大 ≤3mm</text>
+    <text x="172" y="326" font-size="15" fill="#e8f0ff">加装缩孔调节环</text>
+    <text x="172" y="352" font-size="14" fill="#9fb6d4">十来块钱一个</text>
+    <text x="172" y="374" font-size="14" fill="#34d399">成本：极低 ✔</text>
+
+    <text x="467" y="296" font-size="19" font-weight="bold" fill="#fbbf24">面板盖不住</text>
+    <text x="467" y="326" font-size="15" fill="#e8f0ff">换大面板款式</text>
+    <text x="467" y="352" font-size="14" fill="#9fb6d4">或加装饰接圈遮边</text>
+    <text x="467" y="374" font-size="14" fill="#fbbf24">成本：低 ✔</text>
+
+    <text x="762" y="296" font-size="19" font-weight="bold" fill="#38bdf8">孔小了</text>
+    <text x="762" y="326" font-size="15" fill="#e8f0ff">开孔器扩孔</text>
+    <text x="762" y="352" font-size="14" fill="#9fb6d4">边缘重新收边</text>
+    <text x="762" y="374" font-size="14" fill="#38bdf8">成本：低，稍费工 ✔</text>
+
+    <text x="1057" y="296" font-size="19" font-weight="bold" fill="#f87171">孔位开错/严重偏大</text>
+    <text x="1057" y="326" font-size="15" fill="#e8f0ff">重新封板补洞</text>
+    <text x="1057" y="352" font-size="14" fill="#9fb6d4">批腻子 + 重新刷漆</text>
+    <text x="1057" y="374" font-size="14" fill="#f87171">成本：高 ✘ 尽量避免</text>
+  </g>
+
+  <!-- bottom tips -->
+  <rect x="60" y="430" width="1080" height="150" rx="12" fill="#0e1f38" stroke="#2a4a73"/>
+  <text x="600" y="466" text-anchor="middle" font-size="19" font-weight="bold" fill="#8fd3ff">智能筒灯额外注意：给驱动留位置</text>
+  <text x="120" y="502" font-size="15" fill="#e8f0ff">· 驱动电源是分体的，吊顶内要预留驱动盒空间，尽量靠近灯具</text>
+  <text x="120" y="532" font-size="15" fill="#e8f0ff">· 预留检修口，或选可从孔位抽拉更换的分体驱动 —— 驱动坏了不必拆吊顶</text>
+  <text x="120" y="562" font-size="15" fill="#e8f0ff">· Zigbee/蓝牙Mesh 筒灯注意金属龙骨对信号的削弱，布局时看网关覆盖</text>
+
+  <rect x="60" y="600" width="1080" height="44" rx="10" fill="#122743" stroke="#2a4a73"/>
+  <text x="600" y="629" text-anchor="middle" font-size="17" font-weight="bold" fill="#8fd3ff">先量孔径再下单，别在慌乱里买第二盏错尺寸的灯</text>
+</svg>

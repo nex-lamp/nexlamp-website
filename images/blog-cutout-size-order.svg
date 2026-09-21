@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow2" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#16304f" stroke-width="1"/>
+    </pattern>
+    <marker id="arrG" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#34d399"/>
+    </marker>
+    <marker id="arrR" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#f87171"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg2)"/>
+  <rect width="1200" height="675" fill="url(#grid2)"/>
+  <text x="600" y="60" text-anchor="middle" font-size="32" font-weight="bold" fill="#e8f0ff">先买灯 再开孔 —— 顺序不能反</text>
+
+  <!-- correct path: 4 boxes in one row -->
+  <text x="600" y="120" text-anchor="middle" font-size="20" font-weight="bold" fill="#34d399">✔ 正确顺序</text>
+  <g filter="url(#glow2)">
+    <rect x="45" y="150" width="245" height="86" rx="10" fill="#122743" stroke="#34d399" stroke-width="2"/>
+    <rect x="340" y="150" width="245" height="86" rx="10" fill="#122743" stroke="#34d399" stroke-width="2"/>
+    <rect x="635" y="150" width="245" height="86" rx="10" fill="#122743" stroke="#34d399" stroke-width="2"/>
+    <rect x="930" y="150" width="245" height="86" rx="10" fill="#122743" stroke="#34d399" stroke-width="2"/>
+  </g>
+  <line x1="292" y1="193" x2="336" y2="193" stroke="#34d399" stroke-width="3" marker-end="url(#arrG)"/>
+  <line x1="587" y1="193" x2="631" y2="193" stroke="#34d399" stroke-width="3" marker-end="url(#arrG)"/>
+  <line x1="882" y1="193" x2="926" y2="193" stroke="#34d399" stroke-width="3" marker-end="url(#arrG)"/>
+  <g text-anchor="middle" fill="#e8f0ff">
+    <text x="167" y="186" font-size="17" font-weight="bold">① 定灯具型号</text>
+    <text x="167" y="212" font-size="14" fill="#9fb6d4">精度到 Φ75 这种程度</text>
+    <text x="462" y="186" font-size="17" font-weight="bold">② 参数表发木工</text>
+    <text x="462" y="212" font-size="14" fill="#9fb6d4">标注：适用开孔 Φ75</text>
+    <text x="757" y="186" font-size="17" font-weight="bold">③ 按尺寸开孔</text>
+    <text x="757" y="212" font-size="14" fill="#9fb6d4">探测器扫龙骨再动刀</text>
+    <text x="1052" y="186" font-size="17" font-weight="bold">④ 核对再封板</text>
+    <text x="1052" y="212" font-size="14" fill="#9fb6d4">灯具进场试装一次</text>
+  </g>
+  <text x="600" y="278" text-anchor="middle" font-size="16" fill="#34d399">结果：一次到位，面板严丝合缝，返工成本 ≈ 0</text>
+
+  <line x1="600" y1="310" x2="600" y2="352" stroke="#2a4a73" stroke-width="2"/>
+
+  <!-- wrong path -->
+  <text x="600" y="392" text-anchor="middle" font-size="20" font-weight="bold" fill="#f87171">✘ 翻车顺序</text>
+  <g>
+    <rect x="100" y="420" width="290" height="90" rx="10" fill="#1a1226" stroke="#f87171" stroke-width="2"/>
+    <rect x="455" y="420" width="290" height="90" rx="10" fill="#1a1226" stroke="#f87171" stroke-width="2"/>
+    <rect x="810" y="420" width="290" height="90" rx="10" fill="#1a1226" stroke="#f87171" stroke-width="2"/>
+  </g>
+  <line x1="392" y1="465" x2="451" y2="465" stroke="#f87171" stroke-width="3" marker-end="url(#arrR)"/>
+  <line x1="747" y1="465" x2="806" y2="465" stroke="#f87171" stroke-width="3" marker-end="url(#arrR)"/>
+  <g text-anchor="middle" fill="#e8f0ff">
+    <text x="245" y="456" font-size="17" font-weight="bold">凭经验盲开孔</text>
+    <text x="245" y="484" font-size="14" fill="#c9a0a0">"那就统一开9公分吧"</text>
+    <text x="600" y="456" font-size="17" font-weight="bold">灯具到货才对尺寸</text>
+    <text x="600" y="484" font-size="14" fill="#c9a0a0">孔大面板盖不住</text>
+    <text x="955" y="456" font-size="17" font-weight="bold">露黑边 · 卡不紧</text>
+    <text x="955" y="484" font-size="14" fill="#c9a0a0">重新封板 + 批腻子刷漆</text>
+  </g>
+  <text x="600" y="548" text-anchor="middle" font-size="16" fill="#f87171">结果：返工成本最高的动作，全砸在开孔这一步</text>
+
+  <rect x="60" y="586" width="1080" height="56" rx="10" fill="#122743" stroke="#2a4a73"/>
+  <text x="600" y="621" text-anchor="middle" font-size="19" font-weight="bold" fill="#8fd3ff">口诀：尺寸看参数表 · 开孔宁小勿大 —— 孔小可扩，孔大难缩</text>
+</svg>

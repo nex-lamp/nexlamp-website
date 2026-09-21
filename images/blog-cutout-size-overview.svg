@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#16304f" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <text x="600" y="66" text-anchor="middle" font-size="34" font-weight="bold" fill="#e8f0ff">筒灯常用开孔尺寸一览</text>
+  <text x="600" y="100" text-anchor="middle" font-size="17" fill="#7d97b8">寸数只是大概 · 最终以产品参数表「适用开孔尺寸」为准</text>
+
+  <!-- 4 circles sized relatively -->
+  <g filter="url(#glow)">
+    <circle cx="205" cy="330" r="62" fill="none" stroke="#38bdf8" stroke-width="5"/>
+    <circle cx="470" cy="330" r="74" fill="none" stroke="#34d399" stroke-width="5"/>
+    <circle cx="760" cy="330" r="82" fill="none" stroke="#fbbf24" stroke-width="5"/>
+    <circle cx="1070" cy="330" r="98" fill="none" stroke="#f87171" stroke-width="5"/>
+  </g>
+
+  <g text-anchor="middle">
+    <text x="205" y="338" font-size="24" font-weight="bold" fill="#38bdf8">Φ75</text>
+    <text x="205" y="440" font-size="19" fill="#e8f0ff" font-weight="bold">2.5寸</text>
+    <text x="205" y="466" font-size="15" fill="#7d97b8">75-80mm</text>
+    <text x="205" y="490" font-size="15" fill="#9fb6d4">过道 · 玄关 · 防眩窄边</text>
+
+    <text x="470" y="338" font-size="24" font-weight="bold" fill="#34d399">Φ90</text>
+    <text x="470" y="452" font-size="19" fill="#e8f0ff" font-weight="bold">3寸</text>
+    <text x="470" y="478" font-size="15" fill="#7d97b8">90mm</text>
+    <text x="470" y="502" font-size="15" fill="#9fb6d4">家装最通用</text>
+
+    <text x="760" y="338" font-size="24" font-weight="bold" fill="#fbbf24">Φ100</text>
+    <text x="760" y="462" font-size="19" fill="#e8f0ff" font-weight="bold">3.5寸</text>
+    <text x="760" y="488" font-size="15" fill="#7d97b8">100mm</text>
+    <text x="760" y="512" font-size="15" fill="#9fb6d4">大客厅 · 厨房</text>
+
+    <text x="1070" y="338" font-size="24" font-weight="bold" fill="#f87171">Φ120</text>
+    <text x="1070" y="476" font-size="19" fill="#e8f0ff" font-weight="bold">4寸+</text>
+    <text x="1070" y="502" font-size="15" fill="#7d97b8">120-125mm</text>
+    <text x="1070" y="526" font-size="15" fill="#9fb6d4">大平层 · 商铺工装</text>
+  </g>
+
+  <rect x="60" y="576" width="1080" height="58" rx="10" fill="#122743" stroke="#2a4a73"/>
+  <text x="600" y="612" text-anchor="middle" font-size="19" fill="#8fd3ff" font-weight="bold">家用无主灯建议：全屋统一一种开孔（75mm 或 90mm），以后换灯不被尺寸卡死</text>
+</svg>
