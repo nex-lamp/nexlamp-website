@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="520" fill="url(#bg2)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="65" x2="680" y2="65"/><line x1="0" y1="130" x2="680" y2="130"/>
+    <line x1="0" y1="195" x2="680" y2="195"/><line x1="0" y1="260" x2="680" y2="260"/>
+    <line x1="0" y1="325" x2="680" y2="325"/><line x1="0" y1="390" x2="680" y2="390"/>
+    <line x1="0" y1="455" x2="680" y2="455"/>
+    <line x1="97" y1="0" x2="97" y2="520"/><line x1="194" y1="0" x2="194" y2="520"/>
+    <line x1="291" y1="0" x2="291" y2="520"/><line x1="388" y1="0" x2="388" y2="520"/>
+    <line x1="485" y1="0" x2="485" y2="520"/><line x1="582" y1="0" x2="582" y2="520"/>
+  </g>
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="24" font-weight="bold" filter="url(#glow2)">五档修换方案 · 成本账摆平了算</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <!-- header row -->
+  <text x="34" y="94" fill="#3d5a80" font-family="sans-serif" font-size="12">方案</text>
+  <text x="330" y="94" fill="#3d5a80" font-family="sans-serif" font-size="12">花费</text>
+  <text x="440" y="94" fill="#3d5a80" font-family="sans-serif" font-size="12">代价与风险</text>
+  <line x1="34" y1="104" x2="646" y2="104" stroke="#2a4a75" stroke-width="1.5"/>
+
+  <!-- Row 1 -->
+  <rect x="34" y="112" width="240" height="58" rx="8" fill="#12233f" stroke="#2a4a75"/>
+  <text x="50" y="137" fill="#e8f4e8" font-family="sans-serif" font-size="14.5" font-weight="bold">① 官方付费维修</text>
+  <text x="50" y="158" fill="#7d94b8" font-family="sans-serif" font-size="11.5">过保报价</text>
+  <text x="330" y="147" fill="#e86a6a" font-family="sans-serif" font-size="18" font-weight="bold">约 80 元</text>
+  <text x="440" y="138" fill="#9db8d9" font-family="sans-serif" font-size="11.5">材料30+人工50</text>
+  <text x="440" y="158" fill="#9db8d9" font-family="sans-serif" font-size="11.5">修不好人工也不退</text>
+
+  <!-- Row 2 -->
+  <rect x="34" y="180" width="240" height="58" rx="8" fill="#12233f" stroke="#2a4a75"/>
+  <text x="50" y="205" fill="#e8f4e8" font-family="sans-serif" font-size="14.5" font-weight="bold">② 以旧换新</text>
+  <text x="50" y="226" fill="#7d94b8" font-family="sans-serif" font-size="11.5">客服引导</text>
+  <text x="330" y="215" fill="#f0c674" font-family="sans-serif" font-size="18" font-weight="bold">原价 6 折</text>
+  <text x="440" y="206" fill="#9db8d9" font-family="sans-serif" font-size="11.5">仍是过保无售后</text>
+  <text x="440" y="226" fill="#9db8d9" font-family="sans-serif" font-size="11.5">等于换个新坑</text>
+
+  <!-- Row 3 -->
+  <rect x="34" y="248" width="240" height="58" rx="8" fill="#12233f" stroke="#7ec27e"/>
+  <text x="50" y="273" fill="#e8f4e8" font-family="sans-serif" font-size="14.5" font-weight="bold">③ 自己焊一颗电容</text>
+  <text x="50" y="294" fill="#7d94b8" font-family="sans-serif" font-size="11.5">需电烙铁 + 拆机视频</text>
+  <text x="330" y="283" fill="#7ec27e" font-family="sans-serif" font-size="18" font-weight="bold">3-7 元</text>
+  <text x="440" y="274" fill="#9db8d9" font-family="sans-serif" font-size="11.5">注意正负极</text>
+  <text x="440" y="294" fill="#7ec27e" font-family="sans-serif" font-size="11.5" font-weight="bold">性价比之王</text>
+
+  <!-- Row 4 -->
+  <rect x="34" y="316" width="240" height="58" rx="8" fill="#12233f" stroke="#7ec27e"/>
+  <text x="50" y="341" fill="#e8f4e8" font-family="sans-serif" font-size="14.5" font-weight="bold">④ 换第三方驱动</text>
+  <text x="50" y="362" fill="#7d94b8" font-family="sans-serif" font-size="11.5">按电压/电流/功率匹配</text>
+  <text x="330" y="351" fill="#7ec27e" font-family="sans-serif" font-size="18" font-weight="bold">十几元</text>
+  <text x="440" y="342" fill="#9db8d9" font-family="sans-serif" font-size="11.5">灯体 + 智能功能全保住</text>
+  <text x="440" y="362" fill="#7ec27e" font-family="sans-serif" font-size="11.5" font-weight="bold">普通人最佳方案</text>
+
+  <!-- Row 5 -->
+  <rect x="34" y="384" width="240" height="58" rx="8" fill="#12233f" stroke="#5cc8e8"/>
+  <text x="50" y="409" fill="#e8f4e8" font-family="sans-serif" font-size="14.5" font-weight="bold">⑤ 短接改普通灯</text>
+  <text x="50" y="430" fill="#7d94b8" font-family="sans-serif" font-size="11.5">短接 WiFi 模块</text>
+  <text x="330" y="419" fill="#5cc8e8" font-family="sans-serif" font-size="18" font-weight="bold">0 元</text>
+  <text x="440" y="410" fill="#9db8d9" font-family="sans-serif" font-size="11.5">放弃全部智能功能</text>
+  <text x="440" y="430" fill="#9db8d9" font-family="sans-serif" font-size="11.5">灯变普通灯继续服役</text>
+
+  <!-- bottom verdict -->
+  <rect x="34" y="458" width="612" height="42" rx="8" fill="#0d1c33" stroke="#e86a6a" stroke-width="1.5"/>
+  <text x="56" y="485" fill="#e8f4e8" font-family="sans-serif" font-size="14" font-weight="bold">最尴尬的是①：卷不过③④几块钱的自救，也买不到新灯的确定性</text>
+</svg>
