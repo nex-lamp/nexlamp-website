@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 470">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="470" fill="url(#bg1)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/>
+    <line x1="85" y1="0" x2="85" y2="470"/><line x1="170" y1="0" x2="170" y2="470"/>
+    <line x1="255" y1="0" x2="255" y2="470"/><line x1="340" y1="0" x2="340" y2="470"/>
+    <line x1="425" y1="0" x2="425" y2="470"/><line x1="510" y1="0" x2="510" y2="470"/>
+    <line x1="595" y1="0" x2="595" y2="470"/>
+  </g>
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="23" font-weight="bold" filter="url(#glow1)">三种"感应" · 能力边界完全不同</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <!-- header row -->
+  <rect x="34" y="66" width="612" height="40" rx="8" fill="#152a4a"/>
+  <text x="52" y="92" fill="#9db8d9" font-family="sans-serif" font-size="13" font-weight="bold">类型</text>
+  <text x="200" y="92" fill="#9db8d9" font-family="sans-serif" font-size="13" font-weight="bold">认什么</text>
+  <text x="352" y="92" fill="#9db8d9" font-family="sans-serif" font-size="13" font-weight="bold">人静灯不灭</text>
+  <text x="472" y="92" fill="#9db8d9" font-family="sans-serif" font-size="13" font-weight="bold">主要硬伤</text>
+
+  <!-- row 1 PIR -->
+  <rect x="34" y="114" width="612" height="86" rx="8" fill="#101f38" stroke="#3d5a80" stroke-width="1"/>
+  <text x="52" y="150" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">PIR 红外</text>
+  <text x="52" y="174" fill="#6f88a8" font-family="sans-serif" font-size="11.5">便宜、省电</text>
+  <text x="200" y="150" fill="#9db8d9" font-family="sans-serif" font-size="13">只认"动"</text>
+  <text x="200" y="174" fill="#6f88a8" font-family="sans-serif" font-size="11.5">静止 = 无人</text>
+  <text x="352" y="152" fill="#e06666" font-family="sans-serif" font-size="15" font-weight="bold">✕ 做不到</text>
+  <text x="352" y="174" fill="#6f88a8" font-family="sans-serif" font-size="11.5">坐姿阅读必灭</text>
+  <text x="472" y="150" fill="#9db8d9" font-family="sans-serif" font-size="13">探测范围窄，受温度影响</text>
+  <text x="472" y="174" fill="#9db8d9" font-family="sans-serif" font-size="13">穿过玻璃就失效</text>
+
+  <!-- row 2 多普勒雷达 -->
+  <rect x="34" y="208" width="612" height="86" rx="8" fill="#101f38" stroke="#5cc8e8" stroke-width="1"/>
+  <text x="52" y="244" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">多普勒微波雷达</text>
+  <text x="52" y="268" fill="#6f88a8" font-family="sans-serif" font-size="11.5">穿透强、距离远</text>
+  <text x="200" y="244" fill="#9db8d9" font-family="sans-serif" font-size="13">认移动的物体</text>
+  <text x="200" y="268" fill="#6f88a8" font-family="sans-serif" font-size="11.5">不认静止的人</text>
+  <text x="352" y="246" fill="#e06666" font-family="sans-serif" font-size="15" font-weight="bold">✕ 做不到</text>
+  <text x="352" y="268" fill="#6f88a8" font-family="sans-serif" font-size="11.5">只当"移动探测器"</text>
+  <text x="472" y="244" fill="#9db8d9" font-family="sans-serif" font-size="13">风扇、窗帘、宠物全算数</text>
+  <text x="472" y="268" fill="#9db8d9" font-family="sans-serif" font-size="13">会穿薄墙触发隔壁</text>
+
+  <!-- row 3 毫米波存在雷达 -->
+  <rect x="34" y="302" width="612" height="86" rx="8" fill="#12233f" stroke="#7ec27e" stroke-width="2"/>
+  <text x="52" y="338" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">毫米波存在雷达</text>
+  <text x="52" y="362" fill="#7ec27e" font-family="sans-serif" font-size="11.5">贵，对安装位敏感</text>
+  <text x="200" y="338" fill="#9db8d9" font-family="sans-serif" font-size="13">认微动（呼吸、心跳）</text>
+  <text x="200" y="362" fill="#6f88a8" font-family="sans-serif" font-size="11.5">真·人在感知</text>
+  <text x="352" y="340" fill="#7ec27e" font-family="sans-serif" font-size="15" font-weight="bold">✓ 唯一能做到</text>
+  <text x="352" y="362" fill="#6f88a8" font-family="sans-serif" font-size="11.5">人静灯不灭</text>
+  <text x="472" y="338" fill="#9db8d9" font-family="sans-serif" font-size="13">探测角约 120°×60°，有盲区</text>
+  <text x="472" y="362" fill="#9db8d9" font-family="sans-serif" font-size="13">参数不调好照样翻车</text>
+
+  <!-- bottom note -->
+  <rect x="34" y="400" width="612" height="52" rx="10" fill="#0d1c33" stroke="#f0c674" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="54" y="423" fill="#f0c674" font-family="sans-serif" font-size="13.5" font-weight="bold">结论：想"人静灯不灭"，只有毫米波存在式能做到</text>
+  <text x="54" y="443" fill="#9db8d9" font-family="sans-serif" font-size="12.5">选错类型，后面参数怎么调都救不回来 —— 先选对，再调参</text>
+</svg>

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow3" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arw" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 z" fill="#7ec27e"/>
+    </marker>
+  </defs>
+  <rect width="680" height="500" fill="url(#bg3)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/><line x1="0" y1="480" x2="680" y2="480"/>
+    <line x1="85" y1="0" x2="85" y2="500"/><line x1="170" y1="0" x2="170" y2="500"/>
+    <line x1="255" y1="0" x2="255" y2="500"/><line x1="340" y1="0" x2="340" y2="500"/>
+    <line x1="425" y1="0" x2="425" y2="500"/><line x1="510" y1="0" x2="510" y2="500"/>
+    <line x1="595" y1="0" x2="595" y2="500"/>
+  </g>
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="23" font-weight="bold" filter="url(#glow3)">正确的调参顺序 · 别反着来</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <!-- Step 1 -->
+  <rect x="31" y="74" width="138" height="118" rx="10" fill="#12233f" stroke="#7ec27e" stroke-width="2"/>
+  <circle cx="61" cy="102" r="15" fill="#7ec27e" opacity="0.18"/>
+  <text x="61" y="107" fill="#7ec27e" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="bold">1</text>
+  <text x="86" y="107" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">先定位置</text>
+  <text x="48" y="134" fill="#9db8d9" font-family="sans-serif" font-size="11.5">用摄像头拍传感器</text>
+  <text x="48" y="152" fill="#9db8d9" font-family="sans-serif" font-size="11.5">视角，看沙发、绿植、</text>
+  <text x="48" y="170" fill="#9db8d9" font-family="sans-serif" font-size="11.5">风口、支架有无遮挡</text>
+
+  <line x1="173" y1="133" x2="188" y2="133" stroke="#7ec27e" stroke-width="2" marker-end="url(#arw)"/>
+
+  <!-- Step 2 -->
+  <rect x="191" y="74" width="138" height="118" rx="10" fill="#12233f" stroke="#7ec27e" stroke-width="2"/>
+  <circle cx="221" cy="102" r="15" fill="#7ec27e" opacity="0.18"/>
+  <text x="221" y="107" fill="#7ec27e" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="bold">2</text>
+  <text x="246" y="107" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">再压灵敏度</text>
+  <text x="208" y="134" fill="#9db8d9" font-family="sans-serif" font-size="11.5">从低往高加，加到</text>
+  <text x="208" y="152" fill="#9db8d9" font-family="sans-serif" font-size="11.5">"该亮的地方刚好亮"</text>
+  <text x="208" y="170" fill="#9db8d9" font-family="sans-serif" font-size="11.5">就停手，噪源自动滤掉</text>
+
+  <line x1="333" y1="133" x2="348" y2="133" stroke="#7ec27e" stroke-width="2" marker-end="url(#arw)"/>
+
+  <!-- Step 3 -->
+  <rect x="351" y="74" width="138" height="118" rx="10" fill="#12233f" stroke="#7ec27e" stroke-width="2"/>
+  <circle cx="381" cy="102" r="15" fill="#7ec27e" opacity="0.18"/>
+  <text x="381" y="107" fill="#7ec27e" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="bold">3</text>
+  <text x="406" y="107" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">然后定延时</text>
+  <text x="368" y="134" fill="#9db8d9" font-family="sans-serif" font-size="11.5">走廊 30 秒左右，书房</text>
+  <text x="368" y="152" fill="#9db8d9" font-family="sans-serif" font-size="11.5">卫生间 1-3 分钟，卧室</text>
+  <text x="368" y="170" fill="#9db8d9" font-family="sans-serif" font-size="11.5">可以再放长一点</text>
+
+  <line x1="493" y1="133" x2="508" y2="133" stroke="#7ec27e" stroke-width="2" marker-end="url(#arw)"/>
+
+  <!-- Step 4 -->
+  <rect x="511" y="74" width="138" height="118" rx="10" fill="#12233f" stroke="#c9a0ff" stroke-width="2"/>
+  <circle cx="541" cy="102" r="15" fill="#c9a0ff" opacity="0.18"/>
+  <text x="541" y="107" fill="#c9a0ff" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="bold">4</text>
+  <text x="566" y="107" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">最后加约束</text>
+  <text x="528" y="134" fill="#9db8d9" font-family="sans-serif" font-size="11.5">生效时间段 + 照度阈值</text>
+  <text x="528" y="152" fill="#9db8d9" font-family="sans-serif" font-size="11.5">把夜间误亮和"人走灯</text>
+  <text x="528" y="170" fill="#9db8d9" font-family="sans-serif" font-size="11.5">不灭"一起兜住</text>
+
+  <!-- warning band -->
+  <rect x="31" y="206" width="618" height="50" rx="10" fill="#0d1c33" stroke="#e06666" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <circle cx="60" cy="231" r="13" fill="#e06666" opacity="0.2"/>
+  <text x="60" y="236" fill="#e06666" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="bold">!</text>
+  <text x="84" y="228" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">顺序错了两件事就白做：位置没定好就调参数 = 白调</text>
+  <text x="84" y="247" fill="#9db8d9" font-family="sans-serif" font-size="12.5">先调延时再压灵敏度 = 永远在"该亮不亮"和"乱亮"之间反复横跳</text>
+
+  <!-- 三看一验 -->
+  <text x="34" y="292" fill="#7ec27e" font-family="sans-serif" font-size="19" font-weight="bold" filter="url(#glow3)">选购：三看一验</text>
+
+  <rect x="34" y="306" width="300" height="86" rx="10" fill="#12233f" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="52" y="332" fill="#e8f4e8" font-family="sans-serif" font-size="14.5" font-weight="bold">① 看类型</text>
+  <text x="52" y="356" fill="#9db8d9" font-family="sans-serif" font-size="12">要"人静灯不灭"就认"存在式 / 毫米波"，</text>
+  <text x="52" y="375" fill="#9db8d9" font-family="sans-serif" font-size="12">别被"智能感应"四个字糊过去</text>
+
+  <rect x="346" y="306" width="300" height="86" rx="10" fill="#12233f" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="364" y="332" fill="#e8f4e8" font-family="sans-serif" font-size="14.5" font-weight="bold">② 看探测角</text>
+  <text x="364" y="356" fill="#9db8d9" font-family="sans-serif" font-size="12">120°×60° 是主流，视场越窄越依赖</text>
+  <text x="364" y="375" fill="#9db8d9" font-family="sans-serif" font-size="12">安装位置，也越容易出盲区</text>
+
+  <rect x="34" y="402" width="300" height="86" rx="10" fill="#12233f" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="52" y="428" fill="#e8f4e8" font-family="sans-serif" font-size="14.5" font-weight="bold">③ 看状态上报</text>
+  <text x="52" y="452" fill="#9db8d9" font-family="sans-serif" font-size="12">能不能把"有人 / 无人"作为独立条件</text>
+  <text x="52" y="471" fill="#9db8d9" font-family="sans-serif" font-size="12">给第三方网关用 —— 决定你会不会被锁死</text>
+
+  <rect x="346" y="402" width="300" height="86" rx="10" fill="#12233f" stroke="#f0c674" stroke-width="1.5"/>
+  <text x="364" y="428" fill="#f0c674" font-family="sans-serif" font-size="14.5" font-weight="bold">④ 验驱动供电</text>
+  <text x="364" y="452" fill="#9db8d9" font-family="sans-serif" font-size="12">雷达模块对供电纹波很敏感，供电不稳</text>
+  <text x="364" y="471" fill="#9db8d9" font-family="sans-serif" font-size="12">就表现为"时灵时不灵"，先换稳定驱动</text>
+</svg>
