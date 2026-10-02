@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 470">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="470" fill="url(#bg2)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/>
+    <line x1="85" y1="0" x2="85" y2="470"/><line x1="170" y1="0" x2="170" y2="470"/>
+    <line x1="255" y1="0" x2="255" y2="470"/><line x1="340" y1="0" x2="340" y2="470"/>
+    <line x1="425" y1="0" x2="425" y2="470"/><line x1="510" y1="0" x2="510" y2="470"/>
+    <line x1="595" y1="0" x2="595" y2="470"/>
+  </g>
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="23" font-weight="bold" filter="url(#glow2)">先做减法 · 该删的 4 类自动化</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <rect x="34" y="62" width="612" height="66" rx="8" fill="#12233f" stroke="#e06666" stroke-width="1.2"/>
+  <text x="54" y="88" fill="#e06666" font-family="sans-serif" font-size="14.5" font-weight="bold">① 靠传感器猜"你是不是走了"</text>
+  <text x="54" y="112" fill="#9db8d9" font-family="sans-serif" font-size="12.5">离家模式别靠人体传感器判定无人 —— 你只是"换姿势不动"就可能触发全屋断电。改成玄关手动按钮。</text>
+
+  <rect x="34" y="138" width="612" height="66" rx="8" fill="#12233f" stroke="#e06666" stroke-width="1.2"/>
+  <text x="54" y="164" fill="#e06666" font-family="sans-serif" font-size="14.5" font-weight="bold">② 无条件触发的迎宾</text>
+  <text x="54" y="188" fill="#9db8d9" font-family="sans-serif" font-size="12.5">门窗磁一开就播欢迎语、亮玄关灯 —— 取外卖只开半扇门就开始表演。真要做，加时间和状态双条件。</text>
+
+  <rect x="34" y="214" width="612" height="66" rx="8" fill="#12233f" stroke="#e06666" stroke-width="1.2"/>
+  <text x="54" y="240" fill="#e06666" font-family="sans-serif" font-size="14.5" font-weight="bold">③ 安防类的零容错动作</text>
+  <text x="54" y="264" fill="#9db8d9" font-family="sans-serif" font-size="12.5">门窗磁直接联动全屋爆亮 + 警报，一次物理误报就把你从床上吓起来。至少"门磁 + 人体 + 时段"三条件。</text>
+
+  <rect x="34" y="290" width="612" height="66" rx="8" fill="#12233f" stroke="#e06666" stroke-width="1.2"/>
+  <text x="54" y="316" fill="#e06666" font-family="sans-serif" font-size="14.5" font-weight="bold">④ 三层以上嵌套的"自动化触发自动化"</text>
+  <text x="54" y="340" fill="#9db8d9" font-family="sans-serif" font-size="12.5">每一层都在放大上一层的不确定性 —— 层级越少越稳，套娃越深越容易全屋崩。</text>
+
+  <rect x="34" y="368" width="612" height="84" rx="10" fill="#0d1c33" stroke="#7ec27e" stroke-width="1.5"/>
+  <text x="54" y="392" fill="#7ec27e" font-family="sans-serif" font-size="14" font-weight="bold">活下来的联动，四条共同点</text>
+  <text x="54" y="418" fill="#e8f4e8" font-family="sans-serif" font-size="14" font-weight="bold">低频</text>
+  <text x="112" y="418" fill="#6f88a8" font-family="sans-serif" font-size="12">一天没几次</text>
+  <text x="216" y="418" fill="#e8f4e8" font-family="sans-serif" font-size="14" font-weight="bold">单动</text>
+  <text x="264" y="418" fill="#6f88a8" font-family="sans-serif" font-size="12">只干一件事</text>
+  <text x="382" y="418" fill="#e8f4e8" font-family="sans-serif" font-size="14" font-weight="bold">时间窗</text>
+  <text x="452" y="418" fill="#6f88a8" font-family="sans-serif" font-size="12">加延时/时段</text>
+  <text x="548" y="418" fill="#e8f4e8" font-family="sans-serif" font-size="14" font-weight="bold">不串链</text>
+  <text x="614" y="418" fill="#6f88a8" font-family="sans-serif" font-size="12">不叠依赖</text>
+  <text x="54" y="440" fill="#9db8d9" font-family="sans-serif" font-size="12">联动不是越多越高级 —— 删掉一半、每一条都稳，才是真的智能</text>
+</svg>
