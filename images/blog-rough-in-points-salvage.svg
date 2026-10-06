@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 440">
+  <defs>
+    <linearGradient id="bgSal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glowSal" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="440" fill="url(#bgSal)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/>
+    <line x1="85" y1="0" x2="85" y2="440"/><line x1="170" y1="0" x2="170" y2="440"/>
+    <line x1="255" y1="0" x2="255" y2="440"/><line x1="340" y1="0" x2="340" y2="440"/>
+    <line x1="425" y1="0" x2="425" y2="440"/><line x1="510" y1="0" x2="510" y2="440"/>
+    <line x1="595" y1="0" x2="595" y2="440"/>
+  </g>
+
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="23" font-weight="bold" filter="url(#glowSal)">已经封槽了？3 条补救路径</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <rect x="34" y="66" width="612" height="106" rx="8" fill="#14283c" stroke="#7ec27e" stroke-width="1.2"/>
+  <rect x="34" y="66" width="6" height="106" rx="3" fill="#7ec27e"/>
+  <text x="56" y="94" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">路径 1：底盒没零线 → 换单火线版开关</text>
+  <text x="56" y="120" fill="#9db8d9" font-family="sans-serif" font-size="11.5">不砸墙，直接换开关面板，是目前最省事的补法</text>
+  <text x="56" y="142" fill="#e06666" font-family="sans-serif" font-size="11.5">但有两个坑：灯具功率太低会闪、功率太高会烧开关</text>
+  <text x="56" y="162" fill="#7ec27e" font-family="sans-serif" font-size="11.5">动作：先量灯具实际功率，再对照开关标称支持范围下单</text>
+
+  <rect x="34" y="186" width="612" height="106" rx="8" fill="#14283c" stroke="#5cc8e8" stroke-width="1.2"/>
+  <rect x="34" y="186" width="6" height="106" rx="3" fill="#5cc8e8"/>
+  <text x="56" y="214" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">路径 2：无线贴墙开关 + 智能灯泡</text>
+  <text x="56" y="240" fill="#9db8d9" font-family="sans-serif" font-size="11.5">绕开底盒，完全不动墙，补双控最合适</text>
+  <text x="56" y="262" fill="#7ec27e" font-family="sans-serif" font-size="11.5">成本：每个点位一两百，随手贴随手挪</text>
+  <text x="56" y="282" fill="#6f88a8" font-family="sans-serif" font-size="11.5">注意：选电池款的要记着几年换一次电池，别等没电才发现</text>
+
+  <rect x="34" y="306" width="612" height="106" rx="8" fill="#14283c" stroke="#e0a860" stroke-width="1.2"/>
+  <rect x="34" y="306" width="6" height="106" rx="3" fill="#e0a860"/>
+  <text x="56" y="334" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">路径 3：零火取电模块（带屏中控的唯一解）</text>
+  <text x="56" y="360" fill="#9db8d9" font-family="sans-serif" font-size="11.5">在灯位取电给开关供电，不用底盒零线</text>
+  <text x="56" y="382" fill="#e0a860" font-family="sans-serif" font-size="11.5">代价：一个模块小几百，比单火开关贵一截</text>
+  <text x="56" y="402" fill="#6f88a8" font-family="sans-serif" font-size="11.5">注意：模块有发热，灯位和盒内要留出散热空间</text>
+
+  <text x="34" y="432" fill="#7ec27e" font-family="sans-serif" font-size="12.5" font-weight="bold">补救能救急，但都做不到零火线版本的稳定性 —— 所以封槽前那一根零线，别省</text>
+</svg>

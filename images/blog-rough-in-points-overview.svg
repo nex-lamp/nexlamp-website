@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500">
+  <defs>
+    <linearGradient id="bgOv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <linearGradient id="rowOv" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#101f38"/>
+      <stop offset="1" stop-color="#132542"/>
+    </linearGradient>
+    <filter id="glowOv" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="500" fill="url(#bgOv)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/><line x1="0" y1="480" x2="680" y2="480"/>
+    <line x1="85" y1="0" x2="85" y2="500"/><line x1="170" y1="0" x2="170" y2="500"/>
+    <line x1="255" y1="0" x2="255" y2="500"/><line x1="340" y1="0" x2="340" y2="500"/>
+    <line x1="425" y1="0" x2="425" y2="500"/><line x1="510" y1="0" x2="510" y2="500"/>
+    <line x1="595" y1="0" x2="595" y2="500"/>
+  </g>
+
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="23" font-weight="bold" filter="url(#glowOv)">封槽前必须定死的 6 处点位</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <rect x="34" y="62" width="612" height="36" rx="8" fill="#152a4a"/>
+  <text x="52" y="86" fill="#9db8d9" font-family="sans-serif" font-size="13" font-weight="bold">点位 / 封槽前成本</text>
+  <text x="200" y="86" fill="#9db8d9" font-family="sans-serif" font-size="13" font-weight="bold">给电工的原话（可直接照念）</text>
+  <text x="502" y="86" fill="#9db8d9" font-family="sans-serif" font-size="13" font-weight="bold">封槽后代价</text>
+
+  <rect x="34" y="108" width="612" height="56" rx="8" fill="#2a1420" stroke="#e06666" stroke-width="1.4"/>
+  <text x="52" y="130" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">① 开关底盒零线</text>
+  <text x="52" y="150" fill="#7ec27e" font-family="sans-serif" font-size="10.5">封槽前：几块钱一根线</text>
+  <text x="200" y="141" fill="#c8d8ea" font-family="sans-serif" font-size="11.5">每个底盒从灯位拉一根零线过来</text>
+  <text x="502" y="132" fill="#e06666" font-family="sans-serif" font-size="12" font-weight="bold">砸墙重布线</text>
+  <text x="502" y="150" fill="#e06666" font-family="sans-serif" font-size="11">¥8000-12000</text>
+
+  <rect x="34" y="170" width="612" height="56" rx="8" fill="url(#rowOv)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="52" y="192" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">② 底盒型号与深度</text>
+  <text x="52" y="212" fill="#7ec27e" font-family="sans-serif" font-size="10.5">封槽前：深盒差价可忽略</text>
+  <text x="200" y="203" fill="#9db8d9" font-family="sans-serif" font-size="11.5">标准 86 盒，深度 ≥40mm，带屏 ≥50mm</text>
+  <text x="502" y="194" fill="#e06666" font-family="sans-serif" font-size="12" font-weight="bold">只能凿墙换盒</text>
+  <text x="502" y="212" fill="#6f88a8" font-family="sans-serif" font-size="10.5">按点位算返工价</text>
+
+  <rect x="34" y="232" width="612" height="56" rx="8" fill="url(#rowOv)" stroke="#5cc8e8" stroke-width="1"/>
+  <text x="52" y="254" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">③ 控制线回底盒</text>
+  <text x="52" y="274" fill="#7ec27e" font-family="sans-serif" font-size="10.5">封槽前：走线调整不花钱</text>
+  <text x="200" y="265" fill="#9db8d9" font-family="sans-serif" font-size="11.5">灯控线拉回底盒，别一灯一路</text>
+  <text x="502" y="256" fill="#e06666" font-family="sans-serif" font-size="12" font-weight="bold">重走一遍强电</text>
+  <text x="502" y="274" fill="#6f88a8" font-family="sans-serif" font-size="10.5">掉线后失去物理复位</text>
+
+  <rect x="34" y="294" width="612" height="56" rx="8" fill="url(#rowOv)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="52" y="316" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">④ 窗帘盒电源</text>
+  <text x="52" y="336" fill="#7ec27e" font-family="sans-serif" font-size="10.5">封槽前：插座几十块</text>
+  <text x="200" y="327" fill="#9db8d9" font-family="sans-serif" font-size="11.5">单轨 15cm / 双轨 25cm，侧边留 10A 三孔</text>
+  <text x="502" y="318" fill="#e06666" font-family="sans-serif" font-size="12" font-weight="bold">破墙取电</text>
+  <text x="502" y="336" fill="#6f88a8" font-family="sans-serif" font-size="10.5">或整套窗帘重做</text>
+
+  <rect x="34" y="356" width="612" height="56" rx="8" fill="url(#rowOv)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="52" y="378" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">⑤ 中枢网关位置</text>
+  <text x="52" y="398" fill="#7ec27e" font-family="sans-serif" font-size="10.5">封槽前：插座网口百来块</text>
+  <text x="200" y="389" fill="#9db8d9" font-family="sans-serif" font-size="11.5">留 220V 插座 + 网口，选房子中心区</text>
+  <text x="502" y="380" fill="#e06666" font-family="sans-serif" font-size="12" font-weight="bold">只能明装走线</text>
+  <text x="502" y="398" fill="#6f88a8" font-family="sans-serif" font-size="10.5">别塞弱电箱</text>
+
+  <rect x="34" y="418" width="612" height="56" rx="8" fill="url(#rowOv)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="52" y="440" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">⑥ 网线与弱电箱</text>
+  <text x="52" y="460" fill="#7ec27e" font-family="sans-serif" font-size="10.5">封槽前：几块钱一米</text>
+  <text x="200" y="451" fill="#9db8d9" font-family="sans-serif" font-size="11.5">每房 2 根超六类，弱电箱 ≥40×30cm</text>
+  <text x="502" y="442" fill="#e06666" font-family="sans-serif" font-size="12" font-weight="bold">明装或换无线</text>
+  <text x="502" y="460" fill="#6f88a8" font-family="sans-serif" font-size="10.5">稳定性打折扣</text>
+
+  <text x="34" y="492" fill="#7ec27e" font-family="sans-serif" font-size="12.5" font-weight="bold">设备可以等双 11，布线一天都不能等 —— 强弱电管间距还要 &gt;30cm</text>
+</svg>
