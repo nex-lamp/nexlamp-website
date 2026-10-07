@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 440">
+  <defs>
+    <linearGradient id="bgTg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <linearGradient id="barLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ec27e"/>
+      <stop offset="1" stop-color="#4ea36a"/>
+    </linearGradient>
+    <linearGradient id="barCurtain" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5cc8e8"/>
+      <stop offset="1" stop-color="#2f7fa8"/>
+    </linearGradient>
+    <linearGradient id="barAv" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6f88a8"/>
+      <stop offset="1" stop-color="#3d5a80"/>
+    </linearGradient>
+    <filter id="glowTg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="440" fill="url(#bgTg)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/>
+    <line x1="85" y1="0" x2="85" y2="440"/><line x1="170" y1="0" x2="170" y2="440"/>
+    <line x1="255" y1="0" x2="255" y2="440"/><line x1="340" y1="0" x2="340" y2="440"/>
+    <line x1="425" y1="0" x2="425" y2="440"/><line x1="510" y1="0" x2="510" y2="440"/>
+    <line x1="595" y1="0" x2="595" y2="440"/>
+  </g>
+
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="23" font-weight="bold" filter="url(#glowTg)">你家智能灯，30 天被触发几次？</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <text x="34" y="82" fill="#9db8d9" font-family="sans-serif" font-size="12.5">深圳宝安 160㎡ 四房，装完一年后从业主手机导出的 30 天使用记录</text>
+
+  <rect x="34" y="102" width="612" height="74" rx="8" fill="#122a1e" stroke="#7ec27e" stroke-width="1.4"/>
+  <text x="52" y="130" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">灯光</text>
+  <text x="52" y="154" fill="#7ec27e" font-family="sans-serif" font-size="12">一天到晚在用</text>
+  <rect x="170" y="120" width="440" height="22" rx="6" fill="url(#barLight)" filter="url(#glowTg)"/>
+  <text x="622" y="137" fill="#e8f4e8" font-family="sans-serif" font-size="17" font-weight="bold" text-anchor="end">1840 次</text>
+  <text x="170" y="164" fill="#6f88a8" font-family="sans-serif" font-size="10.5">条形按比例缩放，实际长度约 22 倍于下一档</text>
+
+  <rect x="34" y="188" width="612" height="70" rx="8" fill="#0f2136" stroke="#5cc8e8" stroke-width="1"/>
+  <text x="52" y="216" fill="#e8f4e8" font-family="sans-serif" font-size="15" font-weight="bold">窗帘</text>
+  <text x="52" y="240" fill="#5cc8e8" font-family="sans-serif" font-size="12">每天开合一两次</text>
+  <rect x="170" y="206" width="24" height="22" rx="6" fill="url(#barCurtain)"/>
+  <text x="210" y="223" fill="#c8d8ea" font-family="sans-serif" font-size="17" font-weight="bold">92 次</text>
+
+  <rect x="34" y="270" width="612" height="70" rx="8" fill="#141d2c" stroke="#3d5a80" stroke-width="1"/>
+  <text x="52" y="298" fill="#c8d8ea" font-family="sans-serif" font-size="15" font-weight="bold">影音场景</text>
+  <text x="52" y="322" fill="#6f88a8" font-family="sans-serif" font-size="12">三万块的激光电视，一个月开 8 次</text>
+  <rect x="170" y="288" width="8" height="22" rx="3" fill="url(#barAv)"/>
+  <text x="190" y="305" fill="#9db8d9" font-family="sans-serif" font-size="17" font-weight="bold">10 次</text>
+
+  <rect x="34" y="354" width="612" height="70" rx="8" fill="#152a4a" stroke="#7ec27e" stroke-width="1.2"/>
+  <text x="52" y="380" fill="#7ec27e" font-family="sans-serif" font-size="12.5" font-weight="bold">老师傅的结论（10 年全屋智能）</text>
+  <text x="52" y="404" fill="#c8d8ea" font-family="sans-serif" font-size="12.5">客户每天真正用的功能不超过 5 个，住下来觉得值的是三样：</text>
+  <text x="52" y="420" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">客厅灯光场景 ｜ 卧室窗帘 ｜ 回家 / 离家模式</text>
+</svg>

@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-10-06",
+    "date": "2026-10-07",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-10-06",
+    "date": "2026-10-07",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -20,7 +20,106 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-10-06",
+    "date": "2026-10-07",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "双11全屋智能灯清单，我劝客户砍了一半",
+    "slug": "smart-lighting-budget-by-usage-2026",
+    "date": "2026-10-07",
+    "category": "选购指南",
+    "description": "双11全屋智能灯怎么配才不浪费？本文用深圳160平四房30天触发数据（灯光1840次、窗帘92次、影音10次），把预算按触发频率分成日用、保险、体验三档，附2026双11京东天猫节点与625亿国补口径，并回应\"智能灯该不该能调色温\"——答案在驱动电源，不在APP。",
+    "cover": "images/blog-budget-usage-2026-cover.png",
+    "excerpt": "双11前客户把全屋30多个点位都列成智能灯，我劝他砍一半。做灯十几年，我用30天触发数据、三档预算和双11国补时间线，算清楚一个160平四房到底哪些点位值得上智能，哪些用普通高显灯更理性。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-10-07",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-10-07",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-10-07",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
+    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
+    "date": "2026-10-07",
+    "category": "技术文章",
+    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
+    "cover": "",
+    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-10-07",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-10-07",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Matter over Thread Bulbs in 2026: 5 Tested from $8 IKEA to $500 Nanoleaf Skylight",
+    "slug": "matter-over-thread-bulbs-in-2026-5-tested-from-8-ikea-to-500-nanoleaf-skylight",
+    "date": "2026-10-07",
+    "category": "技术文章",
+    "description": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims.",
+    "cover": "",
+    "excerpt": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims."
+  },
+  {
+    "title": "GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass?",
+    "slug": "gbt-33721-2026-gbt-32481-2026-take-effect-november-1-will-your-led-driver-pass",
+    "date": "2026-10-07",
+    "category": "技术文章",
+    "description": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window.",
+    "cover": "",
+    "excerpt": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window."
+  },
+  {
+    "title": "LED Light Dead? Don't Buy a New Fixture Yet — It's Probably Just the Driver",
+    "slug": "led-light-dead-dont-buy-a-new-fixture-yet-its-probably-just-the-driver",
+    "date": "2026-10-07",
+    "category": "技术文章",
+    "description": "Around 70% of 'dead' LED ceiling lights aren't burned-out LEDs — they're failed drivers. A 5-minute 3-step diagnosis can save you from a $95 'full replacement' scam that a $15 part would fix.",
+    "cover": "",
+    "excerpt": "Around 70% of 'dead' LED ceiling lights aren't burned-out LEDs — they're failed drivers. A 5-minute 3-step diagnosis can save you from a $95 'full replacement' scam that a $15 part would fix."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-10-07",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -34,96 +133,6 @@
     "description": "智能照明水电预埋避坑指南：开关底盒零线、底盒深度、灯具控制线回底盒、窗帘盒电源尺寸、中枢网关位置、网线与弱电箱，6处封槽前必须定死的点位，附给电工的原话、后补代价对照表和已封槽的3条补救路径。",
     "cover": "images/blog-rough-in-points-2026-cover.png",
     "excerpt": "装修最贵的一笔钱不是买灯，是砸墙。水电交底到封槽只有几天，这6处点位一旦埋错，后期补装报价从几十块变成上万块——附上可以直接念给电工听的原话。"
-  },
-  {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-10-06",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-10-06",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-10-06",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
-    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
-    "date": "2026-10-06",
-    "category": "技术文章",
-    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
-    "cover": "",
-    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-10-06",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-10-06",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Matter over Thread Bulbs in 2026: 5 Tested from $8 IKEA to $500 Nanoleaf Skylight",
-    "slug": "matter-over-thread-bulbs-in-2026-5-tested-from-8-ikea-to-500-nanoleaf-skylight",
-    "date": "2026-10-06",
-    "category": "技术文章",
-    "description": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims.",
-    "cover": "",
-    "excerpt": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims."
-  },
-  {
-    "title": "GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass?",
-    "slug": "gbt-33721-2026-gbt-32481-2026-take-effect-november-1-will-your-led-driver-pass",
-    "date": "2026-10-06",
-    "category": "技术文章",
-    "description": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window.",
-    "cover": "",
-    "excerpt": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window."
-  },
-  {
-    "title": "LED Light Dead? Don't Buy a New Fixture Yet — It's Probably Just the Driver",
-    "slug": "led-light-dead-dont-buy-a-new-fixture-yet-its-probably-just-the-driver",
-    "date": "2026-10-06",
-    "category": "技术文章",
-    "description": "Around 70% of 'dead' LED ceiling lights aren't burned-out LEDs — they're failed drivers. A 5-minute 3-step diagnosis can save you from a $95 'full replacement' scam that a $15 part would fix.",
-    "cover": "",
-    "excerpt": "Around 70% of 'dead' LED ceiling lights aren't burned-out LEDs — they're failed drivers. A 5-minute 3-step diagnosis can save you from a $95 'full replacement' scam that a $15 part would fix."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-10-06",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "全屋智能越装越乱？\"邪修联动\"三类翻车根因，先删掉一半自动化",
