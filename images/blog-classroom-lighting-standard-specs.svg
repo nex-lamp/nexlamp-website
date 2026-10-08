@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520">
+  <defs>
+    <linearGradient id="bgCs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <linearGradient id="rowCs" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#101f38"/>
+      <stop offset="1" stop-color="#132542"/>
+    </linearGradient>
+    <filter id="glowCs" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="520" fill="url(#bgCs)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/><line x1="0" y1="480" x2="680" y2="480"/>
+    <line x1="85" y1="0" x2="85" y2="520"/><line x1="170" y1="0" x2="170" y2="520"/>
+    <line x1="255" y1="0" x2="255" y2="520"/><line x1="340" y1="0" x2="340" y2="520"/>
+    <line x1="425" y1="0" x2="425" y2="520"/><line x1="510" y1="0" x2="510" y2="520"/>
+    <line x1="595" y1="0" x2="595" y2="520"/>
+  </g>
+
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="22" font-weight="bold" filter="url(#glowCs)">教室照明强制新国标 · 6 项硬指标</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <rect x="34" y="60" width="612" height="30" rx="7" fill="#2a1420" stroke="#e06666" stroke-width="1.2"/>
+  <text x="52" y="80" fill="#e06666" font-family="sans-serif" font-size="12" font-weight="bold">适用：中小学 / 中职的教室、实验室、美术教室　·　校外培训机构参照使用　·　2026-11-01 起强制</text>
+
+  <rect x="34" y="100" width="612" height="60" rx="8" fill="url(#rowCs)" stroke="#5cc8e8" stroke-width="1.2"/>
+  <text x="52" y="122" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">① 照度</text>
+  <text x="52" y="144" fill="#9db8d9" font-family="sans-serif" font-size="12">课桌面维持平均照度 <tspan fill="#7ec27e" font-weight="bold">≥ 300 lx</tspan>　·　书写板 <tspan fill="#7ec27e" font-weight="bold">≥ 500 lx</tspan></text>
+
+  <rect x="34" y="168" width="612" height="60" rx="8" fill="url(#rowCs)" stroke="#5cc8e8" stroke-width="1.2"/>
+  <text x="52" y="190" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">② 均匀度</text>
+  <text x="52" y="212" fill="#9db8d9" font-family="sans-serif" font-size="12">课桌面 <tspan fill="#7ec27e" font-weight="bold">≥ 0.7</tspan>　·　书写板 <tspan fill="#7ec27e" font-weight="bold">≥ 0.8</tspan>　（缩小前后排明暗差距）</text>
+
+  <rect x="34" y="236" width="612" height="60" rx="8" fill="url(#rowCs)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="52" y="258" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">③ 色温与显色</text>
+  <text x="52" y="280" fill="#9db8d9" font-family="sans-serif" font-size="12">色温 <tspan fill="#7ec27e" font-weight="bold">3300K – 5300K</tspan>　·　一般显色指数 <tspan fill="#7ec27e" font-weight="bold">Ra ≥ 80</tspan>（LED 灯具 R9 &gt; 0）</text>
+
+  <rect x="34" y="304" width="612" height="60" rx="8" fill="url(#rowCs)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="52" y="326" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">④ 蓝光</text>
+  <text x="52" y="348" fill="#9db8d9" font-family="sans-serif" font-size="12">一般照明灯具达 <tspan fill="#7ec27e" font-weight="bold">RG0 豁免级</tspan>　·　书写板照明 RG0 或 RG1</text>
+
+  <rect x="34" y="372" width="612" height="60" rx="8" fill="url(#rowCs)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="52" y="394" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">⑤ 频闪（本次新增多项）</text>
+  <text x="52" y="416" fill="#9db8d9" font-family="sans-serif" font-size="12">波动深度　·　闪变指数　·　频闪效应可视度　·　视网膜蓝光危害限值</text>
+
+  <rect x="34" y="440" width="612" height="60" rx="8" fill="url(#rowCs)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="52" y="462" fill="#e8f4e8" font-family="sans-serif" font-size="13.5" font-weight="bold">⑥ 眩光与安装</text>
+  <text x="52" y="484" fill="#9db8d9" font-family="sans-serif" font-size="12">UGR <tspan fill="#7ec27e" font-weight="bold">≤ 16</tspan>　·　不得用裸光源　·　出光面离课桌面 <tspan fill="#7ec27e" font-weight="bold">≥ 1.7 m</tspan></text>
+</svg>

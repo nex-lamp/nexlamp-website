@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520">
+  <defs>
+    <linearGradient id="bgSc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <linearGradient id="rowSc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#101f38"/>
+      <stop offset="1" stop-color="#132542"/>
+    </linearGradient>
+    <filter id="glowSc" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="520" fill="url(#bgSc)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/><line x1="0" y1="480" x2="680" y2="480"/>
+    <line x1="85" y1="0" x2="85" y2="520"/><line x1="170" y1="0" x2="170" y2="520"/>
+    <line x1="255" y1="0" x2="255" y2="520"/><line x1="340" y1="0" x2="340" y2="520"/>
+    <line x1="425" y1="0" x2="425" y2="520"/><line x1="510" y1="0" x2="510" y2="520"/>
+    <line x1="595" y1="0" x2="595" y2="520"/>
+  </g>
+
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="22" font-weight="bold" filter="url(#glowSc)">在家不用仪器 · 4 步自查</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <rect x="34" y="62" width="238" height="36" rx="8" fill="#152a4a"/>
+  <text x="48" y="86" fill="#9db8d9" font-family="sans-serif" font-size="12.5" font-weight="bold">怎么做</text>
+  <rect x="280" y="62" width="366" height="36" rx="8" fill="#152a4a"/>
+  <text x="294" y="86" fill="#9db8d9" font-family="sans-serif" font-size="12.5" font-weight="bold">看什么 / 判断标准</text>
+
+  <rect x="34" y="106" width="612" height="44" rx="8" fill="url(#rowSc)" stroke="#5cc8e8" stroke-width="1.2"/>
+  <text x="48" y="133" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">① 手机摄像头对准发光面</text>
+  <text x="294" y="133" fill="#c8d8ea" font-family="sans-serif" font-size="12">屏幕出现滚动黑白条纹 = 有可视频闪（仅初步筛查）</text>
+
+  <rect x="34" y="156" width="612" height="44" rx="8" fill="url(#rowSc)" stroke="#5cc8e8" stroke-width="1.2"/>
+  <text x="48" y="183" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">② 翻说明书 / 铭牌</text>
+  <text x="294" y="183" fill="#c8d8ea" font-family="sans-serif" font-size="12">视网膜蓝光危害等级：认准 <tspan fill="#7ec27e" font-weight="bold">RG0</tspan>（RG1 为低危险）</text>
+
+  <rect x="34" y="206" width="612" height="44" rx="8" fill="url(#rowSc)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="48" y="233" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">③ 查参数里的 Ra 和 R9</text>
+  <text x="294" y="233" fill="#c8d8ea" font-family="sans-serif" font-size="12"><tspan fill="#7ec27e" font-weight="bold">Ra ≥ 80</tspan> 为及格，专业级 Ra ≥ 95；R9 为负则红色发闷</text>
+
+  <rect x="34" y="256" width="612" height="44" rx="8" fill="url(#rowSc)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="48" y="283" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">④ 看色温标注 + 台灯摆位</text>
+  <text x="294" y="283" fill="#c8d8ea" font-family="sans-serif" font-size="12">宜 <tspan fill="#7ec27e" font-weight="bold">4000K</tspan> 左右，夜间不超 4000K；见下方摆位图</text>
+
+  <text x="34" y="330" fill="#7ec27e" font-family="sans-serif" font-size="16" font-weight="bold" filter="url(#glowSc)">双光源摆位：顶灯 + 台灯必须同开</text>
+
+  <rect x="34" y="346" width="300" height="150" rx="10" fill="#0d1c32" stroke="#3d5a80" stroke-width="1.2"/>
+  <text x="184" y="368" fill="#9db8d9" font-family="sans-serif" font-size="11" text-anchor="middle">侧视 · 书房</text>
+  <rect x="60" y="378" width="248" height="10" rx="4" fill="#152a4a" stroke="#5cc8e8" stroke-width="1.2"/>
+  <text x="184" y="402" fill="#5cc8e8" font-family="sans-serif" font-size="11.5" text-anchor="middle">顶灯（环境背景光 · 均匀）</text>
+  <rect x="126" y="418" width="116" height="9" rx="3" fill="#1d3a5c" stroke="#7ec27e" stroke-width="1.2"/>
+  <text x="184" y="443" fill="#7ec27e" font-family="sans-serif" font-size="11.5" text-anchor="middle">台灯（补足桌面照度）</text>
+  <rect x="60" y="462" width="248" height="12" rx="4" fill="#152a4a" stroke="#3d5a80" stroke-width="1"/>
+  <text x="184" y="487" fill="#9db8d9" font-family="sans-serif" font-size="11.5" text-anchor="middle">读写时桌面照度 ≥ 300 lx</text>
+
+  <rect x="346" y="346" width="300" height="150" rx="10" fill="#0d1c32" stroke="#3d5a80" stroke-width="1.2"/>
+  <text x="496" y="368" fill="#9db8d9" font-family="sans-serif" font-size="11" text-anchor="middle">俯视 · 右手写字（多数孩子）</text>
+  <rect x="372" y="378" width="248" height="104" rx="6" fill="#101f38" stroke="#3d5a80" stroke-width="1"/>
+  <circle cx="404" cy="402" r="11" fill="#7ec27e" opacity="0.9"/>
+  <text x="404" y="406" fill="#0a1628" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">灯</text>
+  <text x="404" y="428" fill="#7ec27e" font-family="sans-serif" font-size="10.5" text-anchor="middle">左前方</text>
+  <rect x="546" y="404" width="30" height="52" rx="6" fill="#1d3a5c" stroke="#5cc8e8" stroke-width="1"/>
+  <text x="561" y="474" fill="#5cc8e8" font-family="sans-serif" font-size="10.5" text-anchor="middle">书本</text>
+  <text x="496" y="452" fill="#e0a44a" font-family="sans-serif" font-size="11" text-anchor="middle">灯放写字手的对侧前方 → 减少手影</text>
+</svg>

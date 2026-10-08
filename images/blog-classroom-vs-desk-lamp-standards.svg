@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500">
+  <defs>
+    <linearGradient id="bgVs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <linearGradient id="rowVs" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#101f38"/>
+      <stop offset="1" stop-color="#132542"/>
+    </linearGradient>
+    <filter id="glowVs" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="500" fill="url(#bgVs)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/><line x1="0" y1="480" x2="680" y2="480"/>
+    <line x1="85" y1="0" x2="85" y2="500"/><line x1="170" y1="0" x2="170" y2="500"/>
+    <line x1="255" y1="0" x2="255" y2="500"/><line x1="340" y1="0" x2="340" y2="500"/>
+    <line x1="425" y1="0" x2="425" y2="500"/><line x1="510" y1="0" x2="510" y2="500"/>
+    <line x1="595" y1="0" x2="595" y2="500"/>
+  </g>
+
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="22" font-weight="bold" filter="url(#glowVs)">两套标准，数字不是一套</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <rect x="34" y="62" width="140" height="38" rx="8" fill="#152a4a"/>
+  <text x="48" y="86" fill="#9db8d9" font-family="sans-serif" font-size="12.5" font-weight="bold">指标</text>
+  <rect x="178" y="62" width="228" height="38" rx="8" fill="#152a4a"/>
+  <text x="192" y="86" fill="#5cc8e8" font-family="sans-serif" font-size="12.5" font-weight="bold">教室 GB 7793—2025　强制</text>
+  <rect x="410" y="62" width="236" height="38" rx="8" fill="#152a4a"/>
+  <text x="424" y="86" fill="#7ec27e" font-family="sans-serif" font-size="12.5" font-weight="bold">家用台灯 GB/T 9473—2022　推荐</text>
+
+  <rect x="34" y="108" width="612" height="46" rx="8" fill="url(#rowVs)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="48" y="136" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">照度</text>
+  <text x="192" y="136" fill="#c8d8ea" font-family="sans-serif" font-size="12">课桌面 ≥300 lx　书写板 ≥500 lx</text>
+  <text x="424" y="136" fill="#c8d8ea" font-family="sans-serif" font-size="12">AA 级中心区 ≥500 lx、总区域 ≥250 lx</text>
+
+  <rect x="34" y="160" width="612" height="46" rx="8" fill="url(#rowVs)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="48" y="188" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">均匀度</text>
+  <text x="192" y="188" fill="#c8d8ea" font-family="sans-serif" font-size="12">课桌面 ≥0.7　书写板 ≥0.8</text>
+  <text x="424" y="188" fill="#c8d8ea" font-family="sans-serif" font-size="12">AA 级中心区 ≤3、总区域 ≤7</text>
+
+  <rect x="34" y="212" width="612" height="46" rx="8" fill="url(#rowVs)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="48" y="240" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">色温</text>
+  <text x="192" y="240" fill="#c8d8ea" font-family="sans-serif" font-size="12">3300K – 5300K</text>
+  <text x="424" y="240" fill="#c8d8ea" font-family="sans-serif" font-size="12">宜 4000K 左右，色容差 ≤5</text>
+
+  <rect x="34" y="264" width="612" height="46" rx="8" fill="url(#rowVs)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="48" y="292" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">显色</text>
+  <text x="192" y="292" fill="#c8d8ea" font-family="sans-serif" font-size="12">Ra ≥80，LED 灯具 R9 &gt; 0</text>
+  <text x="424" y="292" fill="#c8d8ea" font-family="sans-serif" font-size="12">Ra ≥80，专业级 Ra ≥95、R9 &gt; 0</text>
+
+  <rect x="34" y="316" width="612" height="46" rx="8" fill="url(#rowVs)" stroke="#3d5a80" stroke-width="1"/>
+  <text x="48" y="344" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">蓝光</text>
+  <text x="192" y="344" fill="#c8d8ea" font-family="sans-serif" font-size="12">一般照明 RG0；书写板 RG0 或 RG1</text>
+  <text x="424" y="344" fill="#c8d8ea" font-family="sans-serif" font-size="12">RG0 或 RG1，儿童认准 RG0</text>
+
+  <rect x="34" y="368" width="612" height="46" rx="8" fill="url(#rowVs)" stroke="#5cc8e8" stroke-width="1.2"/>
+  <text x="48" y="396" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">频闪</text>
+  <text x="192" y="396" fill="#c8d8ea" font-family="sans-serif" font-size="12">波动深度 / 闪变指数 / 频闪效应可视度</text>
+  <text x="424" y="396" fill="#c8d8ea" font-family="sans-serif" font-size="12">闪烁频率 ≥3125Hz，无可视频闪</text>
+
+  <rect x="34" y="420" width="612" height="46" rx="8" fill="url(#rowVs)" stroke="#e06666" stroke-width="1.2"/>
+  <text x="48" y="448" fill="#e8f4e8" font-family="sans-serif" font-size="12.5" font-weight="bold">使用场景</text>
+  <text x="192" y="448" fill="#c8d8ea" font-family="sans-serif" font-size="12">整间房多点布灯，环境光</text>
+  <text x="424" y="448" fill="#e0a44a" font-family="sans-serif" font-size="12" font-weight="bold">单点近距照明，还要配顶灯</text>
+</svg>
