@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460">
+  <defs>
+    <linearGradient id="bgTm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <linearGradient id="rowTm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#101f38"/>
+      <stop offset="1" stop-color="#132542"/>
+    </linearGradient>
+    <filter id="glowTm" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="460" fill="url(#bgTm)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/>
+    <line x1="85" y1="0" x2="85" y2="460"/><line x1="170" y1="0" x2="170" y2="460"/>
+    <line x1="255" y1="0" x2="255" y2="460"/><line x1="340" y1="0" x2="340" y2="460"/>
+    <line x1="425" y1="0" x2="425" y2="460"/><line x1="510" y1="0" x2="510" y2="460"/>
+    <line x1="595" y1="0" x2="595" y2="460"/>
+  </g>
+
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="21" font-weight="bold" filter="url(#glowTm)">灯具认证模式：一种变三种</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <rect x="34" y="72" width="152" height="42" rx="8" fill="#152a4a"/>
+  <text x="48" y="98" fill="#9db8d9" font-family="sans-serif" font-size="12.5" font-weight="bold">认证模式</text>
+  <rect x="186" y="72" width="204" height="42" rx="8" fill="#152a4a"/>
+  <text x="200" y="98" fill="#9db8d9" font-family="sans-serif" font-size="12.5" font-weight="bold">典型产品</text>
+  <rect x="390" y="72" width="256" height="42" rx="8" fill="#152a4a"/>
+  <text x="404" y="98" fill="#9db8d9" font-family="sans-serif" font-size="12.5" font-weight="bold">对厂家的意义</text>
+
+  <rect x="34" y="122" width="612" height="82" rx="8" fill="url(#rowTm)" stroke="#3f7a52" stroke-width="1"/>
+  <text x="48" y="157" fill="#9ee6ac" font-family="sans-serif" font-size="13.5" font-weight="bold">通用灯具</text>
+  <text x="48" y="179" fill="#8aa5c4" font-family="sans-serif" font-size="11">批量、常规</text>
+  <text x="200" y="152" fill="#c8d8ea" font-family="sans-serif" font-size="12">批量生产的室内外常规</text>
+  <text x="200" y="172" fill="#c8d8ea" font-family="sans-serif" font-size="12">照明灯具</text>
+  <text x="404" y="152" fill="#c8d8ea" font-family="sans-serif" font-size="12">按标准化认证路径走</text>
+  <text x="404" y="172" fill="#c8d8ea" font-family="sans-serif" font-size="12">单元划分与一致性要求更明确</text>
+  <text x="404" y="192" fill="#8aa5c4" font-family="sans-serif" font-size="11">量产厂家最关心这条</text>
+
+  <rect x="34" y="212" width="612" height="82" rx="8" fill="url(#rowTm)" stroke="#3d6d9a" stroke-width="1"/>
+  <text x="48" y="247" fill="#8ad8ee" font-family="sans-serif" font-size="13.5" font-weight="bold">大型灯具</text>
+  <text x="48" y="269" fill="#8aa5c4" font-family="sans-serif" font-size="11">结构特殊</text>
+  <text x="200" y="242" fill="#c8d8ea" font-family="sans-serif" font-size="12">体积大、结构复杂、安装</text>
+  <text x="200" y="262" fill="#c8d8ea" font-family="sans-serif" font-size="12">条件特殊的灯具</text>
+  <text x="404" y="242" fill="#c8d8ea" font-family="sans-serif" font-size="12">针对特殊生产与检测条件</text>
+  <text x="404" y="262" fill="#c8d8ea" font-family="sans-serif" font-size="12">单独适配，不再硬套通用流程</text>
+  <text x="404" y="282" fill="#8aa5c4" font-family="sans-serif" font-size="11">工程与定制场景适配</text>
+
+  <rect x="34" y="302" width="612" height="82" rx="8" fill="url(#rowTm)" stroke="#8a4a6a" stroke-width="1"/>
+  <text x="48" y="337" fill="#e09bc4" font-family="sans-serif" font-size="13.5" font-weight="bold">单批次定制灯具</text>
+  <text x="48" y="359" fill="#8aa5c4" font-family="sans-serif" font-size="11">小批量 / 贴牌</text>
+  <text x="200" y="332" fill="#c8d8ea" font-family="sans-serif" font-size="12">工程项目单、小批量定制、</text>
+  <text x="200" y="352" fill="#c8d8ea" font-family="sans-serif" font-size="12">贴牌产品</text>
+  <text x="404" y="332" fill="#c8d8ea" font-family="sans-serif" font-size="12">单列一种模式，定制产品不再</text>
+  <text x="404" y="352" fill="#c8d8ea" font-family="sans-serif" font-size="12">和量产产品挤同一套流程</text>
+  <text x="404" y="372" fill="#8aa5c4" font-family="sans-serif" font-size="11">定制单最受益的一条</text>
+
+  <rect x="34" y="398" width="612" height="42" rx="8" fill="#0f2a1c" stroke="#3f7a52" stroke-width="1"/>
+  <text x="48" y="424" fill="#9ee6ac" font-family="sans-serif" font-size="12">模式由「产品类型 + 生产方式」决定，不是企业自选，需对照产品分类目录确认</text>
+</svg>
