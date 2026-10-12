@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500">
+  <defs>
+    <linearGradient id="bgRt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <linearGradient id="cardA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#112a22"/>
+      <stop offset="1" stop-color="#0f2136"/>
+    </linearGradient>
+    <linearGradient id="cardB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2411"/>
+      <stop offset="1" stop-color="#101f38"/>
+    </linearGradient>
+    <linearGradient id="cardC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1418"/>
+      <stop offset="1" stop-color="#101f38"/>
+    </linearGradient>
+    <filter id="glowRt" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="500" fill="url(#bgRt)"/>
+  <g stroke="#1b3355" stroke-width="1">
+    <line x1="0" y1="60" x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/><line x1="0" y1="480" x2="680" y2="480"/>
+    <line x1="85" y1="0" x2="85" y2="500"/><line x1="170" y1="0" x2="170" y2="500"/>
+    <line x1="255" y1="0" x2="255" y2="500"/><line x1="340" y1="0" x2="340" y2="500"/>
+    <line x1="425" y1="0" x2="425" y2="500"/><line x1="510" y1="0" x2="510" y2="500"/>
+    <line x1="595" y1="0" x2="595" y2="500"/>
+  </g>
+
+  <text x="34" y="44" fill="#7ec27e" font-family="sans-serif" font-size="23" font-weight="bold" filter="url(#glowRt)">三条抢救路线</text>
+  <text x="646" y="44" fill="#3d5a80" font-family="sans-serif" font-size="12" text-anchor="end">NEXLAMP</text>
+
+  <text x="34" y="76" fill="#9db8d9" font-family="sans-serif" font-size="12.5">救不救，看你愿意动到哪一层。A → B → C，动的范围越来越大。</text>
+
+  <rect x="34" y="92" width="194" height="382" rx="10" fill="url(#cardA)" stroke="#7ec27e" stroke-width="1.6"/>
+  <circle cx="62" cy="122" r="15" fill="#7ec27e"/>
+  <text x="62" y="128" fill="#0a1628" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">A</text>
+  <text x="58" y="160" fill="#e8f4e8" font-family="sans-serif" font-size="14" font-weight="bold">最小动作</text>
+  <text x="58" y="180" fill="#7ec27e" font-family="sans-serif" font-size="12.5">只救灯</text>
+  <line x1="52" y1="194" x2="210" y2="194" stroke="#1b3355" stroke-width="1"/>
+  <text x="58" y="218" fill="#c8d8ea" font-family="sans-serif" font-size="11.5">
+    <tspan x="58" dy="0">不碰原面板</tspan>
+    <tspan x="58" dy="20">把要控的几路换成</tspan>
+    <tspan x="58" dy="17">支持调光的智能驱动</tspan>
+    <tspan x="58" dy="17">或智能灯</tspan>
+    <tspan x="58" dy="20">控制交给无线开关</tspan>
+    <tspan x="58" dy="17">或 App</tspan>
+  </text>
+  <line x1="52" y1="352" x2="210" y2="352" stroke="#1b3355" stroke-width="1"/>
+  <text x="58" y="376" fill="#7ec27e" font-family="sans-serif" font-size="11.5" font-weight="bold">代价</text>
+  <text x="58" y="396" fill="#e8f4e8" font-family="sans-serif" font-size="11.5">
+    <tspan x="58" dy="0">工程量最小</tspan>
+    <tspan x="58" dy="17">不动硬装</tspan>
+  </text>
+  <text x="58" y="440" fill="#9db8d9" font-family="sans-serif" font-size="11">
+    <tspan x="58" dy="0">适合：只想先把最常用</tspan>
+    <tspan x="58" dy="15">的几个空间做起来</tspan>
+  </text>
+
+  <rect x="245" y="92" width="194" height="382" rx="10" fill="url(#cardB)" stroke="#f0c674" stroke-width="1.6"/>
+  <circle cx="273" cy="122" r="15" fill="#f0c674"/>
+  <text x="273" y="128" fill="#0a1628" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">B</text>
+  <text x="269" y="160" fill="#e8f4e8" font-family="sans-serif" font-size="14" font-weight="bold">中间路线</text>
+  <text x="269" y="180" fill="#f0c674" font-family="sans-serif" font-size="12.5">加零线 + 原位换开关</text>
+  <line x1="263" y1="194" x2="421" y2="194" stroke="#1b3355" stroke-width="1"/>
+  <text x="269" y="218" fill="#c8d8ea" font-family="sans-serif" font-size="11.5">
+    <tspan x="269" dy="0">从灯位单独引零线到</tspan>
+    <tspan x="269" dy="17">开关底盒</tspan>
+    <tspan x="269" dy="20">（不从插座借零线）</tspan>
+    <tspan x="269" dy="20">再原位替换零火</tspan>
+    <tspan x="269" dy="17">智能开关</tspan>
+  </text>
+  <line x1="263" y1="352" x2="421" y2="352" stroke="#1b3355" stroke-width="1"/>
+  <text x="269" y="376" fill="#f0c674" font-family="sans-serif" font-size="11.5" font-weight="bold">代价</text>
+  <text x="269" y="396" fill="#e8f4e8" font-family="sans-serif" font-size="11.5">
+    <tspan x="269" dy="0">请电工给全屋开关</tspan>
+    <tspan x="269" dy="15">加零线</tspan>
+  </text>
+  <text x="269" y="428" fill="#9db8d9" font-family="sans-serif" font-size="11">
+    <tspan x="269" dy="0">社区口径千元上下</tspan>
+    <tspan x="269" dy="18">适合：底盒放得下、电工</tspan>
+    <tspan x="269" dy="15">找得到灯位引线</tspan>
+  </text>
+
+  <rect x="456" y="92" width="194" height="382" rx="10" fill="url(#cardC)" stroke="#e06666" stroke-width="1.6"/>
+  <circle cx="484" cy="122" r="15" fill="#e06666"/>
+  <text x="484" y="128" fill="#0a1628" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">C</text>
+  <text x="480" y="160" fill="#e8f4e8" font-family="sans-serif" font-size="14" font-weight="bold">大改</text>
+  <text x="480" y="180" fill="#e06666" font-family="sans-serif" font-size="12.5">换生态或换网关</text>
+  <line x1="474" y1="194" x2="632" y2="194" stroke="#1b3355" stroke-width="1"/>
+  <text x="480" y="218" fill="#c8d8ea" font-family="sans-serif" font-size="11.5">
+    <tspan x="480" dy="0">原系统整体换掉</tspan>
+    <tspan x="480" dy="20">场景重建一遍</tspan>
+    <tspan x="480" dy="20">灯具与驱动一起重配</tspan>
+  </text>
+  <line x1="474" y1="300" x2="632" y2="300" stroke="#1b3355" stroke-width="1"/>
+  <text x="480" y="324" fill="#e06666" font-family="sans-serif" font-size="11.5" font-weight="bold">代价</text>
+  <text x="480" y="344" fill="#e8f4e8" font-family="sans-serif" font-size="11.5">
+    <tspan x="480" dy="0">全换米家这类通用</tspan>
+    <tspan x="480" dy="15">生态，不算电器约</tspan>
+    <tspan x="480" dy="15">两千多</tspan>
+    <tspan x="480" dy="20">原厂三合一面板整套</tspan>
+    <tspan x="480" dy="15">改造约三千五上下</tspan>
+  </text>
+  <text x="480" y="440" fill="#9db8d9" font-family="sans-serif" font-size="11">
+    <tspan x="480" dy="0">适合：原系统彻底不能</tspan>
+    <tspan x="480" dy="15">用，能接受重新投入</tspan>
+  </text>
+</svg>
