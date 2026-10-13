@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 580">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glowB" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="580" fill="url(#bgB)"/>
+  <g stroke="#1b3355" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="72" x2="680" y2="72"/><line x1="0" y1="188" x2="680" y2="188"/>
+    <line x1="0" y1="304" x2="680" y2="304"/><line x1="0" y1="420" x2="680" y2="420"/>
+    <line x1="0" y1="536" x2="680" y2="536"/>
+    <line x1="170" y1="0" x2="170" y2="580"/><line x1="340" y1="0" x2="340" y2="580"/>
+    <line x1="510" y1="0" x2="510" y2="580"/>
+  </g>
+
+  <text x="34" y="40" fill="#66d9ef" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" font-weight="700" filter="url(#glowB)">别按房间买，按"这个位置要你干什么"买</text>
+  <text x="34" y="62" fill="#7d94b5" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13">同样一只传感器，装在过道是浪费，装在卫生间可能刚好——四种买法</text>
+
+  <rect x="34" y="86" width="612" height="94" rx="9" fill="#0d1e34" stroke="#2b5a86"/>
+  <circle cx="62" cy="118" r="15" fill="#12385c" stroke="#3f8fc7"/>
+  <text x="56" y="123" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">1</text>
+  <text x="90" y="116" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15.5" font-weight="700">过道 · 玄关 · 储物间</text>
+  <text x="90" y="138" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">要的只是"看见运动"——你永远是走进来的</text>
+  <text x="90" y="164" fill="#a6e3a1" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13">买法：普通红外（PIR）人体传感器就够。这里上雷达是纯浪费。</text>
+
+  <rect x="34" y="192" width="612" height="104" rx="9" fill="#0d1e34" stroke="#2b5a86"/>
+  <circle cx="62" cy="224" r="15" fill="#12385c" stroke="#3f8fc7"/>
+  <text x="56" y="229" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">2</text>
+  <text x="90" y="222" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15.5" font-weight="700">卫生间 · 书房</text>
+  <text x="90" y="244" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">"人坐着不动灯不能灭"是刚需，也是最容易翻车的一档</text>
+  <text x="90" y="268" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">路线 A：独立人在传感器（雷达+PIR）—— 感应半径、灵敏度、超时都要自己调，别指望开箱即用</text>
+  <text x="90" y="286" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">路线 B：等家电自带（嵌入雷达的浴霸一类）—— 直接砍掉一层网关、一个安装位、一次配置</text>
+
+  <rect x="34" y="308" width="612" height="104" rx="9" fill="#0d1e34" stroke="#8a4b2b"/>
+  <circle cx="62" cy="340" r="15" fill="#3d2013" stroke="#c97a45"/>
+  <text x="56" y="345" fill="#ffc38f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">3</text>
+  <text x="90" y="338" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15.5" font-weight="700">卧室 —— 唯一要慎重的房间</text>
+  <text x="90" y="360" fill="#ffb86c" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">雷达默认跟着"有人 = 开灯"走：人在床上，灯凭什么要亮？</text>
+  <text x="90" y="384" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">大概率不需要墙上那只传感器：自带微动雷达的小夜灯，已经把"床边有动作 → 起夜照明"闭环了</text>
+  <text x="90" y="402" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">除非你要多人分区、睡眠节律这类空间级数据，否则独立雷达在这里的增量是负的</text>
+
+  <rect x="34" y="424" width="612" height="104" rx="9" fill="#0d1e34" stroke="#2b5a86"/>
+  <circle cx="62" cy="456" r="15" fill="#12385c" stroke="#3f8fc7"/>
+  <text x="56" y="461" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">4</text>
+  <text x="90" y="454" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15.5" font-weight="700">厨房 · 门锁 · 报警器</text>
+  <text x="90" y="476" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">别买"传感器"，买"自带感知的整机"</text>
+  <text x="90" y="500" fill="#a6e3a1" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">灶前留人 → 温度探针 + 雷达；门前逗留 → 雷达唤醒的猫眼</text>
+  <text x="90" y="518" fill="#ff8f8f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">⚠ 雷达测不了烟雾、燃气、CO 浓度，它只能回答"报警时人在不在"</text>
+
+  <rect x="34" y="544" width="612" height="26" rx="6" fill="#0b2036" stroke="#2b5a86"/>
+  <text x="46" y="562" fill="#8fd6c8" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">同一只传感器，装在哪儿决定它值不值这个钱。</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 470">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glowC" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="470" fill="url(#bgC)"/>
+  <g stroke="#1b3355" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="78" x2="680" y2="78"/><line x1="0" y1="196" x2="680" y2="196"/>
+    <line x1="0" y1="314" x2="680" y2="314"/><line x1="0" y1="432" x2="680" y2="432"/>
+    <line x1="170" y1="0" x2="170" y2="470"/><line x1="340" y1="0" x2="340" y2="470"/>
+    <line x1="510" y1="0" x2="510" y2="470"/>
+  </g>
+
+  <text x="34" y="40" fill="#66d9ef" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" font-weight="700" filter="url(#glowC)">买之前必须知道的三个坑</text>
+  <text x="34" y="63" fill="#7d94b5" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13">这三个跟品牌关系不大，是"把传感器塞进灯里"这件事自带的</text>
+
+  <rect x="34" y="94" width="612" height="96" rx="9" fill="#0d1e34" stroke="#8a4b2b"/>
+  <text x="54" y="126" fill="#ffb86c" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15" font-weight="700">坑 1 · "关掉感应"和"不上报"是同一件事</text>
+  <text x="54" y="150" fill="#cfe2f5" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">灯自带的人感设置往往给得很全：生效时间段、光照阈值、感应半径、超时、灵敏度三档。</text>
+  <text x="54" y="172" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">但很多款把"关掉灯自己的自动逻辑"做成"连有人没人都别提"——你想要的联动，等于没了。</text>
+
+  <rect x="34" y="200" width="612" height="96" rx="9" fill="#0d1e34" stroke="#8a4b2b"/>
+  <text x="54" y="232" fill="#ffb86c" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15" font-weight="700">坑 2 · 多一个坏点，还多一段没有配件的日子</text>
+  <text x="54" y="256" fill="#cfe2f5" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">集成灯 = 灯 + 传感器 + 无线模组，坏法比普通灯多。有用户拆开发现灯珠全是好的，就是不通电了。</text>
+  <text x="54" y="278" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">分水岭是"在不在保"。过保又下架的型号，往往没有配件通道，灯珠完好也只能整套报废。</text>
+
+  <rect x="34" y="306" width="612" height="96" rx="9" fill="#0d1e34" stroke="#a8453f"/>
+  <text x="54" y="338" fill="#ff8f8f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15" font-weight="700">坑 3 · 雷达会"看见人"，但看不见危险</text>
+  <text x="54" y="362" fill="#cfe2f5" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">雷达不能测烟雾、燃气、CO 浓度。它只能回答一件事：报警的那一刻，人在不在、在哪个区域。</text>
+  <text x="54" y="384" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">把"有人"和"有危险"混成一个判断，是智能安防里最危险的卖点话术——看到就当没写。</text>
+
+  <rect x="34" y="418" width="612" height="34" rx="7" fill="#0b2036" stroke="#2b5a86"/>
+  <text x="46" y="440" fill="#8fd6c8" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">顺便说一句证据边界：网上的差评来自不满意的少数人，不能倒推某个牌子普遍不行。</text>
+</svg>
