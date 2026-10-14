@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 600">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <linearGradient id="barA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3f8fc7"/><stop offset="1" stop-color="#66d9ef"/>
+    </linearGradient>
+    <linearGradient id="barB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c94f2b"/><stop offset="1" stop-color="#ff8f8f"/>
+    </linearGradient>
+    <filter id="glowA" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="600" fill="url(#bgA)"/>
+  <g stroke="#1b3355" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="76" x2="680" y2="76"/><line x1="0" y1="196" x2="680" y2="196"/>
+    <line x1="0" y1="316" x2="680" y2="316"/><line x1="0" y1="436" x2="680" y2="436"/>
+    <line x1="170" y1="0" x2="170" y2="600"/><line x1="340" y1="0" x2="340" y2="600"/>
+    <line x1="510" y1="0" x2="510" y2="600"/>
+  </g>
+
+  <text x="34" y="40" fill="#66d9ef" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" font-weight="700" filter="url(#glowA)">灯"关不掉"有三种，别都当成开关坏了</text>
+  <text x="34" y="62" fill="#7d94b5" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13">前两种是逻辑和取电问题，第三种是物理焊死——不可逆</text>
+
+  <rect x="34" y="90" width="612" height="82" rx="9" fill="#0d1e34" stroke="#2b5a86"/>
+  <circle cx="62" cy="120" r="15" fill="#12385c" stroke="#3f8fc7"/>
+  <text x="56" y="125" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">1</text>
+  <text x="90" y="118" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15.5" font-weight="700">智能灯常电保持 · 网关逻辑</text>
+  <text x="90" y="140" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">APP 点"关"只是让灯离线或进待机，墙上并没有断电，过会儿又变</text>
+  <text x="90" y="162" fill="#a6e3a1" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">可恢复：改联动规则、把开关短接常通</text>
+
+  <rect x="34" y="182" width="612" height="82" rx="9" fill="#0d1e34" stroke="#2b5a86"/>
+  <circle cx="62" cy="212" r="15" fill="#12385c" stroke="#3f8fc7"/>
+  <text x="56" y="217" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">2</text>
+  <text x="90" y="210" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15.5" font-weight="700">单火取电的"鬼火"</text>
+  <text x="90" y="232" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">开关靠灯取电，漏电流让灯微微发亮——是"微亮"，不是全亮</text>
+  <text x="90" y="254" fill="#a6e3a1" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">可调：加消影电路，或补一根零线走零火版</text>
+
+  <rect x="34" y="274" width="612" height="96" rx="9" fill="#0d1e34" stroke="#8a4b2b"/>
+  <circle cx="62" cy="306" r="15" fill="#3d2013" stroke="#c97a45"/>
+  <text x="56" y="311" fill="#ffc38f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">3</text>
+  <text x="90" y="304" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15.5" font-weight="700">继电器触点粘连（本篇）</text>
+  <text x="90" y="326" fill="#ffb86c" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">线圈动作、咔哒声正常，灯却全亮不灭——真正的物理焊死</text>
+  <text x="90" y="348" fill="#ff8f8f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">⚠ 不可逆：重启 APP、重新配网折腾一晚上也没用，触点早就熔在一起了</text>
+
+  <rect x="34" y="386" width="612" height="188" rx="9" fill="#0b1c30" stroke="#2b5a86"/>
+  <text x="52" y="412" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">同一颗 10A 触点上的两种电流（实测 10 盏 20W LED）</text>
+
+  <text x="52" y="448" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">正常稳态电流</text>
+  <rect x="176" y="434" width="40" height="18" rx="4" fill="url(#barA)"/>
+  <text x="228" y="448" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" font-weight="700">0.9 A</text>
+
+  <text x="52" y="492" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">合闸瞬间冷启动峰值</text>
+  <rect x="176" y="478" width="392" height="18" rx="4" fill="url(#barB)"/>
+  <text x="578" y="492" fill="#ff8f8f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" font-weight="700">31 A</text>
+
+  <text x="52" y="528" fill="#7d94b5" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12">峰值约在 1.5ms 后衰减，但触点额定只有 10A——超了 3 倍</text>
+  <text x="52" y="552" fill="#8fd6c8" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">单只 10W 的 LED 灯，合闸那一毫秒，等效于 1000W 的负载压在触点上。</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 620">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glowC" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="620" fill="url(#bgC)"/>
+  <g stroke="#1b3355" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="76" x2="680" y2="76"/><line x1="0" y1="196" x2="680" y2="196"/>
+    <line x1="0" y1="316" x2="680" y2="316"/><line x1="0" y1="436" x2="680" y2="436"/>
+    <line x1="0" y1="556" x2="680" y2="556"/>
+    <line x1="170" y1="0" x2="170" y2="620"/><line x1="340" y1="0" x2="340" y2="620"/>
+    <line x1="510" y1="0" x2="510" y2="620"/>
+  </g>
+
+  <text x="34" y="40" fill="#ffb86c" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" font-weight="700" filter="url(#glowC)">焊死只发生在几百微秒里：三步</text>
+  <text x="34" y="62" fill="#7d94b5" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13">灯功率越小、回路合并得越多，这三步越容易走完</text>
+
+  <rect x="34" y="90" width="612" height="96" rx="9" fill="#0d1e34" stroke="#2b5a86"/>
+  <circle cx="62" cy="122" r="15" fill="#12385c" stroke="#3f8fc7"/>
+  <text x="56" y="127" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">1</text>
+  <text x="90" y="120" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15.5" font-weight="700">电容近似短路，浪涌电流冲进来</text>
+  <text x="90" y="142" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">LED 驱动里有整流桥 + 大滤波电容，未充电时对电压几乎是短路</text>
+  <text x="90" y="164" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">冷启动电流可达稳态的 20~100 倍，持续几百微秒到几毫秒</text>
+
+  <rect x="34" y="196" width="612" height="96" rx="9" fill="#0d1e34" stroke="#2b5a86"/>
+  <circle cx="62" cy="228" r="15" fill="#12385c" stroke="#3f8fc7"/>
+  <text x="56" y="233" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">2</text>
+  <text x="90" y="226" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15.5" font-weight="700">衔铁吸合，触点弹跳出微小间隙</text>
+  <text x="90" y="248" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">金属有弹性，啪一下合上的瞬间会来回跳几下，形成毫秒级的微小空隙</text>
+  <text x="90" y="270" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">偏偏这个空隙出现的时刻，正是电流最大的那几毫秒</text>
+
+  <rect x="34" y="302" width="612" height="110" rx="9" fill="#0d1e34" stroke="#8a4b2b"/>
+  <circle cx="62" cy="334" r="15" fill="#3d2013" stroke="#c97a45"/>
+  <text x="56" y="339" fill="#ffc38f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">3</text>
+  <text x="90" y="332" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15.5" font-weight="700">电弧起、金属熔、触点焊成一体</text>
+  <text x="90" y="354" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">电压击穿间隙拉出电弧，局部上千度，银合金镀层当场熔化</text>
+  <text x="90" y="376" fill="#ffb86c" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">弹跳停下，两面熔融金属黏成一块，靠那颗小小的回位弹簧，拉不开</text>
+  <text x="90" y="398" fill="#ff8f8f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">⚠ 之后无论发多少次"关"，线圈动作正常，灯就是断不了</text>
+
+  <rect x="34" y="432" width="612" height="140" rx="9" fill="#0b1c30" stroke="#2b5a86"/>
+  <text x="52" y="458" fill="#e8f1fb" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" font-weight="700">为什么老式墙壁开关很少这样</text>
+
+  <text x="52" y="488" fill="#a6e3a1" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" font-weight="700">传统墙壁开关</text>
+  <text x="52" y="510" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">触点大、铜件厚、弹片硬——小小的微焊点，一甩就开</text>
+
+  <text x="52" y="540" fill="#ffb86c" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" font-weight="700">智能开关</text>
+  <text x="52" y="562" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">要往同一个 86 盒里塞天线、芯片、电源，只能用微型脉冲继电器：触点面积小、弹簧弱</text>
+</svg>

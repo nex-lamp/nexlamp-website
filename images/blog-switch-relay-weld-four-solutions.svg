@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 660">
+  <defs>
+    <linearGradient id="bgD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glowD" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="680" height="660" fill="url(#bgD)"/>
+  <g stroke="#1b3355" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="76" x2="680" y2="76"/><line x1="0" y1="206" x2="680" y2="206"/>
+    <line x1="0" y1="336" x2="680" y2="336"/><line x1="0" y1="466" x2="680" y2="466"/>
+    <line x1="0" y1="596" x2="680" y2="596"/>
+    <line x1="170" y1="0" x2="170" y2="660"/><line x1="340" y1="0" x2="340" y2="660"/>
+    <line x1="510" y1="0" x2="510" y2="660"/>
+  </g>
+
+  <text x="34" y="40" fill="#66d9ef" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="21" font-weight="700" filter="url(#glowD)">选开关，先看它怎么"关断"</text>
+  <text x="34" y="62" fill="#7d94b5" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13">四类方案对号入座：便宜的不一定能带 LED，贵的不一定能解决问题</text>
+
+  <rect x="34" y="88" width="612" height="108" rx="9" fill="#0d1e34" stroke="#8a4b2b"/>
+  <text x="52" y="114" fill="#ffb86c" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15" font-weight="700">① 机械继电器型智能开关</text>
+  <text x="52" y="136" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">原理：靠一颗小继电器通断</text>
+  <text x="330" y="136" fill="#ff8f8f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">抗浪涌：弱，容性负载必须大幅降额</text>
+  <text x="52" y="158" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">适合：吸顶灯、灯带、功率余量充足的回路</text>
+  <text x="52" y="180" fill="#ff8f8f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">坑：灯小、回路多、频繁开关时最容易焊死</text>
+
+  <rect x="34" y="206" width="612" height="108" rx="9" fill="#0d1e34" stroke="#2f7a5e"/>
+  <text x="52" y="232" fill="#8fd6c8" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15" font-weight="700">② 带过零检测的开关 / 切控模块</text>
+  <text x="52" y="254" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">原理：芯片盯着交流正弦波，只在电压过零瞬间闭合，压差约等于 0</text>
+  <text x="52" y="276" fill="#a6e3a1" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">抗浪涌：强——从原理上就掐掉了电弧</text>
+  <text x="52" y="298" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">坑：只在数据表上写，宣传页基本不提，要主动问客服</text>
+
+  <rect x="34" y="324" width="612" height="122" rx="9" fill="#0d1e34" stroke="#2b5a86"/>
+  <text x="52" y="350" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15" font-weight="700">③ 可控硅调光型开关 / 控制器</text>
+  <text x="52" y="372" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">原理：半导体斩波，没有机械触点</text>
+  <text x="330" y="372" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">抗浪涌：中等</text>
+  <text x="52" y="394" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">适合：需要平滑调光的卧室、客厅主灯</text>
+  <text x="52" y="416" fill="#ff8f8f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">坑：必须配可调光驱动；廉价款低亮度会灭灯或频闪</text>
+  <text x="52" y="438" fill="#ff8f8f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">多盏小功率筒灯挂一路时，容易出现关灯后微亮</text>
+
+  <rect x="34" y="456" width="612" height="122" rx="9" fill="#0d1e34" stroke="#2b5a86"/>
+  <text x="52" y="482" fill="#9ad6ff" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15" font-weight="700">④ 固态继电器 / 灯通断模块</text>
+  <text x="52" y="504" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">原理：全固态，无触点、无机械磨损</text>
+  <text x="330" y="504" fill="#a6e3a1" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">抗浪涌：强</text>
+  <text x="52" y="526" fill="#8fb3d9" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">适合：频繁通断、自动化密集的回路</text>
+  <text x="52" y="548" fill="#ff8f8f" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">坑：存在微小漏电流，普通非智能 LED 灯可能关灯后微亮</text>
+
+  <rect x="34" y="598" width="612" height="46" rx="8" fill="#0b2036" stroke="#2b5a86"/>
+  <text x="52" y="618" fill="#ffd479" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">别只看"额定 400W / 10A"——那是白炽灯（阻性负载）的口径。</text>
+  <text x="52" y="636" fill="#8fd6c8" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="12.5">你的 LED 是容性负载，选型要按稳态电流的 5~10 倍留余量。</text>
+</svg>
