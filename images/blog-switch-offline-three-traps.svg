@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 640">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="g3" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid3" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1b3355" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="680" height="640" fill="url(#bg3)"/>
+  <rect width="680" height="640" fill="url(#grid3)" opacity="0.55"/>
+
+  <text x="34" y="46" fill="#7ec27e" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15" letter-spacing="2">三个坑 + 买灯三问</text>
+  <line x1="34" y1="58" x2="646" y2="58" stroke="#1b3355" stroke-width="1"/>
+
+  <!-- 坑 -->
+  <rect x="34" y="76" width="612" height="72" rx="10" fill="#101f38" stroke="#26456e" stroke-width="1"/>
+  <rect x="34" y="76" width="7" height="72" rx="3" fill="#c05a5a"/>
+  <text x="54" y="104" fill="#e09b9b" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">① 弹簧规格各家不通用</text>
+  <text x="54" y="130" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">网帖说"塞一根回位弹簧就改凌动"——先量自家面板，别照抄别人的尺寸</text>
+
+  <rect x="34" y="158" width="612" height="72" rx="10" fill="#101f38" stroke="#26456e" stroke-width="1"/>
+  <rect x="34" y="158" width="7" height="72" rx="3" fill="#c05a5a"/>
+  <text x="54" y="186" fill="#e09b9b" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">② 三开以上别自己碰</text>
+  <text x="54" y="212" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">有人的三开改完"开了又马上关"，二开单开却正常 → 线路要改双控换相位</text>
+
+  <rect x="34" y="240" width="612" height="72" rx="10" fill="#101f38" stroke="#26456e" stroke-width="1"/>
+  <rect x="34" y="240" width="7" height="72" rx="3" fill="#c05a5a"/>
+  <text x="54" y="268" fill="#e09b9b" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">③ 拆面板是带电操作</text>
+  <text x="54" y="294" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">实操帖原话："跷跷板拆开里面就是强电"——先拉闸，没把握就请电工</text>
+
+  <line x1="34" y1="334" x2="646" y2="334" stroke="#26456e" stroke-width="1"/>
+  <text x="34" y="362" fill="#8ad8ee" font-family="Microsoft YaHei, sans-serif" font-size="15" letter-spacing="1">买之前问清三句话</text>
+
+  <rect x="34" y="380" width="196" height="116" rx="10" fill="#12253f" stroke="#2f5a6e" stroke-width="1.2"/>
+  <text x="52" y="412" fill="#8ad8ee" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">01</text>
+  <text x="52" y="440" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">支持凌动、</text>
+  <text x="52" y="462" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">支持断电记忆吗？</text>
+  <text x="52" y="484" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11.5">问客服最快</text>
+
+  <rect x="242" y="380" width="196" height="116" rx="10" fill="#12253f" stroke="#2f5a6e" stroke-width="1.2"/>
+  <text x="260" y="412" fill="#8ad8ee" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">02</text>
+  <text x="260" y="440" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">驱动支持</text>
+  <text x="260" y="462" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">长期带电待命吗？</text>
+  <text x="260" y="484" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11.5">决定三年后还在不在线</text>
+
+  <rect x="450" y="380" width="196" height="116" rx="10" fill="#12253f" stroke="#2f5a6e" stroke-width="1.2"/>
+  <text x="468" y="412" fill="#8ad8ee" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">03</text>
+  <text x="468" y="440" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">底盒里有</text>
+  <text x="468" y="462" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">零线吗？</text>
+  <text x="468" y="484" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11.5">没零线只能走单火</text>
+
+  <rect x="34" y="520" width="612" height="92" rx="12" fill="rgba(126,194,126,0.10)" stroke="#3f7a52" stroke-width="1.2"/>
+  <text x="54" y="550" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">已经装完了？按成本从低到高试</text>
+  <text x="54" y="576" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">翻 APP 上电状态（0 元）→ 换凌动开关 → 盖板罩住 + 旁边贴无线开关</text>
+  <text x="54" y="600" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11.5">根不在灯，也不在 APP，在那个"顺手按一下"的习惯</text>
+</svg>

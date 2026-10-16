@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="g1" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid1" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1b3355" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="680" height="560" fill="url(#bg1)"/>
+  <rect width="680" height="560" fill="url(#grid1)" opacity="0.55"/>
+
+  <text x="34" y="46" fill="#7ec27e" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="15" letter-spacing="2">智能灯里其实住着两个部分</text>
+  <line x1="34" y1="58" x2="646" y2="58" stroke="#1b3355" stroke-width="1"/>
+
+  <!-- 左侧：灯体两个部分 -->
+  <rect x="34" y="82" width="290" height="150" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="52" y="110" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700">① 发光部分</text>
+  <text x="52" y="136" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">光源 + 驱动电源</text>
+  <text x="52" y="160" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">断电即灭，跟传统灯一样</text>
+  <circle cx="60" cy="196" r="6" fill="#7ec27e" filter="url(#g1)"/>
+  <text x="76" y="201" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13">可以随时断电</text>
+
+  <rect x="356" y="82" width="290" height="150" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="374" y="110" fill="#8ad8ee" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700">② 智能部分</text>
+  <text x="374" y="136" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">无线模块 + 调光芯片</text>
+  <text x="374" y="160" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">必须一直带电待命</text>
+  <circle cx="382" cy="196" r="6" fill="#5cc8e8" filter="url(#g1)"/>
+  <text x="398" y="201" fill="#8ad8ee" font-family="Microsoft YaHei, sans-serif" font-size="13">拔了电就"离线"</text>
+
+  <!-- 中间：墙开关一按 -->
+  <line x1="34" y1="258" x2="646" y2="258" stroke="#1b3355" stroke-width="1"/>
+  <text x="34" y="288" fill="#e09bc4" font-family="Microsoft YaHei, sans-serif" font-size="15" letter-spacing="1">墙开关一按，断的是整条线的电</text>
+
+  <!-- 断电前 -->
+  <rect x="34" y="308" width="290" height="118" rx="12" fill="#12253f" stroke="#2f5a3c" stroke-width="1.4"/>
+  <text x="52" y="336" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">断电前 · 在线</text>
+  <text x="52" y="362" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">APP 可控 · 三成亮度暖光</text>
+  <text x="52" y="384" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">语音 / 定时 / 日落自动开灯</text>
+  <text x="52" y="410" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">全部待命中</text>
+
+  <path d="M328 367 L348 367 M342 361 L348 367 L342 373" stroke="#e09bc4" stroke-width="2" fill="none"/>
+
+  <!-- 断电后 -->
+  <rect x="356" y="308" width="290" height="118" rx="12" fill="#20162a" stroke="#7a4a63" stroke-width="1.4"/>
+  <text x="374" y="336" fill="#e09bc4" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">断电后 · 离线</text>
+  <text x="374" y="362" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">APP 显示离线 · 够不着</text>
+  <text x="374" y="384" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">再通电默认"上电即全亮"</text>
+  <text x="374" y="410" fill="#c9a3b4" font-family="Microsoft YaHei, sans-serif" font-size="12">三成暖光 → 满功率正白光</text>
+
+  <!-- 底部结论 -->
+  <rect x="34" y="452" width="612" height="76" rx="12" fill="rgba(126,194,126,0.10)" stroke="#3f7a52" stroke-width="1.2"/>
+  <text x="54" y="482" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700">两边的"关灯"根本不是一回事</text>
+  <text x="54" y="508" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">智能灯的关灯＝亮度调到 0，设备还在线；墙开关的关灯＝物理断电，设备直接没了</text>
+</svg>
