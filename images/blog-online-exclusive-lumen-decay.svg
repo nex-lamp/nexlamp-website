@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 570">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <linearGradient id="badfill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e08a5a" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#e08a5a" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow2" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid2" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1b3355" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="680" height="570" fill="url(#bg2)"/>
+  <rect width="680" height="570" fill="url(#grid2)" opacity="0.55"/>
+
+  <text x="34" y="46" fill="#7ec27e" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" letter-spacing="2">光衰不是"用坏了"，是被温度催出来的</text>
+  <text x="34" y="70" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">同样的灯珠，散热余量不同，两年后是两个样子</text>
+  <line x1="34" y1="84" x2="646" y2="84" stroke="#1b3355" stroke-width="1"/>
+
+  <!-- 图表区 -->
+  <rect x="34" y="104" width="392" height="300" rx="10" fill="#0d1b30" stroke="#1f3a5c" stroke-width="1"/>
+
+  <!-- 网格与Y轴刻度 -->
+  <line x1="80" y1="130" x2="404" y2="130" stroke="#17304f" stroke-width="1"/>
+  <line x1="80" y1="200" x2="404" y2="200" stroke="#17304f" stroke-width="1"/>
+  <line x1="80" y1="270" x2="404" y2="270" stroke="#17304f" stroke-width="1"/>
+  <line x1="80" y1="340" x2="404" y2="340" stroke="#17304f" stroke-width="1"/>
+  <text x="46" y="134" fill="#7f9ab8" font-family="Consolas, monospace" font-size="11">100%</text>
+  <text x="52" y="204" fill="#7f9ab8" font-family="Consolas, monospace" font-size="11">90%</text>
+  <text x="52" y="274" fill="#7f9ab8" font-family="Consolas, monospace" font-size="11">80%</text>
+  <text x="52" y="344" fill="#7f9ab8" font-family="Consolas, monospace" font-size="11">70%</text>
+
+  <line x1="80" y1="130" x2="80" y2="352" stroke="#2a4a70" stroke-width="1.2"/>
+  <line x1="80" y1="352" x2="404" y2="352" stroke="#2a4a70" stroke-width="1.2"/>
+
+  <text x="72" y="372" fill="#7f9ab8" font-family="Consolas, monospace" font-size="11">0h</text>
+  <text x="196" y="372" fill="#7f9ab8" font-family="Consolas, monospace" font-size="11">5000h</text>
+  <text x="360" y="372" fill="#7f9ab8" font-family="Consolas, monospace" font-size="11">10000h</text>
+  <text x="212" y="392" fill="#6f8aa8" font-family="Microsoft YaHei, sans-serif" font-size="11">累计点亮时间</text>
+
+  <!-- 差散热曲线 -->
+  <path d="M80 130 C170 190 250 268 404 330 L404 352 L80 352 Z" fill="url(#badfill)"/>
+  <path d="M80 130 C170 190 250 268 404 330" fill="none" stroke="#e08a5a" stroke-width="2.6" filter="url(#glow2)"/>
+  <circle cx="404" cy="330" r="4.5" fill="#e08a5a" filter="url(#glow2)"/>
+  <text x="300" y="300" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12">散热余量不足</text>
+
+  <!-- 好散热曲线 -->
+  <path d="M80 130 C180 148 280 166 404 178" fill="none" stroke="#7ec27e" stroke-width="2.6" filter="url(#glow2)"/>
+  <circle cx="404" cy="178" r="4.5" fill="#7ec27e" filter="url(#glow2)"/>
+  <text x="286" y="164" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="12">散热留够余量</text>
+
+  <!-- 右侧说明 -->
+  <rect x="444" y="104" width="202" height="140" rx="10" fill="#101f38" stroke="#2f5a3c" stroke-width="1.4"/>
+  <text x="462" y="132" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">一条估算口径</text>
+  <text x="462" y="158" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">结温每升高约 10°C</text>
+  <text x="462" y="180" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">光衰速度约加快 15%</text>
+  <text x="462" y="206" fill="#7f9ab8" font-family="Microsoft YaHei, sans-serif" font-size="11">业内常用估算，非国标硬指标</text>
+  <text x="462" y="228" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11">方向比数字更重要</text>
+
+  <rect x="444" y="264" width="202" height="140" rx="10" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="462" y="292" fill="#8ad8ee" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">什么时候最容易出事</text>
+  <text x="462" y="318" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">夏天 · 封闭吊顶</text>
+  <text x="462" y="340" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">连开四五小时</text>
+  <text x="462" y="362" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">灯体贴着保温棉</text>
+  <text x="462" y="388" fill="#7f9ab8" font-family="Microsoft YaHei, sans-serif" font-size="11">刚装上看不出，等你觉得暗了</text>
+
+  <line x1="34" y1="428" x2="646" y2="428" stroke="#1b3355" stroke-width="1"/>
+
+  <!-- 底部三行 -->
+  <circle cx="42" cy="458" r="5" fill="#7ec27e" filter="url(#glow2)"/>
+  <text x="58" y="463" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">刚装上、灯还不多的时候，两只灯看不出差别</text>
+
+  <circle cx="42" cy="490" r="5" fill="#e08a5a" filter="url(#glow2)"/>
+  <text x="58" y="495" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">客厅最先发灰，因为开得最久、瓦数最大</text>
+
+  <circle cx="42" cy="522" r="5" fill="#e09bc4" filter="url(#glow2)"/>
+  <text x="58" y="527" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">光衰回不去，只能整批换——这才是便宜的代价</text>
+</svg>

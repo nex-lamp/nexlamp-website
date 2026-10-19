@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 660">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow3" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid3" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1b3355" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="680" height="660" fill="url(#bg3)"/>
+  <rect width="680" height="660" fill="url(#grid3)" opacity="0.55"/>
+
+  <text x="34" y="46" fill="#7ec27e" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" letter-spacing="2">收货五分钟，七步自查</text>
+  <text x="34" y="70" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">不用仪器，开箱当天就能做</text>
+  <line x1="34" y1="84" x2="646" y2="84" stroke="#1b3355" stroke-width="1"/>
+
+  <!-- 1 -->
+  <rect x="34" y="100" width="612" height="62" rx="10" fill="#101f38" stroke="#26456e" stroke-width="1.1"/>
+  <circle cx="66" cy="131" r="15" fill="#16304f" stroke="#7ec27e" stroke-width="1.4"/>
+  <text x="60" y="136" fill="#9ee6ac" font-family="Consolas, monospace" font-size="13">01</text>
+  <text x="96" y="126" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">掂重量，摸壁厚</text>
+  <text x="96" y="148" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">同尺寸明显轻的，多半壳薄、散热筋少</text>
+  <text x="590" y="136" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12" text-anchor="end">看手感</text>
+
+  <!-- 2 -->
+  <rect x="34" y="170" width="612" height="62" rx="10" fill="#101f38" stroke="#2f5a3c" stroke-width="1.4"/>
+  <circle cx="66" cy="201" r="15" fill="#16304f" stroke="#7ec27e" stroke-width="1.4"/>
+  <text x="60" y="206" fill="#9ee6ac" font-family="Consolas, monospace" font-size="13">02</text>
+  <text x="96" y="196" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">看驱动铭牌</text>
+  <text x="96" y="218" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">型号、输入输出参数、认证编号逐项对，字迹模糊就问</text>
+  <text x="590" y="206" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12" text-anchor="end">看铭牌</text>
+
+  <!-- 3 -->
+  <rect x="34" y="240" width="612" height="62" rx="10" fill="#101f38" stroke="#26456e" stroke-width="1.1"/>
+  <circle cx="66" cy="271" r="15" fill="#16304f" stroke="#7ec27e" stroke-width="1.4"/>
+  <text x="60" y="276" fill="#9ee6ac" font-family="Consolas, monospace" font-size="13">03</text>
+  <text x="96" y="266" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">手机拍灯</text>
+  <text x="96" y="288" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">相机对着亮着的灯，看有没有横向滚动条纹</text>
+  <text x="590" y="276" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12" text-anchor="end">看频闪</text>
+
+  <!-- 4 -->
+  <rect x="34" y="310" width="612" height="62" rx="10" fill="#101f38" stroke="#2f5a3c" stroke-width="1.4"/>
+  <circle cx="66" cy="341" r="15" fill="#16304f" stroke="#7ec27e" stroke-width="1.4"/>
+  <text x="60" y="346" fill="#9ee6ac" font-family="Consolas, monospace" font-size="13">04</text>
+  <text x="96" y="336" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">开灯 30 分钟摸外壳</text>
+  <text x="96" y="358" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">手能一直放住算正常，只能碰一下就烫，余量不够</text>
+  <text x="590" y="346" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12" text-anchor="end">看温度</text>
+
+  <!-- 5 -->
+  <rect x="34" y="380" width="612" height="62" rx="10" fill="#101f38" stroke="#26456e" stroke-width="1.1"/>
+  <circle cx="66" cy="411" r="15" fill="#16304f" stroke="#7ec27e" stroke-width="1.4"/>
+  <text x="60" y="416" fill="#9ee6ac" font-family="Consolas, monospace" font-size="13">05</text>
+  <text x="96" y="406" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">贴耳听驱动</text>
+  <text x="96" y="428" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">安静房间靠近灯具，听有没有"吱"的啸叫</text>
+  <text x="590" y="416" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12" text-anchor="end">听声音</text>
+
+  <!-- 6 -->
+  <rect x="34" y="450" width="612" height="62" rx="10" fill="#101f38" stroke="#26456e" stroke-width="1.1"/>
+  <circle cx="66" cy="481" r="15" fill="#16304f" stroke="#7ec27e" stroke-width="1.4"/>
+  <text x="60" y="486" fill="#9ee6ac" font-family="Consolas, monospace" font-size="13">06</text>
+  <text x="96" y="476" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">核对型号与证书</text>
+  <text x="96" y="498" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">包装后缀对详情页，3C 证书编号能否在官方渠道查到</text>
+  <text x="590" y="486" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12" text-anchor="end">对编号</text>
+
+  <!-- 7 -->
+  <rect x="34" y="520" width="612" height="62" rx="10" fill="#101f38" stroke="#2f5a3c" stroke-width="1.4"/>
+  <circle cx="66" cy="551" r="15" fill="#16304f" stroke="#7ec27e" stroke-width="1.4"/>
+  <text x="60" y="556" fill="#9ee6ac" font-family="Consolas, monospace" font-size="13">07</text>
+  <text x="96" y="546" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700">同批并排开</text>
+  <text x="96" y="568" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">退后两步看色温，有没有偏绿偏粉、明暗不一</text>
+  <text x="590" y="556" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12" text-anchor="end">看色差</text>
+
+  <line x1="34" y1="600" x2="646" y2="600" stroke="#1b3355" stroke-width="1"/>
+  <circle cx="42" cy="626" r="5" fill="#7ec27e" filter="url(#glow3)"/>
+  <text x="58" y="631" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13">前六步当天能做完，第七步等天黑——白天看不准色温</text>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1b3355" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="680" height="640" fill="url(#bg)"/>
+  <rect width="680" height="640" fill="url(#grid)" opacity="0.55"/>
+
+  <text x="34" y="46" fill="#7ec27e" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" letter-spacing="2">同款外观，低价专供款通常省其中两三块</text>
+  <text x="34" y="70" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">同样的壳，里面的账可以完全不同</text>
+  <line x1="34" y1="84" x2="646" y2="84" stroke="#1b3355" stroke-width="1"/>
+
+  <!-- 1 光源 -->
+  <rect x="34" y="104" width="290" height="140" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="52" y="132" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700">01 光源</text>
+  <text x="52" y="158" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">灯珠分档降一级</text>
+  <line x1="52" y1="172" x2="306" y2="172" stroke="#1f3a5c" stroke-width="1"/>
+  <text x="52" y="196" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12">同瓦数偏暗 · 同批有色差</text>
+  <text x="52" y="222" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">验：多只并排开，退后两步看色温</text>
+
+  <!-- 2 驱动 -->
+  <rect x="356" y="104" width="290" height="140" rx="12" fill="#101f38" stroke="#2f5a3c" stroke-width="1.4"/>
+  <text x="374" y="132" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700">02 驱动电源</text>
+  <text x="374" y="158" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">电容换小牌、耐温降档</text>
+  <text x="374" y="178" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">去掉 PFC 与保护电路</text>
+  <line x1="374" y1="192" x2="628" y2="192" stroke="#1f3a5c" stroke-width="1"/>
+  <text x="374" y="214" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12">频闪深 · 寿命短 · 雷雨天易坏</text>
+  <text x="374" y="238" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">验：看铭牌认证号，手机拍灯看条纹</text>
+
+  <!-- 3 散热 -->
+  <rect x="34" y="260" width="290" height="140" rx="12" fill="#101f38" stroke="#2f5a3c" stroke-width="1.4"/>
+  <text x="52" y="288" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700">03 外壳散热</text>
+  <text x="52" y="314" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">冲压铁壳替铝挤、压铸</text>
+  <text x="52" y="334" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">壁薄、散热筋少两道</text>
+  <line x1="52" y1="348" x2="306" y2="348" stroke="#1f3a5c" stroke-width="1"/>
+  <text x="52" y="372" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12">结温高 · 光衰快 · 很快发灰</text>
+  <text x="52" y="396" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">验：掂重量，摸壁厚，数散热筋</text>
+
+  <!-- 4 光学 -->
+  <rect x="356" y="260" width="290" height="140" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="374" y="288" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700">04 光学</text>
+  <text x="374" y="314" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">透镜、反光杯换薄料</text>
+  <text x="374" y="334" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">亚克力面罩减薄</text>
+  <line x1="374" y1="348" x2="628" y2="348" stroke="#1f3a5c" stroke-width="1"/>
+  <text x="374" y="372" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12">出光发花 · 面罩一捏就变形</text>
+  <text x="374" y="396" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">验：轻压面罩，看光斑边缘干不干净</text>
+
+  <!-- 5 结构 -->
+  <rect x="34" y="416" width="290" height="140" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="52" y="444" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700">05 结构件</text>
+  <text x="52" y="470" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">弹片变薄、端子变小</text>
+  <text x="52" y="490" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">线径变细</text>
+  <line x1="52" y1="504" x2="306" y2="504" stroke="#1f3a5c" stroke-width="1"/>
+  <text x="52" y="528" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12">卡不紧 · 久了接触不良发热</text>
+  <text x="52" y="552" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">验：看端子做工，轻轻拉一下线</text>
+
+  <!-- 6 认证质保 -->
+  <rect x="356" y="416" width="290" height="140" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="374" y="444" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700">06 认证与质保</text>
+  <text x="374" y="470" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">认证挂代工厂名下</text>
+  <text x="374" y="490" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="13">质保由平台兜</text>
+  <line x1="374" y1="504" x2="628" y2="504" stroke="#1f3a5c" stroke-width="1"/>
+  <text x="374" y="528" fill="#e8b26a" font-family="Microsoft YaHei, sans-serif" font-size="12">出问题只能寄回，流程长</text>
+  <text x="374" y="552" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">验：问谁履约，证书编号能否查</text>
+
+  <line x1="34" y1="584" x2="646" y2="584" stroke="#1b3355" stroke-width="1"/>
+  <circle cx="42" cy="608" r="5" fill="#7ec27e" filter="url(#glow)"/>
+  <text x="58" y="613" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13">省在面罩上你摸得到，省在驱动上两年后才知道</text>
+</svg>
