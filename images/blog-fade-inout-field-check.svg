@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 620">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1b3355" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="680" height="620" fill="url(#bg)"/>
+  <rect width="680" height="620" fill="url(#grid)" opacity="0.55"/>
+
+  <text x="34" y="46" fill="#7ec27e" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="16" letter-spacing="2">装灯现场四分钟，能验出这条曲线真不真</text>
+  <text x="34" y="70" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">不用仪器，一部手机加一双耳朵就够</text>
+  <line x1="34" y1="84" x2="646" y2="84" stroke="#1b3355" stroke-width="1"/>
+
+  <!-- 01 -->
+  <rect x="34" y="104" width="298" height="128" rx="12" fill="#101f38" stroke="#2f5a3c" stroke-width="1.3"/>
+  <text x="52" y="134" fill="#7ec27e" font-family="Consolas, monospace" font-size="13" font-weight="700">01</text>
+  <text x="76" y="134" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700">慢动作拍一次开、一次关</text>
+  <text x="52" y="162" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">手机开 240fps，对准灯面</text>
+  <text x="52" y="186" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">回放看是斜坡，还是台阶</text>
+  <text x="52" y="212" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11.5">斜坡＝在跑曲线　台阶＝直接切</text>
+
+  <!-- 02 -->
+  <rect x="348" y="104" width="298" height="128" rx="12" fill="#101f38" stroke="#2f5a3c" stroke-width="1.3"/>
+  <text x="366" y="134" fill="#7ec27e" font-family="Consolas, monospace" font-size="13" font-weight="700">02</text>
+  <text x="390" y="134" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700">调到最低别动，看它还亮不亮</text>
+  <text x="366" y="162" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">把亮度拉到 1%，停三秒</text>
+  <text x="366" y="186" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">是微弱亮着，还是直接灭</text>
+  <text x="366" y="212" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11.5">灭了＝位深不够或已 dropout</text>
+
+  <!-- 03 -->
+  <rect x="34" y="246" width="298" height="128" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="52" y="276" fill="#7ec27e" font-family="Consolas, monospace" font-size="13" font-weight="700">03</text>
+  <text x="76" y="276" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700">断电，再上电</text>
+  <text x="52" y="304" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">拉一次总闸，或者拔插头</text>
+  <text x="52" y="328" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">看通电瞬间，有没有先闪一下最亮</text>
+  <text x="52" y="354" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11.5">闪最亮＝上电状态没清干净</text>
+
+  <!-- 04 -->
+  <rect x="348" y="246" width="298" height="128" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="366" y="276" fill="#7ec27e" font-family="Consolas, monospace" font-size="13" font-weight="700">04</text>
+  <text x="390" y="276" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700">贴在灯边听</text>
+  <text x="366" y="304" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">夜里安静时，调到低亮度</text>
+  <text x="366" y="328" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">有没有细小的吱声</text>
+  <text x="366" y="354" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11.5">有＝跳周期落进了可听频段</text>
+
+  <!-- 买前四问 -->
+  <rect x="34" y="398" width="612" height="150" rx="12" fill="#0c1a2e" stroke="#26456e" stroke-width="1.3"/>
+  <text x="52" y="426" fill="#7ec27e" font-family="Consolas, monospace" font-size="12.5">下单前，把这四句原话发给客服</text>
+  <line x1="52" y1="438" x2="628" y2="438" stroke="#1f3a5c" stroke-width="1"/>
+  <text x="52" y="462" fill="#c8d8ea" font-family="Consolas, Consolas, monospace" font-size="12">1. 最低亮度能到百分之几？那个亮度下会不会直接灭</text>
+  <text x="52" y="484" fill="#c8d8ea" font-family="Consolas, Consolas, monospace" font-size="12">2. 渐变曲线做在驱动里，还是 APP 里</text>
+  <text x="52" y="506" fill="#c8d8ea" font-family="Consolas, Consolas, monospace" font-size="12">3. 上电默认状态是什么？会不会先跳到最亮</text>
+  <text x="52" y="528" fill="#c8d8ea" font-family="Consolas, Consolas, monospace" font-size="12">4. 配墙开关能缓灭吗？还是必须常通电加凌动</text>
+
+  <!-- 红线 -->
+  <rect x="34" y="562" width="612" height="42" rx="8" fill="#2a1a1a" stroke="#7a3a2c" stroke-width="1.2"/>
+  <text x="52" y="588" fill="#e07a5f" font-family="Microsoft YaHei, sans-serif" font-size="12">四句都答不上来，基本没在固件里做过这条曲线。慢动作一验就露。</text>
+</svg>
