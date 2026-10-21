@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 640">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="g3" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid3" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1b3355" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="880" height="640" fill="url(#bg3)"/>
+  <rect width="880" height="640" fill="url(#grid3)" opacity="0.55"/>
+
+  <text x="36" y="48" fill="#7ec27e" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="17" letter-spacing="2">装之前照着念这五句，价就锁住了</text>
+  <text x="36" y="74" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12.5">不是砍价，是把加项提前摆到桌面上</text>
+  <line x1="36" y1="90" x2="844" y2="90" stroke="#1b3355" stroke-width="1"/>
+
+  <!-- 终端窗 -->
+  <rect x="36" y="110" width="808" height="272" rx="12" fill="#08111f" stroke="#26456e" stroke-width="1.2"/>
+  <rect x="36" y="110" width="808" height="30" rx="12" fill="#101f38"/>
+  <rect x="36" y="134" width="808" height="6" fill="#101f38"/>
+  <circle cx="58" cy="125" r="4.5" fill="#e8908a"/>
+  <circle cx="76" cy="125" r="4.5" fill="#e8b26a"/>
+  <circle cx="94" cy="125" r="4.5" fill="#7ec27e"/>
+  <text x="112" y="129" fill="#4d6b90" font-family="Consolas, monospace" font-size="11">ask_before_install.txt</text>
+
+  <text x="60" y="170" fill="#7ec27e" font-family="Consolas, monospace" font-size="12.5">01</text>
+  <text x="92" y="170" fill="#dbe8f6" font-family="Microsoft YaHei, sans-serif" font-size="13">拆旧灯算不算在安装费里？</text>
+
+  <text x="60" y="204" fill="#7ec27e" font-family="Consolas, monospace" font-size="12.5">02</text>
+  <text x="92" y="204" fill="#dbe8f6" font-family="Microsoft YaHei, sans-serif" font-size="13">顶上有预留孔吗？没有的话开一个多少钱？</text>
+
+  <text x="60" y="238" fill="#7ec27e" font-family="Consolas, monospace" font-size="12.5">03</text>
+  <text x="92" y="238" fill="#dbe8f6" font-family="Microsoft YaHei, sans-serif" font-size="13">层高多少？超 3 米要不要加高空费，加多少？</text>
+
+  <text x="60" y="272" fill="#7ec27e" font-family="Consolas, monospace" font-size="12.5">04</text>
+  <text x="92" y="272" fill="#dbe8f6" font-family="Microsoft YaHei, sans-serif" font-size="13">挂板、螺丝、端子是你带还是我买？你带的一件多少钱？</text>
+
+  <text x="60" y="306" fill="#e8b26a" font-family="Consolas, monospace" font-size="12.5">05</text>
+  <text x="92" y="306" fill="#f5d3a3" font-family="Microsoft YaHei, sans-serif" font-size="13">智能灯要配网、要调最低亮度和缓开缓灭 —— 含在报价里吗？调不好算谁的？</text>
+
+  <line x1="60" y1="330" x2="820" y2="330" stroke="#1b3355" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="60" y="358" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">电话里就报一口价、不看现场就说「全包」的 → 先上门再找理由加钱</text>
+  <text x="60" y="376" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">肯让你先看清单再定工的 → 反而靠谱</text>
+
+  <!-- 双栏：能干 / 别碰 -->
+  <rect x="36" y="404" width="392" height="196" rx="12" fill="#101f38" stroke="#2f5a3c" stroke-width="1.4"/>
+  <text x="58" y="434" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700">这些自己能换</text>
+  <line x1="58" y1="446" x2="406" y2="446" stroke="#1f3a5c" stroke-width="1"/>
+  <text x="58" y="476" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">· 层高 3 米以内，家里有稳的梯子</text>
+  <text x="58" y="504" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">· 顶面是石膏板或铝扣板，孔位现成</text>
+  <text x="58" y="532" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">· 吸顶灯、筒灯、射灯这类结构简单的</text>
+  <text x="58" y="572" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="12">前提：断电 → 验电 → 拍照留底</text>
+
+  <rect x="452" y="404" width="392" height="196" rx="12" fill="#101f38" stroke="#7a3f3a" stroke-width="1.4"/>
+  <text x="474" y="434" fill="#f0a9a3" font-family="Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700">这些别自己干</text>
+  <line x1="474" y1="446" x2="822" y2="446" stroke="#1f3a5c" stroke-width="1"/>
+  <text x="474" y="476" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">· 要新开孔：石膏板崩边、铝扣板要专用开孔器</text>
+  <text x="474" y="504" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">· 水晶灯、多层吊灯要组装挂件</text>
+  <text x="474" y="532" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12">· 要往混凝土里打膨胀螺栓</text>
+  <text x="474" y="572" fill="#e8908a" font-family="Microsoft YaHei, sans-serif" font-size="12">掉下来不是钱的事</text>
+</svg>

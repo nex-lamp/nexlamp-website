@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 640">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="g2" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid2" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1b3355" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="880" height="640" fill="url(#bg2)"/>
+  <rect width="880" height="640" fill="url(#grid2)" opacity="0.55"/>
+
+  <text x="36" y="48" fill="#7ec27e" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="17" letter-spacing="2">装和调是两件事：普通灯到「亮」就结束，智能灯到「亮」才开始</text>
+  <text x="36" y="74" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12.5">强电师傅的活儿在第 1~2 步，第 3~5 步是另一门手艺</text>
+  <line x1="36" y1="90" x2="844" y2="90" stroke="#1b3355" stroke-width="1"/>
+
+  <!-- 泳道 A：普通灯 -->
+  <rect x="36" y="112" width="808" height="140" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="58" y="140" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700">普通灯</text>
+
+  <rect x="58" y="158" width="150" height="62" rx="8" fill="#16294a" stroke="#2f5a3c" stroke-width="1.2"/>
+  <text x="80" y="182" fill="#e6f0ff" font-family="Microsoft YaHei, sans-serif" font-size="12.5">接线</text>
+  <text x="80" y="204" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11">火零接上</text>
+
+  <path d="M216 189 H244" stroke="#7ec27e" stroke-width="1.8"/>
+  <path d="M240 184 L250 189 L240 194 Z" fill="#7ec27e"/>
+
+  <rect x="258" y="158" width="150" height="62" rx="8" fill="#16294a" stroke="#2f5a3c" stroke-width="1.2"/>
+  <text x="280" y="182" fill="#e6f0ff" font-family="Microsoft YaHei, sans-serif" font-size="12.5">通电</text>
+  <text x="280" y="204" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11">亮不亮一眼看得出</text>
+
+  <path d="M416 189 H444" stroke="#7ec27e" stroke-width="1.8"/>
+  <path d="M440 184 L450 189 L440 194 Z" fill="#7ec27e"/>
+
+  <rect x="458" y="158" width="150" height="62" rx="8" fill="#16294a" stroke="#2f5a3c" stroke-width="1.2"/>
+  <text x="480" y="182" fill="#e6f0ff" font-family="Microsoft YaHei, sans-serif" font-size="12.5">交付</text>
+  <text x="480" y="204" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11">装完就走</text>
+
+  <text x="640" y="196" fill="#4d6b90" font-family="Microsoft YaHei, sans-serif" font-size="11.5">三步收工</text>
+
+  <!-- 泳道 B：智能灯 -->
+  <rect x="36" y="268" width="808" height="200" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="58" y="296" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700">智能灯</text>
+
+  <rect x="58" y="314" width="126" height="62" rx="8" fill="#16294a" stroke="#2f5a3c" stroke-width="1.2"/>
+  <text x="76" y="338" fill="#e6f0ff" font-family="Microsoft YaHei, sans-serif" font-size="12.5">接线 + 驱动位</text>
+  <text x="76" y="360" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11">散热要留空</text>
+
+  <path d="M190 345 H206" stroke="#7ec27e" stroke-width="1.8"/>
+  <path d="M202 340 L212 345 L202 350 Z" fill="#7ec27e"/>
+
+  <rect x="218" y="314" width="120" height="62" rx="8" fill="#16294a" stroke="#2f5a3c" stroke-width="1.2"/>
+  <text x="236" y="338" fill="#e6f0ff" font-family="Microsoft YaHei, sans-serif" font-size="12.5">通电</text>
+  <text x="236" y="360" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11">看频闪/最低亮度</text>
+
+  <path d="M344 345 H360" stroke="#7ec27e" stroke-width="1.8"/>
+  <path d="M356 340 L366 345 L356 350 Z" fill="#7ec27e"/>
+
+  <rect x="372" y="314" width="120" height="62" rx="8" fill="#1c2c46" stroke="#e8b26a" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="390" y="338" fill="#f5d3a3" font-family="Microsoft YaHei, sans-serif" font-size="12.5">配网 · 分组</text>
+  <text x="390" y="360" fill="#c9a97c" font-family="Microsoft YaHei, sans-serif" font-size="11">2.4G / 5G 别混</text>
+
+  <path d="M498 345 H514" stroke="#e8b26a" stroke-width="1.8"/>
+  <path d="M510 340 L520 345 L510 350 Z" fill="#e8b26a"/>
+
+  <rect x="526" y="314" width="120" height="62" rx="8" fill="#1c2c46" stroke="#e8b26a" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="544" y="338" fill="#f5d3a3" font-family="Microsoft YaHei, sans-serif" font-size="12.5">建场景</text>
+  <text x="544" y="360" fill="#c9a97c" font-family="Microsoft YaHei, sans-serif" font-size="11">开关绑灯</text>
+
+  <path d="M652 345 H668" stroke="#e8b26a" stroke-width="1.8"/>
+  <path d="M664 340 L674 345 L664 350 Z" fill="#e8b26a"/>
+
+  <rect x="680" y="314" width="140" height="62" rx="8" fill="#1c2c46" stroke="#e8b26a" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="698" y="338" fill="#f5d3a3" font-family="Microsoft YaHei, sans-serif" font-size="12.5">交付前调完</text>
+  <text x="698" y="360" fill="#c9a97c" font-family="Microsoft YaHei, sans-serif" font-size="11">演示一遍</text>
+
+  <!-- 断层标记 -->
+  <line x1="366" y1="392" x2="366" y2="428" stroke="#e8908a" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <text x="378" y="416" fill="#f0a9a3" font-family="Microsoft YaHei, sans-serif" font-size="12">断层：强电师傅到这儿就卡住</text>
+  <text x="378" y="440" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11.5">手册几十页、界面全英文 —— 有人花 800 块请调试师傅干半天</text>
+
+  <!-- 底部三层 -->
+  <rect x="36" y="492" width="808" height="86" rx="10" fill="#122a45" stroke="#2f5a3c" stroke-width="1.2"/>
+  <text x="58" y="520" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13">出问题先分三层查，别一上来就怀疑电源坏了</text>
+  <text x="58" y="546" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">① 通电亮不亮（端子压紧没有） ② 连不连得上（配网、频段） ③ 调光顺不顺（驱动与灯珠匹不匹配）</text>
+  <text x="58" y="568" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="11.5">前两层归安装，第三层才归产品 —— 分清楚，才知道该找谁</text>
+</svg>

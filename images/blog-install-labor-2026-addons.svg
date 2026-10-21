@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 620">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="g1" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid1" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#1b3355" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="880" height="620" fill="url(#bg1)"/>
+  <rect width="880" height="620" fill="url(#grid1)" opacity="0.55"/>
+
+  <text x="36" y="48" fill="#7ec27e" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="17" letter-spacing="2">一张只写「安装」两个字的报价单，等于没报价</text>
+  <text x="36" y="74" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12.5">左边是电话里的价，右边是上门后冒出来的项</text>
+  <line x1="36" y1="90" x2="844" y2="90" stroke="#1b3355" stroke-width="1"/>
+
+  <!-- 左卡：报价单 -->
+  <rect x="36" y="112" width="368" height="300" rx="12" fill="#101f38" stroke="#26456e" stroke-width="1.2"/>
+  <text x="58" y="142" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700">电话里那一句</text>
+  <line x1="58" y1="154" x2="382" y2="154" stroke="#1f3a5c" stroke-width="1"/>
+
+  <text x="58" y="196" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12.5">项目</text>
+  <text x="300" y="196" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12.5">金额</text>
+  <text x="58" y="236" fill="#e6f0ff" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="700">安装</text>
+  <text x="300" y="236" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="26" font-weight="700" filter="url(#g1)">80</text>
+  <text x="352" y="236" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12.5">元</text>
+  <line x1="58" y1="252" x2="382" y2="252" stroke="#1b3355" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <text x="58" y="284" fill="#e8908a" font-family="Microsoft YaHei, sans-serif" font-size="12.5">拆旧？没写</text>
+  <text x="58" y="312" fill="#e8908a" font-family="Microsoft YaHei, sans-serif" font-size="12.5">开孔？没写</text>
+  <text x="58" y="340" fill="#e8908a" font-family="Microsoft YaHei, sans-serif" font-size="12.5">高空？没写</text>
+  <text x="58" y="368" fill="#e8908a" font-family="Microsoft YaHei, sans-serif" font-size="12.5">辅材？没写</text>
+  <text x="58" y="396" fill="#e8908a" font-family="Microsoft YaHei, sans-serif" font-size="12.5">调不调？也没写</text>
+
+  <!-- 箭头 -->
+  <path d="M416 262 H452" stroke="#7ec27e" stroke-width="2.4" filter="url(#g1)"/>
+  <path d="M446 254 L458 262 L446 270 Z" fill="#7ec27e"/>
+  <text x="424" y="292" fill="#7ec27e" font-family="Microsoft YaHei, sans-serif" font-size="12">上门</text>
+
+  <!-- 右卡：结账 -->
+  <rect x="476" y="112" width="368" height="300" rx="12" fill="#101f38" stroke="#7a3f3a" stroke-width="1.4"/>
+  <text x="498" y="142" fill="#f0a9a3" font-family="Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700">上门后那一张</text>
+  <line x1="498" y1="154" x2="822" y2="154" stroke="#1f3a5c" stroke-width="1"/>
+
+  <text x="498" y="186" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">基础安装</text>
+  <text x="742" y="186" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">60~150 / 盏</text>
+  <text x="498" y="216" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">旧灯拆除</text>
+  <text x="742" y="216" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">20~50 / 盏</text>
+  <text x="498" y="246" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">顶面开孔</text>
+  <text x="742" y="246" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">30~80 / 个</text>
+  <text x="498" y="276" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">高空作业（超 3 米）</text>
+  <text x="742" y="276" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">每米约 +50</text>
+  <text x="498" y="306" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">挂板 / 螺丝 / 端子</text>
+  <text x="742" y="306" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">按件收</text>
+  <text x="498" y="336" fill="#c8d8ea" font-family="Microsoft YaHei, sans-serif" font-size="12.5">上门费</text>
+  <text x="742" y="336" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12">30~50</text>
+  <line x1="498" y1="356" x2="822" y2="356" stroke="#1b3355" stroke-width="1"/>
+  <text x="498" y="384" fill="#f0a9a3" font-family="Microsoft YaHei, sans-serif" font-size="13">加项不在纸上，就只能现场议价</text>
+
+  <!-- 底部结论 -->
+  <rect x="36" y="436" width="808" height="70" rx="10" fill="#122a45" stroke="#2f5a3c" stroke-width="1.2"/>
+  <text x="58" y="466" fill="#9ee6ac" font-family="Microsoft YaHei, sans-serif" font-size="13.5">底价看三件事：拆旧装新 · 原孔位不动 · 手够得着</text>
+  <text x="58" y="490" fill="#8aa5c4" font-family="Microsoft YaHei, sans-serif" font-size="12.5">动到孔位、动到层高、动到线路，就出加项 —— 加项本身不贵，没提前说才贵</text>
+
+  <text x="36" y="552" fill="#4d6b90" font-family="Microsoft YaHei, sans-serif" font-size="11">数据口径：北京 / 成都 / 天津 / 深圳 2026 年家用灯具安装人工费行情区间，各地有差异</text>
+  <text x="36" y="578" fill="#4d6b90" font-family="Microsoft YaHei, sans-serif" font-size="11">智能灯含调试另计一档：150~300 元 / 盏</text>
+</svg>
