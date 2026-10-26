@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2de0a5" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2de0a5" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="560" fill="#0a1628"/>
+  <rect width="900" height="560" fill="url(#grid)"/>
+  <text x="450" y="58" text-anchor="middle" fill="#e8f1ff" font-size="30" font-weight="bold">磁吸轨道灯的心脏：驱动电源 5 问</text>
+  <text x="450" y="88" text-anchor="middle" fill="#5a7ba6" font-size="15">低压 24V/48V 系统 · 驱动寿命 3~5 年，往往比灯头先退休</text>
+
+  <!-- track + driver diagram -->
+  <g transform="translate(450,150)">
+    <rect x="-330" y="0" width="660" height="18" rx="9" fill="#16294a" stroke="#2de0a5" stroke-width="1.5" filter="url(#soft)"/>
+    <rect x="-180" y="-14" width="60" height="14" rx="4" fill="#1d3a66"/>
+    <rect x="-30" y="-14" width="60" height="14" rx="4" fill="#1d3a66"/>
+    <rect x="120" y="-14" width="60" height="14" rx="4" fill="#1d3a66"/>
+    <circle cx="-150" cy="9" r="4" fill="#ffd166"/>
+    <circle cx="0" cy="9" r="4" fill="#ffd166"/>
+    <circle cx="150" cy="9" r="4" fill="#ffd166"/>
+    <text x="0" y="46" text-anchor="middle" fill="#5a7ba6" font-size="13">48V 低压轨道 · 灯头靠触点取电 · 驱动是唯一的电源来源</text>
+    <rect x="270" y="-8" width="80" height="34" rx="6" fill="#0f2038" stroke="#ff6b6b" stroke-width="1.5"/>
+    <text x="310" y="14" text-anchor="middle" fill="#ff9e9e" font-size="13">驱动</text>
+    <line x1="270" y1="9" x2="240" y2="9" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="4 3"/>
+  </g>
+
+  <!-- 5 questions cards -->
+  <g font-size="14">
+    <g transform="translate(60,240)">
+      <rect width="240" height="120" rx="10" fill="#0f2038" stroke="#2de0a5" stroke-width="1.2"/>
+      <text x="16" y="30" fill="#2de0a5" font-size="16" font-weight="bold">① 功率余量</text>
+      <text x="16" y="56" fill="#c7d6ee">灯头总功率 × 1.2</text>
+      <text x="16" y="78" fill="#8aa3c7">多灯并发电压不稳，</text>
+      <text x="16" y="98" fill="#8aa3c7">轻则闪、重则烧驱动</text>
+    </g>
+    <g transform="translate(330,240)">
+      <rect width="240" height="120" rx="10" fill="#0f2038" stroke="#2de0a5" stroke-width="1.2"/>
+      <text x="16" y="30" fill="#2de0a5" font-size="16" font-weight="bold">② 品牌不通用</text>
+      <text x="16" y="56" fill="#c7d6ee">触点间距各不同：</text>
+      <text x="16" y="78" fill="#8aa3c7">28 / 30 / 26mm 都有</text>
+      <text x="16" y="98" fill="#8aa3c7">接错：不亮或反复闪</text>
+    </g>
+    <g transform="translate(600,240)">
+      <rect width="240" height="120" rx="10" fill="#0f2038" stroke="#2de0a5" stroke-width="1.2"/>
+      <text x="16" y="30" fill="#2de0a5" font-size="16" font-weight="bold">③ 外置 + 检修口</text>
+      <text x="16" y="56" fill="#c7d6ee">装空调回风口 / 检修口</text>
+      <text x="16" y="78" fill="#8aa3c7">封死在吊顶里，</text>
+      <text x="16" y="98" fill="#8aa3c7">坏一次拆一次天花板</text>
+    </g>
+    <g transform="translate(195,380)">
+      <rect width="240" height="120" rx="10" fill="#0f2038" stroke="#ffd166" stroke-width="1.2"/>
+      <text x="16" y="30" fill="#ffd166" font-size="16" font-weight="bold">④ 散热空间</text>
+      <text x="16" y="56" fill="#c7d6ee">塞进密闭吊顶 = 悲剧</text>
+      <text x="16" y="78" fill="#8aa3c7">散热差 → 频闪 / 烧驱动</text>
+      <text x="16" y="98" fill="#8aa3c7">选带过载保护的驱动</text>
+    </g>
+    <g transform="translate(465,380)">
+      <rect width="240" height="120" rx="10" fill="#0f2038" stroke="#ffd166" stroke-width="1.2"/>
+      <text x="16" y="30" fill="#ffd166" font-size="16" font-weight="bold">⑤ 备用驱动</text>
+      <text x="16" y="56" fill="#c7d6ee">首装多买一个备着</text>
+      <text x="16" y="78" fill="#8aa3c7">驱动 3~5 年寿命，</text>
+      <text x="16" y="98" fill="#8aa3c7">五年后你一定用得上</text>
+    </g>
+  </g>
+  <text x="450" y="540" text-anchor="middle" fill="#3d5a85" font-size="12">NEXLAMP · 磁吸轨道灯避坑系列 2026-10</text>
+</svg>

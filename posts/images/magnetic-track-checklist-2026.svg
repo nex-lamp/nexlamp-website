@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif">
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="560" fill="#0a1628"/>
+  <rect width="900" height="560" fill="url(#grid3)"/>
+  <text x="450" y="56" text-anchor="middle" fill="#e8f1ff" font-size="30" font-weight="bold">灯头配比 60/30/10 + 下单前 5 问</text>
+
+  <!-- 配比 bar -->
+  <g transform="translate(60,100)">
+    <text x="0" y="0" fill="#2de0a5" font-size="17" font-weight="bold">灯头配比：别走极端</text>
+    <rect x="0" y="20" width="468" height="52" rx="8" fill="#0f2038" stroke="#2de0a5" stroke-width="1.5"/>
+    <rect x="0" y="20" width="281" height="52" rx="8" fill="#2de0a5" opacity="0.55"/>
+    <rect x="281" y="20" width="140" height="52" fill="#ffd166" opacity="0.55"/>
+    <text x="140" y="52" text-anchor="middle" fill="#0a1628" font-size="15" font-weight="bold">60% 泛光</text>
+    <text x="351" y="52" text-anchor="middle" fill="#0a1628" font-size="15" font-weight="bold">30% 格栅</text>
+    <text x="496" y="52" text-anchor="middle" fill="#e8f1ff" font-size="15" font-weight="bold">10% 吊线</text>
+    <text x="0" y="102" fill="#8aa3c7" font-size="13.5">全格栅 = 审讯室 ｜ 全射灯 = 地上全是光点、抬头又是黑的</text>
+  </g>
+
+  <!-- 间距 -->
+  <g transform="translate(60,240)">
+    <text x="0" y="0" fill="#2de0a5" font-size="17" font-weight="bold">间距与离墙</text>
+    <g font-size="14" fill="#c7d6ee">
+      <rect x="0" y="16" width="240" height="64" rx="8" fill="#0f2038"/>
+      <text x="120" y="42" text-anchor="middle" fill="#e8f1ff" font-weight="bold">泛光条 60~80cm</text>
+      <text x="120" y="64" text-anchor="middle" fill="#8aa3c7" font-size="12.5">基础照明 · 光斑自然过渡</text>
+      <rect x="260" y="16" width="240" height="64" rx="8" fill="#0f2038"/>
+      <text x="380" y="42" text-anchor="middle" fill="#e8f1ff" font-weight="bold">格栅射灯 50~60cm</text>
+      <text x="380" y="64" text-anchor="middle" fill="#8aa3c7" font-size="12.5">重点照明 · 别让光斑重叠</text>
+      <rect x="520" y="16" width="240" height="64" rx="8" fill="#0f2038"/>
+      <text x="640" y="42" text-anchor="middle" fill="#ff9e9e" font-weight="bold">轨道离墙 ≥ 50cm</text>
+      <text x="640" y="64" text-anchor="middle" fill="#8aa3c7" font-size="12.5">贴太近 = 洗墙变亮斑</text>
+    </g>
+  </g>
+
+  <!-- 5 questions -->
+  <g transform="translate(60,360)">
+    <text x="0" y="0" fill="#2de0a5" font-size="17" font-weight="bold">下单前，问客服 5 个问题</text>
+    <g font-size="14" fill="#c7d6ee">
+      <text x="0" y="34">① 触点间距是多少？（28 / 30 / 26mm 都有）</text>
+      <text x="0" y="60">② 驱动电源单卖吗？</text>
+      <text x="0" y="86">③ 驱动功率按灯头总功率 ×1.2 配了吗？</text>
+      <text x="0" y="112">④ 检修口留了吗？驱动放哪？</text>
+      <text x="0" y="138">⑤ 灯头停产怎么办？备货周期多久？</text>
+    </g>
+    <rect x="480" y="14" width="300" height="130" rx="10" fill="#0f2038" stroke="#ffd166" stroke-width="1.2"/>
+    <text x="630" y="44" text-anchor="middle" fill="#ffd166" font-size="15" font-weight="bold">配件生态思维</text>
+    <text x="630" y="72" text-anchor="middle" fill="#c7d6ee" font-size="13">轨道 / 灯头 / 驱动 / 配件</text>
+    <text x="630" y="94" text-anchor="middle" fill="#c7d6ee" font-size="13">同一家买齐 + 备用驱动 ×1</text>
+    <text x="630" y="120" text-anchor="middle" fill="#8aa3c7" font-size="13">买灯 = 买未来五年的配件生态</text>
+  </g>
+  <text x="450" y="545" text-anchor="middle" fill="#3d5a85" font-size="12">NEXLAMP · 磁吸轨道灯避坑系列 2026-10</text>
+</svg>

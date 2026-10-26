@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#12233f" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="560" fill="#0a1628"/>
+  <rect width="900" height="560" fill="url(#grid2)"/>
+  <text x="450" y="56" text-anchor="middle" fill="#e8f1ff" font-size="30" font-weight="bold">预埋时机与层高分界：错过就是翻倍成本</text>
+
+  <!-- timeline -->
+  <g transform="translate(60,110)">
+    <text x="0" y="0" fill="#2de0a5" font-size="17" font-weight="bold">施工时间线 —— 每一步都不可逆</text>
+    <line x1="20" y1="50" x2="780" y2="50" stroke="#2de0a5" stroke-width="3"/>
+    <g font-size="14" fill="#c7d6ee">
+      <circle cx="60" cy="50" r="8" fill="#0a1628" stroke="#2de0a5" stroke-width="3"/>
+      <text x="60" y="86" text-anchor="middle" fill="#e8f1ff" font-weight="bold">水电阶段</text>
+      <text x="60" y="108" text-anchor="middle" fill="#8aa3c7">预留灯线</text>
+      <text x="60" y="128" text-anchor="middle" fill="#8aa3c7">定回路图</text>
+      <circle cx="280" cy="50" r="8" fill="#0a1628" stroke="#2de0a5" stroke-width="3"/>
+      <text x="280" y="86" text-anchor="middle" fill="#e8f1ff" font-weight="bold">木工阶段</text>
+      <text x="280" y="108" text-anchor="middle" fill="#8aa3c7">轨道预埋</text>
+      <text x="280" y="128" text-anchor="middle" fill="#8aa3c7">留槽留深</text>
+      <circle cx="500" cy="50" r="8" fill="#0a1628" stroke="#ffd166" stroke-width="3"/>
+      <text x="500" y="86" text-anchor="middle" fill="#e8f1ff" font-weight="bold">油工进场前</text>
+      <text x="500" y="108" text-anchor="middle" fill="#8aa3c7">先装轨道</text>
+      <text x="500" y="128" text-anchor="middle" fill="#8aa3c7">再刮腻子刷漆</text>
+      <circle cx="720" cy="50" r="8" fill="#0a1628" stroke="#ffd166" stroke-width="3"/>
+      <text x="720" y="86" text-anchor="middle" fill="#e8f1ff" font-weight="bold">收尾</text>
+      <text x="720" y="108" text-anchor="middle" fill="#8aa3c7">转角导电模块</text>
+      <text x="720" y="128" text-anchor="middle" fill="#8aa3c7">顶面 2 米靠尺找平</text>
+    </g>
+    <rect x="330" y="150" width="340" height="34" rx="6" fill="#2a1a1a" stroke="#ff6b6b" stroke-width="1.2"/>
+    <text x="500" y="172" text-anchor="middle" fill="#ff9e9e" font-size="14">临时改方案 → 成本直接翻倍</text>
+  </g>
+
+  <!-- 层高 decision -->
+  <g transform="translate(60,330)">
+    <text x="0" y="0" fill="#2de0a5" font-size="17" font-weight="bold">按层高选形态</text>
+    <g transform="translate(0,30)">
+      <rect width="370" height="150" rx="10" fill="#0f2038" stroke="#2de0a5" stroke-width="1.2"/>
+      <text x="20" y="34" fill="#e8f1ff" font-size="15" font-weight="bold">层高 ≥ 2.7m → 嵌入式</text>
+      <text x="20" y="62" fill="#c7d6ee" font-size="13.5">吊顶预留槽：宽 55~60mm × 高 85~90mm</text>
+      <text x="20" y="86" fill="#c7d6ee" font-size="13.5">吊顶完成面至少下吊 8cm</text>
+      <text x="20" y="110" fill="#8aa3c7" font-size="13.5">线条感无可替代</text>
+      <text x="20" y="132" fill="#8aa3c7" font-size="13.5">固定在龙骨上，防轨道中段下垂</text>
+    </g>
+    <g transform="translate(410,30)">
+      <rect width="370" height="150" rx="10" fill="#0f2038" stroke="#ffd166" stroke-width="1.2"/>
+      <text x="20" y="34" fill="#e8f1ff" font-size="15" font-weight="bold">层高 &lt; 2.7m → 明装超薄</text>
+      <text x="20" y="62" fill="#c7d6ee" font-size="13.5">选 5~6mm 厚度超薄轨道</text>
+      <text x="20" y="86" fill="#c7d6ee" font-size="13.5">视觉只多一条线，不吃层高</text>
+      <text x="20" y="110" fill="#8aa3c7" font-size="13.5">顶面有弧度 → 接缝错位 / 大黑缝</text>
+      <text x="20" y="132" fill="#8aa3c7" font-size="13.5">装前必须精准找平</text>
+    </g>
+  </g>
+  <text x="450" y="545" text-anchor="middle" fill="#3d5a85" font-size="12">NEXLAMP · 磁吸轨道灯避坑系列 2026-10</text>
+</svg>
