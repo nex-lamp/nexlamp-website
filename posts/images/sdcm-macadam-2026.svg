@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0a1628" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="560" fill="#0a1628"/>
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.35">
+    <path d="M0 80 H1000 M0 160 H1000 M0 240 H1000 M0 320 H1000 M0 400 H1000 M0 480 H1000"/>
+    <path d="M100 0 V560 M200 0 V560 M300 0 V560 M400 0 V560 M500 0 V560 M600 0 V560 M700 0 V560 M800 0 V560 M900 0 V560"/>
+  </g>
+  <circle cx="340" cy="280" r="210" fill="url(#glow1)"/>
+
+  <text x="500" y="52" text-anchor="middle" fill="#e2f3ff" font-size="30" font-weight="bold">色温是一个点，色容差是一个圈</text>
+  <text x="500" y="84" text-anchor="middle" fill="#7dd3fc" font-size="16">麦克亚当椭圆 · SDCM（步）：圈越小，灯与灯颜色越集中</text>
+
+  <!-- concentric macadam ellipses -->
+  <ellipse cx="340" cy="300" rx="60" ry="34" fill="none" stroke="#4ade80" stroke-width="2.5"/>
+  <ellipse cx="340" cy="300" rx="110" ry="62" fill="none" stroke="#facc15" stroke-width="2" opacity="0.9"/>
+  <ellipse cx="340" cy="300" rx="160" ry="92" fill="none" stroke="#fb923c" stroke-width="2" opacity="0.8"/>
+  <ellipse cx="340" cy="300" rx="210" ry="120" fill="none" stroke="#f87171" stroke-width="2" opacity="0.7"/>
+
+  <circle cx="340" cy="300" r="6" fill="#fff"/>
+  <text x="340" y="330" text-anchor="middle" fill="#e2f3ff" font-size="15" font-weight="bold">3000K 标称点</text>
+
+  <line x1="392" y1="290" x2="470" y2="252" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="478" y="250" fill="#4ade80" font-size="15">SDCM ≤3 步 · 肉眼几乎无差异</text>
+  <line x1="440" y1="330" x2="520" y2="356" stroke="#facc15" stroke-width="1.5"/>
+  <text x="528" y="360" fill="#facc15" font-size="15">3~5 步 · 细看有差异，家居底线</text>
+  <line x1="480" y1="382" x2="560" y2="420" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="568" y="424" fill="#fb923c" font-size="15">>5 步 · 色偏肉眼清晰可见</text>
+  <line x1="520" y1="212" x2="620" y2="176" stroke="#f87171" stroke-width="1.5"/>
+  <text x="628" y="176" fill="#f87171" font-size="15">圈的最左 vs 最右</text>
+  <text x="628" y="198" fill="#f87171" font-size="14" opacity="0.85">单灯都合规，并排一眼看出黄白</text>
+
+  <!-- two lamps comparison -->
+  <g transform="translate(760,230)">
+    <rect x="0" y="0" width="200" height="150" rx="12" fill="#0f2036" stroke="#1e3a5f"/>
+    <rect x="22" y="30" width="64" height="44" rx="6" fill="#ffd9a0"/>
+    <rect x="112" y="30" width="64" height="44" rx="6" fill="#fff7e6"/>
+    <text x="54" y="98" text-anchor="middle" fill="#ffd9a0" font-size="14">偏暖</text>
+    <text x="144" y="98" text-anchor="middle" fill="#fff7e6" font-size="14">偏冷</text>
+    <text x="100" y="128" text-anchor="middle" fill="#9fb6cc" font-size="13">都标 3000K · 国标都合格</text>
+  </g>
+
+  <text x="500" y="528" text-anchor="middle" fill="#64748b" font-size="14">人眼比较的不是"灯和标准差多少"，而是"这盏和旁边那盏差多少"</text>
+</svg>

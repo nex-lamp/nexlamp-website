@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="1000" height="620" fill="#0a1628"/>
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.3">
+    <path d="M0 90 H1000 M0 180 H1000 M0 270 H1000 M0 360 H1000 M0 450 H1000 M0 540 H1000"/>
+    <path d="M125 0 V620 M250 0 V620 M375 0 V620 M500 0 V620 M625 0 V620 M750 0 V620 M875 0 V620"/>
+  </g>
+  <text x="500" y="54" text-anchor="middle" fill="#e2f3ff" font-size="30" font-weight="bold">三阶段实操清单</text>
+  <text x="500" y="86" text-anchor="middle" fill="#7dd3fc" font-size="16">装吊顶之前，是最后的退换窗口</text>
+
+  <!-- stage 1 -->
+  <g>
+    <rect x="40" y="116" width="920" height="118" rx="14" fill="#0f2036" stroke="#22d3ee" stroke-width="1.5"/>
+    <rect x="40" y="116" width="180" height="118" rx="14" fill="#164e63" opacity="0.55"/>
+    <text x="130" y="168" text-anchor="middle" fill="#67e8f9" font-size="22" font-weight="bold">买前</text>
+    <text x="130" y="196" text-anchor="middle" fill="#9fb6cc" font-size="13">把参数写进对话记录</text>
+    <text x="252" y="150" fill="#e2f3ff" font-size="15">· 直接问客服："色温容差多少？SDCM 几步？"（好产品 ±200K 内、SDCM≤5）</text>
+    <text x="252" y="180" fill="#e2f3ff" font-size="15">· 所有发光体同品牌同系列——分店买标称一样，实际能差几百 K</text>
+    <text x="252" y="210" fill="#e2f3ff" font-size="15">· 灯带整卷同批采购、多买预留（同卷带头尾都可能有色差）</text>
+  </g>
+
+  <!-- stage 2 -->
+  <g>
+    <rect x="40" y="250" width="920" height="118" rx="14" fill="#0f2036" stroke="#4ade80" stroke-width="1.5"/>
+    <rect x="40" y="250" width="180" height="118" rx="14" fill="#14532d" opacity="0.55"/>
+    <text x="130" y="302" text-anchor="middle" fill="#86efac" font-size="22" font-weight="bold">收货</text>
+    <text x="130" y="330" text-anchor="middle" fill="#9fb6cc" font-size="13">唯一的退换窗口</text>
+    <text x="252" y="284" fill="#e2f3ff" font-size="15">· 装吊顶之前：同批次灯具全部接电点亮，并排摆地上看</text>
+    <text x="252" y="314" fill="#e2f3ff" font-size="15">· 个别偏黄偏白的当场挑出来退换；装上吊顶再拆，成本翻倍</text>
+    <text x="252" y="344" fill="#e2f3ff" font-size="15">· 家装没仪器，肉眼并排对比足够用；商业项目抽检实测色温</text>
+  </g>
+
+  <!-- stage 3 -->
+  <g>
+    <rect x="40" y="384" width="920" height="118" rx="14" fill="#0f2036" stroke="#fb923c" stroke-width="1.5"/>
+    <rect x="40" y="384" width="180" height="118" rx="14" fill="#7c2d12" opacity="0.55"/>
+    <text x="130" y="436" text-anchor="middle" fill="#fdba74" font-size="22" font-weight="bold">装完</text>
+    <text x="130" y="464" text-anchor="middle" fill="#9fb6cc" font-size="13">已经花了，三步补救</text>
+    <text x="252" y="418" fill="#e2f3ff" font-size="15">① 盘点：晚上全屋开灯逐个记录拍照，哪盏偏白哪盏偏黄</text>
+    <text x="252" y="448" fill="#e2f3ff" font-size="15">② 替换：换灯泡灯芯几十块一个；筒射灯整灯换一盏三五十</text>
+    <text x="252" y="478" fill="#e2f3ff" font-size="15">③ 管理：全屋统一主色温打底，用场景分组把不匀区域错开点亮</text>
+  </g>
+
+  <!-- bottom memory line -->
+  <rect x="40" y="524" width="920" height="62" rx="12" fill="#0f2036" stroke="#1e3a5f"/>
+  <text x="500" y="550" text-anchor="middle" fill="#7dd3fc" font-size="16" font-weight="bold">记住三句话</text>
+  <text x="500" y="576" text-anchor="middle" fill="#e2f3ff" font-size="15.5">下单问 SDCM · 收货点亮比 · 装吊顶之前是最后的退换窗口</text>
+</svg>
