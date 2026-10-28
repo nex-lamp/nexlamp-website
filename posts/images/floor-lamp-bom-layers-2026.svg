@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <radialGradient id="glowB" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0a1628" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="#0a1628"/>
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.3">
+    <path d="M0 80 H1000 M0 160 H1000 M0 240 H1000 M0 320 H1000 M0 400 H1000 M0 480 H1000 M0 560 H1000"/>
+    <path d="M100 0 V640 M200 0 V640 M300 0 V640 M400 0 V640 M500 0 V640 M600 0 V640 M700 0 V640 M800 0 V640 M900 0 V640"/>
+  </g>
+  <circle cx="500" cy="320" r="300" fill="url(#glowB)"/>
+
+  <text x="500" y="52" text-anchor="middle" fill="#e2f3ff" font-size="30" font-weight="bold">一盏大路灯拆开，钱花在哪三层</text>
+  <text x="500" y="84" text-anchor="middle" fill="#7dd3fc" font-size="16">同一副外壳里，不同价位的差别全在看不见的地方</text>
+
+  <!-- layer 1 -->
+  <rect x="80" y="112" width="840" height="140" rx="10" fill="#0f2a1c" stroke="#4ade80" stroke-width="2"/>
+  <rect x="80" y="112" width="8" height="140" rx="4" fill="#4ade80"/>
+  <text x="110" y="146" fill="#bbf7d0" font-size="19" font-weight="bold">第一层 · 光学腔</text>
+  <text x="330" y="146" fill="#4ade80" font-size="14">决定「能不能用」· 跟贵不贵没关系</text>
+  <text x="110" y="178" fill="#d1fae5" font-size="14">扩散板 · 菱晶板 · 导光板 · 格栅 · 反光纸 —— 决定 UGR 眩光值与照度均匀度</text>
+  <text x="110" y="206" fill="#e2f3ff" font-size="14" font-weight="bold">侧发光 + 多层柔光：把直射光打散成漫射光</text>
+  <text x="600" y="206" fill="#f87171" font-size="14" font-weight="bold">直下式：省钱，但光直愣愣怼眼睛</text>
+  <text x="110" y="234" fill="#8fa8bf" font-size="13">同品牌旗舰款 UGR&lt;9，低端版只控到 16 · 给孩子的目标：UGR≤12、均匀度接近 1.1</text>
+
+  <!-- layer 2 -->
+  <rect x="80" y="268" width="840" height="160" rx="10" fill="#2a1a0d" stroke="#fbbf24" stroke-width="2"/>
+  <rect x="80" y="268" width="8" height="160" rx="4" fill="#fbbf24"/>
+  <text x="110" y="302" fill="#fde68a" font-size="19" font-weight="bold">第二层 · 驱动电源</text>
+  <text x="330" y="302" fill="#fbbf24" font-size="14">决定「用多久」· 还藏着一项没人看的 EMC</text>
+  <text x="110" y="334" fill="#fef3c7" font-size="14">恒流精度 · 调光下限 · 调光方式（PWM 斩波 vs 恒流模拟）· 共模电感 / X 电容 / 屏蔽</text>
+  <text x="110" y="362" fill="#e2f3ff" font-size="14" font-weight="bold">调光跳不跳闪、会不会一半就黑，全看驱动下限与方式</text>
+  <text x="110" y="390" fill="#fca5a5" font-size="13">EMC 是纯成本项，用户收货那一刻感知不到 → 低价方案最先砍的就是它</text>
+  <text x="110" y="414" fill="#8fa8bf" font-size="13">代价：干扰路由器和电视、损耗室内电路 · 20 款中 2 款 EMC 不达标</text>
+
+  <!-- layer 3 -->
+  <rect x="80" y="444" width="840" height="140" rx="10" fill="#0d1f33" stroke="#38bdf8" stroke-width="2"/>
+  <rect x="80" y="444" width="8" height="140" rx="4" fill="#38bdf8"/>
+  <text x="110" y="478" fill="#bae6fd" font-size="19" font-weight="bold">第三层 · 智能与话术</text>
+  <text x="330" y="478" fill="#38bdf8" font-size="14">4000 元以上买到的是「聪明」，不是「光」</text>
+  <text x="110" y="510" fill="#e0f2fe" font-size="14">智能场景 · 语音调光 · 动态模拟自然光 · 红光增益 · 院士研发背书</text>
+  <text x="110" y="538" fill="#e2f3ff" font-size="14" font-weight="bold">护眼核心指标到 4000 元这一档，基本没有增量</text>
+  <text x="110" y="566" fill="#8fa8bf" font-size="13">「预防近视 / 控制度数 / 抑制眼轴」属疾病预防宣传 · 已有企业因此被罚 60 万</text>
+
+  <text x="500" y="618" text-anchor="middle" fill="#475569" font-size="12">决定光的是结构与驱动，决定价格的是智能与品牌 —— 别把两者混着买</text>
+</svg>

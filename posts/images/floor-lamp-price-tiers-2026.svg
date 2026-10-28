@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0a1628" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barLow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="barMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="barHigh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" fill="#0a1628"/>
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.3">
+    <path d="M0 80 H1000 M0 160 H1000 M0 240 H1000 M0 320 H1000 M0 400 H1000 M0 480 H1000 M0 560 H1000"/>
+    <path d="M100 0 V600 M200 0 V600 M300 0 V600 M400 0 V600 M500 0 V600 M600 0 V600 M700 0 V600 M800 0 V600 M900 0 V600"/>
+  </g>
+  <circle cx="500" cy="300" r="280" fill="url(#glowA)"/>
+
+  <text x="500" y="52" text-anchor="middle" fill="#e2f3ff" font-size="30" font-weight="bold">423 元和 5699 元，测出同一个结论</text>
+  <text x="500" y="84" text-anchor="middle" fill="#7dd3fc" font-size="16">上海市消保委 · 20 款热销大路灯比较试验 · 价差 13 倍</text>
+
+  <!-- price axis -->
+  <line x1="90" y1="150" x2="910" y2="150" stroke="#334e68" stroke-width="1.5"/>
+  <g stroke="#334e68" stroke-width="1">
+    <path d="M90 145 V155 M295 145 V155 M500 145 V155 M705 145 V155 M910 145 V155"/>
+  </g>
+  <text x="90" y="180" text-anchor="middle" fill="#8fa8bf" font-size="13">423 元</text>
+  <text x="500" y="180" text-anchor="middle" fill="#8fa8bf" font-size="13">3000 元</text>
+  <text x="910" y="180" text-anchor="middle" fill="#8fa8bf" font-size="13">5699 元</text>
+
+  <!-- three tiers -->
+  <rect x="90" y="205" width="205" height="150" rx="8" fill="#2a1215" stroke="#f87171" stroke-width="1.5"/>
+  <text x="192" y="238" text-anchor="middle" fill="#fca5a5" font-size="17" font-weight="bold">1000 元以下</text>
+  <text x="192" y="268" text-anchor="middle" fill="#fecaca" font-size="13">光指标多数能过</text>
+  <text x="192" y="292" text-anchor="middle" fill="#f87171" font-size="13" font-weight="bold">参数虚标 + EMC 不合格</text>
+  <text x="192" y="316" text-anchor="middle" fill="#fecaca" font-size="13">集中在这一档</text>
+  <text x="192" y="340" text-anchor="middle" fill="#8fa8bf" font-size="12">→ 不建议</text>
+
+  <rect x="295" y="205" width="410" height="150" rx="8" fill="#0f2a1c" stroke="#4ade80" stroke-width="2"/>
+  <text x="500" y="238" text-anchor="middle" fill="#bbf7d0" font-size="18" font-weight="bold">1000 ~ 4000 元 · 性价比最高</text>
+  <text x="500" y="270" text-anchor="middle" fill="#d1fae5" font-size="13">照度 / 照度均匀度 全部达国 AA 级</text>
+  <text x="500" y="294" text-anchor="middle" fill="#d1fae5" font-size="13">显色全部合格 · 频闪与蓝光全部无风险</text>
+  <text x="500" y="324" text-anchor="middle" fill="#4ade80" font-size="14" font-weight="bold">护眼这件事，到这条线就够了</text>
+
+  <rect x="705" y="205" width="205" height="150" rx="8" fill="#0d1f33" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="807" y="238" text-anchor="middle" fill="#bae6fd" font-size="17" font-weight="bold">4000 元以上</text>
+  <text x="807" y="268" text-anchor="middle" fill="#e0f2fe" font-size="13">护眼核心指标无增量</text>
+  <text x="807" y="292" text-anchor="middle" fill="#7dd3fc" font-size="13">多的是智能场景 / 语音</text>
+  <text x="807" y="316" text-anchor="middle" fill="#7dd3fc" font-size="13">动态模拟自然光</text>
+  <text x="807" y="340" text-anchor="middle" fill="#8fa8bf" font-size="12">→ 为体验付费</text>
+
+  <!-- 4 hard metrics -->
+  <rect x="90" y="390" width="820" height="112" rx="8" fill="#101f33" stroke="#1e3a5f" stroke-width="1.5"/>
+  <text x="110" y="420" fill="#7dd3fc" font-size="14" font-weight="bold">跟眼睛直接相关的四项硬指标 · 20 款全部达标</text>
+  <g font-size="14" fill="#e2f3ff">
+    <text x="130" y="452">照度</text>
+    <text x="330" y="452">照度均匀度</text>
+    <text x="530" y="452">频闪</text>
+    <text x="730" y="452">蓝光</text>
+  </g>
+  <g fill="#4ade80" font-size="14" font-weight="bold">
+    <text x="180" y="452" dx="130">AA 级</text>
+    <text x="430" y="452" dx="72">合格</text>
+    <text x="580" y="452" dx="22">无风险</text>
+    <text x="780" y="452" dx="0">无风险</text>
+  </g>
+  <text x="110" y="484" fill="#8fa8bf" font-size="13">仅 1 款色容差超标（&gt;5）、个别实测功率低于标称、2 款电磁兼容不达标</text>
+
+  <text x="500" y="556" text-anchor="middle" fill="#64748b" font-size="12">数据来源：上海市消费者权益保护委员会 2026 年 7 月 20 款落地式读写灯具比较试验</text>
+  <text x="500" y="580" text-anchor="middle" fill="#475569" font-size="12">NEXLAMP · nexlamp.com</text>
+</svg>
