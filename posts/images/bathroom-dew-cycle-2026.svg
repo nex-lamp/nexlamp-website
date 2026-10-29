@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="tempG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="humG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+    <radialGradient id="hot" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0a1628" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="600" fill="#0a1628"/>
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.3">
+    <path d="M0 80 H1000 M0 160 H1000 M0 240 H1000 M0 320 H1000 M0 400 H1000 M0 480 H1000 M0 560 H1000"/>
+    <path d="M100 0 V600 M200 0 V600 M300 0 V600 M400 0 V600 M500 0 V600 M600 0 V600 M700 0 V600 M800 0 V600 M900 0 V600"/>
+  </g>
+
+  <text x="48" y="58" fill="#e2e8f0" font-size="26" font-weight="700">浴室灯的真正杀手：一天两次的凝露循环</text>
+  <text x="48" y="86" fill="#64748b" font-size="14">温度回落时，腔体内壁比空气冷得更快，水汽在 PCB 上凝成水膜</text>
+
+  <!-- 左侧：曲线 -->
+  <g>
+    <rect x="48" y="112" width="520" height="300" fill="#0d1e35" stroke="#1e3a5f" rx="8"/>
+    <text x="68" y="138" fill="#94a3b8" font-size="13">一次洗澡 · 温度与相对湿度</text>
+
+    <!-- 轴 -->
+    <path d="M88 380 H540" stroke="#334155" stroke-width="1"/>
+    <path d="M88 380 V160" stroke="#334155" stroke-width="1"/>
+    <text x="60" y="384" fill="#64748b" font-size="11">0</text>
+    <text x="52" y="180" fill="#64748b" font-size="11">40℃</text>
+    <text x="46" y="276" fill="#64748b" font-size="11">100%</text>
+
+    <!-- 温度曲线 -->
+    <path d="M88 350 L150 344 L210 300 L260 196 L320 190 L380 205 L440 300 L500 344 L540 350"
+          fill="none" stroke="url(#tempG)" stroke-width="3"/>
+    <!-- 湿度曲线 -->
+    <path d="M88 300 L150 292 L210 268 L260 200 L320 196 L380 208 L440 262 L500 292 L540 300"
+          fill="none" stroke="url(#humG)" stroke-width="2.5" stroke-dasharray="6 4"/>
+
+    <!-- 结露区 -->
+    <rect x="380" y="196" width="120" height="120" fill="url(#hot)"/>
+    <text x="390" y="236" fill="#fdba74" font-size="12">温度回落</text>
+    <text x="390" y="256" fill="#fdba74" font-size="12">结露发生</text>
+
+    <text x="88" y="400" fill="#475569" font-size="11">洗澡开始</text>
+    <text x="300" y="400" fill="#475569" font-size="11">湿度饱和</text>
+    <text x="470" y="400" fill="#475569" font-size="11">关水·排风</text>
+
+    <!-- 图例 -->
+    <path d="M96 328 H126" stroke="#38bdf8" stroke-width="3"/>
+    <text x="134" y="332" fill="#94a3b8" font-size="12">温度</text>
+    <path d="M196 328 H226" stroke="#a78bfa" stroke-width="2.5" stroke-dasharray="6 4"/>
+    <text x="234" y="332" fill="#94a3b8" font-size="12">相对湿度</text>
+  </g>
+
+  <!-- 右侧：频次换算 -->
+  <g>
+    <rect x="596" y="112" width="356" height="300" fill="#0d1e35" stroke="#1e3a5f" rx="8"/>
+    <text x="620" y="142" fill="#94a3b8" font-size="13">一年的账</text>
+
+    <text x="620" y="196" fill="#22d3ee" font-size="40" font-weight="700">700</text>
+    <text x="620" y="222" fill="#e2e8f0" font-size="14">次结露</text>
+    <text x="620" y="246" fill="#64748b" font-size="12">每天 2 次 × 365 天</text>
+
+    <path d="M620 268 H928" stroke="#1e3a5f" stroke-width="1"/>
+
+    <text x="620" y="300" fill="#475569" font-size="12">每次留下的一层水膜</text>
+    <text x="620" y="326" fill="#f87171" font-size="14">→ 爬电距离下降</text>
+    <text x="620" y="352" fill="#f87171" font-size="14">→ 引脚电化学腐蚀</text>
+    <text x="620" y="378" fill="#f87171" font-size="14">→ 电解电容先失效</text>
+  </g>
+
+  <!-- 底部结论 -->
+  <g>
+    <rect x="48" y="440" width="904" height="112" fill="#101e33" stroke="#1e3a5f" rx="8"/>
+    <rect x="48" y="440" width="4" height="112" fill="#f97316"/>
+    <text x="76" y="474" fill="#e2e8f0" font-size="16" font-weight="600">关键点：IP44 只做在灯罩那一面，背板留着散热开孔，水汽照样进</text>
+    <text x="76" y="504" fill="#94a3b8" font-size="13">它进得慢，刚好够拖过保修期——所以症状总是"用了八个月开始闪"。</text>
+    <text x="76" y="532" fill="#64748b" font-size="12">工厂侧数据：做了密封腔体加防凝露处理的，寿命两年以上；没做的，半年到一年开始出问题。</text>
+  </g>
+
+  <text x="952" y="580" fill="#334155" font-size="11" text-anchor="end">NEXLAMP · 浴室照明选型</text>
+</svg>

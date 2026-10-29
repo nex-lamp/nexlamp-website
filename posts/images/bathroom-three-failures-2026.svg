@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="cardG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#13253f"/>
+      <stop offset="100%" stop-color="#0d1e35"/>
+    </linearGradient>
+    <linearGradient id="tlG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="620" fill="#0a1628"/>
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.28">
+    <path d="M0 80 H1000 M0 160 H1000 M0 240 H1000 M0 320 H1000 M0 400 H1000 M0 480 H1000 M0 560 H1000"/>
+    <path d="M100 0 V620 M200 0 V620 M300 0 V620 M400 0 V620 M500 0 V620 M600 0 V620 M700 0 V620 M800 0 V620 M900 0 V620"/>
+  </g>
+
+  <text x="48" y="58" fill="#e2e8f0" font-size="26" font-weight="700">三个失效点，按坏掉的先后排</text>
+  <text x="48" y="86" fill="#64748b" font-size="14">灯珠烧黑的不到两成；八成是驱动板先出问题</text>
+
+  <!-- 时间轴 -->
+  <g>
+    <path d="M48 132 H952" stroke="#1e3a5f" stroke-width="2"/>
+    <path d="M48 132 H760" stroke="url(#tlG)" stroke-width="4"/>
+    <circle cx="300" cy="132" r="7" fill="#22d3ee"/>
+    <circle cx="540" cy="132" r="7" fill="#4ade80"/>
+    <circle cx="760" cy="132" r="7" fill="#f87171"/>
+    <text x="300" y="118" fill="#22d3ee" font-size="12" text-anchor="middle">8-12 个月</text>
+    <text x="540" y="118" fill="#4ade80" font-size="12" text-anchor="middle">12-18 个月</text>
+    <text x="760" y="118" fill="#f87171" font-size="12" text-anchor="middle">18 个月后</text>
+    <text x="48" y="158" fill="#475569" font-size="11">安装</text>
+    <text x="932" y="158" fill="#475569" font-size="11" text-anchor="end">时间</text>
+  </g>
+
+  <!-- 卡片1 -->
+  <g>
+    <rect x="48" y="184" width="288" height="286" fill="url(#cardG)" stroke="#22d3ee" stroke-opacity="0.5" rx="10"/>
+    <rect x="48" y="184" width="288" height="4" fill="#22d3ee"/>
+    <text x="72" y="216" fill="#22d3ee" font-size="13" font-weight="700">01 / 最先坏</text>
+    <text x="72" y="250" fill="#e2e8f0" font-size="20" font-weight="600">驱动电源</text>
+
+    <text x="72" y="286" fill="#94a3b8" font-size="13">内置非隔离、开放式</text>
+    <text x="72" y="308" fill="#94a3b8" font-size="13">为散热背部必留开孔</text>
+
+    <path d="M72 326 H312" stroke="#1e3a5f" stroke-width="1"/>
+
+    <text x="72" y="352" fill="#64748b" font-size="12">症状</text>
+    <text x="72" y="374" fill="#fbbf24" font-size="13">灯闪 / 亮度掉 / 时好时坏</text>
+
+    <text x="72" y="404" fill="#64748b" font-size="12">正规做法（三条缺一不可）</text>
+    <text x="72" y="426" fill="#e2e8f0" font-size="12">独立防水壳</text>
+    <text x="72" y="446" fill="#e2e8f0" font-size="12">整板灌胶</text>
+    <text x="72" y="466" fill="#e2e8f0" font-size="12">全封闭铝材导热，不开孔对流</text>
+  </g>
+
+  <!-- 卡片2 -->
+  <g>
+    <rect x="356" y="184" width="288" height="286" fill="url(#cardG)" stroke="#4ade80" stroke-opacity="0.45" rx="10"/>
+    <rect x="356" y="184" width="288" height="4" fill="#4ade80"/>
+    <text x="380" y="216" fill="#4ade80" font-size="13" font-weight="700">02 / 其次</text>
+    <text x="380" y="250" fill="#e2e8f0" font-size="20" font-weight="600">密封件老化</text>
+
+    <text x="380" y="286" fill="#94a3b8" font-size="13">灯罩与底壳之间的胶条</text>
+    <text x="380" y="308" fill="#94a3b8" font-size="13">便宜用橡胶，好用硅胶</text>
+
+    <path d="M380 326 H620" stroke="#1e3a5f" stroke-width="1"/>
+
+    <text x="380" y="352" fill="#64748b" font-size="12">症状</text>
+    <text x="380" y="374" fill="#fbbf24" font-size="13">罩内起雾 / 边缘渗水</text>
+
+    <text x="380" y="404" fill="#64748b" font-size="12">机理</text>
+    <text x="380" y="426" fill="#e2e8f0" font-size="12">皂垢 + 碱性清洁剂 + 高温</text>
+    <text x="380" y="446" fill="#e2e8f0" font-size="12">普通橡胶硬化、失去回弹</text>
+    <text x="380" y="466" fill="#e2e8f0" font-size="12">手指按边缘能按出缝即开始</text>
+  </g>
+
+  <!-- 卡片3 -->
+  <g>
+    <rect x="664" y="184" width="288" height="286" fill="url(#cardG)" stroke="#f87171" stroke-opacity="0.45" rx="10"/>
+    <rect x="664" y="184" width="288" height="4" fill="#f87171"/>
+    <text x="688" y="216" fill="#f87171" font-size="13" font-weight="700">03 / 最易误判</text>
+    <text x="688" y="250" fill="#e2e8f0" font-size="20" font-weight="600">灯罩黄变</text>
+
+    <text x="688" y="286" fill="#94a3b8" font-size="13">亚克力 PMMA：透光高、成本低</text>
+    <text x="688" y="308" fill="#94a3b8" font-size="13">耐湿热与抗紫外弱</text>
+
+    <path d="M688 326 H928" stroke="#1e3a5f" stroke-width="1"/>
+
+    <text x="688" y="352" fill="#64748b" font-size="12">症状</text>
+    <text x="688" y="374" fill="#fbbf24" font-size="13">发黄 / 发雾 / 看起来"灯老了"</text>
+
+    <text x="688" y="404" fill="#64748b" font-size="12">对策</text>
+    <text x="688" y="426" fill="#e2e8f0" font-size="12">选 PC 料 + 抗 UV 涂层</text>
+    <text x="688" y="446" fill="#e2e8f0" font-size="12">防雾涂层怕皂垢</text>
+    <text x="688" y="466" fill="#e2e8f0" font-size="12">只能中性清洁剂擦拭</text>
+  </g>
+
+  <!-- 底部 -->
+  <g>
+    <rect x="48" y="498" width="904" height="82" fill="#101e33" stroke="#1e3a5f" rx="8"/>
+    <text x="76" y="530" fill="#e2e8f0" font-size="15" font-weight="600">这三处坏，参数表上一个字都看不出来</text>
+    <text x="76" y="558" fill="#94a3b8" font-size="13">同为 IP44、同为 12W、同为 Ra90，一个灌胶一个不灌胶，寿命差三倍——差别全在结构里。</text>
+  </g>
+
+  <text x="952" y="604" fill="#334155" font-size="11" text-anchor="end">NEXLAMP · 浴室照明选型</text>
+</svg>
