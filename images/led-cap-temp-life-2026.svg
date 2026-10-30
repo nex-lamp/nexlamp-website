@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="lifeArea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hotBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <linearGradient id="coldBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" fill="#0a1628"/>
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.3">
+    <path d="M0 80 H1000 M0 160 H1000 M0 240 H1000 M0 320 H1000 M0 400 H1000 M0 480 H1000 M0 560 H1000"/>
+    <path d="M100 0 V600 M200 0 V600 M300 0 V600 M400 0 V600 M500 0 V600 M600 0 V600 M700 0 V600 M800 0 V600 M900 0 V600"/>
+  </g>
+
+  <text x="48" y="58" fill="#e2e8f0" font-size="26" font-weight="700">同一颗电容，热死得快，冷得开不了机</text>
+  <text x="48" y="86" fill="#64748b" font-size="14">安装位置决定它吃的是「高温老化」还是「低温启动延迟」，两个方向都指向它</text>
+
+  <!-- 左：温度-寿命曲线 -->
+  <g>
+    <rect x="48" y="112" width="480" height="320" rx="8" fill="#0d1e35" stroke="#1e3a5f"/>
+    <text x="72" y="142" fill="#94a3b8" font-size="13">电解电容相对寿命 · 温度每升高 10℃ 约减半</text>
+
+    <!-- 网格 -->
+    <g stroke="#1e3a5f" stroke-width="1" opacity="0.55">
+      <path d="M100 390 H500 M100 342 H500 M100 294 H500 M100 246 H500 M100 198 H500 M100 150 H500"/>
+    </g>
+    <g fill="#475569" font-size="10">
+      <text x="76" y="394">1×</text>
+      <text x="76" y="346">2×</text>
+      <text x="76" y="298">4×</text>
+      <text x="76" y="250">8×</text>
+      <text x="76" y="202">16×</text>
+      <text x="76" y="154">32×</text>
+    </g>
+
+    <!-- 面积 -->
+    <path d="M100 150 L167 198 L233 246 L300 294 L367 342 L433 390 L433 390 L100 390 Z" fill="url(#lifeArea)"/>
+    <!-- 曲线 -->
+    <path d="M100 150 L167 198 L233 246 L300 294 L367 342 L433 390" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+    <g fill="#38bdf8">
+      <circle cx="100" cy="150" r="3.5"/>
+      <circle cx="167" cy="198" r="3.5"/>
+      <circle cx="233" cy="246" r="3.5"/>
+      <circle cx="300" cy="294" r="3.5"/>
+      <circle cx="367" cy="342" r="3.5"/>
+      <circle cx="433" cy="390" r="4.5"/>
+    </g>
+
+    <!-- 关键标注 -->
+    <text x="300" y="284" fill="#7dd3fc" font-size="11">65℃ 吊顶密闭</text>
+    <text x="433" y="378" fill="#f97316" font-size="11" text-anchor="end">85℃ 普通品上限</text>
+
+    <!-- 轴 -->
+    <path d="M100 406 H500" stroke="#334155" stroke-width="1"/>
+    <path d="M100 412 V400 M433 412 V400" stroke="#334155" stroke-width="1"/>
+    <g fill="#64748b" font-size="11">
+      <text x="100" y="428" text-anchor="middle">35℃</text>
+      <text x="233" y="428" text-anchor="middle">55℃</text>
+      <text x="367" y="428" text-anchor="middle">75℃</text>
+      <text x="433" y="428" text-anchor="middle">85℃</text>
+    </g>
+    <text x="290" y="452" fill="#64748b" font-size="11" text-anchor="middle">电解电容壳温</text>
+    <text x="290" y="474" fill="#94a3b8" font-size="12" text-anchor="middle">装在密闭筒灯里的电容，寿命是通风位置的四分之一</text>
+  </g>
+
+  <!-- 右：三个位置 -->
+  <g>
+    <rect x="548" y="112" width="404" height="320" rx="8" fill="#0d1e35" stroke="#1e3a5f"/>
+    <text x="572" y="142" fill="#94a3b8" font-size="13">家里几个位置的电容处境</text>
+
+    <!-- 吊顶密闭 -->
+    <text x="572" y="176" fill="#cbd5e1" font-size="13">吊顶内密闭筒灯</text>
+    <rect x="572" y="186" width="356" height="12" rx="6" fill="#111f33"/>
+    <rect x="572" y="186" width="330" height="12" rx="6" fill="url(#hotBar)"/>
+    <text x="912" y="197" fill="#f97316" font-size="11" text-anchor="end">50–65℃</text>
+
+    <!-- 室内常温 -->
+    <text x="572" y="230" fill="#cbd5e1" font-size="13">客厅吸顶灯（有空气流通）</text>
+    <rect x="572" y="240" width="356" height="12" rx="6" fill="#111f33"/>
+    <rect x="572" y="240" width="140" height="12" rx="6" fill="#22c55e"/>
+    <text x="724" y="251" fill="#22c55e" font-size="11">25–35℃</text>
+
+    <!-- 阳台冬季 -->
+    <text x="572" y="284" fill="#cbd5e1" font-size="13">阳台 / 门廊 / 车库</text>
+    <rect x="572" y="294" width="356" height="12" rx="6" fill="#111f33"/>
+    <rect x="572" y="294" width="96" height="12" rx="6" fill="url(#coldBar)"/>
+    <text x="680" y="305" fill="#38bdf8" font-size="11">冬季 -5 ~ 5℃</text>
+
+    <!-- 说明 -->
+    <path d="M572 322 H928" stroke="#1e3a5f"/>
+    <text x="572" y="346" fill="#94a3b8" font-size="12">高温侧：寿命按「每升 10℃ 减半」往下掉</text>
+    <text x="572" y="368" fill="#94a3b8" font-size="12">低温侧：电解液变黏，ESR 涨 3–5 倍</text>
+    <text x="572" y="390" fill="#e2e8f0" font-size="13" font-weight="700">低温不缩短总寿命，但让首次启动变慢</text>
+    <text x="572" y="414" fill="#64748b" font-size="11">所以症状是「第一次慢、之后再开就正常」</text>
+  </g>
+
+  <!-- 底部结论 -->
+  <g>
+    <rect x="48" y="456" width="904" height="100" rx="8" fill="#0f2740" stroke="#38bdf8" stroke-opacity="0.5"/>
+    <text x="72" y="486" fill="#7dd3fc" font-size="14" font-weight="700">同一个零件，两种坏法</text>
+    <text x="72" y="514" fill="#cbd5e1" font-size="13">夏天不通风的吊顶里，它是被热熬老的 —— 表现为越用越暗、开始闪；</text>
+    <text x="72" y="538" fill="#cbd5e1" font-size="13">冬天开得少的阳台灯，它是被冷拖慢的 —— 表现为第一次开灯要等两三秒。</text>
+  </g>
+</svg>

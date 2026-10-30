@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="okG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="badG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="warnG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" fill="#0a1628"/>
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.3">
+    <path d="M0 80 H1000 M0 160 H1000 M0 240 H1000 M0 320 H1000 M0 400 H1000 M0 480 H1000 M0 560 H1000"/>
+    <path d="M100 0 V600 M200 0 V600 M300 0 V600 M400 0 V600 M500 0 V600 M600 0 V600 M700 0 V600 M800 0 V600 M900 0 V600"/>
+  </g>
+
+  <text x="48" y="58" fill="#e2e8f0" font-size="26" font-weight="700">同样是「慢」，先分清是哪一种</text>
+  <text x="48" y="86" fill="#64748b" font-size="14">三种现象的曲线形状完全不同，开关灯两次就能区分</text>
+
+  <!-- 卡片1 软启动 -->
+  <g>
+    <rect x="48" y="112" width="288" height="330" rx="8" fill="#0d1e35" stroke="#1e3a5f"/>
+    <text x="72" y="142" fill="#22c55e" font-size="15" font-weight="700">① 上电软启动 · 正常</text>
+    <rect x="72" y="158" width="240" height="150" rx="4" fill="#081525"/>
+    <path d="M72 288 H312" stroke="#1e3a5f" stroke-dasharray="3 3"/>
+    <path d="M72 288 L112 288 Q120 288 128 220 L312 220" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+    <path d="M72 288 L112 288 Q120 288 128 220 L312 220 L312 288 Z" fill="url(#okG)"/>
+    <text x="136" y="212" fill="#22c55e" font-size="11">0.3–2s 到位</text>
+    <text x="72" y="300" fill="#475569" font-size="10">0s</text>
+    <text x="292" y="300" fill="#475569" font-size="10">5s</text>
+    <text x="72" y="338" fill="#cbd5e1" font-size="13">买来第一天就这样</text>
+    <text x="72" y="362" fill="#cbd5e1" font-size="13">一年后还是这样</text>
+    <text x="72" y="392" fill="#64748b" font-size="12">亮度不打折，不用管</text>
+    <text x="72" y="418" fill="#22c55e" font-size="12">判：设计如此</text>
+  </g>
+
+  <!-- 卡片2 电容老化 -->
+  <g>
+    <rect x="356" y="112" width="288" height="330" rx="8" fill="#0d1e35" stroke="#f97316" stroke-opacity="0.6"/>
+    <text x="380" y="142" fill="#f97316" font-size="15" font-weight="700">② 电解电容老化 · 故障</text>
+    <rect x="380" y="158" width="240" height="150" rx="4" fill="#081525"/>
+    <path d="M380 288 H620" stroke="#1e3a5f" stroke-dasharray="3 3"/>
+    <!-- 带闪动的慢启动曲线 -->
+    <path d="M380 288 L404 288 L412 250 L420 262 L428 214 L436 226 L444 196 L460 200 L472 186 L480 194 L492 182 L620 182" fill="none" stroke="#f97316" stroke-width="2.2"/>
+    <path d="M380 288 L404 288 L412 250 L420 262 L428 214 L436 226 L444 196 L460 200 L620 200 L620 288 Z" fill="url(#badG)" opacity="0.7"/>
+    <text x="470" y="172" fill="#f97316" font-size="11">先闪几下才稳住</text>
+    <text x="380" y="300" fill="#475569" font-size="10">0s</text>
+    <text x="600" y="300" fill="#475569" font-size="10">5s</text>
+    <text x="380" y="338" fill="#cbd5e1" font-size="13">越来越慢：0.5s → 3s</text>
+    <text x="380" y="362" fill="#cbd5e1" font-size="13">伴闪烁、偶尔亮一半</text>
+    <text x="380" y="392" fill="#64748b" font-size="12">冷态慢、热态快</text>
+    <text x="380" y="418" fill="#f97316" font-size="12">判：换驱动，别换灯板</text>
+  </g>
+
+  <!-- 卡片3 开关干扰 -->
+  <g>
+    <rect x="664" y="112" width="288" height="330" rx="8" fill="#0d1e35" stroke="#1e3a5f"/>
+    <text x="688" y="142" fill="#a78bfa" font-size="15" font-weight="700">③ 开关线路干扰 · 可修</text>
+    <rect x="688" y="158" width="240" height="150" rx="4" fill="#081525"/>
+    <path d="M688 288 H928" stroke="#1e3a5f" stroke-dasharray="3 3"/>
+    <path d="M688 288 L700 262 L710 280 L720 240 L730 268 L742 226 L752 254 L764 214 L928 214" fill="none" stroke="#a78bfa" stroke-width="2.2"/>
+    <path d="M688 288 L700 262 L710 280 L720 240 L730 268 L742 226 L752 254 L764 214 L928 214 L928 288 Z" fill="url(#warnG)" opacity="0.7"/>
+    <text x="760" y="204" fill="#a78bfa" font-size="11">上电判断错乱</text>
+    <text x="688" y="300" fill="#475569" font-size="10">0s</text>
+    <text x="908" y="300" fill="#475569" font-size="10">5s</text>
+    <text x="688" y="338" fill="#cbd5e1" font-size="13">智能开关 / 带灯开关</text>
+    <text x="688" y="362" fill="#cbd5e1" font-size="13">单火线取电，关不断</text>
+    <text x="688" y="392" fill="#64748b" font-size="12">关灯后还微亮、微闪</text>
+    <text x="688" y="418" fill="#a78bfa" font-size="12">判：换机械开关验证</text>
+  </g>
+
+  <!-- 底部判断条 -->
+  <g>
+    <rect x="48" y="464" width="904" height="92" rx="8" fill="#0f2740" stroke="#38bdf8" stroke-opacity="0.5"/>
+    <text x="72" y="494" fill="#7dd3fc" font-size="14" font-weight="700">一次动作完成大半诊断</text>
+    <text x="72" y="524" fill="#cbd5e1" font-size="14">关灯静置半小时 → 开灯计时 → 关掉立刻再开：</text>
+    <text x="600" y="524" fill="#22c55e" font-size="14" font-weight="700">秒亮 = 电容冷态问题</text>
+    <text x="72" y="546" fill="#64748b" font-size="12">两次数值一样慢 → 往开关与线路方向查；数值越来越大 → 电容在走下坡，准备换驱动</text>
+  </g>
+</svg>
