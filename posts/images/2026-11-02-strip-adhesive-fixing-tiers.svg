@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="860" viewBox="0 0 1080 860">
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a2b45" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="tier" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#7ec27e"/>
+    </linearGradient>
+    <filter id="glow3"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1080" height="860" fill="#0a1628"/>
+  <rect width="1080" height="860" fill="url(#grid3)"/>
+  <text x="60" y="80" fill="#e2e8f0" font-family="sans-serif" font-size="40" font-weight="bold">固定方式分级：背胶只是"临时定位"</text>
+  <text x="60" y="120" fill="#7c8db0" font-family="sans-serif" font-size="22">可靠程度从下到上递增 —— 场景对号入座</text>
+
+  <!-- pyramid tiers -->
+  <g font-family="sans-serif">
+    <!-- tier 1 -->
+    <rect x="330" y="620" width="420" height="80" rx="10" fill="#1b2a44" stroke="#e05252" stroke-width="2"/>
+    <text x="540" y="654" fill="#e07070" font-size="24" font-weight="bold" text-anchor="middle">L1 背胶直接贴</text>
+    <text x="540" y="684" fill="#aebadb" font-size="19" text-anchor="middle">干燥室内 · 平整柜板 · 短期装饰</text>
+    <!-- tier 2 -->
+    <rect x="270" y="520" width="540" height="80" rx="10" fill="#1b2a44" stroke="#e0a052" stroke-width="2"/>
+    <text x="540" y="554" fill="#f0c070" font-size="24" font-weight="bold" text-anchor="middle">L2 背胶＋底涂剂（如 3M 94）</text>
+    <text x="540" y="584" fill="#aebadb" font-size="19" text-anchor="middle">多孔面（水泥/石膏板/原木）· 低温环境 · 先试小段拉力</text>
+    <!-- tier 3 -->
+    <rect x="210" y="420" width="660" height="80" rx="10" fill="#122c3f" stroke="#22d3ee" stroke-width="2"/>
+    <text x="540" y="454" fill="#9fd8e8" font-size="24" font-weight="bold" text-anchor="middle">L3 铝槽＋卡扣</text>
+    <text x="540" y="484" fill="#aebadb" font-size="19" text-anchor="middle">顶面吊装 · 超 5 米长条 · 灯槽长期点亮 —— 胶只做辅助</text>
+    <!-- tier 4 -->
+    <rect x="150" y="320" width="780" height="80" rx="10" fill="#122c3f" stroke="url(#tier)" stroke-width="3" filter="url(#glow3)"/>
+    <text x="540" y="354" fill="#c7e8d0" font-size="24" font-weight="bold" text-anchor="middle">L4 螺丝 / 铆钉机械固定</text>
+    <text x="540" y="384" fill="#aebadb" font-size="19" text-anchor="middle">户外 · 外立面 · 冷库类极端环境 —— 别赌胶</text>
+  </g>
+
+  <text x="90" y="470" fill="#3b5077" font-family="sans-serif" font-size="20" transform="rotate(-90 90 470)" text-anchor="middle">可靠程度 ↑</text>
+
+  <!-- rescue section -->
+  <text x="60" y="780" fill="#e2e8f0" font-family="sans-serif" font-size="28" font-weight="bold">已经掉了？四步补救</text>
+  <g font-family="sans-serif" font-size="20" fill="#aebadb">
+    <rect x="60" y="705" width="0" height="0" fill="none"/>
+    <text x="60" y="730" fill="#7ec27e" font-weight="bold">①</text><text x="90" y="730">清理旧胶残与灰膜</text>
+    <text x="330" y="730" fill="#7ec27e" font-weight="bold">②</text><text x="360" y="730">基层冷就先回温</text>
+    <text x="590" y="730" fill="#7ec27e" font-weight="bold">③</text><text x="620" y="730">重新清洁＋补新 VHB 胶</text>
+    <text x="60" y="830" fill="#e07070" font-weight="bold">④</text><text x="90" y="830" fill="#e07070">同位置第二次掉 → 直接上加铝槽或卡扣，机械固定才是终结方案</text>
+    <text x="620" y="830" fill="#3b5077">（同一基层不适合背胶的信号）</text>
+  </g>
+</svg>

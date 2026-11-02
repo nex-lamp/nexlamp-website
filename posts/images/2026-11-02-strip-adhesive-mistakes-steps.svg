@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="900" viewBox="0 0 1080 900">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a2b45" stroke-width="1"/>
+    </pattern>
+    <filter id="glow2"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1080" height="900" fill="#0a1628"/>
+  <rect width="1080" height="900" fill="url(#grid2)"/>
+  <text x="60" y="80" fill="#e2e8f0" font-family="sans-serif" font-size="40" font-weight="bold">五个翻车点 × 四步正确姿势</text>
+  <text x="60" y="120" fill="#7c8db0" font-family="sans-serif" font-size="22">左边自查：你踩了哪条；右边照做：一次贴牢</text>
+
+  <!-- left column: 5 mistakes -->
+  <text x="60" y="180" fill="#e05252" font-family="sans-serif" font-size="26" font-weight="bold">❌ 常见翻车点</text>
+  <g font-family="sans-serif">
+    <rect x="60" y="200" width="470" height="86" rx="10" fill="#1b2a44" stroke="#e05252" stroke-width="1.5"/>
+    <text x="85" y="236" fill="#e07070" font-size="22" font-weight="bold">① 低温施工（&lt;10℃）</text>
+    <text x="85" y="268" fill="#aebadb" font-size="19">胶变硬假粘 → 改天贴或先预热表面</text>
+
+    <rect x="60" y="300" width="470" height="86" rx="10" fill="#1b2a44" stroke="#e05252" stroke-width="1.5"/>
+    <text x="85" y="336" fill="#e07070" font-size="22" font-weight="bold">② 只用湿布擦表面</text>
+    <text x="85" y="368" fill="#aebadb" font-size="19">油膜残留 → 酒精擦拭，等 3~5 分钟挥发</text>
+
+    <rect x="60" y="400" width="470" height="86" rx="10" fill="#1b2a44" stroke="#e05252" stroke-width="1.5"/>
+    <text x="85" y="436" fill="#e07070" font-size="22" font-weight="bold">③ 直接贴乳胶漆墙 / 石膏板</text>
+    <text x="85" y="468" fill="#aebadb" font-size="19">基层掉粉 → 铝槽螺丝，或先刷底涂剂</text>
+
+    <rect x="60" y="500" width="470" height="86" rx="10" fill="#1b2a44" stroke="#e05252" stroke-width="1.5"/>
+    <text x="85" y="536" fill="#e07070" font-size="22" font-weight="bold">④ 撕开离型纸慢慢对位</text>
+    <text x="85" y="568" fill="#aebadb" font-size="19">胶面暴露沾灰 → 边撕边贴，一次到位</text>
+
+    <rect x="60" y="600" width="470" height="86" rx="10" fill="#1b2a44" stroke="#e05252" stroke-width="1.5"/>
+    <text x="85" y="636" fill="#e07070" font-size="22" font-weight="bold">⑤ 贴完马上挂铝槽、压重</text>
+    <text x="85" y="668" fill="#aebadb" font-size="19">固化期被拉扯 → 24h 内别加载</text>
+  </g>
+
+  <!-- right column: 4 steps -->
+  <text x="570" y="180" fill="#7ec27e" font-family="sans-serif" font-size="26" font-weight="bold">✅ 冬季施工四步走</text>
+  <g font-family="sans-serif">
+    <rect x="570" y="200" width="460" height="110" rx="10" fill="#122c3f" stroke="#7ec27e" stroke-width="2" filter="url(#glow2)"/>
+    <circle cx="615" cy="255" r="26" fill="#0a1628" stroke="#7ec27e" stroke-width="2"/>
+    <text x="615" y="264" fill="#7ec27e" font-size="26" font-weight="bold" text-anchor="middle">1</text>
+    <text x="660" y="240" fill="#c7e8d0" font-size="23" font-weight="bold">提温</text>
+    <text x="660" y="272" fill="#aebadb" font-size="19">表面吹风机加温到约 20℃</text>
+    <text x="660" y="298" fill="#aebadb" font-size="19">灯带整卷先回暖气房，别冷拆现贴</text>
+
+    <rect x="570" y="330" width="460" height="110" rx="10" fill="#122c3f" stroke="#7ec27e" stroke-width="2"/>
+    <circle cx="615" cy="385" r="26" fill="#0a1628" stroke="#7ec27e" stroke-width="2"/>
+    <text x="615" y="394" fill="#7ec27e" font-size="26" font-weight="bold" text-anchor="middle">2</text>
+    <text x="660" y="370" fill="#c7e8d0" font-size="23" font-weight="bold">清洁</text>
+    <text x="660" y="402" fill="#aebadb" font-size="19">异丙醇去油去蜡去粉尘</text>
+    <text x="660" y="428" fill="#aebadb" font-size="19">金属面确认无冷凝水，保持干燥</text>
+
+    <rect x="570" y="460" width="460" height="110" rx="10" fill="#122c3f" stroke="#7ec27e" stroke-width="2"/>
+    <circle cx="615" cy="515" r="26" fill="#0a1628" stroke="#7ec27e" stroke-width="2"/>
+    <text x="615" y="524" fill="#7ec27e" font-size="26" font-weight="bold" text-anchor="middle">3</text>
+    <text x="660" y="500" fill="#c7e8d0" font-size="23" font-weight="bold">按压</text>
+    <text x="660" y="532" fill="#aebadb" font-size="19">边撕边贴，每段压实 30 秒以上</text>
+    <text x="660" y="558" fill="#aebadb" font-size="19">压力越大，润湿越充分</text>
+
+    <rect x="570" y="590" width="460" height="110" rx="10" fill="#122c3f" stroke="#7ec27e" stroke-width="2"/>
+    <circle cx="615" cy="645" r="26" fill="#0a1628" stroke="#7ec27e" stroke-width="2"/>
+    <text x="615" y="654" fill="#7ec27e" font-size="26" font-weight="bold" text-anchor="middle">4</text>
+    <text x="660" y="630" fill="#c7e8d0" font-size="23" font-weight="bold">静养</text>
+    <text x="660" y="662" fill="#aebadb" font-size="19">24~72h 固化期内不加载、不折腾</text>
+    <text x="660" y="688" fill="#aebadb" font-size="19">最终强度在这段时间"长"出来</text>
+  </g>
+
+  <rect x="60" y="730" width="970" height="90" rx="10" fill="#132c47" stroke="#e0a052" stroke-width="1.5"/>
+  <text x="545" y="768" fill="#f0d0a0" font-family="sans-serif" font-size="22" text-anchor="middle" font-weight="bold">⚠ 别拿热风枪对背胶猛吹：局部高温破坏胶体结构，加速老化</text>
+  <text x="545" y="800" fill="#c9b896" font-family="sans-serif" font-size="20" text-anchor="middle">要加热，加热的是安装表面（贴之前），不是背胶本身（贴之后）</text>
+</svg>
