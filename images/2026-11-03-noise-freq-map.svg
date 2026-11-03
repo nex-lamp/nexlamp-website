@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="720" viewBox="0 0 1080 720">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a2b45" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="hum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.35"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="buzz" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e0a052" stop-opacity="0.35"/><stop offset="1" stop-color="#e0a052" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="whine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e05252" stop-opacity="0.5"/><stop offset="1" stop-color="#e05252"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1080" height="720" fill="#0a1628"/>
+  <rect width="1080" height="720" fill="url(#grid)"/>
+
+  <text x="60" y="76" fill="#e2e8f0" font-family="sans-serif" font-size="38" font-weight="bold">三种异响，三套病因</text>
+  <text x="60" y="116" fill="#7c8db0" font-family="sans-serif" font-size="21">听清频率再判断 —— 低频嗡是磁性元件在抖，高频尖啸是开关频率没抬高</text>
+
+  <!-- axis -->
+  <line x1="100" y1="620" x2="980" y2="620" stroke="#3b5077" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="18" fill="#5b6f96" text-anchor="middle">
+    <text x="100" y="650">20Hz</text>
+    <text x="217" y="650">50</text>
+    <text x="393" y="650">200</text>
+    <text x="598" y="650">1k</text>
+    <text x="803" y="650">5k</text>
+    <text x="943" y="650">15k</text>
+    <text x="980" y="650">20k</text>
+  </g>
+  <text x="540" y="690" fill="#7c8db0" font-family="sans-serif" font-size="19" text-anchor="middle">频率（对数）　人耳可闻上限约 20kHz</text>
+
+  <!-- row labels -->
+  <g font-family="sans-serif" text-anchor="end" font-size="22" fill="#c8d6e8" font-weight="bold">
+    <text x="88" y="212">嗡嗡</text>
+    <text x="88" y="342">滋滋</text>
+    <text x="88" y="472">尖啸</text>
+  </g>
+
+  <!-- band 1 hum 50-200 -->
+  <rect x="217" y="178" width="176" height="56" rx="6" fill="url(#hum)" filter="url(#glow)"/>
+  <text x="410" y="196" fill="#22d3ee" font-family="sans-serif" font-size="21" font-weight="bold">50~200Hz　低沉、闷，像冰箱</text>
+  <text x="410" y="224" fill="#7c8db0" font-family="sans-serif" font-size="18">病根：铁芯磁致伸缩，跟着 100Hz 工频纹波胀缩</text>
+
+  <!-- band 2 buzz 100-5000 -->
+  <rect x="305" y="308" width="498" height="56" rx="6" fill="url(#buzz)"/>
+  <text x="305" y="292" fill="#e0a052" font-family="sans-serif" font-size="21" font-weight="bold">100Hz~5kHz　细碎、像蚊子</text>
+  <text x="305" y="392" fill="#7c8db0" font-family="sans-serif" font-size="18">病根：输出纹波大 / 线圈绕制松 / MLCC 陶瓷电容振动</text>
+
+  <!-- band 3 whine 15k-20k -->
+  <rect x="943" y="438" width="37" height="56" rx="4" fill="url(#whine)" filter="url(#glow)"/>
+  <text x="620" y="452" fill="#e05252" font-family="sans-serif" font-size="21" font-weight="bold" text-anchor="end">15~20kHz　尖、刺</text>
+  <text x="620" y="480" fill="#7c8db0" font-family="sans-serif" font-size="18" text-anchor="end">病根：开关频率或 PWM 调光频率落进可闻段</text>
+  <line x1="700" y1="462" x2="935" y2="466" stroke="#e05252" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- pwm threshold marker -->
+  <line x1="863" y1="170" x2="863" y2="600" stroke="#7ec27e" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <text x="858" y="590" fill="#7ec27e" font-family="sans-serif" font-size="17" text-anchor="end">PWM 应抬到 8kHz 以上</text>
+
+  <!-- note box -->
+  <rect x="60" y="530" width="330" height="60" rx="8" fill="#101f36" stroke="#2a3f5f"/>
+  <text x="78" y="556" fill="#e2e8f0" font-family="sans-serif" font-size="18">开关频率本有 50~150kHz，</text>
+  <text x="78" y="578" fill="#7c8db0" font-family="sans-serif" font-size="17">远超 20kHz，理论上不该被听到</text>
+
+  <text x="1020" y="700" fill="#3b5077" font-family="sans-serif" font-size="15" text-anchor="end">耐利普科技 · 驱动电源技术笔记</text>
+</svg>

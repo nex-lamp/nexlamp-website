@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>Your New LED Lamp Buzzes - and It's Almost Never the LED | 耐利普科技技术博客</title>
+    <meta name="description" content="耐利普科技技术文章">
+    <meta name="keywords" content="智能照明,LED驱动电源">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/your-new-led-lamp-buzzes-and-its-almost-never-the-led.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Your New LED Lamp Buzzes - and It's Almost Never the LED | 耐利普科技">
+    <meta property="og:description" content="耐利普科技技术文章">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/your-new-led-lamp-buzzes-and-its-almost-never-the-led.html">
+    <meta property="og:image" content="https://www.nexlamp.com/images/blog-default.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-11-03">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="技术文章">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Your New LED Lamp Buzzes - and It's Almost Never the LED",
+      "description": "耐利普科技技术文章",
+      "datePublished": "2026-11-03",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/your-new-led-lamp-buzzes-and-its-almost-never-the-led.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Your New LED Lamp Buzzes - and It's Almost Never the LED",
+          "item": "https://www.nexlamp.com/dist/blog/your-new-led-lamp-buzzes-and-its-almost-never-the-led.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">Your New LED Lamp Buzzes - and It's Almost Never the LED</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>Your New LED Lamp Buzzes - and It's Almost Never the LED</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年11月3日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 技术文章</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            
+                            <p>Your New LED Lamp Buzzes — and It&#39;s Almost Never the LED</p>
+<p>Every November, right after Double 11, my inbox turns into a noise-complaint hotline. This year the flood started about two weeks ago, and the question is almost never about wiring anymore. It&#39;s this one: &quot;I hung the lamp last night and it won&#39;t stop humming. Is it defective? Should I return it?&quot;</p>
+<p>I&#39;ve spent twenty years in the lighting industry, most of it on the driver side of the business, so I&#39;ve heard this a few thousand times. Here&#39;s the short answer I give everyone.</p>
+<p>The LED chip cannot make noise.</p>
+<p>It&#39;s a slab of semiconductor. Current in, photons out. There is no moving part anywhere inside it. Every sound coming out of that fixture originates in the one component you never look at — the driver, that small box tucked into the ceiling plate or the junction box.</p>
+<p>And inside that box, things genuinely move. Transformers, inductors, capacitors. When current flows, the magnetic material expands and contracts by microns, thousands of times a second. That&#39;s not a defect in itself. It&#39;s physics.</p>
+<p>The good news: because the mechanism is physical, the noise is diagnosable. Describe the sound accurately and you can usually decide whether to return the lamp without ever opening it.</p>
+<h2>Three sounds, three different diseases</h2>
+<table>
+<thead>
+<tr>
+<th>What you hear</th>
+<th>Frequency</th>
+<th>Character</th>
+<th>Usual source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hum</td>
+<td>50–200 Hz</td>
+<td>Low, dull, fridge-like</td>
+<td>Core magnetostriction, oscillating with 100 Hz mains ripple</td>
+</tr>
+<tr>
+<td>Buzzing / crackle</td>
+<td>100 Hz – 5 kHz</td>
+<td>Fine, mosquito-like</td>
+<td>High output ripple, loose winding, vibrating MLCC capacitors</td>
+</tr>
+<tr>
+<td>Squeal / whistle</td>
+<td>15–20 kHz</td>
+<td>Sharp and piercing; young ears hear it, older ears don&#39;t</td>
+<td>Switching or PWM dimming frequency landing inside the audible band</td>
+</tr>
+</tbody></table>
+<p>Once you know which row you&#39;re in, the rest of the diagnosis is mostly mechanical.</p>
+<h2>Root cause 1: the core is breathing</h2>
+<p>The transformers and inductors in a driver use ferrite cores, and ferrite has a property called magnetostriction — put it in a magnetic field and it changes dimension very slightly.</p>
+<p>A switching supply runs somewhere in the 50–150 kHz range, far above the 20 kHz ceiling of human hearing. In theory you should hear nothing at all. And most of the time you don&#39;t.</p>
+<p>The problem is the second-order ripple. A single-stage PFC design paired with an undersized output capacitor leaves a 100 Hz component riding on the output current. That ripple flows through the output inductor, so the core expands and contracts at 100 Hz — and 100 Hz sits right in the most sensitive region of human hearing. What reaches your ear is a low, steady &quot;hmmmmm.&quot;</p>
+<p>This also explains the classic complaint: &quot;I can&#39;t hear it during the day, but at night it&#39;s unbearable.&quot;</p>
+<p>The sound never changed. During the day it&#39;s buried under ambient noise. Close the windows in winter, wait until the house goes quiet, and the masking effect disappears. The hum was always there. You just started hearing it.</p>
+<h2>Root cause 2: the housing became a speaker</h2>
+<p>Here&#39;s a pattern I see constantly: the same driver measures perfectly quiet on the bench, then howls the moment it&#39;s installed in the fixture.</p>
+<p>That&#39;s mechanical resonance, not electrical. The vibration energy is tiny, but the aluminum substrate, the thin-walled housing, and the mounting bracket each have their own natural frequency. When the excitation hits one of them, amplitude gets multiplied and the whole housing turns into a speaker cone.</p>
+<p>The test is simple. Cut the power, pull the driver out of the fixture, suspend it in free air, and power it back up.</p>
+<p>Quiet when suspended, loud when bolted back in? That&#39;s structural resonance. A gasket or some damping compound between the driver and the housing usually fixes it. You don&#39;t need to return the lamp.</p>
+<h2>Root cause 3: dimming dragged the frequency into the audio band</h2>
+<p>Dimmable fixtures fail this test far more often, for three separate reasons.</p>
+<p>PWM frequency set too low. If the driver switches below 20 kHz, the current is being chopped at an audible rate, and the pitch will actually shift as you change brightness. Industry practice is to push the PWM frequency above 8 kHz so it climbs out of the range where the ear is most sensitive.</p>
+<p>Mismatched dimmer and driver. Old triac dimmers were designed for incandescent loads. They dim by chopping the AC waveform. An LED driver that can&#39;t interpret that chopped waveform will buzz, flicker, and refuse to dim smoothly.</p>
+<p>Load too far below the dimmer&#39;s minimum. Dimmers specify a minimum load. Swap incandescent for LED and the wattage can fall to a tenth of what the dimmer expects, so it operates in a non-linear region and generates garbage on the line.</p>
+<p>The signature symptom of all three: loudest at mid-dim, quiet at full brightness. At mid-range duty cycle the current pulses are at their steepest.</p>
+<p>Load matters too. Many drivers are essentially silent from 80% to 100% load and start signing below 20%. Noise has a load curve. That&#39;s why two identical lamps in the same room can behave completely differently.</p>
+<h2>The four-step check you can do without a multimeter</h2>
+<p>Step one: locate by ear. Turn off every other appliance in the room and run only this fixture. Is the sound coming from the driver box in the ceiling plate, or from the junction box, or from the switch panel? Driver means driver problem. Junction box means wiring problem.</p>
+<p>Step two: swap sockets. If the noise follows the lamp, it&#39;s the integrated driver. If the new location is silent, the problem is the original socket or circuit.</p>
+<p>Step three: bypass the dimmer. Wire the fixture to a plain switch. If the noise disappears, you have a compatibility problem, and the fix is a different dimmer.</p>
+<p>Step four: look for companion symptoms.</p>
+<table>
+<thead>
+<tr>
+<th>What you observe</th>
+<th>Verdict</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Faint hum, steady volume, no flicker, housing at room temperature</td>
+<td>Normal electromagnetic vibration</td>
+<td>Nothing to fix</td>
+</tr>
+<tr>
+<td>Volume rising and falling, plus flicker and noticeable heat</td>
+<td>Unstable driver, genuine fault</td>
+<td>Stop using it, file a warranty claim</td>
+</tr>
+<tr>
+<td>Sound at the junction box, burning smell</td>
+<td>Loose terminal arcing — a real safety hazard</td>
+<td>Cut power now, call an electrician</td>
+</tr>
+<tr>
+<td>Sound changes with dim level, gone at full brightness</td>
+<td>Dimmer compatibility</td>
+<td>Replace the dimmer</td>
+</tr>
+</tbody></table>
+<p>That third row deserves its own paragraph. A terminal that was never tightened, or oxidized wire, produces tiny arcs under high current. It isn&#39;t just noise. Arc heating burns through insulation. If you smell something burning, kill the breaker before you do anything else.</p>
+<h2>If you do want a return, write it like an engineer</h2>
+<p>Most returns stall at &quot;unit tested, functioning normally,&quot; because support is checking whether the lamp lights up. Give them something reproducible instead.</p>
+<p>Describe frequency, not adjectives. &quot;In a quiet room at night, a continuous low-frequency hum is audible at one meter&quot; beats &quot;it&#39;s really loud.&quot;</p>
+<p>Describe the operating condition. &quot;Most pronounced between 30% and 50% dim, absent at full brightness.&quot; That&#39;s a compatibility statement, not a subjective impression.</p>
+<p>Give them a control. &quot;A second unit of the same model on the same circuit is silent; after swapping positions, the noise follows the lamp.&quot;</p>
+<p>For context, the quiet-operation threshold used by programs like ENERGY STAR is roughly 30 dB at one meter. That&#39;s a number you can cite.</p>
+<h2>Four questions worth asking before you buy</h2>
+<p>Noise performance is essentially locked in at the factory. It is not something you can fix after the fact, so ask before you pay.</p>
+<p>Is the driver potted? Epoxy or silicone fill does two things at once — it damps coil vibration and it blocks the path into the housing.</p>
+<p>What dimming protocol does it use? 0-10V and DALI are inherently cleaner than triac phase-cut.</p>
+<p>Can the driver be replaced on its own? On an integrated fixture, a failed driver means a new fixture.</p>
+<p>Is the housing a thin-wall spun or drawn part? Thinner walls resonate more easily.</p>
+<h2>Two questions I get constantly</h2>
+<p>Q: The lamp is brand new and already humming. Is it refurbished stock?</p>
+<p>A: Not necessarily. A faint hum on a new fixture is within normal engineering range. What matters is whether the volume is stable, and whether flicker or heat comes with it.</p>
+<p>Q: If the driver is potted, is it guaranteed silent?</p>
+<p>A: No. Potting addresses vibration transmission and housing resonance. If the ripple is large, or the dimming frequency sits in the audio band, you&#39;ll still get noise — it just becomes duller and quieter.</p>
+<h2>The one-line version</h2>
+<p>The lamp isn&#39;t noisy because of the LED. It&#39;s noisy because a handful of magnetic and capacitive components inside the driver are vibrating, and something in the fixture is amplifying them.</p>
+<p>Diagnose by frequency first. Then run the four steps with the power off. Then check for flicker and heat. Flicker plus heat means a fault. Neither means a trade-off.</p>
+<p>Your lamp arrived two weeks ago and it&#39;s buzzing. Don&#39;t rush the return label. Ten minutes of careful listening will tell you more than the product page ever will.</p>
+<hr>
+<p>Tags: lighting, hardware, smarthome, diy</p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>

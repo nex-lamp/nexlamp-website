@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a2b45" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="okg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#7ec27e"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1080" height="760" fill="#0a1628"/>
+  <rect width="1080" height="760" fill="url(#grid)"/>
+
+  <text x="60" y="74" fill="#e2e8f0" font-family="sans-serif" font-size="38" font-weight="bold">四步断电自查　与　危险分界线</text>
+  <text x="60" y="112" fill="#7c8db0" font-family="sans-serif" font-size="21">不用万用表，先听位置、再换灯座、再断调光，最后看有没有伴生症状</text>
+
+  <!-- steps 1-3 -->
+  <g font-family="sans-serif">
+    <rect x="60" y="146" width="300" height="112" rx="10" fill="#101f36" stroke="#2a3f5f"/>
+    <circle cx="96" cy="182" r="20" fill="#22d3ee"/>
+    <text x="96" y="190" fill="#0a1628" font-size="20" font-weight="bold" text-anchor="middle">1</text>
+    <text x="128" y="190" fill="#e2e8f0" font-size="22" font-weight="bold">贴耳定位</text>
+    <text x="80" y="220" fill="#8fa3c0" font-size="17">关掉其他电器，只开这一盏</text>
+    <text x="80" y="244" fill="#8fa3c0" font-size="17">驱动盒响 vs 接线盒响，性质不同</text>
+
+    <rect x="390" y="146" width="300" height="112" rx="10" fill="#101f36" stroke="#2a3f5f"/>
+    <circle cx="426" cy="182" r="20" fill="#22d3ee"/>
+    <text x="426" y="190" fill="#0a1628" font-size="20" font-weight="bold" text-anchor="middle">2</text>
+    <text x="458" y="190" fill="#e2e8f0" font-size="22" font-weight="bold">换灯座</text>
+    <text x="410" y="220" fill="#8fa3c0" font-size="17">声音跟着灯泡走＝灯泡驱动问题</text>
+    <text x="410" y="244" fill="#8fa3c0" font-size="17">换位置就不响＝灯座或回路问题</text>
+
+    <rect x="720" y="146" width="300" height="112" rx="10" fill="#101f36" stroke="#2a3f5f"/>
+    <circle cx="756" cy="182" r="20" fill="#22d3ee"/>
+    <text x="756" y="190" fill="#0a1628" font-size="20" font-weight="bold" text-anchor="middle">3</text>
+    <text x="788" y="190" fill="#e2e8f0" font-size="22" font-weight="bold">断开调光</text>
+    <text x="740" y="220" fill="#8fa3c0" font-size="17">旁路成普通开关再试</text>
+    <text x="740" y="244" fill="#8fa3c0" font-size="17">声音消失＝调光兼容问题</text>
+  </g>
+
+  <!-- step 4 divider -->
+  <text x="60" y="308" fill="#e2e8f0" font-family="sans-serif" font-size="24" font-weight="bold">4　看伴随症状：频闪和温升，才是判断故障的硬指标</text>
+
+  <!-- left: harmless -->
+  <rect x="60" y="330" width="470" height="330" rx="12" fill="#0f2330" stroke="#7ec27e" stroke-width="2" filter="url(#glow)"/>
+  <text x="88" y="372" fill="#7ec27e" font-family="sans-serif" font-size="26" font-weight="bold">可以忍：不是故障</text>
+  <line x1="88" y1="392" x2="502" y2="392" stroke="#2a4a44" stroke-width="1.5"/>
+  <g font-family="sans-serif" font-size="19" fill="#c8d6e8">
+    <text x="88" y="428">· 只有轻微嗡嗡，音量稳定</text>
+    <text x="88" y="464">· 灯不闪，亮度正常</text>
+    <text x="88" y="500">· 外壳摸着是常温</text>
+    <text x="88" y="536">· 白天听不见，夜里才察觉</text>
+  </g>
+  <rect x="88" y="566" width="414" height="66" rx="8" fill="#122c3f"/>
+  <text x="104" y="594" fill="#7ec27e" font-family="sans-serif" font-size="18">属磁性元件的正常机械振动，</text>
+  <text x="104" y="618" fill="#8fa3c0" font-family="sans-serif" font-size="17">不必处理；介意就换灌封款驱动</text>
+
+  <!-- right: dangerous -->
+  <rect x="550" y="330" width="470" height="330" rx="12" fill="#2a1420" stroke="#e05252" stroke-width="2" filter="url(#glow)"/>
+  <text x="578" y="372" fill="#e05252" font-family="sans-serif" font-size="26" font-weight="bold">要处理：故障或隐患</text>
+  <line x1="578" y1="392" x2="992" y2="392" stroke="#5c2a35" stroke-width="1.5"/>
+  <g font-family="sans-serif" font-size="19" fill="#e8d0d4">
+    <text x="578" y="428">· 声音忽大忽小，伴随频闪</text>
+    <text x="578" y="464">· 外壳明显发热，有异味</text>
+    <text x="578" y="500">· 声音在接线盒位置，有焦糊味</text>
+    <text x="578" y="536">· 调到某档就响，全亮才安静</text>
+  </g>
+  <rect x="578" y="566" width="414" height="66" rx="8" fill="#3a1a22"/>
+  <text x="594" y="594" fill="#e05252" font-family="sans-serif" font-size="18">前两条走售后；第三条立即拉闸，</text>
+  <text x="594" y="618" fill="#d4a8ae" font-family="sans-serif" font-size="17">那是端子打火，不是换灯能解决的</text>
+
+  <text x="1020" y="716" fill="#3b5077" font-family="sans-serif" font-size="15" text-anchor="end">所有拆装动作必须先在配电箱断电</text>
+</svg>
