@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1080" height="1440" fill="url(#bg)"/>
+  <g stroke="#12294a" stroke-width="1">
+    <path d="M0 120H1080M0 360H1080M0 600H1080M0 840H1080M0 1080H1080M0 1320H1080"/>
+    <path d="M135 0V1440M315 0V1440M495 0V1440M675 0V1440M855 0V1440"/>
+  </g>
+  <text x="540" y="110" text-anchor="middle" fill="#7ec8ff" font-size="58" font-weight="bold">断电那一秒，两条链路见分晓</text>
+  <text x="540" y="165" text-anchor="middle" fill="#5a7ba6" font-size="28">WiFi 版 vs 蓝牙 Mesh 版 · 恢复供电后发生了什么</text>
+
+  <!-- WiFi column -->
+  <rect x="60" y="220" width="440" height="1080" rx="24" fill="#0d1b30" stroke="#e05555" stroke-width="2"/>
+  <text x="280" y="290" text-anchor="middle" fill="#ff8a8a" font-size="40" font-weight="bold">WiFi 版</text>
+  <circle cx="280" cy="380" r="46" fill="none" stroke="#e05555" stroke-width="3" filter="url(#glow)"/>
+  <text x="280" y="394" text-anchor="middle" fill="#ff8a8a" font-size="30">⚡灯</text>
+  <g fill="none" stroke="#e05555" stroke-width="2.5">
+    <path d="M280 426 V500 H150 V580"/>
+    <path d="M280 426 V500 H280 V580"/>
+    <path d="M280 426 V500 H410 V580"/>
+  </g>
+  <g font-size="24" fill="#ffb3b3">
+    <rect x="70" y="580" width="110" height="72" rx="12" fill="#132741" stroke="#e05555"/><text x="125" y="610" text-anchor="middle">领地址</text><text x="125" y="640" text-anchor="middle" fill="#5a7ba6" font-size="18">DHCP</text>
+    <rect x="200" y="580" width="110" height="72" rx="12" fill="#132741" stroke="#e05555"/><text x="255" y="610" text-anchor="middle">找外网</text><text x="255" y="640" text-anchor="middle" fill="#5a7ba6" font-size="18">uplink</text>
+    <rect x="330" y="580" width="110" height="72" rx="12" fill="#132741" stroke="#e05555"/><text x="385" y="610" text-anchor="middle">连云端</text><text x="385" y="640" text-anchor="middle" fill="#5a7ba6" font-size="18">server</text>
+  </g>
+  <rect x="70" y="690" width="300" height="60" rx="12" fill="#132741" stroke="#e05555"/>
+  <text x="220" y="728" text-anchor="middle" fill="#ffb3b3" font-size="24">完成登记 → 才算"在线"</text>
+  <text x="280" y="800" text-anchor="middle" fill="#ff8a8a" font-size="26" font-weight="bold">上电 ≠ 在线</text>
+  <text x="280" y="846" text-anchor="middle" fill="#c8d6ea" font-size="22">断电恢复那一刻全家设备重走一趟</text>
+  <text x="280" y="884" text-anchor="middle" fill="#c8d6ea" font-size="22">路由器一挤，掉线几分钟是常事</text>
+  <text x="280" y="922" text-anchor="middle" fill="#c8d6ea" font-size="22">有时还得重新配网</text>
+  <rect x="100" y="970" width="360" height="290" rx="16" fill="#0a1424" stroke="#3a2a2a"/>
+  <text x="280" y="1020" text-anchor="middle" fill="#ff8a8a" font-size="24" font-weight="bold">后果</text>
+  <text x="280" y="1070" text-anchor="middle" fill="#c8d6ea" font-size="22">自动化整条断在这儿</text>
+  <text x="280" y="1112" text-anchor="middle" fill="#c8d6ea" font-size="22">断网基本瘫</text>
+  <text x="280" y="1154" text-anchor="middle" fill="#c8d6ea" font-size="22">待机约 2W（Mesh 的 10 倍）</text>
+  <text x="280" y="1196" text-anchor="middle" fill="#c8d6ea" font-size="22">路由带机 20~30 台到极限</text>
+  <text x="280" y="1238" text-anchor="middle" fill="#5a7ba6" font-size="20">适合：单独用、不联动的位置</text>
+
+  <!-- Mesh column -->
+  <rect x="580" y="220" width="440" height="1080" rx="24" fill="#0d1b30" stroke="#3fd08a" stroke-width="2"/>
+  <text x="800" y="290" text-anchor="middle" fill="#6fe3ab" font-size="40" font-weight="bold">蓝牙 Mesh 版</text>
+  <circle cx="800" cy="380" r="46" fill="none" stroke="#3fd08a" stroke-width="3" filter="url(#glow)"/>
+  <text x="800" y="394" text-anchor="middle" fill="#6fe3ab" font-size="30">💡灯</text>
+  <g fill="none" stroke="#3fd08a" stroke-width="2.5">
+    <path d="M800 426 V500 H640 V560"/>
+    <path d="M800 426 V500 H960 V560"/>
+  </g>
+  <circle cx="640" cy="500" r="10" fill="#3fd08a"/><circle cx="960" cy="500" r="10" fill="#3fd08a"/>
+  <rect x="560" y="560" width="160" height="72" rx="12" fill="#132741" stroke="#3fd08a"/>
+  <text x="640" y="590" text-anchor="middle" fill="#6fe3ab" font-size="24">网关（本地）</text><text x="640" y="620" text-anchor="middle" fill="#5a7ba6" font-size="18">局域网执行</text>
+  <rect x="880" y="560" width="160" height="72" rx="12" fill="#132741" stroke="#3fd08a"/>
+  <text x="960" y="590" text-anchor="middle" fill="#6fe3ab" font-size="24">相邻灯接力</text><text x="960" y="620" text-anchor="middle" fill="#5a7ba6" font-size="18">mesh relay</text>
+  <rect x="640" y="690" width="320" height="60" rx="12" fill="#132741" stroke="#3fd08a"/>
+  <text x="800" y="728" text-anchor="middle" fill="#6fe3ab" font-size="24">指令不出这个门</text>
+  <text x="800" y="800" text-anchor="middle" fill="#6fe3ab" font-size="26" font-weight="bold">断电恢复 · 本地照常</text>
+  <text x="800" y="846" text-anchor="middle" fill="#c8d6ea" font-size="22">场景存在网关本地</text>
+  <text x="800" y="884" text-anchor="middle" fill="#c8d6ea" font-size="22">配网 1 秒内 · 响应 100 毫秒内</text>
+  <text x="800" y="922" text-anchor="middle" fill="#c8d6ea" font-size="22">（Mesh 2.0 新模组特性）</text>
+  <rect x="620" y="970" width="360" height="290" rx="16" fill="#0a1424" stroke="#1e3a2e"/>
+  <text x="800" y="1020" text-anchor="middle" fill="#6fe3ab" font-size="24" font-weight="bold">优势</text>
+  <text x="800" y="1070" text-anchor="middle" fill="#c8d6ea" font-size="22">配中枢网关可本地自动化</text>
+  <text x="800" y="1112" text-anchor="middle" fill="#c8d6ea" font-size="22">待机约 0.2W，不占路由通道</text>
+  <text x="800" y="1154" text-anchor="middle" fill="#c8d6ea" font-size="22">1.0 不能升 2.0，只能换硬件</text>
+  <text x="800" y="1196" text-anchor="middle" fill="#c8d6ea" font-size="22">装吊顶前认准 2.0</text>
+  <text x="800" y="1238" text-anchor="middle" fill="#5a7ba6" font-size="20">适合：全屋智能 · 要联动的位置</text>
+</svg>

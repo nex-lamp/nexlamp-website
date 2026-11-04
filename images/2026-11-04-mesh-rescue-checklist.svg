@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1440" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#0e1f38"/>
+    </linearGradient>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1080" height="1440" fill="url(#bg3)"/>
+  <g stroke="#12294a" stroke-width="1">
+    <path d="M0 140H1080M0 440H1080M0 760H1080M0 1080H1080"/>
+    <path d="M180 0V1440M360 0V1440M540 0V1440M720 0V1440M900 0V1440"/>
+  </g>
+  <text x="540" y="105" text-anchor="middle" fill="#7ec8ff" font-size="56" font-weight="bold">买错了？三条补救不拆吊顶</text>
+  <text x="540" y="158" text-anchor="middle" fill="#5a7ba6" font-size="28">拆吊顶重开孔的代价，远大于问题本身</text>
+
+  <!-- Rescue 1 -->
+  <rect x="70" y="200" width="940" height="180" rx="20" fill="#0d1b30" stroke="#3fd08a" stroke-width="2"/>
+  <circle cx="150" cy="290" r="36" fill="#132741" stroke="#3fd08a" stroke-width="2" filter="url(#glow3)"/>
+  <text x="150" y="302" text-anchor="middle" fill="#6fe3ab" font-size="34" font-weight="bold">1</text>
+  <text x="210" y="262" fill="#6fe3ab" font-size="30" font-weight="bold">让灯永远带电</text>
+  <text x="210" y="308" fill="#c8d6ea" font-size="24">掉线的根源是断电后要重新连云端，那就不让它断电</text>
+  <text x="210" y="348" fill="#5a7ba6" font-size="22">灯这一路保持供电，状态一直在线</text>
+
+  <!-- Rescue 2 -->
+  <rect x="70" y="410" width="940" height="220" rx="20" fill="#0d1b30" stroke="#3fd08a" stroke-width="2"/>
+  <circle cx="150" cy="520" r="36" fill="#132741" stroke="#3fd08a" stroke-width="2" filter="url(#glow3)"/>
+  <text x="150" y="532" text-anchor="middle" fill="#6fe3ab" font-size="34" font-weight="bold">2</text>
+  <text x="210" y="472" fill="#6fe3ab" font-size="30" font-weight="bold">智能开关切"无线模式"</text>
+  <text x="210" y="518" fill="#c8d6ea" font-size="24">开关不换、面板不拆：从"直接通断电路"改成"只发信号"</text>
+  <text x="210" y="558" fill="#c8d6ea" font-size="24">三个前提：</text>
+  <text x="330" y="558" fill="#5a7ba6" font-size="22">① 灯支持"通电默认关闭" ② 开关支持无线模式 ③ 建自动化接住按键</text>
+
+  <!-- Rescue 3 -->
+  <rect x="70" y="660" width="940" height="180" rx="20" fill="#0d1b30" stroke="#3fd08a" stroke-width="2"/>
+  <circle cx="150" cy="750" r="36" fill="#132741" stroke="#3fd08a" stroke-width="2" filter="url(#glow3)"/>
+  <text x="150" y="762" text-anchor="middle" fill="#6fe3ab" font-size="34" font-weight="bold">3</text>
+  <text x="210" y="722" fill="#6fe3ab" font-size="30" font-weight="bold">补一台中枢网关</text>
+  <text x="210" y="768" fill="#c8d6ea" font-size="24">Mesh 灯没网关，照样没有本地自动化</text>
+  <text x="210" y="808" fill="#5a7ba6" font-size="22">冷知识：显示"未联网关"先查灯组里"隐藏单灯"开关，别急着怀疑硬件</text>
+
+  <!-- Four checks -->
+  <rect x="70" y="880" width="940" height="420" rx="24" fill="#0a1424" stroke="#3a5a86" stroke-width="2"/>
+  <text x="540" y="945" text-anchor="middle" fill="#7ec8ff" font-size="34" font-weight="bold">双11 收货前 · 四查清单</text>
+  <g font-size="25">
+    <rect x="110" y="985" width="860" height="66" rx="12" fill="#0d1b30" stroke="#1e3a56"/>
+    <text x="140" y="1027" fill="#7ec8ff" font-weight="bold">查流明</text><text x="270" y="1027" fill="#c8d6ea">详情页没有光通量的先扣分 · 面积 × 200 粗算够不够</text>
+    <rect x="110" y="1066" width="860" height="66" rx="12" fill="#0d1b30" stroke="#1e3a56"/>
+    <text x="140" y="1108" fill="#7ec8ff" font-weight="bold">查固件</text><text x="270" y="1108" fill="#c8d6ea">编号 304 开头才是 Mesh 2.0 模组，别信文案</text>
+    <rect x="110" y="1147" width="860" height="66" rx="12" fill="#0d1b30" stroke="#1e3a56"/>
+    <text x="140" y="1189" fill="#7ec8ff" font-weight="bold">查下限</text><text x="270" y="1189" fill="#c8d6ea">问最低亮度百分比、有无断电记忆——分水岭</text>
+    <rect x="110" y="1228" width="860" height="52" rx="12" fill="#0d1b30" stroke="#1e3a56"/>
+    <text x="140" y="1263" fill="#7ec8ff" font-weight="bold">查协议</text><text x="270" y="1263" fill="#c8d6ea">WiFi 数带机量 · Mesh 确认网关型号支持</text>
+  </g>
+</svg>
