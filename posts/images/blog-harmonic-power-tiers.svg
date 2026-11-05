@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14263e" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bgs2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#0d1c31"/>
+    </linearGradient>
+    <filter id="g2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="760" fill="url(#bgs2)"/>
+  <rect width="1080" height="760" fill="url(#grid2)"/>
+
+  <text x="60" y="72" fill="#7ec8ff" font-size="42" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">标准分三档，家里的灯在最松两档</text>
+  <text x="60" y="112" fill="#5a7ba6" font-size="21" font-family="'PingFang SC','Microsoft YaHei',sans-serif">GB 17625.1—2022 照明设备（C 类）谐波电流限值，按有功功率分档</text>
+
+  <!-- Tier 1: >25W -->
+  <rect x="52" y="146" width="320" height="250" rx="16" fill="#0d1b30" stroke="#3fd08a" stroke-width="1.8"/>
+  <text x="80" y="192" fill="#6fe3ab" font-size="26" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">大于 25W</text>
+  <text x="80" y="226" fill="#8fb3d9" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">工程灯具 / 投光灯 / 大功率筒灯</text>
+  <line x1="80" y1="248" x2="344" y2="248" stroke="#1e3a5c" stroke-width="1"/>
+  <text x="80" y="286" fill="#c8d6ea" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">3 次 ≤ 27</text>
+  <text x="220" y="286" fill="#c8d6ea" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">5 次 ≤ 10</text>
+  <text x="80" y="322" fill="#c8d6ea" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">7 次 ≤ 7</text>
+  <text x="220" y="322" fill="#c8d6ea" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">9 次 ≤ 5</text>
+  <text x="80" y="366" fill="#5a7ba6" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">按基波百分比折算，相对严格</text>
+
+  <!-- Tier 2: 5-25W -->
+  <rect x="392" y="146" width="320" height="250" rx="16" fill="#1a1520" stroke="#ff7a45" stroke-width="2.2" filter="url(#g2)"/>
+  <text x="420" y="192" fill="#ffb08a" font-size="26" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">5W ～ 25W</text>
+  <text x="420" y="226" fill="#e0a58c" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">家用筒灯 / 射灯 / 球泡 —— 主力段</text>
+  <line x1="420" y1="248" x2="684" y2="248" stroke="#5c2f2f" stroke-width="1"/>
+  <text x="420" y="286" fill="#ffb08a" font-size="19" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">三条要求任选其一</text>
+  <text x="420" y="320" fill="#c8d6ea" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">① 表 3 按功率相关限值</text>
+  <text x="420" y="348" fill="#c8d6ea" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">② 3 次 ≤ 86% 且 5 次 ≤ 61%</text>
+  <text x="420" y="376" fill="#c8d6ea" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">③ THD ≤ 70% + 逐次限值</text>
+
+  <!-- Tier 3: <5W -->
+  <rect x="732" y="146" width="296" height="250" rx="16" fill="#0d1b30" stroke="#7a4a4a" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <text x="760" y="192" fill="#d99a9a" font-size="26" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">小于 5W</text>
+  <text x="760" y="226" fill="#8fb3d9" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">灯带 / 柜底灯 / 小射灯</text>
+  <line x1="760" y1="248" x2="1004" y2="248" stroke="#1e3a5c" stroke-width="1"/>
+  <text x="760" y="300" fill="#d99a9a" font-size="24" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">不规定发射限值</text>
+  <text x="760" y="336" fill="#5a7ba6" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">2022 版相比上一版的变化</text>
+
+  <!-- arrow / emphasis band -->
+  <rect x="52" y="424" width="976" height="112" rx="14" fill="#122741" stroke="#1e3a5c" stroke-width="1.2"/>
+  <text x="80" y="464" fill="#7ec8ff" font-size="21" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">为什么偏偏家用灯最容易被牺牲</text>
+  <text x="80" y="500" fill="#c8d6ea" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">小功率压谐波要加 PFC，成本占整灯比例太高 —— 标准允许，企业自然选最省的那条路。</text>
+  <text x="80" y="520" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">一只 7W 筒灯谐波大点无所谓，一个回路挂二十只，就不是一回事了。</text>
+
+  <!-- symptom stack -->
+  <text x="60" y="588" fill="#8fb3d9" font-size="21" font-family="'PingFang SC','Microsoft YaHei',sans-serif">装完之后，症状是这么一层层出来的</text>
+
+  <rect x="52" y="608" width="308" height="112" rx="12" fill="#0d1b30" stroke="#3a7bd5" stroke-width="1.4"/>
+  <text x="76" y="642" fill="#7ec8ff" font-size="19" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">第一层 · 能感知</text>
+  <text x="76" y="674" fill="#c8d6ea" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">音响底噪、触摸失灵</text>
+  <text x="76" y="700" fill="#c8d6ea" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">感应灯自己亮一下</text>
+
+  <rect x="386" y="608" width="308" height="112" rx="12" fill="#0d1b30" stroke="#e0a03a" stroke-width="1.4"/>
+  <text x="410" y="642" fill="#f0bf78" font-size="19" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">第二层 · 系统性</text>
+  <text x="410" y="674" fill="#c8d6ea" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">端子与面板发烫</text>
+  <text x="410" y="700" fill="#c8d6ea" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">空开 / 漏保偶发误跳</text>
+
+  <rect x="720" y="608" width="308" height="112" rx="12" fill="#1a1520" stroke="#ff7a45" stroke-width="1.4"/>
+  <text x="744" y="642" fill="#ffb08a" font-size="19" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">第三层 · 事故级</text>
+  <text x="744" y="674" fill="#c8d6ea" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">长期过热 → 端子氧化</text>
+  <text x="744" y="700" fill="#c8d6ea" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">绝缘老化，好几年才显现</text>
+</svg>

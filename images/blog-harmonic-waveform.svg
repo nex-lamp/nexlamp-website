@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760">
+  <defs>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14263e" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bgs1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#0d1c31"/>
+    </linearGradient>
+    <filter id="g1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="760" fill="url(#bgs1)"/>
+  <rect width="1080" height="760" fill="url(#grid1)"/>
+
+  <text x="60" y="72" fill="#7ec8ff" font-size="42" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">灯在取电，但取的不是正弦</text>
+  <text x="60" y="112" fill="#5a7ba6" font-size="21" font-family="'PingFang SC','Microsoft YaHei',sans-serif">谐波 = 电流波形不再是平滑正弦，多出来的一堆 50Hz 整数倍成分</text>
+
+  <!-- left panel: ideal sine -->
+  <rect x="52" y="146" width="460" height="250" rx="16" fill="#0d1b30" stroke="#1e3a5c" stroke-width="1.5"/>
+  <text x="80" y="184" fill="#8fb3d9" font-size="22" font-family="'PingFang SC','Microsoft YaHei',sans-serif">理想负载：电流跟着电压走</text>
+  <line x1="80" y1="320" x2="484" y2="320" stroke="#24425f" stroke-width="1.5"/>
+  <path d="M80 320 C107 227, 163 227, 190 320 C217 433, 273 433, 300 320 C327 227, 383 227, 410 320 C437 433, 484 433, 484 320"
+        fill="none" stroke="#3fd08a" stroke-width="3.5" filter="url(#g1)"/>
+  <text x="80" y="372" fill="#6fe3ab" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">THD 低，波形干净</text>
+
+  <!-- right panel: pulsed current -->
+  <rect x="568" y="146" width="460" height="250" rx="16" fill="#0d1b30" stroke="#5c2f2f" stroke-width="1.5"/>
+  <text x="596" y="184" fill="#8fb3d9" font-size="22" font-family="'PingFang SC','Microsoft YaHei',sans-serif">LED 灯：只在电压波峰附近取电</text>
+  <line x1="596" y1="320" x2="1000" y2="320" stroke="#24425f" stroke-width="1.5"/>
+  <path d="M596 320 C623 250, 679 250, 706 320 C733 390, 789 390, 816 320 C843 250, 899 250, 926 320 C953 390, 1000 390, 1000 320"
+        fill="none" stroke="#2a4a6b" stroke-width="2" stroke-dasharray="5 6"/>
+  <g fill="#ff8a5c" filter="url(#g1)">
+    <path d="M697 320 L706 178 L715 320 Z"/>
+    <path d="M807 320 L816 178 L825 320 Z"/>
+    <path d="M917 320 L926 178 L935 320 Z"/>
+    <path d="M627 320 L636 208 L645 320 Z"/>
+  </g>
+  <text x="596" y="372" fill="#ffb08a" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">窄脉冲 → 3 次、5 次、7 次谐波</text>
+
+  <!-- spectrum -->
+  <text x="60" y="452" fill="#8fb3d9" font-size="22" font-family="'PingFang SC','Microsoft YaHei',sans-serif">同一只灯的电流频谱（基波占比 100%）</text>
+  <line x1="60" y1="660" x2="1020" y2="660" stroke="#24425f" stroke-width="1.5"/>
+
+  <!-- 1st -->
+  <rect x="110" y="500" width="86" height="160" rx="6" fill="#3a7bd5" opacity="0.9"/>
+  <text x="153" y="484" text-anchor="middle" fill="#7ec8ff" font-size="20" font-family="'PingFang SC','Microsoft YaHei',sans-serif">100%</text>
+  <text x="153" y="690" text-anchor="middle" fill="#8fb3d9" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">1 次 50Hz</text>
+
+  <!-- 3rd -->
+  <rect x="330" y="522" width="86" height="138" rx="6" fill="#ff7a45" opacity="0.95"/>
+  <text x="373" y="506" text-anchor="middle" fill="#ffb08a" font-size="20" font-family="'PingFang SC','Microsoft YaHei',sans-serif">86%</text>
+  <text x="373" y="690" text-anchor="middle" fill="#ffb08a" font-size="19" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">3 次 150Hz</text>
+
+  <!-- 5th -->
+  <rect x="550" y="562" width="86" height="98" rx="6" fill="#e0663a" opacity="0.8"/>
+  <text x="593" y="546" text-anchor="middle" fill="#ffb08a" font-size="20" font-family="'PingFang SC','Microsoft YaHei',sans-serif">61%</text>
+  <text x="593" y="690" text-anchor="middle" fill="#8fb3d9" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">5 次 250Hz</text>
+
+  <!-- 7th -->
+  <rect x="770" y="594" width="86" height="66" rx="6" fill="#a8502f" opacity="0.7"/>
+  <text x="813" y="578" text-anchor="middle" fill="#c98d76" font-size="20" font-family="'PingFang SC','Microsoft YaHei',sans-serif">30%</text>
+  <text x="813" y="690" text-anchor="middle" fill="#5a7ba6" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">7 次 350Hz</text>
+
+  <rect x="890" y="486" width="130" height="146" rx="12" fill="#122741" stroke="#ff7a45" stroke-width="1.5"/>
+  <text x="955" y="530" text-anchor="middle" fill="#ffb08a" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">限值按 5W～25W</text>
+  <text x="955" y="558" text-anchor="middle" fill="#ffb08a" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">最宽松那条走</text>
+  <text x="955" y="592" text-anchor="middle" fill="#8fb3d9" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">其余次谐波</text>
+  <text x="955" y="616" text-anchor="middle" fill="#8fb3d9" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">与 THD 不管</text>
+
+  <text x="60" y="734" fill="#4a6889" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">依据：GB 17625.1—2022 修改采用 IEC 61000-3-2:2020，5W～25W 照明设备三条要求可任选其一</text>
+</svg>
