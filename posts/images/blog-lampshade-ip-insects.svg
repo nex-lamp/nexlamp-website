@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760">
+  <defs>
+    <pattern id="gridA" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14263e" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bgA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#0d1c31"/>
+    </linearGradient>
+    <filter id="glowA" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="760" fill="url(#bgA)"/>
+  <rect width="1080" height="760" fill="url(#gridA)"/>
+
+  <text x="60" y="72" fill="#7ec8ff" font-size="42" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">IP 第一位数字，挡的是多大的东西</text>
+  <text x="60" y="112" fill="#5a7ba6" font-size="21" font-family="'PingFang SC','Microsoft YaHei',sans-serif">固体异物防护按直径分档，家用灯标的多是 IP2X：防手指，不防虫</text>
+
+  <!-- scale axis -->
+  <line x1="80" y1="420" x2="1010" y2="420" stroke="#24425f" stroke-width="2"/>
+  <g stroke="#24425f" stroke-width="1.5">
+    <line x1="120" y1="412" x2="120" y2="428"/>
+    <line x1="380" y1="412" x2="380" y2="428"/>
+    <line x1="640" y1="412" x2="640" y2="428"/>
+    <line x1="900" y1="412" x2="900" y2="428"/>
+  </g>
+  <text x="120" y="452" text-anchor="middle" fill="#5a7ba6" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">0.1mm</text>
+  <text x="380" y="452" text-anchor="middle" fill="#8fb3d9" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">1.0mm</text>
+  <text x="640" y="452" text-anchor="middle" fill="#8fb3d9" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">2.5mm</text>
+  <text x="900" y="452" text-anchor="middle" fill="#8fb3d9" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">12.5mm</text>
+
+  <!-- band: not protected (left half) -->
+  <rect x="80" y="180" width="560" height="96" rx="12" fill="#2a1622" stroke="#7a3b4f" stroke-width="1.5"/>
+  <text x="360" y="222" text-anchor="middle" fill="#ff9db0" font-size="24" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">IP2X ／ IP3X：不挡虫</text>
+  <text x="360" y="254" text-anchor="middle" fill="#c98d9f" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">家用吸顶灯、筒灯常见的 IP20 就落在这里</text>
+
+  <!-- band: protected -->
+  <rect x="640" y="180" width="370" height="96" rx="12" fill="#0f2a24" stroke="#2f7f66" stroke-width="1.5"/>
+  <text x="825" y="222" text-anchor="middle" fill="#6fe3ab" font-size="24" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">IP4X 起：挡得住蚊蝇</text>
+  <text x="825" y="254" text-anchor="middle" fill="#7fc9ac" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">1.0mm 以上进不来</text>
+
+  <!-- insect marks -->
+  <g>
+    <circle cx="250" cy="500" r="9" fill="#ff9db0" opacity="0.85"/>
+    <circle cx="330" cy="500" r="7" fill="#ff9db0" opacity="0.85"/>
+    <text x="250" y="546" text-anchor="middle" fill="#c98d9f" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">小飞虫</text>
+    <text x="250" y="572" text-anchor="middle" fill="#7a5b66" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">1～3mm</text>
+  </g>
+  <g>
+    <circle cx="470" cy="500" r="14" fill="#ff9db0" opacity="0.7"/>
+    <text x="470" y="546" text-anchor="middle" fill="#c98d9f" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">蚊子、蛾蚋</text>
+    <text x="470" y="572" text-anchor="middle" fill="#7a5b66" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">3～6mm</text>
+  </g>
+  <g>
+    <circle cx="700" cy="500" r="22" fill="#5a7ba6" opacity="0.5"/>
+    <text x="700" y="546" text-anchor="middle" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">蛾类</text>
+    <text x="700" y="572" text-anchor="middle" fill="#4a6889" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">10mm 上下</text>
+  </g>
+
+  <!-- arrow: all insects below 12.5 -->
+  <path d="M250 620 L860 620" stroke="#ff7a45" stroke-width="2" stroke-dasharray="7 6"/>
+  <path d="M860 620 l-12 -6 v12 z" fill="#ff7a45"/>
+  <text x="556" y="606" text-anchor="middle" fill="#ffb08a" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">这些全在 IP20 的"允许通过"范围内</text>
+
+  <rect x="80" y="654" width="920" height="66" rx="12" fill="#122741" stroke="#1e3a5c" stroke-width="1.5"/>
+  <text x="104" y="684" fill="#8fb3d9" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">结论：家用灯进虫不是"漏了"，是这个防护等级本来就没打算挡。IP5X/IP6X 才是防尘级。</text>
+  <text x="104" y="708" fill="#4a6889" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">依据：GB/T 4208（IEC 60529）外壳防护等级第一位特征数字</text>
+</svg>

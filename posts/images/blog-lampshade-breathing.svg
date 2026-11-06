@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760">
+  <defs>
+    <pattern id="gridB" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14263e" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bgB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#0d1c31"/>
+    </linearGradient>
+    <filter id="glowB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arW" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ff7a45"/>
+    </marker>
+    <marker id="arC" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#3a9bd5"/>
+    </marker>
+  </defs>
+
+  <rect width="1080" height="760" fill="url(#bgB)"/>
+  <rect width="1080" height="760" fill="url(#gridB)"/>
+
+  <text x="60" y="72" fill="#7ec8ff" font-size="42" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">灯一天呼吸两次，虫子是被吸进去的</text>
+  <text x="60" y="112" fill="#5a7ba6" font-size="21" font-family="'PingFang SC','Microsoft YaHei',sans-serif">PV=nRT：温度一变，密闭腔体压强就变，缝隙再小也挡不住压力差</text>
+
+  <!-- left: lamp on -->
+  <rect x="52" y="150" width="470" height="330" rx="16" fill="#0d1b30" stroke="#7a5a2f" stroke-width="1.5"/>
+  <text x="80" y="190" fill="#ffcf8a" font-size="23" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">① 点灯：内腔升温，正压外挤</text>
+
+  <rect x="130" y="216" width="314" height="150" rx="10" fill="#12233c" stroke="#2a4a6b" stroke-width="1.5"/>
+  <circle cx="287" cy="291" r="34" fill="#ffd9a0" opacity="0.22" filter="url(#glowB)"/>
+  <circle cx="287" cy="291" r="18" fill="#ffd9a0" opacity="0.85"/>
+  <text x="287" y="348" text-anchor="middle" fill="#c9a06a" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">灯珠 + 驱动发热</text>
+
+  <path d="M180 216 L180 178" stroke="#ff7a45" stroke-width="2.5" marker-end="url(#arW)"/>
+  <path d="M287 216 L287 178" stroke="#ff7a45" stroke-width="2.5" marker-end="url(#arW)"/>
+  <path d="M394 216 L394 178" stroke="#ff7a45" stroke-width="2.5" marker-end="url(#arW)"/>
+  <text x="287" y="404" text-anchor="middle" fill="#ffb08a" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">空气、水汽往外走</text>
+  <text x="287" y="440" text-anchor="middle" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">内压 &gt; 大气压</text>
+
+  <!-- right: lamp off -->
+  <rect x="558" y="150" width="470" height="330" rx="16" fill="#0d1b30" stroke="#2f5a7a" stroke-width="1.5"/>
+  <text x="586" y="190" fill="#7ec8ff" font-size="23" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">② 熄灯：降温收缩，负压回吸</text>
+
+  <rect x="636" y="216" width="314" height="150" rx="10" fill="#12233c" stroke="#2a4a6b" stroke-width="1.5"/>
+  <circle cx="793" cy="291" r="18" fill="#2f4a6b" opacity="0.9"/>
+  <text x="793" y="348" text-anchor="middle" fill="#5a7ba6" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">灯珠冷却</text>
+
+  <path d="M686 178 L686 212" stroke="#3a9bd5" stroke-width="2.5" marker-end="url(#arC)"/>
+  <path d="M793 178 L793 212" stroke="#3a9bd5" stroke-width="2.5" marker-end="url(#arC)"/>
+  <path d="M900 178 L900 212" stroke="#3a9bd5" stroke-width="2.5" marker-end="url(#arC)"/>
+  <!-- insects being pulled in -->
+  <circle cx="686" cy="162" r="4.5" fill="#ff9db0"/>
+  <circle cx="793" cy="158" r="3.5" fill="#ff9db0"/>
+  <circle cx="900" cy="162" r="4.5" fill="#ff9db0"/>
+  <text x="793" y="404" text-anchor="middle" fill="#8fc7ea" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">空气、湿气、小虫一起被吸回</text>
+  <text x="793" y="440" text-anchor="middle" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">内压 &lt; 大气压</text>
+
+  <!-- channels -->
+  <text x="60" y="530" fill="#8fb3d9" font-size="22" font-family="'PingFang SC','Microsoft YaHei',sans-serif">五个通道，按出现频率排</text>
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="18">
+    <rect x="60" y="552" width="196" height="46" rx="10" fill="#122741" stroke="#1e3a5c"/>
+    <text x="158" y="581" text-anchor="middle" fill="#ff9db0">① 罩与底盘搭接面</text>
+    <rect x="272" y="552" width="170" height="46" rx="10" fill="#122741" stroke="#1e3a5c"/>
+    <text x="357" y="581" text-anchor="middle" fill="#ffb08a">② 底盘穿线孔</text>
+    <rect x="458" y="552" width="160" height="46" rx="10" fill="#122741" stroke="#1e3a5c"/>
+    <text x="538" y="581" text-anchor="middle" fill="#c9a06a">③ 固定螺丝孔</text>
+    <rect x="634" y="552" width="150" height="46" rx="10" fill="#122741" stroke="#1e3a5c"/>
+    <text x="709" y="581" text-anchor="middle" fill="#8fb3d9">④ 卡扣间隙</text>
+    <rect x="800" y="552" width="160" height="46" rx="10" fill="#122741" stroke="#1e3a5c"/>
+    <text x="880" y="581" text-anchor="middle" fill="#8fb3d9">⑤ 驱动出线孔</text>
+  </g>
+
+  <rect x="60" y="626" width="900" height="86" rx="12" fill="#122741" stroke="#1e3a5c" stroke-width="1.5"/>
+  <text x="84" y="656" fill="#7ec8ff" font-size="19" font-family="'PingFang SC','Microsoft YaHei',sans-serif">这也解释了标准里的一条前置要求</text>
+  <text x="84" y="684" fill="#8fb3d9" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">IEC 60598-1（GB 7000.1）测防尘防水前，必须先把灯具升到稳定工作温度——热态的灯才真实。</text>
+  <text x="84" y="706" fill="#4a6889" font-size="15" font-family="'PingFang SC','Microsoft YaHei',sans-serif">冷态测着不漏，装到家里天天冷热循环，照样进水进虫。</text>
+</svg>

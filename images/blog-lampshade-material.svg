@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760">
+  <defs>
+    <pattern id="gridC" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14263e" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bgC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#0d1c31"/>
+    </linearGradient>
+    <linearGradient id="barGood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f7f66"/><stop offset="1" stop-color="#6fe3ab"/>
+    </linearGradient>
+    <linearGradient id="barMid" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a6a2f"/><stop offset="1" stop-color="#ffcf8a"/>
+    </linearGradient>
+    <linearGradient id="barBad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7a3b4f"/><stop offset="1" stop-color="#ff9db0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="760" fill="url(#bgC)"/>
+  <rect width="1080" height="760" fill="url(#gridC)"/>
+
+  <text x="60" y="72" fill="#7ec8ff" font-size="42" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">同样叫"灯罩"，三种料差的是耐温</text>
+  <text x="60" y="112" fill="#5a7ba6" font-size="21" font-family="'PingFang SC','Microsoft YaHei',sans-serif">透光率只差几个点，黄变速度差好几倍——决定因素在长期使用温度</text>
+
+  <!-- card 1 PMMA -->
+  <g>
+    <rect x="52" y="146" width="310" height="368" rx="16" fill="#0d1b30" stroke="#2f7f66" stroke-width="1.5"/>
+    <text x="80" y="192" fill="#6fe3ab" font-size="25" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">PMMA 亚克力</text>
+    <text x="80" y="222" fill="#5a7ba6" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">透光最高，也最怕热</text>
+
+    <text x="80" y="266" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">透光率 92%～95%</text>
+    <rect x="80" y="276" width="200" height="12" rx="6" fill="#16283f"/>
+    <rect x="80" y="276" width="192" height="12" rx="6" fill="url(#barGood)"/>
+
+    <text x="80" y="322" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">长期耐温 ≈ 80℃</text>
+    <rect x="80" y="332" width="200" height="12" rx="6" fill="#16283f"/>
+    <rect x="80" y="332" width="114" height="12" rx="6" fill="url(#barMid)"/>
+
+    <text x="80" y="382" fill="#c9a06a" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">约 92℃ 开始热变形</text>
+    <text x="80" y="410" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">户外耐候最好</text>
+    <text x="80" y="438" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">封闭灯体里受温度限制</text>
+    <rect x="80" y="462" width="120" height="32" rx="8" fill="#122741" stroke="#2f5a7a"/>
+    <text x="140" y="484" text-anchor="middle" fill="#7fc9ac" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">成本 中上</text>
+  </g>
+
+  <!-- card 2 PC -->
+  <g>
+    <rect x="386" y="146" width="310" height="368" rx="16" fill="#0d1b30" stroke="#3a7bd5" stroke-width="1.8"/>
+    <text x="414" y="192" fill="#7ec8ff" font-size="25" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">PC 聚碳酸酯</text>
+    <text x="414" y="222" fill="#5a7ba6" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">最耐热、最抗砸</text>
+
+    <text x="414" y="266" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">透光率 88%～90%</text>
+    <rect x="414" y="276" width="200" height="12" rx="6" fill="#16283f"/>
+    <rect x="414" y="276" width="96" height="12" rx="6" fill="url(#barGood)"/>
+
+    <text x="414" y="322" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">热变形 ≈ 135℃</text>
+    <rect x="414" y="332" width="200" height="12" rx="6" fill="#16283f"/>
+    <rect x="414" y="332" width="192" height="12" rx="6" fill="url(#barGood)"/>
+
+    <text x="414" y="382" fill="#6fe3ab" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">灯内腔温度基本够用</text>
+    <text x="414" y="410" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">抗冲击最强</text>
+    <text x="414" y="438" fill="#c9a06a" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">普通牌号紫外下仍会黄</text>
+    <rect x="414" y="462" width="150" height="32" rx="8" fill="#122741" stroke="#2f5a7a"/>
+    <text x="489" y="484" text-anchor="middle" fill="#7ec8ff" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">要带 UV 防护料</text>
+  </g>
+
+  <!-- card 3 PS -->
+  <g>
+    <rect x="720" y="146" width="310" height="368" rx="16" fill="#0d1b30" stroke="#7a3b4f" stroke-width="1.8"/>
+    <text x="748" y="192" fill="#ff9db0" font-size="25" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">PS 聚苯乙烯</text>
+    <text x="748" y="222" fill="#5a7ba6" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">最便宜，黄变最快</text>
+
+    <text x="748" y="266" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">透光率 85%～92%</text>
+    <rect x="748" y="276" width="200" height="12" rx="6" fill="#16283f"/>
+    <rect x="748" y="276" width="86" height="12" rx="6" fill="url(#barMid)"/>
+
+    <text x="748" y="322" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">长期耐温 60～80℃</text>
+    <rect x="748" y="332" width="200" height="12" rx="6" fill="#16283f"/>
+    <rect x="748" y="332" width="100" height="12" rx="6" fill="url(#barBad)"/>
+
+    <text x="748" y="382" fill="#ff9db0" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">长期贴着上限跑</text>
+    <text x="748" y="410" fill="#8fb3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">同面积约为 PC 一半价</text>
+    <text x="748" y="438" fill="#ff9db0" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">黄变 + 变脆，两三年见</text>
+    <rect x="748" y="462" width="130" height="32" rx="8" fill="#122741" stroke="#5c2f2f"/>
+    <text x="813" y="484" text-anchor="middle" fill="#ffb0bd" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">成本 最低</text>
+  </g>
+
+  <!-- bottom conclusion -->
+  <rect x="52" y="544" width="978" height="82" rx="12" fill="#122741" stroke="#1e3a5c" stroke-width="1.5"/>
+  <text x="76" y="576" fill="#7ec8ff" font-size="20" font-family="'PingFang SC','Microsoft YaHei',sans-serif">黄变是本体变化，不是表面脏</text>
+  <text x="76" y="606" fill="#8fb3d9" font-size="18" font-family="'PingFang SC','Microsoft YaHei',sans-serif">分子链在热与紫外下断裂、氧化，生成吸收蓝光的结构；砂纸和去污膏只能处理表面那层油污。</text>
+
+  <text x="52" y="668" fill="#4a6889" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">数据来源：材料手册与灯罩供应商公开参数（3mm 试样透光率），实际值随牌号与壁厚浮动</text>
+  <text x="52" y="700" fill="#4a6889" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">判断口诀：报不出牌号只说"高级塑料"的，按 PS 预期——两三年黄变</text>
+</svg>
