@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760">
+  <defs>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14263e" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#0d1c31"/>
+    </linearGradient>
+    <linearGradient id="amberG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd08a"/><stop offset="1" stop-color="#f0a445"/>
+    </linearGradient>
+    <linearGradient id="cyanG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6ff0e0"/><stop offset="0.55" stop-color="#4fd1c5"/><stop offset="1" stop-color="#1d5a58"/>
+    </linearGradient>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="760" fill="url(#bg3)"/>
+  <rect width="1080" height="760" fill="url(#grid3)"/>
+
+  <text x="60" y="62" fill="#7ec8ff" font-size="38" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">一个坏在接缝，一个坏在长度</text>
+  <text x="60" y="100" fill="#5a7ba6" font-size="20" font-family="'PingFang SC','Microsoft YaHei',sans-serif">同样是灯带失效，故障点根本不在一个地方</text>
+
+  <!-- LEFT -->
+  <rect x="48" y="134" width="488" height="470" rx="16" fill="#111a24" stroke="#6b4520" stroke-width="1.5"/>
+  <text x="76" y="176" fill="#ffb057" font-size="21" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">220V：每米一个独立单元</text>
+  <rect x="78" y="250" width="96" height="58" rx="4" fill="url(#amberG)" stroke="#c98a3d" stroke-width="1.2"/><rect x="190" y="250" width="96" height="58" rx="4" fill="url(#amberG)" stroke="#c98a3d" stroke-width="1.2"/><rect x="302" y="250" width="96" height="58" rx="4" fill="#241d14" stroke="#4a3a24" stroke-width="1.2"/><rect x="414" y="250" width="96" height="58" rx="4" fill="#241d14" stroke="#4a3a24" stroke-width="1.2"/>
+  <rect x="174" y="246" width="16" height="66" rx="3" fill="#3a2a18" stroke="#8a6a3c" stroke-width="1"/><line x1="182" y1="252" x2="182" y2="306" stroke="#d9a45c" stroke-width="2"/><rect x="286" y="246" width="16" height="66" rx="3" fill="#3a2a18" stroke="#8a6a3c" stroke-width="1"/><line x1="294" y1="252" x2="294" y2="306" stroke="#d9a45c" stroke-width="2"/><rect x="398" y="246" width="16" height="66" rx="3" fill="#3a2a18" stroke="#8a6a3c" stroke-width="1"/><line x1="406" y1="252" x2="406" y2="306" stroke="#d9a45c" stroke-width="2"/>
+
+  <circle cx="294" cy="278" r="46" fill="none" stroke="#ff5c7a" stroke-width="2" stroke-dasharray="5 5" filter="url(#glow3)"/>
+  <text x="294" y="348" text-anchor="middle" fill="#ff8fa3" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">接头</text>
+
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="76" y="392" fill="#c8a06a" font-size="16">压不实的接头，接触电阻能到几十欧姆</text>
+    <text x="76" y="422" fill="#c8a06a" font-size="16">220V 下电流 0.1~0.5A，发热全挤在</text>
+    <text x="76" y="452" fill="#c8a06a" font-size="16">指甲盖大的铜针上：I²R → 烤软 → 氧化</text>
+    <text x="76" y="492" fill="#ff8fa3" font-size="17" font-weight="bold">→ 忽明忽暗，最后整段断路</text>
+    <text x="76" y="530" fill="#7f9ab5" font-size="15">前段还亮，后段全黑 —— 就是这个原因</text>
+    <text x="76" y="566" fill="#5f7f9e" font-size="15">接头只能靠原厂配套件 + 封胶，别无他法</text>
+  </g>
+
+  <!-- RIGHT -->
+  <rect x="556" y="134" width="476" height="470" rx="16" fill="#111a24" stroke="#1e5a5a" stroke-width="1.5"/>
+  <text x="584" y="176" fill="#4fd1c5" font-size="21" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">低压：整条铜箔连续</text>
+
+  <rect x="590" y="250" width="400" height="58" rx="4" fill="url(#cyanG)" stroke="#2f8e88" stroke-width="1.2"/>
+  <g stroke="#0a1628" stroke-width="1.4" opacity="0.55">
+    <line x1="680" y1="252" x2="680" y2="306"/>
+    <line x1="770" y1="252" x2="770" y2="306"/>
+    <line x1="860" y1="252" x2="860" y2="306"/>
+  </g>
+  <text x="600" y="240" fill="#8fe3d9" font-size="15" font-family="'PingFang SC','Microsoft YaHei',sans-serif">电流方向 →</text>
+  <text x="980" y="240" text-anchor="end" fill="#4a8a86" font-size="15" font-family="'PingFang SC','Microsoft YaHei',sans-serif">末端发暗偏红</text>
+
+  <line x1="704" y1="320" x2="704" y2="336" stroke="#2f8e88" stroke-width="1.2"/>
+  <text x="704" y="354" text-anchor="middle" fill="#4a8a86" font-size="14" font-family="'PingFang SC','Microsoft YaHei',sans-serif">12V 约 5m</text>
+  <line x1="880" y1="320" x2="880" y2="336" stroke="#2f8e88" stroke-width="1.2"/>
+  <text x="880" y="354" text-anchor="middle" fill="#4a8a86" font-size="14" font-family="'PingFang SC','Microsoft YaHei',sans-serif">24V 约 10m</text>
+
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="584" y="400" fill="#6cc5bb" font-size="16">电压沿铜箔一路下降，越远越暗</text>
+    <text x="584" y="430" fill="#6cc5bb" font-size="16">中间没有高压接头，所以不会"一段一段灭"</text>
+    <text x="584" y="466" fill="#8fe3d9" font-size="17" font-weight="bold">→ 解法：中途补电 ／ 双端供电 ／ 升到 24V</text>
+    <text x="584" y="502" fill="#7f9ab5" font-size="15">超长不是靠"买更粗的线"，是靠多开一个接入点</text>
+  </g>
+
+  <!-- bottom chips -->
+  <rect x="48" y="628" width="470" height="72" rx="12" fill="#1b1409" stroke="#8a5f27" stroke-width="1.2"/>
+  <text x="76" y="660" fill="#ffcf94" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">高压：接头是瓶颈，接缝一坏，后面全灭</text>
+  <text x="76" y="686" fill="#8a6a3c" font-size="15" font-family="'PingFang SC','Microsoft YaHei',sans-serif">能修——剪掉坏段，用配套接头重接</text>
+
+  <rect x="556" y="628" width="476" height="72" rx="12" fill="#0b2224" stroke="#2a7d78" stroke-width="1.2"/>
+  <text x="584" y="660" fill="#8fe3d9" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">低压：长度是瓶颈，压降一上来只能补电</text>
+  <text x="584" y="686" fill="#4a8a86" font-size="15" font-family="'PingFang SC','Microsoft YaHei',sans-serif">不能靠调亮解决，那是电源过载的前兆</text>
+</svg>

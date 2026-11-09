@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760">
+  <defs>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14263e" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/><stop offset="1" stop-color="#0d1c31"/>
+    </linearGradient>
+    <filter id="glow1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arw1" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto">
+      <polygon points="0 0, 8 3.5, 0 7" fill="#3d6b96"/>
+    </marker>
+  </defs>
+
+  <rect width="1080" height="760" fill="url(#bg1)"/>
+  <rect width="1080" height="760" fill="url(#grid1)"/>
+
+  <text x="60" y="66" fill="#7ec8ff" font-size="38" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">差的不是电压，是驱动放在哪</text>
+  <text x="60" y="104" fill="#5a7ba6" font-size="20" font-family="'PingFang SC','Microsoft YaHei',sans-serif">220V 把驱动拆成三颗最便宜的零件塞进带子，低压灯带是一整个开关电源</text>
+
+  <!-- LEFT COLUMN -->
+  <rect x="50" y="140" width="470" height="556" rx="16" fill="#111a24" stroke="#6b4520" stroke-width="1.5"/>
+  <rect x="50" y="140" width="470" height="52" rx="16" fill="#1e1608"/>
+  <text x="76" y="174" fill="#ffb057" font-size="22" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">220V 高压灯带</text>
+  <text x="398" y="174" fill="#8a6a3c" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">驱动摊在带子上</text>
+
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+    <rect x="80" y="220" width="410" height="62" rx="10" fill="#1a2230" stroke="#2f4a66" stroke-width="1"/>
+    <text x="100" y="258" fill="#c9dcef" font-size="19">市电 AC 220V ／ 50Hz</text>
+
+    <rect x="80" y="316" width="410" height="62" rx="10" fill="#241a0c" stroke="#7a4f1e" stroke-width="1"/>
+    <text x="100" y="354" fill="#ffcf94" font-size="19">桥式整流 · 4 只二极管</text>
+
+    <rect x="80" y="412" width="410" height="62" rx="10" fill="#241a0c" stroke="#7a4f1e" stroke-width="1"/>
+    <text x="100" y="450" fill="#ffcf94" font-size="19">串联限流电阻 × 1</text>
+
+    <rect x="80" y="508" width="410" height="62" rx="10" fill="#1a2230" stroke="#2f4a66" stroke-width="1"/>
+    <text x="100" y="546" fill="#c9dcef" font-size="19">LED 串联约 60 颗 → 190V</text>
+  </g>
+
+  <g stroke="#3d6b96" stroke-width="2" marker-end="url(#arw1)">
+    <line x1="285" y1="284" x2="285" y2="312"/>
+    <line x1="285" y1="380" x2="285" y2="408"/>
+    <line x1="285" y1="476" x2="285" y2="504"/>
+  </g>
+
+  <text x="80" y="612" fill="#c8a06a" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">没有变压器、没有恒流环、没有功率因数校正</text>
+  <text x="80" y="644" fill="#95784a" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">光输出原封不动跟着市电的波形走</text>
+  <text x="80" y="676" fill="#95784a" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">好处：轻、便宜、一条能拉几十米</text>
+
+  <!-- RIGHT COLUMN -->
+  <rect x="560" y="140" width="470" height="556" rx="16" fill="#111a24" stroke="#1e5a5a" stroke-width="1.5"/>
+  <rect x="560" y="140" width="470" height="52" rx="16" fill="#0b2224"/>
+  <text x="586" y="174" fill="#4fd1c5" font-size="22" font-weight="bold" font-family="'PingFang SC','Microsoft YaHei',sans-serif">12V ／ 24V 低压灯带</text>
+  <text x="912" y="174" fill="#3c7a76" font-size="16" font-family="'PingFang SC','Microsoft YaHei',sans-serif">驱动在盒子里</text>
+
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+    <rect x="590" y="220" width="410" height="62" rx="10" fill="#1a2230" stroke="#2f4a66" stroke-width="1"/>
+    <text x="610" y="258" fill="#c9dcef" font-size="19">市电 AC 220V</text>
+
+    <rect x="590" y="316" width="410" height="62" rx="10" fill="#0e2a2c" stroke="#2a7d78" stroke-width="1"/>
+    <text x="610" y="354" fill="#8fe3d9" font-size="19">开关电源：整流 → 高频变压 → 滤波</text>
+
+    <rect x="590" y="412" width="410" height="62" rx="10" fill="#0e2a2c" stroke="#2a7d78" stroke-width="1"/>
+    <text x="610" y="450" fill="#8fe3d9" font-size="19">恒压 ／ 恒流闭环 → DC 12V 或 24V</text>
+
+    <rect x="590" y="508" width="410" height="62" rx="10" fill="#1a2230" stroke="#2f4a66" stroke-width="1"/>
+    <text x="610" y="546" fill="#c9dcef" font-size="19">LED 多组并联，中间没有高压接头</text>
+  </g>
+
+  <g stroke="#3d6b96" stroke-width="2" marker-end="url(#arw1)">
+    <line x1="795" y1="284" x2="795" y2="312"/>
+    <line x1="795" y1="380" x2="795" y2="408"/>
+    <line x1="795" y1="476" x2="795" y2="504"/>
+  </g>
+
+  <text x="590" y="612" fill="#6cc5bb" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">输出纹波可压到 5% 以内，接近直流</text>
+  <text x="590" y="644" fill="#4a8a86" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">支持 PWM ／ 0-10V ／ DALI 调光</text>
+  <text x="590" y="676" fill="#4a8a86" font-size="17" font-family="'PingFang SC','Microsoft YaHei',sans-serif">代价：多一个电源，单条不能太长</text>
+</svg>
