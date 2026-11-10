@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" font-family="'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f38"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a3a5c" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="960" height="640" fill="url(#bg)"/>
+  <rect width="960" height="640" fill="url(#grid)"/>
+  <text x="480" y="66" text-anchor="middle" fill="#7ec8ff" font-size="34" font-weight="bold">运输给驱动留下的三种暗伤</text>
+  <text x="480" y="100" text-anchor="middle" fill="#8fb3d9" font-size="17">点亮一眼看不出来，装进吊顶才发作</text>
+
+  <!-- card 1: cold solder -->
+  <rect x="40" y="140" width="286" height="300" rx="14" fill="#112742" stroke="#2a5a8c" stroke-width="1.5"/>
+  <circle cx="183" cy="212" r="34" fill="#0a1628" stroke="#ff9f43" stroke-width="2.5" filter="url(#glow)"/>
+  <path d="M165 222 L175 200 L185 216 L193 202 L201 222" fill="none" stroke="#ff9f43" stroke-width="3" stroke-linecap="round"/>
+  <text x="183" y="292" text-anchor="middle" fill="#ffd699" font-size="22" font-weight="bold">冷焊点开裂</text>
+  <text x="183" y="330" text-anchor="middle" fill="#c9dcf0" font-size="15">虚焊点被震松</text>
+  <text x="183" y="358" text-anchor="middle" fill="#c9dcf0" font-size="15">接触电阻变大</text>
+  <rect x="60" y="384" width="246" height="34" rx="17" fill="#3a2410"/>
+  <text x="183" y="407" text-anchor="middle" fill="#ffb86b" font-size="15">几小时~几十小时后发作</text>
+
+  <!-- card 2: connector -->
+  <rect x="337" y="140" width="286" height="300" rx="14" fill="#112742" stroke="#2a5a8c" stroke-width="1.5"/>
+  <rect x="407" y="182" width="76" height="22" rx="4" fill="#0a1628" stroke="#4dd0e1" stroke-width="2"/>
+  <rect x="417" y="212" width="56" height="40" rx="4" fill="#0a1628" stroke="#4dd0e1" stroke-width="2"/>
+  <line x1="445" y1="212" x2="445" y2="182" stroke="#4dd0e1" stroke-width="2"/>
+  <line x1="461" y1="212" x2="461" y2="182" stroke="#4dd0e1" stroke-width="2"/>
+  <rect x="487" y="196" width="26" height="10" rx="3" fill="#ff6b6b" filter="url(#glow)"/>
+  <text x="480" y="292" text-anchor="middle" fill="#99e8f5" font-size="22" font-weight="bold">插接端子松脱</text>
+  <text x="480" y="330" text-anchor="middle" fill="#c9dcf0" font-size="15">灯板与驱动对插件</text>
+  <text x="480" y="358" text-anchor="middle" fill="#c9dcf0" font-size="15">被震出半拔状态</text>
+  <rect x="357" y="384" width="246" height="34" rx="17" fill="#0e3038"/>
+  <text x="480" y="407" text-anchor="middle" fill="#4dd0e1" font-size="15">时亮时灭、莫名闪烁</text>
+
+  <!-- card 3: capacitor -->
+  <rect x="634" y="140" width="286" height="300" rx="14" fill="#112742" stroke="#2a5a8c" stroke-width="1.5"/>
+  <rect x="737" y="184" width="80" height="44" rx="6" fill="#0a1628" stroke="#b388ff" stroke-width="2.5" transform="rotate(14 777 206)"/>
+  <line x1="757" y1="182" x2="757" y2="192" stroke="#b388ff" stroke-width="2"/>
+  <line x1="797" y1="186" x2="797" y2="196" stroke="#b388ff" stroke-width="2"/>
+  <text x="777" y="292" text-anchor="middle" fill="#d4c2ff" font-size="22" font-weight="bold">电容位移歪斜</text>
+  <text x="777" y="330" text-anchor="middle" fill="#c9dcf0" font-size="15">电解电容压迫焊盘</text>
+  <text x="777" y="358" text-anchor="middle" fill="#c9dcf0" font-size="15">发热后参数漂移</text>
+  <rect x="654" y="384" width="246" height="34" rx="17" fill="#241538"/>
+  <text x="777" y="407" text-anchor="middle" fill="#b388ff" font-size="15">开机正常，发热后漂移</text>
+
+  <rect x="40" y="480" width="880" height="110" rx="14" fill="#122c1a" stroke="#2f7a4a" stroke-width="1.5"/>
+  <text x="480" y="522" text-anchor="middle" fill="#8fe0a8" font-size="21" font-weight="bold">共同点：桌面点亮十秒"是亮的"</text>
+  <text x="480" y="560" text-anchor="middle" fill="#c9e8d4" font-size="18">装进吊顶、通电几天后才开始闪或者灭</text>
+</svg>

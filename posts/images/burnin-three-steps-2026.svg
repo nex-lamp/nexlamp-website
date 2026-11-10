@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" font-family="'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f38"/>
+    </linearGradient>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a3a5c" stroke-width="1"/>
+    </pattern>
+    <filter id="glow3" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="960" height="700" fill="url(#bg3)"/>
+  <rect width="960" height="700" fill="url(#grid3)"/>
+  <text x="480" y="60" text-anchor="middle" fill="#7ec8ff" font-size="32" font-weight="bold">三步验货，一晚上搞定</text>
+
+  <!-- step 1 -->
+  <rect x="50" y="100" width="860" height="120" rx="14" fill="#112742" stroke="#2a5a8c" stroke-width="1.5"/>
+  <circle cx="105" cy="160" r="28" fill="#0a1628" stroke="#4dd0e1" stroke-width="2.5" filter="url(#glow3)"/>
+  <text x="105" y="169" text-anchor="middle" fill="#4dd0e1" font-size="24" font-weight="bold">1</text>
+  <text x="155" y="145" fill="#99e8f5" font-size="22" font-weight="bold">开箱录像</text>
+  <text x="155" y="180" fill="#c9dcf0" font-size="17">从拆外箱开始全程录：面单、外包装、内包装、灯体全貌——纠纷时唯一说得清的证据</text>
+
+  <!-- step 2 -->
+  <rect x="50" y="240" width="860" height="190" rx="14" fill="#112742" stroke="#ffb86b" stroke-width="1.5"/>
+  <circle cx="105" cy="300" r="28" fill="#0a1628" stroke="#ffb86b" stroke-width="2.5" filter="url(#glow3)"/>
+  <text x="105" y="309" text-anchor="middle" fill="#ffb86b" font-size="24" font-weight="bold">2</text>
+  <text x="155" y="285" fill="#ffd699" font-size="22" font-weight="bold">桌面老化一晚（至少亮 24 小时，别装吊顶）</text>
+  <g font-size="17" fill="#c9dcf0">
+    <rect x="155" y="310" width="190" height="42" rx="8" fill="#0a1628"/>
+    <text x="250" y="337" text-anchor="middle" fill="#ffd699">手机拍：看频闪横纹</text>
+    <rect x="365" y="310" width="190" height="42" rx="8" fill="#0a1628"/>
+    <text x="460" y="337" text-anchor="middle" fill="#ffd699">耳朵听：驱动异响</text>
+    <rect x="575" y="310" width="180" height="42" rx="8" fill="#0a1628"/>
+    <text x="665" y="337" text-anchor="middle" fill="#ffd699">摸黑看：突变/局部暗</text>
+    <rect x="775" y="310" width="120" height="42" rx="8" fill="#0a1628"/>
+    <text x="835" y="337" text-anchor="middle" fill="#ffd699">闻：焦糊味</text>
+  </g>
+  <text x="155" y="396" fill="#ff9f43" font-size="16" font-weight="bold">出现焦味或糊味：立刻断电，直接退</text>
+
+  <!-- step 3 -->
+  <rect x="50" y="450" width="860" height="120" rx="14" fill="#112742" stroke="#8fe0a8" stroke-width="1.5"/>
+  <circle cx="105" cy="510" r="28" fill="#0a1628" stroke="#8fe0a8" stroke-width="2.5" filter="url(#glow3)"/>
+  <text x="105" y="519" text-anchor="middle" fill="#8fe0a8" font-size="24" font-weight="bold">3</text>
+  <text x="155" y="495" fill="#c9e8d4" font-size="22" font-weight="bold">开关循环</text>
+  <text x="155" y="530" fill="#c9dcf0" font-size="17">开30秒关30秒，来十几轮；智能灯加测：重新绑定一次 + 拉电闸测断电恢复</text>
+
+  <!-- footer -->
+  <rect x="50" y="596" width="860" height="70" rx="14" fill="#12351f" stroke="#2f7a4a" stroke-width="2"/>
+  <text x="480" y="626" text-anchor="middle" fill="#8fe0a8" font-size="21" font-weight="bold">老化挺得住、开关循环也挂不掉的灯——全过，再上吊顶</text>
+  <text x="480" y="654" text-anchor="middle" fill="#7ab88e" font-size="16">七日无理由按签收时间起算，不按装吊顶那天起算</text>
+</svg>

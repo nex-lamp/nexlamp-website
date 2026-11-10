@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f38"/>
+    </linearGradient>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a3a5c" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="620" fill="url(#bg2)"/>
+  <rect width="960" height="620" fill="url(#grid2)"/>
+  <text x="480" y="62" text-anchor="middle" fill="#7ec8ff" font-size="32" font-weight="bold">同一盏坏灯，动作顺序差一步，代价差一个量级</text>
+
+  <!-- left column: before install -->
+  <rect x="50" y="110" width="410" height="410" rx="16" fill="#112742" stroke="#2f7a4a" stroke-width="2"/>
+  <rect x="70" y="132" width="370" height="52" rx="10" fill="#12351f"/>
+  <text x="255" y="167" text-anchor="middle" fill="#8fe0a8" font-size="24" font-weight="bold">装吊顶之前发现 ✅</text>
+  <g font-size="17" fill="#c9e8d4">
+    <text x="90" y="230">· 拒收或七天无理由退换</text>
+    <text x="90" y="272">· 运费险覆盖，举证容易</text>
+    <text x="90" y="314">· 拆装成本：零</text>
+    <text x="90" y="356">· 责任清楚："开箱视频在手"</text>
+  </g>
+  <rect x="90" y="396" width="330" height="88" rx="12" fill="#0d2a16"/>
+  <text x="255" y="432" text-anchor="middle" fill="#8fe0a8" font-size="18" font-weight="bold">实际代价：一晚上验货时间</text>
+  <text x="255" y="462" text-anchor="middle" fill="#7ab88e" font-size="15">+一次快递退回</text>
+
+  <!-- right column: after install -->
+  <rect x="500" y="110" width="410" height="410" rx="16" fill="#112742" stroke="#a04a4a" stroke-width="2"/>
+  <rect x="520" y="132" width="370" height="52" rx="10" fill="#3a1520"/>
+  <text x="705" y="167" text-anchor="middle" fill="#ff9f9f" font-size="24" font-weight="bold">装吊顶之后发现 ❌</text>
+  <g font-size="17" fill="#f0c9c9">
+    <text x="540" y="230">· 报修等师傅，可能已过七天</text>
+    <text x="540" y="272">· 集成吊顶拆扣板，石膏板更麻烦</text>
+    <text x="540" y="314">· "之前用着是好的"说不清</text>
+    <text x="540" y="356">· 拆装、误工、扯皮全算上</text>
+  </g>
+  <rect x="540" y="396" width="330" height="88" rx="12" fill="#2a0d14"/>
+  <text x="705" y="432" text-anchor="middle" fill="#ff9f9f" font-size="18" font-weight="bold">实际代价：换灯钱 + 拆装费</text>
+  <text x="705" y="462" text-anchor="middle" fill="#c97a7a" font-size="15">+来回等待的居住体验</text>
+
+  <!-- arrow -->
+  <path d="M470 315 L500 315" stroke="#5b8cb8" stroke-width="3" marker-end="url(#arr)"/>
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="none" stroke="#5b8cb8" stroke-width="1.5"/>
+    </marker>
+  </defs>
+
+  <text x="480" y="566" text-anchor="middle" fill="#8fb3d9" font-size="19">工厂老化筛掉的早期失效，运输震动会把结果清零一半——</text>
+  <text x="480" y="596" text-anchor="middle" fill="#c9dcf0" font-size="19" font-weight="bold">灯到手那一刻，等于"第二次出厂"，这次的质检员是你</text>
+</svg>
