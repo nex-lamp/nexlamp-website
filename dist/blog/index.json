@@ -2,7 +2,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -11,7 +11,7 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -20,7 +20,187 @@
   {
     "title": "未命名文章",
     "slug": "未命名文章",
-    "date": "2026-11-10",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "双11的灯装完才发现不行？商家说\"安装后不退\"，这三句话都站不住",
+    "slug": "双11的灯装完才发现不行商家说安装后不退这三句话都站不住",
+    "date": "2026-11-11",
+    "category": "选型避坑",
+    "description": "双11灯具售后维权指南。拆解商家三句拒退话术（安装后不退/已拆封不退/超七天不退）在《消费者权益保护法》下的真实效力，解释六个月内举证责任倒置如何使用，并给出签收前开箱录像、现场验收、留证、分步维权的方法。",
+    "cover": "images/blog-return-rights-2026-cover.png",
+    "excerpt": "灯具是最典型的\"装完才知道\"的商品：不装上吊顶通电，根本验不出问题。等装完出问题，商家一句\"安装后不支持退\"就把人挡回来。但质量问题从来不受七天无理由的限制，拆封也不等于商品不完好——三条法律边界 + 一张举证责任的牌，加上收货季四步防护，一次说清。"
+  },
+  {
+    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
+    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
+    "cover": "",
+    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
+    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
+    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
+    "cover": "",
+    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Matter over Thread Bulbs in 2026: 5 Tested from $8 IKEA to $500 Nanoleaf Skylight",
+    "slug": "matter-over-thread-bulbs-in-2026-5-tested-from-8-ikea-to-500-nanoleaf-skylight",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims.",
+    "cover": "",
+    "excerpt": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims."
+  },
+  {
+    "title": "GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass?",
+    "slug": "gbt-33721-2026-gbt-32481-2026-take-effect-november-1-will-your-led-driver-pass",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window.",
+    "cover": "",
+    "excerpt": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window."
+  },
+  {
+    "title": "LED Light Dead? Don't Buy a New Fixture Yet — It's Probably Just the Driver",
+    "slug": "led-light-dead-dont-buy-a-new-fixture-yet-its-probably-just-the-driver",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "Around 70% of 'dead' LED ceiling lights aren't burned-out LEDs — they're failed drivers. A 5-minute 3-step diagnosis can save you from a $95 'full replacement' scam that a $15 part would fix.",
+    "cover": "",
+    "excerpt": "Around 70% of 'dead' LED ceiling lights aren't burned-out LEDs — they're failed drivers. A 5-minute 3-step diagnosis can save you from a $95 'full replacement' scam that a $15 part would fix."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "A ¥423 Floor Lamp vs a ¥5,699 One: What the Extra Money Actually Buys",
+    "slug": "a-423-floor-lamp-vs-a-5699-one-what-the-extra-money-actually-buys",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "A Shanghai Consumer Council test of 20 floor lamps found the cheapest and most expensive models equally good on the numbers that matter for eyes. After 20 years in luminaire manufacturing, here is where the price difference really lives."
+  },
+  {
+    "title": "Why Your LED Strip Falls Off Every Winter (And Why It's Not the Glue's Fault)",
+    "slug": "why-your-led-strip-falls-off-every-winter-and-why-its-not-the-glues-fault",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "Your New LED Lamp Buzzes - and It's Almost Never the LED",
+    "slug": "your-new-led-lamp-buzzes-and-its-almost-never-the-led",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "耐利普科技技术文章",
+    "cover": "",
+    "excerpt": "耐利普科技技术文章"
+  },
+  {
+    "title": "220V vs 12V LED Strip Lights: The Real Difference Isn't Voltage, It's Three Hidden Costs",
+    "slug": "220v-vs-12v-led-strip-lights-the-real-difference-isnt-voltage-its-three-hidden-c",
+    "date": "2026-11-11",
+    "category": "技术文章",
+    "description": "A factory insider explains why high-voltage LED strips fail differently: 100Hz flicker, per-meter joints that cause section failures, and live-mains safety boundaries — plus a three-tier selection rule.",
+    "cover": "",
+    "excerpt": "A factory insider explains why high-voltage LED strips fail differently: 100Hz flicker, per-meter joints that cause section failures, and live-mains safety boundaries — plus a three-tier selection rule."
+  },
+  {
+    "title": "Bought a Lamp on China's Double 11 and It Failed After Installation? 'No Returns Once Installed' Doesn't Hold Up",
+    "slug": "bought-a-lamp-on-chinas-double-11-and-it-failed-after-installation-no-returns-on",
+    "date": "2026-11-11",
+    "category": "选型避坑",
+    "description": "A practical guide to lamp after-sales disputes in China: why installed luminaires can still be returned for quality defects, how the Consumer Protection Law's Article 24 (three guarantees) and Article 23(3) (six-month burden-of-proof reversal) work, and what evidence to collect before signing for your Double 11 delivery.",
+    "cover": "images/blog-return-rights-2026-cover.png",
+    "excerpt": "Ceiling lights are \"install-and-find-out\" products: you can't verify color temperature, flicker, or dimming behavior until the lamp is wired into your ceiling. Sellers exploit that gap with three refund-refusal lines — and all three collapse once you know which law applies. Here is the legal boundary, the six-month burden-of-proof reversal, and a four-step evidence routine for delivery week."
+  },
+  {
+    "title": "未命名文章",
+    "slug": "未命名文章",
+    "date": "2026-11-11",
     "category": "技术文章",
     "description": "耐利普科技技术文章",
     "cover": "",
@@ -36,159 +216,6 @@
     "excerpt": "618囤的筒灯双11拆箱十个全坏，这种事年年有。比破损更坑的是\"装进吊顶才发作\"的暗伤：运输震动让驱动焊点开裂、插接端子松脱，通电几小时才暴露。正确顺序是开箱录像、桌面老化一晚、开关循环几十次，全过了再上吊顶。"
   },
   {
-    "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
-    "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control.",
-    "cover": "",
-    "excerpt": "Midea's 4-day cloud outage in June 2026 left 100k+ smart home users without control. Here's what smart lighting buyers need to know about cloud dependency vs local mesh control."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Human-Centric Lighting: Why Your Smart Lights Need to 'Tell Time'",
-    "slug": "human-centric-lighting-why-your-smart-lights-need-to-tell-time",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Two Major Incidents in July: CCC Mandate + Zoo LED Fire — How to Choose Safe LED Drivers",
-    "slug": "two-major-incidents-in-july-ccc-mandate-zoo-led-fire-how-to-choose-safe-led-driv",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers.",
-    "cover": "",
-    "excerpt": "China mandates CCC certification for online lighting sales from Dec 2026, while a zoo LED fire exposed driver safety risks. Here's what to check when selecting LED drivers."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Matter over Thread Bulbs in 2026: 5 Tested from $8 IKEA to $500 Nanoleaf Skylight",
-    "slug": "matter-over-thread-bulbs-in-2026-5-tested-from-8-ikea-to-500-nanoleaf-skylight",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims.",
-    "cover": "",
-    "excerpt": "After testing 5 Matter-over-Thread bulbs side by side for 30 days, here's what actually matters — and where Thread falls short of the marketing claims."
-  },
-  {
-    "title": "GB/T 33721-2026 + GB/T 32481-2026 Take Effect November 1 — Will Your LED Driver Pass?",
-    "slug": "gbt-33721-2026-gbt-32481-2026-take-effect-november-1-will-your-led-driver-pass",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window.",
-    "cover": "",
-    "excerpt": "Two new Chinese LED national standards published on April 30, 2026 take effect on November 1. From an LED driver power supply perspective, we break down the 18 reliability test methods and 5 direct impacts on driver BOM, plus the factory compliance checklist for the 60-day window."
-  },
-  {
-    "title": "LED Light Dead? Don't Buy a New Fixture Yet — It's Probably Just the Driver",
-    "slug": "led-light-dead-dont-buy-a-new-fixture-yet-its-probably-just-the-driver",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "Around 70% of 'dead' LED ceiling lights aren't burned-out LEDs — they're failed drivers. A 5-minute 3-step diagnosis can save you from a $95 'full replacement' scam that a $15 part would fix.",
-    "cover": "",
-    "excerpt": "Around 70% of 'dead' LED ceiling lights aren't burned-out LEDs — they're failed drivers. A 5-minute 3-step diagnosis can save you from a $95 'full replacement' scam that a $15 part would fix."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "A ¥423 Floor Lamp vs a ¥5,699 One: What the Extra Money Actually Buys",
-    "slug": "a-423-floor-lamp-vs-a-5699-one-what-the-extra-money-actually-buys",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "A Shanghai Consumer Council test of 20 floor lamps found the cheapest and most expensive models equally good on the numbers that matter for eyes. After 20 years in luminaire manufacturing, here is where the price difference really lives."
-  },
-  {
-    "title": "Why Your LED Strip Falls Off Every Winter (And Why It's Not the Glue's Fault)",
-    "slug": "why-your-led-strip-falls-off-every-winter-and-why-its-not-the-glues-fault",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "Your New LED Lamp Buzzes - and It's Almost Never the LED",
-    "slug": "your-new-led-lamp-buzzes-and-its-almost-never-the-led",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
-  },
-  {
-    "title": "220V vs 12V LED Strip Lights: The Real Difference Isn't Voltage, It's Three Hidden Costs",
-    "slug": "220v-vs-12v-led-strip-lights-the-real-difference-isnt-voltage-its-three-hidden-c",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "A factory insider explains why high-voltage LED strips fail differently: 100Hz flicker, per-meter joints that cause section failures, and live-mains safety boundaries — plus a three-tier selection rule.",
-    "cover": "",
-    "excerpt": "A factory insider explains why high-voltage LED strips fail differently: 100Hz flicker, per-meter joints that cause section failures, and live-mains safety boundaries — plus a three-tier selection rule."
-  },
-  {
     "title": "Bought Lights on Sale? Burn Them In Before They Go in the Ceiling",
     "slug": "bought-lights-on-sale-burn-them-in-before-they-go-in-the-ceiling",
     "date": "2026-11-10",
@@ -196,15 +223,6 @@
     "description": "Why shipping kills LED drivers weeks later, and the 24-hour desk burn-in test that saves you from tearing open a finished ceiling.",
     "cover": "",
     "excerpt": "Why shipping kills LED drivers weeks later, and the 24-hour desk burn-in test that saves you from tearing open a finished ceiling."
-  },
-  {
-    "title": "未命名文章",
-    "slug": "未命名文章",
-    "date": "2026-11-10",
-    "category": "技术文章",
-    "description": "耐利普科技技术文章",
-    "cover": "",
-    "excerpt": "耐利普科技技术文章"
   },
   {
     "title": "220V灯带和12V灯带，差的不是电压，是三种代价",
