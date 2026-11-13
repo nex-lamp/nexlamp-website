@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="720" viewBox="0 0 1080 720">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1a2b45" stroke-width="1"/>
+    </pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1080" height="720" fill="#0a1628"/>
+  <rect width="1080" height="720" fill="url(#grid)"/>
+
+  <text x="60" y="78" fill="#e2e8f0" font-family="sans-serif" font-size="36" font-weight="bold">热从五个地方来，装在哪比标多少瓦更决定生死</text>
+  <text x="60" y="118" fill="#7c8db0" font-family="sans-serif" font-size="20">同一颗驱动，装在通风龙骨上是 5 万小时，压进隔热棉下面可能连 2 万都不到</text>
+
+  <!-- 五条 -->
+  <g font-family="sans-serif">
+    <rect x="60" y="152" width="600" height="76" rx="6" fill="#122b46" stroke="#24405f"/>
+    <text x="82" y="182" fill="#22d3ee" font-size="19" font-weight="bold">一 · 自身损耗</text>
+    <text x="82" y="210" fill="#9fb2cf" font-size="16">效率 88% 的 100W 驱动，约 12W 直接变成热；塑壳导热 0.2 vs 铝 205 W/(m·K)</text>
+
+    <rect x="60" y="240" width="600" height="76" rx="6" fill="#122b46" stroke="#24405f"/>
+    <text x="82" y="270" fill="#4ea8de" font-size="19" font-weight="bold">二 · 环境本身就热</text>
+    <text x="82" y="298" fill="#9fb2cf" font-size="16">顶楼、西晒墙、楼顶灯箱 —— 腔温先天比室温高十几二十度，夏天可到 50℃ 以上</text>
+
+    <rect x="60" y="328" width="600" height="76" rx="6" fill="#2a1a1e" stroke="#5c2f36"/>
+    <text x="82" y="358" fill="#e05252" font-size="19" font-weight="bold">三 · 密闭腔体（最常见）</text>
+    <text x="82" y="386" fill="#c9a8ae" font-size="16">隔热棉直接盖在灯具上＝裹被子；说明书没写可覆盖，就按不能覆盖处理</text>
+
+    <rect x="60" y="416" width="600" height="76" rx="6" fill="#122b46" stroke="#24405f"/>
+    <text x="82" y="446" fill="#e0a052" font-size="19" font-weight="bold">四 · 多台堆叠</text>
+    <text x="82" y="474" fill="#9fb2cf" font-size="16">几颗驱动挤在一处互相烘烤，单颗都不烫，合起来超温</text>
+
+    <rect x="60" y="504" width="600" height="76" rx="6" fill="#122b46" stroke="#24405f"/>
+    <text x="82" y="534" fill="#e0a052" font-size="19" font-weight="bold">五 · 非导热基面</text>
+    <text x="82" y="562" fill="#9fb2cf" font-size="16">平贴石膏板、木板，背面不导热，只剩正面散热</text>
+  </g>
+
+  <!-- 右侧对比 -->
+  <text x="858" y="178" fill="#c8d6e8" font-family="sans-serif" font-size="19" font-weight="bold" text-anchor="middle">同一个吊顶，两种装法</text>
+
+  <!-- 正确 -->
+  <rect x="696" y="200" width="324" height="176" rx="8" fill="#0d2137" stroke="#3ddc97" stroke-opacity="0.55"/>
+  <text x="714" y="228" fill="#3ddc97" font-family="sans-serif" font-size="17" font-weight="bold">留空气 · 放龙骨</text>
+  <rect x="712" y="246" width="292" height="10" fill="#2c3f5c"/>
+  <text x="858" y="243" fill="#5b6f96" font-family="sans-serif" font-size="13" text-anchor="middle">吊顶板</text>
+  <ellipse cx="800" cy="258" rx="34" ry="10" fill="#16283f" stroke="#3b5077"/>
+  <rect x="784" y="262" width="32" height="26" fill="#1b3a55" stroke="#22d3ee" stroke-opacity="0.6"/>
+  <rect x="900" y="270" width="62" height="34" rx="3" fill="#1b3a55" stroke="#3ddc97" stroke-opacity="0.8"/>
+  <text x="931" y="292" fill="#3ddc97" font-family="sans-serif" font-size="12" text-anchor="middle">驱动</text>
+  <path d="M900 322 q16 -14 32 0" fill="none" stroke="#3ddc97" stroke-opacity="0.6" stroke-width="1.5"/>
+  <path d="M872 322 q16 -14 32 0" fill="none" stroke="#3ddc97" stroke-opacity="0.6" stroke-width="1.5"/>
+  <text x="858" y="352" fill="#7ea88f" font-family="sans-serif" font-size="14" text-anchor="middle">四周有空气流动，检修口够得着</text>
+  <text x="858" y="370" fill="#5b6f96" font-family="sans-serif" font-size="13" text-anchor="middle">Ta 低 10℃，电容寿命约翻倍</text>
+
+  <!-- 错误 -->
+  <rect x="696" y="396" width="324" height="184" rx="8" fill="#1b1116" stroke="#e05252" stroke-opacity="0.55"/>
+  <text x="714" y="424" fill="#e05252" font-family="sans-serif" font-size="17" font-weight="bold">压隔热棉 · 平贴石膏板</text>
+  <rect x="712" y="436" width="292" height="16" fill="#c8a24a" fill-opacity="0.55"/>
+  <text x="858" y="449" fill="#2a1a1e" font-family="sans-serif" font-size="12" text-anchor="middle">隔热棉</text>
+  <rect x="712" y="452" width="292" height="9" fill="#2c3f5c"/>
+  <ellipse cx="800" cy="462" rx="34" ry="9" fill="#16283f" stroke="#5c2f36"/>
+  <rect x="860" y="456" width="70" height="30" rx="3" fill="#2a1a1e" stroke="#e05252" stroke-opacity="0.8"/>
+  <text x="895" y="476" fill="#e05252" font-family="sans-serif" font-size="12" text-anchor="middle">驱动</text>
+  <path d="M880 456 q-8 -22 -30 -26" fill="none" stroke="#e05252" stroke-width="2" stroke-dasharray="5 4"/>
+  <path d="M908 456 q4 -20 0 -30" fill="none" stroke="#e05252" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="858" y="516" fill="#b98a92" font-family="sans-serif" font-size="14" text-anchor="middle">热无路可走，全积在腔里</text>
+  <text x="858" y="534" fill="#7a5a62" font-family="sans-serif" font-size="13" text-anchor="middle">不是当场坏，是三年后开始闪</text>
+  <text x="858" y="558" fill="#5b6f96" font-family="sans-serif" font-size="13" text-anchor="middle">吊顶那圈黄印，就是热留下的痕迹</text>
+
+  <!-- 底注 -->
+  <rect x="60" y="604" width="960" height="72" rx="6" fill="#101f33" stroke="#24405f"/>
+  <text x="82" y="632" fill="#e0a052" font-family="sans-serif" font-size="17" font-weight="bold">还有一条最容易被忘掉：粉尘和油污</text>
+  <text x="82" y="658" fill="#9fb2cf" font-family="sans-serif" font-size="15">后厨、木工车间、临街店面，散热面上的灰等于一层隔热棉，散热效率掉 30%~50%；表面光滑的擦，带鳍片的用压缩空气吹</text>
+</svg>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>Your LED Driver Feels Scorching Hot. "That's Normal" Is Only Half True. | 耐利普科技技术博客</title>
+    <meta name="description" content="耐利普科技技术文章">
+    <meta name="keywords" content="智能照明,LED驱动电源">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/your-led-driver-feels-scorching-hot-thats-normal-is-only-half-true.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Your LED Driver Feels Scorching Hot. "That's Normal" Is Only Half True. | 耐利普科技">
+    <meta property="og:description" content="耐利普科技技术文章">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/your-led-driver-feels-scorching-hot-thats-normal-is-only-half-true.html">
+    <meta property="og:image" content="https://www.nexlamp.com/images/blog-default.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-11-13">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="选型避坑">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Your LED Driver Feels Scorching Hot. "That's Normal" Is Only Half True.",
+      "description": "耐利普科技技术文章",
+      "datePublished": "2026-11-13",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/your-led-driver-feels-scorching-hot-thats-normal-is-only-half-true.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Your LED Driver Feels Scorching Hot. "That's Normal" Is Only Half True.",
+          "item": "https://www.nexlamp.com/dist/blog/your-led-driver-feels-scorching-hot-thats-normal-is-only-half-true.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">Your LED Driver Feels Scorching Hot. "That's Normal" Is Only Half True.</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>Your LED Driver Feels Scorching Hot. "That's Normal" Is Only Half True.</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年11月13日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 选型避坑</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            
+                            <p>Double 11 orders arrived, the lights went up, and then someone reached into the ceiling void and touched the small plastic box feeding the downlight. It was hot enough to pull a hand back. The seller&#39;s answer is almost always the same: &quot;LEDs get warm, that&#39;s normal.&quot;</p>
+<p>That answer is half right. Heat is normal. But &quot;normal&quot; has a ceiling, and the ceiling is printed on the driver&#39;s label. Most people just never learn where to look.</p>
+<h2>1. &quot;Hot&quot; is a hand sensation, not a temperature</h2>
+<p>Your hand is not a thermometer. Roughly: 45 °C feels warm, like a hot bath you can keep your hand in; 55–60 °C you can touch but don&#39;t want to hold; past about 65 °C the back of your hand won&#39;t stay on it for three seconds; at 75 °C you flinch on contact.</p>
+<p>The widely repeated field rule — &quot;if you can hold it for three seconds, it&#39;s fine&quot; — works out to a threshold near 70 °C.</p>
+<p>Here is the problem: <strong>70 °C is nothing for an electronic component.</strong> A 105 °C / 10,000-hour electrolytic capacitor sitting in a 70 °C case is running at roughly 85–95 °C at the core, still inside its rating.</p>
+<p>The temperature at which your hand gives up sits right in the middle of the range where the parts are perfectly comfortable. That mismatch is why this argument never resolves: the customer is asking a component question with a hand, and the seller is answering a hand question with a component standard.</p>
+<h2>2. The number that actually matters: Tc</h2>
+<p>Look at the driver label. Besides input and output, there is usually a line reading <code>Tc: 75°C</code> or <code>Tc: 80°C</code>.</p>
+<p>Tc is the maximum permitted temperature at a <strong>designated hot spot</strong> on the housing (usually near the MOSFET or the output diode), measured at rated ambient and full load. It exists for two reasons: IEC 61347-1 sets limits on accessible surface temperature — both to prevent burns and to keep the plastic housing from softening — and Tc is the test condition behind the lifetime claim.</p>
+<p>So &quot;50,000 hours&quot; never stands alone. The full statement is <strong>50,000 hours @ Tc 75 °C</strong>. Exceed the case temperature and that number is void. As a rule of thumb, every 10 °C of additional case temperature roughly halves electrolytic capacitor life.</p>
+<p>The companion figure is Ta, ambient temperature — and almost everyone misreads it. <strong>Ta is not the 22 °C in your living room. It is the air temperature inside the cavity where the driver actually sits.</strong> In a ceiling void, behind a fixture body, or inside a sealed junction box, Ta runs 10–20 °C above room temperature as a matter of course; above 50 °C inside a ceiling on a summer afternoon is unremarkable.</p>
+<p>A driver whose lifetime is rated at Ta 40 °C, installed in a 70 °C cavity, doesn&#39;t lose a bit of life. It loses most of it.</p>
+<h2>3. Where the heat comes from</h2>
+<p><strong>Its own losses.</strong> A 100 W driver at 88% efficiency turns about 12 W into heat. Plastic housing conducts at roughly 0.2 W/(m·K) against aluminium&#39;s 205 — three orders of magnitude — so heat cannot spread through the shell; it has to leave through convection off the surface.</p>
+<p><strong>Ambient heat.</strong> Top floors, west-facing walls, rooftop boxes. The cavity starts hot.</p>
+<p><strong>Sealed cavities.</strong> The most common and the most avoidable: insulation batting laid straight over the fixture. Unless the instructions say the luminaire is rated for insulation contact, treat it as not rated.</p>
+<p><strong>Stacking.</strong> Several drivers packed into one spot preheat each other. Individually cool, collectively over temperature.</p>
+<p><strong>Non-conductive mounting.</strong> Laid flat on plasterboard or timber: the back can&#39;t conduct, so only the front face is working.</p>
+<p>One more that gets forgotten: <strong>dust and grease.</strong> Above a commercial kitchen, in a woodworking shop, on a street-facing shopfront, a layer of dust on the heat-dissipating surface behaves like another blanket and cuts thermal performance by 30–50%.</p>
+<p>The practical conclusion: what determines how long a driver lasts is usually not its wattage rating, but where it was put.</p>
+<h2>4. Judge by symptoms, not by touch</h2>
+<p>Without an IR thermometer, use symptoms. Any one of these three means it is not &quot;normal warmth&quot;:</p>
+<ol>
+<li><strong>It goes out after a few hours and comes back on once it cools.</strong> Classic thermal protection cycling — output cut, then restored.</li>
+<li><strong>Slight brightness wobble, or visible flicker.</strong> Derating, or the step before protection trips. A phone camera at 1/100 s will show banding if it&#39;s happening.</li>
+<li><strong>Yellowed housing, or a hot-plastic smell.</strong> Thermal ageing of the enclosure has started. Stop using it.</li>
+</ol>
+<p>If none of the three is present and it&#39;s merely hot to the touch, leave it and observe. Components are designed to run in a range that feels unpleasant to skin.</p>
+<h2>5. Give the heat a path</h2>
+<p>If the ceiling is already closed, these are still worth doing:</p>
+<ul>
+<li>Move the driver onto a joist or a metal surface; don&#39;t lay it flat on plasterboard.</li>
+<li>Leave air around it. Don&#39;t cover it with insulation; if it doesn&#39;t fit with clearance, it doesn&#39;t fit.</li>
+<li>Don&#39;t stack drivers. Leave spacing.</li>
+<li>For remote (separate) drivers, put them where a service hatch can reach them — the driver, not the LED board, is what gets replaced in year three.</li>
+<li>Keep 20% power headroom. Drivers running at full load run hottest.</li>
+<li>Keep the driver-to-board lead under 0.5 m with at least 0.5 mm² conductor. Past 1 m, voltage drop and losses become visible — a frequent cause of &quot;the light works but isn&#39;t bright enough.&quot;</li>
+</ul>
+<h2>6. Four questions before ordering</h2>
+<ol>
+<li>What is the <strong>Tc</strong> of this driver?</li>
+<li>What <strong>Ta</strong> is the lifetime figure rated at, and at what case temperature?</li>
+<li>What is the <strong>efficiency</strong>? (Same 100 W: 88% and 93% differ by 5 W of heat.)</li>
+<li>Is the driver <strong>integrated or remote</strong>, and can it be replaced on its own?</li>
+</ol>
+<p>Any legitimate manufacturer can answer all four. If they can&#39;t, it&#39;s usually not an oversight.</p>
+<h2>Two common questions</h2>
+<p><strong>I measured 70+ °C on the bench with the light lying on a table. Is it defective?</strong></p>
+<p>Bench testing and installed operation are different thermal paths. On a table there is no aluminium body and no cavity — the conditions are far worse than in a ceiling, so that reading is an upper bound, not a verdict. In July a user bench-tested a recessed spotlight, measured the driver in the seventies, and melted the wax in a decorative candle tin it was resting on. That is a real observation, but an extreme one: once the fixture is installed in plasterboard against an aluminium body, the thermal path is entirely different.</p>
+<p><strong>It&#39;s hot, but it has run for a year without failing. Should I do anything?</strong></p>
+<p>If none of the three symptoms are present, no. The margin is designed to sit in the range that feels uncomfortable. The signal to act is a symptom, not a temperature.</p>
+<hr>
+<p>The reason heat is so easy to misjudge is that it is slow. Nothing fails on the spot. It fails three years later as flicker, five years later as darkness. By then the verdict is &quot;bad quality&quot; — and nobody remembers that the driver spent its first summer under a layer of insulation.</p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>
