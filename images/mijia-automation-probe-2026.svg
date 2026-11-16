@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 640" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="640" fill="url(#bg1)"/>
+  <g stroke="#12305a" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="107" x2="1080" y2="107"/><line x1="0" y1="214" x2="1080" y2="214"/>
+    <line x1="0" y1="321" x2="1080" y2="321"/><line x1="0" y1="428" x2="1080" y2="428"/>
+    <line x1="0" y1="535" x2="1080" y2="535"/>
+    <line x1="216" y1="0" x2="216" y2="640"/><line x1="432" y1="0" x2="432" y2="640"/>
+    <line x1="648" y1="0" x2="648" y2="640"/><line x1="864" y1="0" x2="864" y2="640"/>
+  </g>
+  <text x="540" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#e8f1ff">第一步：安一个"会出声的探针"</text>
+  <text x="540" y="80" text-anchor="middle" font-size="15" fill="#7aa5d8">自动化失败是静默的 · 先用一次播报把故障范围砍半</text>
+
+  <!-- 触发/条件/执行 三段链路 -->
+  <g>
+    <rect x="60" y="120" width="260" height="130" rx="12" fill="#101f38" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="190" y="155" text-anchor="middle" font-size="17" fill="#38bdf8" font-weight="bold">触发段</text>
+    <text x="190" y="185" text-anchor="middle" font-size="13" fill="#cfe0f5">"当以下情况发生"</text>
+    <text x="190" y="212" text-anchor="middle" font-size="12" fill="#7aa5d8">传感器事件 / 定时 / 开关</text>
+
+    <rect x="410" y="120" width="260" height="130" rx="12" fill="#101f38" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="540" y="155" text-anchor="middle" font-size="17" fill="#38bdf8" font-weight="bold">条件段</text>
+    <text x="540" y="185" text-anchor="middle" font-size="13" fill="#cfe0f5">"且满足全部状态"</text>
+    <text x="540" y="212" text-anchor="middle" font-size="12" fill="#7aa5d8">触发那一刻一次性检查</text>
+
+    <rect x="760" y="120" width="260" height="130" rx="12" fill="#101f38" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="890" y="155" text-anchor="middle" font-size="17" fill="#38bdf8" font-weight="bold">执行段</text>
+    <text x="890" y="185" text-anchor="middle" font-size="13" fill="#cfe0f5">动作列表依次下发</text>
+    <text x="890" y="212" text-anchor="middle" font-size="12" fill="#7aa5d8">失败被静默丢弃、不报错</text>
+
+    <line x1="320" y1="185" x2="400" y2="185" stroke="#38bdf8" stroke-width="2.5"/>
+    <polygon points="400,179 410,185 400,191" fill="#38bdf8"/>
+    <line x1="670" y1="185" x2="750" y2="185" stroke="#38bdf8" stroke-width="2.5"/>
+    <polygon points="750,179 760,185 750,191" fill="#38bdf8"/>
+  </g>
+
+  <!-- 探针 -->
+  <rect x="290" y="300" width="500" height="86" rx="14" fill="#0f2a1a" stroke="#4ade80" stroke-width="2"/>
+  <text x="540" y="336" text-anchor="middle" font-size="18" fill="#4ade80" font-weight="bold">动作列表末尾加一条：小爱音箱播报一句话</text>
+  <text x="540" y="366" text-anchor="middle" font-size="13" fill="#a7d9b8">然后手动触发这条自动化，只看音箱响不响</text>
+  <line x1="890" y1="250" x2="890" y2="290" stroke="#4ade80" stroke-width="2" stroke-dasharray="5,4"/>
+  <line x1="890" y1="290" x2="540" y2="290" stroke="#4ade80" stroke-width="2" stroke-dasharray="5,4"/>
+  <line x1="540" y1="290" x2="540" y2="300" stroke="#4ade80" stroke-width="2" stroke-dasharray="5,4"/>
+
+  <!-- 分叉结论 -->
+  <line x1="400" y1="386" x2="330" y2="440" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="330,440 336,428 324,428" fill="#fbbf24"/>
+  <line x1="680" y1="386" x2="750" y2="440" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="750,440 756,428 744,428" fill="#fbbf24"/>
+
+  <rect x="110" y="450" width="420" height="130" rx="12" fill="#101f38" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="320" y="486" text-anchor="middle" font-size="16" fill="#fbbf24" font-weight="bold">音箱根本没响</text>
+  <text x="320" y="516" text-anchor="middle" font-size="13" fill="#cfe0f5">问题在触发段或条件段</text>
+  <text x="320" y="545" text-anchor="middle" font-size="12" fill="#7aa5d8">查传感器事件、设备离线、光照状态时序</text>
+
+  <rect x="550" y="450" width="420" height="130" rx="12" fill="#101f38" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="760" y="486" text-anchor="middle" font-size="16" fill="#fbbf24" font-weight="bold">音箱响了、灯没动</text>
+  <text x="760" y="516" text-anchor="middle" font-size="13" fill="#cfe0f5">问题锁定在执行段</text>
+  <text x="760" y="545" text-anchor="middle" font-size="12" fill="#7aa5d8">查失效设备记录、删动作重选设备</text>
+
+  <text x="540" y="618" text-anchor="middle" font-size="14" fill="#5f7ea8">一次出声，范围砍半 · 价值不是修好，而是不再对着整条自动化瞎猜</text>
+</svg>

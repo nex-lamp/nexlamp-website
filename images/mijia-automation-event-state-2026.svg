@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 640" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="640" fill="url(#bg2)"/>
+  <g stroke="#12305a" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="107" x2="1080" y2="107"/><line x1="0" y1="214" x2="1080" y2="214"/>
+    <line x1="0" y1="321" x2="1080" y2="321"/><line x1="0" y1="428" x2="1080" y2="428"/>
+    <line x1="0" y1="535" x2="1080" y2="535"/>
+    <line x1="216" y1="0" x2="216" y2="640"/><line x1="432" y1="0" x2="432" y2="640"/>
+    <line x1="648" y1="0" x2="648" y2="640"/><line x1="864" y1="0" x2="864" y2="640"/>
+  </g>
+  <text x="540" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#e8f1ff">"有人，灯却不亮"的头号原因：事件型 vs 状态型</text>
+  <text x="540" y="80" text-anchor="middle" font-size="15" fill="#7aa5d8">触发那一刻检查的是"五分钟前的状态" · 要改的不是阈值，是判的时机</text>
+
+  <!-- 时间轴 -->
+  <line x1="120" y1="330" x2="980" y2="330" stroke="#5f7ea8" stroke-width="2"/>
+  <polygon points="980,324 996,330 980,336" fill="#5f7ea8"/>
+  <text x="960" y="360" text-anchor="end" font-size="13" fill="#7aa5d8">时间 →</text>
+
+  <!-- 事件型：人体传感器立刻上报 -->
+  <rect x="180" y="140" width="330" height="110" rx="12" fill="#101f38" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="345" y="172" text-anchor="middle" font-size="16" fill="#38bdf8" font-weight="bold">人体传感器 · 事件型</text>
+  <text x="345" y="200" text-anchor="middle" font-size="13" fill="#cfe0f5">人一走过，立刻发事件</text>
+  <text x="345" y="226" text-anchor="middle" font-size="12" fill="#7aa5d8">响应窗口：秒级</text>
+
+  <line x1="480" y1="250" x2="560" y2="330" stroke="#38bdf8" stroke-width="2.5"/>
+  <circle cx="560" cy="330" r="7" fill="#38bdf8"/>
+  <text x="560" y="310" text-anchor="middle" font-size="13" fill="#38bdf8">T=0 人触发</text>
+
+  <!-- 状态型：光照传感器5分钟前 -->
+  <rect x="600" y="140" width="330" height="110" rx="12" fill="#101f38" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="765" y="172" text-anchor="middle" font-size="16" fill="#a78bfa" font-weight="bold">光照传感器 · 状态型</text>
+  <text x="765" y="200" text-anchor="middle" font-size="13" fill="#cfe0f5">可能五分钟才上报一次</text>
+  <text x="765" y="226" text-anchor="middle" font-size="12" fill="#7aa5d8">系统读到的永远是"上一次"</text>
+
+  <line x1="765" y1="250" x2="765" y2="330" stroke="#a78bfa" stroke-width="2.5"/>
+  <circle cx="765" cy="330" r="7" fill="#a78bfa"/>
+  <text x="765" y="360" text-anchor="middle" font-size="13" fill="#a78bfa">状态停在 T-5min</text>
+  <text x="765" y="382" text-anchor="middle" font-size="12" fill="#cfe0f5">判定：亮度不满足 → 不执行</text>
+
+  <!-- 判定结果框 -->
+  <rect x="120" y="410" width="380" height="86" rx="12" fill="#2a1010" stroke="#f87171" stroke-width="1.5"/>
+  <text x="310" y="445" text-anchor="middle" font-size="15" fill="#f87171" font-weight="bold">错误修法：调灵敏度阈值</text>
+  <text x="310" y="474" text-anchor="middle" font-size="12" fill="#e0b8b8">阈值没变，读的还是旧状态，照样不执行</text>
+
+  <rect x="580" y="410" width="380" height="86" rx="12" fill="#0f2a1a" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="770" y="445" text-anchor="middle" font-size="15" fill="#4ade80" font-weight="bold">正确修法：挪状态条件的判法</text>
+  <text x="770" y="474" text-anchor="middle" font-size="12" fill="#a7d9b8">状态条件挪到"延时几十秒"后再判，或换成时间段</text>
+
+  <text x="540" y="540" text-anchor="middle" font-size="14" fill="#5f7ea8">触发段的三个小坑：设备离线不重试直接丢 · 双频合一重连慢错过那一秒 · 两分钟内反复触发被节流</text>
+  <text x="540" y="575" text-anchor="middle" font-size="14" fill="#5f7ea8">排查口诀：事件等得起，状态等不起——凡是"当时读一次"的条件，都给它留一个延时的余地</text>
+</svg>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>The Lights Are Installed, the Automations Aren't Working: Debugging Mijia's Silent Failures | 耐利普科技技术博客</title>
+    <meta name="description" content="A field guide to Mijia (Mi Home) automation failures: the speaker-probe trick that halves your fault range in one shot, event triggers versus state conditions, stale device records, and the six features that quietly force your rule back into the cloud.">
+    <meta name="keywords" content="智能照明,LED驱动电源">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/the-lights-are-installed-the-automations-arent-working-debugging-mijias-silent-f.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="The Lights Are Installed, the Automations Aren't Working: Debugging Mijia's Silent Failures | 耐利普科技">
+    <meta property="og:description" content="A field guide to Mijia (Mi Home) automation failures: the speaker-probe trick that halves your fault range in one shot, event triggers versus state conditions, stale device records, and the six features that quietly force your rule back into the cloud.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/the-lights-are-installed-the-automations-arent-working-debugging-mijias-silent-f.html">
+    <meta property="og:image" content="https://www.nexlamp.com/images/blog-default.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-11-16">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="技术文章">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "The Lights Are Installed, the Automations Aren't Working: Debugging Mijia's Silent Failures",
+      "description": "A field guide to Mijia (Mi Home) automation failures: the speaker-probe trick that halves your fault range in one shot, event triggers versus state conditions, stale device records, and the six features that quietly force your rule back into the cloud.",
+      "datePublished": "2026-11-16",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/the-lights-are-installed-the-automations-arent-working-debugging-mijias-silent-f.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "The Lights Are Installed, the Automations Aren't Working: Debugging Mijia's Silent Failures",
+          "item": "https://www.nexlamp.com/dist/blog/the-lights-are-installed-the-automations-arent-working-debugging-mijias-silent-f.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">The Lights Are Installed, the Automations Aren't Working: Debugging Mijia's Silent Failures</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>The Lights Are Installed, the Automations Aren't Working: Debugging Mijia's Silent Failures</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年11月16日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 技术文章</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            
+                            <p>The delivery boxes are unpacked, the batteries are in, and you are full of confidence: from now on, the light comes on when you walk in and goes off when you leave. Three days later you start questioning your life choices. Someone clearly walks past the sensor and the light just ignores them. You told it to turn off at eleven and it plays dead. It worked yesterday. Today it doesn&#39;t.</p>
+<p>Before you blame the hardware, there&#39;s a consensus among people who have spent too long with smart lighting: <strong>when an automation doesn&#39;t run, nine times out of ten the device isn&#39;t broken — one of the three segments, trigger, condition, or action, is empty.</strong> The trouble is that Mijia (Mi Home) fails silently. It will not tell you which segment is empty.</p>
+<p>That&#39;s the whole problem in one sentence. A broken driver gives you a flicker, a dead LED strip gives you a dark room, a bad joint gives you a warm terminal. An automation gives you nothing at all. So the first job isn&#39;t repair — it&#39;s narrowing the search.</p>
+<h2>Step one: install a probe that makes noise</h2>
+<p>Add one action to the very end of the automation&#39;s action list: &quot;Xiaomi speaker announces a sentence.&quot; The sentence can be anything. Then trigger the automation manually, once.</p>
+<ul>
+<li>The speaker talks, the light doesn&#39;t move — the problem is in the <strong>action segment</strong>.</li>
+<li>The speaker doesn&#39;t talk at all — the problem is in the <strong>trigger or condition segment</strong>.</li>
+</ul>
+<p>One sound, and your fault range is cut in half. The value of this step isn&#39;t that it fixes anything. It&#39;s that you stop guessing at the whole rule at once.</p>
+<p>A speaker is the cheapest diagnostic instrument in the house, and almost every Mijia installation already has one. Use it before you use a ladder.</p>
+<h2>The trigger segment: the number one reason &quot;someone&#39;s there but the light stays off&quot;</h2>
+<p>&quot;When the following happens&quot; is the trigger. &quot;And all of these conditions are met&quot; is checked at the instant the trigger fires. <strong>These are not the same thing, and the gap between them is where automations die.</strong></p>
+<p>A motion sensor is event-type: a person walks past and it emits an event immediately. An ambient light sensor is state-type: it may only report its brightness once every five minutes. So at the exact moment someone walks down the hallway, the system reads a light level from five minutes ago, decides the condition isn&#39;t satisfied, and the entire automation quietly does nothing.</p>
+<p>This is not a sensitivity problem. Raising the threshold on the light sensor won&#39;t help, because the value being compared is stale, not wrong. What you change is the <strong>order of evaluation</strong>: move the state condition to after a &quot;delay of a few dozen seconds,&quot; or drop it entirely and use a time-window condition instead. Evaluate the state after the world has had a moment to update, not at the same millisecond as the event.</p>
+<p>There are three smaller traps in the trigger segment as well:</p>
+<ul>
+<li><strong>The device was offline at that moment.</strong> Mijia does not retry. The action is simply dropped, and nothing is logged as an error.</li>
+<li><strong>A Wi-Fi device reconnecting slowly.</strong> With &quot;band steering&quot; (2.4 GHz and 5 GHz merged into one SSID) enabled on the router, a device can take long enough to reattach that it misses the one second it needed to be reachable.</li>
+<li><strong>Throttling on repeated triggers.</strong> Firing several times within a minute or two gets rate-limited. Adding a &quot;delay 30 seconds&quot; before the action and re-checking the condition afterwards is a workable pattern.</li>
+</ul>
+<h2>The execution segment: the invisible stale device record</h2>
+<p>The nastiest trap in the action segment is a <strong>stale device record</strong>. If a device was deleted and re-added, or moved over from another home, the action line in the automation looks perfectly normal in the UI — but underneath it still points at the old record. At execution time it is discarded. No error, no warning, no log entry that says &quot;this reference is dead.&quot;</p>
+<p>The heuristic I use: whenever someone says &quot;this automation stopped working after I reinstalled that one device,&quot; it&#39;s this. Nine times out of ten. Delete the action, re-select the device, save. You don&#39;t need to rebuild the whole rule, and you don&#39;t need to touch the hardware.</p>
+<p>It&#39;s worth saying out loud because it violates every instinct you have as an electrician. There is no loose wire to find. The wire is drawn correctly on the diagram and connected to nothing.</p>
+<h2>The cloud wall: automations run in the cloud by default</h2>
+<p>If the home has no central gateway hub, and the scene isn&#39;t marked &quot;local execution,&quot; then every automation runs on Mijia&#39;s servers. The WAN port on the router hiccups, the vendor&#39;s servers have a bad afternoon, and your automations stop running. Afterwards there is nothing anomalous to find, because from the system&#39;s point of view nothing failed locally. It just never got the instruction.</p>
+<p>According to Mijia&#39;s own documentation, local execution requires all of the following at once: the trigger device and the action device must be under the same gateway, <strong>and the scene must not contain any feature that requires internet access.</strong> Meet even one of the conditions below and the whole rule is demoted to cloud execution:</p>
+<table>
+<thead>
+<tr>
+<th>Internet-dependent feature (one is enough to force cloud execution)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Effective time period set to &quot;statutory working days / statutory holidays&quot;</td>
+</tr>
+<tr>
+<td>Trigger: arriving at / leaving a location</td>
+</tr>
+<tr>
+<td>Trigger: sunrise / sunset</td>
+</tr>
+<tr>
+<td>Trigger: outdoor weather change</td>
+</tr>
+<tr>
+<td>Action: send a notification to the phone</td>
+</tr>
+<tr>
+<td>Action: run or toggle a manual scene</td>
+</tr>
+</tbody></table>
+<p>I&#39;ve seen a case where automations stopped working <em>after</em> a central gateway upgrade, and the cause turned out to be a single &quot;send notification&quot; action dragging the entire rule back into the cloud. Remove the notification, and local execution came back. The gateway was never the problem.</p>
+<p>This is the part that surprises people most, because it&#39;s counterintuitive in the worst way: adding a helpful feature can silently downgrade the reliability of everything else in that rule. If you want a rule to survive a dead internet connection, treat that table as a checklist and audit every line of it.</p>
+<h2>When you&#39;re out of ideas, check in this order — the logs don&#39;t lie</h2>
+<ol>
+<li><strong>Gateway online.</strong> Mijia app → Me → Hub &amp; Gateways, check the primary gateway status. Thirty seconds. Roughly half of all cases end here.</li>
+<li><strong>Devices online.</strong> A grey dot in the device list means offline. Check both the trigger device and the action device. Thirty seconds.</li>
+<li><strong>Execution mode.</strong> Open the automation detail page and see whether it&#39;s marked &quot;local.&quot; Thirty seconds.</li>
+<li><strong>Logic.</strong> Check the AND/OR relationships, and whether the effective time windows contradict each other. About two minutes.</li>
+<li><strong>Logs.</strong> The log icon in the top right of the geek-mode view, or &quot;execution records&quot; on the automation detail page.</li>
+</ol>
+<p>The log is the most accurate triage desk you have. <strong>No trigger record at all</strong> — go look at whether the sensor is reporting and whether the gateway is receiving; don&#39;t go near the light. <strong>Trigger recorded, no execution</strong> — the problem is locked in the action segment. Get the direction right and you&#39;ve solved half of it.</p>
+<p>Without logs, you&#39;re back to climbing ladders and swapping drivers on suspicion, which is how a thirty-second fix turns into an afternoon.</p>
+<h2>FAQ</h2>
+<p><strong>The light turned itself on in the middle of the night. Is that an automation too?</strong></p>
+<p>Probably. Open the notification center in the app and look at the automation history — it&#39;s usually a motion sensor or a door contact false-triggering. The other category is a wiring issue: have the electrician run the light through the smart switch panel&#39;s wiring so the fixture can&#39;t power itself on independently of the control system.</p>
+<p><strong>The same light shows as online in Mijia but the automation doesn&#39;t run.</strong></p>
+<p>&quot;Online&quot; only means its state can be read. It does not mean it triggered, and it certainly doesn&#39;t mean it executed. Use the probe to cut the range in half, then read the execution record to confirm which layer it&#39;s stuck at.</p>
+<p><strong>Should I ask &quot;does it support local execution?&quot; when buying lights?</strong></p>
+<p>Yes, but the better question is &quot;where does this linkage run?&quot; Central gateway present, trigger and action devices on the same gateway, no internet-dependent features — it runs with the internet down. In a house where everything executes in the cloud, one router reboot stops every scene in the home at the same time.</p>
+<p>A lamp is a lamp; an automation is an automation. When a lamp fails you replace the driver or the board. When an automation fails you trace the chain — trigger, condition, action, and where it runs. Start by making the speaker say something, then pick up the tools.</p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>

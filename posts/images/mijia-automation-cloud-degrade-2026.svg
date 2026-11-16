@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 640" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="640" fill="url(#bg3)"/>
+  <g stroke="#12305a" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="107" x2="1080" y2="107"/><line x1="0" y1="214" x2="1080" y2="214"/>
+    <line x1="0" y1="321" x2="1080" y2="321"/><line x1="0" y1="428" x2="1080" y2="428"/>
+    <line x1="0" y1="535" x2="1080" y2="535"/>
+    <line x1="216" y1="0" x2="216" y2="640"/><line x1="432" y1="0" x2="432" y2="640"/>
+    <line x1="648" y1="0" x2="648" y2="640"/><line x1="864" y1="0" x2="864" y2="640"/>
+  </g>
+  <text x="540" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#e8f1ff">云端这堵墙：自动化默认在云上跑</text>
+  <text x="540" y="80" text-anchor="middle" font-size="15" fill="#7aa5d8">占一项联网功能，整条规则就降级云端 · 路由器 WAN 口一抖，全屋场景跟着停</text>
+
+  <!-- 本地执行三条件 -->
+  <rect x="60" y="120" width="960" height="120" rx="14" fill="#0f2a1a" stroke="#4ade80" stroke-width="2"/>
+  <text x="540" y="152" text-anchor="middle" font-size="17" fill="#4ade80" font-weight="bold">想本地执行，三个条件同时满足（米家官方口径）</text>
+  <text x="220" y="192" text-anchor="middle" font-size="13" fill="#a7d9b8">① 有中枢网关</text>
+  <text x="460" y="192" text-anchor="middle" font-size="13" fill="#a7d9b8">② 触发与执行设备在同一网关下</text>
+  <text x="780" y="192" text-anchor="middle" font-size="13" fill="#a7d9b8">③ 场景不含任何联网功能</text>
+  <text x="540" y="226" text-anchor="middle" font-size="12" fill="#5f9e78">本地：断网也能跑，毫秒级响应 ｜ 云端：依赖外网，秒级响应，断网失效</text>
+
+  <!-- 六项降级清单 -->
+  <rect x="60" y="270" width="440" height="290" rx="14" fill="#2a1010" stroke="#f87171" stroke-width="1.5"/>
+  <text x="280" y="306" text-anchor="middle" font-size="16" fill="#f87171" font-weight="bold">占一项即降级云端的联网功能</text>
+  <text x="90" y="345" font-size="14" fill="#e8cfcf">✕ 生效时间段设"法定工作日/节假日"</text>
+  <text x="90" y="380" font-size="14" fill="#e8cfcf">✕ 触发条件：到达 / 离开某地</text>
+  <text x="90" y="415" font-size="14" fill="#e8cfcf">✕ 触发条件：日出 / 日落</text>
+  <text x="90" y="450" font-size="14" fill="#e8cfcf">✕ 触发条件：室外天气变化</text>
+  <text x="90" y="485" font-size="14" fill="#e8cfcf">✕ 执行动作：给手机发通知</text>
+  <text x="90" y="520" font-size="14" fill="#e8cfcf">✕ 执行动作：执行 / 开关联手动场景</text>
+
+  <!-- 真实案例 -->
+  <rect x="560" y="270" width="460" height="290" rx="14" fill="#101f38" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="790" y="306" text-anchor="middle" font-size="16" fill="#38bdf8" font-weight="bold">真实案例：一条通知拖垮整条规则</text>
+  <text x="590" y="345" font-size="13" fill="#cfe0f5">用户反馈：中枢网关升级后，</text>
+  <text x="590" y="372" font-size="13" fill="#cfe0f5">原有自动化反而开始时灵时不灵。</text>
+  <text x="590" y="412" font-size="13" fill="#cfe0f5">排查结论：规则里有一条"发送通知"，</text>
+  <text x="590" y="439" font-size="13" fill="#cfe0f5">整条自动化被拖回云端执行。</text>
+  <text x="590" y="479" font-size="13" fill="#4ade80">解法：删掉通知动作，恢复本地执行。</text>
+  <text x="590" y="520" font-size="12" fill="#7aa5d8">详情页顶部看"执行方式：本地"标签，</text>
+  <text x="590" y="545" font-size="12" fill="#7aa5d8">显示云端就逐项核对上面六条。</text>
+
+  <text x="540" y="600" text-anchor="middle" font-size="14" fill="#5f7ea8">没有中枢网关、场景没标本地执行 → 每条自动化都在米家服务器上跑，事后还查不出异常</text>
+</svg>
