@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 640" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b4f8c"/>
+      <stop offset="1" stop-color="#7ec8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="640" fill="url(#bg)"/>
+  <g stroke="#12305a" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="107" x2="1080" y2="107"/><line x1="0" y1="214" x2="1080" y2="214"/>
+    <line x1="0" y1="321" x2="1080" y2="321"/><line x1="0" y1="428" x2="1080" y2="428"/>
+    <line x1="0" y1="535" x2="1080" y2="535"/>
+    <line x1="216" y1="0" x2="216" y2="640"/><line x1="432" y1="0" x2="432" y2="640"/>
+    <line x1="648" y1="0" x2="648" y2="640"/><line x1="864" y1="0" x2="864" y2="640"/>
+  </g>
+  <text x="540" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#e8f1ff">三档价格，你到底在为哪一片光付钱</text>
+  <text x="540" y="80" text-anchor="middle" font-size="15" fill="#7aa5d8">分水岭不是蓝得深不深，是散射板匀不匀、出光有没有方向</text>
+
+  <!-- 档位一 白牌 -->
+  <rect x="50" y="115" width="315" height="470" rx="16" fill="#101f38" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="70" y="135" width="275" height="70" rx="10" fill="#132b4a"/>
+  <text x="207" y="165" text-anchor="middle" font-size="16" fill="#7dd3fc" font-weight="bold">白牌工厂货</text>
+  <text x="207" y="190" text-anchor="middle" font-size="15" fill="#e8f1ff">几百元</text>
+  <text x="75" y="245" font-size="13" fill="#cfe0f5">买到的是「蓝色的光」</text>
+  <text x="75" y="282" font-size="12" fill="#9db8d8">LED灯板 + 蓝色扩散层</text>
+  <text x="75" y="312" font-size="12" fill="#9db8d8">开灯一块蓝板，关灯灰蓝</text>
+  <text x="75" y="342" font-size="12" fill="#9db8d8">墙上没有光形</text>
+  <text x="75" y="380" font-size="12" fill="#f87171">✕ 无散射结构</text>
+  <text x="75" y="410" font-size="12" fill="#f87171">✕ 出光无方向</text>
+  <text x="75" y="440" font-size="12" fill="#f87171">✕ 光色生硬无层次</text>
+  <rect x="70" y="480" width="275" height="80" rx="10" fill="#0f2a1a" stroke="#4ade80" stroke-width="1.2"/>
+  <text x="207" y="510" text-anchor="middle" font-size="12" fill="#a7d9b8">够用场景</text>
+  <text x="207" y="535" text-anchor="middle" font-size="13" fill="#4ade80">玄关走廊，只要一片蓝</text>
+
+  <!-- 档位二 品牌款 -->
+  <rect x="382" y="115" width="315" height="470" rx="16" fill="#0f2a1a" stroke="#4ade80" stroke-width="2"/>
+  <rect x="402" y="135" width="275" height="70" rx="10" fill="#153a26"/>
+  <text x="540" y="165" text-anchor="middle" font-size="16" fill="#4ade80" font-weight="bold">主流品牌款</text>
+  <text x="540" y="190" text-anchor="middle" font-size="15" fill="#e8f1ff">约1500至2500元</text>
+  <text x="407" y="245" font-size="13" fill="#cfe8d4">买到的是「匀」和「方向」</text>
+  <text x="407" y="282" font-size="12" fill="#a7d9b8">瑞利散射板做进纳米颗粒</text>
+  <text x="407" y="312" font-size="12" fill="#a7d9b8">散射板更匀，灯珠隐藏好</text>
+  <text x="407" y="342" font-size="12" fill="#a7d9b8">出光角度可控，墙上有光斑</text>
+  <text x="407" y="380" font-size="12" fill="#86efac">✓ 显色更好</text>
+  <text x="407" y="410" font-size="12" fill="#86efac">✓ 色温可调可联动</text>
+  <text x="407" y="440" font-size="12" fill="#86efac">✓ 墙上是接近日光的白</text>
+  <rect x="402" y="480" width="275" height="80" rx="10" fill="#132b4a" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="540" y="510" text-anchor="middle" font-size="12" fill="#7dd3fc">主流之选</text>
+  <text x="540" y="535" text-anchor="middle" font-size="13" fill="#4ade80">要光斑和氛围，选这档</text>
+
+  <!-- 档位三 进口原版 -->
+  <rect x="714" y="115" width="315" height="470" rx="16" fill="#101f38" stroke="#a78bfa" stroke-width="1.5"/>
+  <rect x="734" y="135" width="275" height="70" rx="10" fill="#241b45"/>
+  <text x="872" y="165" text-anchor="middle" font-size="16" fill="#c4b5fd" font-weight="bold">进口原版</text>
+  <text x="872" y="190" text-anchor="middle" font-size="15" fill="#e8f1ff">数千美元级</text>
+  <text x="739" y="245" font-size="13" fill="#ddd6fe">买到的是「太阳」</text>
+  <text x="739" y="282" font-size="12" fill="#b9a9e8">每颗LED配透镜</text>
+  <text x="739" y="312" font-size="12" fill="#b9a9e8">光准直成平行光</text>
+  <text x="739" y="342" font-size="12" fill="#b9a9e8">做出随视角移动的太阳</text>
+  <text x="739" y="380" font-size="12" fill="#c4b5fd">✓ 最真实的光影</text>
+  <text x="739" y="410" font-size="12" fill="#c4b5fd">✓ 到店看实物服务</text>
+  <text x="739" y="440" font-size="12" fill="#c4b5fd">✓ 天花板级效果</text>
+  <rect x="734" y="480" width="275" height="80" rx="10" fill="#241b45" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="872" y="510" text-anchor="middle" font-size="12" fill="#c4b5fd">预算充足</text>
+  <text x="872" y="535" text-anchor="middle" font-size="13" fill="#ddd6fe">追求极致再上探</text>
+
+  <text x="540" y="620" text-anchor="middle" font-size="13" fill="#5f7fa8">同款热门型号，官方标价与团购价可差近一倍 · 下单前先核对型号后缀和渠道</text>
+</svg>

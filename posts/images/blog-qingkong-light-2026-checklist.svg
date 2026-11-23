@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 640" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="640" fill="url(#bg4)"/>
+  <g stroke="#12305a" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="107" x2="1080" y2="107"/><line x1="0" y1="214" x2="1080" y2="214"/>
+    <line x1="0" y1="321" x2="1080" y2="321"/><line x1="0" y1="428" x2="1080" y2="428"/>
+    <line x1="0" y1="535" x2="1080" y2="535"/>
+    <line x1="216" y1="0" x2="216" y2="640"/><line x1="432" y1="0" x2="432" y2="640"/>
+    <line x1="648" y1="0" x2="648" y2="640"/><line x1="864" y1="0" x2="864" y2="640"/>
+  </g>
+  <text x="540" y="48" text-anchor="middle" font-size="28" font-weight="bold" fill="#e8f1ff">下单前，把顺序倒过来问</text>
+  <text x="540" y="78" text-anchor="middle" font-size="15" fill="#7aa5d8">别再「看中一款灯，再想装哪儿」——青空灯得先定环境，再定灯</text>
+
+  <!-- 步骤1 -->
+  <rect x="50" y="115" width="980" height="112" rx="14" fill="#101f38" stroke="#38bdf8" stroke-width="1.6"/>
+  <circle cx="105" cy="171" r="30" fill="#38bdf8"/>
+  <text x="105" y="180" text-anchor="middle" font-size="24" font-weight="bold" fill="#0a1628">1</text>
+  <text x="155" y="155" font-size="19" font-weight="bold" fill="#7dd3fc">先问场景</text>
+  <text x="155" y="188" font-size="14" fill="#cfe0f5">这间房是不是长期昏暗近似暗室？卫生间 / 厨房 / 楼梯转角 / 地下室 / 玄关</text>
+  <text x="155" y="212" font-size="13" fill="#f87171">采光好的房间装它，最容易变成「新家第一个丑东西」</text>
+
+  <!-- 步骤2 -->
+  <rect x="50" y="245" width="980" height="112" rx="14" fill="#101f38" stroke="#a78bfa" stroke-width="1.6"/>
+  <circle cx="105" cy="301" r="30" fill="#a78bfa"/>
+  <text x="105" y="310" text-anchor="middle" font-size="24" font-weight="bold" fill="#0a1628">2</text>
+  <text x="155" y="285" font-size="19" font-weight="bold" fill="#c4b5fd">再问吊顶</text>
+  <text x="155" y="318" font-size="14" fill="#ddd6fe">净空够不够 20 厘米？铝扣板还是石膏板？吊码要不要另买？</text>
+  <text x="155" y="342" font-size="13" fill="#f87171">不够深就选 4 至 9 厘米超薄侧发光或明装款，别硬嵌</text>
+
+  <!-- 步骤3 -->
+  <rect x="50" y="375" width="980" height="112" rx="14" fill="#101f38" stroke="#4ade80" stroke-width="1.6"/>
+  <circle cx="105" cy="431" r="30" fill="#4ade80"/>
+  <text x="105" y="440" text-anchor="middle" font-size="24" font-weight="bold" fill="#0a1628">3</text>
+  <text x="155" y="415" font-size="19" font-weight="bold" fill="#86efac">然后问朝向</text>
+  <text x="155" y="448" font-size="14" fill="#cfe8d4">出光口对准的是不是一面哑光白墙？到墙距离 1.4 至 1.7 米最佳</text>
+  <text x="155" y="472" font-size="13" fill="#f87171">超过 1.8 米亮度掉四成 · 别对镜子、亮面和进门视线</text>
+
+  <!-- 步骤4 -->
+  <rect x="50" y="505" width="980" height="112" rx="14" fill="#101f38" stroke="#fbbf24" stroke-width="1.6"/>
+  <circle cx="105" cy="561" r="30" fill="#fbbf24"/>
+  <text x="105" y="570" text-anchor="middle" font-size="24" font-weight="bold" fill="#0a1628">4</text>
+  <text x="155" y="545" font-size="19" font-weight="bold" fill="#fcd34d">最后问价格带</text>
+  <text x="155" y="578" font-size="14" fill="#f5e6c8">只要一片蓝拍照好看，几百块真散射板就够；要光斑色温联动，再上品牌款</text>
+  <text x="155" y="602" font-size="13" fill="#f87171">面板宁大勿小 · 官方价与团购价先核对清楚</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 640" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="640" fill="url(#bg2)"/>
+  <g stroke="#12305a" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="107" x2="1080" y2="107"/><line x1="0" y1="214" x2="1080" y2="214"/>
+    <line x1="0" y1="321" x2="1080" y2="321"/><line x1="0" y1="428" x2="1080" y2="428"/>
+    <line x1="0" y1="535" x2="1080" y2="535"/>
+    <line x1="216" y1="0" x2="216" y2="640"/><line x1="432" y1="0" x2="432" y2="640"/>
+    <line x1="648" y1="0" x2="648" y2="640"/><line x1="864" y1="0" x2="864" y2="640"/>
+  </g>
+  <text x="540" y="48" text-anchor="middle" font-size="28" font-weight="bold" fill="#e8f1ff">四类翻车，没有一类是「蓝天不够真」</text>
+  <text x="540" y="78" text-anchor="middle" font-size="15" fill="#7aa5d8">翻完20多篇翻车帖，骂「不像真的」的很少，坑全在结构性的地方</text>
+
+  <!-- 翻车一 当主灯 -->
+  <rect x="50" y="110" width="475" height="230" rx="14" fill="#2a1010" stroke="#f87171" stroke-width="1.8"/>
+  <circle cx="90" cy="148" r="20" fill="#f87171"/>
+  <text x="90" y="155" text-anchor="middle" font-size="18" font-weight="bold" fill="#2a1010">1</text>
+  <text x="122" y="155" font-size="18" font-weight="bold" fill="#f87171">把它当主灯</text>
+  <text x="75" y="200" font-size="14" fill="#e8cfcf">热门款 80W 却只有 2600 流明</text>
+  <text x="75" y="232" font-size="14" fill="#e8cfcf">同品牌 48W 吸顶灯反而有 3000 流明</text>
+  <text x="75" y="264" font-size="13" fill="#e8a0a0">多出的瓦数用来「把天弄蓝」，不照亮桌面</text>
+  <text x="75" y="300" font-size="13" fill="#f87171">用户实测：5平米厨房灯下几乎没照明，不如20W平板灯</text>
+  <text x="75" y="328" font-size="12" fill="#e8a0a0">它是氛围灯，锦上添花，不雪中送炭</text>
+
+  <!-- 翻车二 朝向 -->
+  <rect x="555" y="110" width="475" height="230" rx="14" fill="#2a1010" stroke="#f87171" stroke-width="1.8"/>
+  <circle cx="595" cy="148" r="20" fill="#f87171"/>
+  <text x="595" y="155" text-anchor="middle" font-size="18" font-weight="bold" fill="#2a1010">2</text>
+  <text x="627" y="155" font-size="18" font-weight="bold" fill="#f87171">朝向开孔不对，亮瞎眼</text>
+  <text x="580" y="200" font-size="14" fill="#e8cfcf">光要斜打哑光白墙，靠墙面反散照亮</text>
+  <text x="580" y="232" font-size="14" fill="#e8cfcf">出光口别对：玻璃 / 镜子 / 门口</text>
+  <text x="580" y="264" font-size="14" fill="#e8cfcf">别对每天迎面走来的方向</text>
+  <text x="580" y="300" font-size="13" fill="#f87171">侧面能看见灯珠 = 装反了 = 眩光</text>
+  <text x="580" y="328" font-size="12" fill="#e8a0a0">到墙 1.4 至 1.7 米最佳，超 1.8 米亮度掉四成</text>
+
+  <!-- 翻车三 吊顶 -->
+  <rect x="50" y="360" width="475" height="230" rx="14" fill="#2a1010" stroke="#f87171" stroke-width="1.8"/>
+  <circle cx="90" cy="398" r="20" fill="#f87171"/>
+  <text x="90" y="405" text-anchor="middle" font-size="18" font-weight="bold" fill="#2a1010">3</text>
+  <text x="122" y="405" font-size="18" font-weight="bold" fill="#f87171">吊顶腔体打架</text>
+  <text x="75" y="450" font-size="14" fill="#e8cfcf">传统款灯体厚 15 至 20 厘米</text>
+  <text x="75" y="482" font-size="14" fill="#e8cfcf">吊顶上方须预留至少 20 厘米</text>
+  <text x="75" y="514" font-size="13" fill="#e8a0a0">只留 19 厘米的，装到最后嵌不进去</text>
+  <text x="75" y="546" font-size="13" fill="#f87171">救场：4 至 9 厘米超薄侧发光 / 明装款</text>
+  <text x="75" y="574" font-size="12" fill="#e8a0a0">铝扣板好嵌，石膏板要开洞预埋、吊码另购</text>
+
+  <!-- 翻车四 黑洞 -->
+  <rect x="555" y="360" width="475" height="230" rx="14" fill="#2a1010" stroke="#f87171" stroke-width="1.8"/>
+  <circle cx="595" cy="398" r="20" fill="#f87171"/>
+  <text x="595" y="405" text-anchor="middle" font-size="18" font-weight="bold" fill="#2a1010">4</text>
+  <text x="627" y="405" font-size="18" font-weight="bold" fill="#f87171">关灯是一个黑洞</text>
+  <text x="580" y="450" font-size="14" fill="#e8cfcf">想要「永远晴天」</text>
+  <text x="580" y="482" font-size="14" fill="#e8cfcf">就得接受「不开灯就没窗」</text>
+  <text x="580" y="520" font-size="13" fill="#f87171">评论区高赞提醒：避雷，关灯一个大黑洞</text>
+  <text x="580" y="558" font-size="13" fill="#e8a0a0">这条心理预期，最好下单前就想清楚</text>
+  <rect x="575" y="574" width="435" height="2" fill="#12305a"/>
+
+  <text x="540" y="624" text-anchor="middle" font-size="13" fill="#5f7fa8">磁吸边框别让师傅打死胶，否则后期拆卸是麻烦 · 多灯分控下单前先测对码</text>
+</svg>
