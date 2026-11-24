@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>The Light Turns On By Itself: A Field Guide to Automation Conflicts | 耐利普科技技术博客</title>
+    <meta name="description" content="A light that switches back on seconds after you turn it off is rarely a failing bulb. Here's how to read execution logs, spot false sensor triggers, and give manual-off the highest priority.">
+    <meta name="keywords" content="智能照明,LED驱动电源">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/the-light-turns-on-by-itself-a-field-guide-to-automation-conflicts.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="The Light Turns On By Itself: A Field Guide to Automation Conflicts | 耐利普科技">
+    <meta property="og:description" content="A light that switches back on seconds after you turn it off is rarely a failing bulb. Here's how to read execution logs, spot false sensor triggers, and give manual-off the highest priority.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/the-light-turns-on-by-itself-a-field-guide-to-automation-conflicts.html">
+    <meta property="og:image" content="https://www.nexlamp.com/images/blog-default.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-11-24">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="技术文章">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "The Light Turns On By Itself: A Field Guide to Automation Conflicts",
+      "description": "A light that switches back on seconds after you turn it off is rarely a failing bulb. Here's how to read execution logs, spot false sensor triggers, and give manual-off the highest priority.",
+      "datePublished": "2026-11-24",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/the-light-turns-on-by-itself-a-field-guide-to-automation-conflicts.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "The Light Turns On By Itself: A Field Guide to Automation Conflicts",
+          "item": "https://www.nexlamp.com/dist/blog/the-light-turns-on-by-itself-a-field-guide-to-automation-conflicts.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">The Light Turns On By Itself: A Field Guide to Automation Conflicts</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>The Light Turns On By Itself: A Field Guide to Automation Conflicts</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年11月24日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 技术文章</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            
+                            <p>It is 10:30 at night. You switch off the living room light, lie down, and two minutes later it is on again. Over the past six months, posts about lights turning on in the middle of the night — and smart toilets flushing on their own — have been showing up all over home-renovation forums. Half the replies say &quot;mine does that too,&quot; and the other half tell everyone to go check the wiring.</p>
+<p>I have worked with lighting for more than a decade, and I&#39;ll start with the conclusion: in the vast majority of these cases the lamp is not broken. A <em>configuration</em> is running, and usually more than one rule is running at the same time. The light is only the executor. The decisions are being made by a handful of invisible automations you probably forgot you created.</p>
+<p>This article is a field guide to that situation: how to tell a rule problem from a hardware problem, what &quot;event-based rules have no memory&quot; means in practice, and the three fixes that actually stick.</p>
+<h2>Check two logs before you touch the app or call an electrician</h2>
+<p>The first move when a light turns itself on is not to unplug the gateway. It is to read the records.</p>
+<p><strong>1. Automation execution history.</strong> Most apps mark each scene with a &quot;last run&quot; timestamp. If your bedroom night-light rule says 3:31 AM, then the rule really did fire once. The bulb is fine.</p>
+<p><strong>2. Your voice assistant&#39;s conversation history.</strong> Look for a false wake-up. A line of dialogue from the TV, a short video playing out loud, or a device notification tone can all be heard as a command.</p>
+<p>The distinction is blunt but useful: <strong>a record means a rule problem; no record plus a reproducible symptom means a hardware or power problem.</strong> That single step cuts the troubleshooting effort roughly in half, because it tells you whether you are debugging software or calling someone with a screwdriver.</p>
+<h2>Four kinds of &quot;it turned on by itself,&quot; and they look nothing alike</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Most likely cause</th>
+<th>Where to look first</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Turns on at a fixed time every day</td>
+<td>Leftover timer scene or speaker alarm</td>
+<td>Walk the automation list and disable what you don&#39;t use</td>
+</tr>
+<tr>
+<td>Whole house lights up after a door opens or closes</td>
+<td>Trigger condition written too broadly</td>
+<td>Add a time window and a second condition to &quot;door unlocked&quot;</td>
+</tr>
+<tr>
+<td>Turns on with nobody home, worse at night, when the AC runs, or when it&#39;s windy</td>
+<td>Sensor false trigger</td>
+<td>Orientation, distance, battery level, proximity to an air vent</td>
+</tr>
+<tr>
+<td>Turns back on the instant you switch it off; the button seems dead</td>
+<td>Several rules fighting over one lamp, or old contacts sticking</td>
+<td>Execution history; only if there is no record, inspect the switch hardware</td>
+</tr>
+</tbody></table>
+<p>The first three cases are the system doing exactly what you told it to do. Only the fourth is the system ignoring you. That is why the table matters — &quot;the light is on&quot; is not one problem, it is four, and the fix for one can make another worse.</p>
+<p>Let&#39;s talk about sensors for a moment, because this is where most false triggers originate. A passive infrared (PIR) motion sensor does not recognize a person. It recognizes a <strong>moving heat source</strong>. An air-conditioner vent, a swaying curtain, a cat or dog, and a robot vacuum all qualify. Millimeter-wave presence sensors are more sensitive, and some 24 GHz radar units can see through light partitions, counting a person outside the room as inside. Low battery is another classic source of random reports. When a trigger looks wrong, check battery level and mounting position before you go shopping for a replacement lamp.</p>
+<h2>The core mechanism: event-based rules have no memory</h2>
+<p>Here is the part that explains the &quot;I turned it off and it came right back&quot; case.</p>
+<p>&quot;Turn the light on when someone is present&quot; is an event rule. The sensor reports &quot;present&quot; once, and the light turns on. When you press the switch, you change only the <strong>current state of the lamp</strong>. You do not change the underlying judgment that &quot;this room is occupied.&quot; A few seconds later the sensor reports again, or the cloud reconnects and replays a state sync, and the on-command arrives once more. From where you stand, manual off does not work.</p>
+<p>Stack a few more rules on top and it gets worse. Motion turns the main light on. The door-unlock scene greets you. A timer handles the night light. A voice scene does its own thing. Whoever executes last wins. You are turning off a <em>lamp</em>; they are changing what <em>should be on</em>.</p>
+<p>So the thing that needs changing is not the lamp. It is the priority. A manual off should override automation for a while — that is the whole idea.</p>
+<h2>Three things, in order</h2>
+<p><strong>1. Catch the culprit.</strong> Sort your automations by &quot;last run&quot; and find the ones that fired after you switched the light off, especially overnight ones. Disable one and test for a night. Do not delete everything at once: if the problem disappears, you will have no idea which rule was responsible.</p>
+<p><strong>2. Put a fence around the trigger.</strong> Change &quot;if someone is present, turn on&quot; to &quot;if someone is present <strong>and</strong> illuminance is below a threshold,&quot; then wrap it in a 19:00–23:00 time window. Hand overnight bathroom trips to a low-level sensor night light and keep the main lamp out of it. In a hallway, let the PIR sensor handle fast turn-on and the presence sensor decide when nobody is left to turn things off — the two working together beat one expensive unit doing both jobs badly.</p>
+<p><strong>3. Give manual-off the top priority.</strong> If your system supports a lock window, set it to 3–10 minutes (a common practice in the industry, not a national standard): after a manual off, automation is not allowed to bounce the light back on during that period. If there is no such feature, make sure you have at least one physical switch that genuinely cuts power, or disable the night scene on that circuit entirely.</p>
+<h2>Three questions to ask before buying and at handover</h2>
+<ul>
+<li>Do these rules run on a local gateway or in the cloud, and do they still run when the internet is down? (This decides whether you get a nasty catch-up command the moment connectivity returns.)</li>
+<li>Can I see the last execution time of every automation in the app? (If not, you are guessing when something goes wrong.)</li>
+<li>After I switch the light off manually, will a scene immediately turn it back on? Is there manual priority at all?</li>
+</ul>
+<p>If you cannot get a straight answer to any of these, installing more lights only gives you more devices that turn themselves on. A good smart-lighting setup is not the one with the most modes in the app. It is the one that stays quiet when you want the dark.</p>
+<h2>When to stop tuning the app</h2>
+<p>If any of the following happens, stop looking at software:</p>
+<ul>
+<li>The switch does nothing at all after you turn the light off.</li>
+<li>Power-cycling the circuit still leaves the light on.</li>
+<li>There is no execution record of any kind, yet the light stays on.</li>
+</ul>
+<p>At a point that has been in service for five years or more, the culprit may be a wall switch with welded relay contacts — the contacts have physically stuck together, and no rule change will help. Call an electrician and replace the switch.</p>
+<p>A different case is a light that stays <em>dimly</em> glowing after being switched off but does not flicker. That is leakage current from single-live-wire (single-fire) power tapping. It is a separate issue from the one described here, so don&#39;t mix the two diagnoses.</p>
+<h2>Three questions everyone asks</h2>
+<p><strong>Will a more expensive sensor fix it?</strong> If the execution history contains no trigger record at all, then yes, replacing the sensor can help. If the history shows the rule is firing normally, a better sensor changes nothing — the problem is the rule, not the hardware.</p>
+<p><strong>Can I delete the light and add it again?</strong> That does not resolve a rule conflict. Rules are tied to a device record, so after deleting and re-adding, an old rule may still point at the old entry. It is faster to delete the offending automation outright and reselect the device.</p>
+<p><strong>Are cloud automations unusable, then?</strong> No. Remote viewing, firmware updates, and energy statistics are perfectly appropriate in the cloud. Closed loops that need to react instantly — hallways, nighttime trips to the bathroom — are more reliable on a local gateway.</p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>灯关了又自己亮，不是闹鬼，是几条规则在抢 | 耐利普科技技术博客</title>
+    <meta name="description" content="拆解智能灯"自己亮、手动关不掉"的四类原因：定时残留、触发条件太宽、传感器误判、多规则抢占与继电器粘连。给出执行记录分诊法、事件型规则回弹机理、三步改法和购买交付三问。">
+    <meta name="keywords" content="灯自己亮,智能灯自动打开,自动化冲突,手动关灯回弹,人在传感器,场景优先级,米家自动化,全屋智能避坑">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/smart-light-turns-on-by-itself-scene-conflict-2026.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="灯关了又自己亮，不是闹鬼，是几条规则在抢 | 耐利普科技">
+    <meta property="og:description" content="拆解智能灯"自己亮、手动关不掉"的四类原因：定时残留、触发条件太宽、传感器误判、多规则抢占与继电器粘连。给出执行记录分诊法、事件型规则回弹机理、三步改法和购买交付三问。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/smart-light-turns-on-by-itself-scene-conflict-2026.html">
+    <meta property="og:image" content="https://www.nexlamp.com/images/blog-auto-conflict-2026-cover.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-11-24">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="智能照明">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "灯关了又自己亮，不是闹鬼，是几条规则在抢",
+      "description": "拆解智能灯"自己亮、手动关不掉"的四类原因：定时残留、触发条件太宽、传感器误判、多规则抢占与继电器粘连。给出执行记录分诊法、事件型规则回弹机理、三步改法和购买交付三问。",
+      "datePublished": "2026-11-24",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/smart-light-turns-on-by-itself-scene-conflict-2026.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "灯关了又自己亮，不是闹鬼，是几条规则在抢",
+          "item": "https://www.nexlamp.com/dist/blog/smart-light-turns-on-by-itself-scene-conflict-2026.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">灯关了又自己亮，不是闹鬼，是几条规则在抢</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>灯关了又自己亮，不是闹鬼，是几条规则在抢</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年11月24日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 智能照明</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-cover"><img src="../../images/blog-auto-conflict-2026-cover.png" alt="灯关了又自己亮，不是闹鬼，是几条规则在抢"></div>
+                            <p>晚上十点半，关了客厅灯，躺下两分钟，灯又亮了。最近半年&quot;半夜灯自己亮&quot;&quot;智能马桶自己冲水&quot;的帖子在装修社区集中冒出来，评论区一半说自己家也这样，一半劝人查线路。</p>
+<p>我做灯具十几年，先给结论：**绝大多数不是灯坏了，是&quot;设置在跑&quot;，而且跑的往往不止一条规则。**灯只是执行者，真正做决定的是那几条看不见的自动化。</p>
+<h2>先翻两本记录，再决定改App还是叫电工</h2>
+<p>碰到灯自己亮，第一件事不是拔网关，是查记录：</p>
+<ol>
+<li>**自动化执行记录。**主流App的场景页会标&quot;上次执行时间&quot;。卧室夜灯那条如果写着凌晨3:31，说明规则确实跑过一次，灯没坏。</li>
+<li>**语音助手的对话记录。**看那一声是不是误唤醒——电视台词、短视频外放、设备提示音都可能被听成指令。</li>
+</ol>
+<p>**有记录＝规则问题；没记录但能复现＝硬件或供电问题。**这一步能把后面的折腾砍掉一半。</p>
+<h2>四种&quot;自己亮&quot;，长得完全不一样</h2>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>最可能的原因</th>
+<th>先查哪里</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>每天固定时刻亮</td>
+<td>定时场景、音箱闹钟残留</td>
+<td>自动化列表逐条看，不用的关掉</td>
+</tr>
+<tr>
+<td>开门、关门后全屋亮</td>
+<td>触发条件写太宽</td>
+<td>给&quot;门锁开&quot;加时间窗和第二个条件</td>
+</tr>
+<tr>
+<td>没人也亮，夜里、开空调、刮风时更明显</td>
+<td>传感器误判</td>
+<td>朝向、距离、电量、出风口</td>
+</tr>
+<tr>
+<td>手动关了立刻又亮，按键像没反应</td>
+<td>多条规则抢同一盏灯，或老点位触点粘连</td>
+<td>执行记录；无记录再查开关硬件</td>
+</tr>
+</tbody></table>
+<p>前三类，是系统老老实实按你说的话在做；第四类，才是系统没听你的。</p>
+<p>红外人体传感器认的不是人，是<strong>移动的热源</strong>：空调出风口、窗帘、猫狗和扫地机都算。毫米波存在传感器更灵敏，部分24GHz雷达能透过轻质隔断，把墙外的人算进屋里；电量低时还会乱报。误触发先查电量和安装位置，别急着换灯。</p>
+<p><img src="../../images/auto-conflict-triage-2026.svg" alt="灯自己亮的记录分诊与四种现象"></p>
+<h2>核心机理：事件型规则没有记忆</h2>
+<p>&quot;有人就开灯&quot;是一条事件规则：传感器上报一次&quot;有人&quot;，灯就开。你顺手关灯，只改了灯的当前状态，<strong>没有改&quot;这个房间有人&quot;这个判断</strong>。几秒后传感器再上报一次，或者云端重连补一次状态同步，开灯指令又下来了——看起来就是手动关不掉。</p>
+<p>再叠加几条规则就更乱：人来开灯、开门迎宾、定时夜灯、语音场景，谁最后执行谁说了算。你关的是灯，它们改的是&quot;应该亮&quot;。</p>
+<p>所以真正要改的不是灯，是优先级：<strong>人手动关掉，就应该压过自动化一段时间。</strong></p>
+<p><img src="../../images/auto-conflict-rebound-2026.svg" alt="事件型规则的回弹与手动锁定窗口"></p>
+<h2>三件事，按顺序做</h2>
+<ol>
+<li>**抓凶手。**把自动化按&quot;上次执行时间&quot;排一遍，找到关灯后、凌晨跑过的那几条，先停用一条试一晚。别一次全删，出问题就不知道是哪条在作怪。</li>
+<li>**给触发加栅栏。**把&quot;有人就开灯&quot;改成&quot;有人，且照度低于阈值&quot;，再套一个19:00—23:00的时间窗。起夜交给感应小夜灯，不让主灯参与。走廊可以让红外传感器负责快速亮、存在传感器负责判断没人再关，两个配合比堆一个贵的型号有用。</li>
+<li>**给手动留最高优先级。**有锁定窗口功能的设3—10分钟（这是行业里常见的做法，不是国家标准），手动关灯后这段时间内不许自动化回弹。没有这个功能的，至少保证有一个能真正断电的物理开关，或者单独停掉夜间场景。</li>
+</ol>
+<h2>买之前、交付时，问三句</h2>
+<ul>
+<li>这些规则跑在本地网关还是云端？断网时还执不执行？（决定它会不会在重连后补一刀）</li>
+<li>App里能不能看到每条自动化的上次执行时间？（看不到＝出问题只能猜）</li>
+<li>手动关灯后，场景会不会马上把它打开？有没有手动优先？</li>
+</ul>
+<p>三句都问不出来，装再多灯，也只是多几个会自己亮的设备。判断一套智能照明好不好，不看App里有多少模式，看它会不会在你不想亮的时候闭嘴。</p>
+<p><img src="../../images/auto-conflict-checklist-2026.svg" alt="改三步问三句与一条红线"></p>
+<h2>什么情况别再调App了</h2>
+<p>出现任意一条，就别在软件里打转：关灯后按键完全没反应；断电再上电还是亮；没有任何执行记录但灯一直亮。用了五年以上的老点位，可能是墙壁开关的继电器触点粘连——触点焊住了，改什么规则都没用，找电工换开关。</p>
+<p>另一种&quot;关了还微微亮、但不闪&quot;，是单火取电的漏电流，和本篇不是一回事。</p>
+<p><strong>三个人人都问过的问题</strong></p>
+<p><strong>换更贵的传感器有用吗？</strong> 执行记录里根本没有触发记录，换有用；记录显示规则在跑，换什么传感器都白搭。</p>
+<p><strong>把灯删了重新添加行不行？</strong> 解决不了规则冲突。规则是按设备记录的，删了重加，旧规则可能仍指向旧记录，直接删掉那条自动化、重新选设备更省事。</p>
+<p><strong>云端自动化是不是都不能用？</strong> 不是。远程查看、固件升级、能耗统计放云端合适；走廊、起夜这类要立刻执行的闭环，留在本地网关更稳。</p>
+<hr>
+<p><em>关于Nexlamp：耐利普科技专注涂鸦Zigbee智能照明，NEX1-9系列筒灯射灯全系列Ra90/98高显色、深杯防眩设计，支持开关/Zigbee/米家/DALI/0-10V/可控硅6种控制方式。更多选灯知识见 <a href="https://www.nexlamp.com">www.nexlamp.com</a></em></p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>

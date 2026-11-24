@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 640" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="640" fill="url(#bg)"/>
+  <g stroke="#12305a" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="107" x2="1080" y2="107"/><line x1="0" y1="214" x2="1080" y2="214"/>
+    <line x1="0" y1="321" x2="1080" y2="321"/><line x1="0" y1="428" x2="1080" y2="428"/>
+    <line x1="0" y1="535" x2="1080" y2="535"/>
+    <line x1="216" y1="0" x2="216" y2="640"/><line x1="432" y1="0" x2="432" y2="640"/>
+    <line x1="648" y1="0" x2="648" y2="640"/><line x1="864" y1="0" x2="864" y2="640"/>
+  </g>
+  <text x="540" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#e8f1ff">改三步 · 问三句 · 一条红线</text>
+  <text x="540" y="80" text-anchor="middle" font-size="15" fill="#7aa5d8">不靠换灯解决，靠把规则管起来</text>
+
+  <text x="70" y="120" font-size="17" fill="#38bdf8" font-weight="bold">按顺序做三件事</text>
+  <rect x="70" y="135" width="310" height="115" rx="10" fill="#101f38" stroke="#38bdf8" stroke-width="1.3"/>
+  <text x="225" y="170" text-anchor="middle" font-size="16" fill="#e8f1ff" font-weight="bold">1 抓凶手</text>
+  <text x="225" y="200" text-anchor="middle" font-size="13" fill="#cfe0f5">按上次执行时间排序</text>
+  <text x="225" y="228" text-anchor="middle" font-size="13" fill="#7aa5d8">停用一条，试一晚，别一次删光</text>
+
+  <rect x="395" y="135" width="310" height="115" rx="10" fill="#101f38" stroke="#60a5fa" stroke-width="1.3"/>
+  <text x="550" y="170" text-anchor="middle" font-size="16" fill="#e8f1ff" font-weight="bold">2 给触发加栅栏</text>
+  <text x="550" y="200" text-anchor="middle" font-size="13" fill="#cfe0f5">有人 且 照度低，再套时间窗</text>
+  <text x="550" y="228" text-anchor="middle" font-size="13" fill="#7aa5d8">起夜交给小夜灯，主灯不参与</text>
+
+  <rect x="720" y="135" width="290" height="115" rx="10" fill="#101f38" stroke="#a78bfa" stroke-width="1.3"/>
+  <text x="865" y="170" text-anchor="middle" font-size="16" fill="#e8f1ff" font-weight="bold">3 手动优先</text>
+  <text x="865" y="200" text-anchor="middle" font-size="13" fill="#cfe0f5">锁定窗口 3—10 分钟</text>
+  <text x="865" y="228" text-anchor="middle" font-size="13" fill="#7aa5d8">或留一个能真正断电的开关</text>
+
+  <text x="70" y="305" font-size="17" fill="#4ade80" font-weight="bold">买之前、交付时，问三句</text>
+  <rect x="70" y="320" width="940" height="130" rx="10" fill="#0f2a1a" stroke="#4ade80" stroke-width="1.3"/>
+  <text x="95" y="355" font-size="15" fill="#a7d9b8">Q1 规则跑在本地网关还是云端？断网时还执不执行？</text>
+  <text x="95" y="389" font-size="15" fill="#a7d9b8">Q2 App 能不能看到每条自动化的上次执行时间？</text>
+  <text x="95" y="423" font-size="15" fill="#a7d9b8">Q3 手动关灯后，场景会不会马上把它打开？</text>
+
+  <rect x="70" y="475" width="940" height="115" rx="10" fill="#2a1010" stroke="#f87171" stroke-width="1.5"/>
+  <text x="95" y="512" font-size="16" fill="#f87171" font-weight="bold">红线：出现任意一条，别再调App，找电工</text>
+  <text x="95" y="545" font-size="14" fill="#e0b8b8">关灯后按键完全没反应 · 断电再上电还是亮 · 无任何执行记录但灯常亮</text>
+  <text x="95" y="574" font-size="13" fill="#c08a8a">五年以上老点位可能是触点粘连；关灯微亮不闪则是单火漏电，另当别论</text>
+</svg>

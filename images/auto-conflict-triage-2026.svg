@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 640" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#0d1f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="640" fill="url(#bg)"/>
+  <g stroke="#12305a" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="107" x2="1080" y2="107"/><line x1="0" y1="214" x2="1080" y2="214"/>
+    <line x1="0" y1="321" x2="1080" y2="321"/><line x1="0" y1="428" x2="1080" y2="428"/>
+    <line x1="0" y1="535" x2="1080" y2="535"/>
+    <line x1="216" y1="0" x2="216" y2="640"/><line x1="432" y1="0" x2="432" y2="640"/>
+    <line x1="648" y1="0" x2="648" y2="640"/><line x1="864" y1="0" x2="864" y2="640"/>
+  </g>
+  <text x="540" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#e8f1ff">灯自己亮了：先翻两本记录，再分四种现象</text>
+  <text x="540" y="80" text-anchor="middle" font-size="15" fill="#7aa5d8">有记录＝规则在跑 · 没记录＝硬件或供电在动</text>
+
+  <rect x="70" y="110" width="440" height="120" rx="12" fill="#0f233e" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="290" y="145" text-anchor="middle" font-size="17" fill="#38bdf8" font-weight="bold">记录一：自动化执行记录</text>
+  <text x="290" y="175" text-anchor="middle" font-size="14" fill="#cfe0f5">看每张场景卡片的"上次执行时间"</text>
+  <text x="290" y="205" text-anchor="middle" font-size="13" fill="#7aa5d8">夜灯写着 03:31 → 规则确实跑过</text>
+
+  <rect x="570" y="110" width="440" height="120" rx="12" fill="#0f233e" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="790" y="145" text-anchor="middle" font-size="17" fill="#a78bfa" font-weight="bold">记录二：语音助手对话记录</text>
+  <text x="790" y="175" text-anchor="middle" font-size="14" fill="#cfe0f5">电视台词、短视频外放也会误唤醒</text>
+  <text x="790" y="205" text-anchor="middle" font-size="13" fill="#7aa5d8">查完再决定：改App，还是叫电工</text>
+
+  <text x="70" y="275" font-size="16" fill="#e8f1ff" font-weight="bold">四种"自己亮"，先对现象再动手</text>
+
+  <rect x="70" y="295" width="465" height="115" rx="10" fill="#101f38" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="90" y="325" font-size="16" fill="#60a5fa" font-weight="bold">A 每天固定时刻亮</text>
+  <text x="90" y="353" font-size="13" fill="#cfe0f5">定时场景、音箱闹钟残留</text>
+  <text x="90" y="382" font-size="13" fill="#7aa5d8">逐条关掉不用的定时任务</text>
+
+  <rect x="570" y="295" width="440" height="115" rx="10" fill="#101f38" stroke="#0891b2" stroke-width="1.2"/>
+  <text x="590" y="325" font-size="16" fill="#22d3ee" font-weight="bold">B 开门关门后亮</text>
+  <text x="590" y="353" font-size="13" fill="#cfe0f5">触发条件写太宽，门锁一开全屋亮</text>
+  <text x="590" y="382" font-size="13" fill="#7aa5d8">加时间窗和第二个条件</text>
+
+  <rect x="70" y="425" width="465" height="115" rx="10" fill="#101f38" stroke="#d97706" stroke-width="1.2"/>
+  <text x="90" y="455" font-size="16" fill="#fbbf24" font-weight="bold">C 没人也亮，夜里更明显</text>
+  <text x="90" y="483" font-size="13" fill="#cfe0f5">红外认热源，毫米波会穿透轻质隔断</text>
+  <text x="90" y="512" font-size="13" fill="#7aa5d8">先查电量、朝向、出风口</text>
+
+  <rect x="570" y="425" width="440" height="115" rx="10" fill="#2a1010" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="590" y="455" font-size="16" fill="#f87171" font-weight="bold">D 手动关了立刻又亮</text>
+  <text x="590" y="483" font-size="13" fill="#e0b8b8">多条规则抢灯；或老点位触点粘连</text>
+  <text x="590" y="512" font-size="13" fill="#c08a8a">无执行记录时，才查开关硬件</text>
+
+  <line x1="540" y1="565" x2="540" y2="592" stroke="#5f7ea8" stroke-width="1.5"/>
+  <text x="540" y="615" text-anchor="middle" font-size="14" fill="#7aa5d8">前三类是系统在听话，第四类才是系统没听你的</text>
+</svg>
