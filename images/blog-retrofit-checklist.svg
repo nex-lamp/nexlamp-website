@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2038"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#16263f" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="520" fill="url(#bg)"/>
+  <rect width="900" height="520" fill="url(#grid)" opacity="0.7"/>
+  <text x="52" y="62" fill="#e8f4ff" font-family="sans-serif" font-size="30" font-weight="bold">下单前问三句，装完验八项</text>
+  <text x="52" y="95" fill="#7fa6c8" font-family="sans-serif" font-size="17">水电阶段定回路和底盒，木工阶段定驱动位置</text>
+
+  <rect x="52" y="130" width="292" height="340" rx="14" fill="#10233c" stroke="#4fd1c5" stroke-width="2.5" filter="url(#glow)"/>
+  <text x="76" y="172" fill="#4fd1c5" font-family="sans-serif" font-size="23" font-weight="bold">下单前三问</text>
+  <text x="76" y="222" fill="#d9e8f5" font-family="sans-serif" font-size="18">1 驱动和面板同一调光协议？</text>
+  <text x="76" y="266" fill="#d9e8f5" font-family="sans-serif" font-size="18">2 最低负载、最低亮度在哪？</text>
+  <text x="76" y="310" fill="#d9e8f5" font-family="sans-serif" font-size="18">3 零线到位、灯体剩多少寿命？</text>
+  <rect x="74" y="350" width="248" height="86" rx="8" fill="#0b1a2d" stroke="#24415e"/>
+  <text x="90" y="384" fill="#f6ad55" font-family="sans-serif" font-size="17">答不上来，先别掏钱</text>
+  <text x="90" y="414" fill="#7fa6c8" font-family="sans-serif" font-size="15">先做一个房间样板再批量</text>
+
+  <rect x="364" y="130" width="484" height="340" rx="14" fill="#10233c" stroke="#2f6f8f" stroke-width="2"/>
+  <text x="390" y="172" fill="#4fd1c5" font-family="sans-serif" font-size="23" font-weight="bold">装完八项验收</text>
+  <text x="390" y="216" fill="#d9e8f5" font-family="sans-serif" font-size="18">01 最暗不闪        02 最低不跳档</text>
+  <text x="390" y="252" fill="#d9e8f5" font-family="sans-serif" font-size="18">03 双色温过渡顺   04 关灯无余亮</text>
+  <text x="390" y="288" fill="#d9e8f5" font-family="sans-serif" font-size="18">05 洗墙无色差     06 App与面板同步</text>
+  <text x="390" y="324" fill="#d9e8f5" font-family="sans-serif" font-size="18">07 复电状态符合预设</text>
+  <text x="390" y="360" fill="#d9e8f5" font-family="sans-serif" font-size="18">08 断网仍可本地调光</text>
+  <rect x="388" y="392" width="436" height="56" rx="8" fill="#0b1a2d" stroke="#24415e"/>
+  <text x="404" y="427" fill="#f6ad55" font-family="sans-serif" font-size="16">全亮度仍闪、面板发热变色 → 找持证电工</text>
+</svg>

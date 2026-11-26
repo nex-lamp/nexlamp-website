@@ -36,6 +36,15 @@
     "excerpt": "停电一小时后来电，几十上百个设备瞬间灯火通明，还得手动关一遍。灯没坏，是没人设过它的上电策略。三种模式、分区方案和验收方法，一次讲清。"
   },
   {
+    "title": "老房灯不拆吊顶，只换驱动就能调光吗",
+    "slug": "retrofit-driver-smart-dimming-2026",
+    "date": "2026-11-26",
+    "category": "智能照明",
+    "description": "老房与精装房灯光改造决策：为什么换智能开关不能调光，换驱动/加模块/换整灯三条路怎么选，驱动铭牌与三段协议核对，零线和灯体寿命的红线，以及装完后的八项验收。",
+    "cover": "images/blog-retrofit-driver-cover.png",
+    "excerpt": "不加模块、不拆吊顶，把普通筒射灯改成能调光的智能灯？驱动能换不等于值得换，先把面板、驱动、灯珠三段和零线看清楚。"
+  },
+  {
     "title": "Why Your Smart Lights Die When the Cloud Goes Down: Lessons from Midea's 4-Day Outage",
     "slug": "why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out",
     "date": "2026-11-26",
@@ -223,6 +232,15 @@
     "description": "Power returns and the house lights up. The lamp is not broken — nobody set its power-on behavior. Boot order, three modes, per-room rules, one test.",
     "cover": "",
     "excerpt": "Power returns and the house lights up. The lamp is not broken — nobody set its power-on behavior. Boot order, three modes, per-room rules, one test."
+  },
+  {
+    "title": "Retrofit Dimming Without Touching the Ceiling: Read the Driver First",
+    "slug": "retrofit-dimming-without-touching-the-ceiling-read-the-driver-first",
+    "date": "2026-11-26",
+    "category": "技术文章",
+    "description": "Why swapping a smart switch won't dim an old downlight, how three retrofit paths compare, what the driver protocol chain really needs, and the eight checks before handover.",
+    "cover": "",
+    "excerpt": "Why swapping a smart switch won't dim an old downlight, how three retrofit paths compare, what the driver protocol chain really needs, and the eight checks before handover."
   },
   {
     "title": "未命名文章",

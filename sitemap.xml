@@ -54,6 +54,13 @@
   </url>
 
   <url>
+    <loc>https://www.nexlamp.com/dist/blog/retrofit-driver-smart-dimming-2026.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://www.nexlamp.com/dist/blog/why-your-smart-lights-die-when-the-cloud-goes-down-lessons-from-mideas-4-day-out.html</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -195,6 +202,13 @@
 
   <url>
     <loc>https://www.nexlamp.com/dist/blog/why-every-light-turns-on-after-a-power-outage-and-how-to-stop-it.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexlamp.com/dist/blog/retrofit-dimming-without-touching-the-ceiling-read-the-driver-first.html</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
