@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>Why Every Light Turns On After a Power Outage, and How to Stop It | 耐利普科技技术博客</title>
+    <meta name="description" content="Power returns and the house lights up. The lamp is not broken — nobody set its power-on behavior. Boot order, three modes, per-room rules, one test.">
+    <meta name="keywords" content="智能照明,LED驱动电源">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/why-every-light-turns-on-after-a-power-outage-and-how-to-stop-it.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Why Every Light Turns On After a Power Outage, and How to Stop It | 耐利普科技">
+    <meta property="og:description" content="Power returns and the house lights up. The lamp is not broken — nobody set its power-on behavior. Boot order, three modes, per-room rules, one test.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/why-every-light-turns-on-after-a-power-outage-and-how-to-stop-it.html">
+    <meta property="og:image" content="https://www.nexlamp.com/images/blog-default.jpg">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="技术文章">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Why Every Light Turns On After a Power Outage, and How to Stop It",
+      "description": "Power returns and the house lights up. The lamp is not broken — nobody set its power-on behavior. Boot order, three modes, per-room rules, one test.",
+      "datePublished": "2026-11-26",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/why-every-light-turns-on-after-a-power-outage-and-how-to-stop-it.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Why Every Light Turns On After a Power Outage, and How to Stop It",
+          "item": "https://www.nexlamp.com/dist/blog/why-every-light-turns-on-after-a-power-outage-and-how-to-stop-it.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">Why Every Light Turns On After a Power Outage, and How to Stop It</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>Why Every Light Turns On After a Power Outage, and How to Stop It</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年11月26日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 技术文章</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            
+                            <p><img src="../../images/blog-power-restore-all-on-cover.png" alt="Every light in the house switching on at once when the mains return"></p>
+<p>&quot;Every light in the house came on at once.&quot;</p>
+<p>That is how one user on Sina described their outage. The power had been gone for an hour. When it came back, dozens of devices — in some homes more than a hundred — woke up together. The whole flat lit up, and somebody had to climb out of bed and switch things off one at a time. Curtain motors ran on their own, the speaker announced it had rejoined the network, the printer ran a self-test, and several appliances beeped in chorus. A user on Smzdm with forty-two devices wired into the system wrote up the same night in almost the same words. On Xiaohongshu it was shorter: the whole house lit up when the power came back, and I am done with this.</p>
+<p>Twenty years in this trade, and my conclusion has not changed. Nothing is broken. Nobody ever told that lamp what to do when the mains return.</p>
+<h2>Automation cannot save the first second</h2>
+<p>A restore is not simultaneous. The bulb wakes first, because a bulb only needs voltage — no network, no gateway, no app. The router and the hub need several minutes to finish booting, and cloud scenes are not online yet when the room is already bright.</p>
+<p>So whether a lamp comes on, and how bright, is decided in the first second by the lamp itself or by the controller driving it, and that decision is stored locally on the device. Automation can only patch things afterwards: wait for the light to appear, then send a command to turn it off. At three in the morning, that command arrives too late.</p>
+<p><img src="../../images/blog-power-restore-boot-order.svg" alt="Boot order after an outage: the lamp wakes first, the gateway arrives minutes later"></p>
+<p>This is also why putting a UPS on the router and the hub solves so little. It keeps the network alive. It does nothing for the lamp, which is wired straight to the mains.</p>
+<h2>The semantic trap in &quot;restore previous state&quot;</h2>
+<p>That phrase restores the state at the instant the power failed — not the state you wanted. Outages tend to happen at night or during a typhoon, and at that moment the living room and the corridor lights were on. Restore them faithfully and you get exactly the result people complain about: a house lit up like a showroom at 3 a.m. The logic is not wrong. The sentence was misread.</p>
+<p>Mi Home smart switches offer three choices: power-on on, power-on off, and restore previous state. On plenty of devices the factory default is not &quot;off&quot;, and if nobody adjusts it during installation, the first restore after commissioning hands you a very bright house.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Result at 3 a.m.</th>
+<th>Suits</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Power-on on</td>
+<td>Always fully lit</td>
+<td>Outdoor, entrance</td>
+</tr>
+<tr>
+<td>Power-on off</td>
+<td>Stays dark</td>
+<td>Bedroom, kids&#39; room</td>
+</tr>
+<tr>
+<td>Restore previous state</td>
+<td>Returns to the moment of failure, usually lit at night</td>
+<td>Corridor, stairs</td>
+</tr>
+</tbody></table>
+<p><img src="../../images/blog-power-restore-three-modes.svg" alt="The three power-on modes compared"></p>
+<p>If you do not want to be woken by light, the bedrooms and the hallway do not need &quot;memory&quot;. They need &quot;power-on off&quot;.</p>
+<h2>The lamp and the hub are not one setting</h2>
+<p>The same idea travels under different names: power-on behavior, restore state, default state, relay status, or the Chinese 通电默认状态. Hue calls it power-on behavior; Tapo calls it default states. LIFX and the rest of the market share no common vocabulary, so read the spec sheet instead of assuming a label carries over.</p>
+<p>Whether a Zigbee lamp exposes the setting at all depends on the device and on the gateway. Not every model has it, and that is a purchasing question, not a configuration one.</p>
+<p>Mi bulbs take a few extra steps. In the app, open the bulb, go to settings, then default state. Switch on &quot;turn on after power restore&quot; first, then enable &quot;restore the light before power loss&quot;, then switch the first one off again. On models without that entry, set the brightness and colour temperature you want by hand and save them as the default light. The memory lives on the device, so it keeps working with the network down; only a factory reset clears it.</p>
+<h2>Digital dimming has two more numbers to set</h2>
+<p>One project in Haiyan taught us this the hard way. After a restore the fixtures went to full output, and every time the bus dropped they jumped erratically. The cause was almost always the same: neither the power-on brightness nor the fail-safe level had been preset.</p>
+<p>Commissioning should leave four values behind: power-on brightness, fail-safe level, minimum dim level, and fade-up time. The acceptance check is equally plain. Pull the main breaker, close it again, and watch whether the room returns to the state it was in. Then pull the bus and confirm that every fixture drops to the same safe level rather than to full output. Scenes configured above the driver — Mi Home, Tuya, HarmonyOS — have to be re-run against the configuration table, otherwise the scene values and the defaults fight each other and nobody can tell which one won.</p>
+<h2>Set it room by room</h2>
+<p><img src="../../images/blog-power-restore-room-policy.svg" alt="Per-room power-on policy"></p>
+<p>Bedrooms and kids&#39; rooms exist to be slept in, so the requirement is simple: do not be woken. Choose power-on off, or at most restore previous state. Corridors and stairs are better on restore previous state — low brightness when you get up at night, still low when you come back. Outdoor and entrance circuits can be set to power-on on; it is dark out there anyway.</p>
+<p>One category deserves its own line in the table: high-power sockets feeding heaters — hair dryers, irons, induction hobs. Those are always power-on off. State Grid Fujian&#39;s own guidance is explicit about it: after an outage, switch off any heating appliance that was running when the power failed, so that an unattended restart cannot start a fire. For a house left empty for months, every appliance goes to power-on off.</p>
+<h2>Acceptance, and three hard lines</h2>
+<p>Acceptance is one action. Pull the main breaker, wait, close it, and stand in the room to see which lights come on. If a bulb jumps back to full output, go back to the default-state path above and fix it there.</p>
+<p>First hard line: many smart lamps use &quot;toggle the wall switch a few times&quot; as their reset-and-pair sequence. A voltage flicker during a restore can imitate that sequence closely enough to throw a lamp back to its default colour, or drop it off the network entirely. If devices are missing after a restore, wait ten minutes for the gateway to finish booting before you touch anything, then check power and the wall switch. Only re-add the device if it still does not appear, and rename it afterwards — otherwise every automation that referenced the old name is dead.</p>
+<p>Second: do not treat smart lamps as emergency lighting. A torch and a battery lamp still belong in the cupboard.</p>
+<p>Third: opening a panel, working near live conductors, and insulation testing all carry mains risk. A breaker that keeps tripping is not a switch problem, and swapping the switch will not fix it. Call a licensed electrician.</p>
+<h2>Three questions before you buy a lamp</h2>
+<p>Can its power-on behaviour be set, and does the setting survive a power cut? Who actually owns this lamp — its own app, the wall switch, or a gateway scene? And if the gateway never comes up, will it still light the way I need it to?</p>
+<p>Those three questions are worth more than two extra features on the box.</p>
+<h2>FAQ</h2>
+<h3>Q1: I set &quot;restore previous state&quot; and the house still lights up. Why?</h3>
+<p>Because it restores the moment the power failed, and at that moment the lights were on. If you want darkness at night, choose power-on off.</p>
+<h3>Q2: Do I have to confirm the setting every time?</h3>
+<p>No. The power-on setting is stored on the device, works with the network down, and is lost only on a factory reset.</p>
+<h3>Q3: Will a UPS fix it?</h3>
+<p>No. A UPS protects the router and the hub. The lamps are on the mains, and they will come on just the same.</p>
+<p>An outage and its restore do not test how smart a lamp is. They test whether the person who installed it thought about three o&#39;clock in the morning on your behalf.</p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>

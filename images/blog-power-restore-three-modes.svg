@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="60%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f38"/>
+    </linearGradient>
+    <pattern id="grid2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#16263f" stroke-width="1"/>
+    </pattern>
+    <filter id="glow2" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft2" x="-40%" y="-60%" width="180%" height="220%">
+      <feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f6ad55" stop-opacity="0.06"/>
+      <stop offset="50%" stop-color="#f6ad55" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#f6ad55" stop-opacity="0.06"/>
+    </linearGradient>
+    <marker id="arwA2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f6ad55"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="520" fill="url(#bg2)"/>
+  <rect width="900" height="520" fill="url(#grid2)" opacity="0.55"/>
+
+  <!-- 终端窗口条 -->
+  <g filter="url(#soft2)">
+    <rect x="40" y="22" width="820" height="40" rx="8" fill="#0d1f38" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <circle cx="62" cy="42" r="4.5" fill="#f6ad55" opacity="0.75"/>
+  <circle cx="79" cy="42" r="4.5" fill="#4fd1c5" opacity="0.6"/>
+  <circle cx="96" cy="42" r="4.5" fill="#2d4a6b"/>
+  <text x="116" y="47" fill="#7f9bbb" font-family="Consolas, Microsoft YaHei, monospace" font-size="15" letter-spacing="0.5">power-restore / three-modes</text>
+  <text x="838" y="47" text-anchor="end" fill="#3d5570" font-family="Consolas, Microsoft YaHei, monospace" font-size="15">compare</text>
+
+  <!-- 标题 -->
+  <rect x="40" y="78" width="4" height="30" rx="2" fill="#4fd1c5"/>
+  <text x="56" y="101" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="26" font-weight="bold">三种来电模式对照</text>
+
+  <!-- 提示条 -->
+  <rect x="40" y="118" width="820" height="46" rx="8" fill="url(#barGrad)" stroke="#f6ad55" stroke-opacity="0.45" stroke-width="1.2"/>
+  <g filter="url(#glow2)">
+    <path d="M 78 128 L 68 143 L 76 143 L 72 156 L 84 140 L 76 140 Z" fill="#f6ad55"/>
+  </g>
+  <text x="450" y="147" text-anchor="middle" fill="#f6ad55" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">恢复的是停电那一瞬间的状态</text>
+  <line x1="725" y1="164" x2="725" y2="180" stroke="#f6ad55" stroke-width="1.5" marker-end="url(#arwA2)"/>
+
+  <!-- 卡片 1：来电开启 -->
+  <g filter="url(#soft2)">
+    <rect x="50" y="186" width="250" height="254" rx="10" fill="#0f2138" stroke="#f6ad55" stroke-opacity="0.42" stroke-width="1.2"/>
+  </g>
+  <rect x="50" y="186" width="250" height="4" rx="2" fill="#f6ad55"/>
+  <circle cx="82" cy="224" r="11" fill="#f6ad55" fill-opacity="0.14" stroke="#f6ad55" stroke-width="1.2"/>
+  <circle cx="82" cy="224" r="4" fill="#f6ad55" filter="url(#glow2)"/>
+  <text x="102" y="231" fill="#f6ad55" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">来电开启</text>
+  <line x1="68" y1="252" x2="282" y2="252" stroke="#1e3a5f" stroke-width="1"/>
+
+  <text x="68" y="280" fill="#7f9bbb" font-family="Microsoft YaHei, sans-serif" font-size="15">半夜复电结果</text>
+  <text x="68" y="316" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="bold">一定全亮</text>
+
+  <text x="68" y="374" fill="#7f9bbb" font-family="Microsoft YaHei, sans-serif" font-size="15">适合房间</text>
+  <text x="68" y="402" fill="#cfe0ee" font-family="Microsoft YaHei, sans-serif" font-size="17">户外、入口</text>
+
+  <!-- 卡片 2：来电关闭 -->
+  <g filter="url(#soft2)">
+    <rect x="325" y="186" width="250" height="254" rx="10" fill="#0f2138" stroke="#64748b" stroke-opacity="0.55" stroke-width="1.2"/>
+  </g>
+  <rect x="325" y="186" width="250" height="4" rx="2" fill="#64748b"/>
+  <circle cx="357" cy="224" r="11" fill="#64748b" fill-opacity="0.18" stroke="#7f9bbb" stroke-width="1.2"/>
+  <rect x="353" y="220" width="8" height="8" rx="1.5" fill="#7f9bbb"/>
+  <text x="377" y="231" fill="#9fb2c6" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">来电关闭</text>
+  <line x1="343" y1="252" x2="557" y2="252" stroke="#1e3a5f" stroke-width="1"/>
+
+  <text x="343" y="280" fill="#7f9bbb" font-family="Microsoft YaHei, sans-serif" font-size="15">半夜复电结果</text>
+  <text x="343" y="316" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="bold">保持黑</text>
+
+  <text x="343" y="374" fill="#7f9bbb" font-family="Microsoft YaHei, sans-serif" font-size="15">适合房间</text>
+  <text x="343" y="402" fill="#cfe0ee" font-family="Microsoft YaHei, sans-serif" font-size="17">卧室、儿童房</text>
+
+  <!-- 卡片 3：恢复之前状态 -->
+  <g filter="url(#soft2)">
+    <rect x="600" y="186" width="250" height="254" rx="10" fill="#0f2138" stroke="#4fd1c5" stroke-opacity="0.5" stroke-width="1.4"/>
+  </g>
+  <rect x="600" y="186" width="250" height="4" rx="2" fill="#4fd1c5"/>
+  <circle cx="632" cy="224" r="11" fill="#4fd1c5" fill-opacity="0.14" stroke="#4fd1c5" stroke-width="1.2"/>
+  <path d="M628 227 A 5 5 0 1 1 636 224" fill="none" stroke="#4fd1c5" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="652" y="231" fill="#4fd1c5" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">恢复之前状态</text>
+  <line x1="618" y1="252" x2="832" y2="252" stroke="#1e3a5f" stroke-width="1"/>
+
+  <text x="618" y="280" fill="#7f9bbb" font-family="Microsoft YaHei, sans-serif" font-size="15">半夜复电结果</text>
+  <text x="618" y="308" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">回到停电那一刻</text>
+  <text x="618" y="334" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="bold">夜里通常亮</text>
+
+  <text x="618" y="374" fill="#7f9bbb" font-family="Microsoft YaHei, sans-serif" font-size="15">适合房间</text>
+  <text x="618" y="402" fill="#cfe0ee" font-family="Microsoft YaHei, sans-serif" font-size="17">走道、楼梯</text>
+
+  <!-- 页脚 -->
+  <line x1="40" y1="464" x2="860" y2="464" stroke="#16263f" stroke-width="1"/>
+  <text x="450" y="492" text-anchor="middle" fill="#3d5570" font-family="Microsoft YaHei, sans-serif" font-size="15">示意对照 · 具体以产品说明为准</text>
+</svg>

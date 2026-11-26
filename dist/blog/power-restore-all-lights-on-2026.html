@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (via meta, GitHub Pages does not support custom HTTP headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hm.baidu.com https://zz.bdstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://hm.baidu.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+    <title>半夜停电又来电，全屋灯唰一下全亮，不是灯坏了 | 耐利普科技技术博客</title>
+    <meta name="description" content="复电瞬间全屋灯同时亮，是智能照明最常见的投诉之一。本文从启动顺序、'恢复断电前状态'的语义陷阱、各品牌设置别名、数字调光的上电亮度与故障保底值、房间分区策略讲起，给出拉总闸验收法和三条安全红线。">
+    <meta name="keywords" content="来电全亮, 断电记忆, 上电默认状态, 来电恢复之前状态, 智能开关设置, 数字调光上电亮度, 耐利普">
+    <link rel="canonical" href="https://www.nexlamp.com/dist/blog/power-restore-all-lights-on-2026.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="半夜停电又来电，全屋灯唰一下全亮，不是灯坏了 | 耐利普科技">
+    <meta property="og:description" content="复电瞬间全屋灯同时亮，是智能照明最常见的投诉之一。本文从启动顺序、'恢复断电前状态'的语义陷阱、各品牌设置别名、数字调光的上电亮度与故障保底值、房间分区策略讲起，给出拉总闸验收法和三条安全红线。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nexlamp.com/dist/blog/power-restore-all-lights-on-2026.html">
+    <meta property="og:image" content="https://www.nexlamp.com/images/blog-power-restore-all-on-cover.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:author" content="耐利普科技">
+    <meta property="article:section" content="智能照明">
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "半夜停电又来电，全屋灯唰一下全亮，不是灯坏了",
+      "description": "复电瞬间全屋灯同时亮，是智能照明最常见的投诉之一。本文从启动顺序、'恢复断电前状态'的语义陷阱、各品牌设置别名、数字调光的上电亮度与故障保底值、房间分区策略讲起，给出拉总闸验收法和三条安全红线。",
+      "datePublished": "2026-11-26",
+      "author": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "url": "https://www.nexlamp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nexlamp Technology Co., Ltd.",
+        "telephone": "+86-13825496855",
+        "url": "https://www.nexlamp.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nexlamp.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nexlamp.com/dist/blog/power-restore-all-lights-on-2026.html"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://www.nexlamp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "技术文章",
+          "item": "https://www.nexlamp.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "半夜停电又来电，全屋灯唰一下全亮，不是灯坏了",
+          "item": "https://www.nexlamp.com/dist/blog/power-restore-all-lights-on-2026.html"
+        }
+      ]
+    }
+    </script>
+    <!-- Baidu Analytics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ec7bfdab22585165de996fb6080c62c3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav-main">
+            <a href="../../index.html" class="logo" aria-label="耐利普科技首页">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text">
+                    <span class="logo-en">NEXLAMP</span>
+                    <span class="logo-cn">耐利普科技</span>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../../index.html" role="menuitem">首页</a></li>
+                <li role="none"><a href="../../products.html" role="menuitem">产品中心</a></li>
+                <li role="none"><a href="../../blog.html" class="active" role="menuitem">技术文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <nav aria-label="面包屑导航">
+                    <ol class="breadcrumb">
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                        <li aria-current="page">半夜停电又来电，全屋灯唰一下全亮，不是灯坏了</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="post-layout">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <h1>半夜停电又来电，全屋灯唰一下全亮，不是灯坏了</h1>
+                            <div class="post-meta">
+                                <span>&#128197; 2026年11月26日</span>
+                                <span>&#9998; 耐利普科技</span>
+                                <span>&#128196; 智能照明</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-cover"><img src="../../images/blog-power-restore-all-on-cover.png" alt="半夜停电又来电，全屋灯唰一下全亮，不是灯坏了"></div>
+                            <p>&quot;来电一瞬间灯火通明。&quot;</p>
+<p>这是新浪上一位用户的停电实录。停了一个小时，家里几十上百个米家设备，复电那一下全屋亮起，人还得爬起来挨个关。窗帘电机自己跑，小爱播报联网，打印机自检，几台白电一起蜂鸣。值得买上一位装了四十二台设备的用户也写了同样的事，小红书原话更直白：复电全屋通亮，已经整麻了。</p>
+<p>我在这行做了二十年，先说结论：灯没坏。是这盏灯&quot;上电以后该干什么&quot;,从来没人设过。</p>
+<h2>一、自动化救不了&quot;第一下&quot;</h2>
+<p>复电不是同时发生的。灯泡最先醒，它只要通电就工作，不需要网络、网关和 App。路由器和网关要好几分钟才重启完，云端场景这时候还没上线。</p>
+<p>所以亮不亮、亮多亮，是灯自己或它的控制器在上电那一秒决定的，存在设备本地。自动化只能事后补救：等它亮了再发指令关掉。半夜那一下，挡不住。</p>
+<p><img src="../../images/blog-power-restore-boot-order.svg" alt="复电启动顺序：灯先醒，网关后到"></p>
+<p>给路由器和网关加 UPS,只保网络，保不住灯本身。</p>
+<h2>二、&quot;恢复断电前状态&quot;的语义陷阱</h2>
+<p>这六个字恢复的是停电那一瞬间的状态，不是你想要的状态。停电多在夜里或台风天，那一刻客厅灯、走廊灯本来就开着，原样恢复，结果必然全屋通亮。逻辑没错，是这句话被理解错了。</p>
+<p>米家智能开关里有三个选项：来电开启、来电关闭、来电恢复之前状态。不少设备出厂默认并不是&quot;来电关闭&quot;,装完不调，复电就给你一片光明。</p>
+<table>
+<thead>
+<tr>
+<th>设置值</th>
+<th>半夜复电结果</th>
+<th>适合房间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>来电开启</td>
+<td>一定全亮</td>
+<td>户外、入口</td>
+</tr>
+<tr>
+<td>来电关闭</td>
+<td>保持黑</td>
+<td>卧室、儿童房</td>
+</tr>
+<tr>
+<td>恢复之前状态</td>
+<td>回到停电那一刻，夜里通常是亮的</td>
+<td>走道、楼梯</td>
+</tr>
+</tbody></table>
+<p><img src="../../images/blog-power-restore-three-modes.svg" alt="三种来电模式对照"></p>
+<p>想半夜不被亮醒，卧室和过道要设的不是&quot;记忆&quot;,是&quot;来电关闭&quot;。</p>
+<h2>三、灯和网关不是一套设置</h2>
+<p>同一个意思，各家叫法不同:Power-on behavior、Restore state、Default State、Relay Status、通电默认状态。Hue 叫 Power-on behavior,Tapo 叫 Default States。Zigbee 灯有没有这个设置，取决于设备和网关，不是每个型号都有。</p>
+<p>米家灯泡要绕几步:App 里进灯泡、设置、默认状态，先打开&quot;通电后默认开灯&quot;,再开启&quot;恢复断电前灯光&quot;,最后把前者关掉。没有这个入口的型号，手动调好亮度和色温，点&quot;默认灯光&quot;存住。断电记忆存在本地，断网也生效，恢复出厂才会被清掉。</p>
+<h2>四、数字调光还要多管两个数</h2>
+<p>海盐一个项目上踩过：复电全亮，总线一断就乱跳，多半是&quot;上电亮度&quot;和&quot;故障保底值&quot;没预设。调试要预设四项：上电亮度、故障保底值、最小亮度、渐亮时间。验收也简单，拉总闸再合闸，看是否回到断电前;再拔总线，看是否统一落到安全亮度。上层米家、涂鸦、鸿蒙的场景要按配置表重跑，否则场景值和默认值打架。</p>
+<h2>五、按房间分开设</h2>
+<p><img src="../../images/blog-power-restore-room-policy.svg" alt="分区来电策略"></p>
+<p>卧室和儿童房，诉求是半夜别被亮醒，选&quot;来电关闭&quot;,或者退一步用&quot;上一状态&quot;。走道和楼梯适合&quot;上一状态&quot;,起夜时是低亮度，回来还是低亮度。户外和入口可以&quot;来电开启&quot;,外面本来就黑。</p>
+<p>还有一类必须单拎：电吹风、电熨斗、电磁炉这类加热设备的大功率插座，一律设&quot;来电关闭&quot;。国网福建电力的提示说得很清楚，停电后要关掉停电时处于开启状态的加热设备，避免复电后无人看管引发火灾。长期空置的房子，电器全部设来电关闭。</p>
+<h2>六、验收和三条红线</h2>
+<p>验收就一个动作：拉总闸、断电、再合闸，站在屋里看哪几盏亮。灯泡要是又跳回满亮度，按第三节那条路径改默认状态。</p>
+<p>第一条，不少智能灯用&quot;快速开关几次&quot;做重置配对，电压闪断可能恰好模仿这个序列，把灯打回默认颜色甚至失联。复电后设备不见了，先等十分钟让网关重启完，再查供电和墙开关，还不出现才重新添加，加完记得改回原名，否则自动化全废。</p>
+<p>第二条，别把应急照明指望在智能灯上。手电和电池灯该备还得备。</p>
+<p>第三条，拆面板、动线、测绝缘都是带电风险。反复跳闸不是换开关能解决的，找持证电工。</p>
+<h2>买灯前先问三句</h2>
+<p>能不能设上电行为，设完掉电是否保存?这盏灯归谁管，灯的 App、墙上的开关，还是网关场景?网关起不来，它还能不能按我要的方式亮?</p>
+<p>这三句比多两个花哨功能有用。</p>
+<h2>FAQ</h2>
+<h3>Q1:设了&quot;恢复之前状态&quot;,复电还是全亮?</h3>
+<p>恢复的是停电那一刻，那一刻灯通常开着。要半夜不亮，选&quot;来电关闭&quot;。</p>
+<h3>Q2:设完要每次手动确认吗?</h3>
+<p>不用。上电设置存在设备本地，断网也生效，只有恢复出厂才会丢。</p>
+<h3>Q3:加个 UPS 能解决吗?</h3>
+<p>不能。UPS 保的是路由和网关，灯直接接市电，复电照样亮。</p>
+<p>停电复电这件事，考的不是灯有多智能，是装灯的人有没有替你想过半夜三点那一秒。</p>
+
+                        </div>
+                    </div>
+                    <aside class="post-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>相关文章</h3>
+                            <ul id="related-posts">
+                                <li><a href="../../blog.html">浏览所有文章</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h3>联系我们</h3>
+                            <p style="font-size:0.9rem;color:var(--gray-2);">需要技术支持或产品咨询？</p>
+                            <p style="margin-top:12px;"><a href="tel:13825496855" class="btn btn-outline">&#128222; 138-2549-6855</a></p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">💡</span>
+                        <div class="logo-text">
+                            <span class="logo-en">NEXLAMP</span>
+                            <span class="logo-cn">耐利普科技</span>
+                        </div>
+                    </div>
+                    <p>专注智能照明与LED驱动电源解决方案</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p>电话：<a href="tel:13825496855">138-2549-6855</a></p>
+                    <p>网址：<a href="https://www.nexlamp.com">www.nexlamp.com</a></p>
+                </div>
+                <div class="footer-nav">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../products.html">产品中心</a></li>
+                        <li><a href="../../blog.html">技术文章</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 耐利普科技有限公司 Nexlamp Technology Co., Ltd. 保留所有权利。</p>
+                <p>域名：www.nexlamp.com | 电话：13825496855</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../main.js"></script>
+</body>
+</html>
