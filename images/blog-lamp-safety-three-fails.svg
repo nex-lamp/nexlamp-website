@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="60%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f38"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#16263f" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-40%" y="-60%" width="180%" height="220%">
+      <feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="520" fill="url(#bg)"/>
+  <rect width="900" height="520" fill="url(#grid)" opacity="0.55"/>
+
+  <g filter="url(#soft)">
+    <rect x="40" y="22" width="820" height="40" rx="8" fill="#0d1f38" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <circle cx="62" cy="42" r="4.5" fill="#f6ad55" opacity="0.75"/>
+  <circle cx="79" cy="42" r="4.5" fill="#4fd1c5" opacity="0.6"/>
+  <circle cx="96" cy="42" r="4.5" fill="#2d4a6b"/>
+  <text x="116" y="47" fill="#7f9bbb" font-family="Consolas, Microsoft YaHei, monospace" font-size="15">lamp-safety / inspection-failures</text>
+  <text x="838" y="47" text-anchor="end" fill="#3d5570" font-family="Consolas, Microsoft YaHei, monospace" font-size="15">3 modes</text>
+
+  <rect x="40" y="78" width="4" height="30" rx="2" fill="#4fd1c5"/>
+  <text x="56" y="101" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="26" font-weight="bold">抽检里的三类安全失效</text>
+
+  <rect x="40" y="124" width="820" height="42" rx="6" fill="#122a3f" stroke="#2d4a6b" stroke-width="1"/>
+  <text x="60" y="150" fill="#8fb3cf" font-family="Microsoft YaHei, sans-serif" font-size="16">插电点亮测试</text>
+  <text x="212" y="150" fill="#4fd1c5" font-family="Consolas, monospace" font-size="17" font-weight="bold">PASS</text>
+  <text x="330" y="150" fill="#8fb3cf" font-family="Microsoft YaHei, sans-serif" font-size="16">亮了 / 光色正常 / 调光有反应</text>
+  <text x="836" y="150" text-anchor="end" fill="#f6ad55" font-family="Microsoft YaHei, sans-serif" font-size="16">但安全项一项都没验到</text>
+
+  <g filter="url(#soft)">
+    <rect x="40" y="190" width="256" height="250" rx="10" fill="#0f2035" stroke="#2d4a6b" stroke-width="1.2"/>
+    <rect x="322" y="190" width="256" height="250" rx="10" fill="#0f2035" stroke="#2d4a6b" stroke-width="1.2"/>
+    <rect x="604" y="190" width="256" height="250" rx="10" fill="#0f2035" stroke="#2d4a6b" stroke-width="1.2"/>
+  </g>
+
+  <circle cx="72" cy="228" r="15" fill="#f6ad55" opacity="0.18"/>
+  <text x="72" y="234" text-anchor="middle" fill="#f6ad55" font-family="Consolas, monospace" font-size="16" font-weight="bold">01</text>
+  <text x="98" y="234" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">会电人</text>
+  <text x="60" y="276" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">防触电保护 / 结构</text>
+  <text x="60" y="304" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">开口过大，手能碰到带电件</text>
+  <text x="60" y="332" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">罩盖徒手就能打开</text>
+  <rect x="60" y="362" width="216" height="1" fill="#1e3a5f"/>
+  <text x="60" y="392" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">根因：设计不合理 / 未用隔离控制</text>
+  <text x="60" y="418" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">广东 129 号、常州第三批均中招</text>
+
+  <circle cx="354" cy="228" r="15" fill="#4fd1c5" opacity="0.18"/>
+  <text x="354" y="234" text-anchor="middle" fill="#4fd1c5" font-family="Consolas, monospace" font-size="16" font-weight="bold">02</text>
+  <text x="380" y="234" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">线会脱</text>
+  <text x="342" y="276" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">外部接线和内部接线</text>
+  <text x="342" y="304" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">电源线截面积不达标</text>
+  <text x="342" y="332" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">稍用力一拽就松动</text>
+  <rect x="342" y="362" width="216" height="1" fill="#1e3a5f"/>
+  <text x="342" y="392" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">普通灯具线径不低于 0.75 mm²</text>
+  <text x="342" y="418" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">部分台灯可为 0.5 mm²</text>
+
+  <circle cx="636" cy="228" r="15" fill="#fc8181" opacity="0.18"/>
+  <text x="636" y="234" text-anchor="middle" fill="#fc8181" font-family="Consolas, monospace" font-size="16" font-weight="bold">03</text>
+  <text x="662" y="234" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">会烧起来</text>
+  <text x="624" y="276" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">耐燃烧 / 防引燃</text>
+  <text x="624" y="304" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">内部短路时外壳挡不住高温</text>
+  <text x="624" y="332" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">书桌、儿童房风险更高</text>
+  <rect x="624" y="362" width="216" height="1" fill="#1e3a5f"/>
+  <text x="624" y="392" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">山东第 3 批：1 批次台灯不合格</text>
+  <text x="624" y="418" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">不合格项即耐燃与防引燃</text>
+
+  <text x="40" y="478" fill="#7f9bbb" font-family="Microsoft YaHei, sans-serif" font-size="16">结论：</text>
+  <text x="104" y="478" fill="#f6ad55" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="bold">亮，只是及格线；安全藏在结构、线径、隔离和材料里。</text>
+</svg>

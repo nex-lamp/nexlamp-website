@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="60%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f38"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#16263f" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-40%" y="-60%" width="180%" height="220%">
+      <feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+  <rect width="900" height="520" fill="url(#bg)"/>
+  <rect width="900" height="520" fill="url(#grid)" opacity="0.55"/>
+
+  <g filter="url(#soft)">
+    <rect x="40" y="22" width="820" height="40" rx="8" fill="#0d1f38" stroke="#1e3a5f" stroke-width="1"/>
+  </g>
+  <circle cx="62" cy="42" r="4.5" fill="#f6ad55" opacity="0.75"/>
+  <circle cx="79" cy="42" r="4.5" fill="#4fd1c5" opacity="0.6"/>
+  <circle cx="96" cy="42" r="4.5" fill="#2d4a6b"/>
+  <text x="116" y="47" fill="#7f9bbb" font-family="Consolas, Microsoft YaHei, monospace" font-size="15">lamp-safety / pre-install-checklist</text>
+  <text x="838" y="47" text-anchor="end" fill="#3d5570" font-family="Consolas, Microsoft YaHei, monospace" font-size="15">4 + 2</text>
+
+  <rect x="40" y="78" width="4" height="30" rx="2" fill="#4fd1c5"/>
+  <text x="56" y="101" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="26" font-weight="bold">到手四查，别急着装</text>
+  <text x="838" y="101" text-anchor="end" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">先查验再安装，破损不上电</text>
+
+  <g filter="url(#soft)">
+    <rect x="40" y="132" width="396" height="146" rx="10" fill="#0f2035" stroke="#2d4a6b" stroke-width="1.2"/>
+    <rect x="464" y="132" width="396" height="146" rx="10" fill="#0f2035" stroke="#2d4a6b" stroke-width="1.2"/>
+    <rect x="40" y="300" width="396" height="146" rx="10" fill="#0f2035" stroke="#2d4a6b" stroke-width="1.2"/>
+    <rect x="464" y="300" width="396" height="146" rx="10" fill="#0f2035" stroke="#2d4a6b" stroke-width="1.2"/>
+  </g>
+
+  <rect x="60" y="152" width="38" height="30" rx="6" fill="#4fd1c5" opacity="0.16"/>
+  <text x="79" y="173" text-anchor="middle" fill="#4fd1c5" font-family="Consolas, monospace" font-size="17" font-weight="bold">01</text>
+  <text x="110" y="174" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">查 CCC 真伪</text>
+  <text x="62" y="212" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">有标志不等于真，去官方平台核证书</text>
+  <text x="62" y="244" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">固定式 / 可移式 / 嵌入式 / 夜灯 / 水族箱灯具</text>
+
+  <rect x="484" y="152" width="38" height="30" rx="6" fill="#4fd1c5" opacity="0.16"/>
+  <text x="503" y="173" text-anchor="middle" fill="#4fd1c5" font-family="Consolas, monospace" font-size="17" font-weight="bold">02</text>
+  <text x="534" y="174" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">看铭牌</text>
+  <text x="486" y="212" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">型号、额定电压、额定功率、防护等级、厂名</text>
+  <text x="486" y="244" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">缺项或模糊，先搁一边</text>
+
+  <rect x="60" y="320" width="38" height="30" rx="6" fill="#f6ad55" opacity="0.16"/>
+  <text x="79" y="341" text-anchor="middle" fill="#f6ad55" font-family="Consolas, monospace" font-size="17" font-weight="bold">03</text>
+  <text x="110" y="342" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">看线缆并拉一下</text>
+  <text x="62" y="380" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">不破损老化；稍用力拉不应松动或被拉出</text>
+  <text x="62" y="412" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">普通灯具 ≥ 0.75 mm² ｜ 部分台灯 0.5 mm²</text>
+
+  <rect x="484" y="320" width="38" height="30" rx="6" fill="#f6ad55" opacity="0.16"/>
+  <text x="503" y="341" text-anchor="middle" fill="#f6ad55" font-family="Consolas, monospace" font-size="17" font-weight="bold">04</text>
+  <text x="534" y="342" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="bold">查罩盖和开口</text>
+  <text x="486" y="380" fill="#9bb6d0" font-family="Microsoft YaHei, sans-serif" font-size="15">罩盖手不能轻松打开；开口不能摸到带电件</text>
+  <text x="486" y="412" fill="#5f7d9c" font-family="Microsoft YaHei, sans-serif" font-size="14">金属外壳自镇流 LED 灯尽量避免</text>
+
+  <rect x="40" y="462" width="820" height="40" rx="6" fill="#122a3f" stroke="#2d4a6b" stroke-width="1"/>
+  <text x="60" y="487" fill="#8fb3cf" font-family="Microsoft YaHei, sans-serif" font-size="15">另两道关：</text>
+  <text x="158" y="487" fill="#e2e8f0" font-family="Microsoft YaHei, sans-serif" font-size="15">浴室灯具至少 IP44 ｜ 嵌入式装前看天花板有无渗水 ｜ 持续烧焦味停用</text>
+  <text x="836" y="487" text-anchor="end" fill="#4fd1c5" font-family="Microsoft YaHei, sans-serif" font-size="15">留凭证，问题打 12315</text>
+</svg>
